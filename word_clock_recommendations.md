@@ -43,27 +43,62 @@ Word clock provides **sample-accurate timing synchronization** across all digita
 
 ---
 
-## **🎯 WORD CLOCK SOLUTIONS BY SCENARIO**
+## **⚠️ IMPORTANT CLARIFICATION: MUTEC PRODUCT CONFUSION**
+
+### **Product Status Alert:**
+- **Mutec MC-3.1**: ❌ **DISCONTINUED** - No longer in production
+- **Current Mutec Products**: MC-3+ and MC-3+ USB (newer generation)
+- **MIDI Clock**: ❌ **Mutec products do NOT provide MIDI clock** - they are purely audio word clock generators
+
+### **Critical Understanding:**
+**Word Clock ≠ MIDI Clock**
+- **Word Clock**: Sample-accurate digital audio synchronization (what Mutec provides)
+- **MIDI Clock**: Musical timing for sequences/drums (separate system)
+- **Your devices need**: BOTH types of sync for complete integration
+
+---
+
+## **🔄 REVISED RECOMMENDATIONS**
+
+### **Current Mutec Options (MC-3.1 is discontinued):**
 
 ### **YOUR SITUATION: Dedicated Word Clock Solution Required**
 **Status**: Presonus 32R confirmed without word clock output
 **Need**: External word clock generator for professional timing
 
-#### **Budget Solution: Mutec MC-3.1 (~$600-800)**
-**Best value for comprehensive studio clock distribution**
+#### **Current Option 1: Mutec MC-3+ (~$900-1,200)**
+**Professional audio word clock generator**
 
 **Features:**
-- **USB Audio Interface** (192kHz/24-bit, 2in/2out)
-- **Multiple word clock outputs** (4x BNC)
-- **Sample rate conversion** between different rates
-- **Low jitter** (<1ps RMS)
-- **MIDI sync** capabilities
+- **4 BNC word clock outputs** (75Ω)
+- **Ultra-low jitter** (MUTEC's 1G-Clock technology)
+- **Multiple sample rates** (32kHz to 192kHz)
+- **Re-clocking capability** (improves incoming digital signals)
+- **Professional studio quality**
 
-**Why This Is Ideal:**
-- **Combines interface + clock** in one unit
-- **Professional quality** without breaking budget
+**Why This Works:**
+- **Professional word clock** for sample-accurate digital sync
 - **Multiple outputs** for all your digital devices
-- **Future expansion** ready
+- **Future-proof** quality and expansion
+- **Does NOT provide MIDI clock** - separate system needed
+
+#### **Current Option 2: Mutec MC-3+ USB (~$1,200-1,500)**
+**Adds USB audio interface to word clock generator**
+
+**Additional Features:**
+- **USB audio interface** (2 channels, up to 192kHz/24-bit)
+- **DSD support** and real-time conversion
+- **Digital format conversion** (S/PDIF, AES/EBU)
+- **All MC-3+ word clock features**
+
+**Consideration:**
+- **More expensive** than basic MC-3+
+- **USB interface** may duplicate your existing audio interfaces
+- **Still no MIDI clock** generation
+
+---
+
+### **ALTERNATIVE PROFESSIONAL OPTIONS:**
 
 #### **Professional Solution: Antelope OCX HD (~$1,500-2,000)**
 **Ultimate word clock for professional studios**
@@ -146,19 +181,43 @@ Mutec MC-3.1 (Master Clock) → Distribution:
 
 ---
 
-## **📋 DECISION MATRIX**
+## **📊 CRITICAL INSIGHT: TWO SEPARATE SYNC SYSTEMS NEEDED**
 
-### **UPDATED RECOMMENDATION: Mutec MC-3.1**
-**Best solution for your confirmed setup**
+### **Your Studio Requires BOTH:**
 
-### **Choose Mutec MC-3.1 Because:**
-- ✅ **Presonus lacks word clock** OR **you want better precision**
-- ✅ **Professional quality** is important
-- ✅ **Multiple digital devices** need synchronization
-- ✅ **Future expansion** is likely
-- ✅ **Budget allows** $600-800 investment
+#### **1. Word Clock (Sample-Accurate Audio Sync):**
+- **Mutec MC-3+** or similar for digital audio devices
+- **Synchronizes**: Presonus 32R, MPC X, TR-8S, Digitakt at sample level
+- **Prevents**: Digital artifacts, sample drift, clicks/pops
+- **Cost**: $900-1,200 for professional solution
 
-### **Choose Antelope OCX HD If:**
+#### **2. MIDI Clock (Musical Timing Sync):**
+- **Already handled by MRCC** or MPC X
+- **Synchronizes**: Musical timing between sequencers, drum machines
+- **Controls**: Tempo, start/stop, song position
+- **Cost**: $0 (you already have this capability)
+
+### **Why This Matters:**
+- **Word clock** ensures your **digital recordings** are sample-perfect
+- **MIDI clock** ensures your **musical sequences** stay in time
+- **Both are necessary** for a professional studio setup
+- **Mutec only provides word clock** - not MIDI clock
+
+---
+
+## **🎯 UPDATED DECISION MATRIX**
+
+### **UPDATED RECOMMENDATION: Mutec MC-3+**
+**Best solution for your confirmed setup (MC-3.1 is discontinued)**
+
+### **Choose Mutec MC-3+ Because:**
+- ✅ **Professional word clock** for sample-accurate synchronization
+- ✅ **Multiple BNC outputs** for your digital devices
+- ✅ **Ultra-low jitter** for audiophile quality
+- ✅ **Future expansion** ready
+- ❌ **Does NOT provide MIDI clock** (but you already have MIDI clock via MRCC)
+
+### **Alternative: Antelope OCX HD If:**
 - ✅ **Professional studio** standards required
 - ✅ **Atomic precision** timing needed
 - ✅ **Budget comfortable** with $1,500+ investment
