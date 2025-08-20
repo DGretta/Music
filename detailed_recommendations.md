@@ -284,62 +284,128 @@ With 48 devices, **foot control** becomes crucial for hands-free operation durin
 
 ---
 
-## **💰 COST-BENEFIT ANALYSIS**
+## **🎸 CRITICAL UPDATE: PEDAL ECOSYSTEM INTEGRATION**
 
-### **Return on Investment Ranking:**
+### **Major Discovery: 58+ Professional Effects Pedals**
+Your setup includes **5 specialized pedalboards** with 58+ professional effects:
+- **Guitar Board #1**: Classic Rock/Blues (11 pedals)
+- **Guitar Board #2**: Modern Rock/Metal (11 pedals) 
+- **Guitar Board #3**: Experimental/Ambient (13 pedals)
+- **Bass Board**: Funk/Rock Bass (11 pedals)
+- **Synthesizer Board**: Electronic/Synth Processing (12 pedals)
 
-**1. Expert Sleepers FH-2 (~$450)**
-- **Impact**: 🔥🔥🔥🔥🔥 (Transformative)
+### **Existing Integration Assets:**
+- **Intellijel Stomp** (already in Eurorack for pedal integration)
+- **Moog EP-3** (expression pedal for multi-destination control)
+- **Friedman Buffer Bay** (routing hub between boards)
+- **EarthQuaker Devices Afterneath** (in BOTH Eurorack AND pedal form!)
+
+---
+
+## **💰 REVISED COST-BENEFIT ANALYSIS**
+
+### **Updated Return on Investment Ranking:**
+
+**1. A/B/Y Pedal Board Switching (~$200-400)**
+- **Impact**: 🔥🔥🔥🔥🔥 (Unlocks 58 pedals for entire ecosystem)
+- **Cost**: 💸💸 (Moderate)
+- **ROI**: **Exponential** - Transforms Stomp into gateway to entire pedal arsenal
+
+**2. Expert Sleepers FH-2 (~$450)**
+- **Impact**: 🔥🔥🔥🔥🔥 (CV-to-MIDI ecosystem control)
 - **Cost**: 💸💸 (Moderate)
 - **ROI**: **Exponential** - Unlocks potential of entire existing ecosystem
 
-**2. Word Clock Distribution (~$0-2000)**
-- **Impact**: 🔥🔥🔥 (Significant timing improvement)
-- **Cost**: 💸 to 💸💸💸💸 (Depends on solution)
-- **ROI**: **High** - Affects all digital devices
+**3. Expression Pedal Splitter (~$100-200)**
+- **Impact**: 🔥🔥🔥🔥 (Multi-destination control from existing EP-3)
+- **Cost**: 💸 (Low)
+- **ROI**: **Very High** - Leverages existing Moog EP-3 across multiple platforms
 
-**3. FL Studio Templates (~$0)**
+**4. FL Studio Templates (~$0)**
 - **Impact**: 🔥🔥🔥🔥 (Major workflow improvement)
 - **Cost**: 💸 (Time investment only)
 - **ROI**: **Infinite** - No cost, major benefit
 
-**4. Expression Pedals (~$200-500)**
-- **Impact**: 🔥🔥🔥 (Enhanced performance capability)
-- **Cost**: 💸💸 (Moderate)
-- **ROI**: **High** - Enables hands-free performance
+**5. Word Clock Distribution (~$0-2000)**
+- **Impact**: 🔥🔥🔥 (Significant timing improvement)
+- **Cost**: 💸 to 💸💸💸💸 (Depends on solution)
+- **ROI**: **High** - Affects all digital devices
 
-**5. Expert Sleepers ES-9 (~$500-600)**
+**6. Expert Sleepers ES-9 (~$500-600)**
 - **Impact**: 🔥🔥🔥 (Workflow enhancement)
 - **Cost**: 💸💸 (Moderate)
 - **ROI**: **Good** - Enhances existing capabilities
 
+### **New Integration Opportunities:**
+
+#### **Pedal + Eurorack Hybrid Processing:**
+```
+Eurorack Voice → Stomp → Pedal Board → Stomp Return → Eurorack Mix
+```
+**Examples:**
+- **Cs-L** → **Experimental Board** → **Warm Audio Centavo + Afterneath**
+- **Mother32** → **Bass Board** → **Warden Compressor + Green Russian Fuzz**
+- **Plaits** → **Synth Board** → **Double Down (stereo) + RE-202 Space Echo**
+
+#### **Expression Control Orchestra:**
+```
+Moog EP-3 → Expression Splitter:
+├── Eurorack CV inputs (filter cutoffs)
+├── Pedal expression inputs (Pitch Fork Plus, Oceans 11)
+├── MRCC expression input (MIDI CC generation)
+└── Audio interface (DAW automation)
+```
+
 ---
 
-## **🚀 IMPLEMENTATION ROADMAP**
+## **🚀 REVISED IMPLEMENTATION ROADMAP**
 
-### **Month 1: Critical Infrastructure**
-1. **Research FH-2 thoroughly** - watch videos, read manuals
-2. **Check Presonus 32R word clock capabilities**
-3. **Create basic FL Studio ecosystem template**
-4. **Document current workflow for comparison**
+### **Month 1: Pedal Integration Foundation**
+1. **Map current Stomp usage** with existing pedal boards
+2. **Research A/B/Y switching solutions** for multiple board access
+3. **Test EP-3 expression** with multiple destinations
+4. **Create basic FL Studio ecosystem template**
 
-### **Month 2: Integration Testing**
-1. **Acquire and install FH-2**
-2. **Test basic CV-to-MIDI conversion**
-3. **Implement simple cross-platform patches**
-4. **Refine FL Studio templates based on experience**
+### **Month 2: Enhanced Routing Infrastructure**
+1. **Install A/B/Y switching** for pedal board access
+2. **Add expression pedal splitter** for EP-3 multi-destination control
+3. **Acquire and test FH-2** for CV-to-MIDI conversion
+4. **Check Presonus 32R word clock capabilities**
 
-### **Month 3: Advanced Integration**
-1. **Develop complex ecosystem patches**
-2. **Add expression control elements**
-3. **Create demonstration-ready presets**
-4. **Document successful integration strategies**
+### **Month 3: Advanced Ecosystem Integration**
+1. **Develop hybrid patches** combining Eurorack + pedals + semi-modulars
+2. **Create performance templates** with expression control
+3. **Test complex routing** through multiple pedal boards
+4. **Document successful combinations** for future recall
 
-### **Month 4: Optimization & Expansion**
-1. **Fine-tune timing with word clock solution**
-2. **Add ES-9 if DAW integration proves valuable**
-3. **Expand sample libraries for enhanced creativity**
-4. **Develop performance-ready macro controls**
+### **Month 4: Performance Optimization**
+1. **Streamline switching systems** for live demonstration use
+2. **Create ecosystem presets** spanning all platforms
+3. **Fine-tune timing** with word clock solution if needed
+4. **Develop demonstration-ready showcase patches**
+
+### **New Creative Possibilities Unlocked:**
+
+#### **"Analog + Digital Hybrid Voices"**
+- **Eurorack digital precision** → **Analog pedal character** → **Back to Eurorack**
+- **Best of both worlds**: Modern synthesis + vintage effects
+
+#### **"Parallel Universe Processing"**
+- **Same source** → **Multiple pedal boards simultaneously**
+- **Experimental Board**: Ambient textures
+- **Synth Board**: Rhythmic processing
+- **Guitar Board**: Aggressive character
+
+#### **"Expression Control Orchestra"**
+- **Single EP-3 movement** simultaneously controls:
+  - **Eurorack filter cutoffs** via CV
+  - **Pedal expression parameters** 
+  - **MIDI CC to semi-modulars** via MRCC
+  - **DAW automation** via interface
+
+#### **"Vintage + Modern Synthesis"**
+- **Classic pedals** (Maestro Fuzz, Boss classics) processing **modern Eurorack**
+- **Boutique pedals** (Gamechanger Audio, Empress) enhancing **vintage semi-modulars**
 
 ---
 
