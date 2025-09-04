@@ -1,14 +1,14 @@
-# 1008HP Eurorack Case - Complete Build Specification & Business Case
+# 1176HP Eurorack Case - Complete Build Specification & Business Case
 
 ## Executive Summary
 
-This document outlines the complete specification, cost analysis, and decision framework for building a professional-grade 1008HP eurorack synthesizer case. The proposed system represents a comprehensive modular synthesis platform suitable for professional studio work, content creation, and advanced sound design.
+This document outlines the complete specification, cost analysis, and decision framework for building a professional-grade 1176HP eurorack synthesizer case. The proposed system represents a comprehensive modular synthesis platform suitable for professional studio work, content creation, and advanced sound design.
 
 **Key Metrics:**
-- **Total Capacity**: 1008HP across 7 rows (168HP per row)
+- **Total Capacity**: 1176HP across 7 rows (168HP per row)
 - **Estimated Build Cost**: €1,650-2,100 total
 - **Build Timeline**: 7-10 days
-- **Power Capacity**: 22.4A (+12V) with 25% headroom
+- **Power Capacity**: 28A (+12V) with 25% headroom
 - **Physical Footprint**: 600mm × 680mm × 140mm (23.6" × 26.8" × 5.5")
 
 ---
@@ -51,23 +51,23 @@ This document outlines the complete specification, cost analysis, and decision f
 
 ### Power Requirements Analysis
 
-#### Load Calculations (1008HP System)
-- **Conservative estimate**: 10-14A on +12V (10-14mA per HP)
-- **Heavy digital loading**: 14-20A on +12V (14-20mA per HP)
-- **Planning target**: 18A capacity (+12V), 7A (-12V), 5A (+5V)
+#### Load Calculations (1176HP System)
+- **Conservative estimate**: 12-16A on +12V (10-14mA per HP)
+- **Heavy digital loading**: 16-24A on +12V (14-20mA per HP)
+- **Planning target**: 20A capacity (+12V), 8A (-12V), 6A (+5V)
 
 #### Recommended Power Solution
 
-**4 × ModularSynthLab PSU Kits (€505 total)**
-- **Configuration**: 4 × RT-65B power supplies
-- **Total capacity**: +12V: 22.4A, -12V: 6A, +5V: 8A
+**5 × ModularSynthLab PSU Kits (€631 total)**
+- **Configuration**: 5 × RT-65B power supplies
+- **Total capacity**: +12V: 28A, -12V: 7.5A, +5V: 10A
 - **Headroom**: 25% above maximum expected load
 - **Distribution**: 8 high-quality filtered busboards
 - **Features**: LED status indicators, safety-keyed connectors
 
 ### Power Distribution Strategy
 - **Lower section**: 2 × PSU kits (11.2A capacity)
-- **Upper section**: 2 × PSU kits (11.2A capacity)  
+- **Upper section**: 3 × PSU kits (16.8A capacity)  
 - **Redundancy**: System remains functional if one PSU fails
 - **Thermal management**: Distributed heat sources prevent hot spots
 
@@ -78,8 +78,8 @@ This document outlines the complete specification, cost analysis, and decision f
 ### Passive Cooling Design (Recommended)
 
 #### Heat Load Analysis
-- **Total system heat**: ~110W (50W PSUs + 60W modules)
-- **Thermal capacity**: Natural convection can handle 5-6°C rise
+- **Total system heat**: ~130W (60W PSUs + 70W modules)
+- **Thermal capacity**: Natural convection can handle 6-8°C rise
 - **Advantage**: Silent operation for recording environments
 
 #### Ventilation Specifications
@@ -158,7 +158,7 @@ Brace #7: 320mm - Upper lower 3U
 #### Core Components
 | Component | Specification | Cost (€) |
 |-----------|--------------|----------|
-| **Power System** | 4 × MSL PSU kits | €505 |
+| **Power System** | 5 × MSL PSU kits | €631 |
 | **Rails** | 5×3U + 2×1U @ 168HP | €400-500 |
 | **Wood Materials** | 18mm Baltic birch + hardware | €150-200 |
 | **Passive Cooling** | Slots, filters, baffles | €75 |
@@ -166,19 +166,19 @@ Brace #7: 320mm - Upper lower 3U
 | **Assembly Tools** | Templates, bits, consumables | €50 |
 
 #### Total Investment
-- **Minimum configuration**: €1,280
-- **Recommended build**: €1,530
-- **Premium components**: €1,880
+- **Minimum configuration**: €1,406
+- **Recommended build**: €1,656
+- **Premium components**: €2,006
 
 ### Cost Comparison Analysis
 
 #### Commercial Alternatives
 - **Doepfer Monster Base**: €1,200 (420HP) = €2.86/HP
 - **Make Noise 7U Case**: €650 (208HP) = €3.12/HP
-- **Custom builder quote**: €2,500-3,500 (1008HP)
+- **Custom builder quote**: €2,900-4,100 (1176HP)
 
 #### DIY Value Proposition
-- **This build cost**: €1,530 ÷ 1008HP = **€1.52/HP**
+- **This build cost**: €1,656 ÷ 1176HP = **€1.41/HP**
 - **Cost savings**: 45-60% vs commercial
 - **Customization**: Exact specifications to requirements
 - **Quality**: Premium materials and components
@@ -340,20 +340,20 @@ Power Tools:              Hand Tools:
 - [ ] **Expandability**: Easy addition of future modules
 
 #### Financial Success
-- [ ] **Cost target**: Total build under €1,600
-- [ ] **Value delivery**: Equivalent to €3,000+ commercial system
+- [ ] **Cost target**: Total build under €1,700
+- [ ] **Value delivery**: Equivalent to €3,500+ commercial system
 - [ ] **ROI timeline**: Cost justified within 12-18 months of use
 
 ---
 
 ## Conclusion & Next Steps
 
-This 1008HP eurorack case represents a professional-grade modular synthesis platform that delivers exceptional value through careful engineering and quality component selection. The proposed design balances performance, cost-effectiveness, and future expandability while maintaining the flexibility needed for evolving creative requirements.
+This 1176HP eurorack case represents a professional-grade modular synthesis platform that delivers exceptional value through careful engineering and quality component selection. The proposed design balances performance, cost-effectiveness, and future expandability while maintaining the flexibility needed for evolving creative requirements.
 
 ### Immediate Actions Required
 
 1. **Specification approval**: Confirm final dimensions and feature set
-2. **Budget authorization**: Secure €1,600 project funding  
+2. **Budget authorization**: Secure €1,700 project funding  
 3. **Timeline commitment**: Reserve 2-3 weeks for build process
 4. **Tool access**: Confirm availability of required woodworking tools
 5. **Component ordering**: Initiate procurement of long-lead items (rails, PSUs)
@@ -361,7 +361,7 @@ This 1008HP eurorack case represents a professional-grade modular synthesis plat
 ### Expected Outcomes
 
 Upon completion, this system will provide:
-- **Professional capability**: 1008HP supports complex, multi-voice compositions
+- **Professional capability**: 1176HP supports complex, multi-voice compositions
 - **Studio integration**: Silent operation suitable for recording environments  
 - **Future-proof platform**: Expandable architecture grows with creative needs
 - **Cost efficiency**: Premium functionality at 45-60% of commercial pricing
