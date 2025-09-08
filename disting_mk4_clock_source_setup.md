@@ -23,7 +23,52 @@
 ### **Alternative Clock Algorithms:**
 - **F.2 - Clock Divider/Multiplier**: If you have an external clock and want divisions
 - **B.5 - LFO**: Can also work as a slow clock source
-- **C.3 - Euclidean Patterns**: For more complex rhythmic patterns
+- **C.3 - Euclidean Patterns**: For more complex rhythmic patterns (see detailed setup below)
+
+## **C.3 - Euclidean Patterns Setup**
+
+The C.3 Euclidean Patterns algorithm generates complex rhythmic patterns based on mathematical distribution of beats. This is excellent for creating polyrhythmic sequences and interesting drum patterns.
+
+### **Step 1: Select C.3 Euclidean Patterns**
+1. **Press S encoder once** to enter menu
+2. **Press S again** to select "Algorithm"
+3. **Turn S encoder** to navigate to **C.3 - Euclidean Patterns**
+4. **Press S** to confirm
+
+### **Step 2: Understand the Inputs/Outputs**
+- **X input**: Clock input (advances pattern by one step when > 1V)
+- **Y input**: Reset input (resets pattern to step 1)
+- **Z knob**: Controls number of pulses for pattern 2
+- **A output**: Pattern 1 output
+- **B output**: Pattern 2 output
+
+### **Step 3: Configure Parameters**
+Press and hold S, then turn to access parameters:
+
+**Parameter 0**: Total steps for pattern 1 (1-32 steps)
+**Parameter 1**: Number of pulses for pattern 1 (how many beats in the pattern)
+**Parameter 2**: Rotation for pattern 1 (shifts where the pattern starts)
+**Parameter 3**: Pulse length (0 = 10ms fixed, 1-31 = fraction of clock time)
+
+### **Step 4: Set Up Patterns**
+1. **Set total steps** (Parameter 0) - e.g., 16 for a 16-step pattern
+2. **Set number of pulses** (Parameter 1) - e.g., 5 for 5 beats distributed across 16 steps
+3. **Adjust rotation** (Parameter 2) if you want to shift the downbeat
+4. **Set pulse length** (Parameter 3) based on your needs
+5. **Use Z knob** to set pulses for the second pattern (output B)
+
+### **Example Euclidean Patterns:**
+- **5 pulses in 8 steps**: Creates a classic Cuban tresillo rhythm
+- **3 pulses in 8 steps**: Creates interesting syncopated patterns
+- **7 pulses in 12 steps**: Complex polyrhythmic pattern
+- **4 pulses in 16 steps**: Standard kick drum pattern
+
+### **Usage Tips:**
+- **Connect a master clock** to X input for tempo sync
+- **Use A and B outputs** to trigger different drum sounds or envelope generators
+- **Experiment with different step/pulse combinations** for varied rhythmic complexity
+- **Use Y input** to reset patterns at specific intervals for structure
+- **Try different rotations** to create variations of the same basic pattern
 
 ### **Basic Usage:**
 1. **Patch output A or B** to your sequencer's clock input, envelope triggers, or other modules that need timing
