@@ -1,4 +1,4 @@
-# Generative NiftyCase: Deep Dive into Patching & Module Interactions
+# Generative NiftyCase Version 1: Deep Dive into Patching & Module Interactions
 
 ## Core Philosophy
 This 84HP generative system creates self-evolving music through multiple layers of controlled randomness anchored by mathematical euclidean rhythms. The key is **cross-modulation and polyrhythmic complexity** - letting euclidean patterns, random sources, and analog processing interact to create music that evolves organically while maintaining musical coherence.

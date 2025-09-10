@@ -50,7 +50,7 @@ Based on your extensive module collection, here are several focused 84HP NiftyCa
 
 ---
 
-## 3. GENERATIVE/ALGORITHMIC MUSIC (REVISED WITH MASTER CLOCK)
+## 3. GENERATIVE/ALGORITHMIC MUSIC - Version 1
 **Total: 84HP** *(Perfect fit)*
 
 | Module | HP | Function |
@@ -120,7 +120,7 @@ Based on your extensive module collection, here are several focused 84HP NiftyCa
 
 ---
 
-## 5. PERCUSSIVE/RHYTHMIC FOCUS (REVISED)
+## 5. PERCUSSIVE/RHYTHMIC FOCUS - Version 0
 **Total: 84HP** *(Perfect fit)*
 
 | Module | HP | Function |
@@ -171,7 +171,12 @@ Based on your extensive module collection, here are several focused 84HP NiftyCa
 
 ## Recommendations by Style:
 
-**Most Versatile:** The Generative build - can create everything from ambient to rhythmic music
+**Note on Versioning:**
+- **Version 0 (Percussive):** Foundational exploration of euclidean rhythms and polyrhythmic percussion
+- **Version 1 (Generative):** Evolved system focusing on algorithmic composition and evolving soundscapes
+- Both versions share the Euclidian Circles V2 foundation but explore different musical territories
+
+**Most Versatile:** The Generative Version 1 - can create everything from ambient to rhythmic music
 **Most Fun:** The Techno build - immediate gratification and dance-ready
 **Most Experimental:** The Ambient build - perfect for sound design and exploration
 **Most Musical:** The Melodic build - great for traditional song structures

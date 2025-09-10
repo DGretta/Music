@@ -1,4 +1,4 @@
-# Generative NiftyCase: Build & Organization Guide
+# Generative NiftyCase Version 1: Build & Organization Guide
 
 ## PHYSICAL MODULE LAYOUT (84HP NiftyCase)
 
