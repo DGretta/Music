@@ -1,4 +1,4 @@
-# Percussive NiftyCase Version 0: Deep Dive into Polyrhythmic Percussion
+# Percussive NiftyCase Independent: Deep Dive into Polyrhythmic Percussion
 
 ## Core Philosophy
 This 84HP percussion-focused system creates complex, evolving polyrhythmic music through multiple layers of clock manipulation, digital and analog drum synthesis, and real-time performance control. The foundation is **mathematical precision** (euclidean rhythms) combined with **advanced clock processing** and **dynamic sound shaping** to create everything from subtle percussion textures to driving techno rhythms.

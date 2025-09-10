@@ -1,7 +1,7 @@
-# Percussive NiftyCase Version 1: Deep Dive into Companion Percussion System
+# Percussive NiftyCase Generative: Deep Dive into Companion Percussion System
 
 ## Core Philosophy
-This 84HP percussion system is specifically designed as a **companion to the Generative NiftyCase Version 1**. Rather than being self-contained, it focuses entirely on **specialized percussion synthesis and processing**, receiving timing and triggers from the Generative case while providing professional-grade percussion character and effects. The result is a powerful dual-case system combining algorithmic composition with focused percussion synthesis.
+This 84HP percussion system is specifically designed as a **companion to the Generative NiftyCase**. Rather than being self-contained, it focuses entirely on **specialized percussion synthesis and processing**, receiving timing and triggers from the Generative case while providing professional-grade percussion character and effects. The result is a powerful dual-case system combining algorithmic composition with focused percussion synthesis.
 
 ---
 
@@ -9,7 +9,7 @@ This 84HP percussion system is specifically designed as a **companion to the Gen
 
 ### System Overview
 ```
-GENERATIVE NIFTYCASE V1          PERCUSSIVE NIFTYCASE V1
+GENERATIVE NIFTYCASE          PERCUSSIVE NIFTYCASE GENERATIVE
 ┌─────────────────────────┐      ┌─────────────────────────┐
 │ EC V2 Master Clock      │ ──→  │ Percussion Interface    │
 │ 6 Euclidean Channels    │ ──→  │ Trigger Processing      │

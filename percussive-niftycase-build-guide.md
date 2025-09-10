@@ -1,4 +1,4 @@
-# Percussive NiftyCase Version 0: Build & Organization Guide
+# Percussive NiftyCase Independent: Build & Organization Guide
 
 ## PHYSICAL MODULE LAYOUT (84HP NiftyCase)
 

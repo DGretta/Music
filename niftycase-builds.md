@@ -50,7 +50,7 @@ Based on your extensive module collection, here are several focused 84HP NiftyCa
 
 ---
 
-## 3. GENERATIVE/ALGORITHMIC MUSIC - Version 1
+## 3. GENERATIVE/ALGORITHMIC MUSIC - Generative
 **Total: 84HP** *(Perfect fit)*
 
 | Module | HP | Function |
@@ -120,7 +120,7 @@ Based on your extensive module collection, here are several focused 84HP NiftyCa
 
 ---
 
-## 5. PERCUSSIVE/RHYTHMIC FOCUS - Version 1 (Companion to Generative V1)
+## 5. PERCUSSIVE/RHYTHMIC FOCUS - Generative (Companion to Generative)
 **Total: 84HP** *(Perfect fit)*
 
 | Module | HP | Function |
@@ -179,7 +179,7 @@ Based on your extensive module collection, here are several focused 84HP NiftyCa
 
 ---
 
-## 5. PERCUSSIVE/RHYTHMIC FOCUS - Version 0
+## 5. PERCUSSIVE/RHYTHMIC FOCUS - Independent
 **Total: 84HP** *(Perfect fit)*
 
 | Module | HP | Function |
@@ -230,15 +230,15 @@ Based on your extensive module collection, here are several focused 84HP NiftyCa
 
 ## Recommendations by Style:
 
-**Note on Versioning:**
-- **Version 0 (Percussive):** Standalone exploration of euclidean rhythms and polyrhythmic percussion
-- **Version 1 (Percussive):** Specialized percussion companion to Generative V1 - focused synthesis without master clock
-- **Version 1 (Generative):** Evolved algorithmic composition system with euclidean foundation
-- Versions 0 are standalone systems; Version 1s are designed to work together as a dual-case setup
+**Note on Build Types:**
+- **Independent (Percussive):** Standalone exploration of euclidean rhythms and polyrhythmic percussion
+- **Generative (Percussive):** Specialized percussion companion to Generative - focused synthesis without master clock
+- **Generative:** Evolved algorithmic composition system with euclidean foundation
+- Independent builds are standalone systems; Generative builds are designed to work together as a dual-case setup
 
-**Most Versatile:** The Generative Version 1 - can create everything from ambient to rhythmic music  
-**Best Dual-Case Setup:** Generative V1 + Percussive V1 - complete algorithmic composition with specialized percussion  
-**Most Rhythmic Standalone:** The Percussive Version 0 - complete polyrhythmic system in one case  
+**Most Versatile:** The Generative - can create everything from ambient to rhythmic music  
+**Best Dual-Case Setup:** Generative + Percussive Generative - complete algorithmic composition with specialized percussion  
+**Most Rhythmic Standalone:** The Percussive Independent - complete polyrhythmic system in one case  
 **Most Fun:** The Techno build - immediate gratification and dance-ready  
 **Most Experimental:** The Ambient build - perfect for sound design and exploration  
 **Most Musical:** The Melodic build - great for traditional song structures
