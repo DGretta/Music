@@ -4,26 +4,27 @@
 
 ### Optimal Left-to-Right Arrangement
 ```
-[MARBLES] [BLOOM] [TURING] [PLAITS] [MOB EMUS] [ochd] [RUINA] [DST] [MULT]
-   18HP     16HP    10HP     12HP     16HP     4HP    10HP   4HP   2HP
+[EC V2] [MARBLES] [TURING] [PLAITS] [POLIVOKS] [ochd] [RUINA] [DST] [MULT] [VCA]
+  10HP    18HP     10HP     12HP     10HP      4HP    10HP   4HP   4HP   2HP
 ```
 
 ### Layout Rationale:
 
-**LEFT SECTION - Generative Sources (44HP):**
+**LEFT SECTION - Clock & Generative Sources (38HP):**
+- **Euclidian Circles V2 (10HP)** - Master clock + 6-channel euclidean rhythm generator
 - **Marbles (18HP)** - Primary random source, needs easy access to all outputs
-- **Bloom (16HP)** - Algorithmic sequencer, many CV outputs to route
 - **Turing Machine (10HP)** - Secondary random, compact but important
 
-**CENTER SECTION - Sound Generation (28HP):**
+**CENTER SECTION - Sound Generation & Processing (22HP):**
 - **Plaits (12HP)** - Main voice, receives CV from left section
-- **Mob of Emus (16HP)** - Filter/processor, large but central to sound shaping
+- **Black Polivoks VCF (10HP)** - Aggressive analog filter with character
 
-**RIGHT SECTION - Modulation & Effects (12HP):**
+**RIGHT SECTION - Modulation, Effects & Utilities (24HP):**
 - **ochd (4HP)** - Slow modulation source, small but mighty
 - **Ruina Versio (10HP)** - Final effects processing
 - **Disting mk4 (4HP)** - Utility, easily accessible for mode changes
-- **2hp Mult (2HP)** - Signal distribution, small footprint
+- **Multiple mults (4HP)** - Signal distribution
+- **Pico VCA2 (2HP)** - Compact amplitude control
 
 ---
 
@@ -33,19 +34,28 @@
 
 | Module | +12V | -12V | Notes |
 |--------|------|------|-------|
+| **Euclidian Circles V2** | 0mA | 0mA | 5V only: 70-160mA (LED brightness dependent) |
 | **Marbles** | 130mA | 20mA | High +12V for digital processing |
-| **Bloom** | 150mA | 25mA | Sequencer with display |
 | **Turing Machine** | 40mA | 5mA | Simple analog circuit |
 | **Plaits** | 85mA | 15mA | Digital oscillator |
-| **Mob of Emus** | 130mA | 30mA | Complex analog filter |
+| **Black Polivoks VCF** | 80mA | 80mA | Analog filter circuit |
 | **ochd** | 80mA | 80mA | Balanced LFO circuit |
 | **Ruina Versio** | 150mA | 25mA | DSP effects processor |
 | **Disting mk4** | 80mA | 15mA | Micro computer |
-| **2hp Mult** | 0mA | 0mA | Passive circuit |
-| **TOTAL** | **845mA** | **215mA** | **Safe margins** |
+| **Multiple Mults** | 0mA | 0mA | Passive circuits |
+| **Pico VCA2** | 10mA | 10mA | Simple analog VCA |
+| **TOTAL** | **655mA** | **250mA** | **Safe margins** |
 
-**Power Headroom:** +12V: 655mA remaining (44%), -12V: 285mA remaining (57%)
+**Power Headroom:** +12V: 845mA remaining (56%), -12V: 250mA remaining (50%)
 **Status:** ✅ **EXCELLENT** - Plenty of headroom for stable operation
+
+### **Master Clock Configuration - Euclidian Circles V2:**
+- **Internal clock range:** 10-2500 BPM
+- **No numeric BPM display** - tempo setting is by feel/ear using middle encoder
+- **Setting tempo:** Long press middle encoder to enter AUTO CLOCK mode, rotate clockwise to increase speed
+- **Tap tempo function:** Most precise method for setting specific BPMs (use F-BUTTON)
+- **Visual feedback:** LED rings show pattern activity but not numeric BPM
+- **Recommendation:** Use tap tempo for precise BPM matching with other equipment
 
 ---
 
@@ -60,21 +70,24 @@
 ### Cable Organization by Function:
 
 **RED cables - Clock/Trigger signals:**
-- ochd → Marbles rate
-- Marbles t1,t2,t3 → Bloom, Turing, Plaits
-- Bloom gates → various triggers
+- Euclidian Circles V2 outputs → Marbles, Turing, Plaits triggers
+- EC V2 master clock → system timing
+- Marbles t1,t2,t3 → various trigger inputs
+- Cross-modulation trigger signals
 
 **BLUE cables - Pitch CV:**
-- Marbles X,Y → Plaits V/OCT, Disting
-- Bloom CV → Disting → Plaits
-- Turing CV → Plaits, filter
+- Marbles X,Y → Plaits V/OCT, Disting quantizer
+- Turing CV → Plaits pitch, filter cutoff
+- Disting quantized outputs → pitch destinations
 
 **YELLOW cables - Modulation CV:**
-- ochd outputs → various mod inputs
-- Cross-modulation between generators
+- ochd outputs → various mod inputs (filter, effects, etc.)
+- Cross-modulation between Marbles, Turing, EC V2
+- Slow parameter automation signals
 
 **BLACK cables - Audio:**
-- Plaits → Mob of Emus → Ruina Versio → Output
+- Plaits → Black Polivoks VCF → Ruina Versio → Output
+- VCA in audio path for amplitude control
 
 ### Physical Cable Routing:
 ```
@@ -94,26 +107,30 @@ BOTTOM: Short local connections and power
 4. **Check current draw** with multimeter if available
 
 ### Phase 2: Basic Signal Chain
-1. **Audio path first:**
-   - Plaits → Mob of Emus → Ruina Versio → NiftyCase output
+1. **Master clock setup:**
+   - Set Euclidian Circles V2 to AUTO CLOCK mode
+   - Use tap tempo (F-BUTTON) to set desired BPM
+   - Test clock outputs from EC V2
+2. **Audio path first:**
+   - Plaits → Black Polivoks VCF → Ruina Versio → NiftyCase output
    - Test with Plaits internal trigger, verify audio flow
-2. **Basic clock:**
-   - ochd OUT1 → Marbles rate
-   - Marbles t1 → Plaits trigger
-   - Verify rhythmic audio output
+3. **Basic rhythm:**
+   - EC V2 channel 1 → Plaits trigger
+   - Verify rhythmic audio output with euclidean patterns
 
 ### Phase 3: Generative Network
-1. **Add Bloom:**
-   - Marbles t2 → Bloom clock
-   - Bloom CV1 → Plaits V/OCT
-   - Test melodic sequences
+1. **Add Marbles:**
+   - EC V2 channel 2 → Marbles clock input
+   - Marbles X → Plaits V/OCT
+   - Test random pitch sequences
 2. **Add Turing Machine:**
-   - Marbles t3 → Turing clock
-   - Turing CV → Mob of Emus cutoff
+   - EC V2 channel 3 → Turing clock
+   - Turing CV → Black Polivoks cutoff
    - Verify filter modulation
 3. **Add cross-modulation:**
    - Turing CV → Marbles bias
-   - Bloom gate → various modulation inputs
+   - Marbles Y → EC V2 reset (if desired)
+   - Test interaction between random sources
 
 ### Phase 4: Deep Modulation
 1. **ochd modulation:**
