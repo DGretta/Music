@@ -22,7 +22,7 @@
 **RIGHT SECTION - Modulation, Effects & Utilities (24HP):**
 - **ochd (4HP)** - Slow modulation source, small but mighty
 - **Ruina Versio (10HP)** - Final effects processing
-- **Disting mk4 (4HP)** - Utility, easily accessible for mode changes
+- **Disting mk4 (4HP)** - Additional envelope generator or effects processor, algorithm-switchable
 - **Multiple mults (4HP)** - Signal distribution
 - **Pico VCA2 (2HP)** - Compact amplitude control
 
@@ -132,13 +132,18 @@ BOTTOM: Short local connections and power
    - Marbles Y → EC V2 reset (if desired)
    - Test interaction between random sources
 
-### Phase 4: Deep Modulation
-1. **ochd modulation:**
+### Phase 4: Deep Modulation & Effects
+1. **Disting envelope generation:**
+   - Configure Disting to ADSR or Dual AR algorithm
+   - EC V2 gates → Disting envelope triggers
+   - Disting envelope outputs → VCA CV, filter modulation
+2. **ochd modulation:**
    - Connect remaining ochd outputs to various parameters
    - Test slow evolution of sound
-2. **Disting utility:**
-   - Configure as quantizer for pitch CV
-   - Test other algorithms as needed
+3. **Disting effects processing:**
+   - Switch Disting to delay/reverb/distortion algorithms as desired
+   - Insert in audio chain: Plaits → Disting effects → Polivoks → Ruina Versio
+   - Experiment with serial effects processing
 
 ---
 

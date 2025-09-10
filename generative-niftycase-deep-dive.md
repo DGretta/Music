@@ -183,6 +183,14 @@ Parameter automation  Timbre    Filter     Effects
 - **Time parameter:** Sync to musical timing for rhythmic delays
 - **Mix automation:** Rhythmic sources create call-and-response with effects
 
+### **Disting mk4 as Dynamic Function Module**
+- **Envelope mode:** ADSR, Dual AR, or looping envelope algorithms
+- **Effects mode:** Clocked delay, reverb, bit crusher, ring modulator, waveshaper
+- **Switching strategy:** Change function mid-patch as generative music evolves
+- **Envelope routing:** EC V2 euclidean gates → Disting triggers → VCA/filter CV
+- **Effects chain:** Serial processing (Plaits → Disting → Polivoks → Ruina Versio)
+- **Sync capabilities:** Use clocked algorithms that follow EC V2 master tempo
+
 ### **ochd as the Slow Hand**
 - **8 outputs:** Each controls different time-scale parameters
 - **Phase relationships:** Built-in outputs create complex modulation patterns

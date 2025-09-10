@@ -62,7 +62,7 @@ Based on your extensive module collection, here are several focused 84HP NiftyCa
 | **Erica Synths Black Polivoks VCF** | 10 | Aggressive analog filter |
 | **DivKid ochd** | 4 | 8-channel LFO for slow modulation |
 | **Noise Engineering Ruina Versio** | 10 | Multi-algorithm reverb/delay/distortion |
-| **Expert Sleepers Disting mk4** | 4 | Quantizer/utility |
+| **Expert Sleepers Disting mk4** | 4 | Additional envelope generator/effects processor |
 | **Intellijel Buff Mult** | 2 | Signal distribution |
 | **2hp Mult** | 2 | Additional signal splitting |
 | **Erica Synths Pico VCA2** | 2 | Compact VCA |
@@ -86,7 +86,7 @@ Based on your extensive module collection, here are several focused 84HP NiftyCa
 
 **Modulation & Utilities:**
 - **ochd** provides 8-phase slow LFOs for gradual parameter evolution
-- **Disting mk4** handles quantization and utility functions as needed
+- **Disting mk4** serves as additional envelope generator (ADSR, dual AR) or effects processor (delay, reverb, distortion)
 - **Multiple mults** allow complex CV distribution and mixing
 - **Pico VCA2** provides essential amplitude control
 
