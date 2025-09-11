@@ -103,19 +103,80 @@ Instead of randomly setting six channels, you can instantly access **thousands o
 ## Beginner Patch Ideas
 
 ### **Patch 1: Rich Additive Synthesis**
-- **Load Preset 7** - "Additive Oscillator"
-- **Patch Mix Output** → filter → VCA
-- **LFO** → **H.Gain CV input** (rhythmic harmonic intensity)
-- **Envelope** → **Full CV frequency input**
-- **Experiment with:** Different harmonic series (Option 1 on HARM#/SERIES)
+```
+┌─────────────┐    ┌──────────────┐    ┌─────────────┐
+│    LFO      │───▶│ Mob of Emus  │───▶│   Filter    │
+│ (Slow Rate) │    │ H.GAIN CV IN │    │  Audio In   │
+└─────────────┘    │              │    └─────────────┘
+                   │ Preset 7:    │           │
+┌─────────────┐    │ "Additive    │           ▼
+│ Envelope    │───▶│ Oscillator"  │    ┌─────────────┐
+│ Generator   │    │              │───▶│     VCA     │
+└─────────────┘    │ MIX OUTPUT   │    │   Audio In  │
+                   └──────────────┘    └─────────────┘
+                          │                    ▲
+                          │                    │
+                   ┌──────┴──────┐           │
+                   │ Harmonic    │───────────┘
+                   │ Series      │
+                   │ Control     │
+                   └─────────────┘
+```
+
+| Connection | Cable Type | Notes |
+|------------|------------|-------|
+| LFO → MOE H.GAIN CV | CV (Blue) | Rhythmic harmonic intensity |
+| Envelope → MOE Full CV Freq | CV (Blue) | Pitch modulation |
+| MOE Mix Out → Filter Audio In | Audio (Red) | Rich additive signal |
+| Filter Out → VCA Audio In | Audio (Red) | Filtered harmonics |
+
+**Module Settings:**
+- **Mob of Emus:** Load Preset 7, Hex Mode ON
+- **Harmonic Series:** "Fave Odd" (Option 1 on HARM#/SERIES)
+- **H.Gain CV attenuverter:** 75% for dramatic harmonic changes
+- **All channels:** Audio rate (Octave around +2)
+
+**Visual Feedback:**
+- **Hex LED:** Solid, indicating Hex mode active
+- **H.Gain LED:** Pulses with LFO showing harmonic intensity changes
+- **Channel LEDs:** All lit showing six-oscillator harmony
 - **Result:** Classic additive synthesis with easy harmonic control
 
 ### **Patch 2: Polyrhythmic Modulation Bank**
-- **All channels to LFO rate** (Octave at -3)
-- **Set harmonic series** to "Powers of 2" 
-- **Patch individual outputs** → multiple VCA CV inputs
-- **Sync with Tap/Trig** button for tempo
-- **Turn Variation slightly** for rhythmic interest
+```
+┌─────────────┐    ┌──────────────┐
+│ Tap/Trig   │───▶│ Mob of Emus  │
+│ Button      │    │ Tempo Sync   │  Ch1──▶VCA 1 CV
+└─────────────┘    │              │  Ch2──▶VCA 2 CV
+                   │ Harmonic     │  Ch3──▶Filter CV
+                   │ Series:      │  Ch4──▶LFO Rate
+                   │ "Powers of 2"│  Ch5──▶Osc Pitch
+                   │              │  Ch6──▶Effect CV
+                   │ Octave: -3   │
+                   │ (LFO Rate)   │
+                   └──────────────┘
+```
+
+| Connection | Cable Type | Notes |
+|------------|------------|-------|
+| Tap/Trig → MOE Sync Input | Clock (Yellow) | Sets tempo for all channels |
+| MOE Ch1 → VCA 1 CV Input | CV (Blue) | 1x tempo (fundamental) |
+| MOE Ch2 → VCA 2 CV Input | CV (Blue) | 2x tempo (half notes) |
+| MOE Ch3 → Filter CV Input | CV (Blue) | 4x tempo (quarter notes) |
+| MOE Ch4 → LFO Rate CV | CV (Blue) | 8x tempo (eighth notes) |
+| MOE Ch5 → Oscillator Pitch | CV (Blue) | 16x tempo (sixteenth notes) |
+| MOE Ch6 → Effect Parameter | CV (Blue) | 32x tempo (thirty-second notes) |
+
+**Module Settings:**
+- **Mob of Emus:** Octave at -3 (LFO rates), Hex Mode ON
+- **Harmonic Series:** "Powers of 2" {1,2,4,8,16,32}
+- **Variation:** Slight clockwise for rhythmic interest
+- **Individual outputs:** Route to different modulation destinations
+
+**Visual Feedback:**
+- **Tap/Trig LED:** Flashes showing master tempo
+- **Channel LEDs:** Flash at different rates showing polyrhythmic relationships
+- **Harmonic relationships:** Visual confirmation of mathematical timing
 - **Result:** Six related but different LFO rates creating polyrhythmic modulation
 
 ### **Patch 3: Six-Channel Quantized Arpeggiator**

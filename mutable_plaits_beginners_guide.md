@@ -1,6 +1,5 @@
 # Mutable Instruments Plaits - Beginner's Guide
-
-**The Sonic Swiss Army Knife**
+*The Sonic Swiss Army Knife*
 
 ---
 
@@ -62,126 +61,271 @@
 
 ## Beginner Patch Ideas
 
-### **Patch 1: Classic Lead Synth**
+### **Patch 1: Complete Synthesizer Voice**
 ```
-[Keyboard] ──1V/OCT──→ [Plaits V/OCT]
-[Keyboard] ──GATE──→ [Envelope Generator]
-[Envelope] ──CV──→ [Plaits LEVEL] 
-[Plaits OUT] ──→ [Audio Out/Mixer]
+┌─────────────┐    ┌──────────────┐    ┌─────────────┐
+│ Keyboard    │───▶│    Plaits    │───▶│ Audio Out   │
+│  V/OCT Out  │    │  V/OCT Input │    │  (or Mixer) │
+└─────────────┘    │              │    └─────────────┘
+       │            │ Model LEDs:  │
+       │            │ ●○○○○○○○     │
+       │            │ OUT Output   │
+       │            └──────────────┘
+┌─────────────┐           ▲
+│ Keyboard    │───GATE───▶│
+│  Gate Out   │           │
+└─────────────┘    ┌──────┴──────┐
+                   │ Envelope    │
+                   │ Generator   │───LEVEL CV────┘
+                   └─────────────┘
 ```
-**Model:** First LED (classic waveforms)
-**Visual:** LED shows current model, TIMBRE affects brightness
-**Controls:** HARMONICS = detuning, MORPH = wave shape, TIMBRE = pulse width
-**Sound:** Rich, classic analog-style lead sounds with two detuned oscillators
 
-### **Patch 2: Self-Contained Percussion**
-```
-[Clock/Trigger] ──→ [Plaits TRIG input]
-[Plaits OUT] ──→ [Mixer] (no envelope needed!)
-```
-**Model:** Any from second bank (right button) - try kick, snare, or hi-hat models
-**Visual:** Right bank LEDs for percussion models
-**Controls:** Built-in envelope triggers from TRIG input, adjust TIMBRE/MORPH for character
-**Sound:** Complete drum sounds with built-in decay - no external envelope needed
+| Connection | Cable Type | Notes |
+|------------|------------|-------|
+| Keyboard V/OCT → Plaits V/OCT | CV (Blue) | Pitch tracking |
+| Keyboard Gate → Envelope Trig | Gate (Yellow) | Triggers envelope |
+| Envelope Out → Plaits LEVEL | CV (Blue) | Controls internal LPG |
+| Plaits OUT → Audio destination | Audio (Red) | Main output |
 
-### **Patch 3: Speech Synthesizer**
-```
-[Slow LFO] ──CV──→ [Plaits MORPH CV input]
-[Trigger Sequence] ──→ [Plaits TRIG input]
-[Plaits OUT] ──→ [Reverb] ──→ [Audio Out]
-```
-**Model:** Last LED in first bank (speech synthesis)
-**Visual:** Watch MORPH LED respond to CV, speech models have unique behaviors
-**Controls:** MORPH = phoneme selection, TIMBRE = formant shifting, triggers = word utterances
-**Sound:** Robot voices, vowel sounds, and speech synthesis - pure sci-fi gold
+**Module Settings:**
+- **Plaits:** Model 1 (first LED), FREQUENCY at 12 o'clock
+- **TIMBRE at 11 o'clock** (pulse width), **MORPH at 12 o'clock** (wave shape)
+- **HARMONICS at 1 o'clock** (detuning), **Internal LPG active**
 
-### **Patch 4: Evolving Textures**
+**Visual Feedback:**
+- **First LED solid:** Classic dual oscillator mode
+- **LEVEL LED:** Brightness follows envelope intensity
+- **Result:** Complete synthesizer voice - no external filter/VCA needed!
+
+### **Patch 2: Self-Contained Drum Machine**
 ```
-[Plaits AUX] ──→ [Plaits FM CV input] (self-modulation!)
-[Slow Envelope] ──CV──→ [Plaits TIMBRE CV input]
-[Plaits OUT + AUX] ──→ [Stereo Mixer]
+┌─────────────┐    ┌──────────────┐    ┌─────────────┐
+│  Clock/     │───▶│    Plaits    │───▶│ Drum Mixer  │
+│ Sequencer   │    │ TRIG Input   │    │  Channel 1  │
+│ (Triggers)  │    │              │    └─────────────┘
+└─────────────┘    │ Model LEDs:  │
+                   │ ○○○○○○○○     │    ┌─────────────┐
+                   │ ●●●●●●●●     │───▶│ Audio Out   │
+                   │              │    │             │
+                   │ OUT Output   │    └─────────────┘
+                   └──────────────┘
 ```
-**Model:** Try wavetable, FM, or granular models
-**Visual:** Internal envelope LED flashes show self-modulation activity
-**Setup:** Turn TIMBRE attenuverter to control self-modulation amount
-**Sound:** Complex, evolving textures that modulate themselves organically
+
+| Connection | Cable Type | Notes |
+|------------|------------|-------|
+| Clock/Sequencer → Plaits TRIG | Gate (Yellow) | Triggers percussion sounds |
+| Plaits OUT → Mixer/Audio Out | Audio (Red) | Complete drum sounds |
+
+**Module Settings:**
+- **Plaits:** Right bank models (second row LEDs) - try kick, snare, hi-hat
+- **Press right button** to cycle through percussion models
+- **TIMBRE/MORPH/HARMONICS** shape each drum sound's character
+- **No external envelope needed** - built into percussion models
+
+**Visual Feedback:**
+- **Second row LEDs:** Show which percussion model is active
+- **TRIG LED:** Flashes on each trigger input
+- **Result:** Complete drum sounds with built-in envelopes and character
+
+### **Patch 3: Speech Synthesis Robot Voice**
+```
+┌─────────────┐    ┌──────────────┐    ┌─────────────┐
+│    LFO      │───▶│    Plaits    │───▶│   Reverb    │
+│ (Slow Rate) │    │ MORPH CV In  │    │   Module    │
+└─────────────┘    │              │    └─────────────┘
+                   │ Model LEDs:  │           │
+┌─────────────┐    │ ○○○○○○○●     │           ▼
+│ Trigger     │───▶│              │    ┌─────────────┐
+│ Sequence    │    │ TRIG Input   │───▶│ Audio Out   │
+└─────────────┘    │              │    │ (Robotic   │
+                   │ OUT + AUX    │    │  Speech!)   │
+                   └──────────────┘    └─────────────┘
+```
+
+| Connection | Cable Type | Notes |
+|------------|------------|-------|
+| LFO → Plaits MORPH CV | CV (Blue) | Modulates phoneme selection |
+| Trigger Seq → Plaits TRIG | Gate (Yellow) | Triggers speech utterances |
+| Plaits OUT → Reverb | Audio (Red) | Main speech synthesis |
+| Plaits AUX → Reverb | Audio (Red) | Alternative formants |
+
+**Module Settings:**
+- **Plaits:** Model 8 (last LED in first bank) - Speech synthesis
+- **MORPH CV attenuverter** at 50% for phoneme sweeping
+- **TIMBRE controls formant** frequency, **HARMONICS controls clarity**
+
+**Visual Feedback:**
+- **Eighth LED solid:** Speech synthesis mode active
+- **MORPH LED:** Shows CV modulation affecting phoneme changes
+- **Result:** Robot voices, vowel sounds, and sci-fi speech effects
+
+---
+
+## Advanced Techniques
+
+### **Model CV Switching for Automatic Variation**
+```
+┌─────────────┐    ┌──────────────┐
+│ Step Seq    │───▶│    Plaits    │
+│ (Slow CV)   │    │ MODEL CV In  │
+└─────────────┘    │              │
+                   │ Model LEDs:  │
+                   │ ●◐○○●○○○     │ ← LEDs show switching
+                   └──────────────┘
+```
+**Result:** Automatic switching between different synthesis models
+
+### **Self-Modulation Complex Textures**
+```
+┌──────────────┐
+│    Plaits    │
+│ AUX Output   │──┐  ┌─────────────┐
+│              │  └─▶│   Mixer     │───▶ Stereo Out
+│ FM CV Input  │◄────│  Channel 1  │
+│              │     └─────────────┘
+│ OUT Output   │─────────────┐
+└──────────────┘             ▼
+                      ┌─────────────┐
+                      │   Mixer     │
+                      │  Channel 2  │
+                      └─────────────┘
+```
+**Result:** Complex self-modulating textures with stereo output
 
 ---
 
 ## Common Use Cases
 
-**🎹 **Complete Synthesizer Voice:** Built-in LPG means no external filter/VCA needed**
-**🥁 **Drum Machine:** 6 different drum models with built-in envelopes**  
-**🗣️ **Sound Design:** Speech synthesis, granular textures, modal resonators**
-**🌊 **Melodic Sequences:** FM synthesis, wavetables, chord generators**
-**🎵 **Bass Lines:** Analog-style oscillators, FM, waveshaping**
-**🔊 **Textural Layers:** Particle noise, filtered noise, granular clouds**
-**🎛️ **Learning Tool:** Experience 16 different synthesis methods in one module**
+### **Complete Synthesizer Voice:**
+- **Built-in LPG** means no external filter/VCA needed
+- **LEVEL input** controls both volume and brightness
+- **Perfect for small systems** where space is premium
 
----
+### **Drum Machine:**
+- **8 percussion models** with built-in envelopes
+- **TRIGGER input** for rhythm programming
+- **Each model different drum type** - kick, snare, hi-hat, etc.
 
-## Beginner "Gotchas" 
+### **Sound Design Laboratory:**
+- **Speech synthesis, granular textures, modal resonators**
+- **Wavetables, FM synthesis, chord generators**
+- **Every model different synthesis method** for exploration
 
-### **Two Banks of Models**
-- **Left button (8 models) = Pitched/Melodic sounds** - use these for melodies, bass, leads
-- **Right button (8 models) = Noise/Percussion** - drums, textures, sound effects
-- **Don't get stuck in one bank** - explore both for maximum sonic potential
-- **Model CV input** can switch between models automatically
-
-### **Each Model Has Different Parameter Functions**
-- **TIMBRE, MORPH, HARMONICS mean different things** for each model
-- **Same knob position = totally different sound** when you change models  
-- **This is intentional** - each model is optimized for its synthesis type
-- **Experimentation is key** - don't expect consistency across models
-
-### **Built-in LPG is Powerful**
-- **LEVEL input controls volume AND brightness** - it's not just a VCA
-- **No LEVEL CV = use TRIGGER input** to "pluck" the LPG percussively
-- **LPG settings are hidden** - hold first button + adjust TIMBRE/MORPH to customize
-- **You often don't need external filters/VCAs** with Plaits
-
-### **Internal Envelope System**
-- **Attenuverters at bottom control internal envelope** when nothing's patched
-- **TRIGGER input activates internal envelope** for all three CV inputs
-- **Remember to reset attenuverters to center** when patching external CV
-- **This catches beginners off-guard** - sudden self-modulation when triggering
-
-### **AUX Output is Context-Dependent**
-- **Every model outputs something different** on AUX output
-- **Sometimes it's a sub-oscillator**, sometimes a variation, sometimes raw signal
-- **Often more interesting than main output** - don't ignore it!
-- **Great for stereo patches** or sending to different effects
-
----
-
-## Next Steps
-
-1. **Explore one bank at a time** - master the pitched models, then try percussion
-2. **Learn the parameter patterns** - TIMBRE usually = brightness, but experiment  
-3. **Use both outputs** - AUX often provides complementary or contrasting material
-4. **Try self-patching** - AUX to FM input creates complex self-modulation
-5. **Experiment with model CV** - automatic model switching creates evolving textures
-
-**Remember:** Plaits is deep - each model is like a different synthesizer. Don't try to learn them all at once. Pick a few favorites and really explore them!
+### **Melodic Sequences:**
+- **Chord generator models** for instant harmonies
+- **Wavetable models** for smooth timbral changes
+- **FM models** for complex harmonic content
 
 ---
 
 ## Pairs Well With
 
-### **Perfect Partners for Beginners:**
-- **Sequencers:** Plaits shines with melodic sequences - the chord models are perfect for arpeggios
+### **Essential Partners:**
+- **Sequencers:** Plaits shines with melodic sequences - chord models perfect for arpeggios
 - **Reverb/Delay (FX Aid, Magneto):** Speech synthesis and granular models love spatial effects
-- **Clock Dividers:** Use different trigger patterns for the percussion models  
-- **Attenuators/VCAs:** Tame the output levels and create dynamics
+- **Clock Dividers:** Different trigger patterns for percussion models  
+- **Attenuators/VCAs:** Tame output levels and create dynamics
 
-### **Next-Level Combinations:**  
-- **Marbles:** Random triggers for percussion models + random CV for model switching
+### **Advanced Combinations:**  
+- **Marbles:** Random triggers for percussion + random CV for model switching
 - **Maths:** Complex envelopes to modulate TIMBRE/MORPH for evolving textures
 - **Data:** Visualize what different synthesis models actually look like
-- **Filters:** Despite built-in LPG, external filters can create parallel processing chains
+- **Filters:** Despite built-in LPG, external filters create parallel processing
 
-### **Pro Tip:** Plaits excels as a **complete voice** but also as a **sound source generator** feeding other modules. The AUX output is often perfect for feeding into Arbhar, Cs-L, or other processors for hybrid synthesis approaches.
+### **Perfect Pairings:**
+- **Multiple Plaits:** Different models for layered synthesis
+- **CV Sequencers:** Model CV input for automatic algorithm switching
+- **External Audio:** Some models process external audio through AUX input
+- **Performance Mixers:** Real-time balance between OUT and AUX outputs
 
 ---
 
-*Need the full technical manual? Find it at mutable-instruments.net/modules/plaits*
+## Beginner "Gotchas" & Pro Tips
+
+### **⚠️ Common Mistakes:**
+
+**"Two banks of models confusion"**
+- **Left button (8 models) = Pitched/Melodic sounds** - use these for melodies, bass, leads
+- **Right button (8 models) = Noise/Percussion** - drums, textures, sound effects
+- **Solution:** Don't get stuck in one bank - explore both for maximum sonic potential
+
+**"Each model has different parameter functions"**
+- **TIMBRE, MORPH, HARMONICS mean different things** for each model
+- **Same knob position = totally different sound** when you change models  
+- **Solution:** This is intentional - each model is optimized for its synthesis type
+
+**"Built-in LPG confusion"**
+- **LEVEL input controls volume AND brightness** - it's not just a VCA
+- **No LEVEL CV = use TRIGGER input** to "pluck" the LPG percussively
+- **Solution:** You often don't need external filters/VCAs with Plaits
+
+**"Internal envelope mystery"**
+- **Attenuverters control internal envelope** when nothing's patched
+- **TRIGGER input activates internal envelope** for all three CV inputs
+- **Solution:** Reset attenuverters to center when patching external CV
+
+### **🎵 Pro Tips:**
+
+**Model Exploration Strategy:**
+- **Explore one bank at a time** - master pitched models, then try percussion
+- **Learn parameter patterns** - TIMBRE usually = brightness, but experiment  
+- **Use both outputs** - AUX often provides complementary material
+- **Try model CV switching** for evolving textures
+
+**Parameter Relationships:**
+- **TIMBRE generally controls brightness** across most models
+- **MORPH explores variations** within the current sound character
+- **HARMONICS adds complexity** - detuning, filtering, or harmonic content
+- **Combination exploration** - all three knobs interact musically
+
+**LPG Integration:**
+- **LEVEL CV controls both volume and tone** - more than just amplitude
+- **Hidden LPG settings** - hold first button + adjust TIMBRE/MORPH
+- **TRIGGER input for percussion** - instant pluck without external envelope
+- **Experiment with LPG response** - from VCA-like to filter-like behavior
+
+**Dual Output Usage:**
+- **AUX output often more interesting** than main output
+- **Different content per model** - sub-oscillators, variations, raw signals
+- **Stereo potential** - route outputs to different processing chains
+- **Self-patching possibilities** - AUX to FM input for complex modulation
+
+---
+
+## Why This Module Rocks
+
+### **The Philosophy:**
+Plaits proves that **one module can contain entire synthesis traditions**. Instead of choosing between FM, wavetable, granular, or analog synthesis, you get all of them - each implemented excellently and optimized for musical use.
+
+### **The Innovation:**
+- **16 different synthesis engines** in one module
+- **Macro-oscillator approach** - complex algorithms made simple
+- **Built-in LPG** provides complete voice without external processing
+- **Dual outputs** offer main and auxiliary signals for each algorithm
+- **CV control over algorithm selection** enables dynamic sound evolution
+
+### **The Practical Benefits:**
+- **Space efficiency:** Entire synthesis studio in 12HP
+- **Learning tool:** Experience every major synthesis method hands-on
+- **Creative catalyst:** Algorithm switching sparks new musical ideas
+- **Complete voice:** Built-in LPG eliminates need for external filter/VCA
+- **Immediate results:** Every model sounds musical without extensive patching
+
+### **Perfect For:**
+- **Beginners:** Learn synthesis by comparing different algorithms directly
+- **Sound designers:** 16 different approaches to creating unique textures
+- **Melodic players:** Chord generators and harmonic models for instant musicality
+- **Rhythm programmers:** 8 percussion models with built-in envelopes
+- **Small system builders:** Maximum synthesis variety in minimal space
+- **Experimenters:** Model CV switching for constantly evolving sounds
+
+### **The Magic:**
+Plaits **democratizes synthesis knowledge** - you don't need to understand FM theory, wavetable construction, or granular parameters. Just turn knobs and **every synthesis method becomes immediately musical**. It's like having a synthesis textbook that you can hear and play.
+
+---
+
+**Bottom Line:** Plaits isn't just an oscillator - it's a **complete synthesis education** in one module. Every model teaches you something new about how different synthesis methods create sound and music.
+
+---
+
+*Visit [Mutable Instruments](https://mutable-instruments.net/modules/plaits) for complete documentation, firmware updates, and model specifications*

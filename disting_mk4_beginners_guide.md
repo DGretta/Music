@@ -94,11 +94,41 @@ Instead of buying dozens of modules, Disting mk4 gives you **one module that can
 ## Beginner Patch Ideas
 
 ### **Patch 1: Musical CV Quantizer**
-- **Algorithm:** A-6 Quantizer
-- **Patch random CV** → **X input** (or sequence with slides)
-- **Patch A output** → **oscillator 1V/Oct input**
-- **Patch B output** → **envelope trigger** (fires on note changes)
-- **Turn Z knob** through different scales - major, minor, pentatonic
+```
+┌─────────────┐    ┌──────────────┐    ┌─────────────┐
+│ Random CV   │───▶│ Disting mk4  │───▶│ Oscillator  │
+│ Generator   │    │ Algorithm:   │    │ 1V/OCT Input│
+│ (or Slides) │    │ A-6 Quantizer│    └─────────────┘
+└─────────────┘    │              │           │
+                   │ X Input      │           ▼
+                   │ A Output     │    ┌─────────────┐
+                   │              │───▶│ Envelope    │
+                   │ B Output     │    │ Generator   │
+                   │ (Trigger)    │    │ Trigger In  │
+                   │              │    └─────────────┘
+                   │ Z Knob:      │
+                   │ Scale Select │
+                   │ [Display:    │
+                   │  "Major"]    │
+                   └──────────────┘
+```
+
+| Connection | Cable Type | Notes |
+|------------|------------|-------|
+| Random CV → Disting X Input | CV (Blue) | Unquantized pitch CV |
+| Disting A Out → Oscillator V/OCT | CV (Blue) | Quantized to musical scale |
+| Disting B Out → Envelope Trigger | Gate (Yellow) | Fires on note changes |
+
+**Module Settings:**
+- **Disting:** Algorithm A-6 Quantizer
+- **Z Knob:** Turn to select scale (Major, Minor, Pentatonic, etc.)
+- **Display shows:** Current scale name when Z changes
+- **Parameters:** Default settings work well for most applications
+
+**Visual Feedback:**
+- **Socket LEDs:** X input shows incoming CV, A/B outputs show processed signals
+- **Display:** Shows "Quantizer" and current scale selection
+- **B Output LED:** Flashes when note changes trigger
 - **Result:** Random CV becomes musical melodies in any scale
 
 ### **Patch 2: Clockable Echo Effect**  
