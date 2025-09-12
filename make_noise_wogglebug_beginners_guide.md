@@ -81,7 +81,76 @@
 
 ---
 
-## Beginner Patch Ideas
+## Progressive Patch Examples
+
+### **Patch 1: First Steps - Basic Chaos Control**
+```
+┌─────────────┐    ┌──────────────┐    ┌─────────────┐
+│ Make Noise  │───▶│  Oscillator  │───▶│   Filter    │
+│ Wogglebug   │    │              │    │             │
+│             │    │ 1V/Oct   ◀──┼────┼─ Stepped    │
+│ Stepped ────┼───▶│              │    │ Output      │
+│ Output      │    │ Audio Out ───┼───▶│             │
+│             │    │              │    │ Cutoff  ◀──┼─── [From Smooth]
+│ Smooth  ────┼────┼──────────────┼───▶│             │
+│ Output      │    │              │    │ Audio Out ──┼─── Final Output
+│             │    │ Speed/Chaos: │    │             │
+│ Speed/Chaos │    │ 12 o'clock   │    │ Ego/Id: 3   │
+│ Knob        │    │              │    │ o'clock     │
+└─────────────┘    └──────────────┘    └─────────────┘
+```
+
+| Connection | Cable Type | Purpose | Learning Objective |
+|------------|------------|---------|-------------------|
+| Stepped → Oscillator 1V/Oct | CV (Blue) | **Random pitch control** | **Experience discrete chaos** |
+| Smooth → Filter Cutoff | CV (Blue) | **Continuous filter sweeps** | **Learn smooth randomness** |
+
+**Settings:** Speed/Chaos: 12 o'clock, Ego/Id: 3 o'clock (full chaos)
+**Result:** Oscillator jumps randomly between pitches while filter sweeps smoothly
+
+### **Patch 2: Intermediate - Phase 2 Chaos Processing**
+```
+┌─────────────┐    ┌──────────────┐    ┌─────────────┐
+│   DivKid    │───▶│ Make Noise   │───▶│ Mutable     │
+│    Ochd     │    │ Wogglebug    │    │ Marbles     │
+│ Trigger 2 ──┼───▶│ Disturb   ◀──┼────┼─            │
+│             │    │              │    │ External    │
+│ LFO 5   ────┼───▶│ Ego Input ◀──┼────┼─ Clock   ◀──┼─── [From Clock Out]
+│             │    │              │    │             │
+│ Rate CV ────┼───▶│ Speed/Chaos  │    │ Spread CV◀──┼─── [From Stepped]
+│ Feedback    │    │ CV Input  ◀──┼────┼─            │
+│             │    │              │    │ DEJA VU  ◀──┼─── [From Smooth]
+│ System  ────┼───▶│ Clock Out ───┼───▶│ CV Input    │
+│ Learning    │    │ Stepped  ────┼───▶│             │
+│             │    │ Smooth   ────┼───▶│ Musical     │
+│ Feedback◀───┼────┼─ Woggle   ───┼───▶│ Output  ────┼─── AI-Processed
+└─────────────┘    └──────────────┘    └─────────────┘   Chaos
+```
+
+**Phase 2 Integration:** Ochd provides organic timing → Wogglebug adds chaos → Marbles learns patterns
+**Result:** Organic timing becomes musical chaos becomes intelligent patterns
+
+### **Patch 3: Advanced - Chaos Audio Synthesis**
+```
+┌─────────────┐    ┌──────────────┐    ┌─────────────┐
+│ Make Noise  │───▶│ Audio Mixer  │───▶│ Cre8audio   │
+│ Wogglebug   │    │              │    │ Function    │
+│             │    │ Input 1  ◀───┼────┼─ Smooth VCO │
+│ Smooth VCO ─┼───▶│              │    │ Junction    │
+│             │    │ Input 2  ◀───┼────┼─ Woggle VCO │
+│ Woggle VCO ─┼───▶│              │    │             │
+│             │    │ Input 3  ◀───┼────┼─ Ring-Mod   │
+│ Ring-Mod ───┼───▶│              │    │ F MOD CV◀───┼─── [From Stepped]
+│             │    │ Mix Out  ────┼───▶│             │
+│ Stepped ────┼────┼──────────────┼───▶│ ADSR Gate◀──┼─── [From Burst]
+│ Output      │    │              │    │             │
+│             │    │ Influence ◀───┼────┼─ MIX Out ───┼─── Processed
+│ Burst   ────┼────┼─ Input        │    │             │   Chaos Audio
+└─────────────┘    └──────────────┘    └─────────────┘
+```
+
+**Learning:** Wogglebug as complete audio synthesizer + modulation processor
+**Result:** Three chaotic audio sources mixed and processed into musical chaos
 
 [Content continues with the 4 enhanced patches, advanced techniques, use cases, etc. - the complete enhanced guide from the artifacts]
 
