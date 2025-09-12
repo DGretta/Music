@@ -85,7 +85,7 @@
                     │ Gate Output ○───────┼─── Gate (Yellow)
                     └─────────────────────┘      ║
                                                   ▼
-                    ┌─────────────────────┐      ║
+                    ┌────────────────────┐      ║
                     │   Cre8audio        │      ║
                     │ Function Junction  │      ║
                     │                    │      ║
@@ -97,9 +97,9 @@
                     │ R: Release   ●     │
                     │                    │
                     │ ADSR OUT ○─────────┼─── CV (Blue)
-                    └─────────────────────┘      ║
+                    └────────────────────┘      ║
                                                   ▼
-                    ┌─────────────────────┐      ║
+                    ┌────────────────────┐      ║
                     │       VCA          │      ║
                     │                    │      ║
                     │ Audio Input     ◀──┼──────┼─── Audio (Red)
@@ -137,15 +137,15 @@
 
 ### **Patch 2: Intermediate - Phase 2 Modulation Processing**
 ```
-   ┌─────────────────────┐      ┌─────────────────────┐
+   ┌────────────────────┐      ┌────────────────────┐
    │     DivKid Ochd    │      │   Cre8audio        │
    │    (Phase 2)       │      │ Function Junction  │
    │                    │      │   (Phase 2)        │
-   │ LFO 2 ○────────────┼──────┼─▶ F MOD CV          │
+   │ LFO 2 ○────────────┼──────┼─▶ F MOD CV         │
    │       ║            │      │                    │
-   │ Trigger 1○─────────┼──────┼─▶ F IN              │
+   │ Trigger 1○─────────┼──────┼─▶ F IN             │
    │       ║            │      │                    │
-   │ LFO 6 ○────────────┼──────┼─▶ LFO Rate CV       │
+   │ LFO 6 ○────────────┼──────┼─▶ LFO Rate CV      │
    │       ║            │      │                    │
    │       ║            │      │ Attack:  9 o'clock │
    │       ║            │      │ Decay:  12 o'clock │
@@ -160,7 +160,7 @@
            ║                           ║    ║
    CV (Blue)║                   CV (Blue)║    ║ CV (Blue)
            ▼                           ║    ║
-   ┌─────────────────────┐              ▼    ▼
+   ┌────────────────────┐              ▼    ▼
    │      Filter        │      ┌──────────────────┐
    │                    │      │   Oscillator     │
    │ Cutoff CV       ◀──┼──────┼─ PWM Input    ◀──┼─── From LFO Tri
@@ -168,7 +168,7 @@
    │ Audio Input     ◀──┼──────┼─ Audio Input  ◀──┼─── Audio Source
    │                    │      │                  │
    │ Audio Output ○─────┼──────┼─ Audio Output ○──┼─── Final Audio
-   └─────────────────────┘      └──────────────────┘
+   └────────────────────┘      └──────────────────┘
 ```
 
 | Connection | Cable Type | Purpose | Phase 2 Integration |
@@ -205,19 +205,19 @@
 
 ### **Patch 3: Advanced - Phase 2 AI Integration with Marbles**
 ```
-┌─────────────┐    ┌──────────────┐    ┌─────────────┐
+┌─────────────┐    ┌─────────────┐    ┌─────────────┐
 │ Mutable     │───▶│ Cre8audio   │───▶│   Complex   │
 │ Marbles     │    │ Function    │    │ Oscillator  │
 │             │    │ Junction    │    │             │
-│ X1 Out  ───┼───▶│             │    │ 1V/Oct  ◀──┼─── [From MIX]
-│             │    │ Ch1 (1A) ◀─┼────┼─             │
-│ t1 Out  ───┼───▶│ [Norm ADSR]  │    │ FM Amt  ◀──┼─── [From Ch1 Out]
+│ X1 Out   ───┼───▶│             │    │ 1V/Oct  ◀──┼─── [From MIX]
+│             │    │ Ch1 (1A)  ◀─┼────┼─             │
+│ t1 Out   ───┼───▶│ [Norm ADSR] │    │ FM Amt  ◀──┼─── [From Ch1 Out]
 │             │    │             │    │             │
-│ X2 Out  ───┼───▶│ Ch2 (2F) ◀─┼────┼─ Sync    ◀──┼─── [From Ch2 Out]
-│             │    │ [Norm F]     │    │             │
-│ Y Out   ───┼───▶│             │    │ Audio Out──┼─── Complex
-└─────────────┘    │ Ch3 (3L) ◀─┼────┼─            │    Timbral
-        ▲          │ [Norm LFO]   │    │ OR+ Out ◀──┼─── Evolution
+│ X2 Out   ───┼───▶│ Ch2 (2F)  ◀─┼────┼─ Sync    ◀──┼─── [From Ch2 Out]
+│             │    │ [Norm F]    │    │             │
+│ Y Out    ───┼───▶│             │    │ Audio Out──┼─── Complex
+└─────────────┘    │ Ch3 (3L)  ◀─┼────┼─            │    Timbral
+        ▲          │ [Norm LFO]  │    │ OR+ Out ◀──┼─── Evolution
         │          │             │    └─────────────┘
         │          │ A GATE   ◀──┼────────────── [From t1]
         │          │             │
@@ -235,7 +235,7 @@
         │          │             │
         │          │ Attenuv. 3: │ (LFO amount)
         │          │ 11 o'clock  │
-        │          └──────────────┘
+        │          └─────────────┘
         │
         └──────────── Marbles Learning Feedback
 ```
@@ -275,35 +275,35 @@
 
 ### **Patch 4: Expert - Complete Phase 2 Modulation Ecosystem Hub**
 ```
-┌─────────────┐    ┌──────────────┐    ┌─────────────┐
+┌─────────────┐    ┌─────────────┐    ┌─────────────┐
 │ Phase 2     │◀──▶│ Cre8audio   │───▶│ Synthesis   │
 │ Modulation  │    │ Function    │    │ Network     │
 │ Sources     │    │ Junction    │    │             │
 │             │    │ (Hub)       │    │ Multiple    │
 │ Ochd LFOs ──┼───▶│             │    │ Oscillators │
-│ 1, 3, 7     │    │ A GATE   ◀─┼────┼─             │
+│ 1, 3, 7     │    │ A GATE    ◀─┼────┼─            │
 │             │    │             │    │ Multiple    │
-│ Marbles ───┼───▶│ F MOD CV ◀─┼────┼─ Filters     │
+│ Marbles  ───┼───▶│ F MOD CV  ◀─┼────┼─ Filters    │
 │ X1, X2, Y   │    │             │    │             │
-│             │    │ F TRIG ───┼───▶│ Multiple    │
-│ RCD ──────┼───▶│             │    │ Effects     │
-│ Out 2,5,7   │    │ LFO Rate ◀─┼────┼─             │
+│             │    │ F TRIG   ───┼───▶│ Multiple    │
+│ RCD   ──────┼───▶│             │    │ Effects     │
+│ Out 2,5,7   │    │ LFO Rate  ◀─┼────┼─            │
 │             │    │             │    │ Intelligent │
-│ Wogglebug ──┼───▶│ Ch1 In   ◀─┼────┼─ Modulation  │
-│ Stepped     │    │ Ch2 In   ◀─┼────┼─ Distribution│
-│ Smooth      │    │ Ch3 In   ◀─┼────┼─             │
+│ Wogglebug ──┼───▶│ Ch1 In    ◀─┼────┼─ Modulation │
+│ Stepped     │    │ Ch2 In    ◀─┼────┼─ Distribution│
+│ Smooth      │    │ Ch3 In    ◀─┼────┼─            │
 │ Ring-Mod    │    │             │    │ Matrix      │
 └─────────────┘    │ MIX Out  ───┼───▶│             │
         ▲          │ Ch1 Out  ───┼───▶│ Complex     │
         │          │ Ch2 Out  ───┼───▶│ Musical     │
         │          │ OR+ Out  ───┼───▶│ Evolution   │
         │          │             │    │             │
-        │          │ F TRIG ───┼────┼─ Audio Out──┼─── Complete
+        │          │ F TRIG   ───┼────┼─ Audio Out──┼─── Complete
         │          │             │    └─────────────┘   System
         │          │ Self-Patch: │
         │          │ F TRIG→A GT │
         │          │ ADSR→F MOD  │
-        │          └──────────────┘
+        │          └─────────────┘
         │
         └──────────── Phase 2 Ecosystem Feedback
 ```
