@@ -78,20 +78,36 @@
 
 ### **Patch 1: First Steps - Classic VCA Envelope**
 ```
-┌─────────────┐    ┌──────────────┐    ┌─────────────┐
-│ Gate Source  │───▶│ Cre8audio   │───▶│     VCA     │
-│ (Keyboard,   │    │ Function    │    │             │
-│  Sequencer)  │    │ Junction    │    │ Audio In ◀─┼─── [Audio Source]
-│             │    │             │    │             │
-│ Gate Out ──┼───▶│ A GATE   ◀─┼────┼─             │
-└─────────────┘    │             │    │ CV Input ◀─┼─── [From ADSR]
-                   │ ADSR OUT ───┼───▶│             │
-                   │             │    │ Audio Out──┼─── Final Output
-                   │ A: Attack   │    └─────────────┘
-                   │ D: Decay    │
-                   │ S: Sustain  │
-                   │ R: Release  │
-                   └──────────────┘
+                    ┌─────────────────────┐
+                    │   Gate Source       │
+                    │ (Keyboard/Sequencer)│
+                    │                     │
+                    │ Gate Output ○───────┼─── Gate (Yellow)
+                    └─────────────────────┘      ║
+                                                  ▼
+                    ┌─────────────────────┐      ║
+                    │   Cre8audio        │      ║
+                    │ Function Junction  │      ║
+                    │                    │      ║
+                    │ A GATE Input    ◀──┼──────┘
+                    │                    │
+                    │ A: Attack    ●     │
+                    │ D: Decay     ●     │
+                    │ S: Sustain   ●     │
+                    │ R: Release   ●     │
+                    │                    │
+                    │ ADSR OUT ○─────────┼─── CV (Blue)
+                    └─────────────────────┘      ║
+                                                  ▼
+                    ┌─────────────────────┐      ║
+                    │       VCA          │      ║
+                    │                    │      ║
+                    │ Audio Input     ◀──┼──────┼─── Audio (Red)
+                    │                    │      ║
+                    │ CV Input        ◀──┼──────┘
+                    │                    │
+                    │ Audio Output ○─────┼─── Final Audio Output
+                    └─────────────────────┘
 ```
 
 | Connection | Cable Type | Purpose | Learning Objective |
@@ -121,25 +137,38 @@
 
 ### **Patch 2: Intermediate - Phase 2 Modulation Processing**
 ```
-┌─────────────┐    ┌──────────────┐    ┌─────────────┐
-│   DivKid    │───▶│ Cre8audio   │───▶│   Filter    │
-│    Ochd     │    │ Function    │    │ & Effects   │
-│             │    │ Junction    │    │             │
-│ LFO 2 Out ──┼───▶│             │    │ Filter  ◀──┼─── [From F OUT]
-│             │    │ F MOD CV◀─┼────┼─ Cutoff CV   │
-│ Trigger 1 ──┼───▶│             │    │             │
-│             │    │ F IN     ◀─┼────┼─ Oscillator  │
-│ LFO 6 Out ──┼───▶│             │    │ PWM     ◀─┼─── [From LFO Tri]
-└─────────────┘    │ LFO Tri  ◀─┼────┼─             │
-                   │ Rate CV     │    │ Audio In ◀─┼─── [Audio Source]
-                   │             │    │             │
-                   │ F OUT    ───┼───▶│ Audio Out──┼─── Final Output
-                   │             │    └─────────────┘
-                   │ Attack: 9   │
-                   │ Decay: 12   │
-                   │ LOOP: ON    │
-                   │ MOD: Attack │
-                   └──────────────┘
+   ┌─────────────────────┐      ┌─────────────────────┐
+   │     DivKid Ochd    │      │   Cre8audio        │
+   │    (Phase 2)       │      │ Function Junction  │
+   │                    │      │   (Phase 2)        │
+   │ LFO 2 ○────────────┼──────┼─▶ F MOD CV          │
+   │       ║            │      │                    │
+   │ Trigger 1○─────────┼──────┼─▶ F IN              │
+   │       ║            │      │                    │
+   │ LFO 6 ○────────────┼──────┼─▶ LFO Rate CV       │
+   │       ║            │      │                    │
+   │       ║            │      │ Attack:  9 o'clock │
+   │       ║            │      │ Decay:  12 o'clock │
+   │       ║            │      │ LOOP:   ON         │
+   │       ║            │      │ MOD:    Attack     │
+   │       ║            │      │                    │
+   │       ║            │      │ F OUT ○────────────┼─── CV (Blue)
+   │       ║            │      │       ║            │
+   │       ║            │      │ LFO Tri○───────────┼─── CV (Blue)
+   │       ║            │      │       ║            │
+   └───────║────────────┘      └───────║────────────┘
+           ║                           ║    ║
+   CV (Blue)║                   CV (Blue)║    ║ CV (Blue)
+           ▼                           ║    ║
+   ┌─────────────────────┐              ▼    ▼
+   │      Filter        │      ┌──────────────────┐
+   │                    │      │   Oscillator     │
+   │ Cutoff CV       ◀──┼──────┼─ PWM Input    ◀──┼─── From LFO Tri
+   │                    │      │                  │
+   │ Audio Input     ◀──┼──────┼─ Audio Input  ◀──┼─── Audio Source
+   │                    │      │                  │
+   │ Audio Output ○─────┼──────┼─ Audio Output ○──┼─── Final Audio
+   └─────────────────────┘      └──────────────────┘
 ```
 
 | Connection | Cable Type | Purpose | Phase 2 Integration |
@@ -174,7 +203,7 @@
 - **Organic evolution:** All modulation sources drift and evolve together
 - **Result:** Complex, evolving modulation that breathes with organic life
 
-### **Patch 3: Advanced - Complex Mixed Modulation Matrix**
+### **Patch 3: Advanced - Phase 2 AI Integration with Marbles**
 ```
 ┌─────────────┐    ┌──────────────┐    ┌─────────────┐
 │ Mutable     │───▶│ Cre8audio   │───▶│   Complex   │
