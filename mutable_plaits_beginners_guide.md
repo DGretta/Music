@@ -277,23 +277,31 @@
 
 ## Pairs Well With
 
-### **Essential Partners:**
-- **Sequencers:** Plaits shines with melodic sequences - chord models perfect for arpeggios
-- **Reverb/Delay (FX Aid, Magneto):** Speech synthesis and granular models love spatial effects
-- **Clock Dividers:** Different trigger patterns for percussion models  
-- **Attenuators/VCAs:** Tame output levels and create dynamics
+### **Phase 2 Module Synergies (Modulation & CV Sources):**
+- **DivKid Ochd & Expander:** Ochd LFOs → Plaits Model/Timbre/Morph for organic synthesis evolution
+- **Make Noise Wogglebug:** Wogglebug chaos CVs → Plaits parameters for controlled uncertainty in synthesis
+- **Mutable Marbles:** Marbles X/t outputs → Plaits Model/Trigger for sophisticated algorithmic synthesis control
+- **4ms RCD v2:** RCD divisions → Plaits Trigger for polyrhythmic synthesis patterns
+- **Cre8audio Function Junction:** Function Junction outputs → Plaits Level/FM for processed modulation
+- **Cross-Phase 2 Integration:** All Phase 2 modules can control every aspect of Plaits synthesis under your creative direction
 
-### **Advanced Combinations:**  
-- **Marbles:** Random triggers for percussion + random CV for model switching
-- **Maths:** Complex envelopes to modulate TIMBRE/MORPH for evolving textures
-- **Data:** Visualize what different synthesis models actually look like
-- **Filters:** Despite built-in LPG, external filters create parallel processing
+### **Phase 1 Module Integration (Core Synthesis):**
+- **Make Noise Maths:** Maths envelopes perfect for Plaits Level/FM/Model control
+- **Mob of Emus:** Harmonic synthesis pairs well with Plaits chord and modal models
+- **Disting mk4:** Use as sequencer/quantizer/processor feeding Plaits V/Oct and Model CV
+- **Complete Phase 1 systems:** Plaits as central synthesis engine processing mathematical relationships
 
-### **Perfect Pairings:**
-- **Multiple Plaits:** Different models for layered synthesis
-- **CV Sequencers:** Model CV input for automatic algorithm switching
-- **External Audio:** Some models process external audio through AUX input
-- **Performance Mixers:** Real-time balance between OUT and AUX outputs
+### **Essential Synthesis Partners:**
+- **External Filters:** Despite built-in LPG, parallel processing creates complex textures
+- **Reverb/Delay Processors:** Speech and granular models especially benefit from spatial effects
+- **VCAs/Mixers:** Balance between OUT and AUX outputs for stereo synthesis
+- **Sequencers/Clock Sources:** Model CV switching creates evolving synthesis algorithms
+
+### **Advanced Multi-Modal Integration:**
+- **Multiple Plaits:** Layer different synthesis models for complex polyphonic textures
+- **Performance Controllers:** Real-time model switching and parameter control
+- **Analysis Tools:** Visualize different synthesis models and their harmonic content
+- **External Audio Processing:** Some models process external audio through dedicated inputs
 
 ---
 
@@ -381,7 +389,44 @@ Plaits **democratizes synthesis knowledge** - you don't need to understand FM th
 
 ---
 
-**Bottom Line:** Plaits isn't just an oscillator - it's a **complete synthesis education** in one module. Every model teaches you something new about how different synthesis methods create sound and music.
+## Phase 2 Learning Path
+
+### **Recommended Study Progression:**
+1. **Start with Plaits fundamentals:** Master all 16 synthesis models and parameter relationships
+2. **Add organic evolution:** Integrate DivKid Ochd for breathing synthesis parameter control (see Ochd guide)
+3. **Include controlled chaos:** Use Make Noise Wogglebug for chaotic synthesis parameter evolution (see Wogglebug guide)
+4. **Add algorithmic sophistication:** Apply Mutable Marbles for sophisticated pattern-based synthesis control (see Marbles guide)
+5. **Include polyrhythmic synthesis:** Use 4ms RCD v2 for mathematical timing control (see RCD guide)
+6. **Complete the ecosystem:** Add Cre8audio Function Junction for processed modulation control (see Function Junction guide)
+
+### **Cross-Module Learning Opportunities:**
+- **Plaits + Ochd:** Learn organic parameter control across all 16 synthesis models
+- **Plaits + Wogglebug:** Master chaotic modulation of synthesis parameters for controlled uncertainty
+- **Plaits + Marbles:** Master sophisticated algorithmic pattern control across synthesis models
+- **Plaits + RCD:** Explore polyrhythmic synthesis timing with mathematical precision
+- **All Phase 2 + Plaits:** Build complete synthesis ecosystems with multiple intelligence types under your guidance
+
+### **Skill Development Milestones:**
+- **Beginner:** Master individual synthesis models and basic parameter control
+- **Intermediate:** Understand model relationships and CV control of synthesis parameters
+- **Advanced:** Create Phase 2 integration patches with sophisticated pattern generation and mathematical processing
+- **Expert:** Design synthesis ecosystems where you guide sophisticated algorithmic systems toward musical goals
+
+### **Advanced Synthesis Concepts:**
+- **Multi-Modal Synthesis:** Understand how 16 different synthesis methods respond to modulation
+- **Algorithmic Pattern Control:** Use sophisticated pattern generation to guide synthesis parameters
+- **User-Directed Evolution:** Guide sophisticated systems toward your musical vision
+- **System Integration:** Design patches where you control multiple intelligence types simultaneously
+
+### **Performance Applications:**
+- **Live Multi-Modal Control:** Real-time synthesis model switching and parameter control
+- **Generative Synthesis:** Foundation for self-evolving synthesis systems under your creative guidance
+- **Hybrid Intelligence:** Bridge between organic, chaos, algorithmic, and mathematical processing
+- **Creative Direction Tool:** Guide sophisticated pattern generation systems toward musical expression
+
+---
+
+**Bottom Line:** Plaits isn't just an oscillator - it's a **complete synthesis education** in one module. Every model teaches you something new about how different synthesis methods create sound and music. As the **central synthesis engine of Phase 2 ecosystems**, it transforms organic breathing, controlled chaos, sophisticated algorithms, and mathematical processing into unified musical expression under your creative direction.
 
 ---
 

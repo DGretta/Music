@@ -386,28 +386,31 @@ This represents **mathematical consciousness in music** - where organic breathin
 
 ## Pairs Well With
 
-### **Essential Partners:**
-- **VCA (Erica Quad VCA2, Doepfer A-130-2):** Maths envelopes control volume shaping
-- **Low Pass Gate (Optomix, or use Wasp/Polivoks filters):** Maths into LPG = classic West Coast plucks  
-- **Mult/Splitter (Intellijel Mult, 2hp Mult):** Essential for sending one Maths output to multiple destinations
-- **Filters (Wasp, Polivoks, Forbidden Planet):** Maths LFOs create classic filter sweeps
+### **Phase 2 Module Synergies (Modulation & CV Sources):**
+- **DivKid Ochd & Expander:** Ochd LFOs → Maths Signal inputs for organic envelope processing
+- **Make Noise Wogglebug:** Wogglebug chaos CVs → Maths channels for mathematical chaos processing  
+- **Mutable Marbles:** Marbles X outputs → Maths processing for AI-driven mathematical relationships
+- **4ms RCD v2:** RCD divisions → Maths triggers for polyrhythmic envelope generation
+- **Cre8audio Function Junction:** Function Junction + Maths = complete envelope ecosystem with feedback
+- **Cross-Phase 2 Integration:** Maths processes all Phase 2 modulation sources into unified mathematical relationships
 
-### **Perfect System Combinations:**
-- **Cre8audio Function Junction:** Two Function generators + Maths = envelope powerhouse
-- **Make Noise Pressure Points:** Touch gates trigger Maths for expressive playing
-- **Instruo CS-L/Castor & Pollux:** Maths can modulate both pitch and timbre simultaneously
-- **4ms RCD v2:** Use Maths EOC/EOR outputs to create polyrhythmic triggers
+### **Phase 1 Module Integration (Core Synthesis):**
+- **Mutable Plaits:** Maths envelopes perfect for Plaits model modulation and synthesis control
+- **Mob of Emus:** Maths mathematical processing ideal for harmonic modulation relationships
+- **Disting mk4:** Use together as quantizer + envelope processor for musical stepped sequences
+- **Complete Phase 1 systems:** Maths as central mathematical processor for synthesis networks
 
-### **Advanced Workflows:**
-- **Plaits + Maths:** Maths modulates Plaits' synthesis models for evolving textures
-- **Arbhar + Maths:** Maths controls granular parameters for organic texture evolution
-- **Mob of Emus + Maths:** Maths as master envelope for harmonic intensity control
-- **Disting mk4 + Maths:** Use Disting quantizer with Maths-generated stepped random
+### **Essential Utility Partners:**
+- **VCAs (Veils, Quad VCA):** Maths envelopes control amplitude shaping and dynamic processing
+- **Low Pass Gates (Optomix):** Classic West Coast plucks with Maths envelope timing
+- **Filters (Forbidden Planet, Wasp):** Maths LFOs and envelopes create classic filter animation
+- **Mult/Splitters:** Essential for distributing Maths outputs to multiple destinations
 
-### **Performance Combinations:**
-- **Cellz touch controller + Maths:** Touch control triggers complex Maths envelopes
-- **Pressure Points + Maths:** Each pressure point triggers different Maths channels
-- **Bloom sequencer + Maths:** Fractal patterns trigger mathematical envelope relationships
+### **Advanced Mathematical Integration:**
+- **Sample & Hold modules:** Clock S&H with Maths EOC/EOR for stepped envelope relationships
+- **Logic modules:** Combine Maths outputs with Boolean logic for complex mathematical relationships
+- **Quantizers:** Process Maths CV outputs into musical scales and intervals
+- **Comparators:** Convert Maths envelopes to gates/triggers for mathematical timing relationships
 
 ---
 
@@ -484,7 +487,44 @@ Maths **thinks in musical time** - from microseconds to half-hours. It's not jus
 
 ---
 
-**Bottom Line:** Maths isn't just a module - it's a **musical computer** that teaches you to think in voltage and time. Every patch teaches you something new about how modular synthesis really works.
+## Phase 2 Learning Path
+
+### **Recommended Study Progression:**
+1. **Start with Maths fundamentals:** Master envelope generation, LFO cycling, and mathematical mixing
+2. **Add organic processing:** Integrate DivKid Ochd for breathing mathematical relationships (see Ochd guide)
+3. **Include chaos processing:** Use Make Noise Wogglebug for mathematical chaos processing (see Wogglebug guide)
+4. **Add AI intelligence:** Apply Mutable Marbles for intelligent mathematical relationships (see Marbles guide)
+5. **Include rhythmic math:** Use 4ms RCD v2 for polyrhythmic mathematical timing (see RCD guide)
+6. **Complete the ecosystem:** Add Cre8audio Function Junction for comprehensive modulation processing (see Function Junction guide)
+
+### **Cross-Module Learning Opportunities:**
+- **Maths + Ochd:** Learn organic modulation processing through mathematical relationships
+- **Maths + Wogglebug:** Master chaos processing via analog mathematical computation
+- **Maths + Marbles:** Understand AI + mathematical hybrid intelligence systems
+- **Maths + RCD:** Explore polyrhythmic mathematical timing relationships
+- **All Phase 2 + Maths:** Build complete mathematical ecosystems with multiple intelligence types
+
+### **Skill Development Milestones:**
+- **Beginner:** Use individual channels for basic envelope and LFO functions
+- **Intermediate:** Master SUM mixing and attenuverter control for complex mathematical relationships
+- **Advanced:** Create Phase 2 integration patches with mathematical processing of organic/chaos/AI sources
+- **Expert:** Design mathematical ecosystems where Maths serves as central computational brain
+
+### **Advanced Mathematical Concepts:**
+- **Analog Computation:** Understand how Maths performs mathematical operations on musical voltages
+- **Mathematical Mixing:** Use SUM and individual outputs for complex mathematical relationships
+- **Envelope Mathematics:** Explore how Rise/Fall create mathematical curves in musical time
+- **System Integration:** Design patches where Maths processes multiple intelligence types simultaneously
+
+### **Performance Applications:**
+- **Live Mathematical Control:** Real-time envelope and mathematical relationship control
+- **Generative Mathematics:** Foundation for self-evolving mathematical music systems
+- **Hybrid Intelligence:** Bridge between organic, chaos, AI, and mathematical processing
+- **Educational Tool:** Learn analog computation and mathematical synthesis concepts
+
+---
+
+**Bottom Line:** Maths isn't just a module - it's a **musical computer** that teaches you to think in voltage and time. Every patch teaches you something new about how modular synthesis really works. As the **mathematical brain of Phase 2 ecosystems**, it transforms organic breathing, controlled chaos, and artificial intelligence into unified musical mathematics.
 
 ---
 

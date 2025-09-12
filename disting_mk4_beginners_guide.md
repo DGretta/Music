@@ -355,23 +355,31 @@ Instead of buying dozens of modules, Disting mk4 gives you **one module that can
 
 ## Pairs Well With
 
-### **Essential Partners:**
-- **SD Card (32GB SDHC recommended):** Unlocks sample playback, MIDI, wavetables
-- **Clock Source:** Essential for rhythm-synced delays and LFOs
-- **CV Sources:** Multiple inputs benefit from having various CV available
-- **Audio Sources:** Brings life to the extensive audio processing algorithms
+### **Phase 2 Module Synergies (Modulation & CV Sources):**
+- **DivKid Ochd & Expander:** Use Disting quantizers to process Ochd organic LFOs into musical scales
+- **Make Noise Wogglebug:** Disting logic/CV processing algorithms perfect for taming Wogglebug chaos
+- **Mutable Marbles:** Use Disting as probability processor and pattern quantizer for Marbles algorithms
+- **4ms RCD v2:** Clock processing and division algorithms complement RCD's polyrhythmic outputs
+- **Cre8audio Function Junction:** Disting envelope and LFO algorithms provide additional modulation processing
+- **Cross-Phase 2 Integration:** Disting serves as utility hub processing all Phase 2 modulation sources
 
-### **Perfect Combinations:**
-- **Quantizers + Random CV:** Instant musical sequences from chaos
-- **Filters + Audio Sources:** Classic synthesis signal chain
-- **Sample Playback + Triggers:** Complete drum machine or melodic instruments
-- **Delays + Feedback Loops:** Complex audio manipulation and sound design
+### **Phase 1 Module Integration (Core Synthesis):**
+- **Make Noise Maths:** Use Disting quantizers to process Maths CV outputs into musical sequences
+- **Mutable Plaits:** Audio processing algorithms perfect for Plaits synthesis models
+- **Mob of Emus:** Mathematical processing algorithms complement harmonic relationships
+- **Complete Phase 1 systems:** Disting as central utility processor for synthesis networks
 
-### **System Integration:**
-- **Small Systems:** Single module providing dozens of functions
-- **Large Systems:** Fill gaps and provide specialized functions
-- **Performance Rigs:** Quick algorithm changes for live flexibility
-- **Studio Systems:** Recall-able setups via preset system
+### **Essential Utility Partners:**
+- **SD Card (32GB SDHC recommended):** Unlocks sample playback, MIDI, wavetables, and custom scales
+- **Clock Sources:** Essential for rhythm-synced delays, LFOs, and sequencer algorithms
+- **CV Sources:** Multiple CV inputs benefit from having various modulation available
+- **Audio Sources:** Brings life to the extensive audio processing and analysis algorithms
+
+### **Advanced System Integration:**
+- **Small Systems:** Single module providing dozens of essential functions
+- **Large Systems:** Fill gaps and provide specialized utility functions not available elsewhere
+- **Performance Rigs:** Quick algorithm changes for live flexibility and real-time function switching
+- **Studio Systems:** Recall-able setups via comprehensive preset system
 
 ---
 
@@ -454,7 +462,44 @@ Disting mk4 **democratizes modular synthesis** by making every function accessib
 
 ---
 
-**Bottom Line:** Disting mk4 isn't just a module - it's an entire modular synthesis education and toolkit in 4HP. Every patch teaches you something new, and there's always another algorithm to explore.
+## Phase 2 Learning Path
+
+### **Recommended Study Progression:**
+1. **Start with Disting fundamentals:** Master algorithm navigation and basic CV/audio processing
+2. **Add organic processing:** Use quantizer and CV utilities to process DivKid Ochd outputs (see Ochd guide)
+3. **Include chaos processing:** Apply logic and CV processing algorithms to Make Noise Wogglebug outputs (see Wogglebug guide)
+4. **Add algorithmic processing:** Use probability and pattern algorithms with Mutable Marbles (see Marbles guide)
+5. **Include polyrhythmic processing:** Apply clock and timing algorithms to 4ms RCD v2 (see RCD guide)
+6. **Complete the ecosystem:** Use as utility hub for Cre8audio Function Junction integration (see Function Junction guide)
+
+### **Cross-Module Learning Opportunities:**
+- **Disting + Ochd:** Learn to quantize organic modulation into musical scales and patterns
+- **Disting + Wogglebug:** Master chaos processing through mathematical and logical operations
+- **Disting + Marbles:** Understand algorithmic pattern processing and probability manipulation
+- **Disting + RCD:** Explore clock processing and mathematical timing relationships
+- **All Phase 2 + Disting:** Build complete ecosystems where Disting serves as central utility processor
+
+### **Skill Development Milestones:**
+- **Beginner:** Master algorithm navigation and basic CV/audio processing functions
+- **Intermediate:** Understand algorithm categories and complex signal routing
+- **Advanced:** Create Phase 2 integration patches where Disting processes multiple intelligence types
+- **Expert:** Design utility networks where Disting serves as central processor for entire ecosystems
+
+### **Advanced Utility Concepts:**
+- **Multi-Algorithm Workflows:** Chain multiple algorithms for complex processing
+- **Utility Hub Design:** Use Disting as central processor for modulation ecosystems
+- **System Problem Solving:** Apply specific algorithms to solve synthesis and modulation challenges
+- **Real-Time Processing:** Use algorithm switching for live performance and system reconfiguration
+
+### **Performance Applications:**
+- **Live Utility Switching:** Real-time algorithm changes for dynamic system reconfiguration
+- **Generative Processing:** Foundation for self-evolving utility processing systems
+- **Hybrid Processing:** Bridge between different modulation types and synthesis approaches
+- **Educational Tool:** Learn every aspect of modular synthesis through hands-on algorithm exploration
+
+---
+
+**Bottom Line:** Disting mk4 isn't just a module - it's an entire modular synthesis education and toolkit in 4HP. Every patch teaches you something new, and there's always another algorithm to explore. As the **central utility processor of Phase 2 ecosystems**, it transforms organic breathing, controlled chaos, sophisticated algorithms, and mathematical processing into useful, musical utilities under your creative direction.
 
 ---
 
