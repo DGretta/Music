@@ -159,10 +159,10 @@
 
 | Module | Parameter | Source | Purpose | Phase 2 Integration |
 |--------|-----------|--------|---------|-------------------|
-| **Marbles** | Rate CV | Ochd LFO 1 | **Organic tempo variations** | **Breathing AI rhythm** |
+| **Marbles** | Rate CV | Ochd LFO 1 | **Organic tempo variations** | **Breathing algorithmic rhythm** |
 | **Marbles** | Spread CV | Ochd LFO 3 | **Evolving voltage distribution** | **Organic pattern character** |
 | **Marbles** | Bias CV | Ochd LFO 7 | **Shifting high/low preference** | **Organic tonal movement** |
-| **Oscillator** | 1V/Oct | Marbles X1 | **AI-controlled pitch** | **Musical artificial intelligence** |
+| **Oscillator** | 1V/Oct | Marbles X1 | **Algorithmically-controlled pitch** | **Musical pattern generation** |
 | **Filter** | Cutoff CV | Ochd LFO 1 | **Organic filter movement** | **Breathing spectral evolution** |
 
 **Module Settings:**
@@ -249,7 +249,7 @@
 **⏰ **Humanized Timing:** Add natural feel to rigid clock sources**
 **🎵 **Generative Composition:** Create self-evolving musical structures**
 **🎛️ **Performance Tool:** Real-time control over randomness and repetition**
-**🤖 **AI Music Partner:** Collaborative intelligence that learns your musical preferences**
+**🎹 **Algorithmic Music Partner:** Sophisticated pattern generator that responds to your creativity**
 
 ---
 
@@ -257,33 +257,33 @@
 
 ### **Essential Phase 2 Progressions:**
 1. **Start here** with basic intelligent randomness and DEJA VU concepts
-2. **Add organic breathing** with DivKid Ochd for natural rhythm variations (see Ochd guide)
+2. **Add organic breathing** with DivKid ochd for natural rhythm variations (see ochd guide)
 3. **Introduce controlled chaos** with Make Noise Wogglebug for unpredictable elements (see Wogglebug guide)
 4. **Add mathematical structure** with 4ms RCD v2 for polyrhythmic precision (see RCD guide)
 5. **Process everything** with Cre8audio Function Junction for refined modulation (see Function Junction guide)
-6. **Build complete AI systems** using feedback and cross-module learning networks
+6. **Build complete algorithmic systems** using feedback and cross-module pattern networks
 
 ### **Phase 2 Integration Strategies:**
 
-**With DivKid Ochd:**
-- **Organic AI learning:** Ochd's breathing rhythms teach Marbles natural timing
+**With DivKid ochd:**
+- **Organic algorithmic patterns:** ochd's breathing rhythms provide natural timing for Marbles
 - **Rate modulation:** LFO 1 → Marbles Rate CV for organic tempo breathing
 - **Character evolution:** LFO 3/7 → Spread/Bias for evolving pattern character
 
 **With Make Noise Wogglebug:**
-- **Controlled chaos:** Wogglebug randomness + Marbles intelligence = musical chaos
+- **Controlled chaos:** Wogglebug randomness + Marbles probability control = musical chaos
 - **Stepped sequences:** Wogglebug Stepped + Marbles quantization = evolving melodies  
-- **Chaos learning:** Marbles learns to make Wogglebug output more musical over time
+- **Chaos processing:** Marbles can make Wogglebug output more musical through probability shaping
 
 **With 4ms RCD v2:**
-- **Polyrhythmic intelligence:** RCD divisions trigger Marbles at mathematical ratios
-- **Precise timing:** RCD clocks provide structured timing for Marbles to learn from
-- **Mathematical evolution:** Marbles learns musical relationships within mathematical structures
+- **Polyrhythmic patterns:** RCD divisions trigger Marbles at mathematical ratios
+- **Precise timing:** RCD clocks provide structured timing for Marbles to respond to
+- **Mathematical pattern evolution:** Marbles creates musical relationships within mathematical structures
 
 **With Cre8audio Function Junction:**
 - **Modulation processing:** Function Junction shapes Marbles outputs into musical envelopes
-- **Learning feedback:** Function Junction triggers feed back to teach Marbles timing
-- **Multi-stage AI:** Marbles generates, Function Junction refines and processes
+- **Pattern feedback:** Function Junction triggers provide rhythmic structure to Marbles
+- **Multi-stage processing:** Marbles generates, Function Junction refines and processes
 
 ---
 
