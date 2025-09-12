@@ -389,14 +389,14 @@ This represents the **ultimate filter ecosystem** - where organic breathing, con
 
 ## Common Use Cases
 
-**🎛️ **Classic Subtractive Synthesis:** Use Moog Ladder (Mode I) for warm, musical filtering**
-**🔥 **Acid Lines:** MS-20 filter (Mode II) with high resonance for aggressive textures**
-**🥁 **Percussion Processing:** Low-Pass Gates (Modes III, IV) for natural drum shaping**
-**🎧 **DJ-Style Performance:** Isolator mode (Mode V) for dramatic frequency isolation**
-**✨ **Special Effects:** Comb filter (Mode VIII) for phasing and flanging textures**
-**🌟 **Stereo Widening:** All Access Pass mode for instant spatial enhancement**
-**🎵 **Multi-Timbral:** Meta CV scanning for real-time filter character changes**
-**🔊 **Live Performance:** Multiple modes and CV control for dynamic filter evolution**
+- **🎛️ **Classic Subtractive Synthesis:** Use Moog Ladder (Mode I) for warm, musical filtering**
+- **🔥 **Acid Lines:** MS-20 filter (Mode II) with high resonance for aggressive textures**
+- **🥁 **Percussion Processing:** Low-Pass Gates (Modes III, IV) for natural drum shaping**
+- **🎧 **DJ-Style Performance:** Isolator mode (Mode V) for dramatic frequency isolation**
+- **✨ **Special Effects:** Comb filter (Mode VIII) for phasing and flanging textures**
+- **🌟 **Stereo Widening:** All Access Pass mode for instant spatial enhancement**
+- **🎵 **Multi-Timbral:** Meta CV scanning for real-time filter character changes**
+- **🔊 **Live Performance:** Multiple modes and CV control for dynamic filter evolution**
 
 ---
 
