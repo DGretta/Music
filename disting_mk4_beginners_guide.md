@@ -281,6 +281,94 @@ Instead of buying dozens of modules, Disting mk4 gives you **one module that can
 - **Complex signal routing:** Multiple modules, multiple functions, musical results
 - **System-level thinking:** Design patches as integrated ecosystems
 
+### **Patch 4: Expert - Complete Phase 2 Utility Ecosystem**
+```
+┌─────────────┐ ┌─────────────┐ ┌─────────────┐ ┌─────────────┐
+│   DivKid    │ │ Make Noise  │ │ Mutable     │ │ 4ms RCD v2  │
+│    Ochd     │ │ Wogglebug   │ │  Marbles    │ │ (Phase 2)   │
+│ (Organic)   │ │ (Chaos)     │ │ (Patterns)  │ │             │
+│             │ │             │ │             │ │ Div 2 ○─────┼─┼─Clock Ref   │
+│ LFO 2 ○─────┼─┼─Stepped ○   │ │ X1 Out ○───┼─┼─             │
+│       ║     │ │        ║    │ │       ║     │ │ Div 4 ○─────┼─┼─Gate Seq    │
+│ LFO 6 ○─────┼─┼─Smooth ○    │ │ X2 Out ○───┼─┼─             │
+│       ║     │ │        ║    │ │       ║     │ │             │
+└───────║─────┘ └────────║────┘ └───────║─────┘ └─────────────┘
+        ║                ║              ║
+        ▼                ▼              ▼
+┌──────────────────────────────────────────────────────────────────────────────┐
+│                              Disting mk4                               │
+│                        (Central Utility Hub)                        │
+│                                                                        │
+│ Algorithm Switching via Preset System:                                │
+│                                                                        │
+│ Preset 1: A-6 Quantizer                                               │
+│ • X Input ◀─ Organic LFO CV (musical scale processing)                │
+│ • A Output ─▶ Quantized organic CV → Synthesis modules             │
+│ • Z Knob: Scale selection (Major, Minor, Exotic scales)               │
+│                                                                        │
+│ Preset 2: H-1 Logic Operations                                        │
+│ • X Input ◀─ Chaos stepped CV (logic processing)                     │
+│ • Y Input ◀─ Pattern gates (complex boolean operations)              │
+│ • A/B Outputs ─▶ Complex trigger patterns → Rhythm modules        │
+│                                                                        │
+│ Preset 3: B-5 LFO + A-1 Precision Adder (Dual Function)              │
+│ • Internal LFO generation for system clock reference                   │
+│ • CV addition/offset for pitch and modulation processing               │
+│ • Real-time switching between functions via preset recall              │
+│                                                                        │
+│ Live Performance Features:                                             │
+│ • Instant algorithm switching via preset system                        │
+│ • Real-time Z knob control for performance expression                  │
+│ • Visual feedback via socket LEDs and display                          │
+│                                                                        │
+│ A Output ○───────────────────────────────────────────────┼─── Processed
+│                                                                        │
+│ B Output ○───────────────────────────────────────────────┼─── Phase 2
+└──────────────────────────────────────────────────────────────────────────────┘   Intelligence
+                              ║                                 Processing
+                         Utility║
+                      Processing║
+                              ▼
+                    ┌─────────────────────┐
+                    │   Complete Musical  │
+                    │     Ecosystem       │
+                    │                     │
+                    │ Organic + Chaos +   │
+                    │ Patterns + Math +   │
+                    │ Utility Processing  │
+                    │ = Total Control     │
+                    │                     │
+                    │ System Output ○─────┼─── Perfect Musical
+                    └─────────────────────┘       Utility Processing
+```
+
+**Complete Phase 2 Utility Processing Integration:**
+
+| Intelligence Layer | Function | Disting Processing | Musical Result |
+|-------------------|----------|-------------------|----------------|
+| **Organic (Ochd)** | Natural breathing | **Quantizer algorithms** | **Musical scale processing of organic modulation** |
+| **Chaos (Wogglebug)** | Controlled uncertainty | **Logic + CV processing** | **Mathematical taming of chaos** |
+| **Pattern (Marbles)** | Sophisticated sequences | **Trigger processing + probability** | **Pattern enhancement and routing** |
+| **Mathematical (RCD)** | Polyrhythmic timing | **Clock processing + division** | **Complex timing relationships** |
+| **Utility (Disting)** | Universal processing | **80+ algorithms available** | **Perfect utility processing for any need** |
+
+**Expert System Design:**
+- **Disting as central utility brain:** All Phase 2 sources processed through optimal algorithms
+- **Preset-based algorithm switching:** Instant reconfiguration for different processing needs
+- **Real-time utility control:** Z knob and parameter control for live utility processing
+- **Universal problem solving:** Any utility function needed is available instantly
+- **Complete utility ecosystem:** Every processing need covered by single 4HP module
+
+**Advanced Performance:**
+1. **System initialization:** Each Phase 2 module establishes its character
+2. **Utility processing:** Disting optimally processes each source type with appropriate algorithms
+3. **Real-time switching:** Preset system allows instant algorithm changes for different musical contexts
+4. **Universal processing:** Any utility function becomes available when needed
+5. **Utility transcendence:** Perfect processing of sophisticated pattern generation systems
+
+**Philosophical Achievement:**
+This represents the **ultimate utility processing ecosystem** - where organic breathing, controlled chaos, sophisticated pattern generation, and mathematical precision all receive optimal utility processing through a universal algorithm library, creating perfectly processed musical systems under your creative direction.
+
 ---
 
 ## Advanced Techniques
@@ -321,35 +409,14 @@ Instead of buying dozens of modules, Disting mk4 gives you **one module that can
 
 ## Common Use Cases
 
-### **CV Processing & Logic:**
-- **Precision math** on control voltages (add, multiply, compare)
-- **Quantization** to musical scales with extensive scale library
-- **Logic operations** for complex trigger processing
-- **Format conversion** between different synthesizer standards
-
-### **Modulation Generation:**
-- **LFOs** with Hz/V or clockable operation
-- **Envelopes** with various trigger modes and shapes
-- **Sample & Hold** with multiple noise colors
-- **Random CV generation** with shift register patterns
-
-### **Audio Processing:**
-- **Filters** in every configuration (LP, HP, BP, notch, state-variable)
-- **Delays** with tape simulation, ping-pong, and SD card storage
-- **Effects** including phaser, chorus, vocoder, granular processing
-- **Dynamics** compression, limiting, and envelope following
-
-### **Sample Playback & Sequencing:**
-- **Audio playback** with pitch, speed, and scrub control
-- **MIDI file playback** for complex sequences
-- **Wavetable synthesis** with custom wavetables
-- **Multi-sampling** for complete instruments
-
-### **System Utilities:**
-- **Clock generation** and division with complex patterns
-- **References** for tuning and calibration
-- **MIDI conversion** between CV and MIDI domains
-- **Mixing** and crossfading of signals
+1. **🔢 CV Processing & Logic:** Precision math on control voltages (add, multiply, compare), quantization to musical scales, logic operations
+2. **🌊 Modulation Generation:** LFOs with Hz/V or clock sync, envelopes with various shapes, sample & hold, random CV generation
+3. **🔊 Audio Processing:** Filters in every configuration, delays with tape simulation, effects including phaser/chorus/vocoder
+4. **🎵 Sample Playback & Sequencing:** Audio playback with pitch control, MIDI file playback, wavetable synthesis, multi-sampling
+5. **⏰ System Utilities:** Clock generation and division, tuning references, MIDI/CV conversion, signal mixing
+6. **🎛️ Utility Hub:** Central processing unit for Phase 2 modulation ecosystems
+7. **🔧 Problem Solver:** Always have the exact utility function needed for any synthesis challenge
+8. **📚 Learning Tool:** Explore every aspect of modular synthesis through 80+ algorithm implementations
 
 ---
 
