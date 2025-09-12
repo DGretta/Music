@@ -59,9 +59,69 @@
 
 ---
 
-## Beginner Patch Ideas
+## Progressive Patch Examples
 
-### **Patch 1: Simple Melodic Resonator**
+### **Patch 1: First Steps - Basic Physical Modeling**
+```
+                    ┌─────────────────────┐
+                    │   Mutable Rings     │
+                    │                     │
+     1V/Oct CV ─────┼─▶ V/OCT Input       │
+                    │                     │
+     Gate/Trig ─────┼─▶ STRUM Input       │
+                    │                     │
+                    │ FREQUENCY: 12 o'clk │
+                    │ STRUCTURE: 12 o'clk │
+                    │ BRIGHTNESS:2 o'clk  │
+                    │ DAMPING:  10 o'clk  │
+                    │ POSITION:  1 o'clk  │
+                    │                     │
+                    │ Resonator Mode:     │
+                    │ Green LED (Modal)   │
+                    │                     │
+                    │ ODD Output ○───────┼─── Audio (Red)
+                    │                     │
+                    │ EVEN Output ○──────┼─── Audio (Red)
+                    └─────────────────────┘
+                             ║       ║
+                        Audio║  Audio║
+                        (Red)║ (Red) ║
+                             ▼       ▼
+                    ┌─────────────────────┐
+                    │    Stereo Mixer     │
+                    │                     │
+                    │ Left Input      ◀──┼─── ODD Harmonics
+                    │                     │
+                    │ Right Input     ◀──┼─── EVEN Harmonics
+                    │                     │
+                    │ Stereo Output ○───┼─── Physical Modeling
+                    └─────────────────────┘
+```
+
+| Connection | Cable Type | Purpose | Learning Objective |
+|------------|------------|---------|-------------------|
+| 1V/Oct CV → V/OCT Input | CV (Blue) | **Harmonic pitch tracking** | **Learn physical modeling fundamentals** |
+| Gate/Trigger → STRUM Input | Gate (Yellow) | **Trigger resonant bursts** | **Experience acoustic triggering** |
+| ODD Output → Left Mix | Audio (Red) | **Odd harmonics** | **Understand harmonic separation** |
+| EVEN Output → Right Mix | Audio (Red) | **Even harmonics** | **Stereo harmonic imaging** |
+
+**Module Settings:**
+- **Rings Mode:** Green LED (Modal resonator)
+- **Voices:** 1 voice for maximum resolution
+- **DAMPING:** 10 o'clock (musical decay time)
+- **BRIGHTNESS:** 2 o'clock (bright, present sound)
+
+**Learning Objectives:**
+- Understand physical modeling vs. traditional synthesis
+- Experience acoustic instrument simulation
+- Learn harmonic separation between ODD/EVEN outputs
+- Discover natural decay envelopes in physical modeling
+
+**Visual Feedback:**
+- **Green LED:** Shows Modal resonator mode
+- **Single voice LED:** Maximum quality physical modeling
+- **Parameter LEDs:** Show real-time CV modulation
+- **Result:** Beautiful bell-like tones with natural acoustic behavior
 ```
 [Sequencer] ──1V/OCT──→ [Rings V/OCT]
 [Rings ODD] ──→ [Reverb] ──→ [Audio Out]
@@ -71,7 +131,60 @@
 **Controls:** STRUCTURE changes materials, BRIGHTNESS for tone, POSITION for character
 **Sound:** Beautiful, bell-like melodic sequences with natural decay
 
-### **Patch 2: External Audio Processing**
+### **Patch 2: Intermediate - Phase 2 Organic Evolution with Ochd**
+```
+   ┌─────────────────────┐      ┌─────────────────────┐
+   │   DivKid Ochd      │      │   Mutable Rings     │
+   │    (Phase 2)       │      │                     │
+   │                    │      │                     │
+   │ LFO 2 ○────────────┼──────┼─▶ STRUCTURE CV      │
+   │       ║            │      │                     │
+   │ LFO 4 ○────────────┼──────┼─▶ BRIGHTNESS CV     │
+   │       ║            │      │                     │
+   │ LFO 6 ○────────────┼──────┼─▶ DAMPING CV        │
+   │       ║            │      │                     │
+   │ LFO 8 ○────────────┼──────┼─▶ POSITION CV       │
+   │       ║            │      │                     │
+   │       ║            │      │ Polyphonic Mode:    │
+   │       ║            │      │ 4-voice chords      │
+   │       ║            │      │                     │
+   │       ║            │      │ ODD Output ○───────┼─── Audio (Red)
+   │       ║            │      │                     │
+   │       ║            │      │ EVEN Output ○──────┼─── Audio (Red)
+   └───────║────────────┘      └─────────────────────┘
+           ║                           ║       ║
+   CV (Blue)║                      Audio║  Audio║
+           ▼                      (Red)║ (Red) ║
+   ┌─────────────┐                    ▼       ▼
+   │ Sequencer/    │           ┌─────────────────────┐
+   │ Clock Source  │           │   Spatial Effects   │
+   │               │           │                     │
+   │ STRUM Trigs○─┼──────────┼─ Left Input      ◀──┼─── ODD
+   │               │           │                     │
+   └─────────────┘           │ Right Input     ◀──┼─── EVEN
+                               │                     │
+                               │ Processed Out ○───┼─── Organic Physical
+                               └─────────────────────┘     Modeling
+```
+
+| Phase 2 Integration | Rings Parameter | Purpose | Organic Result |
+|-------------------|-----------------|---------|----------------|
+| **Ochd LFO 2 → Structure CV** | Physical modeling structure | **Evolving resonator character** | **Breathing acoustic spaces** |
+| **Ochd LFO 4 → Brightness CV** | Harmonic content | **Organic timbral evolution** | **Natural spectral movement** |
+| **Ochd LFO 6 → Damping CV** | Resonance decay | **Living sustain behavior** | **Breathing resonance** |
+| **Ochd LFO 8 → Position CV** | Excitation point | **Organic playing technique** | **Natural performance variation** |
+
+**Module Settings:**
+- **Rings:** Polyphonic mode for rich harmonic content
+- **Ochd Rate:** 1 o'clock for slow, organic parameter evolution
+- **All LFOs:** Different phases creating complex organic interactions
+- **Spatial processing:** Separate ODD/EVEN outputs for stereo imaging
+
+**Learning Objectives:**
+- **Phase 2 organic integration:** Ochd's breathing modulation applied to physical modeling
+- **Multi-parameter organic control:** Multiple aspects of physical modeling evolving together
+- **Acoustic space simulation:** Physical modeling creating realistic acoustic environments
+- **Stereo physical modeling:** Using dual outputs for spatial acoustic simulation
 ```
 [Audio Source] ──→ [Rings IN input]
 [Rings ODD] ──→ [Audio Out]
