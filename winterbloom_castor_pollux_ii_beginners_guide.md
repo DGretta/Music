@@ -71,51 +71,236 @@
 
 ---
 
-## Beginner Patch Ideas
+## Progressive Patch Examples
 
-### **Patch 1: Classic Juno Lead**
+### **Patch 1: First Steps - Classic Juno Lead**
 ```
-[Keyboard] ──1V/OCT──→ [Castor PITCH CV]
-[Castor OUT] ──→ [Filter] ──→ [VCA] ──→ [Audio out]
+                    ┌─────────────────────────────────┐
+                    │  Winterbloom Castor & Pollux   │
+                    │                                │
+     1V/Oct CV ─────┼─▶ Castor PITCH CV              │
+                    │                                │
+                    │ MODE: Chorus (Blue LED)        │
+                    │ Castor RAMP: Full CW           │
+                    │ Castor PULSE: 25%              │
+                    │ CROSSFADE: 9 o'clock           │
+                    │                                │
+                    │ Castor OUT ○───────────────────┼─── Audio (Red)
+                    │                                │
+                    │ Status: Classic Juno Voice     │
+                    └─────────────────────────────────┘
+                             ║
+                        Audio║
+                        (Red)║
+                             ▼
+                    ┌─────────────────────┐
+                    │      Filter         │
+                    │                     │
+                    │ Audio In        ◀───┼─── Classic Juno Lead
+                    │                     │
+                    │ Audio Out ○─────────┼─── Final Output
+                    └─────────────────────┘
 ```
-**Setup:** Chorus mode (default), RAMP mix up, PULSE mix at 25%
-**Controls:** Use CROSSFADE to add Pollux for detuned thickness
-**Result:** Classic 80s lead sound with built-in chorus movement
-**Performance:** MODE button switches between chorus types for variety
 
-### **Patch 2: Thick Detuned Pad**
-```
-[Sequence] ──→ [Mult] ──┬──→ [Castor PITCH CV]
-                        └──→ [Pollux PITCH CV]
-[CROSSFADE OUT] ──→ [Filter] ──→ [Reverb] ──→ [Audio out]
-```
-**Setup:** Detune Pollux slightly from Castor using pitch knobs
-**Mix:** Both oscillators with RAMP and PULSE waves
-**CROSSFADE:** Around 12 o'clock for equal blend
-**Result:** Lush, beating pad sounds perfect for ambient music
+| Connection | Cable Type | Notes |
+|------------|------------|-------|
+| 1V/Oct CV → Castor PITCH | CV (Blue) | Keyboard or sequencer pitch control |
+| Castor OUT → Filter | Audio (Red) | Classic Juno sawtooth tone |
 
-### **Patch 3: Hard Sync Lead**
-```
-[Keyboard] ──1V/OCT──→ [Castor PITCH CV] (stays in tune)
-[LFO] ──→ [Pollux PITCH CV] (creates sync sweep)
-[CROSSFADE OUT] ──→ [Audio out]
-```
-**Setup:** Hard Sync mode (pink LED), adjust Pollux pitch for timbral sweep
-**Controls:** LFO modulates Pollux pitch for automatic sync sweeps
-**Result:** Metallic, harmonically rich leads perfect for aggressive sounds
-**Experiment:** Try different LFO speeds for different sweep characters
+**Module Settings:**
+- **Mode:** Chorus (default blue LED)
+- **Castor RAMP mix:** Full clockwise (main sawtooth)
+- **Castor PULSE mix:** 25% for slight square wave blend
+- **CROSSFADE:** 9 o'clock (mostly Castor with hint of chorus)
 
-### **Patch 4: Dual Independent Oscillators**
+**Learning Objectives:**
+- Experience authentic Juno-106 oscillator character
+- Understand waveform mixing with small trim knobs
+- Learn MODE button operation and visual feedback
+- Master basic dual-oscillator relationship
+
+**Visual Feedback:**
+- **Blue LED:** Chorus mode active
+- **Waveform response:** Hear classic Juno brightness and movement
+- **Result:** Authentic 80s lead sound with built-in character
+
+### **Patch 2: Intermediate - Phase 2 Organic Juno Evolution**
 ```
-[Castor OUT] ──→ [Filter 1] ──→ [Left audio]
-[Pollux OUT] ──→ [Filter 2] ──→ [Right audio]
-[Sequencer A] ──→ [Castor PITCH CV]
-[Sequencer B] ──→ [Pollux PITCH CV]
+   ┌─────────────────────┐      ┌─────────────────────────────────┐
+   │   DivKid Ochd      │      │  Winterbloom Castor & Pollux   │
+   │    (Phase 2)       │      │                                │
+   │                    │      │ Audio Source             ◀─────┼─── [External Audio]
+   │ LFO 3 ○────────────┼──────┼─▶ Castor PITCH CV              │
+   │       ║            │      │                                │
+   │ LFO 6 ○────────────┼──────┼─▶ Pollux PITCH CV              │
+   │       ║            │      │                                │
+   │ LFO 1 ○────────────┼──────┼─▶ CROSSFADE CV (via web editor)│
+   │       ║            │      │                                │
+   │ Trigger 2○─────────┼──────┼─▶ MODE Trigger (via web editor)│
+   │       ║            │      │                                │
+   │ Rate: 12 o'clock   │      │ MODE: All modes cycling        │
+   │ (Organic timing)   │      │ Detuning: Slight Pollux offset │
+   │                    │      │                                │
+   └───────║────────────┘      │ CROSSFADE OUT ○────────────────┼─── Organic
+           ║                   │                                │    Juno
+   CV (Blue)║                   └─────────────────────────────────┘    Evolution
+           ▼                            ║
+   ┌─────────────────┐                 Audio║
+   │   Effects       │                 (Red)║
+   │ Processing      │                      ▼
+   │                 │             ┌─────────────────────┐
+   │ Modulation  ◀───┼─────────────┼─ Chorus/Reverb      │
+   │ CV Input        │             │                     │
+   │                 │             │ Audio In        ◀───┼─── Organic Juno
+   │ Audio Out   ○───┼─────────────┼─                     │
+   └─────────────────┘             │ Spatial Out ○───────┼─── Complete
+                                   └─────────────────────┘    Organic
+                                                              Experience
 ```
-**Setup:** Use each oscillator independently for different voices
-**Different sequences:** Each oscillator plays different melodic lines
-**Processing:** Different filters/effects for each oscillator
-**Result:** Two-voice polyrhythmic sequences from one module
+
+| Module Integration | Signal Flow | Purpose | Phase 2 Synergy |
+|-------------------|-------------|---------|------------------|
+| **Ochd LFO 3 → Castor Pitch** | Organic frequency drift | **Breathing pitch evolution** | **Natural Juno character drift** |
+| **Ochd LFO 6 → Pollux Pitch** | Organic detuning | **Breathing thickness control** | **Natural beating evolution** |
+| **Ochd LFO 1 → Crossfade** | Organic blending | **Breathing oscillator balance** | **Natural voice morphing** |
+| **Ochd Trigger 2 → Mode** | Organic mode switching | **Character evolution** | **Natural Juno mode changes** |
+
+**Module Settings:**
+- **Ochd Rate:** 12 o'clock for musical organic timing
+- **Web Editor:** Enable CV control of crossfade and mode switching
+- **Pollux detuning:** Slight pitch offset for natural beating
+- **All modes active:** Organic switching between chorus/FM/sync modes
+
+**Learning Objectives:**
+- **Organic Juno processing:** Natural breathing applied to vintage character
+- **Web editor integration:** Advanced CV control setup
+- **Multi-mode evolution:** Organic switching between Juno characteristics
+- **Phase 2 + vintage integration:** Modern modulation with classic sound
+
+### **Patch 3: Advanced - Phase 2 Algorithmic Juno Intelligence**
+```
+┌─────────────────────┐    ┌─────────────────────────────────┐
+│   Mutable Marbles   │    │ Make Noise Maths               │
+│     (Phase 2)       │    │   (Phase 1)                    │
+│                     │    │                                │
+│ X1 Out ○────────────┼────┼─▶ Ch1 Signal Input             │
+│                     │    │                                │
+│ X2 Out ○────────────┼────┼─▶ Ch4 Signal Input             │
+│                     │    │                                │
+│ t1 Out ○────────────┼────┼─▶ Ch1 Trigger                  │
+│                     │    │                                │
+│ Y Out  ○────────────┼────┼─▶ Attenuverter 3               │
+│                     │    │                                │
+│ User-Guided         │    │ Ch1 Unity ○────────────────────┼─── To C&P Castor Pitch
+│ Pattern Control     │    │                                │
+│                     │    │ Ch4 Variable ○─────────────────┼─── To C&P Pollux Pitch
+│ STEPS: 2 o'clock    │    │                                │
+│ (Musical patterns)  │    │ SUM Out ○──────────────────────┼─── To C&P Crossfade
+│                     │    │                                │
+│ DEJA VU: 11 o'clock │    │ OR Out ○───────────────────────┼─── To C&P Mode Control
+│ (Slow evolution)    │    │                                │
+└─────────────────────┘    └─────────────────────────────────┘
+                                    ║      ║    ║    ║
+                            CV (Blue)║      ║    ║    ║
+                                    ▼      ▼    ▼    ▼
+                           ┌─────────────────────────────────┐
+                           │  Winterbloom Castor & Pollux   │
+                           │    (Intelligent Juno Brain)    │
+                           │                                │
+                           │ Castor Pitch  ◀─ Algorithmic   │
+                           │ Pollux Pitch  ◀─ Pattern       │
+                           │ Crossfade     ◀─ Control       │
+                           │ Mode Switch   ◀─ User-Guided   │
+                           │                                │
+                           │ Intelligent Juno Processing   │
+                           │                                │
+                           │ CROSSFADE OUT ○────────────────┼─── Sophisticated
+                           └─────────────────────────────────┘    Juno Music
+```
+
+| Algorithmic + Mathematical Chain | Function | Purpose | Advanced Integration |
+|--------------------------------|----------|---------|---------------------|
+| **Marbles X1,X2 → Maths Ch1,Ch4** | Algorithmic voltage processing | **Intelligent Juno control** | **User-guided pattern processing** |
+| **Marbles t1 → Ch1 Trigger** | Algorithmic timing | **Musical envelope generation** | **Pattern-based Juno triggering** |
+| **Maths processing** | Mathematical shaping | **Musical Juno modulation** | **Processed algorithmic control** |
+| **All CVs → C&P parameters** | Complete control | **Every aspect modulated** | **Sophisticated Juno intelligence** |
+
+**Module Settings:**
+- **Marbles:** User-controlled sophisticated pattern generation
+- **Maths:** Processes algorithmic patterns into musical Juno control
+- **Castor & Pollux:** All parameters under intelligent modulation control
+- **Web Editor:** Advanced CV mapping for complete parameter access
+
+**Learning Objectives:**
+- **Algorithmic Juno processing:** Sophisticated pattern generation controls vintage character
+- **Complete parameter control:** Every aspect of Juno synthesis under intelligent modulation
+- **User-guided complexity:** You direct sophisticated systems toward Juno musical goals
+- **Advanced system design:** Multi-module ecosystems creating intelligent vintage music
+
+### **Patch 4: Expert - Complete Phase 2 Juno Ecosystem**
+```
+┌─────────────┐ ┌─────────────┐ ┌─────────────┐ ┌─────────────┐
+│   DivKid    │ │ Make Noise  │ │ 4ms RCD v2  │ │ Mutable     │
+│    Ochd     │ │ Wogglebug   │ │ (Phase 2)   │ │ Marbles     │
+│ (Organic)   │ │ (Chaos)     │ │             │ │ (Algorithms)│
+│             │ │             │ │ Out 2 ○─────┼─┼─t1 Clock   │
+│ LFO 4 ○─────┼─┼─Stepped ○   │ │             │ │             │
+│       ║     │ │        ║    │ │ Out 6 ○─────┼─┼─X1 Reset   │
+│ Trigger 1○──┼─┼─Disturb     │ │             │ │             │
+│             │ │             │ │ Clock In◀───┼─┼─t2 Output  │
+└───────║─────┘ └────────║────┘ │             │ │             │
+        ║                ║      └─────────────┘ └───────║─────┘
+        ▼                ▼                              ║
+┌──────────────────────────────────────────────────────║─────┐
+│            Winterbloom Castor & Pollux II           ║     │
+│              (Juno Command Center)                  ║     │
+│                                                      ▼     │
+│ Castor Pitch  ◀─ Organic + Chaos + Mathematical + Algorithmic │
+│ Pollux Pitch  ◀─ Multi-Intelligence Juno Control            │
+│ Crossfade     ◀─ Sophisticated Pattern Processing           │
+│ Mode Control  ◀─ Polyrhythmic Character Evolution           │
+│ Waveform Mix  ◀─ Intelligent Harmonic Control              │
+│                                                            │
+│ All Phase 2 Intelligence Types Control Juno Synthesis:    │
+│ • Authentic DCO Character with Modern Intelligence         │
+│ • 3 Operational Modes under AI Control                    │
+│ • Dual Oscillator Relationships                           │
+│                                                            │
+│ CROSSFADE OUT ○────────────────────────────────────────────┼─── Complete
+└────────────────────────────────────────────────────────────┘   Phase 2
+                              ║                                 Juno
+                         Audio║                              Intelligence
+                         (Red)║
+                              ▼
+                    ┌─────────────────────┐
+                    │   Complete Musical  │
+                    │     Intelligence    │
+                    │                     │
+                    │ Organic + Chaos +   │
+                    │ Mathematical +      │
+                    │ Algorithmic =       │
+                    │ Juno Evolution      │
+                    │                     │
+                    │ System Output ○─────┼─── Evolving Juno
+                    └─────────────────────┘       Intelligence
+```
+
+**Complete Phase 2 Juno Integration:**
+
+| Intelligence Layer | Function | C&P Control | Musical Evolution |
+|-------------------|----------|-------------|-------------------|
+| **Organic (Ochd)** | Natural breathing | **Pitch/Crossfade timing** | **Breathing Juno character** |
+| **Chaos (Wogglebug)** | Controlled uncertainty | **Mode/Waveform chaos** | **Chaotic Juno evolution** |
+| **Mathematical (RCD)** | Precise timing relationships | **Polyrhythmic triggering** | **Mathematical Juno timing** |
+| **Algorithmic (Marbles)** | Sophisticated pattern generation | **Intelligent parameter control** | **Intelligent Juno evolution** |
+| **Juno (Castor & Pollux)** | Vintage synthesis | **All parameters controlled** | **Complete vintage expression** |
+
+**Expert System Design:**
+- **Castor & Pollux as Juno brain:** All Phase 2 intelligence types control every vintage aspect
+- **Multi-mode vintage evolution:** 3 different Juno modes respond to 4 intelligence types
+- **User-guided vintage sophistication:** You direct sophisticated systems toward Juno musical goals
+- **Emergent vintage complexity:** Simple modular interactions create sophisticated vintage music
+- **Complete Juno ecosystem:** Every aspect of vintage synthesis controlled by every intelligence type
 
 ---
 
@@ -186,42 +371,91 @@
 
 ## Pairs Well With
 
-### **Perfect Partners for Beginners:**
-- **Juno-style Filters (SEM, MMF):** Complete the authentic Juno sound chain
-- **Chorus/Ensemble (Happy Nerding FX Aid):** Add external chorus for even lusher sounds
-- **VCAs (Veils, 2HP VCA):** Control dynamics and create expressive patches
-- **Reverb/Delay:** Castor & Pollux loves spacious effects for 80s atmosphere
+### **Phase 2 Module Synergies (Modulation & CV Sources):**
+- **DivKid Ochd & Expander:** Ochd LFOs → Castor/Pollux parameters for organic Juno evolution
+- **Make Noise Wogglebug:** Wogglebug chaos CVs → Mode switching for controlled vintage uncertainty
+- **Mutable Marbles:** Marbles X/t outputs → Castor/Pollux for sophisticated algorithmic Juno control
+- **4ms RCD v2:** RCD divisions → Mode control for polyrhythmic vintage character switching
+- **Cre8audio Function Junction:** Function Junction outputs → C&P for processed vintage modulation
+- **Cross-Phase 2 Integration:** All Phase 2 modules can control every aspect of vintage synthesis
 
-### **Next-Level Combinations:**
-- **Quantizers:** Ensure musical intervals when using hard sync mode
-- **LFOs (Batumi, Ochd):** Modulate crossfade, pitch, or pulse width for movement
-- **Sequencers:** Drive both oscillators independently for complex polyrhythms
-- **Envelope Generators:** Shape the timbre with filter and VCA modulation
+### **Phase 1 Module Integration (Core Synthesis):**
+- **Make Noise Maths:** Maths envelopes perfect for Castor & Pollux parameter control
+- **Juno-style Filters:** Complete the authentic vintage sound chain with appropriate filtering
+- **Classic VCAs:** Control dynamics and create expressive vintage patches
+- **Traditional Effects:** Reverb/delay processors enhance the vintage character
+- **Complete Phase 1 systems:** Castor & Pollux as central vintage voice in classic synthesis chains
 
-### **Advanced Integration:**
-- **Complex modulation sources:** Use Marbles or other random sources for evolving textures
-- **Multiple filters:** Process each oscillator output differently before mixing
-- **Granular processors (Arbhar):** Modern processing on vintage-inspired sounds
-- **Performance controllers:** Use touch controllers to manipulate crossfade in real-time
+### **Essential Vintage Partners:**
+- **SEM/MMF Filters:** Complete the authentic Juno sound chain with vintage-style filtering
+- **Chorus/Ensemble Processors:** Add external chorus for even lusher vintage sounds
+- **Analog Delay/Reverb:** Castor & Pollux loves spacious effects for 80s atmosphere
+- **Performance Controllers:** Real-time control over crossfade and mode switching
 
-### **Genre-Specific Pairings:**
-- **Synthwave/Retrowave:** Pair with analog filters and tape delay emulations
-- **Ambient:** Combine with reverb, slow LFOs, and smooth envelope generators
-- **Techno/House:** Use hard sync mode with rhythmic modulation
-- **New Wave/Darkwave:** Classic configuration with chorus and arpeggiated sequences
-
-### **Pro Tips:**
-- **Use both outputs:** CROSSFADE for main voice, individual OUTs for layering
-- **Mode switching performance:** Assign MODE button to foot switch for live changes
-- **Detuning sweet spots:** Small pitch differences create beating, larger ones create intervals
-- **Web editor exploration:** Spend time customizing behavior to match your style
-
-### **Creative Experiments:**
-- **Audio-rate modulation:** Use one oscillator to FM the other via web editor settings
-- **Rhythmic sync:** Use hard sync with rhythmic pitch modulation for percussive sounds
-- **Crossfade automation:** Use slow LFO on crossfade for automatic sound evolution
-- **Multiple C&P units:** Chain multiple Castor & Pollux modules for complex polysynth voices
+### **Advanced Vintage Integration:**
+- **Multiple Castor & Pollux units:** Layer different vintage processes for complex polyphonic textures
+- **Modern Granular Processing:** Contemporary processing on vintage-inspired sounds (Arbhar)
+- **Quantized Control:** Ensure musical intervals when using hard sync and algorithmic control
+- **Web Editor Integration:** Deep customization for personalized vintage character
 
 ---
 
-*Castor & Pollux II honors the past while embracing the future - don't be afraid to explore both its vintage character and modern capabilities!*
+## Phase 2 Learning Path
+
+### **Recommended Study Progression:**
+1. **Start with Castor & Pollux fundamentals:** Master vintage DCO synthesis, web editor, and mode switching
+2. **Add organic vintage breathing:** Integrate DivKid Ochd for natural Juno character evolution (see Ochd guide)
+3. **Include chaotic vintage textures:** Use Make Noise Wogglebug for controlled uncertainty in vintage synthesis (see Wogglebug guide)
+4. **Add algorithmic vintage intelligence:** Apply Mutable Marbles for sophisticated pattern-based vintage control (see Marbles guide)
+5. **Include polyrhythmic vintage timing:** Use 4ms RCD v2 for mathematical vintage character switching (see RCD guide)
+6. **Complete the vintage ecosystem:** Add Cre8audio Function Junction for processed vintage modulation (see Function Junction guide)
+
+### **Cross-Module Learning Opportunities:**
+- **Castor & Pollux + Ochd:** Learn organic vintage evolution through breathing Juno parameters
+- **Castor & Pollux + Wogglebug:** Master chaotic vintage textures with controlled uncertainty
+- **Castor & Pollux + Marbles:** Understand sophisticated algorithmic control of vintage synthesis
+- **Castor & Pollux + RCD:** Explore polyrhythmic vintage character switching with mathematical precision
+- **All Phase 2 + Castor & Pollux:** Build complete vintage ecosystems under intelligent guidance
+
+### **Skill Development Milestones:**
+- **Beginner:** Master basic Juno synthesis, web editor, and mode switching
+- **Intermediate:** Understand multi-mode vintage systems and CV modulation
+- **Advanced:** Create Phase 2 integration patches with sophisticated vintage processing
+- **Expert:** Design vintage ecosystems where you guide intelligent vintage systems
+
+### **Advanced Vintage Concepts:**
+- **Vintage Character Preservation:** Understand how authentic DCO behavior creates musical character
+- **Multi-Parameter Vintage Modulation:** Use multiple intelligence types to control different vintage aspects
+- **Organic Vintage Control:** Apply natural breathing to vintage parameter evolution
+- **System-Level Vintage Design:** Create patches where multiple modules enhance vintage character together
+
+### **Performance Applications:**
+- **Live Vintage Performance:** Real-time vintage character manipulation for live vintage expression
+- **Generative Vintage Systems:** Foundation for self-evolving vintage compositions
+- **Hybrid Vintage Processing:** Bridge between organic, chaotic, algorithmic, and mathematical vintage control
+- **Creative Vintage Direction:** Guide sophisticated systems toward vintage musical expression
+
+---
+
+## Why This Module Rocks
+
+### **The Philosophy:**
+Castor & Pollux II represents the **perfect bridge between vintage and modern** - authentic Juno-106 character with contemporary convenience. Unlike simple oscillator recreations, this module captures the complete DCO experience including the quirks, characteristics, and musical behavior that made the Juno legendary. **The web editor integration means you get vintage soul with modern flexibility.**
+
+### **Perfect For:**
+- **80s music enthusiasts** seeking authentic Juno character in modular format
+- **Modern producers** wanting vintage sounds with contemporary modular integration
+- **Space-conscious builders** needing multiple oscillator functions in reasonable HP
+- **Performance musicians** requiring reliable vintage sounds with modern stability
+- **Phase 2 system builders** adding vintage character to intelligent modular ecosystems
+
+### **The Vintage-Modern Experience:**
+Using Castor & Pollux II teaches you about both **vintage synthesis philosophy and modern modular integration**. The authentic DCO behavior shows you why the Juno became legendary, while the web editor and CV control reveal how vintage concepts translate to contemporary modular workflow. **You experience music history through modern tools.**
+
+---
+
+**Bottom Line:** Castor & Pollux II isn't just a Juno clone - it's a **faithful tribute that enhances the original concept**. It preserves everything that made the Juno-106 special while adding modern features that expand creative possibilities. **You get vintage authenticity with modern reliability and contemporary modular integration.**
+
+---
+
+*Visit [Winterbloom](https://winterbloom.com/store/winterbloom-castor-and-pollux) for complete documentation, web editor access, and open-source hardware/firmware designs. Special thanks to the Winterbloom team for preserving vintage character while embracing modern convenience.*

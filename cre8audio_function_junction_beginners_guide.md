@@ -349,14 +349,14 @@ Function Junction becomes the **neural center** of a Phase 2 modulation brain: O
 
 ## Common Use Cases
 
-**🎚️ **Essential Envelopes:** ADSR for VCAs, filters, and any dynamic shaping**
-**⚡ **Function Generation:** Attack/decay shapes for percussion, plucks, and accents**
-**🌊 **LFO Duties:** Tremolo, vibrato, filter sweeps, and rhythmic modulation**
-**🎛️ **CV Mixing:** Combine multiple modulation sources into complex shapes**
-**🔄 **Looping Envelopes:** Turn any envelope into cycling LFO with loop buttons**
-**⏱️ **Timing Control:** Use end-of-decay triggers for sequence timing**
-**📈 **Slew Limiting:** Smooth out stepped CV with function generator**
-**🎭 **Performance Tool:** Real-time modulation control with mixer attenuverters**
+1. **🎚️ Essential Envelopes:** ADSR for VCAs, filters, and any dynamic shaping
+2. **⚡ Function Generation:** Attack/decay shapes for percussion, plucks, and accents
+3. **🌊 LFO Duties:** Tremolo, vibrato, filter sweeps, and rhythmic modulation
+4. **🎛️ CV Mixing:** Combine multiple modulation sources into complex shapes
+5. **🔄 Looping Envelopes:** Turn any envelope into cycling LFO with loop buttons
+6. **⏱️ Timing Control:** Use end-of-decay triggers for sequence timing
+7. **📈 Slew Limiting:** Smooth out stepped CV with function generator
+8. **🎭 Performance Tool:** Real-time modulation control with mixer attenuverters
 
 ---
 
@@ -413,42 +413,90 @@ Function Junction becomes the **neural center** of a Phase 2 modulation brain: O
 
 ## Pairs Well With
 
-### **Perfect Partners for Beginners:**
-- **VCAs (2HP VCA, Veils):** Function Junction excels at providing envelope control for dynamics
-- **Filters (SEM, MMF):** ADSR and Function sections perfect for filter modulation
-- **Oscillators:** LFO section handles vibrato, tremolo, and PWM duties
-- **Clock sources:** External clocks unlock rhythmic potential of Function Generator
+### **Phase 2 Module Synergies (Modulation & CV Sources):**
+- **DivKid Ochd & Expander:** Ochd LFOs → Function Junction MOD inputs for organic envelope shaping
+- **Make Noise Wogglebug:** Wogglebug chaos CVs → All Function Junction inputs for controlled uncertainty
+- **Mutable Marbles:** Marbles X/Y outputs → Mixer channels for intelligent modulation processing
+- **4ms RCD v2:** RCD divisions → Function/ADSR triggers for polyrhythmic envelope generation
+- **Cross-Phase 2 Integration:** All Phase 2 modules feed Function Junction for unified modulation processing
 
-### **Next-Level Combinations:**
-- **Make Noise Maths:** Two function generators = incredible modulation possibilities when combined
-- **Attenuators/Offset:** Fine-tune the modulation amounts beyond what mixer provides
-- **Sample & Hold:** Use Function trigger outputs to clock S&H for stepped modulation
-- **Multiple/Splitter:** Send Function Junction outputs to multiple destinations
+### **Phase 1 Module Integration (Core Synthesis):**
+- **Make Noise Maths:** Maths + Function Junction = ultimate modulation powerhouse combination
+- **VCAs (2HP VCA, Veils):** Function Junction ADSR perfect for amplitude envelope control
+- **Filters (SEM, MMF):** Function Generator excels at filter cutoff and resonance modulation
+- **Oscillators:** LFO section handles vibrato, tremolo, and PWM duties perfectly
+- **Complete Phase 1 systems:** Function Junction as central modulation processor
 
-### **Advanced Integration:**
-- **Complex Oscillators:** Use multiple Function Junction outputs for FM, sync, and timbral control
+### **Essential Utility Partners:**
+- **Attenuators/Offset:** Fine-tune modulation amounts beyond what internal mixer provides
+- **Sample & Hold:** Use Function TRIG outputs to clock S&H for stepped modulation
+- **Multiple/Splitter:** Send Function Junction outputs to multiple destinations simultaneously
+- **Clock Sources:** External clocks unlock rhythmic potential of Function Generator
+
+### **Advanced Modulation Applications:**
+- **Complex Oscillators:** Multiple Function Junction outputs for FM, sync, and timbral control
 - **Sequencers:** End-of-decay triggers perfect for advancing step sequences
-- **Granular processors:** Complex modulation from mixer perfect for granular parameter control
-- **Performance controllers:** Use as modulation source behind touch/expression interfaces
-
-### **Modulation Hub Applications:**
-- **Poly voices:** Multiple Function Junctions for independent voice modulation
-- **West Coast synthesis:** Function generator pairs perfectly with low-pass gates
-- **Ambient patches:** Long envelope times + loop modes = evolving soundscapes
-- **Percussive sounds:** Function generator excels at pluck and strike envelopes
-
-### **Pro Tips:**
-- **Use as "modulation distributor":** One complex modulation (MIX) to multiple destinations
-- **Rhythmic modulation:** Function in loop mode + clock division = polyrhythmic modulation
-- **Modulate the modulators:** Patch LFO to Function MOD input for evolving shapes
-- **Emergency utilities:** Each section can solve common patch problems independently
-
-### **Creative Experiments:**
-- **Audio rate modulation:** Push Function and LFO into audio range for FM synthesis
-- **Trigger cascades:** Chain multiple Function Junction modules using TRIG outputs
-- **Parallel processing:** Split audio, use different modulation on each path, recombine
-- **Interactive modulation:** Use touch controllers to manipulate mixer levels in real-time
+- **Granular Processors:** Complex modulation from mixer perfect for granular parameter control
+- **Performance Controllers:** Use as modulation source behind touch/expression interfaces
 
 ---
 
-*Function Junction is designed to be immediately useful but endlessly deep - don't be afraid to experiment with unconventional patching!*
+## Phase 2 Learning Path
+
+### **Recommended Study Progression:**
+1. **Start with Function Junction fundamentals:** Master ADSR, Function Generator, LFO, and Mixer sections
+2. **Add organic modulation:** Integrate DivKid Ochd for natural envelope evolution (see Ochd guide)
+3. **Include controlled chaos:** Use Make Noise Wogglebug for unpredictable modulation processing (see Wogglebug guide)
+4. **Add algorithmic intelligence:** Apply Mutable Marbles for sophisticated modulation control (see Marbles guide)
+5. **Include polyrhythmic timing:** Use 4ms RCD v2 for mathematical envelope triggering (see RCD guide)
+6. **Complete the ecosystem:** Integrate all Phase 2 modules for unified modulation processing
+
+### **Cross-Module Learning Opportunities:**
+- **Function Junction + Ochd:** Learn organic envelope shaping through breathing modulation
+- **Function Junction + Wogglebug:** Master chaotic modulation processing with controlled uncertainty
+- **Function Junction + Marbles:** Understand intelligent modulation mixing and AI-driven envelope control
+- **Function Junction + RCD:** Explore polyrhythmic envelope generation with mathematical precision
+- **All Phase 2 + Function Junction:** Build complete modulation ecosystems with central processing hub
+
+### **Skill Development Milestones:**
+- **Beginner:** Master individual Function Junction sections and basic envelope control
+- **Intermediate:** Understand normalling system and multi-source modulation mixing
+- **Advanced:** Create Phase 2 integration patches with sophisticated modulation processing
+- **Expert:** Design modulation ecosystems where Function Junction processes all Phase 2 sources
+
+### **Advanced Integration Concepts:**
+- **Modulation Processing Hub:** Function Junction as central processor for all Phase 2 modulation
+- **Multi-Source Mixing:** Combine organic, chaotic, algorithmic, and mathematical modulation
+- **Envelope Evolution:** Use Phase 2 sources to control envelope characteristics dynamically
+- **System-Level Modulation:** Design patches where modulation sources enhance each other
+
+### **Performance Applications:**
+- **Live Modulation Control:** Real-time mixing and shaping of complex modulation sources
+- **Generative Modulation:** Foundation for self-evolving envelope and modulation systems
+- **Hybrid Processing:** Bridge between different types of modulation sources and destinations
+- **Adaptive Instruments:** Create personalized modulation that learns and evolves
+
+---
+
+## Why This Module Rocks
+
+### **The Philosophy:**
+Function Junction represents **modular efficiency at its finest** - four essential modulation tools in one module, designed to work independently or together. Unlike single-purpose modules, Function Junction adapts to whatever your patch needs: envelope generator, LFO, function processor, or modulation mixer. **In Phase 2 ecosystems, it becomes the intelligent processing hub that transforms all modulation sources into musical expression.**
+
+### **Perfect For:**
+- **Beginner builders** needing essential modulation tools without HP sprawl
+- **Space-conscious systems** requiring maximum functionality per HP
+- **Performance musicians** wanting immediate access to all modulation types
+- **Modulation enthusiasts** seeking sophisticated processing and mixing capabilities
+- **Phase 2 system builders** creating intelligent modulation ecosystems
+
+### **The Modulation Hub Experience:**
+Using Function Junction teaches you about **modulation as a musical instrument** rather than just a technical necessity. The normalling system shows how different modulation types complement each other, while the mixer section reveals how combining sources creates entirely new possibilities. **As the processing center of Phase 2 networks, it transforms simple modulation into complex musical intelligence.**
+
+---
+
+**Bottom Line:** Function Junction isn't just four modules in one - it's a **complete modulation ecosystem** that grows with your understanding. From basic envelope duties to sophisticated Phase 2 integration, it provides the tools to shape any sound with musical intelligence. **You get immediate utility with endless depth for modulation exploration.**
+
+---
+
+*Visit [Cre8audio](https://cre8audio.com/product/function-junction/) for complete documentation and patch examples. Special thanks to Pittsburgh Modular for the collaborative design that prioritizes musical functionality.*
