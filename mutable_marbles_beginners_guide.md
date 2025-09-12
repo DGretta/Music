@@ -5,7 +5,7 @@
 
 ## Quick Start: Get Your First Random Sequence in 5 Minutes
 
-**What is Marbles?** Think of it as a dice-rolling robot that learns your musical preferences. It generates random rhythms and melodies, but with intelligence - it can repeat good ideas, avoid bad ones, and gradually evolve patterns over time. It's chaos with musical taste.
+**What is Marbles?** Think of it as a sophisticated pattern generator that creates musical randomness with memory. It generates random rhythms and melodies, but with algorithmic intelligence - it can repeat patterns you like, avoid repeating patterns too much, and gradually evolve based on probability distributions. It's controlled randomness with musical sophistication.
 
 ### Your First Random Pattern
 1. **Connect Marbles X1 output** → **Oscillator 1V/OCT input**
@@ -114,10 +114,10 @@
 - **Marbles SPREAD:** 12 o'clock (balanced distribution)
 
 **Learning Objectives:**
-- Experience intelligent randomness vs. pure chaos
-- Understand DEJA VU memory system
+- Experience sophisticated algorithmic randomness vs. pure chaos
+- Understand DEJA VU memory and pattern repetition system
 - Learn musical quantization with STEPS
-- Discover pattern evolution and repetition
+- Discover how patterns evolve through probability manipulation
 
 **Visual Feedback:**
 - **t2 LED:** Flashes with main rhythmic pulse
@@ -312,7 +312,7 @@
 ## Why This Module Rocks
 
 ### **The Philosophy:**
-Marbles represents a revolutionary approach to musical randomness - **artificial intelligence applied to music creation**. Unlike pure random generators, Marbles develops musical taste and preference over time, learning what sounds good and gradually becoming a more musical collaborator. It's not just generating patterns - it's developing musical intelligence.
+Marbles represents a revolutionary approach to musical randomness - **sophisticated algorithms applied to music creation**. Unlike pure random generators, Marbles uses probability distributions and memory systems to create patterns that sound musical, but **you are still the creative director**. The module responds to your input and settings to create the musical results you guide it toward.
 
 ### **Perfect For:**
 - **Electronic producers** seeking intelligent, evolving sequences that never get boring
@@ -322,11 +322,11 @@ Marbles represents a revolutionary approach to musical randomness - **artificial
 - **Phase 2 system builders** creating multi-module AI musical ecosystems
 
 ### **The Learning Experience:**
-Using Marbles teaches you about your own musical preferences by reflecting them back to you in new forms. As the module learns what you find musical, you discover patterns in your own taste that you might never have consciously recognized. It's a mirror for musical creativity.
+Using Marbles teaches you about your own musical preferences by showing you patterns in new ways. As you adjust the DEJA VU and other parameters, you discover which probability distributions and pattern repetitions appeal to you musically. **You guide the system** - it doesn't learn independently, but responds to your creative direction. It's a sophisticated tool for musical exploration.
 
 ---
 
-**Bottom Line:** Marbles isn't just a random generator - it's **artificial musical intelligence** that learns, remembers, and evolves. It transforms chaotic randomness into intelligent musical patterns, creating a collaborative relationship between human creativity and machine learning. Once you experience music that learns and grows with you, static sequences feel primitive.
+**Bottom Line:** Marbles isn't just a random generator - it's a **sophisticated algorithmic pattern generator** that creates musically satisfying randomness. It transforms chaotic randomness into musical patterns through clever programming and probability control, **responding to your creative input and guidance**. You remain the composer - Marbles is your sophisticated tool for exploring musical possibilities.
 
 ---
 
