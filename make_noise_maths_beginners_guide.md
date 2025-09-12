@@ -210,21 +210,27 @@
 ## Pairs Well With
 
 ### **Essential Partners:**
-- **VCA (2HP VCA, Intellijel uVCA):** Maths envelopes control volume shaping
-- **Low Pass Gate (Optomix, LxD):** Maths into LPG = classic West Coast plucks  
-- **Mult/Splitter:** Essential for sending one Maths output to multiple destinations
-- **Filter (MMG, SEM, Ripples):** Maths LFOs create classic filter sweeps
+- **VCA (Erica Quad VCA2, Doepfer A-130-2):** Maths envelopes control volume shaping
+- **Low Pass Gate (Optomix, or use Wasp/Polivoks filters):** Maths into LPG = classic West Coast plucks  
+- **Mult/Splitter (Intellijel Mult, 2hp Mult):** Essential for sending one Maths output to multiple destinations
+- **Filters (Wasp, Polivoks, Forbidden Planet):** Maths LFOs create classic filter sweeps
 
-### **Advanced Combinations:**
-- **Function (Make Noise):** Two Functions + Maths = envelope powerhouse
-- **Pressure Points:** Touch gates trigger Maths for expressive playing
-- **DPO/Complex Oscillator:** Maths can modulate both pitch and timbre simultaneously
-- **Clock Divider:** Use Maths EOC/EOR outputs to create polyrhythmic triggers
+### **Perfect System Combinations:**
+- **Cre8audio Function Junction:** Two Function generators + Maths = envelope powerhouse
+- **Make Noise Pressure Points:** Touch gates trigger Maths for expressive playing
+- **Instruo CS-L/Castor & Pollux:** Maths can modulate both pitch and timbre simultaneously
+- **4ms RCD v2:** Use Maths EOC/EOR outputs to create polyrhythmic triggers
 
-### **Perfect Pairings:**
-- **Sequential Switches:** Route different Maths outputs to different destinations
-- **VCAs for Each Channel:** Individual amplitude control over each Maths function
-- **Multiple Filters:** Use different Maths channels for different filter modulation
+### **Advanced Workflows:**
+- **Plaits + Maths:** Maths modulates Plaits' synthesis models for evolving textures
+- **Arbhar + Maths:** Maths controls granular parameters for organic texture evolution
+- **Mob of Emus + Maths:** Maths as master envelope for harmonic intensity control
+- **Disting mk4 + Maths:** Use Disting quantizer with Maths-generated stepped random
+
+### **Performance Combinations:**
+- **Cellz touch controller + Maths:** Touch control triggers complex Maths envelopes
+- **Pressure Points + Maths:** Each pressure point triggers different Maths channels
+- **Bloom sequencer + Maths:** Fractal patterns trigger mathematical envelope relationships
 
 ---
 
