@@ -91,9 +91,51 @@ Instead of buying dozens of modules, Disting mk4 gives you **one module that can
 
 ---
 
-## Beginner Patch Ideas
+## Progressive Patch Examples
 
-### **Patch 1: Musical CV Quantizer**
+### **Patch 1: First Steps - Musical CV Quantizer**
+```
+                    ┌─────────────────────┐
+                    │   Disting mk4       │
+                    │                     │
+     Random CV ─────┼─▶ X Input           │
+     Generator       │                     │
+                    │ Algorithm: A-6      │
+                    │ (Quantizer)         │
+                    │                     │
+                    │ Z Knob: Scale       │
+                    │ (Turn for Major,    │
+                    │  Minor, etc.)       │
+                    │                     │
+                    │ A Output ○─────────┼─── CV (Blue)
+                    │ (Quantized CV)      │
+                    │                     │
+                    │ B Output ○─────────┼─── Gate (Yellow)
+                    │ (Note Change Trig)  │
+                    └─────────────────────┘
+                             ║       ║
+                        CV   ║  Gate ║
+                        (Blue)║(Yellow)║
+                             ▼       ▼
+                    ┌──────────────────────┐
+                    │   Oscillator         │
+                    │                      │
+                    │ 1V/Oct    ◀─────────┼─── Quantized Pitch
+                    │                      │
+                    │ Audio Out ○──────────────── To Envelope/VCA
+                    │                      │
+                    └──────────────────────┘
+                             ║
+                        Audio║
+                             ▼
+                    ┌──────────────────────┐
+                    │   Envelope Generator │
+                    │                      │
+                    │ Trigger   ◀─────────┼─── Note Change Trigger
+                    │                      │
+                    │ CV Out    ○────────────── To VCA
+                    └──────────────────────┘
+```
 ```
 ┌─────────────┐    ┌──────────────┐    ┌─────────────┐
 │ Random CV   │───▶│ Disting mk4  │───▶│ Oscillator  │
@@ -131,21 +173,113 @@ Instead of buying dozens of modules, Disting mk4 gives you **one module that can
 - **B Output LED:** Flashes when note changes trigger
 - **Result:** Random CV becomes musical melodies in any scale
 
-### **Patch 2: Clockable Echo Effect**  
-- **Algorithm:** B-4 Clockable Delay/Echo
-- **Patch audio source** → **X input**
-- **Patch clock** → **Y input** (sequencer, LFO, or tap Z for tempo)
-- **Patch A output** → mixer (delay + dry signal)
-- **Turn Z knob** for feedback amount
-- **Result:** Rhythmically synced delay that locks to your tempo
+### **Patch 2: Intermediate - Dual Function Hub**
+```
+   ┌─────────────────────┐      ┌─────────────────────┐
+   │   Audio Source      │      │   Disting mk4       │
+   │                     │      │                     │
+   │ Audio Out ○────────┼──────┼─▶ X Input (Audio)     │
+   │                     │      │                     │
+   └─────────────────────┘      │ Algorithm: C-5      │
+                                │ (Resonator)         │
+   ┌─────────────────────┐      │                     │
+   │   Clock/LFO        │      │ Y Input         ◀──┼────── Modulation CV
+   │                     │      │ (Frequency CV)      │
+   │ Clock Out ○────────┼──────┘      │                     │
+   │                     │              │ Z Knob: Resonance   │
+   └─────────────────────┘              │ (Real-time control) │
+                                      │                     │
+                                      │ A Output ○────────┼─── Audio (Red)
+                                      │ (Resonant Audio)    │
+                                      │                     │
+                                      │ B Output ○────────┼─── CV (Blue)
+                                      │ (Envelope Follower) │
+                                      └─────────────────────┘
+                                               ║       ║
+                                          Audio║  CV   ║
+                                          (Red)║ (Blue)║
+                                               ▼       ▼
+                                      ┌─────────────────────┐
+                                      │   Effects Chain     │
+                                      │                     │
+                                      │ Audio In     ◀───┼─── Resonant Audio
+                                      │                     │
+                                      │ Mod CV       ◀───┼─── Envelope Follow
+                                      │                     │
+                                      │ Audio Out ○──────┼─── Final Processing
+                                      └─────────────────────┘
+```
 
-### **Patch 3: Precision CV Mixer**
-- **Algorithm:** A-1 Precision Adder  
-- **Patch envelope** → **X input** and **LFO** → **Y input**
-- **Patch A output** → **filter cutoff** (sum of both CVs)
-- **Patch B output** → **VCA CV** (difference between CVs)
-- **Turn Z knob** to offset both outputs for different voltage ranges
-- **Result:** Complex modulation mixing with voltage control
+| Connection | Cable Type | Purpose | Advanced Function |
+|------------|------------|---------|------------------|
+| Audio Source → X Input | Audio (Red) | **Signal to be processed** | **Resonant filtering** |
+| Clock/LFO → Y Input | CV (Blue) | **Frequency modulation** | **Dynamic resonance control** |
+| A Output → Effects Audio | Audio (Red) | **Processed signal** | **Resonant audio character** |
+| B Output → Effects Mod | CV (Blue) | **Envelope follower CV** | **Audio-reactive modulation** |
+
+**Module Settings:**
+- **Disting Algorithm:** C-5 (Resonator)
+- **Z Knob:** Resonance amount (start at 12 o'clock)
+- **Y Input:** Modulation for frequency sweeping
+- **Real-time control:** Z knob for performance
+
+**Learning Objectives:**
+- Master dual-output algorithms
+- Understand audio processing with CV outputs
+- Learn resonant filtering concepts
+- Experience envelope following techniques
+### **Patch 3: Advanced - Phase 1 Integration Hub**
+```
+   ┌─────────────────────┐      ┌─────────────────────┐
+   │   Mutable Plaits    │      │   Disting mk4       │
+   │    (Phase 1)        │      │   (Utility Hub)     │
+   │                     │      │                     │
+   │ Model CV        ◀───┼──────┼─ A Output           │
+   │                     │      │                     │
+   │ Timbre CV       ◀───┼──────┼─ Algorithm: K-3     │
+   │                     │      │ (LFO + Quantizer)   │
+   │ Audio Out ○─────────┼──────┼─▶ X Input           │
+   │                     │      │                     │
+   └─────────────────────┘      │ B Output ○──────────┼─── CV (Blue)
+                                │ (Quantized CV)      │
+   ┌─────────────────────┐      │                     │
+   │   Make Noise Maths  │      │ Z Knob: Scale       │
+   │    (Phase 1)        │      │ S Knob: LFO Rate    │
+   │                     │      │                     │
+   │ Ch1 Unity Out ○─────┼──────────────┐     └─────────────────────┘
+   │                     │              │     ║
+   │ Ch4 Variable Out○───┼──────────────┼─────╬═══════════▶ Multiple
+   │                     │              │     ║ CV (Blue)   Destinations
+   │ SUM Output ○────────┼──────────────┘     ▼
+   │                     │              ┌──────────────┐
+   └─────────────────────┘              │   Synthesis  │
+                                        │   Network    │
+                                        │              │
+                                        │ Multi-module │
+                                        │ Integration  │
+                                        │              │
+                                        │ Audio Out ○──┼─── Complex Music
+                                        └──────────────┘
+```
+
+| Module Chain | Integration Role | Purpose | Phase 1 Synergy |
+|-------------|------------------|---------|------------------|
+| **Plaits → Disting** | Audio analysis | **Model switching intelligence** | **Synthesis drives utility functions** |
+| **Disting LFO/Quantizer** | Dual utility | **Modulation + pitch processing** | **Single module, multiple functions** |
+| **Maths → Multi-destinations** | Complex modulation | **Mathematical processing** | **Analog computation** |
+| **System Integration** | Complete voice | **All modules working together** | **Phase 1 ecosystem** |
+
+**Module Settings:**
+- **Disting:** Algorithm K-3 (LFO + Quantizer combo)
+- **Plaits:** Responds to Disting's intelligent CV processing
+- **Maths:** Provides complex envelopes and mathematical relationships
+- **Integration:** All Phase 1 modules enhance each other
+
+**Learning Objectives:**
+- **Phase 1 module integration:** All core modules working as unified system
+- **Utility hub concept:** Disting as central processing for other modules
+- **Complex signal routing:** Multiple modules, multiple functions, musical results
+- **System-level thinking:** Design patches as integrated ecosystems
 
 ---
 
