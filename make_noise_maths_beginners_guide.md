@@ -67,7 +67,57 @@
 - **Ch1 Unity LED:** Flashes green when triggered, brightness follows envelope
 - **Result:** Classic attack/decay envelope - adjust Rise for punch, Fall for tail
 
-### **Patch 2: Continuous LFO for Filter Sweeps**
+### **Patch 2: Intermediate - Phase 2 Organic Integration with Ochd**
+```
+   ┌─────────────────────┐      ┌─────────────────────┐
+   │   DivKid Ochd      │      │   Make Noise Maths  │
+   │    (Phase 2)       │      │    (Phase 1)        │
+   │                    │      │                     │
+   │ LFO 1 ○────────────┼──────┼─▶ Ch1 Signal Input  │
+   │       ║            │      │                     │
+   │ LFO 3 ○────────────┼──────┼─▶ Ch4 Signal Input  │
+   │       ║            │      │                     │
+   │ LFO 7 ○────────────┼──────┼─▶ SUM CV Input      │
+   │       ║            │      │                     │
+   │       ║            │      │ Ch1 Unity Out ○─────┼─── CV (Blue)
+   │       ║            │      │                     │
+   │       ║            │      │ Ch4 Variable Out○───┼─── CV (Blue)
+   │       ║            │      │                     │
+   │       ║            │      │ SUM Output ○────────┼─── CV (Blue)
+   └───────║────────────┘      └─────────────────────┘
+           ║                           ║      ║    ║
+   CV (Blue)║                   CV (Blue)║      ║    ║
+           ▼                           ║      ║    ║
+   ┌─────────────┐                    ▼      ▼    ▼
+   │   Filter    │           ┌──────────────────────────┐
+   │             │           │    Multiple Destinations │
+   │ Cutoff CV◀──┼───────────┼─ Oscillator FM           │
+   │             │           │ Filter Resonance         │
+   │ Audio In ◀──┼───────────┼─ VCA CV                  │
+   │             │           │ Effects Parameters       │
+   │ Audio Out○──┼───────────┼─                        │
+   └─────────────┘           │ Organic System ○────────┼─── Breathing Music
+                             └──────────────────────────┘
+```
+
+| Module Integration | Signal Flow | Purpose | Phase 2 Synergy |
+|-------------------|-------------|---------|------------------|
+| **Ochd LFO 1 → Maths Ch1** | Organic modulation | **Breathing envelope control** | **Organic timing processing** |
+| **Ochd LFO 3 → Maths Ch4** | Mid-speed organic CV | **Parameter drift control** | **Natural parameter evolution** |
+| **Ochd LFO 7 → SUM Input** | Slow organic drift | **System-wide organic influence** | **Long-term musical breathing** |
+| **Maths Processing** | Mathematical shaping | **Organic + Mathematical hybrid** | **Best of both worlds** |
+
+**Module Settings:**
+- **Ochd Rate:** 12 o'clock for musical organic timing
+- **Maths Ch1:** Rise/Fall set for envelope processing of organic signals
+- **Maths Ch4:** Used as slew processor for smooth organic transitions
+- **SUM:** Combines all organic + mathematical relationships
+
+**Learning Objectives:**
+- **Phase 1 + Phase 2 integration:** Mathematical processing of organic modulation
+- **Hybrid modulation:** Combine organic breathing with precise mathematical control
+- **System breathing:** Entire patch breathes with organic life
+- **Advanced modulation routing:** Complex relationships between modules
 ```
                    ┌──────────────┐    ┌─────────────┐
     [CYCLE ON] ───▶│    Maths     │───▶│   Filter    │
@@ -98,7 +148,63 @@
 - **Cycle LED:** Stays lit indicating continuous operation
 - **Result:** Automatic filter sweeps - faster Rise/Fall = faster wobble
 
-### **Patch 3: Offset Voltage Generator (Transposition)**
+### **Patch 3: Advanced - AI Integration with Phase 2 Marbles**
+```
+   ┌─────────────────────┐      ┌─────────────────────┐
+   │   Mutable Marbles   │      │   Make Noise Maths  │
+   │     (Phase 2)       │      │    (Phase 1)        │
+   │                     │      │                     │
+   │ X1 Out ○────────────┼──────┼─▶ Ch1 Signal Input  │
+   │                     │      │                     │
+   │ X2 Out ○────────────┼──────┼─▶ Ch4 Signal Input  │
+   │                     │      │                     │
+   │ t1 Out ○────────────┼──────┼─▶ Ch1 Trigger       │
+   │                     │      │                     │
+   │ Y Out  ○────────────┼──────┼─▶ Attenuverter 3    │
+   │                     │      │                     │
+   │ DEJA VU CV      ◀───┼──────┼─ SUM Output         │
+   │ (Learning Loop)     │      │                     │
+   │                     │      │ Ch1 Unity Out ○─────┼─── CV (Blue)
+   │ External Processing │      │                     │
+   │ Mode: ON            │      │ Ch4 Variable Out○───┼─── CV (Blue)
+   │                     │      │                     │
+   │ STEPS: 2 o'clock    │      │ OR Output ○─────────┼─── CV (Blue)
+   │ (Musical quantization)      │                     │
+   └─────────────────────┘      │ AND Output ○────────┼─── Gate (Yellow)
+                                └─────────────────────┘
+                                         ║      ║    ║    ║
+                                 CV (Blue)║      ║    ║    ║ Gate
+                                         ▼      ▼    ▼    ▼ (Yellow)
+                                ┌─────────────────────────────────┐
+                                │    Complex Synthesis Network     │
+                                │                                 │
+                                │ Oscillator 1V/Oct  ◀─ Ch1 Unity│
+                                │ Filter Cutoff      ◀─ Ch4 Var  │
+                                │ VCA CV             ◀─ OR Output │
+                                │ Clock Input        ◀─ AND Output│
+                                │                                 │
+                                │ AI + Mathematical Music ○──────┼─── Intelligent Output
+                                └─────────────────────────────────┘
+```
+
+| AI + Mathematical Chain | Function | Purpose | Advanced Integration |
+|------------------------|----------|---------|---------------------|
+| **Marbles X1,X2 → Maths Ch1,Ch4** | AI voltage processing | **Intelligent envelope shaping** | **AI learns mathematical relationships** |
+| **Marbles t1 → Ch1 Trigger** | AI timing | **Musical trigger processing** | **Intelligent timing becomes envelopes** |
+| **Marbles Y → Attenuverter 3** | AI smooth modulation | **Meta-modulation control** | **AI controls mathematical mixing** |
+| **SUM → DEJA VU CV** | Learning feedback | **System learns math** | **AI learns from mathematical output** |
+
+**Module Settings:**
+- **Marbles:** External Processing ON, learns from mathematical output
+- **Maths:** Processes AI intelligence through analog mathematical computation
+- **Feedback Loop:** SUM output teaches Marbles about mathematical relationships
+- **Result:** AI + Mathematics = Increasingly sophisticated musical intelligence
+
+**Learning Objectives:**
+- **AI + Mathematical integration:** Artificial intelligence learns mathematical relationships
+- **Recursive learning:** System teaches itself through feedback
+- **Analog computation of AI:** Mathematical processing of artificial intelligence
+- **Meta-musical systems:** Systems that learn to learn
 ```
                    ┌──────────────┐    
    No Input ──────▶│    Maths     │    
@@ -131,7 +237,78 @@
 - **Ch2 Variable LED:** Steady green (positive) or red (negative) showing offset
 - **Result:** Transpose entire sequence up or down without changing intervals
 
-### **Patch 4: Complex Multi-Stage Envelope**
+### **Patch 4: Expert - Complete Phase 1+2 Mathematical Ecosystem**
+```
+┌─────────────┐ ┌─────────────┐ ┌─────────────┐ ┌─────────────┐
+│   DivKid    │ │ Make Noise  │ │ Mutable     │ │ Mutable     │
+│    Ochd     │ │ Wogglebug   │ │  Marbles    │ │  Plaits     │
+│ (Organic)   │ │ (Chaos)     │ │ (AI)        │ │ (Synthesis) │
+│             │ │             │ │             │ │             │
+│ LFO 1 ○─────┼─┼─Stepped ○   │ │ X1 Out ○────┼─┼─Model CV    │
+│       ║     │ │        ║    │ │       ║     │ │       ║     │
+│ LFO 3 ○─────┼─┼─Smooth ○    │ │ X2 Out ○────┼─┼─Timbre CV   │
+│       ║     │ │        ║    │ │       ║     │ │       ║     │
+│ LFO 7 ○─────┼─┼─Woggle ○    │ │ t1 Out ○────┼─┼─Trigger     │
+│       ║     │ │        ║    │ │       ║     │ │       ║     │
+└───────║─────┘ └────────║────┘ │ Y Out  ○────┼─┼─Level CV    │
+        ║                ║      │       ║     │ │       ║     │
+        ▼                ▼      └───────║─────┘ └───────║─────┘
+┌──────────────────────────────────────║──────────────║─────┐
+│                Make Noise Maths     ║              ║     │
+│           (Mathematical Brain)       ║              ║     │
+│                                      ▼              ▼     │
+│ Organic CV ◀─ Ch1 Signal  ┌─────────┐  Ch2 Signal ◀─ AI  │
+│ Chaos CV   ◀─ Ch3 Signal  │ Complex │  Ch4 Signal ◀─ CV  │
+│ AI Learning◀─ Attenuv.    │Mathematical              │   │
+│                           │Processing│                   │
+│ Ch1 Unity ○──────────────▶│         │◀─ Ch2 Variable ○  │
+│ Ch3 Unity ○──────────────▶│ Network │◀─ Ch4 Variable ○  │
+│ SUM Output○──────────────▶│         │◀─ OR Output   ○   │
+│ Learning  ○──────────────▶│ Audio   │◀─ AND Output  ○   │
+│ Feedback                  └─────────┘                    │
+└─────────────────────────────║───────────────────────────┘
+                              ║
+                         Mathematical
+                          Intelligence
+                              ▼
+                    ┌─────────────────────┐
+                    │  Complete Musical   │
+                    │     Ecosystem       │
+                    │                     │
+                    │ Organic + Chaos +   │
+                    │ AI + Mathematical   │
+                    │ = Musical Evolution │
+                    │                     │
+                    │ System Output ○─────┼─── Evolving Intelligence
+                    └─────────────────────┘
+```
+
+**Complete System Integration:**
+
+| Layer | Function | Maths Role | Musical Result |
+|-------|----------|------------|----------------|
+| **Organic (Ochd)** | Natural breathing | **Channels 1,3 processing** | **Mathematical breathing** |
+| **Chaos (Wogglebug)** | Controlled uncertainty | **CV mixing and offset** | **Mathematical chaos** |
+| **AI (Marbles)** | Learning intelligence | **Channels 2,4 processing** | **Mathematical AI** |
+| **Synthesis (Plaits)** | Sound generation | **Output distribution** | **Mathematical sound** |
+| **Mathematical (Maths)** | Central computation | **System brain** | **Unified intelligence** |
+
+**Expert System Design:**
+- **Maths as central brain:** All intelligence types processed through mathematical computation
+- **Four-channel processing:** Each channel handles different intelligence type
+- **Cross-mixing and feedback:** Complex mathematical relationships between all sources
+- **Learning integration:** System learns mathematical relationships through feedback
+- **Emergent behavior:** Mathematical processing creates new musical behaviors
+
+**Advanced Performance:**
+1. **Initialization:** Each module establishes its character
+2. **Mathematical integration:** Maths begins processing all intelligence types
+3. **Cross-learning:** Modules learn from mathematical relationships
+4. **System evolution:** Entire ecosystem becomes increasingly musical
+5. **Mathematical transcendence:** Pure mathematical music emerges
+
+**Philosophical Achievement:**
+This represents **mathematical consciousness in music** - where organic breathing, controlled chaos, artificial intelligence, and synthesis all become mathematical relationships, processed through analog computation into pure musical intelligence.
 ```
 ┌─────────────┐    ┌───────┐    ┌──────────────┐
 │ Sequencer   │───▶│ Mult  │───▶│    Maths     │

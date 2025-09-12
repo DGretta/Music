@@ -127,7 +127,64 @@
 - **TRIG LED:** Flashes on each trigger input
 - **Result:** Complete drum sounds with built-in envelopes and character
 
-### **Patch 3: Speech Synthesis Robot Voice**
+### **Patch 3: Advanced - Phase 2 Ecosystem Integration**
+```
+┌──────────────┐ ┌──────────────┐ ┌──────────────┐
+│   DivKid    │ │ Make Noise  │ │ Cre8audio   │
+│    Ochd     │ │ Wogglebug   │ │ Function    │
+│ (Organic)   │ │ (Chaos)     │ │ Junction    │
+│             │ │             │ │ (Processing)│
+│ LFO 3 ○─────┼─┼─Disturb  ○   │ │ F OUT ○─────┼─── CV (Blue)
+│       ║     │ │        ║    │ │       ║     │
+│ LFO 5 ○─────┼─┼─Smooth  ○   │ │ ADSR ○──────┼─── CV (Blue)
+│       ║     │ │        ║    │ │       ║     │
+└───────║─────┘ └────────║────┘ └───────║─────┘
+        ║                ║              ║
+        ▼                ▼              ▼
+┌─────────────────────────────────────────────────────┐
+│                      Mutable Plaits                        │
+│                   (Synthesis Hub)                         │
+│                                                            │
+│ Model CV      ◀─ Organic Chaos Synthesis Selection        │
+│ Timbre CV     ◀─ Chaotic Timbral Evolution                │
+│ Morph CV      ◀─ Processed Parameter Control               │
+│ FM CV         ◀─ Complex Modulation Input                  │
+│ Level CV      ◀─ Envelope Processing                      │
+│                                                            │
+│ 16 Synthesis Models Available:                             │
+│ FM, Granular, Wavetable, Chord, Speech, Drums, etc.       │
+│                                                            │
+│ OUT + AUX Outputs ○───────────────────────────────── Phase 2
+└─────────────────────────────────────────────────────┘ Processed
+                                      ║                               Music
+                                 Audio║
+                                 (Red)║
+                                      ▼
+                             ┌───────────────────┐
+                             │   Final Processing │
+                             │                     │
+                             │ Multi-Modal Music ○─┼─── Complete Output
+                             └───────────────────┘
+```
+
+| Phase 2 Integration | Plaits Parameter | Musical Result | Advanced Concept |
+|-------------------|------------------|----------------|------------------|
+| **Ochd Organic + Wogglebug Chaos** | Model/Timbre CV | **Organic chaos synthesis** | **Living, breathing sound evolution** |
+| **Function Junction Processing** | Morph/FM/Level CV | **Shaped modulation** | **Musical envelope processing** |
+| **Multi-model synthesis** | 16 different engines | **Complete sound palette** | **Every synthesis method available** |
+| **Phase 2 ecosystem hub** | Central synthesis | **All modulation processed into sound** | **Modulation becomes music** |
+
+**Module Settings:**
+- **Plaits:** All 16 models available for organic/chaotic selection
+- **Phase 2 sources:** Organic timing, chaotic variation, mathematical processing
+- **Real-time evolution:** Synthesis models and parameters constantly evolving
+- **Complete system:** Phase 2 modulation ecosystem + Phase 1 synthesis hub
+
+**Learning Objectives:**
+- **Complete system integration:** All Phase 2 modules feeding one synthesis engine
+- **Multi-modal synthesis:** Experience all major synthesis methods in one patch
+- **Ecosystem thinking:** Design entire musical systems, not individual connections
+- **Emergent behavior:** Complex musicality from simple modular interactions
 ```
 ┌─────────────┐    ┌──────────────┐    ┌─────────────┐
 │    LFO      │───▶│    Plaits    │───▶│   Reverb    │
