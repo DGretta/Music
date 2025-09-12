@@ -342,6 +342,116 @@ This represents **mathematical consciousness in music** - where organic breathin
 - **SUM LED:** Shows combined result - complex multi-peak envelope
 - **Result:** "Shark fin" envelopes perfect for evolving filter sweeps
 
+### **Patch 2: Intermediate - Phase 2 Organic Mathematical Processing**
+```
+   ┌─────────────────────┐      ┌─────────────────────┐
+   │   DivKid Ochd      │      │   Make Noise Maths  │
+   │    (Phase 2)       │      │    (Phase 1)        │
+   │                    │      │                     │
+   │ LFO 1 ○───────────┼──────┼─▶ Ch1 Signal Input  │
+   │       ║            │      │                     │
+   │ LFO 3 ○───────────┼──────┼─▶ Ch4 Signal Input  │
+   │       ║            │      │                     │
+   │ LFO 7 ○───────────┼──────┼─▶ SUM CV Input      │
+   │       ║            │      │                     │
+   │       ║            │      │ Ch1 Unity Out ○─────┼─── CV (Blue)
+   │       ║            │      │                     │
+   │       ║            │      │ Ch4 Variable Out○──┼─── CV (Blue)
+   │       ║            │      │                     │
+   │       ║            │      │ SUM Output ○────────┼─── CV (Blue)
+   └───────║─────────────┘      └─────────────────────┘
+           ║                           ║      ║    ║
+   CV (Blue)║                   CV (Blue)║      ║    ║
+           ▼                           ║      ║    ║
+   ┌─────────────┐                    ▼      ▼    ▼
+   │   Filter    │           ┌──────────────────────────┐
+   │             │           │    Multiple Destinations │
+   │ Cutoff CV◀──┼───────────┼─ Oscillator FM           │
+   │             │           │ Filter Resonance         │
+   │ Audio In ◀──┼───────────┼─ VCA CV                  │
+   │             │           │ Effects Parameters       │
+   │ Audio Out○──┼───────────┼─                        │
+   └─────────────┘           │ Organic System ○────────┼─── Breathing Music
+                             └──────────────────────────┘
+```
+
+| Module Integration | Signal Flow | Purpose | Phase 2 Synergy |
+|-------------------|-------------|---------|------------------|
+| **Ochd LFO 1 → Maths Ch1** | Organic modulation | **Breathing envelope control** | **Organic timing processing** |
+| **Ochd LFO 3 → Maths Ch4** | Mid-speed organic CV | **Parameter drift control** | **Natural parameter evolution** |
+| **Ochd LFO 7 → SUM Input** | Slow organic drift | **System-wide organic influence** | **Long-term musical breathing** |
+| **Maths Processing** | Mathematical shaping | **Organic + Mathematical hybrid** | **Best of both worlds** |
+
+**Module Settings:**
+- **Ochd Rate:** 12 o'clock for musical organic timing
+- **Maths Ch1:** Rise/Fall set for envelope processing of organic signals
+- **Maths Ch4:** Used as slew processor for smooth organic transitions
+- **SUM:** Combines all organic + mathematical relationships
+
+**Learning Objectives:**
+- **Phase 1 + Phase 2 integration:** Mathematical processing of organic modulation
+- **Hybrid modulation:** Combine organic breathing with precise mathematical control
+- **System breathing:** Entire patch breathes with organic life
+- **Advanced modulation routing:** Complex relationships between modules
+
+### **Patch 3: Advanced - Macro Control Hub for Production**
+```
+┌─────────────────────┐
+│ Control Voltage Source   │
+│ (Sequencer/Performance)  │
+│                         │
+│ CV Output ○───────────┼───────────────────────────────┐
+└─────────────────────┘                                              │
+                                                                   ▼
+                        ┌───────────────────────────────────────────┐
+                        │           Make Noise Maths              │
+                        │        (Macro Control Hub)             │
+                        │                                         │
+                        │ Ch1 Signal ◀─────────────────────────────┼──────── Main CV Input
+                        │ Ch2 Signal ◀─────────────────────────────┘
+                        │ Ch3 Signal ◀─────────────────────────────┐
+                        │ Ch4 Signal ◀─────────────────────────────┘
+                        │                                         │
+                        │ Attenuverter 1: +80%  [2 o'clock]      │
+                        │ Attenuverter 2: -60%  [10 o'clock]     │
+                        │ Attenuverter 3: +40%  [1 o'clock]      │
+                        │ Attenuverter 4: +90%  [3 o'clock]      │
+                        │                                         │
+                        │ Ch1 Variable → Filter Cutoff          │
+                        │ Ch2 Variable → Filter Resonance       │
+                        │ Ch3 Variable → Oscillator FM          │
+                        │ Ch4 Variable → Reverb Send            │
+                        │                                         │
+                        │ SUM Attenuverter: MASTER MACRO CONTROL │
+                        │ SUM Output ○────────────────────────────┼─── Complete Sonic
+                        └───────────────────────────────────────────┘   Transformation
+```
+
+| Parameter Control | Attenuverter Setting | Musical Effect | Production Benefit |
+|------------------|---------------------|----------------|--------------------|
+| **Filter Cutoff** | +80% (2 o'clock) | **Opens as macro increases** | **Brightens with intensity** |
+| **Filter Resonance** | -60% (10 o'clock) | **Decreases as macro increases** | **Prevents harshness at high settings** |
+| **Oscillator FM** | +40% (1 o'clock) | **Moderate FM increase** | **Adds harmonics gradually** |
+| **Reverb Send** | +90% (3 o'clock) | **Strong spatial increase** | **Creates dramatic depth changes** |
+
+**Module Settings:**
+- **All Signal inputs:** Fed from same CV source (mult/splitter required)
+- **Mathematical relationships:** Each attenuverter creates different curve response
+- **SUM Attenuverter:** Acts as master macro - one knob controls entire sonic character
+- **Production technique:** Record automation on SUM attenuverter for perfect parameter sweeps
+
+**Learning Objectives:**
+- **Macro control concepts:** Multiple parameters controlled by mathematical relationships
+- **Production efficiency:** One control creates complex sonic transformations
+- **Mathematical mixing:** Understanding how positive/negative scaling creates musical relationships
+- **Performance technique:** Real-time control of complex sonic changes
+
+**Advanced Techniques:**
+- **Inverse relationships:** Some parameters increase while others decrease
+- **Recording automation:** Automate SUM attenuverter for perfect sonic evolution
+- **Live performance:** Assign SUM to expression pedal for real-time macro control
+- **Sound design:** Create signature sounds with mathematical parameter relationships
+
 ---
 
 ## Advanced Techniques
@@ -376,11 +486,14 @@ This represents **mathematical consciousness in music** - where organic breathin
 
 ## Common Use Cases
 
-**🎵 As Envelope Generator:** Channels 1 & 4 for shaping VCA, filter, or pitch
-**🌊 As LFO:** Press Cycle button, use for filter sweeps, tremolo, pitch wobbles  
-**⚡ As Slew Limiter:** Smooths out jumpy CV - patch CV through Signal input
-**🔀 As Mixer:** Use SUM output to combine up to 4 CV sources
-**📈 As Offset Generator:** Channels 2 & 3 add DC voltage to shift other signals up/down
+1. **🎵 Envelope Generator:** Channels 1 & 4 for shaping VCA, filter, or pitch
+2. **🌊 LFO:** Press Cycle button, use for filter sweeps, tremolo, pitch wobbles
+3. **⚡ Slew Limiter:** Smooths out jumpy CV - patch CV through Signal input
+4. **🔀 Mixer:** Use SUM output to combine up to 4 CV sources
+5. **📈 Offset Generator:** Channels 2 & 3 add DC voltage to shift other signals up/down
+6. **🎛️ Macro Control Hub:** Wire multiple parameters to different channels for unified control
+7. **🔄 Voltage Sequencer:** All channels in Cycle mode with different timing for polyrhythmic patterns
+8. **🎚️ Mathematical Processor:** Analog computation of complex voltage relationships
 
 ---
 
