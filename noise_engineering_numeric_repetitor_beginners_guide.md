@@ -109,20 +109,177 @@
 **Performance:** Adjust Product knobs in real-time for groove variations
 **Sync:** Use MEASURE input to stay locked with other sequencers
 
-### **Patch 4: Melodic Trigger Generator**
+### **Patch 4: Intermediate - Phase 2 Organic Mathematical Rhythms**
 ```
-[Numeric Repetitor outputs] ──→ [Sample & Hold triggers]
-[Random CV] ──→ [Sample & Hold inputs]
-[S&H outputs] ──→ [Quantizer] ──→ [Oscillators]
+   ┌─────────────────────┐      ┌─────────────────────────┐
+   │   DivKid Ochd      │      │  Noise Engineering      │
+   │    (Phase 2)       │      │  Numeric Repetitor      │
+   │                    │      │    (Mathematical)       │
+   │                    │      │                         │
+   │ LFO 2 ○────────────┼──────┼─▶ PRIME CV Input        │
+   │       ║            │      │                         │
+   │ LFO 4 ○────────────┼──────┼─▶ PRODUCT 1 CV          │
+   │       ║            │      │                         │
+   │ LFO 6 ○────────────┼──────┼─▶ PRODUCT 2 CV          │
+   │       ║            │      │                         │
+   └───────║────────────┘      │ PRIME Out ○─────────────┼─── Gate (Yellow)
+           ║                   │                         │
+   CV (Blue)║                  │ PRODUCT 1 Out ○─────────┼─── Gate (Yellow)
+           ║                   │                         │
+           ▼                   │ PRODUCT 2 Out ○─────────┼─── Gate (Yellow)
+   ┌─────────────┐             │                         │
+   │   Master    │             │ PRODUCT 3 Out ○─────────┼─── Gate (Yellow)
+   │   Clock     │─────────────┼─▶ BEAT Input             │
+   │             │             └─────────────────────────┘
+   └─────────────┘                      ║      ║    ║    ║
+                                 Gates  ║      ║    ║    ║
+                               (Yellow) ║      ║    ║    ║
+                                        ▼      ▼    ▼    ▼
+                               ┌─────────────────────────────────┐
+                               │   Organic Mathematical Drums    │
+                               │                                 │
+                               │ Kick   ◀─ Prime (stable core)  │
+                               │ Snare  ◀─ Product 1 (organic)  │
+                               │ Hi-Hat ◀─ Product 2 (organic)  │
+                               │ Perc   ◀─ Product 3 (fixed)    │
+                               │                                 │
+                               │ Living Mathematics ○────────────┼─── Breathing Polyrhythms
+                               └─────────────────────────────────┘
 ```
-**Setup:** Use rhythmic gates to trigger melodic content
-**Result:** Mathematically-timed melodies with rhythmic relationships
-**Advanced:** Different Product outputs trigger different S&H for polymelody
-**Musical:** Quantizer ensures melodic content stays musical
 
----
+| Module Integration | Signal Flow | Purpose | Phase 2 Synergy |
+|-------------------|-------------|---------|------------------|
+| **Ochd LFO 2 → Prime CV** | Organic pattern selection | **Breathing prime rhythms** | **Natural rhythm evolution** |
+| **Ochd LFO 4 → Product 1 CV** | Organic variation control | **Living pattern variations** | **Organic mathematical drift** |
+| **Ochd LFO 6 → Product 2 CV** | Organic timing offset | **Natural timing shifts** | **Breathing polyrhythmic relationships** |
+| **Mathematical Processing** | Numeric computation | **Organic + Mathematical hybrid** | **Natural mathematical music** |
 
-## Common Use Cases
+**Module Settings:**
+- **Ochd Rate:** 12 o'clock for musical organic breathing
+- **Numeric Prime:** Responds organically to slow LFO modulation
+- **Product 1 & 2:** Organic CV creates living variations of mathematical patterns
+- **Product 3:** Unmodulated for stable rhythmic anchor
+
+**Learning Objectives:**
+- **Organic + Mathematical integration:** Natural breathing applied to algorithmic rhythm generation
+- **Living polyrhythms:** Mathematical patterns that breathe with organic life
+- **Evolving complexity:** Simple organic modulation creates complex rhythmic evolution
+- **System breathing:** Entire mathematical drum system breathes as unified organism
+
+### **Patch 5: Advanced - Chaos Mathematics in Algorithmic Rhythm**
+```
+   ┌─────────────────────┐      ┌─────────────────────────┐
+   │   Make Noise       │      │  Noise Engineering      │
+   │   Wogglebug        │      │  Numeric Repetitor      │
+   │    (Phase 2)       │      │   (Mathematical)       │
+   │                    │      │                         │
+   │ Stepped CV ○───────┼──────┼─▶ PRIME CV Input        │
+   │       ║            │      │                         │
+   │ Smooth CV ○────────┼──────┼─▶ PRODUCT 1 CV          │
+   │       ║            │      │                         │
+   │ Woggle CV ○────────┼──────┼─▶ PRODUCT 2 CV          │
+   │       ║            │      │                         │
+   │ Burst CV ○─────────┼──────┼─▶ PRODUCT 3 CV          │
+   └───────║────────────┘      │                         │
+           ║                   │ PRIME Out ○─────────────┼─── Gate (Yellow)
+   CV (Blue)║                  │                         │
+           ║                   │ All PRODUCT Outs ○─────────┼─── Gates (Yellow)
+           ▼                   └─────────────────────────┘
+   ┌─────────────┐                    ║         ║
+   │   Master    │           ┌───────────────────────────────┐
+   │   Clock     │───────────┼─ Chaos Mathematical         │
+   │             │           │      Rhythms               │
+   └─────────────┘           │                               │
+                           │ Prime: Chaotic Pattern Jumps  │
+                           │ Product 1: Smooth Chaos       │
+                           │ Product 2: Woggle Variations  │
+                           │ Product 3: Burst Modulation   │
+                           │                               │
+                           │ Controlled Chaos ○───────────┼─── Mathematical Unpredictability
+                           └───────────────────────────────┘
+```
+
+| Chaos + Mathematical Chain | Function | Purpose | Advanced Integration |
+|---------------------------|----------|---------|---------------------|
+| **Wogglebug Stepped → Prime CV** | Quantized chaos selection | **Chaotic pattern jumping** | **Chaos learns mathematical rhythms** |
+| **Wogglebug Smooth → Product 1** | Analog chaos variation | **Smooth mathematical drift** | **Chaotic timing evolution** |
+| **Wogglebug Woggle → Product 2** | Pure chaos modulation | **Unpredictable variations** | **Chaos-driven mathematical relationships** |
+| **Wogglebug Burst → Product 3** | Chaos burst control | **Sudden mathematical changes** | **Controlled mathematical explosions** |
+
+**Module Settings:**
+- **Wogglebug:** All outputs active, Rate for musical chaos timing
+- **Numeric Prime:** Responds to chaotic pattern selection
+- **All Products:** Chaos-driven for maximum mathematical unpredictability
+- **Result:** Mathematical rhythms with controlled but unpredictable variations
+
+**Learning Objectives:**
+- **Chaos + Mathematical fusion:** Controlled unpredictability in algorithmic rhythm systems
+- **Mathematical chaos theory:** Understanding how chaos affects algorithmic processes
+- **Unpredictable yet musical:** Chaos keeps mathematical patterns from becoming static
+- **Controlled randomness:** Mathematical processing keeps chaos musical and structured
+
+### **Patch 6: Expert - Complete Phase 2 Mathematical Ecosystem**
+```
+┌─────────────┐ ┌─────────────┐ ┌─────────────┐ ┌─────────────────┐
+│   DivKid    │ │ Make Noise  │ │ Mutable     │ │ Noise Engineering│
+│    Ochd     │ │ Wogglebug   │ │  Marbles    │ │ Numeric Repetitor│
+│ (Organic)   │ │ (Chaos)     │ │ (AI)        │ │ (Mathematical)   │
+│             │ │             │ │             │ │                 │
+│ LFO 1 ○─────┼─┼─Stepped ○   │ │ X1 Out ○────┼─┼─PRIME CV Input │
+│       ║     │ │        ║    │ │       ║     │ │       ║         │
+│ LFO 3 ○─────┼─┼─Smooth ○    │ │ X2 Out ○────┼─┼─PRODUCT 1 CV   │
+│       ║     │ │        ║    │ │       ║     │ │       ║         │
+│ LFO 7 ○─────┼─┼─Woggle ○    │ │ t1 Out ○────┼─┼─BEAT Input     │
+│       ║     │ │        ║    │ │       ║     │ │       ║         │
+└───────║─────┘ └────────║────┘ │ Y Out  ○────┼─┼─PRODUCT 2 CV   │
+        ║                ║      │       ║     │ │       ║         │
+        ║                ║      │ DEJA VU     │ │ PRIME Out ○────┼─Gate
+        ║                ║      │ CV ◀────────┼─┼─All Products   │ │       ║         │
+        ║                ║      │ (Learning)  │ │ Out ○───────┼─Gates
+        ║                ║      └─────────────┘ └─────────────────┘
+        ▼                ▼             ║               ║
+┌──────────────────────────────────────────────────────────────────┐
+│                  Complete Mathematical Ecosystem                   │
+│                                                                     │
+│ Organic Breathing + Controlled Chaos + AI Learning + Mathematics   │
+│                                                                     │
+│ Organic LFOs → Natural rhythm breathing and pattern evolution     │
+│ Chaos CVs    → Controlled unpredictability in mathematical rhythms│
+│ AI X/Y/t     → Learning rhythm patterns and intelligent timing   │
+│ Mathematics  → Prime number processing of all intelligence types  │
+│ Feedback     → AI learns from mathematical rhythm relationships   │
+│                                                                     │
+│ System Evolution: Organic → Chaos → AI → Mathematics            │
+│                                                                     │
+│ Pure Mathematical Evolution ○──────────────────────────┼─── Evolving Algorithmic Output
+└──────────────────────────────────────────────────────────────────┘
+```
+
+**Complete System Integration:**
+
+| Layer | Function | Numeric Role | Musical Result |
+|-------|----------|-------------|----------------|
+| **Organic (Ochd)** | Natural breathing | **Organic pattern breathing** | **Living mathematical rhythms** |
+| **Chaos (Wogglebug)** | Controlled uncertainty | **Chaos rhythm processing** | **Unpredictable but structured** |
+| **AI (Marbles)** | Learning patterns | **AI-driven mathematical control** | **Learning polyrhythmic relationships** |
+| **Mathematical (Numeric)** | Algorithmic processing | **System rhythm brain** | **Advanced mathematical music** |
+
+**Expert System Design:**
+- **Four-layer processing:** Organic breathing, controlled chaos, AI learning, mathematical computation
+- **Numeric as rhythm processor:** All modulation types processed through prime number mathematics
+- **Learning integration:** Marbles learns from mathematical rhythm output through feedback
+- **Emergent behavior:** System evolves increasingly sophisticated polyrhythmic relationships
+- **Musical evolution:** Organic → Chaos → AI → Mathematics = Pure algorithmic music evolution
+
+**Advanced Performance:**
+1. **Initialization:** Each module establishes its character and patterns
+2. **Cross-modulation:** All intelligence types begin affecting mathematical rhythm processing
+3. **Learning phase:** Marbles learns from prime number mathematical relationships
+4. **System evolution:** Entire ecosystem becomes increasingly musical and sophisticated
+5. **Mathematical transcendence:** Pure algorithmic music emerges from multi-layer intelligence
+
+**Philosophical Achievement:**
+This represents **advanced mathematical consciousness in rhythm** - where organic breathing, controlled chaos, and artificial intelligence all become mathematical rhythm processing, computed through prime number algorithms into pure evolved algorithmic music.
 
 **🥁 **Drum Programming:** Multiple related percussion patterns from one source**
 **🎵 **Polyrhythmic Sequences:** Complex timing relationships made simple**
@@ -189,23 +346,37 @@
 
 ## Pairs Well With
 
-### **Perfect Partners for Beginners:**
-- **Clock sources (Horologic Solum, Pamela's):** Essential foundation for any rhythm work
-- **Drum modules (BIA, sample players):** Natural targets for the gate outputs
-- **Sample & Hold modules:** Use rhythmic gates to trigger melodic content
-- **Logic modules (Boolean Gates):** Combine and process the mathematical patterns
+### **Phase 2 Module Synergies (Modulation & CV Sources):**
+- **DivKid Ochd & Expander:** Ochd LFOs → Numeric CV inputs for organic mathematical rhythm evolution
+- **Make Noise Wogglebug:** Wogglebug chaos CVs → Numeric parameters for controlled chaos mathematics
+- **Mutable Marbles:** Marbles X/Y outputs → Numeric modulation for AI-driven mathematical rhythm control
+- **4ms RCD v2:** RCD divisions → Numeric BEAT input for polyrhythmic mathematical timing
+- **Cre8audio Function Junction:** Function + Numeric = complete mathematical ecosystem with organic/chaos/AI modulation
+- **Cross-Phase 2 Integration:** Numeric processes all Phase 2 modulation sources into unified mathematical rhythmic relationships
 
-### **Next-Level Combinations:**
-- **Multiple Numeric Repetitors:** Layer different mathematical patterns
+### **Perfect Partners for Beginners:**
+- **Clock sources (Horologic Solum, Pamela's):** Essential foundation for mathematical rhythm generation
+- **Drum modules (BIA, sample players):** Natural targets for mathematical gate outputs
+- **Sample & Hold modules:** Use mathematical gates to trigger melodic content with algorithmic timing
+- **Logic modules (Boolean Gates):** Combine and process mathematical patterns for increased complexity
+
+### **Advanced Mathematical Integration:**
+- **Multiple Numeric Repetitors:** Layer different mathematical patterns for complex polyrhythmic ecosystems
 - **Euclidean sequencers:** Combine mathematical and geometric rhythm approaches
 - **Probability gates (Branches):** Add random elements to mathematical patterns
-- **CV sequencers (Mimetic Digitalis):** Sequence through Prime patterns systematically
+- **CV sequencers (Mimetic Digitalis):** Sequence through Prime patterns systematically for composed rhythm evolution
 
-### **Advanced Integration:**
-- **Gamut Repetitor:** Combine algorithmic rhythm with algorithmic melody
-- **Complex clock generators:** Feed sophisticated timing into the mathematical engine
-- **Modulation sources (Lapsus Os):** Real-time control of multiple parameters
-- **MIDI-CV converters:** Use DAW clocks and sequences with mathematical rhythm
+### **Essential Mathematical Partners:**
+- **Gamut Repetitor:** Combine algorithmic rhythm with algorithmic melody for complete mathematical composition
+- **Complex clock generators:** Feed sophisticated timing into mathematical rhythm processing
+- **Modulation sources (Lapsus Os):** Real-time control of multiple mathematical parameters
+- **MIDI-CV converters:** Use DAW clocks and sequences with mathematical rhythm generation
+
+### **Advanced System Integration:**
+- **Make Noise Maths:** Maths processes Numeric outputs for mathematical rhythm relationships
+- **Quantizers:** Process mathematical gates into melodic triggers for harmonic mathematical relationships
+- **Logic modules:** Combine mathematical outputs with Boolean operations for complex rhythmic relationships
+- **Phase 1 modules:** Numeric integrates perfectly with Plaits, Maths, and other core synthesis modules
 
 ### **Genre Applications:**
 - **Techno/Electronic:** Perfect for algorithmic beat generation
@@ -231,6 +402,47 @@
 - **Binary arithmetic:** Understand how digital patterns work
 - **Prime number theory:** Musical applications of mathematical concepts
 - **Algorithmic composition:** Learn non-traditional approaches to rhythm
+
+---
+
+## Phase 2 Learning Path
+
+### **Recommended Study Progression:**
+1. **Start with Numeric fundamentals:** Master prime pattern selection, product variation control, and mathematical rhythm concepts
+2. **Add organic breathing:** Integrate DivKid Ochd for natural mathematical rhythm evolution (see Ochd guide)
+3. **Include controlled chaos:** Use Make Noise Wogglebug for chaotic mathematical rhythm processing (see Wogglebug guide)
+4. **Add AI intelligence:** Apply Mutable Marbles for learning modulation of mathematical rhythm parameters (see Marbles guide)
+5. **Include polyrhythmic division:** Use 4ms RCD v2 for complex mathematical timing relationships (see RCD guide)
+6. **Complete the ecosystem:** Add Cre8audio Function Junction for comprehensive mathematical modulation processing (see Function Junction guide)
+
+### **Cross-Module Learning Opportunities:**
+- **Numeric + Ochd:** Learn organic modulation of mathematical rhythm parameters for breathing algorithmic patterns
+- **Numeric + Wogglebug:** Master chaos-driven mathematical rhythm for controlled unpredictability in algorithmic systems
+- **Numeric + Marbles:** Understand AI-driven mathematical rhythm with learning polyrhythmic relationships
+- **Numeric + RCD:** Explore polyrhythmic mathematical timing relationships and complex algorithmic division
+- **All Phase 2 + Numeric:** Build complete mathematical ecosystems with multiple intelligence types processing algorithmic rhythms
+
+### **Skill Development Milestones:**
+- **Beginner:** Use individual prime patterns for basic mathematical rhythm generation
+- **Intermediate:** Master product variation control and CV modulation for complex mathematical relationships
+- **Advanced:** Create Phase 2 integration patches with organic/chaos/AI modulation of mathematical rhythm parameters
+- **Expert:** Design complete mathematical ecosystems where Numeric serves as rhythmic brain for multiple intelligence types
+
+### **Advanced Mathematical Concepts:**
+- **Prime Number Theory:** Understand how mathematical patterns create musical rhythms
+- **Binary Multiplication:** Master how product variations relate mathematically to prime patterns
+- **Algorithmic Rhythm:** Explore how mathematical computation creates complex polyrhythmic relationships
+- **System Integration:** Design patches where Numeric processes multiple intelligence types simultaneously
+
+### **Performance Applications:**
+- **Live Mathematical Control:** Real-time pattern selection and mathematical variation control
+- **Generative Mathematical Systems:** Foundation for self-evolving algorithmic rhythm systems
+- **Hybrid Intelligence:** Bridge between organic, chaos, AI, and mathematical rhythm processing
+- **Educational Tool:** Learn algorithmic composition and mathematical music theory concepts
+
+---
+
+**Bottom Line:** Numeric Repetitor isn't just a rhythm generator - it's a **mathematical rhythm processor** that transforms simple modulation into complex polyrhythmic relationships through prime number algorithms. Every patch teaches you something new about how algorithmic rhythm generation really works. As the **rhythmic brain of Phase 2 ecosystems**, it transforms organic breathing, controlled chaos, and artificial intelligence into unified mathematical polyrhythmic evolution.
 
 ---
 

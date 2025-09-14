@@ -145,9 +145,178 @@
 **Result:** Pad sounds that continuously morph through different destruction types
 **Ambient gold:** Perfect for textural, evolving soundscapes
 
----
+### **Patch 5: Intermediate - Phase 2 Organic Destruction Processing**
+```
+   ┌─────────────────────┐      ┌─────────────────────────┐
+   │   DivKid Ochd      │      │  Noise Engineering      │
+   │    (Phase 2)       │      │   Ruina Versio         │
+   │                    │      │   (Destruction)         │
+   │                    │      │                         │
+   │ LFO 1 ○────────────┼──────┼─▶ FOLD CV Input        │
+   │       ║            │      │                         │
+   │ LFO 3 ○────────────┼──────┼─▶ CENTER CV Input      │
+   │       ║            │      │                         │
+   │ LFO 5 ○────────────┼──────┼─▶ PHASE CV Input       │
+   │       ║            │      │                         │
+   │ LFO 7 ○────────────┼──────┼─▶ BLEND CV Input       │
+   │       ║            │      │                         │
+   └───────║────────────┘      │ L & R Outputs ○────────┼─── Audio (Red)
+           ║                   │ (Organic Destruction)   │
+   CV (Blue)║                  └─────────────────────────┘
+           ║                           ║
+           ▼                    Audio ║
+   ┌─────────────┐               (Red)║
+   │   Audio     │                    ║
+   │   Source    │─────────────────────▼
+   │             │           ┌──────────────────────────────┐
+   └─────────────┘           │   Organic Destruction        │
+                             │      System                  │
+                             │                              │
+                             │ Fold: Breathing Harmonics    │
+                             │ Center: Living Frequency     │
+                             │ Phase: Organic Stereo Width  │
+                             │ Blend: Natural Intensity     │
+                             │                              │
+                             │ Living Destruction ○────────┼─── Breathing Chaos
+                             └──────────────────────────────┘
+```
 
-## Common Use Cases
+| Module Integration | Signal Flow | Purpose | Phase 2 Synergy |
+|-------------------|-------------|---------|------------------|
+| **Ochd LFO 1 → Fold CV** | Organic harmonic control | **Breathing wavefolding** | **Natural harmonic evolution** |
+| **Ochd LFO 3 → Center CV** | Organic frequency shift | **Living frequency processing** | **Organic multiband breathing** |
+| **Ochd LFO 5 → Phase CV** | Organic stereo movement | **Natural stereo evolution** | **Breathing stereo width** |
+| **Ochd LFO 7 → Blend CV** | Organic intensity control | **Living wet/dry mix** | **Natural destruction intensity** |
+
+**Module Settings:**
+- **Ochd Rate:** 12 o'clock for musical organic breathing
+- **Ruina UND mode:** Gentle destruction for organic processing
+- **All CV inputs:** Respond to organic modulation for natural destruction evolution
+- **Result:** Destruction that breathes and evolves naturally with organic life
+
+**Learning Objectives:**
+- **Organic + Destruction integration:** Natural breathing applied to stereo destruction processing
+- **Living destruction:** Distortion effects that breathe with organic life
+- **Evolving chaos:** Simple organic modulation creates complex destruction evolution
+- **System breathing:** Entire destruction system breathes as unified organism
+
+### **Patch 6: Advanced - Chaos Destruction Mathematics**
+```
+   ┌─────────────────────┐      ┌─────────────────────────┐
+   │   Make Noise       │      │  Noise Engineering      │
+   │   Wogglebug        │      │   Ruina Versio         │
+   │    (Phase 2)       │      │   (Destruction)         │
+   │                    │      │                         │
+   │ Stepped CV ○───────┼──────┼─▶ DOOM CV Input        │
+   │       ║            │      │                         │
+   │ Smooth CV ○────────┼──────┼─▶ 8VIZE CV Input       │
+   │       ║            │      │                         │
+   │ Woggle CV ○────────┼──────┼─▶ FOLD CV Input        │
+   │       ║            │      │                         │
+   │ Burst CV ○─────────┼──────┼─▶ SMOOSH Gate Input    │
+   │       ║            │      │                         │
+   └───────║────────────┘      │ L & R Outputs ○────────┼─── Audio (Red)
+           ║                   │ (Chaos Destruction)     │
+   CV (Blue)║                  └─────────────────────────┘
+           ║                           ║
+           ▼                    Audio ║
+   ┌─────────────┐               (Red)║
+   │   Audio     │                    ║
+   │   Source    │─────────────────────▼
+   │             │           ┌───────────────────────────────┐
+   └─────────────┘           │   Chaos Destruction           │
+                             │      Mathematics               │
+                             │                               │
+                             │ Stepped: Chaotic Sub-octaves  │
+                             │ Smooth: Analog Rectification  │
+                             │ Woggle: Unpredictable Folding │
+                             │ Burst: Explosive SMOOSH       │
+                             │                               │
+                             │ Controlled Chaos ○────────┼─── Mathematical Destruction
+                             └───────────────────────────────┘
+```
+
+| Chaos + Destruction Chain | Function | Purpose | Advanced Integration |
+|---------------------------|----------|---------|---------------------|
+| **Wogglebug Stepped → Doom CV** | Quantized chaos sub-octaves | **Chaotic bass destruction** | **Chaos learns harmonic destruction** |
+| **Wogglebug Smooth → 8VIZE CV** | Analog chaos rectification | **Smooth chaos processing** | **Chaotic full-wave mathematics** |
+| **Wogglebug Woggle → Fold CV** | Pure chaos wavefolding | **Unpredictable harmonics** | **Chaos-driven harmonic folding** |
+| **Wogglebug Burst → SMOOSH** | Chaos explosive control | **Chaotic nuclear destruction** | **Mathematical chaos explosions** |
+
+**Module Settings:**
+- **Wogglebug:** All outputs active, Rate for musical chaos timing
+- **Ruina OVR mode:** Maximum destruction for chaos processing
+- **All chaos inputs:** Create unpredictable but musical destruction variations
+- **Result:** Destruction that evolves chaotically but remains controlled
+
+**Learning Objectives:**
+- **Chaos + Destruction fusion:** Controlled unpredictability in stereo destruction systems
+- **Mathematical chaos theory:** Understanding how chaos affects destruction algorithms
+- **Unpredictable yet musical:** Chaos keeps destruction from becoming static
+- **Controlled randomness:** Destruction processing keeps chaos musical and structured
+
+### **Patch 7: Expert - Complete Phase 2 Destruction Ecosystem**
+```
+┌─────────────┐ ┌─────────────┐ ┌─────────────┐ ┌─────────────────┐
+│   DivKid    │ │ Make Noise  │ │ Mutable     │ │ Noise Engineering│
+│    Ochd     │ │ Wogglebug   │ │  Marbles    │ │ Ruina Versio     │
+│ (Organic)   │ │ (Chaos)     │ │ (Patterns)  │ │ (Destruction)    │
+│             │ │             │ │             │ │                 │
+│ LFO 1 ○─────┼─┼─Stepped ○   │ │ X1 Out ○────┼─┼─FOLD CV Input │
+│       ║     │ │        ║    │ │       ║     │ │       ║         │
+│ LFO 3 ○─────┼─┼─Smooth ○    │ │ X2 Out ○────┼─┼─CENTER CV     │
+│       ║     │ │        ║    │ │       ║     │ │       ║         │
+│ LFO 7 ○─────┼─┼─Woggle ○    │ │ t1 Out ○────┼─┼─SMOOSH Gate   │
+│       ║     │ │        ║    │ │       ║     │ │       ║         │
+└───────║─────┘ └────────║────┘ │ Y Out  ○────┼─┼─PHASE CV      │
+        ║                ║      │       ║     │ │       ║         │
+        ║                ║      │ DEJA VU     │ │ L&R Out ○────┼─Audio
+        ║                ║      │ CV ◀────────┼─┼─All Destruction │ │       ║         │
+        ║                ║      │ (Learning)  │ │ Processing    │ │       ║         │
+        ║                ║      └─────────────┘ └─────────────────┘
+        ▼                ▼             ║               ║
+┌──────────────────────────────────────────────────────────────────┐
+│                  Complete Destruction Ecosystem                    │
+│                                                                     │
+│ Organic Breathing + Controlled Chaos + Pattern Learning + Destruction│
+│                                                                     │
+│ Organic LFOs → Natural destruction parameter breathing and evolution│
+│ Chaos CVs    → Controlled unpredictability in destruction processing│
+│ Pattern X/Y/t → Learning destruction patterns and adaptive control  │
+│ Destruction  → Stereo processing of all modulation types           │
+│ Feedback     → Marbles learns from destruction processing output    │
+│                                                                     │
+│ System Evolution: Organic → Chaos → Patterns → Destruction        │
+│                                                                     │
+│ Pure Destruction Evolution ○─────────────────────────┼─── Evolving Chaos Output
+└──────────────────────────────────────────────────────────────────┘
+```
+
+**Complete System Integration:**
+
+| Layer | Function | Ruina Role | Musical Result |
+|-------|----------|------------|----------------|
+| **Organic (Ochd)** | Natural breathing | **Organic destruction breathing** | **Living destruction processing** |
+| **Chaos (Wogglebug)** | Controlled uncertainty | **Chaos destruction processing** | **Unpredictable but structured chaos** |
+| **Patterns (Marbles)** | Learning circuits | **Pattern-driven destruction control** | **Adaptive destruction relationships** |
+| **Destruction (Ruina)** | Stereo processing | **System destruction brain** | **Advanced stereo destruction** |
+
+**Expert System Design:**
+- **Four-layer processing:** Organic breathing, controlled chaos, pattern learning, destruction processing
+- **Ruina as destruction processor:** All modulation types processed through stereo destruction algorithms
+- **Learning integration:** Marbles learns from destruction processing output through feedback
+- **Emergent behavior:** System evolves increasingly sophisticated destruction relationships
+- **Musical evolution:** Organic → Chaos → Patterns → Destruction = Pure evolved stereo chaos
+
+**Advanced Performance:**
+1. **Initialization:** Each module establishes its character and patterns
+2. **Cross-modulation:** All modulation types begin affecting destruction processing
+3. **Learning phase:** Marbles learns from stereo destruction relationships
+4. **System evolution:** Entire ecosystem becomes increasingly musical and sophisticated
+5. **Destruction transcendence:** Pure stereo destruction emerges from multi-layer modulation
+
+**Philosophical Achievement:**
+This represents **advanced destruction consciousness** - where organic breathing, controlled chaos, and pattern learning all become stereo destruction processing, computed through multiple destruction algorithms into pure evolved musical chaos.
 
 **🥁 **Drum Bus Processing:** Destroy entire drum mixes with SMOOSH and multiband saturation**
 **🎸 **Guitar/Bass Destruction:** Multiple distortion types for aggressive sounds**
@@ -214,23 +383,37 @@
 
 ## Pairs Well With
 
+### **Phase 2 Module Synergies (Modulation & CV Sources):**
+- **DivKid Ochd & Expander:** Ochd LFOs → Ruina CV inputs for organic destruction parameter evolution
+- **Make Noise Wogglebug:** Wogglebug chaos CVs → Ruina parameters for controlled chaos destruction processing
+- **Mutable Marbles:** Marbles X/Y outputs → Ruina modulation for pattern-driven destruction control
+- **4ms RCD v2:** RCD divisions → Ruina SMOOSH gate for polyrhythmic destruction triggering
+- **Cre8audio Function Junction:** Function + Ruina = complete destruction ecosystem with organic/chaos/pattern modulation
+- **Cross-Phase 2 Integration:** Ruina processes all Phase 2 modulation sources into unified stereo destruction relationships
+
 ### **Perfect Partners for Beginners:**
-- **VCAs (Veils, 2HP VCA):** Essential for controlling the aggressive output levels
-- **Filters (SEM, MMF):** Tame harsh frequencies and add musical shaping
-- **Compressors:** Control the extreme dynamics created by destruction
-- **Reverb/Delay (FX Aid):** Add space to the processed sounds
+- **VCAs (Veils, 2HP VCA):** Essential for controlling aggressive output levels and preventing speaker damage
+- **Filters (SEM, MMF):** Tame harsh frequencies and add musical shaping to destroyed signals
+- **Compressors:** Control extreme dynamics created by destruction algorithms
+- **Reverb/Delay (FX Aid):** Add space and dimension to processed destruction sounds
 
-### **Next-Level Combinations:**
-- **Multiple LFOs (Ochd, Batumi):** Modulate multiple parameters simultaneously
-- **Envelope Generators (Maths):** Dynamic control of destruction intensity
-- **Mixers:** Parallel processing by splitting signals before and after Ruina
-- **Attenuverters:** Fine-control the intense CV modulation responses
+### **Advanced Destruction Integration:**
+- **Multiple LFOs (Ochd, Batumi):** Modulate multiple destruction parameters simultaneously for evolving chaos
+- **Envelope Generators (Maths):** Dynamic control of destruction intensity and character
+- **Mixers:** Parallel processing by splitting signals before and after destruction
+- **Attenuverters:** Fine-control the intense CV modulation responses of destruction algorithms
 
-### **Advanced Integration:**
-- **Other Versio modules:** Mix different Versio effects in the same system
-- **Sequencers:** Automate routing switches and SMOOSH triggers
-- **Performance controllers:** Real-time control of multiple destruction parameters
-- **Multi-track processing:** Use multiple inputs for complex stereo processing
+### **Essential Destruction Partners:**
+- **Other Versio modules:** Mix different Versio effects for complete stereo processing ecosystems
+- **Sequencers:** Automate routing switches and SMOOSH triggers for composed destruction
+- **Performance controllers:** Real-time control of multiple destruction parameters for live chaos
+- **Multi-track processing:** Use multiple inputs for complex stereo destruction processing
+
+### **Advanced System Integration:**
+- **Make Noise Maths:** Maths processes Ruina outputs for mathematical destruction relationships
+- **Logic modules:** Combine destruction triggers with Boolean operations for complex rhythmic destruction
+- **Sample & Hold:** Use destruction gates to trigger chaos in other parts of the system
+- **Phase 1 modules:** Ruina integrates perfectly with Plaits, Maths, and other core synthesis modules
 
 ### **Genre Applications:**
 - **Industrial/Noise:** Extreme settings for aggressive electronic music
@@ -251,6 +434,47 @@
 - **Cross-modulation:** Use audio-rate signals to modulate destruction parameters
 - **Rhythmic destruction:** Sequence different routing modes for rhythmic effects
 - **Stereo processing:** Use different settings on L vs R inputs for wide effects
+
+---
+
+## Phase 2 Learning Path
+
+### **Recommended Study Progression:**
+1. **Start with Ruina fundamentals:** Master individual destruction algorithms, routing modes, and stereo destruction concepts
+2. **Add organic breathing:** Integrate DivKid Ochd for natural destruction parameter evolution (see Ochd guide)
+3. **Include controlled chaos:** Use Make Noise Wogglebug for chaotic destruction processing (see Wogglebug guide)
+4. **Add pattern learning:** Apply Mutable Marbles for adaptive modulation of destruction parameters (see Marbles guide)
+5. **Include polyrhythmic triggers:** Use 4ms RCD v2 for complex destruction triggering relationships (see RCD guide)
+6. **Complete the ecosystem:** Add Cre8audio Function Junction for comprehensive destruction modulation processing (see Function Junction guide)
+
+### **Cross-Module Learning Opportunities:**
+- **Ruina + Ochd:** Learn organic modulation of destruction parameters for breathing stereo chaos
+- **Ruina + Wogglebug:** Master chaos-driven destruction for controlled unpredictability in stereo processing
+- **Ruina + Marbles:** Understand pattern-driven destruction with adaptive stereo relationships
+- **Ruina + RCD:** Explore polyrhythmic destruction triggering and complex algorithmic chaos
+- **All Phase 2 + Ruina:** Build complete destruction ecosystems with multiple modulation types processing stereo chaos
+
+### **Skill Development Milestones:**
+- **Beginner:** Use individual destruction algorithms for basic stereo destruction processing
+- **Intermediate:** Master routing modes and CV modulation for complex destruction relationships
+- **Advanced:** Create Phase 2 integration patches with organic/chaos/pattern modulation of destruction parameters
+- **Expert:** Design complete destruction ecosystems where Ruina serves as stereo processor for multiple modulation types
+
+### **Advanced Destruction Concepts:**
+- **Multi-Algorithm Processing:** Understand how different destruction algorithms interact and combine
+- **Stereo Field Manipulation:** Master phase and width control for immersive destruction processing
+- **Dynamic Destruction:** Explore how modulation affects destruction character and intensity
+- **System Integration:** Design patches where Ruina processes multiple modulation types simultaneously
+
+### **Performance Applications:**
+- **Live Destruction Control:** Real-time routing and parameter control for dynamic stereo destruction
+- **Generative Destruction Systems:** Foundation for self-evolving stereo chaos systems
+- **Hybrid Modulation:** Bridge between organic, chaos, pattern, and destruction processing
+- **Educational Tool:** Learn stereo destruction processing and advanced distortion concepts
+
+---
+
+**Bottom Line:** Ruina Versio isn't just a distortion module - it's a **stereo destruction processor** that transforms simple audio into complex chaos through multiple destruction algorithms. Every patch teaches you something new about how stereo destruction processing really works. As the **destruction brain of Phase 2 ecosystems**, it transforms organic breathing, controlled chaos, and pattern learning into unified stereo destruction evolution.
 
 ---
 

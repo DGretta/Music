@@ -65,15 +65,58 @@
 **Controls:** WAVEFOLD fader = brightness, SYMMETRY = character
 **Sound:** Rich, harmonically complex lead tones that evolve as you play
 
-### **Patch 2: Self-Modulating Drone** 
+### **Patch 2: Intermediate - Phase 2 Organic West Coast Processing**
 ```
-Nothing patched - all internal connections!
-[Cs-L MULTIPLY OUT] ──→ [Reverb] ──→ [Audio Out]
+   ┌─────────────────────┐      ┌─────────────────────┐
+   │   DivKid Ochd      │      │   Instruo Cs-L      │
+   │    (Phase 2)       │      │    (West Coast)     │
+   │                    │      │                     │
+   │ LFO 1 ○────────────┼──────┼─▶ OSC A 1V/Oct      │
+   │       ║            │      │                     │
+   │ LFO 3 ○────────────┼──────┼─▶ OSC A Wavefold CV │
+   │       ║            │      │                     │
+   │ LFO 7 ○────────────┼──────┼─▶ OSC B Sync CV     │
+   │       ║            │      │                     │
+   │       ║            │      │ OSC A Final Out ○───┼─── Audio (Red)
+   │       ║            │      │                     │
+   │       ║            │      │ OSC B Final Out ○───┼─── Audio (Red)
+   │       ║            │      │                     │
+   │       ║            │      │ Multiply Out ○──────┼─── Audio (Red)
+   └───────║────────────┘      └─────────────────────┘
+           ║                           ║      ║    ║
+   CV (Blue)║                   Audio (Red)║  ║    ║
+           ▼                           ║      ║    ║
+   ┌─────────────┐                    ▼      ▼    ▼
+   │   Mixer/    │           ┌──────────────────────────┐
+   │Performance  │           │   Organic West Coast     │
+   │   Control   │           │      System              │
+   │             │           │                          │
+   │ Ch 1 ◀──────┼───────────┼─ Organic Pitch Drift     │
+   │ Ch 2 ◀──────┼───────────┼─ Breathing Wavefolds     │
+   │ Ch 3 ◀──────┼───────────┼─ Living Ring Modulation  │
+   │ Master Out○─┼───────────┼─                        │
+   └─────────────┘           │ Breathing Music ○───────┼─── Organic Output
+                             └──────────────────────────┘
 ```
-**Setup:** Press LINK button (white), set both oscillators to slightly different pitches
-**Visual:** Multiple button states show different modulation types
-**Controls:** INDEX knob controls interaction intensity, DEPTH controls multiply amount
-**Sound:** Evolving, breathing drone textures that shift and morph continuously
+
+| Module Integration | Signal Flow | Purpose | Phase 2 Synergy |
+|-------------------|-------------|---------|------------------|
+| **Ochd LFO 1 → Cs-L OSC A Pitch** | Organic pitch drift | **Living frequency modulation** | **Natural pitch breathing** |
+| **Ochd LFO 3 → Wavefold CV** | Mid-speed organic | **Breathing timbre control** | **Organic harmonic evolution** |
+| **Ochd LFO 7 → Sync CV** | Slow organic drift | **Living sync relationships** | **Natural harmonic locking** |
+| **Cs-L Processing** | Complex oscillator math | **West Coast + Organic hybrid** | **Best of both approaches** |
+
+**Module Settings:**
+- **Ochd Rate:** 12 o'clock for musical organic breathing
+- **Cs-L OSC A:** Coarse tuned to musical pitch, Fine for organic microtuning
+- **Cs-L Wavefold:** Start at center, let organic modulation breathe the harmonics
+- **Sync:** Experiment with different sync modes for harmonic relationships
+
+**Learning Objectives:**
+- **Organic + West Coast integration:** Natural breathing applied to complex oscillator processing
+- **Living harmonics:** Wavefolds that breathe with organic life
+- **Musical drift:** Pitch relationships that evolve naturally over time
+- **System breathing:** Entire West Coast voice breathes as unified organism
 
 ### **Patch 3: Complex Harmonic Voice**
 ```
@@ -85,7 +128,7 @@ Nothing patched - all internal connections!
 **Controls:** Envelope shapes the timbre dynamically, mix both FINAL outputs
 **Sound:** Keyboard-played complex tones with evolving harmonic content
 
-### **Patch 4: FM Bell Tones**
+### **Patch 4: FM Bell Tones (Basic)**
 ```
 [Keyboard] ──1V/OCT──→ [Cs-L OSC B 1V/OCT]
 [Cs-L OSC B SINE] ──→ [Cs-L OSC A 1V/OCT] (tune A higher than B)
@@ -94,6 +137,122 @@ Nothing patched - all internal connections!
 **Visual:** FM ATTENUATOR positions control modulation depth
 **Controls:** OSC A frequency = timbre, FM ATTENUATOR = brightness/metallicness  
 **Sound:** Classic FM bell and chime sounds with rich harmonic content
+
+### **Patch 5: Advanced - Chaos Mathematics in West Coast Synthesis**
+```
+   ┌─────────────────────┐      ┌─────────────────────┐
+   │   Make Noise       │      │   Instruo Cs-L      │
+   │   Wogglebug        │      │ (West Coast Math)   │
+   │    (Phase 2)       │      │                     │
+   │                    │      │                     │
+   │ Stepped CV ○───────┼──────┼─▶ OSC A 1V/Oct      │
+   │       ║            │      │                     │
+   │ Smooth CV ○────────┼──────┼─▶ OSC A FM CV       │
+   │       ║            │      │                     │
+   │ Woggle CV ○────────┼──────┼─▶ OSC B Wavefold CV │
+   │       ║            │      │                     │
+   │ Burst CV ○─────────┼──────┼─▶ INDEX CV          │
+   │       ║            │      │                     │
+   │       ║            │      │ OSC A Final ○───────┼─── Audio (Red)
+   │       ║            │      │                     │
+   │       ║            │      │ Multiply Out ○──────┼─── Audio (Red)
+   └───────║────────────┘      └─────────────────────┘
+           ║                           ║         ║
+   CV (Blue)║                   Audio (Red)║         ║
+           ▼                           ▼         ║
+   ┌─────────────┐                    ║         ║
+   │   Effects    │           ┌──────────────────────────────┐
+   │   Processing │           │   Chaos West Coast          │
+   │             │           │      Mathematics            │
+   │ Delay CV ◀──┼───────────┼─ Unpredictable Timing       │
+   │ Reverb CV◀──┼───────────┼─ Controlled Chaos Timbres   │
+   │ Filter CV◀──┼───────────┼─ Mathematical Randomness    │
+   │ Audio Out○─┼───────────┼─                           │
+   └─────────────┘           │ Chaos Music ○──────────────┼─── Controlled Unpredictability
+                             └──────────────────────────────┘
+```
+
+| Chaos + West Coast Chain | Function | Purpose | Advanced Integration |
+|--------------------------|----------|---------|---------------------|
+| **Wogglebug Stepped → Cs-L Pitch** | Quantized chaos pitch | **Musical unpredictability** | **Chaos learns musical scales** |
+| **Wogglebug Smooth → FM CV** | Analog chaos FM | **Controlled chaos FM** | **Chaotic frequency modulation** |
+| **Wogglebug Woggle → Wavefold** | Pure chaos timbre | **Unpredictable harmonics** | **Chaos-driven wavefolding** |
+| **Wogglebug Burst → INDEX** | Chaos cross-mod | **Controlled chaos interaction** | **Mathematical chaos processing** |
+
+**Module Settings:**
+- **Wogglebug:** All outputs active, Rate for musical chaos timing
+- **Cs-L:** Both oscillators tuned to complement chaotic pitch changes
+- **INDEX:** Modulated by chaos for unpredictable cross-modulation
+- **Wavefold settings:** Let chaos drive the harmonic complexity
+
+**Learning Objectives:**
+- **Chaos + West Coast fusion:** Controlled unpredictability in complex oscillator systems
+- **Mathematical chaos:** Understanding how chaos algorithms affect musical parameters
+- **Harmonic unpredictability:** Wavefolds driven by chaotic modulation
+- **Controlled randomness:** Musical chaos that stays musical through West Coast processing
+
+### **Patch 6: Expert - Complete Phase 2 West Coast Ecosystem**
+```
+┌─────────────┐ ┌─────────────┐ ┌─────────────┐ ┌─────────────┐
+│   DivKid    │ │ Make Noise  │ │ Mutable     │ │ Instruo     │
+│    Ochd     │ │ Wogglebug   │ │  Marbles    │ │   Cs-L      │
+│ (Organic)   │ │ (Chaos)     │ │ (AI)        │ │(West Coast) │
+│             │ │             │ │             │ │             │
+│ LFO 1 ○─────┼─┼─Stepped ○   │ │ X1 Out ○────┼─┼─OSC A Pitch │
+│       ║     │ │        ║    │ │       ║     │ │       ║     │
+│ LFO 3 ○─────┼─┼─Smooth ○    │ │ X2 Out ○────┼─┼─OSC A FM    │
+│       ║     │ │        ║    │ │       ║     │ │       ║     │
+│ LFO 7 ○─────┼─┼─Woggle ○    │ │ t1 Out ○────┼─┼─OSC B Trig  │
+│       ║     │ │        ║    │ │       ║     │ │       ║     │
+└───────║─────┘ └────────║────┘ │ Y Out  ○────┼─┼─Wavefold CV│
+        ║                ║      │       ║     │ │       ║     │
+        ║                ║      │ DEJA VU     │ │ Final ○─────┼─Audio
+        ║                ║      │ CV ◀────────┼─┼─Multiply   │ │       ║     │
+        ║                ║      │ (Learning)  │ │ Out ○───────┼─Audio
+        ║                ║      └─────────────┘ └─────────────┘
+        ▼                ▼             ║               ║
+┌──────────────────────────────────────║──────────────║─────┐
+│                  Complete West Coast Ecosystem      ║     │
+│                                      ▼              ▼     │
+│ Organic Breathing + Controlled Chaos + AI Learning + Cs-L │
+│                                                           │
+│ Organic LFOs → Natural pitch and timbre breathing        │
+│ Chaos CVs    → Controlled unpredictability in synthesis  │
+│ AI X/Y/t     → Learning modulation of West Coast params  │
+│ Cs-L Math    → Complex oscillator processing of all types│
+│ Feedback     → AI learns from West Coast mathematical out │
+│                                                           │
+│ System Evolution: Organic → Chaos → AI → West Coast      │
+│                                                           │
+│ Pure Musical Evolution ○──────────────────────────────────┼─── Evolving Output
+└───────────────────────────────────────────────────────────┘
+```
+
+**Complete System Integration:**
+
+| Layer | Function | Cs-L Role | Musical Result |
+|-------|----------|-----------|----------------|
+| **Organic (Ochd)** | Natural breathing | **Organic pitch processing** | **Breathing West Coast voices** |
+| **Chaos (Wogglebug)** | Controlled uncertainty | **Chaos timbre processing** | **Unpredictable but musical** |
+| **AI (Marbles)** | Learning patterns | **AI-driven West Coast control** | **Advanced harmonic evolution** |
+| **West Coast (Cs-L)** | Complex oscillator math | **System synthesis brain** | **Advanced harmonic processing** |
+
+**Expert System Design:**
+- **Four-layer processing:** Organic breathing, controlled chaos, AI learning, West Coast processing
+- **Cs-L as synthesis processor:** All modulation types processed through complex oscillator mathematics
+- **Learning integration:** Marbles learns from Cs-L's complex oscillator output through feedback
+- **Emergent behavior:** System evolves increasingly sophisticated West Coast synthesis relationships
+- **Musical evolution:** Organic → Chaos → AI → West Coast = Pure musical evolution
+
+**Advanced Performance:**
+1. **Initialization:** Each module establishes its character and patterns
+2. **Cross-modulation:** All intelligence types begin affecting West Coast synthesis
+3. **Learning phase:** Marbles learns from complex oscillator mathematical relationships
+4. **System evolution:** Entire ecosystem becomes increasingly sophisticated musically
+5. **West Coast transcendence:** Pure complex oscillator synthesis emerges from multi-layer intelligence
+
+**Philosophical Achievement:**
+This represents **advanced West Coast consciousness** - where organic breathing, controlled chaos, and artificial intelligence all become complex oscillator synthesis, processed through analog West Coast mathematics into pure evolved musical intelligence.
 
 ---
 
@@ -154,20 +313,81 @@ Nothing patched - all internal connections!
 
 ## Pairs Well With
 
+### **Phase 2 Module Synergies (Modulation & CV Sources):**
+- **DivKid Ochd & Expander:** Ochd LFOs → Cs-L CV inputs for organic breathing West Coast synthesis
+- **Make Noise Wogglebug:** Wogglebug chaos CVs → Cs-L parameters for controlled chaos West Coast processing  
+- **Mutable Marbles:** Marbles X/Y outputs → Cs-L modulation for AI-driven West Coast control
+- **4ms RCD v2:** RCD divisions → Cs-L triggers for polyrhythmic West Coast sequencing
+- **Cre8audio Function Junction:** Function + Cs-L = complete West Coast ecosystem with complex modulation
+- **Cross-Phase 2 Integration:** Cs-L processes all Phase 2 modulation sources into unified West Coast synthesis
+
 ### **Perfect Partners for Beginners:**
 - **Low Pass Gate (Optomix, Cinnamon):** Classic pairing for West Coast synthesis - shaped dynamics
 - **Reverb/Delay (FX Aid, Magneto):** Complex tones + spacious effects = instant ambient magic
 - **Envelope Generator (Maths, Function):** Dynamic control over wavefolding creates expressive timbres
 - **Quantizer (Scales, QPAS):** Keep complex FM relationships in tune and musical
 
-### **Next-Level Combinations:**
+### **Advanced West Coast Integration:**
 - **Pressure Points (Make Noise):** Touch control over INDEX and wavefold parameters for expressive playing
 - **Filter (Morgasmatron, QPAS):** Further shape the complex harmonics from the wavefolders  
 - **Another Complex Oscillator:** Stack multiple Cs-Ls for incredibly complex polyphonic textures
-- **Random/Chaos (Wogglebug, S&H):** Random modulation of INDEX and symmetry creates organic evolution
+- **Buchla 259 style modules:** Create complete West Coast voices with multiple complex oscillators
 
-### **Pro Tip:** Cs-L excels as a **complete voice** on its own - unlike simple oscillators, it can create full, evolving tones without needing filters or extensive modulation. Perfect as the centerpiece of a small West Coast system.
+### **Essential Utility Partners:**
+- **VCAs (Veils, Quad VCA):** Control complex oscillator outputs with precise amplitude control
+- **Multiple/Splitters:** Essential for distributing Cs-L outputs to multiple processing destinations
+- **Attenuverters:** Fine control over CV amounts going into Cs-L's sensitive modulation inputs
+- **Mixers:** Blend multiple Cs-L outputs for rich, layered West Coast textures
+
+### **Advanced System Integration:**
+- **Make Noise Maths:** Maths processes Cs-L outputs for mathematical West Coast relationships
+- **Sample & Hold modules:** Create stepped modulation of Cs-L parameters for glitchy West Coast textures
+- **Logic modules:** Combine Cs-L triggers and gates for complex West Coast timing relationships
+- **Phase 1 modules:** Cs-L integrates perfectly with Plaits, Maths, and other core synthesis modules
+
+### **Pro Tip:** Cs-L excels as a **complete voice** on its own - unlike simple oscillators, it can create full, evolving tones without needing filters or extensive modulation. Perfect as the centerpiece of a small West Coast system or as the synthesis brain of a complete Phase 2 ecosystem.
 
 ---
 
-*Need the full technical manual? Find it at instruomodular.com*
+## Phase 2 Learning Path
+
+### **Recommended Study Progression:**
+1. **Start with Cs-L fundamentals:** Master wavefolding, FM synthesis, and complex oscillator mathematics
+2. **Add organic breathing:** Integrate DivKid Ochd for natural West Coast parameter breathing (see Ochd guide)
+3. **Include controlled chaos:** Use Make Noise Wogglebug for mathematical chaos in West Coast synthesis (see Wogglebug guide)
+4. **Add AI intelligence:** Apply Mutable Marbles for learning modulation of West Coast parameters (see Marbles guide)
+5. **Include rhythmic division:** Use 4ms RCD v2 for polyrhythmic West Coast sequencing (see RCD guide)
+6. **Complete the ecosystem:** Add Cre8audio Function Junction for comprehensive West Coast modulation processing (see Function Junction guide)
+
+### **Cross-Module Learning Opportunities:**
+- **Cs-L + Ochd:** Learn organic modulation of complex oscillator parameters for breathing West Coast synthesis
+- **Cs-L + Wogglebug:** Master chaos-driven wavefolding and FM for controlled unpredictability in West Coast systems
+- **Cs-L + Marbles:** Understand AI-driven West Coast synthesis with learning harmonic relationships
+- **Cs-L + RCD:** Explore polyrhythmic triggering of West Coast voices and complex timing relationships
+- **All Phase 2 + Cs-L:** Build complete West Coast ecosystems with multiple modulation intelligence types
+
+### **Skill Development Milestones:**
+- **Beginner:** Use individual oscillators for basic wavefolding and FM bell tones
+- **Intermediate:** Master INDEX system and cross-modulation for complex harmonic relationships
+- **Advanced:** Create Phase 2 integration patches with organic/chaos/AI modulation of West Coast parameters
+- **Expert:** Design complete West Coast ecosystems where Cs-L serves as synthesis brain for multiple intelligence types
+
+### **Advanced West Coast Concepts:**
+- **Complex Oscillator Mathematics:** Understand how Cs-L performs mathematical operations on waveforms
+- **Harmonic Wavefolding:** Master how wavefolds create increasingly complex harmonic relationships
+- **Cross-Modulation Systems:** Explore how oscillators can modulate each other in musical ways
+- **System Integration:** Design patches where Cs-L processes multiple modulation intelligence types simultaneously
+
+### **Performance Applications:**
+- **Live West Coast Control:** Real-time wavefolding and INDEX control for expressive West Coast performance
+- **Generative West Coast Systems:** Foundation for self-evolving complex oscillator music systems
+- **Hybrid Intelligence:** Bridge between organic, chaos, AI, and West Coast synthesis processing
+- **Educational Tool:** Learn complex oscillator synthesis and West Coast mathematics concepts
+
+---
+
+**Bottom Line:** Cs-L isn't just a complex oscillator - it's a **West Coast synthesis processor** that transforms simple CV into rich harmonic complexity through mathematical wavefolding relationships. Every patch teaches you something new about how complex oscillator synthesis really works. As the **synthesis brain of Phase 2 ecosystems**, it transforms organic breathing, controlled chaos, and artificial intelligence into unified West Coast musical mathematics.
+
+---
+
+*Visit [Instruō Modular](https://instruomodular.com) for complete documentation, patch examples, and advanced West Coast synthesis techniques*

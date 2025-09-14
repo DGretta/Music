@@ -15,10 +15,132 @@
 - **Y input**: Run/stop control
 - **A & B outputs**: Clock outputs (can be set to different divisions)
 
-### **Step 3: Set Clock Divisions (if needed)**
-- The clock algorithm allows you to set different divisions for outputs A and B
-- **Turn the Z knob** while the algorithm is running to adjust parameters
-- The display will show the current division settings
+### **Step 3: Set Clock Divisions for Outputs A & B**
+**Note:** Based on practical use, the F1 algorithm parameter access differs from documentation.
+
+#### **Access Parameters for F1:**
+1. **Press the Z knob** to cycle through available parameters (if any)
+2. **Turn the S encoder** to adjust the current parameter value
+3. **Watch the display** - it will briefly show parameter numbers and values
+
+#### **Alternative Parameter Access:**
+- **Hold S encoder and turn** to select which parameter to adjust
+- **Release S encoder** and turn to change the parameter value
+
+#### **If F1 Doesn't Support Divisions:**
+The F1 algorithm may be designed as a basic clock generator without built-in divisions. For reliable clock divisions, use:
+
+**B-6 (Clockable LFO) - Recommended:**
+1. Select algorithm **B-6**
+2. **X input**: Clock input
+3. **Z knob**: Clock division/multiplication control (displays on screen)
+   - **Negative values shown** = divisions (e.g., -2 = divide by 2)
+   - **Positive values shown** = multiplications (e.g., 2 = multiply by 2)
+4. **A & B outputs**: Divided/multiplied clock outputs
+
+**G-6 (MIDI Clock) - For MIDI Integration:**
+- **Requires incoming MIDI clock** from DAW, sequencer, or MIDI clock source
+- **Parameter 0**: Clock divisor for Output A
+- **Parameter 1**: Clock divisor for Output B  
+- **MIDI input must be connected** to Disting's MIDI port
+- **Converts MIDI clock to analog clock divisions** on outputs A & B
+- **Also converts analog clock input (X) to MIDI clock output**
+
+---
+
+## **B-6 - Clockable LFO Setup (Recommended for Clock Divisions)**
+
+The B-6 Clockable LFO algorithm is excellent for generating clock divisions and multiplications from an input clock source.
+
+### **Step 1: Select B-6 Clockable LFO**
+1. **Press S encoder once** to enter menu
+2. **Press S again** to select "Algorithm"
+3. **Turn S encoder** to navigate to **B-6 - Clockable LFO**
+4. **Press S** to confirm selection
+
+### **Step 2: Understand the Inputs/Outputs**
+- **X input**: Clock input (1V+ triggers)
+- **Y input**: Waveshape control (affects output waveform)
+- **Z knob**: Clock division/multiplication control
+- **A output**: Shaped LFO output (saw → sine → triangle based on Y input)
+- **B output**: Pulse output (adjustable pulse width based on Y input)
+
+### **Step 3: Configure Clock Division/Multiplication**
+1. **Connect your master clock** → **X input**
+2. **Turn the Z knob** to set division/multiplication:
+   - **Display shows negative values** = divisions (e.g., "-2" = divide by 2)
+   - **Display shows positive values** = multiplications (e.g., "2" = multiply by 2)
+   - **Available range**: Divide by 16 to multiply by 16
+
+### **Step 4: Choose Your Output**
+- **Use B output for clock signals** - clean pulse output perfect for clocking other modules
+- **Use A output for modulation** - shaped waveform for CV modulation
+- **Y input controls pulse width** on B output (0V = narrow pulse, +5V = 50% duty cycle, -5V = wide pulse)
+
+### **Division/Multiplication Chart:**
+| Z Knob Display | Function | Musical Use |
+|----------------|----------|-------------|
+| -16 | ÷16 | Very slow, whole notes |
+| -8 | ÷8 | Half notes |
+| -4 | ÷4 | Quarter notes |
+| -2 | ÷2 | Eighth notes |
+| -1 | (same as input) | Same timing |
+| 2 | ×2 | Double speed |
+| 4 | ×4 | Quadruple speed |
+| 8 | ×8 | Very fast subdivision |
+| 16 | ×16 | Extremely fast |
+
+### **Tap Tempo Feature:**
+- **Press Z knob multiple times** to tap in a tempo
+- Especially useful when no external clock is connected
+- The timing between Z button presses sets the base tempo
+
+### **Parameter Control:**
+**Parameter 0** (access by pressing Z knob to cycle through parameters):
+- **Attenuation control** for both outputs
+- **Range**: -1 to 31
+- **Value -1**: No output
+- **Value 31**: Full ±8V output range
+
+### **Common B-6 Clock Setup Examples:**
+
+#### **Basic Clock Divider:**
+```
+[Master Clock] → [B-6 X Input] → [B-6 B Output] → [Sequencer Clock In]
+                                  Z knob = -4 (÷4)
+```
+**Result**: Quarter note pulses from any input clock
+
+#### **Multiple Division Outputs:**
+```
+[Master Clock] → [B-6 #1 X Input] → [B-6 #1 B Output] → [Kick Drum Trigger]
+                  Z knob = -4 (÷4)
+                  
+[Master Clock] → [B-6 #2 X Input] → [B-6 #2 B Output] → [Hi-Hat Trigger]  
+                  Z knob = -2 (÷2)
+```
+**Result**: Different drum elements triggered at different divisions
+
+#### **Clock + Modulation:**
+```
+[Master Clock] → [B-6 X Input] → [B-6 A Output] → [Filter Cutoff CV]
+                                 [B-6 B Output] → [Envelope Trigger]
+                 Z knob = -8, Y input = slow LFO
+```
+**Result**: Slow filter modulation synced to clock + trigger pulses
+
+### **Pro Tips for B-6:**
+- **B output is perfect for clock signals** - clean, consistent pulse width
+- **A output great for modulation** - musical waveforms synced to your tempo
+- **Y input adds expression** - connect an LFO to Y for evolving pulse widths
+- **Combine multiple B-6 units** for complex polyrhythmic setups
+- **Use tap tempo** when performing without external clock reference
+
+### **B-6 vs Other Clock Algorithms:**
+- **B-6**: Best for clock divisions with modulation capabilities
+- **F-1**: Basic clock generation, limited division control
+- **G-6**: MIDI-focused, best for MIDI clock conversion
+- **C-3**: Complex Euclidean patterns, not simple divisions
 
 ### **Alternative Clock Algorithms:**
 - **F.2 - Clock Divider/Multiplier**: If you have an external clock and want divisions
