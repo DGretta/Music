@@ -113,7 +113,7 @@ Enable: [Ratchet + Swing + Random effects]
 **Visual:** Effects LEDs show active processing
 **Result:** Simple sequence becomes complex, groovy, and unpredictable
 
-### **Patch 5: Expert - Complete Phase 2 Intelligence Sequencing Hub**
+### **Patch 5: Expert - Complete Phase 2 Advanced Sequencing Hub**
 ```
 ┌─────────────┐ ┌─────────────┐ ┌─────────────┐ ┌─────────────┐
 │   DivKid    │ │ Make Noise  │ │ Mutable     │ │ 4ms RCD v2  │
@@ -130,9 +130,9 @@ Enable: [Ratchet + Swing + Random effects]
 ┌──────────────────────────────────────────────────────────────────────────────┐
 │                            Squarp                             │
 │                          Hermod+                            │
-│                (Phase 2 Intelligence Sequencing Hub)       │
+│                (Phase 2 Advanced Sequencing Hub)              │
 │                                                                        │
-│ Phase 2 Source Integration & Intelligent Sequencing:                   │
+│ Phase 2 Source Integration & Advanced Sequencing:                      │
 │                                                                        │
 │ CLOCK IN ◀──────────────── RCD Clock Out (master timing synchronization)     │
 │ CV IN 1 ◀───────────────── Ochd LFO1 (organic pitch modulation input)       │
@@ -145,7 +145,7 @@ Enable: [Ratchet + Swing + Random effects]
 │ 96PPQ Recording Resolution:                                            │
 │ • Record all Phase 2 sources with perfect timing precision             │
 │ • Capture organic breathing, chaos events, pattern evolution           │
-│ • No quantization loss of Phase 2 intelligence character               │
+│ • No quantization loss of Phase 2 module character                      │
 │                                                                        │
 │ Real-Time Effects Processing:                                          │
 │ • Apply ratchet/swing/random effects to Phase 2 recorded material      │
@@ -166,9 +166,9 @@ Enable: [Ratchet + Swing + Random effects]
 │ Track Outputs (CV/Gate to Phase 2 Ecosystem):                         │
 │ TRACK 1-8 CV/GATE ○─────────────────────────────────┼─── Complete
 │ MIDI OUT 9-16 ○─────────────────────────────────────┼─── Phase 2
-└──────────────────────────────────────────────────────────────────────────────┘   Intelligence
+└──────────────────────────────────────────────────────────────────────────────┘   Advanced
                               ║                                 Sequencing
-                     Intelligence║
+                     Advanced║
                       Sequencing║
                             Hub║
                               ▼
@@ -178,39 +178,39 @@ Enable: [Ratchet + Swing + Random effects]
                     │                     │
                     │ Organic + Chaos +   │
                     │ Patterns + Math =   │
-                    │ Intelligent         │
+                    │ Advanced            │
                     │ Musical Direction   │
                     │                     │
                     │ System Output ○─────┼─── Comprehensive
                     └─────────────────────┘       Phase 2 Direction
 ```
 
-**Complete Phase 2 Intelligence Sequencing Integration:**
+**Complete Phase 2 Advanced Sequencing Integration:**
 
-| Intelligence Layer | Function | Hermod+ Control | Sequencing Result |
+| Phase 2 Module | Function | Hermod+ Control | Sequencing Result |
 |-------------------|----------|-----------------|-------------------|
 | **Organic (Ochd)** | Natural breathing | **CV input modulation + 96PPQ recording** | **Breathing sequence evolution** |
 | **Chaos (Wogglebug)** | Controlled uncertainty | **CV input + real-time effects processing** | **Chaotic sequence variations** |
-| **Pattern (Marbles)** | Sophisticated sequences | **CV input + pattern recording + effects** | **Sophisticated sequence intelligence** |
+| **Pattern (Marbles)** | Sophisticated sequences | **CV input + pattern recording + effects** | **Sophisticated sequence control** |
 | **Mathematical (RCD)** | Polyrhythmic timing | **Master clock + polyrhythmic synchronization** | **Mathematical sequence precision** |
-| **Sequencing Intelligence** | 16-track coordination | **Multi-track effects + pattern management** | **Comprehensive musical direction** |
+| **Advanced Sequencing** | 16-track coordination | **Multi-track effects + pattern management** | **Comprehensive musical direction** |
 
 **Expert System Design:**
-- **Hermod+ as intelligence sequencing hub:** All Phase 2 sources recorded and coordinated with perfect timing
-- **96PPQ precision recording:** Captures every nuance of Phase 2 intelligence without quantization loss
+- **Hermod+ as advanced sequencing hub:** All Phase 2 sources recorded and coordinated with perfect timing
+- **96PPQ precision recording:** Captures every nuance of Phase 2 module behavior without quantization loss
 - **Real-time effects processing:** Ratchet, swing, euclidean, and LFO effects enhance Phase 2 material
 - **Multi-track ecosystem control:** 16 tracks manage complete Phase 2 ecosystems with pattern sophistication
-- **Performance intelligence:** Live control and arrangement of sophisticated pattern generation systems
+- **Performance control:** Live control and arrangement of sophisticated pattern generation systems
 
 **Advanced Performance:**
-1. **Phase 2 source recording:** All intelligence sources recorded with 96PPQ precision
+1. **Phase 2 source recording:** All Phase 2 sources recorded with 96PPQ precision
 2. **Real-time effects enhancement:** Apply sequencer effects to enhance Phase 2 material
 3. **Multi-track ecosystem management:** Coordinate complete Phase 2 systems across 16 tracks
 4. **Live performance direction:** Pattern switching and track control for dynamic Phase 2 performance
-5. **Intelligence transcendence:** Sophisticated sequencing direction of electronic intelligence systems
+5. **Advanced sequencing:** Sophisticated sequencing direction of electronic pattern generation systems
 
 **Philosophical Achievement:**
-This represents the **ultimate intelligence sequencing integration** - where organic breathing, controlled chaos, sophisticated pattern generation, and mathematical precision are all coordinated through advanced sequencing intelligence, creating comprehensive musical direction of Phase 2 ecosystems under your creative control.
+This represents the **ultimate advanced sequencing integration** - where organic breathing, controlled chaos, sophisticated pattern generation, and mathematical precision are all coordinated through advanced sequencing capabilities, creating comprehensive musical direction of Phase 2 ecosystems under your creative control.
 
 ---
 
@@ -224,7 +224,7 @@ This represents the **ultimate intelligence sequencing integration** - where org
 6. **🎛️ CV Looper:** Record and loop control voltage performances
 7. **⚡ Clock Master:** Rock-solid timing for entire studio synchronization
 8. **🔄 Format Bridge:** Seamlessly convert between MIDI and CV domains
-9. **🌀 Phase 2 Intelligence Hub:** Central sequencing brain for sophisticated pattern generation systems
+9. **🌀 Phase 2 Sequencing Hub:** Central sequencing brain for sophisticated pattern generation systems
 
 ---
 
@@ -282,19 +282,19 @@ This represents the **ultimate intelligence sequencing integration** - where org
 
 ## Pairs Well With
 
-### **Phase 2 Module Synergies (Intelligence Sequencing Coordination):**
+### **Phase 2 Module Synergies (Advanced Sequencing Coordination):**
 - **DivKid Ochd & Expander:** Ochd organic LFOs provide natural breathing modulation inputs and organic sequence evolution
 - **Make Noise Wogglebug:** Wogglebug chaos creates unpredictable sequence variations and chaotic performance control
-- **Mutable Marbles:** Marbles patterns provide sophisticated sequence intelligence and algorithmic composition control
+- **Mutable Marbles:** Marbles patterns provide sophisticated sequence control and algorithmic composition capabilities
 - **4ms RCD v2:** RCD polyrhythmic timing provides master clock synchronization and mathematical sequence precision
 - **Cre8audio Function Junction:** Function Junction processed modulation perfect for dynamic sequence control
-- **Cross-Phase 2 Integration:** All Phase 2 modules coordinated through intelligent sequencing direction
+- **Cross-Phase 2 Integration:** All Phase 2 modules coordinated through advanced sequencing capabilities
 
 ### **Phase 1 Module Integration (Core Sequencing Control):**
 - **Make Noise Maths:** Maths envelopes perfect for sequence dynamics and performance control
-- **Mutable Plaits:** Plaits synthesis voices controlled by Hermod+ sequencing intelligence
+- **Mutable Plaits:** Plaits synthesis voices controlled by Hermod+ sequencing capabilities
 - **Disting mk4:** Use Disting utilities alongside Hermod+ for comprehensive system coordination
-- **Complete Phase 1 systems:** Hermod+ as central sequencing intelligence for synthesis networks
+- **Complete Phase 1 systems:** Hermod+ as central sequencing hub for synthesis networks
 
 ### **Essential Sequencing Partners:**
 - **MIDI Keyboard Controllers:** Live input for recording Phase 2 performances with 96PPQ precision
@@ -313,7 +313,7 @@ This represents the **ultimate intelligence sequencing integration** - where org
 ## Why This Module Rocks
 
 ### **The Philosophy:**
-Squarp Hermod+ represents **comprehensive intelligence sequencing** - serving as the central nervous system that coordinates sophisticated pattern generation across entire musical ecosystems. It proves that advanced sequencing can enhance and direct electronic intelligence rather than constraining it.
+Squarp Hermod+ represents **comprehensive advanced sequencing** - serving as the central nervous system that coordinates sophisticated pattern generation across entire musical ecosystems. It proves that advanced sequencing can enhance and direct electronic pattern generation rather than constraining it.
 
 ### **The Innovation:**
 - **16-track hybrid architecture** with 8 CV/Gate and 8 MIDI tracks for complete system integration
@@ -324,65 +324,65 @@ Squarp Hermod+ represents **comprehensive intelligence sequencing** - serving as
 
 ### **The Practical Benefits:**
 - **Central nervous system:** Coordinates entire studios from modular to MIDI to computer integration
-- **Intelligence preservation:** 96PPQ recording maintains character of sophisticated pattern generation
-- **Performance direction:** Live control and arrangement of complex electronic intelligence systems
+- **Pattern preservation:** 96PPQ recording maintains character of sophisticated pattern generation
+- **Performance direction:** Live control and arrangement of complex electronic pattern generation systems
 - **Format bridging:** Seamless integration between CV, MIDI, and computer domains
-- **Composition architecture:** Complete song-level arrangement capabilities for intelligent musical systems
+- **Composition architecture:** Complete song-level arrangement capabilities for sophisticated musical systems
 
 ### **Perfect For:**
 - **Electronic composers:** Complete sequencing brain for sophisticated musical arrangements
 - **Live performers:** Real-time control and performance direction of complex electronic systems
 - **Studio producers:** Central coordination hub for hybrid modular/MIDI/computer workflows
 - **System integrators:** Bridge between different musical domains and technologies
-- **Phase 2 enthusiasts:** Central sequencing intelligence for coordinating sophisticated pattern generation
-- **Anyone seeking musical direction:** Transform electronic intelligence into comprehensive musical compositions
+- **Phase 2 enthusiasts:** Central sequencing hub for coordinating sophisticated pattern generation
+- **Anyone seeking musical direction:** Transform electronic pattern generation into comprehensive musical compositions
 
 ### **The Magic:**
-Hermod+ **democratizes professional sequencing intelligence** - giving everyone access to studio-grade sequencing capabilities that can coordinate and enhance the most sophisticated pattern generation systems.
+Hermod+ **democratizes professional sequencing capabilities** - giving everyone access to studio-grade sequencing capabilities that can coordinate and enhance the most sophisticated pattern generation systems.
 
 ### **Phase 2 Integration Power:**
-As the **intelligence sequencing hub of Phase 2 ecosystems**, Hermod+ coordinates organic breathing, controlled chaos, sophisticated pattern generation, and mathematical precision into comprehensive musical direction. **You conduct electronic intelligence toward complete musical transcendence.**
+As the **advanced sequencing hub of Phase 2 ecosystems**, Hermod+ coordinates organic breathing, controlled chaos, sophisticated pattern generation, and mathematical precision into comprehensive musical direction. **You conduct electronic pattern generation toward complete musical transcendence.**
 
 ---
 
 ## Phase 2 Learning Path
 
 ### **Recommended Study Progression:**
-1. **Start with Hermod+ fundamentals:** Master all four modes and understand intelligent sequencing coordination
+1. **Start with Hermod+ fundamentals:** Master all four modes and understand advanced sequencing coordination
 2. **Add organic sequence evolution:** Integrate DivKid Ochd for breathing sequence modulation and organic performance (see Ochd guide)
 3. **Include chaos sequence variation:** Use Make Noise Wogglebug for chaotic sequence enhancement and unpredictable performance (see Wogglebug guide)
-4. **Add pattern sequence intelligence:** Apply Mutable Marbles for sophisticated algorithmic composition control (see Marbles guide)
+4. **Add pattern sequence control:** Apply Mutable Marbles for sophisticated algorithmic composition capabilities (see Marbles guide)
 5. **Include mathematical sequence precision:** Use 4ms RCD v2 for polyrhythmic timing coordination and mathematical arrangement (see RCD guide)
 6. **Complete the sequencing ecosystem:** Add Cre8audio Function Junction for processed sequence dynamics and performance control (see Function Junction guide)
 
 ### **Cross-Module Learning Opportunities:**
 - **Hermod+ + Ochd:** Learn organic sequence evolution through natural breathing modulation and performance control
 - **Hermod+ + Wogglebug:** Master chaotic sequence variation through unpredictable pattern enhancement
-- **Hermod+ + Marbles:** Understand sophisticated algorithmic composition through pattern intelligence coordination
+- **Hermod+ + Marbles:** Understand sophisticated algorithmic composition through pattern coordination
 - **Hermod+ + RCD:** Explore polyrhythmic sequence precision through mathematical timing arrangement
-- **All Phase 2 + Hermod+:** Build complete sequencing ecosystems where sophisticated intelligence gains musical direction
+- **All Phase 2 + Hermod+:** Build complete sequencing ecosystems where sophisticated pattern generation gains musical direction
 
 ### **Skill Development Milestones:**
 - **Beginner:** Master individual modes and basic sequencing concepts
 - **Intermediate:** Understand multi-track coordination and complex arrangement techniques
-- **Advanced:** Create Phase 2 integration systems with sophisticated sequencing intelligence
-- **Expert:** Design complete musical ecosystems where sophisticated intelligence gains comprehensive direction
+- **Advanced:** Create Phase 2 integration systems with sophisticated sequencing capabilities
+- **Expert:** Design complete musical ecosystems where sophisticated pattern generation gains comprehensive direction
 
-### **Advanced Sequencing Intelligence Concepts:**
-- **Multi-Track Coordination:** Understand how 16 tracks coordinate different Phase 2 intelligence types
-- **Phase 2 Sequence Intelligence:** Use sophisticated pattern generation to control comprehensive musical arrangement
-- **Intelligence Performance:** Live direction and arrangement of sophisticated electronic intelligence systems
-- **Musical Direction Design:** Create compositions where sophisticated intelligence serves comprehensive musical vision
+### **Advanced Sequencing Concepts:**
+- **Multi-Track Coordination:** Understand how 16 tracks coordinate different Phase 2 module types
+- **Phase 2 Sequence Control:** Use sophisticated pattern generation to control comprehensive musical arrangement
+- **Advanced Performance:** Live direction and arrangement of sophisticated electronic pattern generation systems
+- **Musical Direction Design:** Create compositions where sophisticated pattern generation serves comprehensive musical vision
 
 ### **Performance Applications:**
-- **Live Intelligence Direction:** Real-time coordination and performance of sophisticated pattern generation systems
-- **Generative Composition Systems:** Foundation for self-evolving musical arrangements with intelligent direction
+- **Live Performance Direction:** Real-time coordination and performance of sophisticated pattern generation systems
+- **Generative Composition Systems:** Foundation for self-evolving musical arrangements with advanced direction
 - **Educational Sequencing Tool:** Learn comprehensive arrangement through hands-on Phase 2 integration
 - **Creative Musical Direction:** Guide sophisticated pattern generation toward complete musical transcendence
 
 ---
 
-**Bottom Line:** Squarp Hermod+ isn't just a sequencer - it's a **comprehensive intelligence coordination system** that serves as the central nervous system for sophisticated musical ecosystems. Every mode teaches you something new about musical direction and arrangement, and Phase 2 integration reveals how intelligent sequencing can coordinate and enhance the most sophisticated pattern generation systems. As the **intelligence sequencing hub of Phase 2 ecosystems**, it transforms electronic intelligence into complete musical transcendence under your creative direction.
+**Bottom Line:** Squarp Hermod+ isn't just a sequencer - it's a **comprehensive advanced coordination system** that serves as the central nervous system for sophisticated musical ecosystems. Every mode teaches you something new about musical direction and arrangement, and Phase 2 integration reveals how advanced sequencing can coordinate and enhance the most sophisticated pattern generation systems. As the **advanced sequencing hub of Phase 2 ecosystems**, it transforms electronic pattern generation into complete musical transcendence under your creative direction.
 
 ---
 
