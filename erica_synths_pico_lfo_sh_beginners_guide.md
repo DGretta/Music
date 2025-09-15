@@ -210,83 +210,81 @@
 - **Mathematical precision:** Function generation provides sophisticated control over analog processes
 - **Advanced modulation:** Simple analog circuits become complex through mathematical processing
 
-### **Patch 6: Expert - Modulation Performance Ecosystem**
+### **Patch 6: Expert - Multi-Function Modulation Workstation**
 ```
 ┌─────────────┐ ┌─────────────┐ ┌─────────────┐ ┌─────────────────┐
-│ Intellijel  │ │    2hp      │ │ Cre8audio   │ │ Erica Synths    │
-│  Scales     │ │   Brst      │ │  Cellz      │ │ Pico LFO/S&H    │
-│(Quantizer)  │ │(Triggers)   │ │(Touch Seq)  │ │(Core Modulation)│
+│   Disting   │ │   Cre8audio │ │    4ms      │ │ Erica Synths    │
+│    mk4      │ │  Function   │ │   RCD v2    │ │ Pico LFO/S&H    │
+│(Algorithms) │ │  Junction   │ │(Clock Proc) │ │(Core Modulation)│
 │             │ │             │ │             │ │                 │
-│ Quantized   │ │ Manual ○────┼─┼─Touch Trig  │ │ Rate Control    │
-│ CV ○────────┼─┼─Gate ○ ║    │ │       ║     │ │       ║         │
-│       ║     │ │      ║ ║    │ │ CV 1 ○─────┼─┼─S&H CV Input   │
-│ Root/Scale  │ │ Burst ○─────┼─┼─CV Burst    │ │       ║         │
-│ Selection   │ │        ║    │ │       ║     │ │ Triangle Out    │
-│       ║     │ │ Clk Out○────┼─┼─Seq Clock   │ │ ○─────────┼─CV  │
-│       ║     │ │        ║    │ │       ║     │ │       ║         │
-└───────║─────┘ └────────║────┘ │ Touch ○─────┼─┼─S&H Clock     │
-        ║                ║      │ Control     │ │       ║         │
-        ║                ║      │       ║     │ │ Square Out     │
-        ║                ║      │ Pattern ○───┼─┼─○─────────┼─Gate
-        ║                ║      │ Gates       │ │       ║         │
-        ║                ║      └─────────────┘ │ S&H Out       │
-        ║                ║               ║      │ ○─────────┼─CV  │
-        ▼                ▼               ▼      └─────────────────┘
+│ S&H Algo    │ │ Input A ○───┼─┼─/2 Out      │ │ Rate Control    │
+│ CV Out ○────┼─┼─Sum Out     │ │       ║     │ │       ║         │
+│       ║     │ │       ║     │ │ /4 Out ○────┼─┼─S&H Clock     │
+│ Clock In◀───┼─┼─Input B ○   │ │       ║     │ │       ║         │
+│       ║     │ │       ║     │ │ x2 Out ○────┼─┼─Triangle Mod   │
+│ Noise In◀───┼─┼─Input C ○───┼─┼─Clock In    │ │       ║         │
+│       ║     │ │       ║     │ │       ║     │ │ S&H Out       │
+│ Algorithm   │ │ Mix Out ○───┼─┼─CV Monitor  │ │ ○─────────┼─CV  │
+│ Selection   │ │       ║     │ │       ║     │ │       ║         │
+└─────────────┘ │ Diff Out○───┼─┼─Secondary   │ │ Triangle Out   │
+        ║       │ (CV Proc)   │ │ Clock       │ │ ○─────────┼─CV  │
+        ║       └─────────────┘ └─────────────┘ └─────────────────┘
+        ▼               ║               ║               ║
 ┌──────────────────────────────────────────────────────────────────┐
-│              Modulation Performance Ecosystem                       │
+│           Multi-Function Modulation Workstation                     │
 │                                                                     │
-│ Musical Intelligence + Expressive Timing + Touch Control           │
+│ Algorithmic Processing + Mathematical CV + Rhythmic Timing         │
 │                                                                     │
-│ Scales      → Ensures all modulation voltages are musical          │
-│ Brst        → Provides manual control and burst timing patterns    │
-│ Cellz       → Touch-based CV generation and sequence control       │
-│ LFO/S&H     → Core analog modulation with performance control      │
+│ Disting     → S&H algorithm processes noise into stepped voltages  │
+│ Function    → Mathematical CV mixing and processing operations      │
+│ RCD         → Clock divisions create polyrhythmic timing           │
+│ LFO/S&H     → Analog modulation core with multi-function control   │
 │                                                                     │
-│ Complete Modulation Performance System (17HP total)                │
+│ Complete Modulation Processing System (21HP total)                 │
 │                                                                     │
-│ Expressive Modulation Control ○──────────────────┼─── Musical Output
+│ Algorithmic Modulation Control ○──────────────────┼─── Processed Output
 └──────────────────────────────────────────────────────────────────┘
 ```
 
-**Performance Modulation Integration:**
+**Multi-Function Modulation Integration:**
 
 | Module | Primary Function | Secondary Functions | LFO/S&H Role |
 |--------|------------------|--------------------|---------------|
-| **Scales (4HP)** | Quantizer | **Root/scale selection + musical intelligence** | **Musical modulation control** |
-| **Brst (2HP)** | Trigger generator | **Manual triggers + burst patterns** | **Expressive timing control** |
-| **Cellz (8HP)** | Touch sequencer | **Touch CV generation + pattern control** | **Performance interface** |
+| **Disting mk4 (8HP)** | Algorithm processor | **S&H algorithm + switchable processing** | **Algorithmic modulation control** |
+| **Function Junction (6HP)** | CV processor | **CV mixing + scaling + mathematical operations** | **CV conditioning and routing** |
+| **RCD v2 (4HP)** | Clock processor | **Division + multiplication + timing** | **Rhythmic timing control** |
 | **Pico LFO/S&H (3HP)** | Analog modulation | **Core LFO + S&H processing** | **Fundamental modulation engine** |
 
-**Performance System Design:**
-- **Scales as musical brain:** Ensures all S&H voltages are quantized to musical scales
-- **Brst as timing brain:** Provides manual control and burst patterns for expressive performance
-- **Cellz as performance interface:** Touch control generates CV and triggers for real-time expression
-- **Pico LFO/S&H as modulation core:** Fundamental analog modulation controlled by performance ecosystem
-- **Total system:** 17HP for complete modulation performance workstation
+**Multi-Function System Design:**
+- **Disting as algorithm brain:** S&H algorithm processes noise, switchable to other algorithms as needed
+- **Function Junction as CV processor:** Mathematically processes and conditions all CV signals
+- **RCD as timing brain:** Provides clock divisions for polyrhythmic modulation relationships
+- **Pico LFO/S&H as analog core:** Fundamental analog modulation controlled by multi-function ecosystem
+- **Total system:** 21HP for complete algorithmic modulation workstation
 
 **Performance Applications:**
-1. **Musical modulation performance:** Touch control generates musical CV through quantization
-2. **Expressive timing control:** Manual triggers and burst patterns provide human expression
-3. **Real-time pattern generation:** Touch sequences control S&H sampling and LFO rates
-4. **Musical intelligence:** All random voltages become musical through scale quantization
-5. **Live modulation control:** Complete system responds to human touch and timing
+1. **Algorithmic modulation processing:** Disting S&H algorithm creates stepped modulation from noise
+2. **Mathematical CV conditioning:** Function Junction processes all CV through mathematical operations
+3. **Polyrhythmic timing control:** RCD divisions create complex timing relationships
+4. **Algorithm switching capability:** Change Disting algorithm mid-performance for different processing
+5. **Analog modulation integration:** All digital processing feeds analog LFO/S&H core
 
-**Why This Performance Ecosystem Works:**
-- **Leverages human expression:** Touch control and manual triggers provide performance interface
-- **Musical intelligence:** Quantization ensures all results are musical rather than random
-- **Compact integration:** Complete system in only 17HP with professional capabilities
-- **Scalable complexity:** Simple touch control to complex pattern generation
-- **Combinable with other guides:** No overlap with previous guide ecosystems
+**Why This Multi-Function Ecosystem Works:**
+- **Leverages algorithm switching:** Disting can change processing type as needed (S&H, quantizer, LFO, etc.)
+- **Mathematical precision:** Function Junction provides exact CV processing and conditioning
+- **Rhythmic intelligence:** RCD creates precise polyrhythmic relationships
+- **Analog foundation:** Digital processing enhances but doesn't replace analog modulation core
+- **Combinable with other guides:** Different approach from other guide ecosystems
 
 **Expert System Performance:**
-1. **Initialization:** Set scales and root notes, calibrate touch sensitivity
-2. **Performance chain:** Touch/Triggers → Cellz patterns → LFO/S&H modulation → Scales quantization
-3. **Real-time expression:** Live touch control and manual timing create expressive modulation
-4. **Musical evolution:** System generates musical modulation through performance interaction
-5. **Modulation mastery:** Complete analog modulation controlled through expressive performance
+1. **Initialization:** Select Disting algorithm (start with S&H), set RCD clock divisions
+2. **Processing chain:** Master Clock → RCD divisions → Function Junction math → LFO/S&H analog processing
+3. **Algorithm evolution:** Switch Disting algorithms for different processing characteristics
+4. **Mathematical conditioning:** Function Junction optimizes all CV for musical results
+5. **Modulation mastery:** Complete system processes digital algorithms through analog modulation core
 
 **Philosophical Achievement:**
-This represents **modulation performance mastery** - where musical intelligence, expressive timing, and touch control all serve the analog modulation engine, creating a complete performance system that transforms human expression into musical modulation through analog circuits.
+This represents **algorithmic modulation mastery** - where digital algorithm processing, mathematical CV operations, and rhythmic timing all serve the analog modulation engine, creating a complete workstation that bridges digital precision with analog character.
 
 ---
 
@@ -436,7 +434,7 @@ LFO and Sample & Hold are the most fundamental modulation sources in synthesis. 
 3. **Include mathematical processing:** Use Make Noise Maths for complex function-based modulation control (see Maths guide)
 4. **Add musical intelligence:** Apply Intellijel Scales for quantized, musical modulation results (see Scales guide)
 5. **Include expressive timing:** Use 2hp Brst for manual control and burst pattern timing (see Brst guide)
-6. **Complete the performance system:** Add Cre8audio Cellz for touch-based modulation control and performance interface (see Cellz guide)
+6. **Complete the workstation:** Add Disting mk4 (algorithm processing) + Function Junction (CV mathematics) + RCD v2 (rhythmic timing) for complete algorithmic modulation control
 
 ### **Cross-Module Learning Opportunities:**
 - **Pico LFO/S&H + RCD:** Learn polyrhythmic modulation relationships through mathematical clock processing
