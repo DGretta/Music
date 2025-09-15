@@ -95,6 +95,11 @@
 - [ ] **Module-specific terminology** - Honor the module's unique language
 - [ ] **Consistent Phase 2 integration** - Organic/Chaos/Patterns approach
 - [ ] **Educational progression** - Clear learning objectives throughout
+- [ ] **CRITICAL: Language variety verified** - No repetitive descriptive patterns
+- [ ] **"Breathing" used appropriately** - Only for genuine coordinated behavior (Ochd), not every organic modulation
+- [ ] **Metaphor diversity confirmed** - No single descriptor dominates the guide
+- [ ] **Context-appropriate language** - Technical modules = technical language, creative modules = varied creative language
+- [ ] **Cross-guide distinctiveness** - This guide feels unique compared to others in the series
 
 ---
 

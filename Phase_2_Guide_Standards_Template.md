@@ -26,6 +26,35 @@ Phase 2 guides represent the enhanced format for eurorack module documentation, 
 - **"Processing systems"** - for effect modules
 - **"Mathematical algorithms"** - for computational modules
 
+### 🚫 **CRITICAL: Avoid Repetitive Descriptive Language**
+**The deadliest threat to guide quality is overusing the same descriptive words and metaphors.** Technical terminology required for accuracy is essential, but creative descriptors must vary extensively:
+
+#### **❌ Never Overuse These Patterns:**
+- **"Breathing" for every organic modulation** - Reserve for genuine coordinated LFO behavior (like Ochd)
+- **"Living" for every dynamic process** - Use sparingly and only when truly appropriate
+- **"Consciousness" or "transcendence"** - Avoid anthropomorphizing circuits excessively
+- **"Brain" for every processing module** - Vary with "processor," "engine," "core," "hub"
+- **"Evolution" for every changing parameter** - Alternate with "development," "progression," "transformation"
+
+#### **✅ Language Variety Strategies:**
+- **Technical modules** → "correlated processing," "synchronized operation," "integrated control"
+- **Organic modules** → "natural evolution," "organic movement," "flowing variation," "coordinated modulation"
+- **Creative modules** → "dynamic processing," "adaptive behavior," "responsive control"
+- **Chaos modules** → "controlled variation," "mathematical randomness," "structured unpredictability"
+- **Pattern modules** → "adaptive processing," "learning modulation," "evolving patterns"
+
+#### **🎯 Context-Specific Language Matching:**
+- **Honor manufacturer philosophy** - Soma = "organismic," Mutable = "laboratory," etc.
+- **Match module character** - Experimental modules get creative language, precision modules get technical language
+- **Vary within guides** - Each parameter description should use different appropriate terms
+- **Cross-guide diversity** - Each guide should feel distinct in tone and vocabulary
+
+#### **📊 Quality Verification:**
+- **Read guides aloud** - Repetitive language becomes obvious when spoken
+- **Check descriptor frequency** - No single metaphor should dominate a guide
+- **Compare across guides** - Ensure each feels unique while maintaining educational standards
+- **Technical accuracy first** - Never sacrifice clarity for variety, but vary everything else extensively
+
 ---
 
 ## Guide Structure Template
