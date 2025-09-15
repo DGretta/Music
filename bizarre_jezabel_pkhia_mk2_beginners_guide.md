@@ -118,6 +118,204 @@
 **Timing:** Use related but different LFO speeds (2:3 ratio)
 **Width:** Different cutoff movements create stereo interest
 
+### **Patch 5: Intermediate - Performance Stereo Control**
+```
+   ┌─────────────────────┐      ┌─────────────────────────┐
+   │   Cre8audio Cellz    │      │    Bizarre Jezabel     │
+   │ (Touch Sequencer)   │      │      Pkhia mk2         │
+   │                    │      │ (Stereo Filter Core)  │
+   │                    │      │                         │
+   │ CV Out 1 ○─────────┼──────┼─▶ Left CV Input        │
+   │       ║            │      │                         │
+   │ CV Out 2 ○─────────┼──────┼─▶ Right CV Input       │
+   │       ║            │      │                         │
+   │ Gate Out 1 ○───────┼──────┼─▶ 1+2 CV Input (linked) │
+   │       ║            │      │                         │
+   │ Gate Out 2 ○───────┼──────┼─▶ Performance Control   │
+   │       ║            │      │                         │
+   └───────║────────────┘      │ LP L&R Out ○───────────┼─── Audio (Red)
+           ║                   │ BP L&R Out ○───────────┼─── Audio (Red)
+   Audio (Red)║                 │ HP L&R Out ○───────────┼─── Audio (Red)
+           ║                  └─────────────────────────┘
+           ▼                           ║
+   ┌─────────────┐                    ║
+   │ Stereo      │             Audio ║
+   │ Audio       │              (Red)║
+   │ Source      │────────────────────▼
+   └─────────────┘           ┌──────────────────────────────┐
+                             │   Performance Stereo         │
+                             │     Control                  │
+                             │                              │
+                             │ CV1: Touch Left Filter       │
+                             │ CV2: Touch Right Filter      │
+                             │ Gate1: Linked Filter Control │
+                             │ Gate2: Performance Triggers  │
+                             │                              │
+                             │ Expressive Stereo Control ○──┼─── Processed Audio
+                             └──────────────────────────────┘
+```
+
+| Touch + Filter Chain | Function | Purpose | Performance Integration |
+|---------------------|----------|---------|------------------------|
+| **Cellz CV1 → Left CV** | Touch-controlled left filter | **Expressive left channel control** | **Touch interface creates expressive stereo filter control** |
+| **Cellz CV2 → Right CV** | Touch-controlled right filter | **Expressive right channel control** | **Independent touch control of stereo filter channels** |
+| **Cellz Gate1 → 1+2 CV** | Linked filter control | **Touch-triggered filter sweeps** | **Touch gates create dramatic stereo filter sweeps** |
+| **Cellz Gate2 → Performance** | Performance triggers | **Touch-based performance control** | **Touch interface enables expressive filter performance** |
+
+**Module Settings:**
+- **Cellz:** Touch sequencer generates expressive CV and gate patterns for real-time filter control
+- **Pkhia:** Touch-controlled signals create responsive stereo filter processing with human expression
+- **Performance control:** Touch interface provides immediate, expressive control over stereo filter characteristics
+- **Result:** Boutique stereo filter processing with touch-based expressive control and performance flexibility
+
+**Learning Objectives:**
+- **Touch + Filter integration:** Expressive touch control applied to boutique analog stereo filtering
+- **Performance filtering:** Create touch-responsive stereo filter processing for live performance
+- **Expressive stereo control:** Understand how human touch enhances stereo filter character
+- **System expression:** Entire stereo filter system responds to human touch and expression
+
+**Alternative Performance Sources:**
+- **Instead of Cellz:** Try **16n faderbank** for multi-channel stereo filter control, or **Tetrapad** for pressure-sensitive filter control
+- **Instead of touch focus:** Try **joystick modules** like **Joystick** for XY stereo filter control
+- **Budget alternatives:** **2HP Brst + 2HP Clk** provides manual trigger control for filter performance
+- **Different character:** **Keith McMillen QuNexus** gives keyboard-based expressive filter control vs Cellz touch interface
+
+### **Patch 6: Advanced - Sequenced Multi-Function Filtering**
+```
+   ┌─────────────────────┐      ┌─────────────────────────┐
+   │   Squarp Hermod+    │      │    Bizarre Jezabel     │
+   │ (Sequencer Brain)   │      │      Pkhia mk2         │
+   │                    │      │ (Stereo Filter Core)  │
+   │                    │      │                         │
+   │ CV Track 1 ○───────┼──────┼─▶ Left CV Input        │
+   │       ║            │      │                         │
+   │ CV Track 2 ○───────┼──────┼─▶ Right CV Input       │
+   │       ║            │      │                         │
+   │ Gate Track 1 ○─────┼──────┼─▶ 1+2 CV Input (quan.) │
+   │       ║            │      │                         │
+   │ Gate Track 2 ○─────┼──────┼─▶ Sequence Control     │
+   │       ║            │      │                         │
+   │ Quantizer Out ○────┼──────┼─▶ Musical CV Processing │
+   │       ║            │      │                         │
+   └───────║────────────┘      │ LP L&R Out ○───────────┼─── Audio (Red)
+           ║                   │ BP L&R Out ○───────────┼─── Audio (Red)
+   Audio (Red)║                 │ HP L&R Out ○───────────┼─── Audio (Red)
+           ║                  └─────────────────────────┘
+           ▼                           ║
+   ┌─────────────┐                    ║
+   │ Stereo      │             Audio ║
+   │ Audio       │              (Red)║
+   │ Source      │────────────────────▼
+   └─────────────┘           ┌──────────────────────────────┐
+                             │   Sequenced Multi-Function    │
+                             │     Filtering                │
+                             │                              │
+                             │ CV1: Sequenced Left Filter   │
+                             │ CV2: Sequenced Right Filter  │
+                             │ Gate1: Quantized Filter CV   │
+                             │ Gate2: Sequence Control      │
+                             │ Quantizer: Musical Filtering │
+                             │                              │
+                             │ Musical Sequence Control ○──┼─── Sequenced Audio
+                             └──────────────────────────────┘
+```
+
+| Sequencer + Filter Chain | Function | Purpose | Musical Integration |
+|--------------------------|----------|---------|--------------------|
+| **Hermod+ CV1 → Left CV** | Sequenced left filter control | **Musical left channel sequences** | **Sequencer provides musical filter control for left channel** |
+| **Hermod+ CV2 → Right CV** | Sequenced right filter control | **Musical right channel sequences** | **Independent sequenced control of right channel filtering** |
+| **Hermod+ Gate1 → 1+2 CV** | Quantized filter control | **Musical filter sequences** | **Quantizer ensures musical filter frequency relationships** |
+| **Hermod+ Quantizer → Processing** | Musical CV processing | **Musical filter tracking** | **Built-in quantizer provides musical filter frequency control** |
+
+**Module Settings:**
+- **Hermod+:** Multi-track sequencer + quantizer creates musical stereo filter sequences with built-in quantization
+- **Pkhia:** Sequenced signals create musical stereo filter processing with precise timing and musicality
+- **Musical sequencing:** Quantizer ensures filter frequencies track musical scales and intervals
+- **Result:** Boutique stereo filter processing with sequenced musical control and quantized frequency relationships
+
+**Learning Objectives:**
+- **Sequencer + Filter integration:** Multi-track sequencing applied to boutique analog stereo filtering
+- **Musical filtering:** Create sequenced stereo filter processing that follows musical relationships
+- **Quantized filter control:** Understand how quantization enhances stereo filter musicality
+- **Advanced sequencing:** Complex stereo filter sequences with built-in musical intelligence
+
+### **Patch 7: Expert - Complete Expressive Filter Ecosystem**
+```
+┌─────────────┐ ┌─────────────┐ ┌─────────────┐ ┌─────────────────┐
+│   Squarp    │ │  Cre8audio  │ │ Make Noise  │ │ Bizarre Jezabel │
+│  Hermod+    │ │   Cellz     │ │   Maths     │ │   Pkhia mk2   │
+│(Sequencer)  │ │(Touch Ctrl) │ │(Functions) │ │(Stereo Filter) │
+│             │ │             │ │             │ │                 │
+│ CV Track1○──┼─┼─CV1        │ │ Channel 1   │ │ Left CV ◀─────┼── Expressive CV
+│       ║     │ │       ○────┼─┼─Out        │ │       ║         │
+│ CV Track2○──┼─┼─CV2        │ │             │ │ Right CV◀─────┼── Expressive CV
+│       ║     │ │       ○────┼─┼─Channel 2   │ │       ║         │
+│ Gate1   ○──┼─┼─Gate1      │ │ Out        │ │ 1+2 CV◀──────┼── Function CV
+│       ║     │ │       ○────┼─┼─Channel 3   │ │       ║         │
+│ Quantizer    │ │             │ │ Out        │ │ LP L&R Out     │
+│ Out     ○──┼─┼─Gate2      │ │             │ │ ○─────────────┼─── Audio (Red)
+│       ║     │ │       ○────┼─┼─Channel 4   │ │       ║         │
+└─────────────┘ │ Touch Ctrl  │ │ Out        │ │ BP L&R Out     │
+        ║       │             │ │             │ │ ○─────────────┼─── Audio (Red)
+        ║       └─────────────┘ └─────────────┘ │ HP L&R Out     │
+        ║                                       │ ○─────────────┼─── Audio (Red)
+        ▼                                       └─────────────────┘
+┌────────────────────────────────────────────────────────────────────┐
+│           Complete Expressive Filter Ecosystem                         │
+│                                                                        │
+│ Sequenced Control + Touch Expression + Function Processing            │
+│                                                                        │
+│ Hermod+     → Multi-track sequencing + quantizer + timing brain       │
+│ Cellz       → Touch interface + expressive human control              │
+│ Maths       → Function generation + mathematical processing           │
+│ Pkhia       → Boutique stereo filter core + analog character          │
+│                                                                        │
+│ Complete Expressive Filter Workstation (34HP total)                   │
+│                                                                        │
+│ Expressive Stereo Filter Control ○────────────────┼─── Complete Output
+└────────────────────────────────────────────────────────────────────┘
+```
+
+**Complete Expressive Filter Integration:**
+
+| Module | Primary Function | Filter System Role | Expressive Integration |
+|--------|------------------|--------------------|-----------------------|
+| **Hermod+ (16HP)** | Multi-track sequencer | **Sequenced filter brain + quantizer** | **Provides musical sequences and quantized control** |
+| **Cellz (8HP)** | Touch sequencer | **Expressive touch interface** | **Human touch creates expressive filter control** |
+| **Maths (4HP)** | Function generator | **Mathematical filter processing** | **Function generation enhances expressive control** |
+| **Pkhia mk2 (6HP)** | Stereo filter | **Boutique analog filter core** | **European craftsmanship with expressive control** |
+
+**Complete Expressive System Design:**
+- **Hermod+ as sequence brain:** Multi-track sequencer + quantizer provides musical filter sequences with precise timing
+- **Cellz as expression interface:** Touch control provides real-time human expression over stereo filter parameters
+- **Maths as function processor:** Mathematical functions enhance and process expressive control signals
+- **Pkhia as analog core:** Boutique European stereo filter provides warm analog character with multi-mode processing
+- **Total ecosystem:** 34HP complete expressive filter workstation combining sequencing, touch, functions, and boutique filtering
+
+**Performance Applications:**
+1. **Sequenced expressive filtering:** Hermod+ sequences combined with Cellz touch for hybrid sequenced/expressive control
+2. **Touch-responsive sequences:** Cellz touch modifies Hermod+ sequences in real-time for dynamic performance
+3. **Mathematical expression enhancement:** Maths processes touch control for complex expressive relationships
+4. **Boutique analog processing:** All digital control feeds European analog filter for warm, musical character
+5. **Complete filter performance:** Sequence, touch, process, and filter in one integrated expressive ecosystem
+
+**Why This Complete Ecosystem Works:**
+- **Leverages multi-function capabilities:** Hermod+ serves as sequencer + quantizer + timing brain simultaneously
+- **Expression + Sequencing + Functions:** Three different approaches combine for complete expressive filter control
+- **Boutique analog character:** Digital control enhances but doesn't replace European analog filter warmth
+- **Performance flexibility:** Touch interface allows real-time modification of sequenced filter patterns
+- **Combinable with other guides:** Different approach from other guide ecosystems allows simultaneous patch usage
+
+**Expert Expressive Performance:**
+1. **Initialization:** Set Hermod+ sequences, configure Cellz touch interface, prepare Maths functions
+2. **Expressive sequences:** Hermod+ provides musical foundation → Cellz adds real-time expression → Maths enhances control → Pkhia analog processing
+3. **Touch modification:** Use Cellz to modify running sequences, creating dynamic expressive filter performance
+4. **Function enhancement:** Maths processes expressive signals for complex mathematical filter relationships
+5. **Filter mastery:** Complete ecosystem generates expressive stereo filtering with boutique European analog character
+
+**Philosophical Achievement:**
+This represents **complete expressive filter mastery** - where musical sequencing, human touch expression, and mathematical function processing all serve the boutique European analog filter, creating a complete workstation that bridges digital precision with analog warmth and human expression.
+
 ---
 
 ## Common Use Cases
@@ -187,49 +385,85 @@
 
 ## Pairs Well With
 
+### **Multi-Function Module Synergies (Expressive Filter Systems):**
+- **Cre8audio Cellz:** Touch sequencer + performance interface → Pkhia for expressive stereo filter control with human touch
+- **Squarp Hermod+:** Multi-track sequencer + quantizer → Pkhia for musical stereo filter sequences with precise timing
+- **Make Noise Maths:** Function generation + mathematical processing → Pkhia for enhanced expressive filter relationships
+- **16n Faderbank:** Multi-channel CV control → Pkhia for multi-parameter stereo filter performance control
+- **Tetrapad:** Pressure-sensitive control → Pkhia for pressure-responsive expressive stereo filtering
+- **Cross-Multi-Function Integration:** Pkhia serves as boutique analog filter core for complete expressive performance systems
+
 ### **Perfect Partners for Beginners:**
-- **LFOs (Batumi, Ochd):** Essential for creating filter movement and sweeps
-- **Envelope Generators (Maths, Function):** Dynamic filter control for synthesis voices
-- **VCAs (Veils, 2HP VCA):** Control dynamics before or after filtering
-- **Mixers:** Blend different filter outputs for complex frequency shaping
+- **LFOs (Batumi, Ochd):** Essential for creating filter movement and stereo sweeps
+- **Envelope Generators (Maths, Function):** Dynamic stereo filter control for synthesis voices
+- **VCAs (Veils, 2HP VCA):** Control dynamics before or after stereo filtering
+- **Mixers:** Blend different filter outputs (LP, BP, HP) for complex frequency shaping
 
 ### **Next-Level Combinations:**
-- **Oscillators (any analog VCO):** Classic subtractive synthesis with analog filtering
-- **Attenuverters:** Fine-control the CV amounts for subtle modulation
-- **Sample & Hold:** Create stepped filter sweeps and randomized cutoffs
-- **Multiple/Splitters:** Route single sources to both channels for parallel processing
+- **Oscillators (any analog VCO):** Classic subtractive synthesis with boutique analog stereo filtering
+- **Attenuverters:** Fine-control the CV amounts for subtle stereo modulation
+- **Sample & Hold:** Create stepped filter sweeps and randomized stereo cutoffs
+- **Multiple/Splitters:** Route single sources to both channels for parallel stereo processing
 
-### **Advanced Integration:**
-- **Sequencers:** Automate cutoff frequencies for rhythmic filter patterns
-- **Complex modulation (Marbles):** Random and correlated filter movements
-- **Other filters:** Chain multiple filters for steep roll-offs or complex responses
+### **Advanced Stereo Integration:**
+- **Sequencers:** Automate stereo cutoff frequencies for rhythmic filter patterns
+- **Complex modulation (Marbles):** Random and correlated stereo filter movements
+- **Other filters:** Chain multiple filters for steep roll-offs or complex stereo responses
 - **Effects processors:** Filter before reverb/delay for different spatial treatments
 
-### **Stereo System Applications:**
-- **Final mix processing:** Stereo filtering of complete mixes or submixes
-- **Instrument processing:** Stereo keyboards, guitars, or other wide sources
-- **Ambient systems:** Stereo filter sweeps for evolving soundscapes
-- **Electronic music:** Dance music filter drops and buildups
+### **Essential Performance Partners:**
+- **Touch interfaces (Cellz, Tetrapad):** Real-time expressive control of stereo filter parameters
+- **Performance controllers (16n, QuNexus):** Multi-parameter control for live stereo filter performance
+- **Expression pedals:** Foot control for hands-free stereo filter expression during performance
+- **MIDI controllers:** External control from DAW or hardware for integrated stereo filter automation
 
-### **Pro Tips:**
-- **Use multiple outputs:** Don't limit yourself to one filter mode
-- **CV sequencing:** Sequence cutoff frequencies for rhythmic effects  
-- **Frequency splitting:** Low frequencies through LP, highs through HP
-- **Stereo width:** Slightly different LFO rates create movement and width
-- **Resonance sweet spots:** Find the musical resonance settings for self-oscillation
-
-### **Creative Experiments:**
-- **Cross-channel modulation:** Use left filter CV to control right filter
-- **Rhythmic filtering:** Gate the CV inputs for rhythmic filter drops
-- **Feedback loops:** Carefully route filter outputs back to inputs
-- **Multi-mode mixing:** Blend LP, BP, and HP outputs for complex frequency shaping
-
-### **Genre Applications:**
-- **Electronic/Dance:** Classic filter sweeps and drops
-- **Ambient/Drone:** Slow stereo filter movements for atmospheric textures
-- **Industrial:** Harsh filtering and frequency manipulation
-- **Classical/Acoustic:** Subtle frequency shaping of recorded material
+### **Advanced System Integration:**
+- **Complete expressive workstations:** Pkhia + multi-function modules create complete performance filter systems
+- **Boutique analog chains:** European analog modules create warm, musical stereo processing chains
+- **Hybrid digital/analog systems:** Digital control with analog warmth for best of both worlds
+- **Cross-system integration:** Pkhia integrates with other synthesis systems while maintaining boutique character
 
 ---
 
-*Pkhia MK2 brings boutique European analog filter quality to your modular system - embrace the warmth and explore the routing possibilities!*
+## Phase 2 Learning Path
+
+### **Recommended Study Progression:**
+1. **Start with Pkhia fundamentals:** Master dual filter architecture, stereo processing, and boutique European analog character
+2. **Add expressive touch control:** Integrate Cre8audio Cellz for touch-responsive stereo filter performance (see Cellz guide)
+3. **Include musical sequencing:** Use Squarp Hermod+ for musical stereo filter sequences with quantization (see Hermod+ guide)
+4. **Add function enhancement:** Apply Make Noise Maths for mathematical processing of expressive control signals (see Maths guide)
+5. **Include performance interfaces:** Use 16n Faderbank or Tetrapad for multi-parameter performance control
+6. **Complete the ecosystem:** Add all multi-function modules for complete expressive filter performance workstation
+
+### **Cross-Module Learning Opportunities:**
+- **Pkhia + Cellz:** Learn expressive stereo filtering through touch-responsive performance control
+- **Pkhia + Hermod+:** Master musical stereo filter sequencing with quantized frequency relationships
+- **Pkhia + Maths:** Understand mathematical enhancement of expressive filter control signals
+- **Pkhia + Performance Controllers:** Explore multi-parameter control for live stereo filter performance
+- **All Multi-Function + Pkhia:** Build complete expressive filter ecosystems with boutique European character
+
+### **Skill Development Milestones:**
+- **Beginner:** Use Pkhia for basic stereo filtering and multi-mode processing techniques
+- **Intermediate:** Master expressive stereo filtering with touch-based performance control
+- **Advanced:** Create musical stereo filter sequences with quantized frequency relationships and mathematical enhancement
+- **Expert:** Design complete expressive filter systems where Pkhia serves as boutique analog core for performance ecosystems
+
+### **Advanced Expressive Filter Concepts:**
+- **Boutique European Character:** Understand analog warmth and musical filtering characteristics of European craftsmanship
+- **Expressive Touch Control:** Master touch-responsive stereo filter performance with real-time human expression
+- **Musical Filter Sequencing:** Explore quantized stereo filter sequences that follow musical scales and intervals
+- **Complete Performance Ecosystems:** Design systems where expressive control serves boutique analog stereo character
+
+### **Performance Applications:**
+- **Live Expressive Control:** Real-time Pkhia stereo filter control for dynamic performance with touch and expression
+- **Musical Filter Performance:** Foundation for sequenced stereo filtering with musical intelligence and quantized control
+- **Boutique Analog Processing:** Bridge between digital control precision and European analog stereo character
+- **Educational Tool:** Learn expressive filter concepts through hands-on boutique analog interaction
+
+---
+
+**Bottom Line:** Pkhia MK2 isn't just a stereo filter - it's a **boutique expressive filter processor** that transforms touch expression, musical sequencing, and mathematical control into warm European analog stereo character. Every patch teaches you something new about how expressive stereo filtering really works. As the **analog filter core of expressive performance ecosystems**, it transforms multi-function control into unified boutique stereo evolution.
+
+---
+
+*Visit [Bizarre Jezabel](https://bizarrejezabel.com/) for complete documentation and the full boutique European module collection*
