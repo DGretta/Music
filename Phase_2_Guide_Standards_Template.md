@@ -169,12 +169,42 @@ While maintaining consistency in **approach** and **educational progression**, g
 
 ### **Guide Variety Strategy:**
 
-#### **Rotation Approach:**
-- **Guide 1:** Core Phase 2 modules (Ochd + Wogglebug + Marbles)
-- **Guide 2:** Alternative organic + core chaos/patterns
-- **Guide 3:** Core organic + alternative chaos + alternative patterns
-- **Guide 4:** Mix of alternatives across all layers
-- **Continue rotating** to showcase ecosystem diversity
+### **Guide Variety Strategy:**
+
+#### **Primary Examples Approach:**
+- **Use YOUR collection modules** for main patch examples (tested and verified)
+- **Include "Also try..."** suggestions for readily available alternatives
+- **Focus on function over specific brand** - emphasize what the module does
+- **Practical alternatives** that readers can actually find and afford
+
+#### **Main Example Standards:**
+- **Organic:** DivKid Ochd (your collection) → *"Also try Batumi, Quadrax, or Maths for different organic character"*
+- **Chaos:** Make Noise Wogglebug (your collection) → *"Also try Turing Machine + Expanders or Radio Music for different chaos types"*
+- **Patterns:** Mutable Marbles (your collection) → *"Also try Metropolix or Pamela's New Workout for different pattern approaches"*
+- **Support:** Your actual modules → *"Also try [accessible alternatives] for similar functions"*
+
+#### **"Also Try" Integration Format:**
+```markdown
+**Alternative Organic Sources:**
+- **Batumi:** Quad LFO with different phase relationships - creates more geometric organic movement
+- **Intellijel Quadrax:** Four independent envelopes - more discrete organic changes vs Ochd's continuous breathing
+- **Make Noise Maths:** Mathematical organic relationships - more complex but highly versatile organic processing
+- **Befaco Rampage:** Dual function generators - organic curves with different character than Ochd
+```
+
+#### **Accessibility Priority:**
+1. **Your collection** (main examples - tested and verified)
+2. **Popular/Available modules** (Batumi, Maths, Pamela's, Metropolix)
+3. **Budget alternatives** (2HP modules, Doepfer basics)
+4. **DIY options** (Music Thing Modular, AI Synthesis)
+5. **Discontinued but common** (modules that appear used frequently)
+
+#### **Function-Based Alternatives:**
+Organize suggestions by **function** rather than brand:
+- **"For organic modulation, also try..."** 
+- **"For controlled chaos, also try..."**
+- **"For pattern generation, also try..."**
+- **"For rhythm processing, also try..."**
 
 #### **Module-Specific Alternatives:**
 Choose alternatives that **best complement** the featured module's character:
@@ -183,10 +213,50 @@ Choose alternatives that **best complement** the featured module's character:
 - **Effect modules** → Show with chaotic and pattern-based sources
 - **Oscillator modules** → Show with complex modulation ecosystems
 
-#### **Educational Progression:**
-- **Patch 5 (Intermediate):** Use **one alternative** to show variety
-- **Patch 6 (Advanced):** Use **different alternative** for contrast
-- **Patch 7 (Expert):** **Mix alternatives and core** for comprehensive ecosystem
+### **Practical Implementation in Guides:**
+
+#### **Main Patch Example (Your Collection):**
+```markdown
+### **Patch 5: Intermediate - Phase 2 Organic [Function] Processing**
+[Full ASCII diagram with YOUR modules: Ochd + Wogglebug + Featured Module]
+
+**Module Settings:**
+- **Ochd Rate:** 12 o'clock for musical organic breathing
+- **[Featured Module]:** [Specific settings you've tested]
+- **Result:** [What you actually hear in your system]
+```
+
+#### **Alternative Suggestions (Immediately After):**
+```markdown
+**Alternative Modulation Sources:**
+- **Instead of Ochd:** Try **Batumi** for more geometric organic movement, or **Maths** for mathematical organic relationships
+- **Instead of Wogglebug:** Try **Turing Machine + Expanders** for binary chaos, or **Radio Music** for chaotic sample-based modulation
+- **Budget alternatives:** **2HP LFO + 2HP Rnd** provides similar organic + chaos functionality in 4HP
+- **Different character:** **Quadrax** gives more discrete organic steps vs Ochd's continuous breathing
+
+**Why these alternatives work:**
+- **Same signal types:** All provide CV outputs suitable for [Featured Module] inputs
+- **Similar complexity:** Comparable learning curve and integration possibilities  
+- **Different flavors:** Each creates distinct musical character while maintaining the integration concept
+```
+
+#### **Learning Integration:**
+```markdown
+**Learning Objectives:**
+- **Core concept:** Organic modulation transforms [function] into living, breathing systems
+- **Module flexibility:** This approach works with ANY organic modulation source
+- **Adaptation skills:** Learn to identify organic modulation in your own collection
+- **System thinking:** Focus on function and signal flow rather than specific brands
+```
+
+#### **Cross-Reference Strategy:**
+```markdown
+**See Also:**
+- **Ochd Guide:** Complete Ochd integration techniques and advanced organic concepts
+- **Batumi Guide:** Alternative organic approaches using phase-locked LFOs
+- **Maths Guide:** Mathematical organic processing and complex organic relationships
+- **Function Junction Guide:** How to add organic processing to any modulation source
+```
 
 ### **Integration Naming Convention:**
 - **Organic + [Function]:** "Living [function] processing"
