@@ -107,33 +107,113 @@ Phase 2 guides represent the enhanced format for eurorack module documentation, 
 
 ## Phase 2 Integration Patterns
 
-### **Standard Four-Layer Integration:**
+### **Core Integration Philosophy:**
+While maintaining consistency in **approach** and **educational progression**, guides should vary their **specific module examples** to showcase the breadth of possibilities and prevent formulaic repetition.
 
-1. **🌿 Organic Layer (DivKid Ochd)**
-   - Natural breathing modulation
-   - Multiple LFO outputs to module parameters
-   - Creates "living" system behavior
+### **Standard Four-Layer Integration Concept:**
 
-2. **🌀 Chaos Layer (Make Noise Wogglebug)**
-   - Controlled unpredictability
-   - Stepped, Smooth, Woggle, and Burst outputs
-   - Mathematical chaos applied to module functions
+1. **🌿 Organic Layer** - Natural, breathing modulation
+2. **🌀 Chaos Layer** - Controlled unpredictability  
+3. **🧠 Pattern Layer** - Learning/adaptive circuits
+4. **🎛️ Module Function Layer** - Core module as processor
 
-3. **🧠 Pattern Layer (Mutable Marbles)**
-   - Learning/adaptive circuits
-   - X1, X2, Y, t1 outputs with Deja Vu feedback
-   - Pattern evolution and memory
+### **Primary Phase 2 Module Examples:**
+- **Organic:** DivKid Ochd & Expander
+- **Chaos:** Make Noise Wogglebug
+- **Patterns:** Mutable Marbles
+- **Support:** 4ms RCD v2, Cre8audio Function Junction
 
-4. **🎛️ Module Function Layer**
-   - Core module as processor for all modulation types
-   - Module serves as "brain" for specific function (rhythm, destruction, etc.)
-   - Integration point for all sophistication
+### **Alternative Module Options (Use for Variety):**
+
+#### **🌿 Alternative Organic Sources:**
+- **Befaco Rampage** - Dual function generators with organic curves
+- **4ms Pingable Envelope Generator** - Musical timing with organic feel
+- **Intellijel Quadrax** - Four-channel organic envelope generation
+- **Make Noise Maths** - Mathematical organic relationships
+- **Batumi** - Quad LFO with organic phase relationships
+- **Joranalogue Orbit 3** - Three-dimensional organic modulation
+- **Klavis Twin Waves** - Dual LFO with organic waveform morphing
+
+#### **🌀 Alternative Chaos Sources:**
+- **Turing Machine + Expanders** - Binary chaos with various outputs
+- **Music Thing Modular Radio Music** - Chaotic sample playback
+- **Benjolin variants** - Multiple chaos/rungler circuits
+- **Bastl SoftPop** - Chaotic oscillation and modulation
+- **Nonlinearcircuits modules** - Various chaos generators
+- **Zlob Modular Vnoise** - Chaotic noise sources
+- **Random*Source Serge modules** - Chaos through feedback
+
+#### **🧠 Alternative Pattern/Learning Sources:**
+- **Intellijel Metropolix** - Learning sequencer with probability
+- **ALM Pamela's New Workout** - Algorithmic pattern generation
+- **Euclidean Circles** - Mathematical pattern relationships
+- **Malekko Varigate series** - Pattern mutation and evolution
+- **Shakmat modular Bishop's Miscellany** - Pattern transformation
+- **Orthogonal Devices ER-301** - Programmable pattern processing
+- **Winter Modular Eloquencer** - Complex pattern sequencing
+
+#### **⏰ Alternative Rhythm/Timing Sources:**
+- **Tempi** - Advanced clock manipulation
+- **Pamela's Pro Workout** - Comprehensive clock generation
+- **Euclidean Circles** - Mathematical rhythm relationships
+- **Malekko Varigate 8+** - Pattern-based rhythm generation
+- **Shakmat Time Wizard** - Advanced clock processing
+- **ALM Busy Circuits Pamela's** - Algorithmic rhythm generation
+
+#### **🎛️ Alternative Processing/Function Modules:**
+- **Effect Processing:** Other Versio modules, FX Aid Pro, Erica Synths effects
+- **Filter Processing:** Various filter manufacturers and architectures
+- **Oscillation:** Different synthesis methods and manufacturers
+- **Envelope Processing:** Various envelope generators and processors
+- **Logic Processing:** Boolean operations, sequential switches
+
+### **Guide Variety Strategy:**
+
+#### **Rotation Approach:**
+- **Guide 1:** Core Phase 2 modules (Ochd + Wogglebug + Marbles)
+- **Guide 2:** Alternative organic + core chaos/patterns
+- **Guide 3:** Core organic + alternative chaos + alternative patterns
+- **Guide 4:** Mix of alternatives across all layers
+- **Continue rotating** to showcase ecosystem diversity
+
+#### **Module-Specific Alternatives:**
+Choose alternatives that **best complement** the featured module's character:
+- **Rhythmic modules** → Show with Euclidean Circles, Tempi, Varigate
+- **Filter modules** → Show with mathematical modulation sources
+- **Effect modules** → Show with chaotic and pattern-based sources
+- **Oscillator modules** → Show with complex modulation ecosystems
+
+#### **Educational Progression:**
+- **Patch 5 (Intermediate):** Use **one alternative** to show variety
+- **Patch 6 (Advanced):** Use **different alternative** for contrast
+- **Patch 7 (Expert):** **Mix alternatives and core** for comprehensive ecosystem
 
 ### **Integration Naming Convention:**
 - **Organic + [Function]:** "Living [function] processing"
 - **Chaos + [Function]:** "Mathematical [function] chaos"
 - **Patterns + [Function]:** "Adaptive [function] relationships"
 - **Complete Ecosystem:** "Advanced [function] consciousness"
+
+### **Cross-Reference Strategy:**
+- **Within guide:** "(see [Module] guide)" for detailed integration
+- **Between guides:** Reference different combinations used elsewhere
+- **Alternative suggestions:** "Also try [Alternative Module] for [Different Character]"
+
+### **Avoiding Formulaic Repetition:**
+
+#### **What to Vary:**
+- **Specific modules** used in integration examples
+- **Signal routing** approaches and connection methods
+- **Patch complexity** and number of modules involved
+- **Musical context** and application examples
+- **Performance techniques** and real-time control methods
+
+#### **What to Keep Consistent:**
+- **Four-layer integration concept** (Organic + Chaos + Patterns + Function)
+- **Educational progression** (Basic → Intermediate → Advanced → Expert)
+- **ASCII diagram standards** and visual representation
+- **Learning objectives** and skill development milestones
+- **Language standards** and circuit-based descriptions
 
 ---
 
@@ -315,20 +395,54 @@ Phase 2 guides represent the enhanced format for eurorack module documentation, 
 
 ## Phase 2 Module Reference
 
-### **Core Phase 2 Modules:**
+### **Core Phase 2 Modules (Most Common Examples):**
 - **DivKid Ochd & Expander** - Organic LFO system
 - **Make Noise Wogglebug** - Controlled chaos generator
 - **Mutable Marbles** - Learning pattern generator
 - **4ms RCD v2** - Polyrhythmic clock divider
 - **Cre8audio Function Junction** - Comprehensive modulation processor
 
-### **Phase 1 Integration:**
-- **Make Noise Maths** - Mathematical processing
-- **Mutable Plaits** - Core synthesis engine
-- **Other Phase 1 modules** - Fundamental synthesis building blocks
+### **Extended Phase 2 Ecosystem:**
 
-### **Function-Specific Integration:**
-Each guide should show how the featured module serves as the "brain" for its specific function (rhythm, destruction, filtering, etc.) within Phase 2 ecosystems.
+#### **Organic/Natural Modulation:**
+- **Befaco Rampage** - Organic function generation
+- **Intellijel Quadrax** - Multi-channel organic envelopes
+- **Make Noise Maths** - Mathematical organic relationships
+- **Batumi** - Quad LFO with natural phase relationships
+- **Joranalogue Orbit 3** - Three-dimensional modulation
+
+#### **Chaos/Random Sources:**
+- **Turing Machine ecosystem** - Binary chaos expansion
+- **Music Thing Radio Music** - Chaotic sample manipulation
+- **Various Benjolin circuits** - Rungler-based chaos
+- **Nonlinearcircuits modules** - Diverse chaos generators
+
+#### **Pattern/Learning Systems:**
+- **Intellijel Metropolix** - Probability-based sequencing
+- **ALM Pamela's series** - Algorithmic pattern generation
+- **Euclidean Circles** - Mathematical pattern relationships
+- **Malekko Varigate series** - Pattern evolution
+- **Winter Modular Eloquencer** - Complex pattern sequencing
+
+#### **Advanced Timing/Rhythm:**
+- **Make Noise Tempi** - Clock manipulation
+- **Shakmat Time Wizard** - Advanced timing processing
+- **Various Euclidean sequencers** - Mathematical rhythm generation
+
+### **Selection Strategy for Guides:**
+- **Featured module character** should influence modulation source selection
+- **Rotate between different combinations** to showcase variety
+- **Cross-reference other guides** that use different combinations
+- **Suggest alternatives** for readers with different module collections
+
+### **Phase 1 Integration:**
+- **Make Noise Maths** - Mathematical processing foundation
+- **Mutable Plaits** - Core synthesis engine integration
+- **Other Phase 1 modules** - Fundamental synthesis building blocks
+- **Cross-phase integration** - Bridge sophisticated modulation with core synthesis
+
+### **Function-Specific Integration Philosophy:**
+Each guide should show how the featured module serves as the "brain" for its specific function (rhythm, destruction, filtering, etc.) within diverse Phase 2 ecosystems, demonstrating that the **integration approach** is more important than the **specific modules** used.
 
 ---
 
