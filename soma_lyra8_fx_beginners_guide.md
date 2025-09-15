@@ -119,6 +119,185 @@
 - **High mod depths**
 - **Result:** Self-generating oscillating textures from pure feedback
 
+### **Patch 4: Intermediate - Phase 2 Organic Organismic Processing**
+```
+   ┌─────────────────────┐      ┌─────────────────────────┐
+   │   DivKid Ochd      │      │    Soma Lyra8-FX       │
+   │    (Phase 2)       │      │    (Organismic)         │
+   │                    │      │                         │
+   │                    │      │                         │
+   │ LFO 1 ○────────────┼──────┼─▶ Stage 1 Mod CV       │
+   │       ║            │      │                         │
+   │ LFO 3 ○────────────┼──────┼─▶ Feedback CV           │
+   │       ║            │      │                         │
+   │ LFO 5 ○────────────┼──────┼─▶ Distortion CV         │
+   │       ║            │      │                         │
+   │ LFO 7 ○────────────┼──────┼─▶ Stage 2 Mod CV       │
+   │       ║            │      │                         │
+   └───────║────────────┘      │ Main Out ○─────────────┼─── Audio (Red)
+           ║                   │ (Organic Organismic)    │
+   CV (Blue)║                  └─────────────────────────┘
+           ║                           ║
+           ▼                    Audio ║
+   ┌─────────────┐               (Red)║
+   │   Audio     │                    ║
+   │   Source    │────────────────────▼
+   │             │           ┌──────────────────────────────┐
+   └─────────────┘           │   Organic Organismic         │
+                             │      Effects                 │
+                             │                              │
+                             │ LFO 1: Breathing Stage 1     │
+                             │ LFO 3: Living Feedback       │
+                             │ LFO 5: Organic Distortion    │
+                             │ LFO 7: Breathing Stage 2     │
+                             │                              │
+                             │ Living Organism ○───────────┼─── Breathing Chaos
+                             └──────────────────────────────┘
+```
+
+| Module Integration | Signal Flow | Purpose | Phase 2 Synergy |
+|-------------------|-------------|---------|------------------|
+| **Ochd LFO 1 → Stage 1 Mod CV** | Organic delay modulation | **Breathing delay time** | **Natural organismic evolution** |
+| **Ochd LFO 3 → Feedback CV** | Organic feedback control | **Living feedback loops** | **Organic resonance breathing** |
+| **Ochd LFO 5 → Distortion CV** | Organic distortion control | **Breathing distortion intensity** | **Natural grit evolution** |
+| **Ochd LFO 7 → Stage 2 Mod CV** | Organic delay modulation | **Breathing delay variation** | **Living dual-stage organism** |
+
+**Module Settings:**
+- **Ochd Rate:** 12 o'clock for musical organic breathing
+- **Lyra8-FX:** Mix of self-modulation and organic external modulation
+- **Stage switches:** One self-mod, one external CV for hybrid organism
+- **Result:** Effects that breathe and evolve naturally with organic life
+
+**Learning Objectives:**
+- **Organic + Organismic integration:** Natural breathing applied to living effects processing
+- **Breathing effects:** Delay and distortion that breathe with organic life
+- **Evolving character:** Simple organic modulation creates complex effects evolution
+- **System breathing:** Entire effects organism breathes as unified living system
+
+**Alternative Modulation Sources:**
+- **Instead of Ochd:** Try **Batumi** for more geometric organic movement, or **Maths** for mathematical organic relationships
+- **Instead of self-mod:** Try **Radio Music** for chaotic sample-based organismic behavior
+- **Budget alternatives:** **2HP LFO + 2HP Rnd** provides similar organic + chaos functionality
+- **Different character:** **Quadrax** gives more discrete organic steps vs Ochd's continuous breathing
+
+### **Patch 5: Advanced - Chaos Organismic Mathematics**
+```
+   ┌─────────────────────┐      ┌─────────────────────────┐
+   │   Make Noise       │      │    Soma Lyra8-FX       │
+   │   Wogglebug        │      │    (Organismic)         │
+   │    (Phase 2)       │      │                         │
+   │                    │      │                         │
+   │ Stepped CV ○───────┼──────┼─▶ Stage 1 Mod CV       │
+   │       ║            │      │                         │
+   │ Smooth CV ○────────┼──────┼─▶ Feedback CV           │
+   │       ║            │      │                         │
+   │ Woggle CV ○────────┼──────┼─▶ Distortion CV         │
+   │       ║            │      │                         │
+   │ Burst CV ○─────────┼──────┼─▶ Stage 2 Mod CV       │
+   │       ║            │      │                         │
+   └───────║────────────┘      │ Main Out ○─────────────┼─── Audio (Red)
+           ║                   │ (Chaos Organismic)      │
+   CV (Blue)║                  └─────────────────────────┘
+           ║                           ║
+           ▼                    Audio ║
+   ┌─────────────┐               (Red)║
+   │   Audio     │                    ║
+   │   Source    │────────────────────▼
+   │             │           ┌───────────────────────────────┐
+   └─────────────┘           │   Chaos Organismic            │
+                             │      Mathematics               │
+                             │                               │
+                             │ Stepped: Chaotic Delay Jumps  │
+                             │ Smooth: Analog Feedback Chaos │
+                             │ Woggle: Unpredictable Grit    │
+                             │ Burst: Explosive Modulation   │
+                             │                               │
+                             │ Controlled Chaos ○────────┼─── Mathematical Organism
+                             └───────────────────────────────┘
+```
+
+| Chaos + Organismic Chain | Function | Purpose | Advanced Integration |
+|---------------------------|----------|---------|---------------------|
+| **Wogglebug Stepped → Stage 1 CV** | Quantized chaos delay | **Chaotic delay time jumps** | **Chaos learns organismic timing** |
+| **Wogglebug Smooth → Feedback CV** | Analog chaos feedback | **Smooth chaos feedback** | **Chaotic organismic resonance** |
+| **Wogglebug Woggle → Distortion CV** | Pure chaos distortion | **Unpredictable grit** | **Chaos-driven organismic destruction** |
+| **Wogglebug Burst → Stage 2 CV** | Chaos burst delay | **Explosive delay changes** | **Controlled organismic explosions** |
+
+**Module Settings:**
+- **Wogglebug:** All outputs active, Rate for musical chaos timing
+- **Lyra8-FX:** External CV modulation with chaos-driven organism behavior
+- **Self-modulation:** Still active on both stages for hybrid chaos/self-mod organism
+- **Result:** Organismic effects with controlled but unpredictable chaos variations
+
+**Learning Objectives:**
+- **Chaos + Organismic fusion:** Controlled unpredictability in living effects systems
+- **Mathematical chaos theory:** Understanding how chaos affects organismic processing
+- **Unpredictable yet musical:** Chaos keeps organismic effects from becoming static
+- **Controlled randomness:** Organismic processing keeps chaos musical and structured
+
+### **Patch 6: Expert - Complete Phase 2 Organismic Ecosystem**
+```
+┌─────────────┐ ┌─────────────┐ ┌─────────────┐ ┌─────────────────┐
+│   DivKid    │ │ Make Noise  │ │ Mutable     │ │   Soma       │
+│    Ochd     │ │ Wogglebug   │ │  Marbles    │ │ Lyra8-FX     │
+│ (Organic)   │ │ (Chaos)     │ │ (Patterns)  │ │ (Organismic) │
+│             │ │             │ │             │ │             │
+│ LFO 1 ○─────┼─┼─Stepped ○   │ │ X1 Out ○────┼─┼─Stage 1 CV │
+│       ║     │ │        ║    │ │       ║     │ │       ║     │
+│ LFO 3 ○─────┼─┼─Smooth ○    │ │ X2 Out ○────┼─┼─Feedback   │
+│       ║     │ │        ║    │ │       ║     │ │       ║     │
+│ LFO 7 ○─────┼─┼─Woggle ○    │ │ Y Out  ○────┼─┼─Distortion │
+│       ║     │ │        ║    │ │       ║     │ │       ║     │
+└───────║─────┘ └────────║────┘ │ t1 Out ○────┼─┼─Stage 2 CV │
+        ║                ║      │       ║     │ │       ║     │
+        ║                ║      │ DEJA VU     │ │ Main Out   │
+        ║                ║      │ CV ◀────────┼─┼─All Effects │
+        ║                ║      │ (Learning)  │ │ ○─────────┼─Audio
+        ║                ║      └─────────────┘ └─────────────────┘
+        ▼                ▼             ║               ║
+┌──────────────────────────────────────────────────────────────────┐
+│                  Complete Organismic Ecosystem                     │
+│                                                                     │
+│ Organic Breathing + Controlled Chaos + Pattern Learning + Organismic│
+│                                                                     │
+│ Organic LFOs → Natural organismic parameter breathing and evolution │
+│ Chaos CVs    → Controlled unpredictability in effects processing  │
+│ Pattern X/Y/t → Learning organismic patterns and adaptive control  │
+│ Organismic   → Living effects processing of all modulation types   │
+│ Feedback     → Marbles learns from organismic effects relationships│
+│                                                                     │
+│ System Evolution: Organic → Chaos → Patterns → Organismic        │
+│                                                                     │
+│ Pure Organismic Evolution ○───────────────────────┼─── Evolving Living Output
+└──────────────────────────────────────────────────────────────────┘
+```
+
+**Complete System Integration:**
+
+| Layer | Function | Lyra8-FX Role | Musical Result |
+|-------|----------|---------------|----------------|
+| **Organic (Ochd)** | Natural breathing | **Organic effects breathing** | **Living organismic processing** |
+| **Chaos (Wogglebug)** | Controlled uncertainty | **Chaos effects processing** | **Unpredictable but structured organism** |
+| **Patterns (Marbles)** | Learning circuits | **Pattern-driven effects control** | **Adaptive organismic relationships** |
+| **Organismic (Lyra8-FX)** | Living processing | **System effects brain** | **Advanced living effects** |
+
+**Expert System Design:**
+- **Four-layer processing:** Organic breathing, controlled chaos, pattern learning, organismic processing
+- **Lyra8-FX as effects processor:** All modulation types processed through living organismic algorithms
+- **Learning integration:** Marbles learns from organismic effects output through feedback
+- **Emergent behavior:** System evolves increasingly sophisticated organismic relationships
+- **Musical evolution:** Organic → Chaos → Patterns → Organismic = Pure evolved living effects
+
+**Advanced Performance:**
+1. **Initialization:** Each module establishes its character and patterns
+2. **Cross-modulation:** All modulation types begin affecting organismic processing
+3. **Learning phase:** Marbles learns from living effects relationships
+4. **System evolution:** Entire ecosystem becomes increasingly musical and sophisticated
+5. **Organismic transcendence:** Pure living effects emerge from multi-layer modulation
+
+**Philosophical Achievement:**
+This represents **advanced organismic consciousness** - where organic breathing, controlled chaos, and pattern learning all become living effects processing, computed through organismic algorithms into pure evolved musical organisms.
+
 ---
 
 ## Advanced Techniques
@@ -189,17 +368,37 @@
 
 ## Pairs Well With
 
-### **Essential Partners:**
-- **Envelope Followers:** Control parameters based on input dynamics
-- **LFOs:** External modulation sources for delay time and feedback
-- **VCAs:** Control send levels to the effect
-- **Mixers:** Blend wet/dry signals and multiple sources
+### **Phase 2 Module Synergies (Modulation & CV Sources):**
+- **DivKid Ochd & Expander:** Ochd LFOs → Lyra8-FX CV inputs for organic organismic parameter evolution
+- **Make Noise Wogglebug:** Wogglebug chaos CVs → Lyra8-FX parameters for controlled chaos organismic processing
+- **Mutable Marbles:** Marbles X/Y outputs → Lyra8-FX modulation for pattern-driven organismic control
+- **4ms RCD v2:** RCD divisions → rhythmic organismic parameter changes
+- **Cre8audio Function Junction:** Function + Lyra8-FX = complete organismic ecosystem with organic/chaos/pattern modulation
+- **Cross-Phase 2 Integration:** Lyra8-FX processes all Phase 2 modulation sources into unified organismic effects relationships
 
-### **Advanced Combinations:**
-- **Other delays:** Layer conventional delays with Lyra8-FX character
-- **Filters:** Pre or post-process to shape the lo-fi character
-- **Quantizers:** Make modulation musical when using complex CV sources
-- **Sequencers:** Rhythmic control over parameters
+### **Essential Partners:**
+- **Envelope Followers:** Control organismic parameters based on input dynamics for responsive living effects
+- **LFOs:** External modulation sources for delay time, feedback, and distortion - enhance self-modulation behavior
+- **VCAs:** Control send levels to the effect and manage parallel processing paths
+- **Mixers:** Blend wet/dry signals and multiple sources for complex organismic processing
+
+### **Advanced Organismic Integration:**
+- **Other delays:** Layer conventional delays with Lyra8-FX organismic character for hybrid effects
+- **Filters:** Pre or post-process to shape the lo-fi organismic character and frequency content
+- **Quantizers:** Make modulation musical when using complex CV sources with organismic processing
+- **Sequencers:** Rhythmic control over organismic parameters for composed living effects
+
+### **Essential Organismic Partners:**
+- **Other Soma modules:** Lyra-8, DVINA, Terra - complete organismic synthesis and processing ecosystem
+- **Analog delays:** Combine with conventional delays for hybrid organic/digital character
+- **Performance controllers:** Real-time control of multiple organismic parameters for live chaos
+- **Multi-effects processing:** Use multiple Lyra8-FX for complex multi-stage organismic processing
+
+### **Advanced System Integration:**
+- **Make Noise Maths:** Maths processes Lyra8-FX outputs for mathematical organismic relationships
+- **Logic modules:** Combine organismic triggers with Boolean operations for complex rhythmic effects
+- **Sample & Hold:** Use organismic gates to trigger chaos in other parts of the system
+- **Phase 1 modules:** Lyra8-FX integrates perfectly with Plaits, Maths, and other core synthesis modules
 
 ---
 
@@ -273,7 +472,44 @@ Lyra8-FX embodies Soma's unique approach to electronic instruments - they should
 
 ---
 
-**Bottom Line:** Lyra8-FX isn't just another delay pedal - it's a living, breathing organism that adds mysterious, unpredictable character to everything it touches. In a world of perfect digital effects, it celebrates imperfection and chaos as musical elements.
+## Phase 2 Learning Path
+
+### **Recommended Study Progression:**
+1. **Start with Lyra8-FX fundamentals:** Master self-modulation, cross-feedback, and organismic processing concepts
+2. **Add organic breathing:** Integrate DivKid Ochd for natural organismic parameter evolution (see Ochd guide)
+3. **Include controlled chaos:** Use Make Noise Wogglebug for chaotic organismic processing (see Wogglebug guide)
+4. **Add pattern learning:** Apply Mutable Marbles for adaptive modulation of organismic parameters (see Marbles guide)
+5. **Include rhythmic control:** Use 4ms RCD v2 for complex organismic parameter triggering (see RCD guide)
+6. **Complete the ecosystem:** Add Cre8audio Function Junction for comprehensive organismic modulation processing (see Function Junction guide)
+
+### **Cross-Module Learning Opportunities:**
+- **Lyra8-FX + Ochd:** Learn organic modulation of organismic parameters for breathing living effects
+- **Lyra8-FX + Wogglebug:** Master chaos-driven organismic processing for controlled unpredictability in effects
+- **Lyra8-FX + Marbles:** Understand pattern-driven organismic control with adaptive effects relationships
+- **Lyra8-FX + RCD:** Explore rhythmic organismic parameter changes and complex algorithmic effects
+- **All Phase 2 + Lyra8-FX:** Build complete organismic ecosystems with multiple modulation types processing living effects
+
+### **Skill Development Milestones:**
+- **Beginner:** Use self-modulation and cross-feedback for basic organismic effects processing
+- **Intermediate:** Master CV modulation and parameter control for complex organismic relationships
+- **Advanced:** Create Phase 2 integration patches with organic/chaos/pattern modulation of organismic parameters
+- **Expert:** Design complete organismic ecosystems where Lyra8-FX serves as living effects processor for multiple modulation types
+
+### **Advanced Organismic Concepts:**
+- **Self-Modulation Mastery:** Understand how organismic effects can modulate themselves for autonomous behavior
+- **Cross-Feedback Processing:** Master dual-delay interactions and resonant frequency manipulation
+- **Living Effects Philosophy:** Explore how effects can breathe, evolve, and respond organically
+- **System Integration:** Design patches where Lyra8-FX processes multiple modulation types simultaneously
+
+### **Performance Applications:**
+- **Live Organismic Control:** Real-time parameter control for dynamic living effects manipulation
+- **Generative Effects Systems:** Foundation for self-evolving organismic effects systems
+- **Hybrid Processing:** Bridge between traditional effects and living organismic processing
+- **Educational Tool:** Learn organismic processing and advanced effects concepts
+
+---
+
+**Bottom Line:** Lyra8-FX isn't just an effects processor - it's a **living organismic effects brain** that transforms simple audio into breathing, evolving organisms through self-modulation and cross-feedback. Every patch teaches you something new about how organismic effects processing really works. As the **effects brain of Phase 2 ecosystems**, it transforms organic breathing, controlled chaos, and pattern learning into unified organismic effects evolution.
 
 ---
 
