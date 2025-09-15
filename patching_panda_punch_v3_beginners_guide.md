@@ -227,68 +227,80 @@
 - **Unpredictable yet musical:** Chaos keeps percussion from becoming static
 - **Controlled randomness:** Percussion processing keeps chaos musical and structured
 
-### **Patch 6: Expert - Complete Phase 2 Percussion Ecosystem**
+### **Patch 6: Expert - Multi-Function Percussion Workstation**
 ```
 ┌─────────────┐ ┌─────────────┐ ┌─────────────┐ ┌─────────────────┐
-│   DivKid    │ │ Make Noise  │ │ Mutable     │ │ Patching Panda  │
-│    Ochd     │ │ Wogglebug   │ │  Marbles    │ │  Punch V3       │
-│ (Organic)   │ │ (Chaos)     │ │ (Patterns)  │ │ (Percussion)    │
+│   Qubit     │ │   Disting   │ │ Cre8audio   │ │ Patching Panda  │
+│   Bloom     │ │   mk4       │ │ Function    │ │  Punch V3       │
+│(Generative) │ │(Multi-Algo) │ │ Junction    │ │ (Percussion)    │
 │             │ │             │ │             │ │                 │
-│ LFO 1 ○─────┼─┼─Stepped ○   │ │ X1 Out ○────┼─┼─Decay CV Ch1   │
+│ Gate Out ○──┼─┼─Trig In     │ │ Input A ○───┼─┼─Decay CV Ch1   │
 │       ║     │ │        ║    │ │       ║     │ │       ║         │
-│ LFO 3 ○─────┼─┼─Smooth ○    │ │ X2 Out ○────┼─┼─ACC|VEL Ch1    │
+│ CV 1 Out ○──┼─┼─Algorithm   │ │ Sum Out ○───┼─┼─ACC|VEL Ch1    │
+│       ║     │ │ (S&H/LFO)   │ │       ║     │ │       ║         │
+│ CV 2 Out ○──┼─┼─CV In       │ │ Input B ○───┼─┼─Decay CV Ch2   │
 │       ║     │ │        ║    │ │       ║     │ │       ║         │
-│ LFO 7 ○─────┼─┼─Woggle ○    │ │ Y Out  ○────┼─┼─Decay CV Ch2   │
+│ Touch ○─────┼─┼─CV Out ○────┼─┼─Input C     │ │ Mix Out ○───┼─ACC|VEL Ch2
 │       ║     │ │        ║    │ │       ║     │ │       ║         │
-└───────║─────┘ └────────║────┘ │ t1 Out ○────┼─┼─ACC|VEL Ch2    │
-        ║                ║      │       ║     │ │       ║         │
-        ║                ║      │ DEJA VU     │ │ Ch1&2 Out      │
-        ║                ║      │ CV ◀────────┼─┼─All Percussion │
-        ║                ║      │ (Learning)  │ │ ○─────────┼─Audio
+└───────║─────┘ └────────║────┘ │ Diff Out○───┼─┼─Ch1&2 Outputs │
+        ║                ║      │ (CV Proc)   │ │ ○─────────┼─Audio
         ║                ║      └─────────────┘ └─────────────────┘
         ▼                ▼             ║               ║
 ┌──────────────────────────────────────────────────────────────────┐
-│                  Complete Percussion Ecosystem                     │
+│                Multi-Function Percussion System                    │
 │                                                                     │
-│ Organic Breathing + Controlled Chaos + Pattern Learning + Percussion│
+│ Generative Sequencing + Algorithmic Processing + CV Processing     │
 │                                                                     │
-│ Organic LFOs → Natural percussion parameter breathing and evolution │
-│ Chaos CVs    → Controlled unpredictability in percussion processing│
-│ Pattern X/Y/t → Learning percussion patterns and adaptive control   │
-│ Percussion   → Dynamic VCA processing of all modulation types      │
-│ Feedback     → Marbles learns from percussion processing output     │
+│ Bloom       → Generates gates, CV sequences, and touch control     │
+│ Disting     → S&H algorithm, LFO, quantizer, envelope functions    │
+│ Function    → CV mixing, scaling, inversion, and mathematical ops  │
+│ Punch V3    → Dynamic VCA processing with dual-channel control     │
 │                                                                     │
-│ System Evolution: Organic → Chaos → Patterns → Percussion         │
+│ Multi-Function Integration: Each module serves multiple roles       │
 │                                                                     │
-│ Pure Percussion Evolution ○─────────────────────────┼─── Evolving Dynamic Output
+│ Professional Percussion System ○──────────────────┼─── Multi-Functional Output
 └──────────────────────────────────────────────────────────────────┘
 ```
 
-**Complete System Integration:**
+**Multi-Function Percussion Integration:**
 
-| Layer | Function | Punch V3 Role | Musical Result |
-|-------|----------|---------------|----------------|
-| **Organic (Ochd)** | Natural breathing | **Organic percussion breathing** | **Living percussion processing** |
-| **Chaos (Wogglebug)** | Controlled uncertainty | **Chaos percussion processing** | **Unpredictable but structured rhythms** |
-| **Patterns (Marbles)** | Learning circuits | **Pattern-driven percussion control** | **Adaptive percussion relationships** |
-| **Percussion (Punch V3)** | Dynamic processing | **System percussion brain** | **Advanced dynamic percussion** |
+| Module | Primary Function | Secondary Functions | Punch V3 Role |
+|--------|------------------|--------------------|---------------|
+| **Bloom (16HP)** | Generative sequencer | **Built-in CV generators + touch control + probability** | **Gate and CV source control** |
+| **Disting mk4 (8HP)** | Algorithm processor | **S&H + LFO + Quantizer + Envelope in one module** | **Dynamic CV processing** |
+| **Function Junction (6HP)** | CV processor | **Mix + invert + scale + mathematical operations** | **CV conditioning and routing** |
+| **Punch V3 (9HP)** | Dual VCA with envelopes | **Percussion processing core** | **Complete percussion engine** |
 
-**Expert System Design:**
-- **Four-layer processing:** Organic breathing, controlled chaos, pattern learning, percussion processing
-- **Punch V3 as percussion processor:** All modulation types processed through dual VCA percussion algorithms
-- **Learning integration:** Marbles learns from percussion processing output through feedback
-- **Emergent behavior:** System evolves increasingly sophisticated percussion relationships
-- **Musical evolution:** Organic → Chaos → Patterns → Percussion = Pure evolved dynamic rhythms
+**Multi-Function System Design:**
+- **Bloom as generative brain:** Creates gates, CV sequences, and provides touch control - eliminates need for separate sequencer + LFO + controller
+- **Disting as algorithm engine:** S&H algorithm processes Bloom's CV, built-in LFO and envelope functions provide additional modulation
+- **Function Junction as CV processor:** Mixes, scales, and processes all CV signals mathematically before sending to Punch V3
+- **Punch V3 as percussion processor:** Receives optimally conditioned CV for sophisticated percussion control
+- **Total system:** 39HP for complete professional percussion workstation with generative capabilities
 
-**Advanced Performance:**
-1. **Initialization:** Each module establishes its character and patterns
-2. **Cross-modulation:** All modulation types begin affecting percussion processing
-3. **Learning phase:** Marbles learns from dynamic percussion relationships
-4. **System evolution:** Entire ecosystem becomes increasingly musical and sophisticated
-5. **Percussion transcendence:** Pure dynamic percussion emerges from multi-layer modulation
+**Performance Applications:**
+1. **Generative percussion programming:** Bloom creates evolving gate and CV patterns automatically
+2. **Algorithmic CV processing:** Disting S&H algorithm creates stepped variations from Bloom's smooth CV
+3. **Mathematical CV conditioning:** Function Junction processes all CV through mathematical operations
+4. **Touch performance control:** Bloom's touch interface provides real-time human expression
+5. **Multi-algorithm flexibility:** Disting can switch algorithms for different processing types per song/section
+
+**Why This Multi-Function Ecosystem Works:**
+- **Leverages actual capabilities:** Uses modules for their intended multi-function design
+- **No single-function overlap:** Each module contributes unique multi-function capabilities  
+- **Algorithm flexibility:** Disting can adapt to any processing needs via algorithm switching
+- **Scalable complexity:** Can be simple (basic patterns) or sophisticated (generative + algorithmic processing)
+- **Combinable with other guides:** No modulation source conflicts since other guides use different multi-function approaches
+
+**Expert System Performance:**
+1. **Initialization:** Bloom establishes generative patterns, Disting loads appropriate algorithm
+2. **Processing chain:** Bloom CV → Disting algorithm → Function Junction math → Punch V3 percussion
+3. **Touch expression:** Real-time human control via Bloom's touch interface
+4. **Algorithm evolution:** Switch Disting algorithms mid-performance for different processing character
+5. **Generative development:** System evolves complex percussion relationships through multi-function interaction
 
 **Philosophical Achievement:**
-This represents **advanced percussion consciousness** - where organic breathing, controlled chaos, and pattern learning all become dynamic percussion processing, computed through VCA algorithms into pure evolved musical rhythms.
+This represents **multi-function percussion mastery** - where generative sequencing, algorithmic processing, and mathematical CV operations all serve the percussion engine, creating a professional workstation that leverages each module's complete capabilities rather than using them as single-function devices.
 
 ---
 
@@ -360,13 +372,13 @@ This represents **advanced percussion consciousness** - where organic breathing,
 
 ## Pairs Well With
 
-### **Phase 2 Module Synergies (Modulation & CV Sources):**
-- **DivKid Ochd & Expander:** Ochd LFOs → Punch V3 CV inputs for organic percussion parameter evolution
-- **Make Noise Wogglebug:** Wogglebug chaos CVs → Punch V3 parameters for controlled chaos percussion processing
-- **Mutable Marbles:** Marbles X/Y outputs → Punch V3 modulation for pattern-driven percussion control
-- **4ms RCD v2:** RCD divisions → rhythmic percussion parameter changes and polyrhythmic triggering
-- **Cre8audio Function Junction:** Function + Punch V3 = complete percussion ecosystem with organic/chaos/pattern modulation
-- **Cross-Phase 2 Integration:** Punch V3 processes all Phase 2 modulation sources into unified dynamic percussion relationships
+### **Multi-Function Module Synergies (Professional Percussion Systems):**
+- **Qubit Bloom:** Generative sequencing + touch control + probability → Punch V3 for expressive generative percussion programming
+- **Disting mk4:** Algorithm processor (S&H/LFO/Quantizer/Envelope) → Punch V3 for algorithmic percussion control
+- **Cre8audio Function Junction:** CV mixing + scaling + mathematical operations → Punch V3 for precise percussion parameter control
+- **Hermod+ (Alternative):** Advanced sequencing + built-in quantization + CV processing → Punch V3 for professional percussion sequencing
+- **MetaModule (Alternative):** Plugin-based LFOs + envelopes (Fundamental VCO + AS ADSR) → Punch V3 for plugin-processed percussion
+- **Cross-Multi-Function Integration:** Punch V3 serves as percussion processor for complete multi-function workstation ecosystems
 
 ### **Essential Partners:**
 - **Oscillators:** Sine waves for kicks, complex waves for snares - core percussion synthesis sources
@@ -470,18 +482,18 @@ Punch V3 bridges the gap between vintage drum machine simplicity and modern CV e
 
 ### **Recommended Study Progression:**
 1. **Start with Punch V3 fundamentals:** Master dual-mode operation, envelope control, and percussion synthesis concepts
-2. **Add organic breathing:** Integrate DivKid Ochd for natural percussion parameter evolution (see Ochd guide)
-3. **Include controlled chaos:** Use Make Noise Wogglebug for chaotic percussion processing (see Wogglebug guide)
-4. **Add pattern learning:** Apply Mutable Marbles for adaptive modulation of percussion parameters (see Marbles guide)
-5. **Include rhythmic control:** Use 4ms RCD v2 for complex percussion triggering relationships (see RCD guide)
-6. **Complete the ecosystem:** Add Cre8audio Function Junction for comprehensive percussion modulation processing (see Function Junction guide)
+2. **Add generative control:** Integrate Qubit Bloom for generative percussion sequencing with touch expression (see Bloom guide)
+3. **Include algorithmic processing:** Use Disting mk4 for S&H, LFO, and envelope algorithm-based percussion control (see Disting guide)
+4. **Add CV mathematics:** Apply Cre8audio Function Junction for mathematical CV conditioning and routing (see Function Junction guide)
+5. **Include advanced sequencing:** Use Hermod+ for professional percussion sequencing with built-in processing (see Hermod+ guide)
+6. **Complete the workstation:** Add MetaModule with plugins for comprehensive percussion parameter control (see MetaModule guide)
 
 ### **Cross-Module Learning Opportunities:**
-- **Punch V3 + Ochd:** Learn organic modulation of percussion parameters for breathing dynamic rhythms
-- **Punch V3 + Wogglebug:** Master chaos-driven percussion for controlled unpredictability in rhythm processing
-- **Punch V3 + Marbles:** Understand pattern-driven percussion control with adaptive rhythm relationships
-- **Punch V3 + RCD:** Explore polyrhythmic percussion triggering and complex algorithmic rhythm processing
-- **All Phase 2 + Punch V3:** Build complete percussion ecosystems with multiple modulation types processing dynamic rhythms
+- **Punch V3 + Bloom:** Learn generative percussion programming with touch control for expressive dynamic rhythms
+- **Punch V3 + Disting:** Master algorithmic percussion processing using multiple algorithms in one module
+- **Punch V3 + Function Junction:** Understand mathematical CV processing for precision percussion parameter control
+- **Punch V3 + Hermod+:** Explore professional percussion sequencing with built-in quantization and CV processing
+- **All Multi-Function + Punch V3:** Build complete percussion workstations where each module serves multiple roles simultaneously
 
 ### **Skill Development Milestones:**
 - **Beginner:** Use vintage/CV modes and envelope control for basic percussion synthesis
@@ -503,7 +515,7 @@ Punch V3 bridges the gap between vintage drum machine simplicity and modern CV e
 
 ---
 
-**Bottom Line:** Punch V3 isn't just a VCA with envelopes - it's a **dynamic percussion processing brain** that transforms simple audio into punchy, evolving rhythms through dual-mode envelope control. Every patch teaches you something new about how percussion synthesis and dynamic processing really works. As the **percussion brain of Phase 2 ecosystems**, it transforms organic breathing, controlled chaos, and pattern learning into unified dynamic percussion evolution.
+**Bottom Line:** Punch V3 isn't just a VCA with envelopes - it's a **dynamic percussion processing brain** that transforms simple audio into punchy, evolving rhythms through dual-mode envelope control. Every patch teaches you something new about how percussion synthesis and dynamic processing really works. As the **percussion processor of multi-function workstations**, it transforms generative sequencing, algorithmic processing, and mathematical CV operations into unified professional percussion systems.
 
 ---
 

@@ -4,6 +4,67 @@
 
 ---
 
+## ⚠️ **CRITICAL ISSUE: Avoid Repetitive Modulation Patterns**
+
+### **Problem Identified:**
+**Repetitive "Phase 2 Trinity" Pattern:**
+- Multiple guides using identical **DivKid Ochd + Make Noise Wogglebug + Mutable Marbles** combinations
+- Same expert patch template across different modules (Pico Voice, Punch v3, Moon Phase, Loquelic, Cs-L, etc.)
+- Creates frustrating repetition for users
+- Prevents patch combination since all guides compete for same modulation sources
+- Ignores unique character and natural partners of each target module
+
+### **❌ What NOT To Do:**
+```
+Every Expert Patch:
+DivKid Ochd + Make Noise Wogglebug + Mutable Marbles + [Target Module]
+```
+**Problems:**
+- 30+ HP requirement for every advanced patch
+- Expensive barrier to entry
+- Boring repetition across guides
+- Can't combine multiple guide patches
+- Generic approach ignores module-specific needs
+
+### **✅ Better Approach - Unique Multi-Function Ecosystems:**
+
+**Each guide should use different multi-function module combinations:**
+- **Pico Voice:** Hermod+ (seq+quant+trig) + MetaModule (Fundamental VCO + AS ADSR) + Pico Voice
+- **Loquelic:** Bloom (generative CV/gates) + Disting (algorithm-specific processing) + Function Junction
+- **Granular:** Maths (complex modulation) + Cellz (touch control) + target module
+- **Each module leverages multi-function capabilities appropriately**
+
+**Multi-Function Module Capabilities:**
+- **Hermod+:** Sequencer + quantizer + trigger gen + CV processor + live recording
+- **MetaModule:** Any function via plugins (specify plugin names: Fundamental VCO, AS ADSR, Mutable Instruments, etc.)
+- **Disting mk4:** 80+ algorithms (quantizers, LFOs, S&H, triggers, envelopes, logic)
+- **Maths:** Function gen + envelope + LFO + logic + slew + much more
+- **Bloom:** Generative sequencer + trigger gen + CV source + probability
+- **Function Junction:** CV processor + mixer + modifier + attenuverter
+- **Cellz:** Touch sequencer + trigger gen + CV source + performance controller
+
+### **Design Principles:**
+1. **Multi-Function Module Awareness:** Recognize that modules like Hermod+, MetaModule, Disting serve multiple roles simultaneously
+2. **Plugin Specificity:** When referencing MetaModule, specify actual plugin names (Fundamental VCO, AS ADSR, etc.)
+3. **Non-Overlapping Multi-Function Combinations:** Different guides use different multi-function approaches
+4. **Realistic Collection Usage:** Only reference modules actually owned, verify availability
+5. **Combinable Multi-Function Patches:** Users should be able to run multiple guide patches using different multi-function combinations
+6. **Practical Multi-Function HP:** Consider realistic rack space for multi-function workflows
+7. **Unique Multi-Function Character:** Each ecosystem should demonstrate different multi-function capabilities
+8. **Educational Multi-Function Value:** Show different approaches to leveraging multi-function modules
+
+### **Evaluation Questions:**
+- Does this patch leverage multi-function module capabilities appropriately?
+- Are MetaModule plugins specified by actual name (not generic "plugin")?
+- Does this use the same multi-function combination as other guides?
+- Can this patch be combined with patches from other guides using different multi-function approaches?
+- Are these multi-function partners musically appropriate for this module?
+- Do we actually own all these modules (no assumptions about missing modules)?
+- Does this ecosystem teach something unique about multi-function modular synthesis?
+- Are we showcasing different multi-function capabilities across guides?
+
+---
+
 ## Pre-Enhancement Analysis
 
 ### **1. Current Guide Assessment**

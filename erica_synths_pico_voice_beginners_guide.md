@@ -129,6 +129,187 @@
 - **Slow LFO** → CV Input (assigned to PAR1 for wave surfing)
 - **Result:** Constantly evolving ambient pad textures
 
+### **Patch 4: Intermediate - Phase 2 Organic Voice Development**
+```
+   ┌─────────────────────┐      ┌─────────────────────────┐
+   │   DivKid Ochd      │      │    Erica Synths        │
+   │   (Organic LFOs)   │      │    Pico Voice          │
+   │                    │      │   (Voice Processing)   │
+   │                    │      │                         │
+   │ LFO 1 ○────────────┼──────┼─▶ CV Input (PAR1)      │
+   │       ║            │      │                         │
+   │ LFO 3 ○────────────┼──────┼─▶ Button (Alg Switch)   │
+   │       ║            │      │                         │
+   │ LFO 5 ○────────────┼──────┼─▶ CV Input (PAR2)      │
+   │       ║            │      │                         │
+   │ LFO 7 ○────────────┼──────┼─▶ CV Input (Tune)      │
+   │       ║            │      │                         │
+   └───────║────────────┘      │ Voice Out ○───────────┼─── Audio (Red)
+           ║                   │ (Natural Voice Flow)   │
+   CV (Blue)║                  └─────────────────────────┘
+           ║                           ║
+           ▼                    Audio ║
+   ┌─────────────┐               (Red)║
+   │ Sequencer   │                    ║
+   │  (1V/Oct)   │────────────────────▼
+   │             │           ┌──────────────────────────────┐
+   └─────────────┘           │   Natural Voice              │
+                             │     Development              │
+                             │                              │
+                             │ LFO 1: Natural PAR1 Flow     │
+                             │ LFO 3: Algorithm Evolution   │
+                             │ LFO 5: Natural PAR2 Changes  │
+                             │ LFO 7: Natural Pitch Flow    │
+                             │                              │
+                             │ Natural Voice ○─────────┼─── Developing Synthesis
+                             └──────────────────────────────┘
+```
+
+| Module Integration | Signal Flow | Purpose | Phase 2 Synergy |
+|-------------------|-------------|---------|------------------|
+| **Ochd LFO 1 → CV (PAR1)** | Organic parameter modulation | **Natural synthesis evolution** | **Flowing algorithm character** |
+| **Ochd LFO 3 → Algorithm Button** | Organic algorithm progression | **Smooth synthesis transitions** | **Natural voice development** |
+| **Ochd LFO 5 → CV (PAR2)** | Organic expression control | **Flowing release variations** | **Dynamic voice response** |
+| **Ochd LFO 7 → CV (Tune)** | Organic pitch variation | **Natural pitch flow** | **Organic voice movement** |
+
+**Module Settings:**
+- **Ochd Rate:** 12 o'clock for musical natural development timing
+- **Pico Voice:** CV assigned to different parameters per algorithm for maximum natural response
+- **Algorithm rotation:** Natural progression through synthesis types based on circuit design
+- **Result:** Voice synthesis that develops naturally with flowing parameter modulation
+
+**Learning Objectives:**
+- **Natural + Voice integration:** Natural circuit development applied to multi-algorithm voice synthesis
+- **Flowing synthesis:** Voice algorithms that develop with natural parameter evolution
+- **Dynamic algorithms:** Simple natural modulation creates complex synthesis development
+- **System coordination:** Entire voice system develops as unified natural sound processing
+
+**Alternative Modulation Sources:**
+- **Instead of Ochd:** Try **Batumi** for more geometric voice development, or **Maths** for mathematical voice relationships
+- **Instead of algorithm switching:** Try **parameter focus** for simpler organic voice processing
+- **Budget alternatives:** **2HP LFO + 2HP Rnd** provides similar organic + variation functionality
+- **Different character:** **Quadrax** gives more discrete voice steps vs Ochd's continuous development
+
+### **Patch 5: Advanced - Chaotic Voice Processing**
+```
+   ┌─────────────────────┐      ┌─────────────────────────┐
+   │   Make Noise       │      │    Erica Synths        │
+   │   Wogglebug        │      │    Pico Voice          │
+   │  (Chaos Source)    │      │  (Voice Processing)    │
+   │                    │      │                         │
+   │ Stepped CV ○───────┼──────┼─▶ Algorithm Button      │
+   │       ║            │      │                         │
+   │ Smooth CV ○────────┼──────┼─▶ CV Input (PAR1)      │
+   │       ║            │      │                         │
+   │ Woggle CV ○────────┼──────┼─▶ CV Input (PAR2)      │
+   │       ║            │      │                         │
+   │ Burst CV ○─────────┼──────┼─▶ Config Mode Toggle    │
+   │       ║            │      │                         │
+   └───────║────────────┘      │ Voice Out ○───────────┼─── Audio (Red)
+           ║                   │ (Chaotic Voice Output) │
+   CV (Blue)║                  └─────────────────────────┘
+           ║                           ║
+           ▼                    Audio ║
+   ┌─────────────┐               (Red)║
+   │ Sequencer   │                    ║
+   │  (1V/Oct)   │────────────────────▼
+   │             │           ┌───────────────────────────────┐
+   └─────────────┘           │   Chaotic Voice               │
+                             │     Processing                │
+                             │                               │
+                             │ Stepped: Algorithm Jumps      │
+                             │ Smooth: Analog Parameter Flow │
+                             │ Woggle: Unpredictable PAR2    │
+                             │ Burst: Configuration Changes  │
+                             │                               │
+                             │ Controlled Chaos ○────────┼─── Complex Voice
+                             └───────────────────────────────┘
+```
+
+| Chaos + Voice Chain | Function | Purpose | Advanced Integration |
+|---------------------|----------|---------|---------------------|
+| **Wogglebug Stepped → Algorithm** | Quantized chaos switching | **Chaotic algorithm jumps** | **Chaos circuit controls synthesis types** |
+| **Wogglebug Smooth → PAR1 CV** | Analog chaos parameters | **Smooth chaos character** | **Chaotic synthesis variation** |
+| **Wogglebug Woggle → PAR2 CV** | Pure chaos expression | **Unpredictable dynamics** | **Chaos-driven voice expression** |
+| **Wogglebug Burst → Config Mode** | Chaos configuration | **Explosive setting changes** | **Complex voice circuit changes** |
+
+**Module Settings:**
+- **Wogglebug:** All outputs active, Rate for musical chaos timing based on circuit design
+- **Pico Voice:** Algorithm switching responds to chaos for dramatic synthesis changes
+- **Parameter chaos:** Create unpredictable but musical voice variations through circuit interaction
+- **Result:** Voice synthesis with controlled but unpredictable chaos variations
+
+**Learning Objectives:**
+- **Chaos + Voice fusion:** Controlled unpredictability in multi-algorithm voice systems through circuit design
+- **Chaos circuit theory:** Understanding how chaos circuits affect voice synthesis processing
+- **Unpredictable yet musical:** Chaos keeps voice synthesis from becoming static through natural variation
+- **Controlled randomness:** Voice processing keeps chaos musical and structured through analog circuits
+
+### **Patch 6: Expert - Pico Voice Performance Ecosystem**
+```
+┌─────────────┐ ┌─────────────┐ ┌─────────────┐ ┌─────────────────┐
+│  Intellijel │ │    2hp      │ │   Erica     │ │  Erica Synths   │
+│   Scales    │ │   Brst      │ │  Pico LFO   │ │  Pico Voice     │
+│(Quantizer)  │ │ (Triggers)  │ │(Modulation) │ │ (Voice Core)    │
+│             │ │             │ │             │ │                 │
+│ Root/Scale  │ │ Manual ○────┼─┼─Rate CV     │ │ Algorithm       │
+│ Selection   │ │        ║    │ │       ║     │ │ Selection       │
+│             │ │ Burst ○─────┼─┼─Trig 1 ○────┼─┼─Config Mode    │
+│ Quantized   │ │        ║    │ │       ║     │ │       ║         │
+│ CV ○────────┼─┼─Gate ○ ║    │ │ LFO 1 ○─────┼─┼─CV (PAR1)      │
+│       ║     │ │      ║ ║    │ │       ║     │ │       ║         │
+│ Clock In◀───┼─┼─Clk  ║ ║    │ │ LFO 2 ○─────┼─┼─CV (PAR2)      │
+│       ║     │ │      ║ ║    │ │       ║     │ │       ║         │
+└───────║─────┘ └──────║─║────┘ │ Trig 2○─────┼─┼─1V/Oct Input   │
+        ║              ║ ║      │       ║     │ │       ║         │
+        ║              ║ ║      └───────║─────┘ │ Voice Out      │
+        ║              ║ ║              ║       │ ○─────────┼─Audio
+        ▼              ▼ ▼              ▼       └─────────────────┘
+┌──────────────────────────────────────────────────────────────────┐
+│                  Pico Voice Performance System                    │
+│                                                                     │
+│ Quantized Melody + Burst Triggers + Dual LFO + 8-Algorithm Voice   │
+│                                                                     │
+│ Scales      → Musical pitch quantization for voice melodies       │
+│ Brst        → Manual/burst triggering for expressive performance  │
+│ Pico LFO    → Dual modulation optimized for Pico Voice parameters │
+│ Voice       → 8-algorithm synthesis with performance control       │
+│                                                                     │
+│ Complete 3HP Performance Voice System (9HP total)                  │
+│                                                                     │
+│ Expressive Voice Performance ○──────────────────────────┼─── Musical Voice Output
+└──────────────────────────────────────────────────────────────────┘
+```
+
+**Multi-Function Voice Integration:**
+
+| Module | Primary Function | Secondary Functions | Pico Voice Role |
+|--------|------------------|--------------------|-----------------|
+| **Hermod+ (26HP)** | Advanced sequencer | **Built-in quantizer + trigger gen + CV outputs** | **Melodic and rhythmic control** |
+| **MetaModule (26HP)** | Plugin host | **Fundamental VCO (LFO mode) + AS ADSR** | **Parameter animation and dynamics** |
+| **Pico Voice (3HP)** | 8-algorithm synthesis | **Voice core** | **Complete synthesis engine** |
+
+**Multi-Function System Design:**
+- **Hermod+ as sequence brain:** Multi-track sequencing with built-in quantization eliminates need for separate quantizer
+- **MetaModule as modulation engine:** Fundamental VCO plugin in LFO mode + AS ADSR for envelope shaping
+- **Pico Voice as synthesis core:** 8 algorithms controlled by multi-function ecosystem
+- **Professional scalability:** Each module serves multiple functions, reducing HP requirements
+- **Total system:** 55HP for complete professional voice workstation
+
+**Performance Applications:**
+1. **Multi-track melodic sequencing:** Hermod+ provides quantized sequences across multiple tracks
+2. **Plugin-based modulation:** MetaModule VCO plugin generates LFOs for parameter animation
+3. **Dynamic envelope control:** MetaModule ADSR plugin shapes voice dynamics and algorithm switching
+4. **Real-time performance:** Hermod+ live recording and pattern switching with plugin-processed modulation
+5. **Algorithm automation:** Sequence algorithm changes via Hermod+ CV tracks and MetaModule processing
+
+**Why This Multi-Function Ecosystem Works:**
+- **Leverages actual capabilities:** Uses modules for what they're designed to do well
+- **No single-function overlap:** Each module contributes unique multi-function capabilities  
+- **Plugin flexibility:** MetaModule can adapt to any processing needs via plugin swapping
+- **Scalable complexity:** Can be simple (basic sequences) or sophisticated (multi-track + plugins)
+- **Combinable with other guides:** No modulation source conflicts since other guides use different multi-function approaches
+
 ---
 
 ## Configuration Mode Deep Dive
@@ -176,17 +357,37 @@
 
 ## Pairs Well With
 
-### **Essential Partners:**
-- **Envelope Generators:** For shaping Karplus Strong and other algorithms
-- **LFOs:** Modulate parameters via CV input for movement
-- **Quantizers:** Ensure musical intervals when using random CV
-- **VCAs:** Control amplitude and create dynamics
+### **Phase 2 Module Synergies (Modulation & CV Sources):**
+- **DivKid Ochd & Expander:** Ochd LFOs → Pico Voice CV inputs for natural voice parameter development
+- **Make Noise Wogglebug:** Wogglebug chaos CVs → Pico Voice parameters for controlled chaos voice processing
+- **Mutable Marbles:** Marbles X/Y outputs → Pico Voice modulation for pattern-driven voice control
+- **4ms RCD v2:** RCD divisions → rhythmic voice parameter changes and algorithm switching
+- **Cre8audio Function Junction:** Function + Pico Voice = complete voice ecosystem with natural/chaos/pattern modulation
+- **Cross-Phase 2 Integration:** Pico Voice processes all Phase 2 modulation sources into unified synthesis relationships
 
-### **Advanced Combinations:**
-- **Filters:** Further shape the Pico Voice output
-- **Effects:** Reverb and delay enhance the 3HP sound
-- **Sequencers:** Multi-track sequencing for chord progressions
-- **Clock dividers:** Different timing for gate triggers
+### **Essential Partners:**
+- **Envelope Generators:** For shaping Karplus Strong and other algorithm responses with dynamic control
+- **LFOs:** Modulate parameters via CV input for voice movement and synthesis evolution
+- **Quantizers:** Ensure musical intervals when using random CV for pitch and harmonic control
+- **VCAs:** Control amplitude and create dynamics for voice expression and performance
+
+### **Advanced Voice Integration:**
+- **Filters:** Further shape the Pico Voice output for frequency sculpting and character enhancement
+- **Effects:** Reverb and delay enhance the 3HP sound for spatial voice processing
+- **Sequencers:** Multi-track sequencing for chord progressions and complex voice arrangements
+- **Clock dividers:** Different timing for gate triggers and algorithm switching patterns
+
+### **Essential Voice Partners:**
+- **Other Erica Synths Pico modules:** Complete compact synthesis ecosystem in minimal space
+- **Performance mixers:** Blend multiple voice algorithms and manage complex voice arrangements
+- **Performance controllers:** Real-time control of multiple voice parameters for live synthesis
+- **Multi-voice processing:** Use multiple Pico Voice modules for polyphonic voice synthesis
+
+### **Advanced System Integration:**
+- **Make Noise Maths:** Maths processes Pico Voice outputs for mathematical voice relationships
+- **Logic modules:** Combine voice triggers with Boolean operations for complex algorithmic switching
+- **Sample & Hold:** Use voice gates to trigger variation in other parts of the system
+- **Phase 1 modules:** Pico Voice integrates perfectly with Plaits, Maths, and other core synthesis modules
 
 ---
 
@@ -258,6 +459,43 @@ Erica Synths challenged themselves: "Can we make ANY superior functionality synt
 - **Producers:** Quick access to classic synthesis methods
 - **Performers:** Reliable, hands-on control
 - **Everyone:** Sounds way bigger than its 3HP footprint!
+
+---
+
+## Phase 2 Learning Path
+
+### **Recommended Study Progression:**
+1. **Start with Pico Voice fundamentals:** Master 8-algorithm operation, CV assignment, and voice synthesis concepts
+2. **Add natural development:** Integrate DivKid Ochd for natural voice parameter evolution (see Ochd guide)
+3. **Include controlled chaos:** Use Make Noise Wogglebug for chaotic voice processing (see Wogglebug guide)
+4. **Add pattern memory:** Apply Mutable Marbles for adaptive modulation of voice parameters (see Marbles guide)
+5. **Include rhythmic control:** Use 4ms RCD v2 for complex voice triggering relationships (see RCD guide)
+6. **Complete the ecosystem:** Add Cre8audio Function Junction for comprehensive voice modulation processing (see Function Junction guide)
+
+### **Cross-Module Learning Opportunities:**
+- **Pico Voice + Ochd:** Learn natural modulation of voice parameters for flowing synthesis development
+- **Pico Voice + Wogglebug:** Master chaos-driven voice processing for controlled unpredictability in synthesis
+- **Pico Voice + Marbles:** Understand pattern-driven voice control with adaptive synthesis relationships
+- **Pico Voice + RCD:** Explore rhythmic voice parameter changes and complex algorithmic voice processing
+- **All Phase 2 + Pico Voice:** Build complete voice ecosystems with multiple modulation types processing synthesis
+
+### **Skill Development Milestones:**
+- **Beginner:** Use different algorithms and basic CV assignment for voice synthesis
+- **Intermediate:** Master parameter interaction and algorithm switching for complex voice relationships
+- **Advanced:** Create Phase 2 integration patches with organic/chaos/pattern modulation of voice parameters
+- **Expert:** Design complete voice ecosystems where Pico Voice serves as synthesis core for multiple modulation types
+
+### **Advanced Voice Concepts:**
+- **8-Algorithm Mastery:** Understand how different synthesis types create unique voice characteristics
+- **CV Assignment Theory:** Master the relationship between modulation sources and synthesis parameters
+- **Dynamic Voice Processing:** Explore how modulation affects algorithm character, expression, and timbre
+- **System Integration:** Design patches where Pico Voice processes multiple modulation types simultaneously
+
+### **Performance Applications:**
+- **Live Voice Control:** Real-time algorithm switching and parameter control for dynamic synthesis performance
+- **Generative Voice Systems:** Foundation for self-evolving synthesis systems with natural/chaos/pattern modulation
+- **Hybrid Processing:** Bridge between traditional synthesis and advanced modulation processing
+- **Educational Tool:** Learn synthesis algorithms and advanced voice concepts in compact format
 
 ---
 

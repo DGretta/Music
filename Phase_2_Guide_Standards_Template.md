@@ -4,6 +4,64 @@
 
 ---
 
+## ⚠️ **CRITICAL ISSUE: Avoid Repetitive Modulation Patterns**
+
+### **Problem Identified:**
+**Repetitive "Phase 2 Trinity" Pattern Found Across Multiple Guides:**
+- **Confirmed in:** Pico Voice, Punch v3, Moon Phase, Loquelic, Cs-L, Numeric Repetitor, Ruina Versio, Arbhar
+- **Pattern:** Every "Expert" patch uses identical **DivKid Ochd + Make Noise Wogglebug + Mutable Marbles + [Target Module]**
+- **Results in:** Frustrating repetition, non-combinable patches, expensive barriers to entry
+- **User impact:** Can't run multiple guide patches simultaneously, sees same content repeatedly
+
+### **❌ NEVER Use This Template:**
+```
+Patch 6/7: Expert - Complete Phase 2 [Module] Ecosystem
+DivKid Ochd + Make Noise Wogglebug + Mutable Marbles + [Target Module]
+```
+
+### **✅ MANDATORY: Create Unique, Module-Appropriate Ecosystems**
+
+Each guide MUST use different modulation sources that:
+1. **Complement the target module's character**
+2. **Don't overlap with other guides' advanced patches**
+3. **Allow patch combination across guides**
+4. **Represent realistic HP/cost requirements**
+5. **Teach different modulation approaches**
+
+### **✅ MANDATORY: Create Unique, Multi-Function Ecosystems**
+
+Each guide MUST use different modulation sources that:
+1. **Leverage multi-function module capabilities** (Hermod+, MetaModule, Disting, Maths, etc.)
+2. **Don't overlap with other guides' advanced patches**
+3. **Allow patch combination across guides**
+4. **Represent realistic modules from the actual collection**
+5. **Teach different multi-function modulation approaches**
+
+**Multi-Function Module Understanding:**
+- **Hermod+:** Sequencer + quantizer + trigger generator + CV processor + live recording
+- **MetaModule:** Any function via plugins (specify actual plugin names: Fundamental VCO, AS ADSR, etc.)
+- **Disting mk4:** 80+ algorithms including quantizers, LFOs, S&H, triggers, envelopes, logic
+- **Maths:** Function generator + envelope + LFO + logic processor + slew limiter
+- **Bloom:** Generative sequencer + trigger generator + CV source + probability engine
+- **Function Junction:** CV processor + mixer + modifier + attenuverter
+
+**Examples of Better Multi-Function Approaches:**
+- **Pico Voice:** Hermod+ (seq+quant) + MetaModule (Fundamental VCO + AS ADSR) + Pico Voice
+- **Loquelic:** Bloom (generative) + Disting (algorithm-specific) + Function Junction (CV processing)
+- **Granular processing:** Maths (complex modulation) + Cellz (touch control) + target module
+- **Each guide uses different multi-function combinations**
+
+### **Design Requirements:**
+- **Multi-function awareness** - Recognize that modules like Hermod+, MetaModule, Disting serve multiple roles
+- **Plugin specificity** - When referencing MetaModule, specify actual plugin names (Fundamental VCO, AS ADSR, etc.)
+- **Modulation source variety** - No guide should repeat another's advanced modulation sources or multi-function combinations
+- **Musical appropriateness** - Partners should enhance the target module's character using multi-function capabilities
+- **Realistic collection** - Only use modules actually owned, no assumptions about missing modules
+- **Educational diversity** - Each ecosystem teaches different multi-function modulation concepts
+- **Combination compatibility** - Users should be able to run multiple guide patches together using different multi-function approaches
+
+---
+
 ## Overview
 
 Phase 2 guides represent the enhanced format for eurorack module documentation, emphasizing **cross-module integration**, **sophisticated circuit behavior**, and **educational progression**. These guides transform basic module documentation into comprehensive learning systems that show how modules work together as **ecosystems**.
