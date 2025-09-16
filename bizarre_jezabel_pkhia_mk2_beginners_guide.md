@@ -237,7 +237,7 @@
 - **Sequencer + Filter integration:** Multi-track sequencing applied to boutique analog stereo filtering
 - **Musical filtering:** Create sequenced stereo filter processing that follows musical relationships
 - **Quantized filter control:** Understand how quantization enhances stereo filter musicality
-- **Advanced sequencing:** Complex stereo filter sequences with built-in musical intelligence
+- **Advanced sequencing:** Complex stereo filter sequences with built-in musical processing
 
 ### **Patch 7: Expert - Complete Expressive Filter Ecosystem**
 ```
@@ -456,7 +456,7 @@ This represents **complete expressive filter mastery** - where musical sequencin
 
 ### **Performance Applications:**
 - **Live Expressive Control:** Real-time Pkhia stereo filter control for dynamic performance with touch and expression
-- **Musical Filter Performance:** Foundation for sequenced stereo filtering with musical intelligence and quantized control
+- **Musical Filter Performance:** Foundation for sequenced stereo filtering with musical processing and quantized control
 - **Boutique Analog Processing:** Bridge between digital control precision and European analog stereo character
 - **Educational Tool:** Learn expressive filter concepts through hands-on boutique analog interaction
 
