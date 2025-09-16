@@ -1,4 +1,4 @@
-# Cre8audio Cellz - Beginner's Guide
+# Cre8audio Cellz - Guide
 
 **The Touch-Sensitive CV Playground**
 

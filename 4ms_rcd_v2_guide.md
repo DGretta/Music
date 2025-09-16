@@ -1,4 +1,4 @@
-# 4ms Rotating Clock Divider V2 - Beginner's Guide
+# 4ms Rotating Clock Divider V2 - Guide
 
 **The Polyrhythm Generator That Thinks Outside the Box**
 

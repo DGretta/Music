@@ -1,4 +1,4 @@
-# 4ms SCM Plus - Beginner's Guide
+# 4ms SCM Plus - Guide
 
 **The Swiss Army Knife of Clock Manipulation**
 

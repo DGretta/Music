@@ -1,4 +1,4 @@
-# Bizarre Jezabel Pkhia MK2 - Beginner's Guide
+# Bizarre Jezabel Pkhia MK2 - Guide
 
 **The Analog Stereo Filter Sculptor**
 

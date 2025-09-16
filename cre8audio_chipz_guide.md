@@ -1,4 +1,4 @@
-# Cre8audio Chipz - Beginner's Guide
+# Cre8audio Chipz - Guide
 
 **The Lo-Fi Chiptune Powerhouse**
 
