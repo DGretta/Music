@@ -79,6 +79,31 @@ DivKid Ochd + Make Noise Wogglebug + Mutable Marbles + [Target Module]
 
 ---
 
+## ⚠️ **EXECUTION EFFICIENCY REQUIREMENTS**
+
+### **BEFORE ANY WRITING - VERIFY:**
+- [ ] **Complete plan presented to user for approval** 
+- [ ] **User confirmed plan before any file operations**
+- [ ] **Single write operation planned** - No iterative attempts
+- [ ] **File path verified** - Check directory structure first
+- [ ] **Template sections identified** - Know exactly what goes where
+
+### **FORBIDDEN BEHAVIORS:**
+- **❌ NEVER start writing without user confirmation of plan**
+- **❌ NEVER make multiple write attempts** - Get it right the first time
+- **❌ NEVER commit without verifying file exists**
+- **❌ NEVER use edit operations on files that may not exist**
+- **❌ NEVER proceed after file operation failures without diagnosis**
+
+### **REQUIRED EXECUTION SEQUENCE:**
+1. **PLAN** - Complete analysis, present to user
+2. **CONFIRM** - Get explicit user approval 
+3. **SINGLE WRITE** - One complete file write operation
+4. **VERIFY** - Confirm file exists before any other operations
+5. **COMMIT** - Git operations only after verification
+
+---
+
 ## Pre-Enhancement Analysis
 
 ### **1. Current Guide Assessment**

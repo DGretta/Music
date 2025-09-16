@@ -82,6 +82,33 @@ Phase 2 guides represent the enhanced format for eurorack module documentation, 
 
 ---
 
+## ⚠️ **EXECUTION EFFICIENCY STANDARDS**
+
+### **Function Call Limits:**
+- **Simple guide (300-500 lines):** Maximum 3 function calls total
+- **Complex guide (500+ lines):** Maximum 5 function calls total
+- **Any guide requiring 10+ function calls indicates planning failure**
+
+### **Mandatory Workflow Adherence:**
+```
+PLAN (present complete plan) → 
+CONFIRM (wait for user approval) → 
+SINGLE WRITE (complete file in one operation) → 
+COMMIT (git operations)
+```
+
+### **Error Recovery Protocol:**
+- **File operation failure:** Stop immediately, diagnose, ask for guidance
+- **Path errors:** Verify directory structure before proceeding
+- **Never repeat failed operations without addressing root cause**
+
+### **Quality Gates:**
+- **Before writing:** "Do I have complete user approval for this exact plan?"
+- **Before committing:** "Have I verified the file actually exists and is complete?"
+- **After any failure:** "What is the root cause and how do I fix it permanently?"
+
+---
+
 ## Critical Language Standards
 
 ### ❌ **NEVER Use These Terms:**
