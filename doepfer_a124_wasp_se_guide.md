@@ -1,4 +1,4 @@
-# Doepfer A-124 Wasp SE - Beginner's Guide
+# Doepfer A-124 Wasp SE - Guide
 
 **The Aggressive Ladder Filter Beast**
 

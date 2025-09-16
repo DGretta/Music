@@ -1,4 +1,4 @@
-# Music Thing Modular Turing Machine V2 Ecosystem - Beginner's Guide
+# Music Thing Modular Turing Machine V2 Ecosystem - Guide
 
 **The Musical Chaos Generator and Expander System**
 
