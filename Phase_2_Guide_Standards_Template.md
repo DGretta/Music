@@ -4,6 +4,20 @@
 
 ---
 
+## ⚠️ **CRITICAL CHANGE: Remove "Beginner's" from Guide Titles**
+
+### **New Naming Convention:**
+- **OLD:** `[Module Name] - Beginner's Guide`
+- **NEW:** `[Module Name] - Guide`
+- **Reason:** Guides serve all skill levels with progressive content from quick start to expert integration
+
+### **Implementation:**
+- **New guides:** Use `[Module Name] - Guide` format
+- **Existing guides:** Will be updated gradually
+- **References:** Update all internal references to match new naming
+
+---
+
 ## ⚠️ **CRITICAL ISSUE: Avoid Repetitive Modulation Patterns**
 
 ### **Problem Identified:**
@@ -119,7 +133,7 @@ Phase 2 guides represent the enhanced format for eurorack module documentation, 
 
 ### **1. Header Section**
 ```markdown
-# [Module Name] - Beginner's Guide
+# [Module Name] - Guide
 
 **The [Core Function Description]**
 

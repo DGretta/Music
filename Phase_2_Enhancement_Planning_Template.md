@@ -4,6 +4,20 @@
 
 ---
 
+## ⚠️ **CRITICAL CHANGE: Remove "Beginner's" from Guide Titles**
+
+### **New Naming Convention:**
+- **OLD:** `[Module Name] - Beginner's Guide`
+- **NEW:** `[Module Name] - Guide`
+- **Reason:** Guides serve all skill levels with progressive content from quick start to expert integration
+
+### **Implementation:**
+- **New guides:** Always use `[Module Name] - Guide` format
+- **Enhancement planning:** Note title change needed for existing guides
+- **Internal references:** Update all cross-references to match new naming
+
+---
+
 ## ⚠️ **CRITICAL ISSUE: Avoid Repetitive Modulation Patterns**
 
 ### **Problem Identified:**
