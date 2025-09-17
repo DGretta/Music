@@ -79,6 +79,34 @@ DivKid Ochd + Make Noise Wogglebug + Mutable Marbles + [Target Module]
 
 ---
 
+## ⚠️ **DUAL STANDARD SYSTEM: Module Classification**
+
+### **Creative Module Standard (4-5 patches):**
+- **Sound generation modules:** Oscillators, filters, effects, drum machines, sequencers
+- **Musical control modules:** Envelope generators, LFOs with complex capabilities  
+- **Creative applications:** Modules designed for sound design and musical expression
+- **Patch structure:** Basic → Intermediate → Advanced → Expert (→ Master for complex modules)
+- **Focus:** Musical exploration, creative sound design, performance applications
+
+### **Utility Module Standard (2-3 patches):**
+- **Signal routing modules:** Mixers, multiples, switches, interfaces
+- **Level control modules:** VCAs, attenuators, amplifiers, output modules
+- **Interface functions:** Clock utilities, basic utilities, system support modules
+- **Patch structure:** Basic → Advanced (→ Expert for complex utilities)
+- **Focus:** Technical operation, system integration, workflow optimization
+
+### **Classification Guidelines:**
+- **Primary function determines classification:** What is the module's main purpose?
+- **Creative potential:** Does it generate or creatively process sound/music?
+- **System role:** Is it primarily supportive (utility) or creative (instrument)?
+- **Complexity:** How many parameters and creative possibilities exist?
+
+### **Examples by Classification:**
+- **Creative:** Oscillators (Plaits), Filters (Rings), Effects (Clouds), Drums (DRUM2), Envelopes (EG2)
+- **Utility:** Mixers (Mixup), VCAs (Quad VCA2), Interfaces (Stomp), Clock dividers, Attenuators
+
+---
+
 ## ⚠️ **EXECUTION EFFICIENCY REQUIREMENTS**
 
 ### **BEFORE ANY WRITING - VERIFY:**

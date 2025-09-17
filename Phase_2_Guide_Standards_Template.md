@@ -82,6 +82,49 @@ Phase 2 guides represent the enhanced format for eurorack module documentation, 
 
 ---
 
+## ⚠️ **DUAL STANDARD SYSTEM: Module Classification**
+
+### **Creative Module Standard (4-5 patches):**
+- **Sound generation modules:** Oscillators, filters, effects, drum machines, sequencers
+- **Musical control modules:** Envelope generators, LFOs with complex capabilities
+- **Creative applications:** Modules designed for sound design and musical expression
+- **Patch progression:** Basic → Intermediate → Advanced → Expert (→ Master for highly complex modules)
+- **Content focus:** Musical exploration, creative sound design, performance applications
+- **Example modules:** Plaits, Rings, Clouds, DRUM2, Black EG2, Maths, complex oscillators
+
+### **Utility Module Standard (2-3 patches):**
+- **Signal routing modules:** Mixers, multiples, switches, interfaces, output modules
+- **Level control modules:** VCAs, attenuators, amplifiers, basic utilities
+- **Interface functions:** Clock utilities, system support modules, workflow tools
+- **Patch progression:** Basic → Advanced (→ Expert for complex utilities like advanced VCAs)
+- **Content focus:** Technical operation, system integration, workflow optimization
+- **Example modules:** Mixup, Quad VCA2, Stomp, basic mixers, clock dividers, attenuators
+
+### **Classification Decision Process:**
+1. **Primary function analysis:** What is the module's main purpose in a modular system?
+2. **Creative potential assessment:** Does it generate, transform, or creatively process sound/music?
+3. **Parameter complexity:** How many parameters and creative possibilities exist?
+4. **System role determination:** Is it primarily supportive (utility) or creative (instrument)?
+5. **User interaction type:** Technical operation vs musical expression?
+
+### **Guide Structure Requirements:**
+
+#### **Creative Module Guides Must Include:**
+- **4-5 comprehensive patches** showing progression from basic to expert use
+- **Algorithm/parameter exploration** for modules with multiple modes
+- **Creative applications** and sound design possibilities
+- **Musical context** and performance applications
+- **Phase 2 integration** as creative brain within ecosystems
+
+#### **Utility Module Guides Must Include:**
+- **2-3 focused patches** covering essential operation and advanced techniques
+- **Technical operation** and system integration focus
+- **Workflow optimization** and practical applications
+- **Professional standards** and signal flow management
+- **Phase 2 integration** as system support within ecosystems
+
+---
+
 ## ⚠️ **EXECUTION EFFICIENCY STANDARDS**
 
 ### **Function Call Limits:**
