@@ -155,8 +155,8 @@ Basic ADSR Workflow:
 │ Make Noise      │    │   GATE          │    │                 │    │                 │
 │ Maths           │    │                 │    │                 │    │                 │
 │                 │    │ Parameters:     │    │                 │    │                 │
-│ Ch1 Rise ○──────┼────┼─ Time CV ◀      │    │                 │    │                 │
-│ (Slow)          │    │ (if available)  │    │                 │    │                 │
+│ Ch1 Rise ○──────┼────┼─ (No Time CV   │    │                 │    │                 │
+│ (Slow)          │    │  available)     │    │                 │    │                 │
 └─────────────────┘    │                 │    │                 │    │                 │
                        │ ADSR Settings:  │    │                 │    │                 │
                        │ • Attack: 10    │    │                 │    │ VCA CV ◀────────┼────┼─ OUT A ○        │
