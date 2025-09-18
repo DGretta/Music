@@ -57,7 +57,7 @@
 ### **🔴 RED - Karplus Strong (Plucked Strings)**
 - **PAR1:** Distortion amount
 - **PAR2:** Noise burst (initial pluck character)
-- **Gate/Trigger:** Essential - initiates the "pluck"
+- **Gate/Trigger:** Essential - initiates the "pluck" (note: Pico Voice doesn't have a dedicated gate input - uses note changes on 1V/Oct)
 - **Sound:** Realistic plucked strings, harps, guitar-like tones
 
 ### **🟡 YELLOW - Chords (Harmonic Stacks)**
@@ -111,7 +111,7 @@
 - **Your sequencer** → 1V/Oct input
 - **PAR1 at different positions** for different chord types
 - **LFO** → CV Input (assigned to PAR1 for changing chord types)
-- **Gate from sequencer** → Gate input
+- **Gate timing controlled by:** Note changes and PAR2 (release time) - no dedicated gate input needed
 - **Result:** Automatic chord progressions with evolving harmony
 
 ### **Patch 2: Acid Bassline**
@@ -119,7 +119,7 @@
 - **Bass sequence** → 1V/Oct input
 - **PAR1 around 2 o'clock** (resonance sweet spot)
 - **Envelope or LFO** → CV Input (assigned to PAR1 for filter sweeps)
-- **Accent pattern** → Gate input
+- **Note:** Bassline algorithm auto-triggers on note changes - no external gate needed
 - **Result:** Classic TB-303 style acid sequences
 
 ### **Patch 3: Evolving Pad**
@@ -397,7 +397,7 @@
 
 **"My Karplus Strong doesn't make sound!"**
 - Karplus Strong REQUIRES gate/trigger input to initiate the string
-- **Solution:** Patch a gate/trigger signal to the Gate input
+- **Solution:** Patch a gate/trigger signal to the TRIGG input
 
 **"The pitch tracking seems off in the low end!"**
 - Pico Voice tracks C1-C8, below 1V it doesn't track properly
