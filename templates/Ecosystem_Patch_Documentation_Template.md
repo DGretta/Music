@@ -28,6 +28,11 @@
 
 ## **🎛️ Technical Configuration**
 
+### **Enhanced Module Documentation Format:**
+All device listings should include multiple alternatives at different price points and HP requirements:
+
+**Format:** [Primary Device] + [Budget Alternative] + [Premium Alternative] + [Different Character]
+
 ### **Essential Devices:**
 | Device | Role | Critical? | Alternative |
 |--------|------|-----------|-------------|

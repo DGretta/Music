@@ -602,6 +602,65 @@ Choose alternatives that **best complement** the featured module's character:
 
 ---
 
+## **MANDATORY: Enhanced Patch Format Standards**
+
+### **All Patch Examples Must Use Enhanced Format:**
+
+**Required Format:**
+```
+Source Category (Module A, Module B, Module C) → exact jack name (function description)
+LFO (Batumi, Ochd, Pamela's NEW) → cvf ● (filter control)
+Envelope (Maths, Function, Contour) → vca ● (VCA control)  
+Output ← lp ●, lp ●● → Mixer (Mixup, Performance)
+```
+
+**Immediately Follow Each Patch With Alternatives:**
+```
+**Alternative Module Options:**
+- **Instead of [Main Module]:** Try [Alternative A] for [different character], or [Alternative B] for [budget option]
+- **Budget alternatives:** [2HP modules, Doepfer basics] provide similar functionality in smaller HP
+- **Different character:** [Premium alternative] creates [distinct musical character]
+- **DIY options:** [Music Thing Modular, AI Synthesis] for hands-on builders
+```
+
+### **Module Suggestion Standards:**
+
+**Essential Categories (Include 3-4 options each):**
+- **Audio Sources:** Any VCO, Plaits, Braids, Elements, Rings
+- **Modulation:** Batumi, Ochd, Pamela's NEW, Quadrax, Maths, Function
+- **Processing:** Various filters, effects, VCAs by manufacturer
+- **Utilities:** Links, Doepfer multiples, Mixup, Performance mixers
+- **Sequencing:** Clock sources, gate generators, CV sequencers
+
+**Price Point Balance (Required):**
+- **Budget options:** 2HP modules, Doepfer basics, DIY kits
+- **Popular mid-range:** Maths, Plaits, Batumi, Function, Quadrax
+- **Premium/Boutique:** High-end modules where character matters
+
+**Accessibility Requirements:**
+- **Commonly available modules** - avoid rare/discontinued
+- **Different HP requirements** - show space-conscious alternatives
+- **Specify channels** when relevant (Maths Ch1, Batumi Ch2)
+- **Cross-reference guides** - "see Maths guide for integration details"
+
+### **Educational Integration:**
+
+**Why This Format Works:**
+- **Immediately actionable** - users know exactly what to reach for
+- **Shopping guidance** - "Oh, I need an LFO for this patch"
+- **Budget flexibility** - options at different price points
+- **Modular education** - teaches module categories and functions
+- **System building** - shows how modules work together
+
+**Implementation in All Guides:**
+1. **Never use generic format** like [Source] → [Destination]
+2. **Always provide alternatives** immediately after main patch
+3. **Balance price points** across all suggestions
+4. **Focus on function over brand** - emphasize what modules do
+5. **Teach system thinking** - show signal flow and relationships
+
+---
+
 ## Quality Checklist
 
 ### **Before Publishing, Verify:**
@@ -615,10 +674,20 @@ Choose alternatives that **best complement** the featured module's character:
 - [ ] Quick Start section (5 minutes to success)
 - [ ] Essential Parameters (6-8 main controls)
 - [ ] 4 Basic + 3 Phase 2 integration patches
+- [ ] **ALL patches use enhanced format with module suggestions**
+- [ ] **Alternative options provided after each patch**
 - [ ] Complete ASCII diagrams with proper cable notation
 - [ ] Phase 2 Module Synergies in "Pairs Well With"
 - [ ] Complete Phase 2 Learning Path section
 - [ ] Bottom Line summary
+
+#### **Enhanced Format Compliance:**
+- [ ] **No generic [Source] → [Destination] format used**
+- [ ] **Specific module suggestions in every patch**
+- [ ] **Alternative options at different price points**
+- [ ] **Budget and premium alternatives included**
+- [ ] **Exact jack names used where verified**
+- [ ] **Function descriptions included for clarity**
 
 #### **Technical Accuracy:**
 - [ ] All patch instructions tested/verified
