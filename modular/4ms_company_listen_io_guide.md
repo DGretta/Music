@@ -23,14 +23,14 @@
 
 ### **Line to Modular Section (Top Half)**
 
-#### **Line In Jacks (Gray Jacks) - The External Signal Inputs**
+#### **Line In Jacks - The External Signal Inputs**
 - **What they do:** Accept wide range of external signals for conversion to modular levels
 - **Signal compatibility:** Guitars, keyboards, effect pedals, synthesizers, phones, tablets, toys
 - **Microphone support:** Most dynamic mics work, excluding phantom-powered and electret mics
 - **Input configuration:** Mono jacks - use left for mono sources, both for stereo sources
 - **Pro tip:** These inputs can handle almost any external audio source safely
 
-#### **Gain Knob (Black Knob) - The Signal Boost Controller**
+#### **Gain Knob - The Signal Boost Controller**
 - **What it does:** Controls amplification from negative infinity (muted) to +30dB boost
 - **Character:** Shared control for both left and right channels simultaneously
 - **Range:** Approximately 30x voltage gain at maximum setting
@@ -61,14 +61,14 @@
 
 ### **Modular to Line Section (Bottom Half)**
 
-#### **Mod In Jacks (Gray Jacks) - The Modular Signal Inputs**
+#### **Mod In Jacks - The Modular Signal Inputs**
 - **What they do:** Accept modular-level signals for conversion to line/headphone levels
 - **Signal types:** Any modular audio - oscillators, final mix, effects returns
 - **Input configuration:** Mono jacks - use left for mono, both for stereo
 - **Applications:** Final output stage, headphone monitoring, external recording
 - **Pro tip:** Essential for getting modular audio to external equipment or headphones
 
-#### **Level Knob (Black Knob) - The Output Attenuator**
+#### **Level Knob - The Output Attenuator**
 - **What it does:** Controls attenuation from negative infinity (muted) to 0dB (unity gain)
 - **Character:** Shared control for both left and right channels
 - **Range:** Only attenuation - reduces modular levels to safe line levels
