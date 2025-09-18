@@ -1,0 +1,14 @@
+# Manufacturer manuals - keep these in ~/claude/modular_manuals/ instead
+*.pdf
+*.jpg
+*.jpeg
+*.png
+*.txt
+*.docx
+
+# System files
+.DS_Store
+
+# Backup files
+*~
+*.bak
