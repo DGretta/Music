@@ -16,12 +16,12 @@
 - **Filter Slope:** 12dB (2-pole)
 
 ### Your First Stereo Filter Sweep
-1. **Connect audio source** → **i ●** and **i ●●** inputs (or just i ● for mono-to-stereo)
-2. **Connect Pkhia outputs** → **lp** outputs to your mixer
-3. **Turn up both CVF knobs** to around 12 o'clock
-4. **Connect LFO** → **cvf** input for filter cutoff modulation
-5. **Slowly adjust CVF knobs** while audio plays to hear the filter response
-6. **Try different filter outputs** (lp, bp, hp) to hear the different modes
+1. **Connect audio source** → **Left and Right inputs** (or just Left for mono-to-stereo)
+2. **Connect Pkhia outputs** → **Left and Right audio outputs** to your mixer
+3. **Turn up both CUTOFF knobs** to around 12 o'clock
+4. **Connect LFO** → **CV input for filter cutoff**
+5. **Slowly adjust CUTOFF knobs** while audio plays to hear the filter response
+6. **Try different filter outputs** (LP, BP, HP) to hear the different modes
 
 **Congratulations!** You've just experienced high-quality analog stereo filtering with independent channel control!
 
@@ -30,49 +30,65 @@
 ## Essential Parameters (The Dual Filter System)
 
 ### **1. Dual Filter + VCA Architecture**
-- **Two independent analog filters:** Left (●) and Right (●●) channels with separate controls
+- **Two independent analog filters:** Left and Right channels with separate controls
 - **Pre-filter VCAs:** Voltage-controlled amplifiers before each filter for complete signal control
-- **Multi-mode outputs:** Low-pass (lp), Band-pass (bp), and High-pass (hp) per channel  
+- **Multi-mode outputs:** Low-pass (LP), Band-pass (BP), and High-pass (HP) per channel  
 - **Stereo or dual-mono:** Use as true stereo processor or two separate mono filters
-- **Mono-to-stereo:** Feed mono signal to i ●, get processed stereo output
-- **Independent cutoff control:** Each channel (●/●●) can have different cutoff frequencies
-- **Independent VCA control:** Each channel (●/●●) can have different amplitude levels
-- **Gold circle system:** ● = left channel, ●● = right channel for all controls and jacks
+- **Mono-to-stereo:** Feed mono signal to Left, get processed stereo output
+- **Independent cutoff control:** Each channel can have different cutoff frequencies
+- **Independent VCA control:** Each channel can have different amplitude levels
+- **Linked or separate CV:** Control both filters and VCAs together or independently
 
 ### **2. Filter Cutoff Controls**
-- **CVF ● knob:** Controls the cutoff frequency of the left filter
-- **CVF ●● knob:** Controls the cutoff frequency of the right filter
-- **Q knob (center):** Controls resonance for both filters
+- **Left CUTOFF knob:** Controls the cutoff frequency of the left filter
+- **Right CUTOFF knob:** Controls the cutoff frequency of the right filter
 - **Wide frequency range:** From deep bass filtering to bright treble emphasis
-- **cvf CV inputs:** Voltage control for dynamic filter movement
-- **cvf ● input:** Controls left filter cutoff
-- **cvf ●● input:** Controls right filter cutoff
+- **CV inputs:** Voltage control for dynamic filter movement
+- **1+2 CV input:** Controls both filters simultaneously when patched
+- **Separate CV inputs:** Independent control of left and right cutoffs
 
 ### **3. Multi-Mode Filter Outputs**
-- **lp (Low-Pass):** Classic filter mode - removes high frequencies above cutoff
-- **bp (Band-Pass):** Removes both highs and lows, leaves middle frequencies
-- **hp (High-Pass):** Removes low frequencies below cutoff, emphasizes highs
-- **Six total outputs:** lp, bp, hp for both left (●) and right (●●) channels
+- **LP (Low-Pass):** Classic filter mode - removes high frequencies above cutoff
+- **BP (Band-Pass):** Removes both highs and lows, leaves middle frequencies
+- **HP (High-Pass):** Removes low frequencies below cutoff, emphasizes highs
+- **Six total outputs:** LP, BP, HP for both left and right channels
 - **Use multiple outputs:** Different modes simultaneously for complex processing
 - **Analog character:** Warm, musical filtering with natural resonance
 
-### **4. VCA Section**
-- **att ● knob:** Controls the VCA level/attenuation for the left channel
-- **att ●● knob:** Controls the VCA level/attenuation for the right channel
-- **vca CV inputs:** Voltage control for dynamic amplitude control
-- **vca ● input:** Controls left VCA level
-- **vca ●● input:** Controls right VCA level
-- **Pre-filter VCA:** VCA processing happens before the filter stage
-- **Independent control:** Each channel can have different VCA responses
-
-### **5. Signal Routing Flexibility**
-- **Stereo processing:** i ● input → Left filters, i ●● input → Right filters
+### **4. Signal Routing Flexibility**
+- **Stereo processing:** Left input → Left filters, Right input → Right filters
 - **Dual-mono mode:** Two separate mono signals through independent filters
-- **Mono-to-stereo:** Single input to i ● creates stereo output with different filtering
+- **Mono-to-stereo:** Single input creates stereo output with different filtering
 - **Parallel processing:** Use different filter modes on same signal
 - **Creative routing:** Mix and match inputs/outputs for unique processing
 
-### **6. Analog Filter Character**
+### **5. Dual CV Control System (Filter + VCA)**
+- **Filter CV Control:**
+  - **1+2 1&2 CV input:** Controls both filter cutoffs simultaneously 
+  - **Individual filter CV inputs:** Left and right filter cutoffs controlled separately
+- **VCA CV Control:**
+  - **1+2 1&2 VCA CV input:** Controls both VCA levels simultaneously
+  - **Individual VCA CV inputs:** Left and right VCA levels controlled separately
+- **CV response:** Responsive to standard CV sources (envelopes, LFOs, sequencers)
+- **Modulation friendly:** Excellent for LFO sweeps, envelope control, sequencing on both filters AND VCAs
+- **Dual CV system:** Complete independent control over filtering AND amplitude per channel
+
+### **6. Mystery Switch (Experimental Feature)**
+- **Location:** Left side near the lp outputs
+- **Symbol:** Solid gold circle overlapping a gold ring
+- **Function:** Unknown - requires experimentation!
+- **Possible functions:**
+  - **Filter coupling:** Links left and right filter responses
+  - **VCA bypass:** Bypasses VCA stage for direct filter output
+  - **Stereo mode:** Changes stereo processing behavior
+  - **Filter feedback:** Internal feedback routing between channels
+  - **Resonance coupling:** Links Q control between channels
+  - **Input routing:** Changes how i● and i●● inputs are processed
+- **Experiment with:** Try switching during different patches to discover its effect
+- **Boutique character:** Mystery features are common in hand-built European modules
+- **Document your findings:** Note what changes when you flip the switch!
+
+### **7. Analog Filter Character**
 - **Warm analog tone:** Classic analog filter sound and behavior
 - **Musical resonance:** Natural self-oscillation at high resonance settings
 - **Smooth cutoff response:** Musical filter curves, not harsh digital steps
@@ -85,30 +101,29 @@
 
 ### **Patch 1: Classic Stereo Filter + VCA Sweep**
 ```
-[Stereo source] ──→ [Pkhia i ● and i ●● inputs]
-[LFO 1] ──→ [cvf ● input] (controls left filter cutoff)
-[LFO 2] ──→ [cvf ●● input] (controls right filter cutoff)
-[Envelope] ──→ [vca inputs] (controls VCA levels)
-[Pkhia lp ● and lp ●●] ──→ [Stereo mixer/output]
+[Stereo source] ──→ [Pkhia L&R inputs]
+[LFO 1] ──→ [1+2 1&2 Filter CV] (controls both filter cutoffs)
+[LFO 2/Envelope] ──→ [1+2 1&2 VCA CV] (controls both VCA levels)
+[Pkhia LP L&R] ──→ [Stereo mixer/output]
 ```
-**Setup:** Use lp outputs for classic low-pass filtering with VCA dynamics
-**Controls:** LFOs create filter sweeps, Envelope adds amplitude modulation
+**Setup:** Use LP outputs for classic low-pass filtering with VCA dynamics
+**Controls:** LFO 1 creates filter sweeps, LFO 2/Envelope adds amplitude modulation
 **Result:** Classic analog filter movement WITH dynamic VCA control on stereo material
-**Performance:** Adjust CVF knobs for sweep ranges, att knobs for VCA levels
+**Performance:** Adjust cutoff knobs for sweep ranges, VCA knobs for amplitude control
 
 ### **Patch 2: Dual-Mono Processing with VCA Control**
 ```
-[Mono source 1] ──→ [Pkhia i ● input]
-[Mono source 2] ──→ [Pkhia i ●● input]  
-[Envelope 1] ──→ [cvf ● input]
-[Envelope 2] ──→ [cvf ●● input]
-[Envelope 3] ──→ [vca ● input]
-[Envelope 4] ──→ [vca ●● input]
+[Mono source 1] ──→ [Pkhia Left input]
+[Mono source 2] ──→ [Pkhia Right input]  
+[Envelope 1] ──→ [Left Filter CV input]
+[Envelope 2] ──→ [Right Filter CV input]
+[Envelope 3] ──→ [Left VCA CV input]
+[Envelope 4] ──→ [Right VCA CV input]
 ```
 **Setup:** Two different sources, independent filter AND VCA envelope control
 **Result:** Two mono sources with separate filter AND VCA envelopes
-**Creative:** Use different filter modes (lp vs hp) for contrast, different VCA envelopes for rhythm
-**Performance:** Independent CVF AND att control for each voice
+**Creative:** Use different filter modes (LP vs HP) for contrast, different VCA envelopes for rhythm
+**Performance:** Independent cutoff AND amplitude control for each voice
 
 ### **Patch 3: Parallel Multi-Mode Processing**
 ```
@@ -367,17 +382,17 @@ This represents **complete expressive filter mastery** - where musical sequencin
 
 ### **Filter + VCA Architecture Confusion**
 - **Dual architecture:** Both FILTER and VCA sections with separate CV controls
-- **Six filter outputs total:** lp, bp, hp for both left (●) and right (●●) channels
-- **Four CV input types:** cvf (filter CV), vca (VCA CV), both for left (●) and right (●●)
-- **Start with basics:** Use just cvf inputs first, then add vca inputs for dynamics
-- **Patch organization:** Label cvf vs vca cables - easy to get confused
+- **Six filter outputs total:** LP, BP, HP for both left and right channels
+- **Four CV input types:** Filter cutoff CV, VCA level CV, both with 1+2 1&2 and individual inputs
+- **Start with basics:** Use just filter CV first, then add VCA CV for dynamics
+- **Patch organization:** Label filter CV vs VCA CV cables - easy to get confused
 
 ### **CV Input Behavior (Filter + VCA)**
-- **cvf ● controls left:** When patched, affects left filter cutoff
-- **cvf ●● controls right:** When patched, affects right filter cutoff
-- **vca ● controls left:** When patched, affects left VCA level
-- **vca ●● controls right:** When patched, affects right VCA level
-- **Independent operation:** Each input works independently
+- **1+2 1&2 Filter CV controls both:** When patched, affects left AND right filter cutoffs
+- **1+2 1&2 VCA CV controls both:** When patched, affects left AND right VCA levels
+- **Individual filter inputs:** Left and right filter CV inputs work independently
+- **Individual VCA inputs:** Left and right VCA CV inputs work independently
+- **Normalling behavior:** Check if individual inputs override 1+2 1&2 inputs
 - **CV amount:** May need attenuation for subtle filter and VCA effects
 - **Polarity:** Some CV sources may need inversion for desired effect
 
@@ -387,6 +402,15 @@ This represents **complete expressive filter mastery** - where musical sequencin
 - **Output expectations:** Don't expect automatic stereo from mono input
 - **Routing flexibility:** Can be used in ways not immediately obvious
 - **Experimentation required:** Try different input/output combinations
+
+### **Mystery Switch Experimentation**
+- **Unknown function:** The switch (solid circle/ring symbol) does something - but what?
+- **Try both positions:** Test the switch in different positions during patches
+- **Listen carefully:** Note any changes in sound, routing, or behavior
+- **Document findings:** Keep notes on what the switch affects
+- **Common possibilities:** Filter coupling, VCA bypass, stereo modes, input routing
+- **Boutique charm:** Mystery features add character and discovery to boutique modules
+- **Community knowledge:** Share findings with other Pkhia users online
 
 ### **Boutique Module Characteristics**
 - **Small company:** Bizarre Jezabel is a boutique European manufacturer
