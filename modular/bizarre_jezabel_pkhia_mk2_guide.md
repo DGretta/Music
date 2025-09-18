@@ -154,37 +154,37 @@
 ### **Patch 5: Intermediate - Performance Stereo Control**
 ```
    ┌─────────────────────┐      ┌─────────────────────────┐
-   │   Cre8audio Cellz    │      │    Bizarre Jezabel     │
-   │ (Touch Sequencer)   │      │      Pkhia mk2         │
-   │                    │      │ (Stereo Filter Core)  │
-   │                    │      │                         │
-   │ CV Out 1 ○─────────┼──────┼─▶ Left CV Input        │
-   │       ║            │      │                         │
-   │ CV Out 2 ○─────────┼──────┼─▶ Right CV Input       │
-   │       ║            │      │                         │
-   │ Gate Out 1 ○───────┼──────┼─▶ 1+2 CV Input (linked) │
-   │       ║            │      │                         │
-   │ Gate Out 2 ○───────┼──────┼─▶ Performance Control   │
-   │       ║            │      │                         │
-   └───────║────────────┘      │ LP L&R Out ○───────────┼─── Audio (Red)
-           ║                   │ BP L&R Out ○───────────┼─── Audio (Red)
-   Audio (Red)║                 │ HP L&R Out ○───────────┼─── Audio (Red)
-           ║                  └─────────────────────────┘
+   │   Cre8audio Cellz   │      │    Bizarre Jezabel      │
+   │ (Touch Sequencer)   │      │      Pkhia mk2          │
+   │                     │      │ (Stereo Filter Core)    │
+   │                     │      │                         │
+   │ CV Out 1  ○─────────┼──────┼─▶ Left CV Input         │
+   │       ║             │      │                         │
+   │ CV Out 2  ○─────────┼──────┼─▶ Right CV Input        │
+   │       ║             │      │                         │
+   │ Gate Out 1  ○───────┼──────┼─▶ 1+2 CV Input (linked) │
+   │       ║             │      │                         │
+   │ Gate Out 2  ○───────┼──────┼─▶ Performance Control   │
+   │       ║             │      │                         │
+   └───────║ ────────────┘      │ LP L&R Out  ○───────────┼─── Audio (Red)
+           ║                    │ BP L&R Out  ○───────────┼─── Audio (Red)
+   Audio (Red)║                 │ HP L&R Out  ○───────────┼─── Audio (Red)
+           ║                    └─────────────────────────┘
            ▼                           ║
-   ┌─────────────┐                    ║
-   │ Stereo      │             Audio ║
-   │ Audio       │              (Red)║
+   ┌─────────────┐                     ║
+   │ Stereo      │               Audio ║
+   │ Audio       │                (Red)║
    │ Source      │────────────────────▼
    └─────────────┘           ┌──────────────────────────────┐
                              │   Performance Stereo         │
                              │     Control                  │
                              │                              │
                              │ CV1: Touch Left Filter       │
-│ CV2: Touch Right Filter      │
-│ CV3: Touch Left VCA          │
-│ CV4: Touch Right VCA         │
-│ Gate1: Linked Filter Control │
-│ Gate2: Performance Triggers  │
+                             │ CV2: Touch Right Filter      │
+                             │ CV3: Touch Left VCA          │
+                             │ CV4: Touch Right VCA         │
+                             │ Gate1: Linked Filter Control │
+                             │ Gate2: Performance Triggers  │
                              │                              │
                              │ Expressive Stereo Control ○──┼─── Processed Audio
                              └──────────────────────────────┘
@@ -220,31 +220,31 @@
 ### **Patch 6: Advanced - Sequenced Multi-Function Filtering**
 ```
    ┌─────────────────────┐      ┌─────────────────────────┐
-   │   Squarp Hermod+    │      │    Bizarre Jezabel     │
-   │ (Sequencer Brain)   │      │      Pkhia mk2         │
-   │                    │      │ (Stereo Filter Core)  │
-   │                    │      │                         │
-   │ CV Track 1 ○───────┼──────┼─▶ Left CV Input        │
-   │       ║            │      │                         │
-   │ CV Track 2 ○───────┼──────┼─▶ Right CV Input       │
-   │       ║            │      │                         │
-   │ Gate Track 1 ○─────┼──────┼─▶ 1+2 CV Input (quan.) │
-   │       ║            │      │                         │
-   │ Gate Track 2 ○─────┼──────┼─▶ Sequence Control     │
-   │       ║            │      │                         │
-   │ Quantizer Out ○────┼──────┼─▶ Musical CV Processing │
-   │       ║            │      │                         │
-   └───────║────────────┘      │ LP L&R Out ○───────────┼─── Audio (Red)
-           ║                   │ BP L&R Out ○───────────┼─── Audio (Red)
-   Audio (Red)║                 │ HP L&R Out ○───────────┼─── Audio (Red)
-           ║                  └─────────────────────────┘
+   │   Squarp Hermod+    │      │    Bizarre Jezabel      │
+   │ (Sequencer Brain)   │      │      Pkhia mk2          │
+   │                     │      │ (Stereo Filter Core)    │
+   │                     │      │                         │
+   │ CV Track 1  ○───────┼──────┼─▶ Left CV Input         │
+   │       ║             │      │                         │
+   │ CV Track 2  ○───────┼──────┼─▶ Right CV Input        │
+   │       ║             │      │                         │
+   │ Gate Track 1  ○─────┼──────┼─▶ 1+2 CV Input (quan.)  │
+   │       ║             │      │                         │
+   │ Gate Track 2  ○─────┼──────┼─▶ Sequence Control      │
+   │       ║             │      │                         │
+   │ Quantizer Out  ○────┼──────┼─▶ Musical CV Processing │
+   │       ║             │      │                         │
+   └───────║ ────────────┘      │ LP L&R Out  ○───────────┼─── Audio (Red)
+           ║                    │ BP L&R Out  ○───────────┼─── Audio (Red)
+   Audio (Red)║                 │ HP L&R Out  ○───────────┼─── Audio (Red)
+           ║                    └─────────────────────────┘
            ▼                           ║
-   ┌─────────────┐                    ║
-   │ Stereo      │             Audio ║
-   │ Audio       │              (Red)║
+   ┌─────────────┐                     ║
+   │ Stereo      │               Audio ║
+   │ Audio       │                (Red)║
    │ Source      │────────────────────▼
    └─────────────┘           ┌──────────────────────────────┐
-                             │   Sequenced Multi-Function    │
+                             │   Sequenced Multi-Function   │
                              │     Filtering                │
                              │                              │
                              │ CV1: Sequenced Left Filter   │
@@ -253,7 +253,7 @@
                              │ Gate2: Sequence Control      │
                              │ Quantizer: Musical Filtering │
                              │                              │
-                             │ Musical Sequence Control ○──┼─── Sequenced Audio
+                             │ Musical Sequence Control  ○──┼─── Sequenced Audio
                              └──────────────────────────────┘
 ```
 
@@ -283,35 +283,35 @@
 ```
 ┌─────────────┐ ┌─────────────┐ ┌─────────────┐ ┌─────────────────┐
 │   Squarp    │ │  Cre8audio  │ │ Make Noise  │ │ Bizarre Jezabel │
-│  Hermod+    │ │   Cellz     │ │   Maths     │ │   Pkhia mk2   │
-│(Sequencer)  │ │(Touch Ctrl) │ │(Functions) │ │(Stereo Filter) │
+│  Hermod+    │ │   Cellz     │ │   Maths     │ │   Pkhia mk2     │
+│(Sequencer)  │ │(Touch Ctrl) │ │(Functions)  │ │(Stereo Filter)  │
 │             │ │             │ │             │ │                 │
-│ CV Track1○──┼─┼─CV1        │ │ Channel 1   │ │ Left CV ◀─────┼── Expressive CV
-│       ║     │ │       ○────┼─┼─Out        │ │       ║         │
-│ CV Track2○──┼─┼─CV2        │ │             │ │ Right CV◀─────┼── Expressive CV
-│       ║     │ │       ○────┼─┼─Channel 2   │ │       ║         │
-│ Gate1   ○──┼─┼─Gate1      │ │ Out        │ │ 1+2 CV◀──────┼── Function CV
-│       ║     │ │       ○────┼─┼─Channel 3   │ │       ║         │
-│ Quantizer    │ │             │ │ Out        │ │ LP L&R Out     │
-│ Out     ○──┼─┼─Gate2      │ │             │ │ ○─────────────┼─── Audio (Red)
-│       ║     │ │       ○────┼─┼─Channel 4   │ │       ║         │
-└─────────────┘ │ Touch Ctrl  │ │ Out        │ │ BP L&R Out     │
-        ║       │             │ │             │ │ ○─────────────┼─── Audio (Red)
-        ║       └─────────────┘ └─────────────┘ │ HP L&R Out     │
-        ║                                       │ ○─────────────┼─── Audio (Red)
+│ CV Track1○──┼─┼─CV1         │ │ Channel 1   │ │ Left CV   ◀─────┼── Expressive CV
+│       ║     │ │        ○────┼─┼─Out         │ │       ║         │
+│ CV Track2○──┼─┼─CV2         │ │             │ │ Right CV  ◀─────┼── Expressive CV
+│       ║     │ │        ○────┼─┼─Channel 2   │ │       ║         │
+│ Gate1    ○──┼─┼─Gate1       │ │ Out         │ │ 1+2 CV   ◀──────┼── Function CV
+│       ║     │ │        ○────┼─┼─Channel 3   │ │       ║         │
+│ Quantizer   │ │             │ │ Out         │ │ LP L&R Out      │
+│ Out      ○──┼─┼─Gate2       │ │             │ │   ○─────────────┼─── Audio (Red)
+│       ║     │ │        ○────┼─┼─Channel 4   │ │       ║         │
+└─────────────┘ │ Touch Ctrl  │ │ Out         │ │ BP L&R Out      │
+        ║       │             │ │             │ │   ○─────────────┼─── Audio (Red)
+        ║       └─────────────┘ └─────────────┘ │ HP L&R Out      │
+        ║                                       │   ○─────────────┼─── Audio (Red)
         ▼                                       └─────────────────┘
 ┌────────────────────────────────────────────────────────────────────┐
-│           Complete Expressive Filter Ecosystem                         │
-│                                                                        │
-│ Sequenced Control + Touch Expression + Function Processing            │
-│                                                                        │
-│ Hermod+     → Multi-track sequencing + quantizer + timing brain       │
-│ Cellz       → Touch interface + expressive human control              │
-│ Maths       → Function generation + mathematical processing           │
-│ Pkhia       → Boutique stereo filter core + analog character          │
-│                                                                        │
-│ Complete Expressive Filter Workstation (34HP total)                   │
-│                                                                        │
+│           Complete Expressive Filter Ecosystem                     │
+│                                                                    │
+│ Sequenced Control + Touch Expression + Function Processing         │
+│                                                                    │
+│ Hermod+     → Multi-track sequencing + quantizer + timing brain    │
+│ Cellz       → Touch interface + expressive human control           │
+│ Maths       → Function generation + mathematical processing        │
+│ Pkhia       → Boutique stereo filter core + analog character       │
+│                                                                    │
+│ Complete Expressive Filter Workstation (34HP total)                │
+│                                                                    │
 │ Expressive Stereo Filter Control ○────────────────┼─── Complete Output
 └────────────────────────────────────────────────────────────────────┘
 ```
