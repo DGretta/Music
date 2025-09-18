@@ -6,7 +6,7 @@
 
 ## Quick Start: Get Your First Filtered Sound in 5 Minutes
 
-**What is Pkhia MK2?** Think of it as two analog multi-mode filters in one module, designed specifically for stereo processing. It's a dual/stereo analog filter that can shape your sounds with surgical precision while maintaining that warm analog character. Each channel offers multiple filter modes (low-pass, band-pass, high-pass), and they can work independently as dual-mono filters or together as a true stereo processor.
+**What is Pkhia MK2?** A dual/stereo analog multi-mode filter AND VCA module designed specifically for stereo processing. It combines two analog filters with pre-filter VCAs, allowing complete dynamic and frequency shaping in one module. Each channel offers multiple filter modes (low-pass, band-pass, high-pass) plus voltage-controlled amplification, and they can work independently as dual-mono or together as a true stereo processor with integrated VCA control.
 
 ### Your First Stereo Filter Sweep
 1. **Connect audio source** → **Left and Right inputs** (or just Left for mono-to-stereo)
@@ -22,13 +22,15 @@
 
 ## Essential Parameters (The Dual Filter System)
 
-### **1. Dual Filter Architecture**
+### **1. Dual Filter + VCA Architecture**
 - **Two independent analog filters:** Left and Right channels with separate controls
+- **Pre-filter VCAs:** Voltage-controlled amplifiers before each filter for complete signal control
 - **Multi-mode outputs:** Low-pass (LP), Band-pass (BP), and High-pass (HP) per channel  
 - **Stereo or dual-mono:** Use as true stereo processor or two separate mono filters
 - **Mono-to-stereo:** Feed mono signal to Left, get processed stereo output
 - **Independent cutoff control:** Each channel can have different cutoff frequencies
-- **Linked or separate CV:** Control both together or independently
+- **Independent VCA control:** Each channel can have different amplitude levels
+- **Linked or separate CV:** Control both filters and VCAs together or independently
 
 ### **2. Filter Cutoff Controls**
 - **Left CUTOFF knob:** Controls the cutoff frequency of the left filter
@@ -54,11 +56,12 @@
 - **Creative routing:** Mix and match inputs/outputs for unique processing
 
 ### **5. CV Control System**
-- **1+2 CV input:** Controls both filter cutoffs simultaneously
+- **1+2 CV input:** Controls both filter cutoffs simultaneously (per manual: "1+2 1&2")
 - **Individual CV inputs:** Left and right filters controlled separately
+- **VCA CV inputs:** Separate 1+2 and individual VCA control (per manual: "CV input for left and right VCA")
 - **CV response:** Responsive to standard 1V/octave and other CV sources
-- **Modulation friendly:** Excellent for LFO sweeps, envelope control, sequencing
-- **Attenuverter:** Built-in control over CV amount and polarity
+- **Modulation friendly:** Excellent for LFO sweeps, envelope control, sequencing on both filters and VCAs
+- **Dual CV system:** Independent control over filtering and amplitude per channel
 
 ### **6. Analog Filter Character**
 - **Warm analog tone:** Classic analog filter sound and behavior
