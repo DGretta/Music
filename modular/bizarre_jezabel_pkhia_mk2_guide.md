@@ -101,50 +101,52 @@
 
 ### **Patch 1: Classic Stereo Filter + VCA Sweep**
 ```
-[Stereo source] ──→ [Pkhia i ●, i ●●]
-[LFO 1] ──→ [cvf ●●] (controls both filter cutoffs)
-[LFO 2/Envelope] ──→ [vca ●●] (controls both VCA levels)
-[Pkhia lp ●, lp ●●] ──→ [Stereo mixer/output]
+Stereo Source (Castor & Pollux, CS-L, Stereo Dipole) → Pkhia i ●, i ●●
+LFO (Batumi, Ochd, Pamela's NEW) → cvf ●● (linked filter control)
+Envelope/LFO (Maths, Function, Contour) → vca ●● (linked VCA control)
+Output ← lp ●, lp ●● → Mixer (Mixup, Doepfer A-138)
 ```
-**Setup:** Use LP outputs for classic low-pass filtering with VCA dynamics
-**Controls:** LFO 1 creates filter sweeps, LFO 2/Envelope adds amplitude modulation
+**Setup:** Use lp outputs for classic low-pass filtering with VCA dynamics
+**Controls:** LFO creates filter sweeps, envelope/LFO adds amplitude modulation
 **Result:** Classic analog filter movement WITH dynamic VCA control on stereo material
 **Performance:** Adjust cutoff knobs for sweep ranges, VCA knobs for amplitude control
 
 ### **Patch 2: Dual-Mono Processing with VCA Control**
 ```
-[Mono source 1] ──→ [Pkhia i ●]
-[Mono source 2] ──→ [Pkhia i ●●]  
-[Envelope 1] ──→ [cvf ●]
-[Envelope 2] ──→ [cvf ●●]
-[Envelope 3] ──→ [vca ●]
-[Envelope 4] ──→ [vca ●●]
+Mono Source 1 (Any VCO, Plaits, Braids) → Pkhia i ●
+Mono Source 2 (Different VCO, Rings, Elements) → Pkhia i ●●
+Envelope 1 (Maths Ch1, Function, Contour) → cvf ● (left filter)
+Envelope 2 (Maths Ch4, Different Function) → cvf ●● (right filter)
+Envelope 3 (Quadrax Ch1, ADSR) → vca ● (left VCA)
+Envelope 4 (Quadrax Ch2, Different ADSR) → vca ●● (right VCA)
+Output ← Multiple filter modes → Mixer (Performance, Mixup)
 ```
 **Setup:** Two different sources, independent filter AND VCA envelope control
 **Result:** Two mono sources with separate filter AND VCA envelopes
-**Creative:** Use different filter modes (LP vs HP) for contrast, different VCA envelopes for rhythm
+**Creative:** Use different filter modes (lp vs hp) for contrast, different VCA envelopes for rhythm
 **Performance:** Independent cutoff AND amplitude control for each voice
 
 ### **Patch 3: Parallel Multi-Mode Processing**
 ```
-[Mono source] ──→ [Multiple/Splitter] ──┬──→ [Pkhia i ●]
-                                        └──→ [Pkhia i ●●]
-[Pkhia lp ●] ──→ [Mixer channel 1]
-[Pkhia hp ●●] ──→ [Mixer channel 2]
+Mono Source (Any VCO, Plaits, Braids) → Multiple (Doepfer A-180, Links) → Split to:
+  │─ Pkhia i ● (left channel)
+  └─ Pkhia i ●● (right channel)
+Output ← lp ● → Mixer Channel 1 (different filter modes)
+Output ← hp ●● → Mixer Channel 2 (for frequency splitting)
 ```
 **Setup:** Same source through different filter modes
 **Result:** Parallel low-pass and high-pass processing
-**Mix:** Blend LP and HP for frequency-splitting effects
-**Advanced:** Try BP on one channel for three-way frequency split
+**Mix:** Blend lp and hp for frequency-splitting effects
+**Advanced:** Try bp on one channel for three-way frequency split
 
 ### **Patch 4: Mono-to-Stereo Widening with VCA Animation**
 ```
-[Mono source] ──→ [Pkhia i ● only]
-[LFO 1] ──→ [cvf ●] (slow)
-[LFO 2] ──→ [cvf ●●] (slightly faster)
-[LFO 3] ──→ [vca ●] (different phase)
-[LFO 4] ──→ [vca ●●] (different phase)
-[Pkhia lp ●, lp ●●] ──→ [Stereo output]
+Mono Source (Any VCO, Plaits, Braids) → Pkhia i ● only
+LFO 1 (Batumi Ch1, Ochd) → cvf ● (slow rate)
+LFO 2 (Batumi Ch2, Different Ochd) → cvf ●● (slightly faster)
+LFO 3 (Quadrax, Maths) → vca ● (different phase)
+LFO 4 (Different channel) → vca ●● (different phase)
+Output ← lp ●, lp ●● → Stereo Mixer (Mixup, Performance)
 ```
 **Setup:** Mono input, different LFO rates on each filter AND VCA
 **Result:** Mono source becomes wide stereo with moving filters AND animated amplitude
