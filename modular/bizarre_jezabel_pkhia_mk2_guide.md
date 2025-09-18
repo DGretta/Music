@@ -8,6 +8,13 @@
 
 **What is Pkhia MK2?** A dual/stereo analog multi-mode filter AND VCA module designed specifically for stereo processing. It combines two analog filters with pre-filter VCAs, allowing complete dynamic and frequency shaping in one module. Each channel offers multiple filter modes (low-pass, band-pass, high-pass) plus voltage-controlled amplification, and they can work independently as dual-mono or together as a true stereo processor with integrated VCA control.
 
+**Key Specifications:**
+- **Width:** 10HP
+- **Depth:** 20mm  
+- **Power:** 50mA @ +12V / 10mA @ -12V
+- **Architecture:** Dual analog filters + Pre-filter VCAs
+- **Filter Slope:** 12dB (2-pole)
+
 ### Your First Stereo Filter Sweep
 1. **Connect audio source** → **Left and Right inputs** (or just Left for mono-to-stereo)
 2. **Connect Pkhia outputs** → **Left and Right audio outputs** to your mixer
@@ -55,13 +62,16 @@
 - **Parallel processing:** Use different filter modes on same signal
 - **Creative routing:** Mix and match inputs/outputs for unique processing
 
-### **5. CV Control System**
-- **1+2 CV input:** Controls both filter cutoffs simultaneously (per manual: "1+2 1&2")
-- **Individual CV inputs:** Left and right filters controlled separately
-- **VCA CV inputs:** Separate 1+2 and individual VCA control (per manual: "CV input for left and right VCA")
-- **CV response:** Responsive to standard 1V/octave and other CV sources
-- **Modulation friendly:** Excellent for LFO sweeps, envelope control, sequencing on both filters and VCAs
-- **Dual CV system:** Independent control over filtering and amplitude per channel
+### **5. Dual CV Control System (Filter + VCA)**
+- **Filter CV Control:**
+  - **1+2 1&2 CV input:** Controls both filter cutoffs simultaneously 
+  - **Individual filter CV inputs:** Left and right filter cutoffs controlled separately
+- **VCA CV Control:**
+  - **1+2 1&2 VCA CV input:** Controls both VCA levels simultaneously
+  - **Individual VCA CV inputs:** Left and right VCA levels controlled separately
+- **CV response:** Responsive to standard CV sources (envelopes, LFOs, sequencers)
+- **Modulation friendly:** Excellent for LFO sweeps, envelope control, sequencing on both filters AND VCAs
+- **Dual CV system:** Complete independent control over filtering AND amplitude per channel
 
 ### **6. Analog Filter Character**
 - **Warm analog tone:** Classic analog filter sound and behavior
@@ -74,28 +84,31 @@
 
 ## Beginner Patch Ideas
 
-### **Patch 1: Classic Stereo Filter Sweep**
+### **Patch 1: Classic Stereo Filter + VCA Sweep**
 ```
 [Stereo source] ──→ [Pkhia L&R inputs]
-[LFO] ──→ [1+2 CV input] (controls both filters)
+[LFO 1] ──→ [1+2 1&2 Filter CV] (controls both filter cutoffs)
+[LFO 2/Envelope] ──→ [1+2 1&2 VCA CV] (controls both VCA levels)
 [Pkhia LP L&R] ──→ [Stereo mixer/output]
 ```
-**Setup:** Use LP outputs for classic low-pass filtering
-**Controls:** LFO creates automatic stereo filter sweeps
-**Result:** Classic analog filter movement on stereo material
-**Performance:** Adjust cutoff knobs for different sweep ranges
+**Setup:** Use LP outputs for classic low-pass filtering with VCA dynamics
+**Controls:** LFO 1 creates filter sweeps, LFO 2/Envelope adds amplitude modulation
+**Result:** Classic analog filter movement WITH dynamic VCA control on stereo material
+**Performance:** Adjust cutoff knobs for sweep ranges, VCA knobs for amplitude control
 
-### **Patch 2: Dual-Mono Processing**
+### **Patch 2: Dual-Mono Processing with VCA Control**
 ```
 [Mono source 1] ──→ [Pkhia Left input]
 [Mono source 2] ──→ [Pkhia Right input]  
-[Envelope 1] ──→ [Left CV input]
-[Envelope 2] ──→ [Right CV input]
+[Envelope 1] ──→ [Left Filter CV input]
+[Envelope 2] ──→ [Right Filter CV input]
+[Envelope 3] ──→ [Left VCA CV input]
+[Envelope 4] ──→ [Right VCA CV input]
 ```
-**Setup:** Two different sources, independent envelope control
-**Result:** Two mono sources with separate filter envelopes
-**Creative:** Use different filter modes (LP vs HP) for contrast
-**Performance:** Independent cutoff control for each voice
+**Setup:** Two different sources, independent filter AND VCA envelope control
+**Result:** Two mono sources with separate filter AND VCA envelopes
+**Creative:** Use different filter modes (LP vs HP) for contrast, different VCA envelopes for rhythm
+**Performance:** Independent cutoff AND amplitude control for each voice
 
 ### **Patch 3: Parallel Multi-Mode Processing**
 ```
@@ -109,17 +122,19 @@
 **Mix:** Blend LP and HP for frequency-splitting effects
 **Advanced:** Try BP on one channel for three-way frequency split
 
-### **Patch 4: Mono-to-Stereo Widening**
+### **Patch 4: Mono-to-Stereo Widening with VCA Animation**
 ```
 [Mono source] ──→ [Pkhia Left input only]
-[LFO 1] ──→ [Left CV input] (slow)
-[LFO 2] ──→ [Right CV input] (slightly faster)
+[LFO 1] ──→ [Left Filter CV input] (slow)
+[LFO 2] ──→ [Right Filter CV input] (slightly faster)
+[LFO 3] ──→ [Left VCA CV input] (different phase)
+[LFO 4] ──→ [Right VCA CV input] (different phase)
 [Pkhia LP L&R] ──→ [Stereo output]
 ```
-**Setup:** Mono input, different LFO rates on each filter
-**Result:** Mono source becomes wide stereo with moving filters
-**Timing:** Use related but different LFO speeds (2:3 ratio)
-**Width:** Different cutoff movements create stereo interest
+**Setup:** Mono input, different LFO rates on each filter AND VCA
+**Result:** Mono source becomes wide stereo with moving filters AND animated amplitude
+**Timing:** Use related but different LFO speeds (2:3 ratio) for filter and VCA modulation
+**Width:** Different cutoff AND amplitude movements create dynamic stereo interest
 
 ### **Patch 5: Intermediate - Performance Stereo Control**
 ```
@@ -150,9 +165,11 @@
                              │     Control                  │
                              │                              │
                              │ CV1: Touch Left Filter       │
-                             │ CV2: Touch Right Filter      │
-                             │ Gate1: Linked Filter Control │
-                             │ Gate2: Performance Triggers  │
+│ CV2: Touch Right Filter      │
+│ CV3: Touch Left VCA          │
+│ CV4: Touch Right VCA         │
+│ Gate1: Linked Filter Control │
+│ Gate2: Performance Triggers  │
                              │                              │
                              │ Expressive Stereo Control ○──┼─── Processed Audio
                              └──────────────────────────────┘
@@ -160,10 +177,12 @@
 
 | Touch + Filter Chain | Function | Purpose | Performance Integration |
 |---------------------|----------|---------|------------------------|
-| **Cellz CV1 → Left CV** | Touch-controlled left filter | **Expressive left channel control** | **Touch interface creates expressive stereo filter control** |
-| **Cellz CV2 → Right CV** | Touch-controlled right filter | **Expressive right channel control** | **Independent touch control of stereo filter channels** |
-| **Cellz Gate1 → 1+2 CV** | Linked filter control | **Touch-triggered filter sweeps** | **Touch gates create dramatic stereo filter sweeps** |
-| **Cellz Gate2 → Performance** | Performance triggers | **Touch-based performance control** | **Touch interface enables expressive filter performance** |
+| **Cellz CV1 → Left Filter CV** | Touch-controlled left filter | **Expressive left channel filter control** | **Touch interface creates expressive stereo filter control** |
+| **Cellz CV2 → Right Filter CV** | Touch-controlled right filter | **Expressive right channel filter control** | **Independent touch control of stereo filter channels** |
+| **Cellz CV3 → Left VCA CV** | Touch-controlled left VCA | **Expressive left channel amplitude control** | **Touch interface creates expressive stereo VCA control** |
+| **Cellz CV4 → Right VCA CV** | Touch-controlled right VCA | **Expressive right channel amplitude control** | **Independent touch control of stereo VCA channels** |
+| **Cellz Gate1 → 1+2 1&2 Filter CV** | Linked filter control | **Touch-triggered filter sweeps** | **Touch gates create dramatic stereo filter sweeps** |
+| **Cellz Gate2 → 1+2 1&2 VCA CV** | Linked VCA control | **Touch-triggered amplitude control** | **Touch gates create dramatic stereo VCA dynamics** |
 
 **Module Settings:**
 - **Cellz:** Touch sequencer generates expressive CV and gate patterns for real-time filter control
@@ -225,9 +244,12 @@
 
 | Sequencer + Filter Chain | Function | Purpose | Musical Integration |
 |--------------------------|----------|---------|--------------------|
-| **Hermod+ CV1 → Left CV** | Sequenced left filter control | **Musical left channel sequences** | **Sequencer provides musical filter control for left channel** |
-| **Hermod+ CV2 → Right CV** | Sequenced right filter control | **Musical right channel sequences** | **Independent sequenced control of right channel filtering** |
-| **Hermod+ Gate1 → 1+2 CV** | Quantized filter control | **Musical filter sequences** | **Quantizer ensures musical filter frequency relationships** |
+| **Hermod+ CV1 → Left Filter CV** | Sequenced left filter control | **Musical left channel filter sequences** | **Sequencer provides musical filter control for left channel** |
+| **Hermod+ CV2 → Right Filter CV** | Sequenced right filter control | **Musical right channel filter sequences** | **Independent sequenced control of right channel filtering** |
+| **Hermod+ CV3 → Left VCA CV** | Sequenced left VCA control | **Musical left channel amplitude sequences** | **Sequencer provides musical VCA control for left channel** |
+| **Hermod+ CV4 → Right VCA CV** | Sequenced right VCA control | **Musical right channel amplitude sequences** | **Independent sequenced control of right channel VCA** |
+| **Hermod+ Gate1 → 1+2 1&2 Filter CV** | Quantized filter control | **Musical filter sequences** | **Quantizer ensures musical filter frequency relationships** |
+| **Hermod+ Gate2 → 1+2 1&2 VCA CV** | Quantized VCA control | **Musical VCA sequences** | **Quantizer ensures musical VCA amplitude relationships** |
 | **Hermod+ Quantizer → Processing** | Musical CV processing | **Musical filter tracking** | **Built-in quantizer provides musical filter frequency control** |
 
 **Module Settings:**
@@ -343,18 +365,20 @@ This represents **complete expressive filter mastery** - where musical sequencin
 - **ModularGrid listings:** Multiple entries for different versions
 - **Manual important:** Refer to documentation for your specific version
 
-### **Multiple Output Confusion**
-- **Six outputs total:** LP, BP, HP for both left and right channels
-- **Not all need to be used:** Start with just LP outputs
-- **Different sonic characters:** Each filter mode sounds completely different
-- **Patch organization:** Label your cables - easy to get confused
-- **Start simple:** Use one filter mode at a time initially
+### **Filter + VCA Architecture Confusion**
+- **Dual architecture:** Both FILTER and VCA sections with separate CV controls
+- **Six filter outputs total:** LP, BP, HP for both left and right channels
+- **Four CV input types:** Filter cutoff CV, VCA level CV, both with 1+2 1&2 and individual inputs
+- **Start with basics:** Use just filter CV first, then add VCA CV for dynamics
+- **Patch organization:** Label filter CV vs VCA CV cables - easy to get confused
 
-### **CV Input Behavior**
-- **1+2 input controls both:** When patched, affects left AND right filters
-- **Individual inputs:** Left and right CV inputs work independently
-- **Normalling behavior:** Check if individual inputs override 1+2 input
-- **CV amount:** May need attenuation for subtle effects
+### **CV Input Behavior (Filter + VCA)**
+- **1+2 1&2 Filter CV controls both:** When patched, affects left AND right filter cutoffs
+- **1+2 1&2 VCA CV controls both:** When patched, affects left AND right VCA levels
+- **Individual filter inputs:** Left and right filter CV inputs work independently
+- **Individual VCA inputs:** Left and right VCA CV inputs work independently
+- **Normalling behavior:** Check if individual inputs override 1+2 1&2 inputs
+- **CV amount:** May need attenuation for subtle filter and VCA effects
 - **Polarity:** Some CV sources may need inversion for desired effect
 
 ### **Stereo vs Dual-Mono Mindset**
