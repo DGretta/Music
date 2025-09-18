@@ -5,6 +5,7 @@
 *.png
 *.txt
 *.docx
+MetaModuleManual.docx
 
 # System files
 .DS_Store
