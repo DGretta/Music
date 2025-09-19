@@ -1,6 +1,16 @@
-# Endorphin.es Squawk Dirty to Me - Beginner's Guide
+# Endorphin.es Squawk Dirty to Me - Guide
 
 **The Stereo Filter Shapeshifter**
+
+---
+
+## Historical Context
+
+**Zero-Delay Feedback Innovation:** Endorphin.es Squawk Dirty to Me represents a breakthrough in digital filter design - achieving authentic analog character through zero-delay feedback processing that eliminates the phase shifts and artifacts that plague most digital filters. This 96kHz DSP approach proved that digital processing could authentically recreate analog filter behavior without compromise.
+
+**Multi-Algorithm Pioneer:** By cramming 8 completely different classic filter algorithms into a single 6HP module, Squawk demonstrated that comprehensive filter collections could be both space-efficient and sonically authentic. From Minimoog ladders to MS-20 grunge, each algorithm maintains the character of its analog inspiration.
+
+**Stereo Processing Innovation:** The "All Access Pass" mode introduced real-time stereo widening through all-pass delay processing, showing how traditional filtering could expand into spatial audio processing, establishing new paradigms for multi-functional filter design in compact modular formats.
 
 ---
 
@@ -166,11 +176,18 @@
 - **Manual control:** Hear immediate response to knob movements
 - **Result:** Classic analog synthesis filtering with warm, musical character
 
-### **Patch 2: Intermediate - Phase 2 Organic Filter Evolution**
+**Alternative Module Options:**
+- **For audio sources:** Try **Make Noise STO** for clean analog tone, **Mutable Plaits** for varied synthesis models, or **2HP OSC** for budget synthesis
+- **Budget alternatives:** **Doepfer A-111-4** provides quad VCO functionality, **AI Synthesis AI002** for DIY approach
+- **Different character:** **Make Noise DPO** for complex dual oscillation, **Intellijel Dixie II+** for classic analog character
+- **For mixing:** **Intellijel Mixup** for performance mixing, **2HP Mix** for compact mixing, **Expert Sleepers ES-8** for computer integration
+- **VCA options:** **Intellijel Quad VCA** for precision control, **2HP VCA** for budget solution, **Make Noise ModDemix** for mixing and VCA combined
+
+### **Patch 2: Intermediate - Organic Filter Evolution**
 ```
    ┌─────────────────────┐      ┌─────────────────────────────────┐
    │   DivKid Ochd      │      │    Endorphin.es Squawk         │
-   │    (Phase 2)       │      │      Dirty to Me               │
+   │                    │      │      Dirty to Me               │
    │                    │      │                                │
    │ LFO 2 ○────────────┼──────┼─▶ CUTOFF CV                    │
    │       ║            │      │                                │
@@ -200,8 +217,8 @@
                                                               Experience
 ```
 
-| Module Integration | Signal Flow | Purpose | Phase 2 Synergy |
-|-------------------|-------------|---------|------------------|
+| Module Integration | Signal Flow | Purpose | Modulation Synergy |
+|-------------------|-------------|---------|--------------------|
 | **Ochd LFO 2 → Cutoff CV** | Organic frequency sweeps | **Breathing filter movement** | **Natural formant evolution** |
 | **Ochd LFO 5 → Resonance CV** | Organic resonance changes | **Breathing emphasis control** | **Natural harmonic evolution** |
 | **Ochd LFO 7 → HPF CV** | Organic low-end control | **Breathing bass management** | **Natural spectral shaping** |
@@ -219,11 +236,18 @@
 - **Multi-parameter modulation:** Multiple organic sources controlling different aspects
 - **Stereo filter processing:** Dual-channel organic filter evolution
 
-### **Patch 3: Advanced - Phase 2 Algorithmic Filter Intelligence**
+**Alternative Module Options:**
+- **For organic modulation:** Try **DivKid ochd** for natural breathing LFOs, **Batumi** for quad LFO with phase relationships, or **2HP LFO** for compact modulation
+- **Budget alternatives:** **Doepfer A-143-3** for quad LFO, **AI Synthesis AI003** for DIY envelope generation
+- **Different character:** **Make Noise Maths** for complex function generation, **Intellijel Quadrax** for quad envelope generation
+- **For effects processing:** **Mutable Clouds** for granular processing, **FX Aid Pro** for comprehensive effects, **2HP Verb** for budget reverb
+- **Advanced modulation:** **Pamela's New Workout** for algorithmic patterns, **Hermod+** for comprehensive sequencing with modulation
+
+### **Patch 3: Advanced - Algorithmic Filter Intelligence**
 ```
 ┌─────────────────────┐    ┌─────────────────────────────────┐
 │   Mutable Marbles   │    │ Cre8audio Function Junction    │
-│     (Phase 2)       │    │        (Phase 2)               │
+│     │    │                                │
 │                     │    │                                │
 │ X1 Out ○────────────┼────┼─▶ Ch1 Input                    │
 │                     │    │                                │
@@ -280,7 +304,14 @@
 - **User-guided complexity:** You direct sophisticated systems toward filter musical goals
 - **Advanced system design:** Multi-module ecosystems creating intelligent filter music
 
-### **Patch 4: Expert - Complete Phase 2 Filter Ecosystem**
+**Alternative Module Options:**
+- **For pattern generation:** Try **Mutable Marbles** for probability-based control, **Turing Machine + Expanders** for binary sequences, or **2HP Rnd** for compact randomness
+- **Budget alternatives:** **Doepfer A-149-1** for quantized random, **AI Synthesis AI008** for DIY random approach
+- **For processing:** **Function Junction** for comprehensive CV processing, **Make Noise Maths** for complex function generation
+- **Different character:** **ALM Pamela's New Workout** for algorithmic patterns, **Intellijel Metropolix** for probability sequencing
+- **Advanced integration:** **Expert Sleepers Disting mk4** for multi-algorithm processing, **Hermod+** for comprehensive sequencing
+
+### **Patch 4: Expert - Complete Filter Ecosystem**
 ```
 ┌─────────────┐ ┌─────────────┐ ┌─────────────┐ ┌─────────────┐
 │   DivKid    │ │ Make Noise  │ │ 4ms RCD v2  │ │ Mutable     │
@@ -304,16 +335,16 @@
 │ HPF CV        ◀─ Polyrhythmic Filter Evolution              │
 │ VCA CV        ◀─ Intelligent Amplitude Control              │
 │                                                            │
-│ All Phase 2 Intelligence Types Control Filtering:         │
+│ All Advanced Intelligence Types Control Filtering:         │
 │ • 8 Filter Types Available for AI Selection               │
 │ • Zero-Delay Feedback Processing                          │
 │ • Stereo Processing with All Access Pass                  │
 │                                                            │
 │ OUT 1,2 ○──────────────────────────────────────────────────┼─── Complete
-└────────────────────────────────────────────────────────────┘   Phase 2
-                              ║                                 Filter
-                         Dual Audio                           Intelligence
-                         (Red)║
+└────────────────────────────────────────────────────────────┘   Complete
+                              ║                                 Advanced
+                         Dual Audio                           Filter
+                         (Red)║                              Intelligence
                               ▼
                     ┌─────────────────────┐
                     │   Complete Musical  │
@@ -328,7 +359,7 @@
                     └─────────────────────┘       Intelligence
 ```
 
-**Complete Phase 2 Filter Integration:**
+**Complete Advanced Filter Integration:**
 
 | Intelligence Layer | Function | Squawk Control | Musical Evolution |
 |-------------------|----------|----------------|-------------------|
@@ -339,7 +370,7 @@
 | **Filter (Squawk)** | Spectral shaping | **All parameters controlled** | **Complete spectral expression** |
 
 **Expert System Design:**
-- **Squawk as filter brain:** All Phase 2 intelligence types control every filter aspect
+- **Squawk as filter brain:** All advanced intelligence types control every filter aspect
 - **Multi-modal filtering:** 8 different filter types respond to 4 intelligence types
 - **User-guided filter evolution:** You direct sophisticated systems toward filter musical goals
 - **Emergent spectral complexity:** Simple modular interactions create sophisticated filter music
@@ -354,6 +385,13 @@
 
 **Philosophical Achievement:**
 This represents the **ultimate filter ecosystem** - where organic breathing, controlled chaos, mathematical precision, and sophisticated algorithmic pattern generation all control every aspect of filtering, creating music that transcends traditional spectral manipulation under your creative direction.
+
+**Alternative Module Options:**
+- **For organic sources:** **DivKid ochd** for natural breathing, **Batumi** for geometric patterns, **Intellijel Quadrax** for complex envelopes
+- **Budget alternatives:** **2HP LFO + 2HP Rnd + 2HP S&H** for basic modulation ecosystem, **Doepfer A-143-3 + A-149-1** for quad LFO plus random
+- **For chaos generation:** **Make Noise Wogglebug** for stepped chaos, **Turing Machine + Expanders** for binary sequences, **Music Thing Radio Music** for sample chaos
+- **Advanced timing:** **4ms RCD v2** for polyrhythmic divisions, **ALM Pamela's Pro** for comprehensive clocking, **Tempi** for advanced clock manipulation
+- **System alternatives:** **MetaModule** for infinite algorithm possibilities, **Hermod+** for comprehensive sequencing ecosystem
 
 ---
 
@@ -402,20 +440,20 @@ This represents the **ultimate filter ecosystem** - where organic breathing, con
 
 ## Pairs Well With
 
-### **Phase 2 Module Synergies (Modulation & CV Sources):**
-- **DivKid Ochd & Expander:** Ochd LFOs → Squawk filter parameters for organic spectral evolution
+### **Modulation & CV Source Integration:**
+- **DivKid ochd & Expander:** ochd LFOs → Squawk filter parameters for organic spectral evolution
 - **Make Noise Wogglebug:** Wogglebug chaos CVs → Squawk for controlled uncertainty in filtering
 - **Mutable Marbles:** Marbles X/t outputs → Squawk Meta CV for sophisticated algorithmic filter control
 - **4ms RCD v2:** RCD divisions → Squawk VCA for polyrhythmic filter dynamics
-- **Cre8audio Function Junction:** Function Junction outputs → Squawk for processed filter modulation
-- **Cross-Phase 2 Integration:** All Phase 2 modules can control every aspect of filtering
+- **Function Junction:** Function Junction outputs → Squawk for processed filter modulation
+- **Cross-System Integration:** All advanced modulation modules can control every aspect of filtering
 
-### **Phase 1 Module Integration (Core Synthesis):**
+### **Core Synthesis Module Integration:**
 - **Make Noise Maths:** Maths envelopes perfect for Squawk cutoff and resonance control
 - **Mutable Plaits:** All 16 Plaits synthesis models benefit from Squawk's 8 filter types
 - **Instruo Arbhar:** Granular textures + advanced filtering = incredible sound design
 - **Disting mk4:** Use as audio processor and CV utility for filter systems
-- **Complete Phase 1 systems:** Squawk as central spectral processor
+- **Complete synthesis systems:** Squawk as central spectral processor
 
 ### **Essential Audio Partners:**
 - **Stereo Effects:** Reverb, delay, and spatial processors enhance Squawk's stereo capabilities
@@ -477,7 +515,7 @@ This represents the **ultimate filter ecosystem** - where organic breathing, con
 - **HPF for buildup effects** - dramatic low-end removal and restoration
 - **Quick mode switching** for song section changes
 
-**Phase 2 Modulation Matrix:**
+**Advanced Modulation Matrix:**
 - **Ochd LFOs** → Multiple filter parameters for organic evolution
 - **Wogglebug chaos** → Meta CV for unpredictable filter character changes
 - **Marbles patterns** → Cutoff/Resonance for intelligent filter sequences
@@ -486,27 +524,27 @@ This represents the **ultimate filter ecosystem** - where organic breathing, con
 
 ---
 
-## Phase 2 Learning Path
+## Learning Path
 
 ### **Recommended Study Progression:**
 1. **Start with Squawk fundamentals:** Master all 8 filter types and parameter relationships
-2. **Add organic filtering:** Integrate DivKid Ochd for breathing filter parameter evolution (see Ochd guide)
-3. **Include chaotic filtering:** Use Make Noise Wogglebug for controlled uncertainty in spectral processing (see Wogglebug guide)
-4. **Add algorithmic filtering:** Apply Mutable Marbles for sophisticated pattern-based filter control (see Marbles guide)
-5. **Include polyrhythmic filtering:** Use 4ms RCD v2 for mathematical filter timing (see RCD guide)
-6. **Complete the ecosystem:** Add Cre8audio Function Junction for processed filter modulation (see Function Junction guide)
+2. **Add organic filtering:** Integrate DivKid ochd for breathing filter parameter evolution
+3. **Include chaotic filtering:** Use Make Noise Wogglebug for controlled uncertainty in spectral processing
+4. **Add algorithmic filtering:** Apply Mutable Marbles for sophisticated pattern-based filter control
+5. **Include polyrhythmic filtering:** Use 4ms RCD v2 for mathematical filter timing
+6. **Complete the ecosystem:** Add Function Junction for processed filter modulation
 
 ### **Cross-Module Learning Opportunities:**
-- **Squawk + Ochd:** Learn organic spectral manipulation through breathing filter parameters
+- **Squawk + ochd:** Learn organic spectral manipulation through breathing filter parameters
 - **Squawk + Wogglebug:** Master chaotic filtering with controlled spectral uncertainty
 - **Squawk + Marbles:** Understand sophisticated algorithmic control of filter processing
 - **Squawk + RCD:** Explore polyrhythmic filter dynamics with mathematical precision
-- **All Phase 2 + Squawk:** Build complete spectral ecosystems under your guidance
+- **Complete integration:** Build complete spectral ecosystems under your guidance
 
 ### **Skill Development Milestones:**
 - **Beginner:** Master individual filter types and basic parameter control
 - **Intermediate:** Understand Meta CV scanning and stereo processing techniques
-- **Advanced:** Create Phase 2 integration patches with sophisticated filter processing
+- **Advanced:** Create integration patches with sophisticated filter processing
 - **Expert:** Design spectral ecosystems where you guide intelligent filter systems
 
 ### **Advanced Filter Concepts:**
@@ -523,7 +561,7 @@ This represents the **ultimate filter ecosystem** - where organic breathing, con
 
 ---
 
-**Bottom Line:** Squawk Dirty to Me isn't just a filter - it's a **complete spectral manipulation laboratory** that transforms any audio through 8 classic filter types with zero-delay feedback authenticity. As the **central spectral processor of Phase 2 ecosystems**, it transforms organic breathing, controlled chaos, sophisticated algorithms, and mathematical processing into unified spectral musical expression under your creative direction.
+**Bottom Line:** Squawk Dirty to Me isn't just a filter - it's a **complete spectral manipulation laboratory** that transforms any audio through 8 classic filter types with zero-delay feedback authenticity. As the **central spectral processor of sophisticated modulation ecosystems**, it transforms organic breathing, controlled chaos, sophisticated algorithms, and mathematical processing into unified spectral musical expression under your creative direction.
 
 ---
 
