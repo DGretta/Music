@@ -26,19 +26,33 @@
 
 ## **Module Classification Standards**
 
-### **Creative Modules (4-5 Patches Required):**
-**Definition:** Sound generation, musical control, creative expression modules
-**Examples:** Oscillators (Plaits), Filters (Rings), Effects (Clouds), Drums (DRUM2), Envelopes (EG2)
-**Patch Structure:** Basic → Intermediate → Advanced → Expert (→ Master for complex modules)
-**Content Focus:** Musical exploration, sound design, performance applications
-**Enhanced Format:** Must include budget/premium alternatives for all module suggestions
-
 ### **Utility Modules (2-3 Patches Required):**
 **Definition:** Signal routing, level control, interface, system support modules  
 **Examples:** Mixers (Mixup), VCAs (Quad VCA2), Interfaces (Stomp), Clock dividers, Attenuators
 **Patch Structure:** Basic → Advanced (→ Expert for complex utilities)
 **Content Focus:** Technical operation, system integration, workflow optimization
 **Enhanced Format:** Focus on practical alternatives and system integration
+
+### **Multi-Function Modules (4-5 Patches Required):**
+**Definition:** Platform-like modules with 10+ distinct operational modes or multi-algorithm functionality
+**Examples:** Disting mk4 (80+ algorithms), MetaModule (VCV Rack platform), Hermod+ (sequencer + effects + modulation)
+**Patch Structure:** Basic → Intermediate → Advanced → Expert (→ Master for highly complex platforms)
+**Content Focus:** Demonstrate functional breadth while maintaining practical guidance
+**Enhanced Format:** Must include alternatives for each major functional area demonstrated
+
+**Multi-Function Classification Criteria:**
+- **Functional breadth:** Module serves multiple synthesis roles or categories
+- **Mode switching:** User actively changes between fundamentally different operational modes
+- **Educational requirement:** Understanding module requires demonstrating variety of capabilities
+- **Platform characteristic:** Module hosts, emulates, or provides access to multiple other module functions
+- **Algorithmic complexity:** 10+ distinct algorithms or operational modes available
+
+### **Creative Modules (4-5 Patches Required):**
+**Definition:** Sound generation, musical control, creative expression modules
+**Examples:** Oscillators (Plaits), Filters (Rings), Effects (Clouds), Drums (DRUM2), Envelopes (EG2)
+**Patch Structure:** Basic → Intermediate → Advanced → Expert (→ Master for complex modules)
+**Content Focus:** Musical exploration, sound design, performance applications
+**Enhanced Format:** Must include budget/premium alternatives for all module suggestions
 
 ### **Classification Decision Criteria:**
 1. **Primary function** - What is the module's main purpose?
