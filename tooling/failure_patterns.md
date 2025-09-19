@@ -86,6 +86,23 @@
 
 **Critical Understanding:** The workflow checklist verification step exists precisely to prevent assumption-based operations, even when overall approach has been agreed upon.
 
+### **7. Git Operation Failures**
+
+**Pattern:** Complex git commands with directory changes fail silently or incompletely
+**Examples:**
+- Multi-directory git add commands → Files staged from wrong location
+- Directory change mid-command → Git operations execute from incorrect repository context
+- Assumed successful commit → Files remain uncommitted despite command execution
+
+**Root Cause:** Complex shell commands with directory navigation are unreliable
+**Prevention:** 
+- Use simple git commands from repository root directory
+- Avoid combining directory changes with git operations in single command
+- Always verify git status after commit operations
+- Execute git add and git commit as separate, simple operations
+
+**Critical Understanding:** Git operation success must be verified rather than assumed, as terminal command execution doesn't guarantee repository changes.
+
 ## **Core Operational Principles**
 
 ### **Communication Clarity Principle**
