@@ -107,172 +107,34 @@
 
 ---
 
-## Core Utility Applications
+## Utility Patches
 
-### **Application 1: Professional Voice Architecture**
-```
-┌─────────────────┐    ┌─────────────────┐    ┌─────────────────┐    ┌─────────────────┐
-│ Performance     │    │ Behringer       │    │ Voice Chain     │    │ Audio Output    │
-│ Control         │    │ 1003            │    │ Processing      │    │                 │
-│                 │    │                 │    │                 │    │                 │
-│ Keyboard        │    │ Coordinated     │    │ Oscillator      │    │                 │
-│ Gate Out ○──────┼────┼─ GATE           │    │                 │    │                 │
-│                 │    │ (Triggers both) │    │ Audio Out ○─────┼────┼─ VCA Audio In  │
-│ MIDI/CV         │    │                 │    │                 │    │                 │
-│ Interface       │    │ Left Envelope:  │    │ VCA Module      │    │                 │
-│                 │    │ A: 10ms         │    │                 │    │                 │
-│ Expression      │    │ ID: 100ms       │    │ Audio In ◀──────┼────┼─ Oscillator     │
-│ controls for    │    │ S: 70%          │    │                 │    │                 │
-│ real-time       │    │ FD: 500ms       │    │ CV In ◀─────────┼────┼─ OUT L+ ○       │
-│ performance     │    │                 │    │ (Amplitude)     │    │                 │
-└─────────────────┘    │ Right Envelope: │    │                 │    │                 │
-                       │ A: 200ms        │    │ Audio Out ○─────┼────┼─ Filter Audio   │
-┌─────────────────┐    │ ID: 1.5s        │    │ (Shaped vol)    │    │                 │
-│ Envelope        │    │ S: 30%          │    │                 │    │                 │
-│ Coordination    │    │ FD: 2s          │    │ Filter Module   │    │                 │
-│                 │    │                 │    │                 │    │                 │
-│ Amplitude Env:  │    │ Single Mode     │    │ Audio In ◀──────┼────┼─ VCA Output     │
-│ Fast attack,    │    │ (Standard ADSR) │    │                 │    │                 │
-│ quick decay,    │    │                 │    │ Cutoff CV ◀─────┼────┼─ OUT R+ ○       │
-│ moderate        │    │ Manual Gates:   │    │ (Filter mod)    │    │                 │
-│ sustain, smooth │    │ Test both       │    │                 │    │                 │
-│ release         │    │ envelopes       │    │ Audio Out ○─────┼────┼─ Final Audio    │
-│                 │    │ together        │    │ (Shaped tone)   │    │ Output          │
-│ Filter Env:     │    │                 │    │                 │    │                 │
-│ Slower attack,  │    │ Professional    │    │ Result:         │    │ Audio Out ○─────┼────┼─ Mixer/Effects  │
-│ long decay,     │    │ Application:    │    │ Coordinated     │    │ (Complete       │
-│ low sustain,    │    │ Classic analog  │    │ amplitude and   │    │ voice)          │
-│ very long       │    │ synthesizer     │    │ filter          │    │                 │
-│ release         │    │ voice with      │    │ modulation from │    │                 │
-└─────────────────┘    │ dual modulation │    │ single trigger  │    │                 │
-                       └─────────────────┘    └─────────────────┘    └─────────────────┘
-```
+### **Patch 1: Coordinated Voice Control**
+- **Clock/gate source** → 1003 Gate input
+- **1003 Left envelope** → VCA CV input (amplitude control)
+- **1003 Right envelope** → Filter cutoff CV (timbral control)
+- **Oscillator audio** → VCA audio input
+- **VCA output** → Filter audio input
+- **Filter output** → Final audio output
 
-**Utility Focus:** Single gate source controls complete voice envelope system with independent timing per parameter
+**Settings:**
+- **Left envelope:** Fast attack (10ms), short decay (100ms), moderate sustain (60%), quick release (200ms)
+- **Right envelope:** Slower attack (50ms), longer decay (800ms), lower sustain (30%), extended release (1.5s)
 
-### **Application 2: Cross-Parameter Envelope Modulation**
-```
-┌─────────────────┐    ┌─────────────────┐    ┌─────────────────┐    ┌─────────────────┐
-│ Modulation      │    │ Behringer       │    │ Advanced        │    │ Complex         │
-│ Sources         │    │ 1003            │    │ Modulation      │    │ System Output   │
-│                 │    │                 │    │ Processing      │    │                 │
-│ Master Clock ○──┼────┼─ GATE           │    │                 │    │                 │
-│ (System sync)   │    │ (Triggers both) │    │ Envelope        │    │                 │
-│                 │    │                 │    │ Followers       │    │                 │
-│ LFO Rate CV ◀───┼────┼─ OUT L+ ○       │    │                 │    │                 │
-│ (Envelope       │    │ (Controls LFO   │    │ LFO Module      │    │                 │
-│ controls LFO)   │    │ rate)           │    │                 │    │                 │
-└─────────────────┘    │                 │    │ Rate CV In ◀────┼────┼─ OUT L+        │
-                       │ Left Envelope:  │    │ (Envelope)      │    │                 │
-┌─────────────────┐    │ A: 1s           │    │                 │    │                 │
-│ Envelope        │    │ ID: 3s          │    │ LFO Out ○───────┼────┼─ Next Process  │
-│ Configuration   │    │ S: 0%           │    │                 │    │                 │
-│                 │    │ FD: 4s          │    │ VCA Module      │    │                 │
-│ Left Env:       │    │ (Percussive)    │    │                 │    │                 │
-│ Slow attack,    │    │                 │    │ Audio In ◀──────┼────┼─ Audio Source  │
-│ long decay,     │    │ Right Envelope: │    │                 │    │                 │
-│ zero sustain    │    │ A: 500ms        │    │ CV In ◀─────────┼────┼─ OUT R+ ○      │
-│ for transient   │    │ ID: 2s          │    │ (Amplitude)     │    │                 │
-│ LFO rate        │    │ S: 60%          │    │                 │    │                 │
-│ modulation      │    │ FD: 3s          │    │ Audio Out ○─────┼────┼─ System Output │
-│                 │    │ (Sustained)     │    │ (Modulated)     │    │ (Complex        │
-│ Right Env:      │    │                 │    │                 │    │ evolving        │
-│ Standard ADSR   │    │ Multiple Mode   │    │ Result:         │    │ texture)        │
-│ for amplitude   │    │ (Enable retrig) │    │ LFO rate        │    │                 │
-│ control with    │    │                 │    │ controlled by   │    │                 │
-│ sustained       │    │ Professional    │    │ envelope,       │    │                 │
-│ character       │    │ Application:    │    │ amplitude       │    │                 │
-└─────────────────┘    │ Envelopes       │    │ controlled by   │    │                 │
-                       │ control system  │    │ different       │    │                 │
-                       │ parameters for  │    │ envelope =      │    │                 │
-                       │ complex         │    │ complex         │    │                 │
-                       │ modulation      │    │ evolution       │    │                 │
-                       └─────────────────┘    └─────────────────┘    └─────────────────┘
-```
+**Result:** Classic analog synthesis voice with coordinated but independent amplitude and filter envelopes from single gate trigger. Amplitude envelope provides punchy attack while filter envelope creates evolving timbral character.
 
-**Utility Focus:** Envelope generators as CV sources for complex system modulation and parameter control
+### **Patch 2: Retriggered Rhythmic Patterns**
+- **Sequencer long gates** → 1003 Gate input (holds both envelopes active)
+- **Clock divider ÷4** → 1003 Trig input (rhythmic retriggering)
+- **1003 Left envelope** → Percussion VCA CV
+- **1003 Right envelope** → Bass VCA CV
+- **Switch to Multiple mode** for retriggering capability
 
-### **Application 3: Rhythmic Retriggering Utility**
-```
-┌─────────────────┐    ┌─────────────────┐    ┌─────────────────┐    ┌─────────────────┐
-│ Timing          │    │ Behringer       │    │ Rhythmic        │    │ Pattern         │
-│ Sources         │    │ 1003            │    │ Processing      │    │ Outputs         │
-│                 │    │                 │    │                 │    │                 │
-│ Sequencer       │    │ Multiple Mode   │    │ Primary Voice   │    │                 │
-│ Gate Out ○──────┼────┼─ GATE           │    │                 │    │                 │
-│ (Long gates)    │    │ (Holds both     │    │ VCA 1           │    │                 │
-│                 │    │ envelopes)      │    │                 │    │                 │
-│ Clock Divider   │    │                 │    │ CV In ◀─────────┼────┼─ OUT L+ ○       │
-│ ÷3 Output ○─────┼────┼─ TRIG           │    │ (Retriggered    │    │                 │
-│ (Retrigger      │    │ (Restarts       │    │ amplitude)      │    │                 │
-│ pulses)         │    │ envelopes)      │    │                 │    │                 │
-└─────────────────┘    │                 │    │ Audio Out ○─────┼────┼─ Pattern A      │
-                       │ Left Envelope:  │    │ (Rhythmic)      │    │ (Subdivided)    │
-┌─────────────────┐    │ A: 20ms         │    │                 │    │                 │
-│ Rhythmic        │    │ ID: 100ms       │    │ Secondary Voice │    │                 │
-│ Configuration   │    │ S: 80%          │    │                 │    │                 │
-│                 │    │ FD: 300ms       │    │ VCA 2           │    │                 │
-│ Gate Pattern:   │    │ (Punchy)        │    │                 │    │                 │
-│ Whole notes     │    │                 │    │ CV In ◀─────────┼────┼─ OUT R+ ○       │
-│ (holds          │    │ Right Envelope: │    │ (Different      │    │                 │
-│ envelopes       │    │ A: 5ms          │    │ retriggering)   │    │                 │
-│ active)         │    │ ID: 50ms        │    │                 │    │                 │
-│                 │    │ S: 90%          │    │ Audio Out ○─────┼────┼─ Pattern B      │
-│ Retrigger:      │    │ FD: 200ms       │    │ (Steady)        │    │ (Consistent)    │
-│ Triplet         │    │ (Consistent)    │    │                 │    │                 │
-│ subdivision     │    │                 │    │ Result:         │    │                 │
-│ creates         │    │ Professional    │    │ Left envelope   │    │                 │
-│ complex         │    │ Application:    │    │ creates         │    │                 │
-│ rhythmic        │    │ Rhythmic        │    │ triplet         │    │                 │
-│ patterns within │    │ subdivision     │    │ subdivision     │    │                 │
-│ sustained       │    │ utility for     │    │ pattern while   │    │                 │
-│ gate periods    │    │ electronic      │    │ right provides  │    │                 │
-└─────────────────┘    │ music           │    │ steady rhythm   │    │                 │
-                       └─────────────────┘    └─────────────────┘    └─────────────────┘
-```
+**Settings:**
+- **Left envelope:** Very fast attack (2ms), quick decay (30ms), high sustain (80%), short release (50ms)
+- **Right envelope:** Fast attack (5ms), medium decay (150ms), moderate sustain (50%), medium release (300ms)
 
-**Utility Focus:** Rhythmic subdivision and complex timing pattern generation through coordinated envelope retriggering
-
-### **Application 4: System Timing and CV Utility**
-```
-┌─────────────────┐    ┌─────────────────┐    ┌─────────────────┐    ┌─────────────────┐
-│ System          │    │ Behringer       │    │ CV Distribution │    │ System-Wide     │
-│ Control         │    │ 1003            │    │ Network         │    │ Integration     │
-│                 │    │                 │    │                 │    │                 │
-│ Master Start ○──┼────┼─ GATE           │    │ CV Processor 1  │    │                 │
-│ (System sync)   │    │ (System-wide    │    │                 │    │                 │
-│                 │    │ envelope start) │    │ CV In ◀─────────┼────┼─ OUT L+ ○       │
-│ Performance     │    │                 │    │ (Master timing) │    │                 │
-│ Controller      │    │ Left Envelope:  │    │                 │    │                 │
-│ Manual Gate ○───┼────┼─ Manual Gate    │    │ CV Out A ○──────┼────┼─ VCA Network    │
-│ (Live control)  │    │ (Test/perform)  │    │ CV Out B ○──────┼────┼─ Filter Network │
-└─────────────────┘    │                 │    │ CV Out C ○──────┼────┼─ Effect Network │
-                       │ Settings:       │    │                 │    │                 │
-┌─────────────────┐    │ A: 100ms        │    │ CV Processor 2  │    │                 │
-│ CV Distribution │    │ ID: 500ms       │    │                 │    │                 │
-│ Strategy        │    │ S: 50%          │    │ CV In ◀─────────┼────┼─ OUT R+ ○       │
-│                 │    │ FD: 1s          │    │ (Secondary)     │    │                 │
-│ Master Env:     │    │ (System timing) │    │                 │    │                 │
-│ Moderate timing │    │                 │    │ CV Out A ○──────┼────┼─ LFO Rates     │
-│ for general     │    │ Right Envelope: │    │ CV Out B ○──────┼────┼─ Delay Times   │
-│ system control, │    │ A: 2s           │    │ CV Out C ○──────┼────┼─ Reverb Levels │
-│ multiple        │    │ ID: 4s          │    │                 │    │                 │
-│ destinations    │    │ S: 30%          │    │ Result:         │    │                 │
-│                 │    │ FD: 6s          │    │ Coordinated     │    │                 │
-│ Secondary Env:  │    │ (Macro timing)  │    │ system-wide     │    │                 │
-│ Slow, evolving  │    │                 │    │ envelope        │    │                 │
-│ for long-term   │    │ Single Mode     │    │ modulation      │    │                 │
-│ system          │    │ (Standard)      │    │ from single     │    │                 │
-│ modulation,     │    │                 │    │ trigger source  │    │                 │
-│ macro control   │    │ Professional    │    │                 │    │                 │
-│ of multiple     │    │ Application:    │    │                 │    │                 │
-│ parameters      │    │ CV distribution │    │                 │    │                 │
-└─────────────────┘    │ and system      │    │                 │    │                 │
-                       │ coordination    │    │                 │    │                 │
-                       └─────────────────┘    └─────────────────┘    └─────────────────┘
-```
-
-**Utility Focus:** System-wide CV generation and distribution for coordinated modulation across complex modular systems
+**Result:** Sequencer provides sustained gates while clock divider creates rhythmic retriggering. Left envelope generates rapid percussion hits, right envelope provides steady bass rhythm. Both envelopes restart together on each trigger but maintain different characteristics.
 
 ---
 
