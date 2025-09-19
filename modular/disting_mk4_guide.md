@@ -1,5 +1,15 @@
-# Disting mk4 Beginner's Guide
+# Disting mk4 - Guide
 *The Swiss Army Knife of Eurorack*
+
+---
+
+## Historical Context
+
+**The Algorithm Revolution:** The Expert Sleepers Disting mk4 represents a pivotal innovation in modular synthesis - the first module to successfully implement dozens of classic synthesis functions in a single 4HP package. Released when modular systems required separate modules for every function, Disting proved that sophisticated algorithm implementation could replace hardware specialization.
+
+**Technical Innovation:** With 80+ algorithms covering every fundamental synthesis category, Disting mk4 democratized modular synthesis by making advanced functions accessible without requiring extensive module collections. Its SD card integration and continuous firmware updates established the template for software-enhanced hardware that many manufacturers now follow.
+
+**Educational Impact:** Disting became the "modular synthesis textbook" - allowing users to explore quantizers, delays, filters, LFOs, and complex processing without investing in dozens of specialized modules. This educational accessibility helped grow the modular synthesis community significantly.
 
 ---
 
@@ -169,9 +179,15 @@ Instead of buying dozens of modules, Disting mk4 gives you **one module that can
 
 **Visual Feedback:**
 - **Socket LEDs:** X input shows incoming CV, A/B outputs show processed signals
-- **Display:** Shows "Quantizer" and current scale selection
+- **Display:** Shows "Quantizer" and current scale name when Z changes
 - **B Output LED:** Flashes when note changes trigger
 - **Result:** Random CV becomes musical melodies in any scale
+
+**Alternative Module Options:**
+- **Instead of Random CV Generator:** Try **Make Noise Wogglebug** for stepped chaos, **Turing Machine** for binary sequences, or **2HP Rnd** for compact randomness
+- **Budget alternatives:** **Doepfer A-118-2** provides noise/random sources, **AI Synthesis AI008** for DIY random CV
+- **Different character:** **Mutable Marbles** for algorithmic randomness with musical bias, **Intellijel Quadrax** for complex envelope-based CV
+- **Premium options:** **Malekko Varigate 8+** for pattern-based random sequences with visual feedback
 
 ### **Patch 2: Intermediate - Dual Function Hub**
 ```
@@ -228,6 +244,12 @@ Instead of buying dozens of modules, Disting mk4 gives you **one module that can
 - Understand audio processing with CV outputs
 - Learn resonant filtering concepts
 - Experience envelope following techniques
+
+**Alternative Module Options:**
+- **Instead of Audio Source:** Try **Make Noise STO** for clean oscillator tone, **Mutable Plaits** for varied synthesis models, or **2HP OSC** for budget oscillation
+- **Budget alternatives:** **Doepfer A-111-3** provides basic VCO functionality, **AI Synthesis AI002** for DIY oscillator projects
+- **Different character:** **Intellijel Rubicon** for complex waveform generation, **Make Noise DPO** for dual oscillator complex tones
+- **For modulation:** **Batumi** for quad LFO, **2HP LFO** for compact modulation, **Maths** for complex function generation
 ### **Patch 3: Advanced - Phase 1 Integration Hub**
 ```
    ┌─────────────────────┐      ┌─────────────────────┐
@@ -366,8 +388,18 @@ Instead of buying dozens of modules, Disting mk4 gives you **one module that can
 4. **Universal processing:** Any utility function becomes available when needed
 5. **Utility transcendence:** Perfect processing of sophisticated pattern generation systems
 
-**Philosophical Achievement:**
-This represents the **ultimate utility processing ecosystem** - where organic breathing, controlled chaos, sophisticated pattern generation, and mathematical precision all receive optimal utility processing through a universal algorithm library, creating perfectly processed musical systems under your creative direction.
+**Learning Objectives:**
+- **Advanced utility concepts:** Use specific algorithms for different processing needs
+- **Multi-algorithm workflows:** Understand how to chain different algorithms for complex processing
+- **System problem solving:** Apply targeted algorithms to solve specific synthesis challenges
+- **Real-time processing:** Experience algorithm switching for live performance and dynamic system reconfiguration
+
+**Alternative Module Options:**
+- **For organic modulation sources:** **DivKid Ochd** for natural breathing LFOs, **Batumi** for quad LFO with phase relationships, **2HP LFO** for budget modulation
+- **Budget alternatives:** **Doepfer A-143-3** for quad LFO, **AI Synthesis AI003** for DIY envelope generation
+- **For chaos sources:** **Make Noise Wogglebug** for stepped random, **Turing Machine** for binary sequences, **2HP Rnd** for compact randomness
+- **Advanced processing:** **Make Noise Maths** for complex mathematical operations, **Function Junction** for comprehensive CV processing
+- **Different character:** **Pamela's New Workout** for algorithmic pattern generation, **Malekko Varigate 8+** for visual pattern sequencing
 
 ---
 
@@ -422,19 +454,19 @@ This represents the **ultimate utility processing ecosystem** - where organic br
 
 ## Pairs Well With
 
-### **Phase 2 Module Synergies (Modulation & CV Sources):**
+### **Modulation & CV Source Integration:**
 - **DivKid Ochd & Expander:** Use Disting quantizers to process Ochd organic LFOs into musical scales
 - **Make Noise Wogglebug:** Disting logic/CV processing algorithms perfect for taming Wogglebug chaos
 - **Mutable Marbles:** Use Disting as probability processor and pattern quantizer for Marbles algorithms
 - **4ms RCD v2:** Clock processing and division algorithms complement RCD's polyrhythmic outputs
 - **Cre8audio Function Junction:** Disting envelope and LFO algorithms provide additional modulation processing
-- **Cross-Phase 2 Integration:** Disting serves as utility hub processing all Phase 2 modulation sources
+- **Cross-System Integration:** Disting serves as utility hub processing all sophisticated modulation sources
 
-### **Phase 1 Module Integration (Core Synthesis):**
+### **Core Synthesis Module Integration:**
 - **Make Noise Maths:** Use Disting quantizers to process Maths CV outputs into musical sequences
 - **Mutable Plaits:** Audio processing algorithms perfect for Plaits synthesis models
 - **Mob of Emus:** Mathematical processing algorithms complement harmonic relationships
-- **Complete Phase 1 systems:** Disting as central utility processor for synthesis networks
+- **Complete synthesis systems:** Disting as central utility processor for synthesis networks
 
 ### **Essential Utility Partners:**
 - **SD Card (32GB SDHC recommended):** Unlocks sample playback, MIDI, wavetables, and custom scales
@@ -529,27 +561,27 @@ Disting mk4 **democratizes modular synthesis** by making every function accessib
 
 ---
 
-## Phase 2 Learning Path
+## Learning Path
 
 ### **Recommended Study Progression:**
 1. **Start with Disting fundamentals:** Master algorithm navigation and basic CV/audio processing
-2. **Add organic processing:** Use quantizer and CV utilities to process DivKid Ochd outputs (see Ochd guide)
-3. **Include chaos processing:** Apply logic and CV processing algorithms to Make Noise Wogglebug outputs (see Wogglebug guide)
-4. **Add algorithmic processing:** Use probability and pattern algorithms with Mutable Marbles (see Marbles guide)
-5. **Include polyrhythmic processing:** Apply clock and timing algorithms to 4ms RCD v2 (see RCD guide)
-6. **Complete the ecosystem:** Use as utility hub for Cre8audio Function Junction integration (see Function Junction guide)
+2. **Add organic processing:** Use quantizer and CV utilities to process natural modulation sources like DivKid Ochd
+3. **Include chaos processing:** Apply logic and CV processing algorithms to controlled randomness from sources like Make Noise Wogglebug
+4. **Add algorithmic processing:** Use probability and pattern algorithms with sophisticated sequencers like Mutable Marbles
+5. **Include polyrhythmic processing:** Apply clock and timing algorithms to complex rhythm generators like 4ms RCD v2
+6. **Complete the ecosystem:** Use as utility hub for comprehensive CV processing with modules like Function Junction
 
 ### **Cross-Module Learning Opportunities:**
-- **Disting + Ochd:** Learn to quantize organic modulation into musical scales and patterns
-- **Disting + Wogglebug:** Master chaos processing through mathematical and logical operations
-- **Disting + Marbles:** Understand algorithmic pattern processing and probability manipulation
-- **Disting + RCD:** Explore clock processing and mathematical timing relationships
-- **All Phase 2 + Disting:** Build complete ecosystems where Disting serves as central utility processor
+- **Disting + Organic Sources:** Learn to quantize natural modulation into musical scales and patterns
+- **Disting + Chaos Sources:** Master chaos processing through mathematical and logical operations
+- **Disting + Pattern Generators:** Understand algorithmic pattern processing and probability manipulation
+- **Disting + Clock Processors:** Explore clock processing and mathematical timing relationships
+- **Complete Integration:** Build ecosystems where Disting serves as central utility processor
 
 ### **Skill Development Milestones:**
 - **Beginner:** Master algorithm navigation and basic CV/audio processing functions
 - **Intermediate:** Understand algorithm categories and complex signal routing
-- **Advanced:** Create Phase 2 integration patches where Disting processes multiple intelligence types
+- **Advanced:** Create integration patches where Disting processes multiple modulation types
 - **Expert:** Design utility networks where Disting serves as central processor for entire ecosystems
 
 ### **Advanced Utility Concepts:**
