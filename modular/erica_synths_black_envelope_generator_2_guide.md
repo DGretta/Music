@@ -160,7 +160,7 @@
 - **Dual-input operation:** Understanding TRIGGER vs GATE input relationships
 - **Performance control:** Real-time manipulation of envelope characteristics
 
-### **Patch 3: Expert - Phase 2 Envelope Brain Ecosystem**
+### **Patch 3: Expert - Advanced Envelope Brain Ecosystem**
 ```
 ┌─────────────────┐    ┌─────────────────┐    ┌─────────────────┐    ┌─────────────────┐
 │ Squarp Hermod+  │    │   MetaModule    │    │ Make Noise      │    │ Erica Black EG2 │
@@ -254,13 +254,13 @@
 
 ## Pairs Well With
 
-### **Phase 2 Module Synergies (Modulation & CV Sources):**
+### **Advanced Module Integration (Modulation & CV Sources):**
 - **DivKid Ochd & Expander:** Natural gate length automation creates organic envelope timing - multiple LFO outputs enable complex multi-parameter envelope modulation
 - **Make Noise Wogglebug:** Chaotic gate length control creates unpredictable but musical envelope timing variations
 - **Mutable Marbles:** Adaptive trigger generation provides evolving retrigger patterns that respond to musical context
 - **Squarp Hermod+:** Sequenced trigger patterns with quantization enable precise, programmable envelope timing sequences
 - **Cre8audio Function Junction:** CV processing for envelope parameter scaling, offsetting, and complex multi-source envelope control
-- **Cross-Phase 2 Integration:** EG2 serves as envelope brain transforming sophisticated modular CV generation into dynamic envelope control
+- **Cross-System Integration:** EG2 serves as envelope brain transforming sophisticated modular CV generation into dynamic envelope control
 
 ### **Perfect Partners for Beginners:**
 - **VCA modules:** Intellijel Quad VCA, Mutable Veils for amplitude control applications
@@ -289,7 +289,7 @@
 
 ---
 
-## Phase 2 Learning Path
+## Advanced Learning Path
 
 ### **Recommended Study Progression:**
 1. **Start with EG2 fundamentals:** Master internal gate operation and basic ADSR envelope generation
@@ -304,7 +304,7 @@
 - **EG2 + Wogglebug:** Chaotic envelope timing creating unpredictable but musical envelope behavior
 - **EG2 + Marbles:** Adaptive envelope patterns that evolve with musical context and trigger input
 - **EG2 + Hermod+:** Sequenced envelope control with precise timing and pattern programming
-- **All Phase 2 + EG2:** Complete ecosystem enabling sophisticated envelope control within complex modular systems
+- **All Advanced Modules + EG2:** Complete ecosystem enabling sophisticated envelope control within complex modular systems
 
 ### **Skill Development Milestones:**
 - **Beginner:** Internal gate operation, basic ADSR envelope shaping, loop vs single modes
@@ -326,4 +326,4 @@
 
 ---
 
-**Bottom Line:** EG2 isn't just an envelope generator - it's an **envelope brain** that transforms simple triggers into sophisticated ADSR control through internal gate generation, retriggering capability, and CV-controlled timing. Every patch teaches something new about how envelope generation really works in modular systems. As the **envelope coordination brain of Phase 2 ecosystems**, it transforms organic modulation, controlled chaos, and pattern learning into unified envelope control that responds dynamically to complex modular environments.
+**Bottom Line:** EG2 isn't just an envelope generator - it's an **envelope brain** that transforms simple triggers into sophisticated ADSR control through internal gate generation, retriggering capability, and CV-controlled timing. Every patch teaches something new about how envelope generation really works in modular systems. As the **envelope coordination brain of advanced modular ecosystems**, it transforms organic modulation, controlled chaos, and pattern learning into unified envelope control that responds dynamically to complex modular environments.
