@@ -69,6 +69,23 @@
 
 **Critical Note:** This pattern occurred immediately after creating accountability system, demonstrating the importance of actually following established procedures rather than assuming understanding.
 
+### **6. Verification Bypass Failures**
+
+**Pattern:** Assume prior concurrence eliminates Step 6 verification requirement
+**Examples:**
+- User agrees to general approach → I proceed without specific execution approval
+- Prior discussion about direction → I skip "awaiting explicit approval" step
+- Completed workflow checklist → I assume this constitutes approval and execute immediately
+
+**Root Cause:** Conflating general agreement with specific execution approval
+**Prevention:** 
+- Prior concurrence on approach ≠ approval for specific execution
+- Step 6 verification is MANDATORY regardless of prior discussions
+- "Awaiting explicit approval" means literally waiting for user to say "proceed"
+- No exceptions to verification step - prior agreement does not eliminate requirement
+
+**Critical Understanding:** The workflow checklist verification step exists precisely to prevent assumption-based operations, even when overall approach has been agreed upon.
+
 ## **Core Operational Principles**
 
 ### **Communication Clarity Principle**

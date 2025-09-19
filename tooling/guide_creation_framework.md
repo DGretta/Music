@@ -95,6 +95,44 @@
 
 ---
 
+## **Historical Context Section (Optional)**
+
+### **When to Include Historical Context:**
+Some modules merit additional context due to their significance in electronic music development. Include historical context only when it provides genuine educational value.
+
+### **Criteria for Historical Context Section:**
+- **Historical significance:** Module represents major milestone in synthesis development
+- **Technical innovation:** Introduced techniques that influenced entire field of synthesis
+- **Cultural impact:** Widely adopted, influenced musical genres, or became industry standard
+- **Educational value:** Context helps users understand module's importance beyond current functionality
+
+### **Appropriate Examples:**
+- **Korg MS-20:** Historic synthesizer with unique filter design and major cultural influence
+- **Make Noise Maths:** Ubiquitous function generator that most modular users encounter
+- **Classic Moog modules:** Ladder filter and other foundational analog synthesis techniques
+- **Buchla designs:** Alternative synthesis philosophy and innovative interface approaches
+- **Roland classics:** Modules with significant impact on electronic music genres
+
+### **Content Guidelines:**
+- **Factual information** about development, technical innovations, or cultural impact
+- **Educational focus** - help users understand the module's place in synthesis history
+- **Concise treatment** - 2-3 paragraphs maximum, integrated into existing structure
+- **Avoid promotional language** - focus on factual context that aids understanding
+
+### **Integration Approach:**
+Incorporate historical context into existing sections rather than creating separate "why this rocks" content:
+- **Quick Start:** Brief mention of historical significance if relevant to immediate usage
+- **Essential Parameters:** Context for unique technical approaches or innovations
+- **Module introduction:** Factual background that helps users appreciate the module's development
+
+### **When NOT to Include:**
+- **Recent modules** without established historical impact
+- **Standard implementations** of common synthesis techniques
+- **Personal preferences** or subjective "coolness" factors
+- **Marketing content** or promotional descriptions
+
+---
+
 ## **Quality Integration Framework**
 
 ### **Content Quality Requirements:**
