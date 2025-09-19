@@ -52,7 +52,22 @@
 **Root Cause:** Not respecting the boundary between improvement and overhaul
 **Prevention:** Stick precisely to requested scope, no additional "improvements"
 
-### **4. Efficiency Promise Failures**
+### **5. Intent Assumption Failures**
+
+**Pattern:** Assume user intent instead of asking for clarification
+**Examples:**
+- User asks "did you include X?" → I assume they want me to include X and start working
+- User poses factual question → I immediately begin performing operations
+- User makes inquiry → I interpret as request for action without confirmation
+
+**Root Cause:** Not distinguishing between questions asking for information vs. requests asking for action
+**Prevention:** 
+- Closed questions = provide information only
+- Open requests = use workflow checklist
+- When unclear = ask for clarification before assuming
+- Never assume intent - always verify what user actually wants
+
+**Critical Note:** This pattern occurred immediately after creating accountability system, demonstrating the importance of actually following established procedures rather than assuming understanding.
 
 **Pattern:** Promise efficient execution, deliver wasteful operations
 **Examples:**
