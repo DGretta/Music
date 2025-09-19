@@ -454,7 +454,7 @@ The Polyvoks VCF isn't just another filter - it's a piece of synthesizer history
 
 ---
 
-## Phase 2 Learning Path
+## Advanced Learning Path
 
 ### **Recommended Study Progression:**
 1. **Start with Polyvoks fundamentals:** Master cutoff control, resonance behavior, and legendary Russian acid filter character
