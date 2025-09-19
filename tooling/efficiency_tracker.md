@@ -31,6 +31,8 @@
 | Afterneath Guide Updates | 4 | 8 | Historical context, enhanced format, content modernization, formatting cleanup | Complete framework compliance for Creative module | YES | Historical context added, enhanced format implemented throughout, Phase 2 content modernized, note removal completed |
 | Squawk Guide Updates | 8-10 | 10 | Content modernization to remove Phase 2 branding throughout guide | Complete framework compliance for Creative module | YES | All Phase 2 references updated to current approach, enhanced format already present, systematic content modernization completed |
 | Failure Pattern Documentation Update | 1 | 1 | Add recent intent assumption failure example to Pattern #5 | Strengthen failure pattern documentation with current instance | YES | Intent assumption failure example added to demonstrate closed question → action assumption pattern |
+| EG2 Guide Updates | 4-5 | 6 | Content modernization to remove Phase 2 branding throughout guide | Complete framework compliance for Creative module | YES | All Phase 2 references updated to current approach, enhanced format already present, systematic content modernization completed |
+| Polyvoks Guide Updates | 1 | 2 | Content modernization to remove Phase 2 branding | Phase 2 Learning Path → Advanced Learning Path + git commit | YES | Workflow checklist followed, targeted edit successful, git commit completed, framework compliance maintained |
 
 **Session Summary (2025-09-18):**
 - **Total promised calls:** ~6
