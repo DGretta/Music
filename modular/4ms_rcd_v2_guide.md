@@ -172,7 +172,7 @@ Each output shifts to the next higher division number:
 - **Stepped rotation jumps:** Sudden changes when stepped random voltage shifts
 - **Result:** Evolving arpeggiated patterns with structured chaos
 
-### **Patch 3: Advanced - Phase 2 Polyrhythmic Network**
+
 ```
 ┌─────────────┐    ┌──────────────┐    ┌─────────────┐
 │ Mutable     │───▶│  4ms RCD v2  │───▶│ Make Noise  │
@@ -280,30 +280,29 @@ Each output shifts to the next higher division number:
 
 ## Pairs Well With
 
-### **Phase 2 Module Synergies (Modulation & CV Sources):**
-- **Mutable Marbles:** Marbles t outputs → RCD Clock for intelligent polyrhythmic generation
-- **Make Noise Wogglebug:** RCD outputs → Wogglebug Clock/Disturb for chaos-driven timing
-- **DivKid Ochd & Expander:** Ochd triggers → RCD Clock/Rotate for organic polyrhythmic evolution
-- **Cre8audio Function Junction:** RCD outputs → Junction ADSR/Function triggers for polyrhythmic envelopes
-- **Cross-Phase 2 Integration:** All Phase 2 modules create unified polyrhythmic ecosystem
+### **Perfect Modulation Sources:**
+- **DivKid Ochd:** Organic LFOs for natural rotation control - **Alternative:** Batumi, 2HP LFO
+- **Make Noise Wogglebug:** Controlled chaos for pattern variation - **Alternative:** Turing Machine, Radio Music
+- **Mutable Marbles:** AI-driven timing for intelligent polyrhythms - **Alternative:** Music Thing Turing Machine, Ornament & Crime
+- **Expert Sleepers Disting:** Multi-function utility including stepped random, S&H - **Alternative:** Qu-Bit Nebulae, Mutable Kinks
 
-### **Phase 1 Module Integration (Core Synthesis):**
-- **Make Noise Maths:** RCD outputs perfect for triggering complex Maths envelope cascades
-- **Mutable Plaits:** RCD divisions ideal for polyrhythmic trigger sequences and model changes
-- **Mob of Emus:** RCD outputs → harmonic frequency control for mathematical rhythm-pitch relationships
-- **Disting mk4:** Use as probability gate for RCD outputs, or clock multiplier for input
-
-### **Essential Rhythmic Partners:**
-- **Drum Modules/Samplers:** Each RCD output triggers different percussion for polyrhythmic patterns
+### **Essential Partners:**
+- **Drum Modules:** Basimilus Iteritas, Plonk, sample players for polyrhythmic percussion
 - **Sequencers:** Use RCD divisions as clock inputs for multiple simultaneous sequence layers
+- **Logic Modules:** Combine RCD divisions with AND/OR gates for even more complex patterns
 - **Envelope Generators:** Trigger complex multi-stage envelopes with different division relationships
-- **Logic Modules:** Combine RCD divisions for even more complex rhythmic patterns
 
-### **Advanced Combinations:**
-- **Probability Gates:** Add randomness to polyrhythmic patterns for organic variation
-- **Sample & Hold:** Capture rotation values for repeatable pattern experiments
-- **Clock Multipliers (like SCM Plus):** Combine division and multiplication for extreme complexity
-- **Multiple/Buffered Multiple:** Split one division to multiple destinations for system-wide timing
+### **Budget-Friendly Partners:**
+- **2HP modules:** LFO, RND, Logic for basic modulation and pattern control
+- **Doepfer A-100 series:** Basic clock dividers and logic modules at lower cost
+- **Erica Synths Pico series:** Compact, affordable utilities and modulation sources
+- **DIY options:** Befaco, Music Thing Modular kits for hands-on builders
+
+### **Premium Integration:**
+- **Make Noise ecosystem:** Maths, Wogglebug for complex modulation and chaos sources
+- **Mutable Instruments:** Marbles, Stages for AI-driven timing and advanced pattern generation
+- **Expert Sleepers:** Disting mk4 for multi-function utility processing
+- **4ms Company:** SCM Plus for clock multiplication to complement RCD's division
 
 ---
 
@@ -368,72 +367,29 @@ Each output shifts to the next higher division number:
 ## Why This Module Rocks
 
 ### **The Philosophy:**
-Most clock dividers give you standard subdivisions (/2, /4, /8). RCD gives you the "weird" ones (/3, /5, /7) that create fascinating polyrhythms, plus the rotation concept that makes static patterns dynamic. In **Phase 2 integration**, RCD becomes the **mathematical processor** that transforms intelligent AI timing into complex polyrhythmic ecosystems.
+Most clock dividers give you standard subdivisions (/2, /4, /8). RCD gives you the "weird" ones (/3, /5, /7) that create fascinating polyrhythms, plus the rotation concept that makes static patterns dynamic.
 
 ### **The Mathematical Beauty:**
 - **Prime number divisions** create patterns that take many measures to repeat
 - **Rotation** transforms static mathematical relationships into musical evolution
 - **Reset function** brings order to chaos when needed
-- **Phase 2 synergy:** AI intelligence + mathematical processing = musical polyrhythms
 
 ### **The Practical Benefits:**
 - **One input, eight related but independent outputs**
 - **Access to divisions impossible with traditional sequencer math**
 - **Real-time pattern transformation** without stopping or repatching
 - **Scalable complexity** from simple to mind-bendingly complex
-- **Phase 2 integration:** Central hub for polyrhythmic ecosystem design
 
 ### **Perfect For:**
 - **Experimental musicians:** Exploring non-standard time relationships
 - **Electronic producers:** Adding mathematical interest to rigid sequences  
 - **Live performers:** Dynamic pattern evolution without menu diving
 - **Rhythm nerds:** Anyone fascinated by polyrhythmic relationships
-- **System builders:** Core component of intelligent polyrhythmic networks
-- **AI music explorers:** Perfect processor for Marbles-generated intelligent timing
-
-### **The Phase 2 Advantage:**
-When combined with other Phase 2 modules, RCD transforms from a simple clock divider into **the mathematical heart of an intelligent polyrhythmic system**. It takes single intelligent pulses from Marbles and creates complex rhythmic ecosystems, processes organic timing from Ochd into mathematical relationships, and feeds chaos engines like Wogglebug with structured complexity.
+- **System builders:** Core component of modular timing networks
 
 ---
 
-**Bottom Line:** RCD V2 turns clock division into an art form. It's not just about slower tempos - it's about exploring the mathematical relationships that create the most interesting rhythms in music. As the **polyrhythmic processor in Phase 2 networks**, it enables the creation of intelligent musical systems that think in multiple time signatures simultaneously.
-
----
-
-## Phase 2 Learning Path
-
-### **Recommended Study Progression:**
-1. **Start with basics:** Master RCD polyrhythmic concepts and rotation
-2. **Add AI foundation:** Integrate Mutable Marbles for intelligent timing (see Marbles guide)
-3. **Include organic timing:** Use DivKid Ochd for rotation control (see Ochd guide)
-4. **Add chaos processing:** Apply Make Noise Wogglebug to RCD outputs (see Wogglebug guide)
-5. **Shape the results:** Use Cre8audio Function Junction for envelope processing (see Function Junction guide)
-6. **Integrate Phase 1:** Connect to synthesis modules for complete polyrhythmic systems
-
-### **Cross-Module Learning Opportunities:**
-- **Marbles → RCD:** Learn AI timing to mathematical rhythm conversion
-- **RCD → Wogglebug:** Understand mathematical structure to chaos processing
-- **Ochd → RCD:** Explore organic timing control of mathematical systems
-- **RCD → Function Junction:** Master polyrhythmic envelope generation
-- **All Phase 2 together:** Build intelligent polyrhythmic ecosystems
-
-### **Skill Development Milestones:**
-- **Beginner:** Use basic divisions for simple polyrhythmic patterns
-- **Intermediate:** Master rotation and reset for structured complexity
-- **Advanced:** Create Phase 2 integration with AI timing and chaos processing
-- **Expert:** Design adaptive polyrhythmic systems that evolve over time
-
-### **Advanced Integration Concepts:**
-- **Polyrhythmic Hierarchies:** RCD creates multiple time layers from single intelligent source
-- **Mathematical Music:** Explore prime number divisions and their musical relationships
-- **Adaptive Systems:** Use AI control of rotation for self-evolving polyrhythms
-- **Chaos Integration:** Mathematical precision meets musical uncertainty
-
-### **Performance Applications:**
-- **Live Polyrhythms:** Real-time control of complex rhythmic relationships
-- **Generative Music:** Foundation for self-evolving polyrhythmic compositions
-- **Hybrid Timing:** Bridge between human, AI, and mathematical timing concepts
-- **Educational Tool:** Learn polyrhythmic theory through hands-on experimentation
+**Bottom Line:** RCD V2 turns clock division into an art form. It's not just about slower tempos - it's about exploring the mathematical relationships that create the most interesting rhythms in music. The rotation feature transforms static patterns into dynamic, evolving polyrhythms that keep listeners engaged.
 
 ---
 
