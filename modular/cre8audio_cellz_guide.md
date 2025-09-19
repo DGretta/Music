@@ -36,16 +36,16 @@
 - **Visual confirmation:** LEDs show which channel you're programming
 - **Independent values:** Each pad can have completely different voltages for OUT1/OUT2
 
-### **3. Quantization Modes - Musical vs Free**
-- **Quantized mode (QUAN LED on):** Outputs musical semitones, limited range (~2-6V)
-- **Free scale mode (QUAN LED off):** Full 0-10V range, unquantized voltages
-- **Toggle:** Press QUAN button to switch between modes
-- **Musical use:** Quantized for melodies, Free for modulation/effects
-- **Range difference:** Quantized = ~4 octaves, Free = full CV range
+### **3. CV Range - Full 0-10V Output**
+- **Full range mode:** Complete 0-10V range for all applications
+- **Programming range:** Turn knob fully for maximum voltage range
+- **Musical use:** Program musical intervals by ear or with external quantizer
+- **Modulation use:** Use full range for parameter modulation (filter cutoff, etc.)
+- **No built-in quantization:** Use external quantizers for musical scales if needed
 
 ### **4. Sequencing Inputs - Automatic Playback**
-- **→ input (horizontal):** Advances through columns (left to right)
-- **↓ input (vertical):** Advances through rows (top to bottom)  
+- **→ input (angled arrow, bottom right):** Advances through columns, jack located under arrow graphic
+- **↓ input (angled arrow, bottom left):** Advances through rows, jack located under arrow graphic  
 - **Clock/trigger driven:** Each pulse advances to next position
 - **Combined sequencing:** Use both inputs for complex 2D sequences
 - **Touch override:** Touching pads interrupts automatic sequence
@@ -75,8 +75,8 @@
 [Envelope] ──→ [VCA CV input]
 [Oscillator] ──→ [VCA Audio input]
 ```
-**Setup:** Program OUT1 with musical pitches in quantized mode
-**Programming:** TUNE1 + touch pads + left knob to set different notes
+**Setup:** Program OUT1 with musical pitches using external quantizer or by ear
+**Programming:** TUNE1 + touch pads + left knob to set different voltages
 **Result:** Touch-sensitive synthesizer keyboard with custom note layout
 **Pro tip:** Arrange pads like scales or chords for easy playing
 
@@ -86,7 +86,7 @@
 [Cellz OUT2] ──→ [Filter CUTOFF CV]
 [Cellz GATE1] ──→ [VCA GATE input]
 ```
-**Setup:** OUT1 = pitch (quantized), OUT2 = filter cutoff (free scale)
+**Setup:** OUT1 = pitch (use external quantizer for musical notes), OUT2 = filter cutoff (full CV range)
 **Programming:** TUNE1 for notes, TUNE2 for brightness levels
 **Result:** Each pad plays different note with different brightness
 **Performance:** Touch pads for simultaneous pitch and timbre control
@@ -111,7 +111,7 @@
 [Oscillator] ──→ [Filter] ──→ [Audio out]
 ```
 **Setup:** Use Cellz as modulation source rather than note generator
-**Programming:** TUNE2 to set different filter modulation amounts per pad
+**Programming:** TUNE2 to set different filter modulation amounts per pad (full 0-10V range)
 **Result:** Evolving filter modulation with manual touch override capability
 **Performance:** Touch pads to manually "jump" to different modulation amounts
 
@@ -334,12 +334,12 @@ This represents **complete expressive performance mastery** - where professional
 - **Common mistake:** Trying to program without holding TUNE button
 - **Remember:** Touch pad + turn knob + release TUNE to save value
 
-### **Quantized vs Free Scale Ranges**
-- **Quantized mode:** Limited to ~2-6V range for musical notes
-- **Free scale mode:** Full 0-10V range but no musical quantization
-- **Different purposes:** Quantized for pitch, Free for modulation
-- **Mode affects programming:** Same knob position = different voltage in different modes
-- **Check QUAN LED:** Always know which mode you're in
+### **CV Range Understanding**
+- **Full 0-10V range:** Cellz outputs complete voltage range for all applications
+- **No built-in quantization:** Use external quantizers (2HP Tune, Scales) for musical notes
+- **Programming technique:** Turn knobs to extremes to use full voltage range
+- **Musical vs modulation:** Same voltage range, different applications
+- **External quantization:** Patch Cellz through quantizer for musical scales
 
 ### **Touch Sensitivity Variations**
 - **Finger pressure affects response** - light touch might not trigger
