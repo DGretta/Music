@@ -69,6 +69,19 @@
 
 **Critical Note:** This pattern occurred immediately after creating accountability system, demonstrating the importance of actually following established procedures rather than assuming understanding.
 
+## **Core Operational Principles**
+
+### **Communication Clarity Principle**
+**Rule:** Stop and ask for clarification if anything seems ambiguous
+**Rationale:** User communication is direct and unambiguous - ambiguity indicates my misunderstanding, not unclear communication
+**Application:** When any statement could be interpreted multiple ways, immediately ask for clarification rather than making assumptions
+**Examples:**
+- Uncertain if question seeks information vs. action → Ask which is intended
+- Multiple possible interpretations → State interpretations and ask which is correct
+- Any doubt about intent → Explicitly request clarification before proceeding
+
+**Prevention Impact:** Eliminates intent assumption failures by replacing guesswork with verification
+
 **Pattern:** Promise efficient execution, deliver wasteful operations
 **Examples:**
 - "Single write operation" → multiple function calls
