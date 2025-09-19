@@ -4,6 +4,34 @@
 
 ---
 
+## Pairs Well With
+
+### **Perfect Envelope Partners:**
+- **Doepfer A-140-2:** Dual ADSR for expanded envelope count - **Alternative:** Intellijel Dual ADSR, 2HP ADSR
+- **Make Noise Maths:** Complex envelope shaping and modulation - **Alternative:** Befaco Rampage, Frap Tools 321
+- **Mutable Stages:** Advanced envelope sequencing and morphing - **Alternative:** Joranalogue Contour 1, Expert Sleepers Disting
+- **Intellijel Quadrax:** Four-channel envelope generator with expansion - **Alternative:** Erica Synths Black Quad EG, WMD/SSF ADSRVCA
+
+### **Essential Integration:**
+- **VCA Modules:** Doepfer A-132-3, Intellijel uVCA, Make Noise QPAS for amplitude control
+- **Filter Modules:** Doepfer A-120, Intellijel Polaris, Make Noise QMMG for cutoff modulation
+- **Oscillators:** Any VCO with FM/PWM inputs benefits from envelope modulation
+- **Effect Modules:** Reverb sends, delay feedback, chorus depth control via envelope CV
+
+### **Budget-Friendly Partners:**
+- **2HP modules:** ADSR, VCA, LPG for compact envelope/VCA combinations
+- **Doepfer A-100 series:** A-140, A-141-2, A-131 for basic envelope and VCA functions
+- **Erica Synths Pico series:** Black ADSR, Black VCA for space-efficient solutions
+- **DIY options:** Befaco ADSR, Music Thing Modular EGs for hands-on builders
+
+### **Premium Integration:**
+- **Make Noise ecosystem:** Maths, Function, Contour for complex envelope processing
+- **Mutable Instruments:** Stages, Veils for advanced modulation and mixing
+- **Expert Sleepers:** Disting mk4 for multi-function envelope and utility processing
+- **Intellijel system:** Quadrax + Qx expander for complete envelope workstation
+
+---
+
 ## Quick Start: Essential Envelope Utility in 5 Minutes
 
 **What is the 1003?** A dual ADSR envelope generator that triggers both envelopes simultaneously from a single gate input. Each envelope can have completely different timing characteristics, making it perfect for coordinated dual modulation - like controlling both amplitude and filter cutoff with synchronized but independent envelope shapes.
