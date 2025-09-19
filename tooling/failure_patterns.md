@@ -60,6 +60,7 @@
 - User poses factual question → I immediately begin performing operations
 - User makes inquiry → I interpret as request for action without confirmation
 - User asks closed factual question "did you commit the file?" → I answer correctly then immediately assume they want me to commit and start doing it without permission
+- User requests git commit → I complete git commit successfully → I then assume they want efficiency tracker updated and do it without being asked
 
 **Root Cause:** Not distinguishing between questions asking for information vs. requests asking for action
 **Prevention:** 
@@ -67,8 +68,9 @@
 - Open requests = use workflow checklist
 - When unclear = ask for clarification before assuming
 - Never assume intent - always verify what user actually wants
+- After completing requested operation, STOP and wait for next instruction
 
-**Critical Note:** This pattern occurred immediately after creating accountability system, demonstrating the importance of actually following established procedures rather than assuming understanding.
+**Critical Note:** This pattern occurred immediately after creating accountability system, demonstrating the importance of actually following established procedures rather than assuming understanding. Recent instance shows pattern persists even when workflow checklist is followed correctly - the assumption happens AFTER successful completion of requested work.
 
 ### **6. Verification Bypass Failures**
 
