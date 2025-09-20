@@ -16,6 +16,12 @@
 
 ## Quick Start: Get Your First Sound in 5 Minutes
 
+![DivKid Ochd](https://github.com/DGretta/Music/raw/main/modular/images/divkid_ochd_and_expander/ochd_panel.jpg)
+*DivKid Ochd - Main module showing 8 LFO outputs, Rate knob, and CV input with attenuverter*
+
+![DivKid Ochd Expander](https://github.com/DGretta/Music/raw/main/modular/images/divkid_ochd_and_expander/expander_panel.jpg)
+*DivKid Ochd Expander - Showing Full Wave Rectifiers, Min/Max Logic, Cascading Triggers, and 4-Bit DACs*
+
 **What is Ochd?** Eight analogue triangle LFOs in 4HP, deliberately NOT synced, running from fast (top) to slow (bottom). Think of it as "organic drift" - musical phasing that breathes life into static patches.
 
 ### Your First Modulation (Ochd Alone)
