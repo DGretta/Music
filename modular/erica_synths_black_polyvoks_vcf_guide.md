@@ -6,7 +6,7 @@
 
 ## Quick Start: Get Your First Sound in 5 Minutes
 
-![Erica Synths Black Polyvoks VCF](images/erica_synths_black_polyvoks_vcf/front_panel.jpg)
+![Erica Synths Black Polyvoks VCF](https://github.com/DGretta/Music/raw/main/modular/images/erica_synths_black_polyvoks_vcf/front_panel.jpg)
 *Erica Synths Black Polyvoks VCF - Front panel showing CV1, CV2, Audio In, and Filter Out*
 
 **What is the Black Polyvoks VCF?** An authentic emulation of the famous Russian Formanta Polivoks synthesizer filter, using original K140UD12 ICs. This is THE filter that defined the sound of acid house and techno - known for its crazy resonance sweeps, deep bass, and ability to self-oscillate into screaming leads.
