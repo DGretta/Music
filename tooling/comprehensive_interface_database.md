@@ -74,6 +74,47 @@ Each entry includes ALL physical interface elements:
 - ❌ Generic "CV input" - specify CV1 or CV2
 - ✅ Use "TRIGG input" for triggers, "CV1/CV2 input" for modulation
 
+### Expert Sleepers Disting mk4 ✅
+**Manual Source**: https://www.expert-sleepers.co.uk/disting.html + Guide verification
+**Verification Date**: 2025-09-20
+
+**Physical Interface:**
+- **Inputs**: X input (CV/audio), Y input (CV/audio), Z CV input (parameter control)
+- **Outputs**: A output (processed signal/CV), B output (secondary/alternate signal/CV)
+- **Knobs**: S knob (parameter selection/adjustment), Z knob (main algorithm parameter)
+- **Buttons**: S knob press (menu navigation, parameter cycling)
+- **Switches**: None
+- **LEDs**: Socket LEDs (red=positive voltage, blue=negative voltage), display backlight
+- **Displays**: OLED display (algorithm name, parameter values, menu navigation)
+- **Other**: SD card slot (samples, MIDI, wavetables, scales, presets)
+
+**Interface Behavior:**
+- **Algorithm selection**: Press S twice → turn S to browse → press S to confirm
+- **Parameter control**: Turn S knob to adjust current parameter, press Z to cycle parameters
+- **Z knob function**: Algorithm-dependent (frequency, feedback, scale, resonance, etc.)
+- **Menu system**: Algorithm, Save/Load (64 presets), Settings, Help, Calibrate
+- **Socket LEDs**: Visual voltage indication for all inputs/outputs
+- **Display feedback**: Shows algorithm names, parameter values, menu items
+- **SD card integration**: Sample playback, MIDI files, wavetables, custom scales, help files
+- **Preset system**: Preset 0 loads at startup and auto-saves on algorithm changes
+
+**Algorithm Categories:**
+- **A Series (A1-A8)**: CV utilities (mixers, quantizers, logic, arithmetic)
+- **B Series (B1-B8)**: Modulation sources (LFOs, S&H, envelopes, VCOs)
+- **C Series (C1-C8)**: Audio processing (delays, filters, effects)
+- **D-N Series**: Extended processing, sample playback, MIDI, advanced functions
+- **Favorites (O1-P8)**: User-customizable algorithm shortcuts
+- **80+ total algorithms**: Complete modular synthesis function coverage
+
+**Common Mistakes:**
+- ❌ "I can't hear any difference when I turn Z knob" - Check algorithm type matches signal (quantizer needs pitch CV, delay needs audio)
+- ❌ "Algorithm menu is confusing" - Start with A1-A8 and B1-B8, learn few algorithms well before exploring
+- ❌ "Samples won't play" - SD card must be FAT32 formatted, 16-bit WAV files only
+- ❌ "Settings revert after power cycle" - Preset 0 loads at startup, save settings to Preset 0 for persistence
+- ❌ "Can't find algorithm I want" - Use favorites system to create custom menu of most-used algorithms
+- ✅ Use "A-6 Quantizer" for pitch CV processing, "B-5 LFO" for modulation, "C-5 Resonator" for audio processing
+- ✅ Match algorithm category to signal type: A/B for CV, C/D for audio, E-N for specialized functions
+
 ### Make Noise Maths ✅
 **Manual Source**: Make Noise official documentation + verified by community
 **Verification Date**: 2025-09-18
