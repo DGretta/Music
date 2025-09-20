@@ -6,6 +6,9 @@
 
 ## Quick Start: Get Your First Chiptune Sound in 5 Minutes
 
+![Cre8audio Chipz](https://github.com/DGretta/Music/raw/main/modular/images/cre8audio_chipz/front_panel.jpg)
+*Cre8audio Chipz - Front panel showing dual chiptune oscillators and LFO with morphing waveforms*
+
 **What is Chipz?** Think of it as three oscillators in one compact package - two chiptune-style VCOs inspired by classic 8-bit video game consoles (Commodore, Atari, NES) plus an LFO for modulation. Despite the nostalgic inspiration, it's capable of much more than just retro gaming sounds, offering everything from classic analog tones to digital noise textures.
 
 ### Your First Chiptune Beep
@@ -424,22 +427,22 @@ This represents **complete retro-modern mastery** - where musical sequencing int
 
 ---
 
-## Phase 2 Learning Path
+## Advanced Learning Path
 
 ### **Recommended Study Progression:**
-1. **Start with Chipz fundamentals:** Master dual oscillator control, waveform morphing, and authentic lo-fi chiptune character
-2. **Add musical sequencing:** Integrate Squarp Hermod+ for professional chiptune composition with quantization (see Hermod+ guide)
+1. **Start with Chipz fundamentals:** Master dual oscillator control, waveform morphing, and lo-fi gaming character
+2. **Add musical sequencing:** Integrate Squarp Hermod+ for professional composition with quantization (see Hermod+ guide)
 3. **Include algorithmic processing:** Use Expert Sleepers Disting mk4 for retro-modern hybrid processing (see Disting guide)
 4. **Add compact signal management:** Apply Erica Pico utilities for professional signal conditioning (see Pico guides)
-5. **Include performance enhancement:** Use other multi-function modules for complete chiptune performance systems
-6. **Complete the ecosystem:** Add all multi-function modules for complete retro-modern chiptune workstation
+5. **Include performance enhancement:** Use other multi-function modules for complete performance systems
+6. **Complete the ecosystem:** Add all multi-function modules for complete retro-modern workstation
 
 ### **Cross-Module Learning Opportunities:**
-- **Chipz + Hermod+:** Learn musical chiptune composition through multi-track sequencing with quantization and timing intelligence
-- **Chipz + Disting mk4:** Master algorithmic retro processing with digital enhancement while preserving chiptune character
-- **Chipz + Pico Chain:** Understand professional signal management for hot chiptune outputs with compact utilities
-- **Chipz + Performance Systems:** Explore live chiptune performance with real-time control and musical intelligence
-- **All Multi-Function + Chipz:** Build complete retro-modern ecosystems with chiptune at the authentic sound core
+- **Chipz + Hermod+:** Learn musical composition through multi-track sequencing with quantization and timing intelligence
+- **Chipz + Disting mk4:** Master algorithmic retro processing with digital enhancement while preserving gaming character
+- **Chipz + Pico Chain:** Understand professional signal management for hot outputs with compact utilities
+- **Chipz + Performance Systems:** Explore live performance with real-time control and musical intelligence
+- **All Multi-Function + Chipz:** Build complete retro-modern ecosystems with gaming sound at the core
 
 ### **Skill Development Milestones:**
 - **Beginner:** Use Chipz for basic chiptune generation and waveform morphing techniques
@@ -448,20 +451,20 @@ This represents **complete retro-modern mastery** - where musical sequencing int
 - **Expert:** Design complete chiptune performance systems where Chipz serves as authentic retro core for modern ecosystems
 
 ### **Advanced Retro-Modern Concepts:**
-- **Authentic Chiptune Character:** Understand lo-fi digital aesthetic and intentional artifacts of classic gaming sound
-- **Musical Chiptune Composition:** Master quantized sequencing and musical intelligence for authentic chip music creation
-- **Algorithmic Retro Enhancement:** Explore how modern processing enhances rather than obscures authentic chiptune character
-- **Complete Performance Ecosystems:** Design systems where modern modules serve authentic retro sound rather than replacing it
+- **Lo-Fi Gaming Character:** Understand digital aesthetic and intentional artifacts of classic console sound
+- **Musical Composition:** Master quantized sequencing and musical intelligence for chip music creation
+- **Algorithmic Retro Enhancement:** Explore how modern processing enhances rather than obscures gaming character
+- **Complete Performance Ecosystems:** Design systems where modern modules serve retro sound rather than replacing it
 
 ### **Performance Applications:**
-- **Live Chiptune Performance:** Real-time Chipz control with musical sequencing and professional signal management
-- **Retro-Modern Composition:** Foundation for chiptune music that bridges classic gaming with modern production
-- **Professional Chiptune Production:** Studio-quality chiptune with authentic character and modern enhancement
-- **Educational Tool:** Learn chiptune concepts and digital synthesis through hands-on authentic gaming sound interaction
+- **Live Performance:** Real-time Chipz control with musical sequencing and professional signal management
+- **Retro-Modern Composition:** Foundation for music that bridges classic gaming with modern production
+- **Professional Production:** Studio-quality output with gaming character and modern enhancement
+- **Educational Tool:** Learn digital synthesis concepts through hands-on gaming sound interaction
 
 ---
 
-**Bottom Line:** Chipz isn't just a chiptune oscillator - it's an **authentic retro sound core** that transforms musical sequencing, algorithmic processing, and professional signal management into complete retro-modern hybrid systems. Every patch teaches you something new about how authentic chiptune character really works. As the **lo-fi gaming heart of retro-modern performance ecosystems**, it transforms multi-function enhancement into unified chiptune evolution.
+**Bottom Line:** Chipz isn't just a gaming oscillator - it's a **retro sound core** that transforms musical sequencing, algorithmic processing, and professional signal management into complete retro-modern hybrid systems. Every patch teaches you something new about how lo-fi gaming character really works. As the **gaming heart of retro-modern performance ecosystems**, it transforms multi-function enhancement into unified sonic evolution.
 
 ---
 
