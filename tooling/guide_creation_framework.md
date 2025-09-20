@@ -2,6 +2,45 @@
 
 **Systematic accountability framework for reliable guide creation and modification**
 
+## **Visual Communication Integration**
+
+### **Visual Standards Requirements:**
+- **Symbol consistency:** Follow `~/claude/Music/tooling/visual_communication_standards.md` for all diagrams
+- **ASCII standardization:** Use approved symbol library for module representations
+- **Signal hierarchy:** Differentiate 🔴 Audio, 🔵 CV, 🟡 Gate with color coding throughout
+- **Module accuracy:** Show real jack names and interface elements, not generic terms
+- **Flow clarity:** Left-to-right signal progression in all patch diagrams
+- **Complexity progression:** Visual complexity matches skill level (Basic → Expert)
+
+### **Required Visual Elements:**
+```
+🔴 Audio │ 🔵 CV │ 🟡 Gate
+
+**Standard Module Representation:**
+┌─────────────────┐
+│   Module Name   │
+│                 │
+│ Input ◀─────────┼── Signal In
+│       ║         │
+│ Output ○────────┼── Signal Out
+│        ║        │
+└────────║────────┘
+         ║
+   🔵 Signal Type
+```
+
+### **Enhanced Format Visual Integration:**
+- **Alternative visualization:** Show budget/premium options with clear visual distinction
+- **Ecosystem context:** Demonstrate how modules fit in larger systems
+- **Performance indicators:** Include real-time control and live application visuals
+- **Learning progression:** Visual skill development maps for cross-module learning
+
+### **Implementation Requirements:**
+- **Consistency verification:** All visual elements must follow established standards
+- **Educational enhancement:** Diagrams must improve understanding, not add complexity
+- **Cross-guide compatibility:** Visual standards must work across all guide types
+- **Quality integration:** Visual standards are part of overall quality verification process
+
 ---
 
 ## **MANDATORY: Workflow Checklist Integration**
