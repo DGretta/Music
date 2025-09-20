@@ -94,6 +94,31 @@
     └── [additional images]
 ```
 
+### **GitHub Repository Integration**
+
+**For GitHub repositories, use GitHub raw URL format:**
+```markdown
+![Module Name](https://github.com/DGretta/Music/raw/main/modular/images/[module_name]/front_panel.jpg)
+*Module description and key interface elements*
+```
+
+**GitHub Raw URL Structure:**
+- **Base:** `https://github.com/{username}/{repository}/raw/{branch}/`
+- **Path:** `modular/images/[module_name]/front_panel.jpg`
+- **Complete:** `https://github.com/DGretta/Music/raw/main/modular/images/[module_name]/front_panel.jpg`
+
+**Implementation Examples:**
+```markdown
+![Erica Synths Black Polyvoks VCF](https://github.com/DGretta/Music/raw/main/modular/images/erica_synths_black_polyvoks_vcf/front_panel.jpg)
+*Erica Synths Black Polyvoks VCF - Front panel showing CV1, CV2, Audio In, and Filter Out*
+
+![4ms MetaModule](https://github.com/DGretta/Music/raw/main/modular/images/4ms_metamodule/front_panel.jpg)
+*4ms MetaModule - Main unit with core functionality*
+
+![4ms MetaModule AIO Expander](https://github.com/DGretta/Music/raw/main/modular/images/4ms_metamodule/aio_exp_panel.jpg)
+*MetaModule Audio I/O Expander - Additional inputs and outputs*
+```
+
 ### **Integration with Existing Standards**
 - **Emoji color coding:** Images work alongside 🔴🔵🟡 signal identification
 - **ASCII diagrams:** Photos verify diagram accuracy and provide visual context
