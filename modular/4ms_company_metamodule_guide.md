@@ -6,6 +6,15 @@
 
 ## Quick Start: Get Your First Virtual Patch Running in 5 Minutes
 
+![4ms Company MetaModule](https://github.com/DGretta/Music/raw/main/modular/images/4ms_metamodule/front_panel.jpg)
+*4ms Company MetaModule - Main unit with 12 knobs, rotary encoder, and comprehensive I/O*
+
+![4ms MetaModule Audio I/O Expander](https://github.com/DGretta/Music/raw/main/modular/images/4ms_metamodule/aio_exp_panel.jpg)
+*MetaModule Audio I/O Expander - Additional inputs and outputs for expanded system integration*
+
+![4ms MetaModule WiFi Expander](https://github.com/DGretta/Music/raw/main/modular/images/4ms_metamodule/wifi_exp_panel.jpg)
+*MetaModule WiFi Expander - Wireless patch transfer and remote VCV Rack integration*
+
 **What is MetaModule?** A 26HP virtual patch player that runs VCV Rack patches on hardware. Features 12 physical knobs, 6 inputs, 8 outputs, and supports 800+ virtual modules from the VCV Rack ecosystem, essentially providing a complete modular synthesizer in a single module.
 
 ### Your First Virtual Experience
