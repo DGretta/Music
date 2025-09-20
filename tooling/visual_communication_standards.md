@@ -2,6 +2,104 @@
 
 **Systematic framework for clear, consistent visual communication in modular synthesizer guides**
 
+## **Module Image Integration**
+
+### **Image Sourcing Standards**
+- **Primary source:** ModularGrid community images
+- **Format requirement:** JPEG for universal compatibility
+- **Quality standard:** High-resolution front panel images
+- **Community acceptance:** ModularGrid sourcing is established practice in modular forums
+
+### **Technical Specifications**
+- **File format:** JPEG (.jpg)
+- **Resolution target:** ~390px width for module panels (maintains detail while manageable file size)
+- **File size limit:** Under 50KB for reasonable loading performance
+- **Naming convention:** Use ModularGrid filename or descriptive module name
+- **Storage location:** `~/claude/Music/modular/images/[module_name]/`
+
+### **Integration Placement Strategy**
+
+**Option A: Quick Start Integration**
+```markdown
+## Quick Start: Get Your First Sound in 5 Minutes
+
+![Module Name Front Panel](images/module_name/front_panel.jpg)
+*Module Name - Front Panel Reference showing key jacks and controls*
+
+**What is the [Module Name]?** Module description...
+```
+
+**Option B: Reference Panel Section**
+```markdown
+## Module Reference
+
+![Full Module Panel](images/module_name/full_panel.jpg)
+*Click image for detailed view*
+
+🔴 Audio │ 🔵 CV │ 🟡 Gate
+
+**Interface Layout:**
+🔴 Audio In (bottom left) → Signal processing
+🔵 CV1 (top) → Primary control modulation  
+🔵 CV2 (middle) → Secondary control modulation
+```
+
+**Option C: Combined Approach**
+```markdown
+![Module Panel](images/module_name/panel.jpg)
+*Module front panel reference*
+
+🔴 Audio │ 🔵 CV │ 🟡 Gate
+
+┌─VCO─────┐    ┌─Filter──┐
+│ Out ○───┼────┼─▶Audio  │ 🔴
+│     ║   │    │   ║     │
+│ CV  ◀───┼────┼── CV1   │ 🔵
+│     ║   │    │   ║     │
+└─────║───┘    └───║─────┘
+```
+
+### **Image Integration Guidelines**
+
+**Educational Enhancement:**
+- **Visual verification:** Photos confirm ASCII diagram accuracy
+- **Interface familiarization:** Users see actual jack locations and control layout
+- **Learning support:** Combine visual + textual + diagrammatic instruction
+- **Reference value:** Quick visual confirmation during patching
+
+**Quality Standards:**
+- **Interface accuracy:** Images must show clear jack names and control labels
+- **Visual clarity:** All important controls must be clearly visible
+- **Consistent lighting:** Professional appearance with good contrast
+- **Orientation:** Standard front-panel view, properly aligned
+
+**Implementation Protocol:**
+1. **Source from ModularGrid:** Use established community resource
+2. **Verify image quality:** Ensure clarity and proper resolution
+3. **Test integration:** Apply to one guide first, evaluate effectiveness
+4. **Systematic application:** Roll out to all guides using workflow checklist
+5. **Documentation:** Track image sources and maintain file organization
+
+### **File Organization Standards**
+```
+~/claude/Music/modular/images/
+├── polyvoks/
+│   ├── front_panel.jpg
+│   └── detail_shots/ (if needed)
+├── disting/
+│   ├── front_panel.jpg
+│   └── algorithm_display.jpg
+└── [module_name]/
+    ├── front_panel.jpg
+    └── [additional images]
+```
+
+### **Integration with Existing Standards**
+- **Emoji color coding:** Images work alongside 🔴🔵🟡 signal identification
+- **ASCII diagrams:** Photos verify diagram accuracy and provide visual context
+- **Enhanced format:** Images support budget/premium alternative visualization
+- **Learning progression:** Visual complexity can match skill development levels
+
 ---
 
 ## **ASCII Symbol Library**
