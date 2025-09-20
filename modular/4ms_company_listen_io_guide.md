@@ -6,6 +6,9 @@
 
 ## Quick Start: Get Your First External Signal Into Modular in 5 Minutes
 
+![4ms Company Listen IO](https://github.com/DGretta/Music/raw/main/modular/images/4ms_listen_io/front_panel.jpg)
+*4ms Company Listen IO - Dual-section audio interface showing Line In/Mod Out (top) and Mod In/Line Out (bottom)*
+
 **What is Listen IO?** A 6HP dual-section audio interface that converts external signals to modular levels (with up to 30x gain) and modular signals to line/headphone levels. Features LED bar graphs for visual monitoring, dual headphone outputs, and professional specifications for studio-quality I/O.
 
 ### Your First External Connection
