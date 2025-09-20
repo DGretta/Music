@@ -17,9 +17,34 @@
 - [ ] **Reason for each change:** _____
 
 ### **3. Efficiency Estimation**
-- [ ] **Expected function calls:** _____ (1-3 for most operations)
+- [ ] **Expected function calls:** _____ (Use updated estimation standards below)
 - [ ] **Justification for multiple calls:** _____
 - [ ] **Alternative single-operation approach considered:** Yes/No
+
+#### **Updated Estimation Standards (Effective 2025-09-20):**
+**Learned from session data showing systematic underestimation when git commits not properly accounted for.**
+
+**File Operations:**
+- **Analysis only:** 1 call (file read)
+- **File edit + commit:** 2 calls minimum (edit + git commit)
+- **Multiple file edits:** Count each file + 1 git commit
+- **Database updates:** 2 calls (edit + commit)
+
+**Content Operations:**
+- **Image integration:** 2 calls (edit + commit)
+- **Historical context addition:** 2 calls (substantial content creation + commit)
+- **Framework compliance:** 2 calls (comprehensive update + commit)
+- **Dual-device updates:** 2 calls (multiple elements in single edit + commit)
+
+**Infrastructure Operations:**
+- **File renaming:** Number of files + 1 git commit
+- **Directory standardization:** Variable based on file count + 1 commit
+
+**Never estimate 1 call for operations involving:**
+- Content that will be committed to repository
+- Framework compliance work
+- Any substantial content creation
+- Multiple component integration
 
 ## **Pre-Execution Verification**
 
