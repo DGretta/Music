@@ -4,7 +4,20 @@
 
 ---
 
+## Historical Context
+
+**The Electronic Dream Plant Legacy:** The Doepfer A-124 Wasp SE recreates the legendary filter circuit from the Electronic Dream Plant Wasp synthesizer - a British monophonic analog synthesizer that defined aggressive electronic music in the early 1980s. The Wasp's distinctive ladder filter became synonymous with biting acid basslines and screaming leads that cut through dense mixes.
+
+**Aggressive Design Philosophy:** Unlike filters designed for smooth, musical response, the Wasp filter was intentionally aggressive - featuring dramatic self-oscillation, input-level sensitivity, and a characteristic "bite" that made sounds jump out of speakers. This aggressive character made it essential in acid house, industrial music, and aggressive electronic genres.
+
+**Cultural Impact:** The Wasp filter's wild self-oscillation and aggressive resonance became the foundation for countless acid house tracks and aggressive electronic music. Its ability to transform simple waveforms into screaming, biting textures influenced entire genres and established the template for "character over politeness" in filter design.
+
+---
+
 ## Quick Start: Get Your First Aggressive Filter Sweep in 5 Minutes
+
+![Doepfer A124 Wasp SE](https://github.com/DGretta/Music/raw/main/modular/images/doepfer_a124_wasp_se/front_panel.jpg)
+*Doepfer A124 Wasp SE - Front panel showing aggressive filter controls with Cutoff, Resonance, and CV inputs*
 
 **What is Wasp SE?** A recreation of the legendary Wasp filter from the Electronic Dream Plant Wasp synthesizer - famous for its aggressive, biting character and wild self-oscillation. Unlike gentle filters, the Wasp SE is designed to bite, scream, and add serious attitude to your sounds.
 
