@@ -125,6 +125,31 @@
 
 **Critical Understanding:** Implementation completion includes making all dependencies available in the target environment, not just local functionality. Asset availability is part of the complete workflow, not an afterthought.
 
+### **10. Git Command Tool Selection Failures**
+
+**Pattern:** Using incorrect tools for git command execution in macOS environment
+**Examples:**
+- Attempting to use `child_process` module in analysis tool (repl) → Module not available in browser environment
+- Trying to use Node.js `execSync` in repl → `process is not defined` errors
+- Forgetting osascript tool exists for shell command execution
+
+**Root Cause:** Incorrect tool selection for environment capabilities
+**Prevention:**
+- **✅ CORRECT:** Use `osascript` tool for git commands via Terminal automation
+- **❌ INCORRECT:** Use `repl` with `child_process` or `execSync` for shell commands
+- **Tool selection guide:** osascript for shell/Terminal commands, repl for JavaScript analysis only
+
+**Correct Implementation:**
+```
+Control your Mac:osascript
+parameter: script
+tell application "Terminal"
+    do script "cd /path && git add file.md && git commit -m 'message'"
+end tell
+```
+
+**Critical Understanding:** Each tool has specific capabilities - use osascript for system commands, repl for data analysis and JavaScript computation.
+
 ### **8. Analysis Reading Failures**
 
 **Pattern:** Incomplete reading of content before making assessment conclusions
