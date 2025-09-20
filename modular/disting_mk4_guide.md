@@ -15,6 +15,9 @@
 
 ## Quick Start: Get Your First Sound in 5 Minutes
 
+![Expert Sleepers Disting mk4](https://github.com/DGretta/Music/raw/main/modular/images/disting_mk4/front_panel.jpg)
+*Expert Sleepers Disting mk4 - Front panel showing algorithm display, dual inputs/outputs, and parameter controls*
+
 **What is Disting mk4?** A **multi-algorithm utility module** that can function as 80+ different modules in one tiny 4HP package. Think of it as having an entire modular system that you can switch between instantly - oscillators, filters, delays, quantizers, LFOs, envelopes, and much more.
 
 ### Your First Algorithm - Precision Adder
