@@ -1,8 +1,15 @@
 # Manufacturer manuals - keep these in ~/claude/modular_manuals/ instead
-*.pdf
-*.jpg
-*.jpeg
-*.png
+modular_manuals/*.pdf
+modular_manuals/*.jpg
+modular_manuals/*.jpeg
+modular_manuals/*.png
+modular_manuals/*.txt
+modular_manuals/*.docx
+
+# Allow modular guide images but exclude other images
+# modular/images/ directory is intentionally included for guide integration
+
+# Other document types to exclude globally
 *.txt
 *.docx
 MetaModuleManual.docx
