@@ -6,6 +6,9 @@
 
 ## Quick Start: Get Your First Modulated Sound in 5 Minutes
 
+![Cre8audio Function Junction](https://github.com/DGretta/Music/raw/main/modular/images/cre8audio_function_junction/front_panel.jpg)
+*Cre8audio Function Junction - Comprehensive modulation hub with ADSR, function generator, LFO, and attenuverting mixer*
+
 **What is Function Junction?** Think of it as four essential modules in one compact 16HP package: a full ADSR envelope, a flexible function generator, an LFO, and a 3-channel attenuverting mixer. Designed with Pittsburgh Modular, it's the Swiss Army knife of modulation that can handle everything from basic envelope duties to complex, evolving modulation scenarios.
 
 ### Your First Envelope-Controlled Sound
