@@ -6,6 +6,9 @@
 
 ## Quick Start: Get Your First Sound in 5 Minutes
 
+![4ms SCM Plus](https://github.com/DGretta/Music/raw/main/modular/images/4ms_scm_plus/front_panel.jpg)
+*4ms SCM Plus - Clock multiplier and groove processor with Clock In, multiple ratio outputs, and comprehensive timing controls*
+
 **What is SCM Plus?** A clock multiplier that takes one clock signal and creates 8 different subdivisions with the ability to add shuffle, slip, skip beats, and rotate patterns. It's like having a whole rhythm section in 12HP.
 
 ### Your First Multiplied Clock
