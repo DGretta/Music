@@ -50,7 +50,7 @@
 
 ---
 
-## Essential Parameters (The Dual Controllers)
+## Essential Parameters (The Dual Controllers).
 
 ### **Shared Timing Control**
 
