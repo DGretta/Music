@@ -47,7 +47,10 @@
 - [ ] **Commit requirement:** Determined based on operation type
 - [ ] **Commit message planned:** Descriptive message for changes made
 - [ ] **Related files included:** All modified files staged for commit
-- [ ] **User approval for commit:** Explicit approval received if required
+- [ ] **Commit approval guidelines:**
+  - **Automatic commits:** Single file edits, corrections, routine updates, guide enhancements
+  - **Approval required:** Framework changes, multiple file operations, new patterns, major restructures
+  - **When in doubt:** Ask for approval rather than assume automatic
 
 ## **Post-Execution Review**
 
