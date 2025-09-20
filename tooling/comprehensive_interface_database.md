@@ -74,6 +74,50 @@ Each entry includes ALL physical interface elements:
 - ❌ Generic "CV input" - specify CV1 or CV2
 - ✅ Use "TRIGG input" for triggers, "CV1/CV2 input" for modulation
 
+### EarthQuaker Devices Afterneath ✅
+**Manual Source**: EarthQuaker Devices official documentation + Guide verification
+**Verification Date**: 2025-09-20
+
+**Physical Interface:**
+- **Inputs**: Audio Input (main signal), Reflect Send/Return (external processing loop), 4 CV inputs (Drag, Mode, Diffuse, Length)
+- **Outputs**: Main Output (processed signal), Reflect Send (for external processing)
+- **Knobs**: Input (level), Dampen (tone), Reflect (feedback/regeneration), Mix (wet/dry), Drag (delay line separation), Diffuse (smoothing), Length (decay time)
+- **Buttons**: None
+- **Switches**: Dry Kill (on/off), LIN/XPO curve selection, Mode selector (9-position)
+- **LEDs**: None specified
+- **Displays**: None
+- **Other**: CV attenuators for each CV input (inverting attenuators)
+
+**Interface Behavior:**
+- **Drag control**: Signature parameter that separates delay lines for stuttering/warped effects
+- **Mode selector**: 9 operational modes (3 unquantized, 6 quantized scales)
+- **Reflect send/return**: External processing loop in feedback path
+- **CV inputs**: Dedicated CV control for Drag, Mode, Diffuse, Length with inverting attenuators
+- **Self-oscillation**: Achieved by increasing Reflect and Length parameters
+- **Curve types**: Linear (LIN) vs Exponential (XPO) response curves
+- **Dry Kill**: Removes dry signal for send/return applications
+
+**Operational Modes:**
+- **Mode 1**: Unquantized (smooth response)
+- **Mode 2**: Unquantized with Slew (tape delay-style lag)
+- **Mode 3**: Unquantized 1V/Octave (VCO behavior)
+- **Mode 4**: Chromatic Scale (12 semitones)
+- **Mode 5**: Major Scale (7-note major)
+- **Mode 6**: Minor Scale (7-note minor)
+- **Mode 7**: Pentatonic Scale (5-note always-musical)
+- **Mode 8**: Octaves & Fifths (perfect consonances)
+- **Mode 9**: Octaves (pure octave relationships)
+
+**Common Mistakes:**
+- ❌ "I can't get the Drag effect to work" - Drag is most effective with audio present and proper input levels
+- ❌ "The reverb sounds too digital/harsh" - Try XPO curve instead of LIN, adjust Dampen for warmer tone
+- ❌ "Self-oscillation won't track pitch properly" - Use Mode 3 (1V/Oct) and calibrate Drag CV attenuator
+- ❌ "External processing loop doesn't work" - Ensure proper connections: Reflect Send → processor → Reflect Return
+- ❌ "CV control seems backwards" - CV inputs have inverting attenuators, adjust accordingly
+- ✅ Use "Drag CV" for pitch control in quantized modes (4-9), "Mode" parameter for scale selection
+- ✅ Start with Mode 1 for learning basic operation, then explore quantized modes for musical applications
+- ✅ Use Reflect Send/Return for external processing in feedback path, not parallel processing
+
 ### Expert Sleepers Disting mk4 ✅
 **Manual Source**: https://www.expert-sleepers.co.uk/disting.html + Guide verification
 **Verification Date**: 2025-09-20
