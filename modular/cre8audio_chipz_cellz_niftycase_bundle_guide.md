@@ -6,7 +6,7 @@
 
 ## Quick Start: Get Your Bundle Making Music in 10 Minutes
 
-![Cre8audio Chipz + Cellz + NiftyCase Bundle](https://github.com/DGretta/Music/raw/main/modular/images/cre8audio_chipz_cellz_niftycase_bundle/complete_bundle.jpg)
+![Cre8audio Chipz + Cellz + NiftyCase Bundle](https://github.com/DGretta/Music/raw/main/modular/images/cre8audio_chipz_cellz_niftycase_bundle/front_panel.jpg)
 *Cre8audio Chipz + Cellz + NiftyCase Bundle - Complete chiptune performance ecosystem with touch control and authentic lo-fi sound generation*
 
 **What is the Bundle?** This is a complete chiptune performance ecosystem: Cellz provides 16-pad touchscreen control, Chipz generates authentic lo-fi chiptune sounds, and NiftyCase handles MIDI-to-CV conversion plus audio output. Together, they create a powerful standalone chiptune workstation that bridges tactile control with classic gaming sounds.
