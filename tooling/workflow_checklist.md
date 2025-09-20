@@ -41,9 +41,17 @@
 - [ ] **Wait for explicit approval:** REQUIRED
 - [ ] **Do not proceed without authorization:** REQUIRED
 
+## **Repository Updates**
+
+### **7. Repository Commit**
+- [ ] **Commit requirement:** Determined based on operation type
+- [ ] **Commit message planned:** Descriptive message for changes made
+- [ ] **Related files included:** All modified files staged for commit
+- [ ] **User approval for commit:** Explicit approval received if required
+
 ## **Post-Execution Review**
 
-### **7. Actual Performance**
+### **8. Actual Performance**
 - [ ] **Actual function calls used:** _____
 - [ ] **Actual changes made:** _____
 - [ ] **Success criteria met:** Yes/No
