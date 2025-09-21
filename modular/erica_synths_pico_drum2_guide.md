@@ -6,6 +6,9 @@
 
 ## Quick Start: Get Your First Drum Sound in 5 Minutes
 
+![Erica Synths Pico DRUM2](https://github.com/DGretta/Music/raw/main/modular/images/erica_synths_pico_drum2/front_panel.jpg)
+*Erica Synths Pico DRUM2 - Front panel showing TRIGG input, CV1/CV2 inputs, parameter knobs, and MODE button*
+
 **What is Pico DRUM2?** A compact yet versatile percussion synthesizer featuring 8 distinct drum synthesis algorithms, each with 3 CV-controllable parameters, algorithm switching, and 1V/oct tuning capability - all in just 3HP.
 
 ### Your First Drum Beat
@@ -76,6 +79,19 @@
 - **Signal type:** Audio output optimized for percussion content
 - **Quality:** High-quality synthesis output with intentional artifact capability
 - **Pro tip:** Hot output level - may need attenuation for some systems
+
+---
+
+## Historical Context
+
+### **The Erica Synths Pico Series Legacy**
+The Pico series, launched by Erica Synths in the mid-2010s, revolutionized eurorack by proving that sophisticated synthesis could exist in ultra-compact 3HP modules. The series challenged the assumption that smaller modules meant compromised functionality, instead demonstrating that careful design and digital signal processing could pack full-featured synthesizers into minimal rack space.
+
+### **Drum Synthesis Evolution in Modular**
+Drum synthesis in modular systems evolved from simple noise/oscillator combinations in the 1970s to the sophisticated algorithmic approaches seen in modules like Pico DRUM2. Early modular drum sounds required multiple modules (oscillator + noise + envelope + VCA), while modern algorithmic drum synthesizers integrate complete synthesis chains into single modules. The Pico DRUM2 represents this evolution's culmination - eight distinct synthesis algorithms that would have required entire rows of vintage modular equipment, now available in 3HP.
+
+### **Technical Innovation Impact**
+The Pico series, including DRUM2, introduced the concept of "algorithm-based synthesis" to the eurorack community, where single modules could switch between fundamentally different synthesis methods via simple controls. This approach influenced subsequent module design across the industry, proving that digital algorithms could coexist with analog sensibilities in modular synthesis. The series maintained analog CV control and modular integration philosophy while leveraging digital processing for synthesis density previously impossible in hardware.
 
 ---
 
