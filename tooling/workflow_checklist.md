@@ -83,7 +83,7 @@
 - [ ] **Actual function calls used:** _____
 - [ ] **Actual changes made:** _____
 - [ ] **Success criteria met:** Yes/No
-- [ ] **Record in efficiency tracker:** REQUIRED
+- [ ] **Record in accountability tracker:** REQUIRED
 
 ---
 

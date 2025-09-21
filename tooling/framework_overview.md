@@ -22,7 +22,7 @@
 - **Focus areas:** Utility vs. Creative vs. Multi-Function classifications
 - **Why second:** Sets content standards for all guide work
 
-**3. REFERENCE: `efficiency_tracker.md` (Read examples)**
+**3. REFERENCE: `accountability_tracking.md` (Read examples)**
 - **Purpose:** Understand accountability expectations and performance tracking
 - **Focus areas:** Session summaries showing 43% → 100% efficiency transformation
 - **Why third:** Shows what systematic adherence accomplishes
@@ -30,7 +30,7 @@
 ### **Emergency Quick Reference:**
 - **"I need to analyze a guide"** → workflow_checklist.md (Steps 1-8)
 - **"I need to create new content"** → guide_creation_framework.md (Module classifications)
-- **"I need to fix something"** → failure_patterns.md (Prevention strategies)
+- **"I need to fix something"** → accountability_tracking.md (Prevention strategies)
 - **"I need visual standards"** → visual_communication_standards.md (GitHub image integration)
 
 ---
@@ -42,11 +42,11 @@
 **Workflow Checklist (`workflow_checklist.md`):**
 - **Steps 1-8 must be completed** before any file operation
 - **User approval required** before execution (Step 6)
-- **Performance tracking required** in efficiency tracker (Step 8)
+- **Performance tracking required** in accountability tracker (Step 8)
 - **Violation consequence:** Automatic workflow violation, operation stops
 
 **Accountability Tracking:**
-- **Efficiency tracker updates** required after every operation
+- **Accountability tracker updates** required after every operation
 - **Failure pattern documentation** when patterns emerge
 - **Evidence-based learning** from all successes and failures
 
@@ -86,8 +86,7 @@ Framework Overview (THIS DOCUMENT)
     │
     ├─ MANDATORY PROCESS
     │   ├─ workflow_checklist.md → Pre-execution planning
-    │   ├─ efficiency_tracker.md → Performance accountability
-    │   └─ failure_patterns.md → Learning from mistakes
+    │   └─ accountability_tracking.md → Performance accountability and failure prevention
     │
     ├─ CONTENT STANDARDS  
     │   ├─ guide_creation_framework.md → What to create
@@ -104,7 +103,7 @@ Framework Overview (THIS DOCUMENT)
 **1. Planning Phase:**
 - Start with workflow_checklist.md (mandatory)
 - Reference guide_creation_framework.md for standards
-- Check failure_patterns.md for prevention strategies
+- Check accountability_tracking.md for prevention strategies
 
 **2. Execution Phase:**
 - Follow workflow checklist Steps 1-6
@@ -113,8 +112,8 @@ Framework Overview (THIS DOCUMENT)
 
 **3. Completion Phase:**
 - Complete workflow checklist Step 8
-- Update efficiency_tracker.md with performance
-- Learn from any deviations using failure_patterns.md
+- Update accountability_tracking.md with performance
+- Learn from any deviations using accountability_tracking.md
 
 ### **Cross-Reference Usage:**
 - **Multiple documents always reference each other** - this is intentional
@@ -131,7 +130,7 @@ Framework Overview (THIS DOCUMENT)
 1. **Workflow checklist Steps 1-6** → Plan analysis and get approval
 2. **Step 7** → Repository commit (if changes made)
 3. **Single file read** → Complete analysis
-4. **Step 8** → Record performance in efficiency tracker
+4. **Step 8** → Record performance in accountability tracker
 
 **Add Missing Framework Compliance:**
 1. **Workflow checklist Steps 1-5** → Plan specific additions

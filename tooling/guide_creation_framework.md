@@ -56,8 +56,8 @@
 6. **User Confirmation** - Show completed checklist, wait for explicit approval before proceeding
 
 ### **Accountability Integration:**
-- **Record all operations** in `~/claude/Music/tooling/efficiency_tracker.md`
-- **Follow communication clarity principle** from `~/claude/Music/tooling/failure_patterns.md`
+- **Record all operations** in `~/claude/Music/tooling/accountability_tracking.md`
+- **Follow communication clarity principle** from `~/claude/Music/tooling/accountability_tracking.md`
 - **Reference quality standards** from `~/claude/Music/tooling/quality_system.md`
 - **Never bypass established systems** - workflow compliance is mandatory
 
@@ -197,8 +197,8 @@ Incorporate historical context into existing sections rather than creating separ
 ### **Reference Integration:**
 - **Interface verification** against `~/claude/Music/tooling/comprehensive_interface_database.md`
 - **Quality standards** from `~/claude/Music/tooling/quality_system.md`
-- **Failure prevention** using `~/claude/Music/tooling/failure_patterns.md`
-- **User validation tracking** in `~/claude/Music/tooling/efficiency_tracker.md`
+- **Failure prevention** using `~/claude/Music/tooling/accountability_tracking.md`
+- **User validation tracking** in `~/claude/Music/tooling/accountability_tracking.md`
 
 ### **Language Standards:**
 - **Circuit-based descriptions** - No AI/intelligence references
@@ -242,7 +242,7 @@ Incorporate historical context into existing sections rather than creating separ
 - **User validation** when possible (direct feedback on guide quality)
 
 ### **Documentation Requirements:**
-- **Record operation** in efficiency tracker with actual vs. promised function calls
+- **Record operation** in accountability tracker with actual vs. promised function calls
 - **Note any deviations** from planned approach with explanations
 - **Update quality system** with any new best practices discovered
 - **Cross-reference** with other guides to ensure consistency
@@ -306,4 +306,4 @@ Incorporate historical context into existing sections rather than creating separ
 
 ---
 
-*Framework integrates with: `workflow_checklist.md`, `efficiency_tracker.md`, `failure_patterns.md`, `quality_system.md`, and all other tooling directory accountability systems.*
+*Framework integrates with: `workflow_checklist.md`, `accountability_tracking.md`, `quality_system.md`, and all other tooling directory accountability systems.*

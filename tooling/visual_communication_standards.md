@@ -488,7 +488,7 @@ When implementing visual standards:
 ### **Framework Integration**
 - **Quality System:** Visual standards are part of overall quality verification
 - **Guide Creation Framework:** Visual requirements integrated into content standards
-- **Efficiency Tracker:** Track time spent on visual implementation vs improvement
+- **Accountability Tracking:** Track time spent on visual implementation vs improvement
 - **Failure Patterns:** Document visual communication failures and prevention
 
 ### **Implementation Process**
