@@ -1,5 +1,17 @@
 # Erica Synths Black Quad VCA2 - Guide
 
+![Erica Synths Black Quad VCA2](https://github.com/DGretta/Music/raw/main/modular/images/erica_synths_black_quad_vca2/front_panel.jpg)
+*Erica Synths Black Quad VCA2 - Front panel showing four VCA channels with controls*
+
+## Classification
+**Module Type:** Voltage Controlled Amplifier (VCA)  
+**Manufacturer:** Erica Synths  
+**Series:** Black Series  
+**Format:** Eurorack (8HP)  
+**Channels:** Four independent VCA channels  
+**Unique Features:** Sequential output mixing, normalled CV inputs, selectable linear/logarithmic response  
+**Key Innovation:** Automatic mixing with flexible routing eliminates external mixer requirements  
+
 **The Four-Channel VCA with Sequential Mixing**
 
 ---
