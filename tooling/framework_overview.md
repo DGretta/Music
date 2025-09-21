@@ -28,7 +28,7 @@
 - **Why third:** Shows what systematic adherence accomplishes
 
 ### **Emergency Quick Reference:**
-- **"I need to analyze a guide"** → workflow_checklist.md (Steps 1-6)
+- **"I need to analyze a guide"** → workflow_checklist.md (Steps 1-8)
 - **"I need to create new content"** → guide_creation_framework.md (Module classifications)
 - **"I need to fix something"** → failure_patterns.md (Prevention strategies)
 - **"I need visual standards"** → visual_communication_standards.md (GitHub image integration)
@@ -128,8 +128,8 @@ Framework Overview (THIS DOCUMENT)
 ### **Most Common Operations (80% of Daily Work):**
 
 **Analyze Existing Guide:**
-1. **Workflow checklist Steps 1-5** → Plan analysis
-2. **Step 6** → Get user approval  
+1. **Workflow checklist Steps 1-6** → Plan analysis and get approval
+2. **Step 7** → Repository commit (if changes made)
 3. **Single file read** → Complete analysis
 4. **Step 8** → Record performance in efficiency tracker
 
