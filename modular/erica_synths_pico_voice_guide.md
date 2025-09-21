@@ -132,7 +132,7 @@
 - **Slow LFO** → CV Input (assigned to PAR1 for wave surfing)
 - **Result:** Constantly evolving ambient pad textures
 
-### **Patch 4: Intermediate - Phase 2 Organic Voice Development**
+### **Patch 4: Intermediate - Advanced Organic Voice Development**
 ```
    ┌─────────────────────┐      ┌─────────────────────────┐
    │   DivKid Ochd      │      │    Erica Synths        │
@@ -168,7 +168,7 @@
                              └──────────────────────────────┘
 ```
 
-| Module Integration | Signal Flow | Purpose | Phase 2 Synergy |
+| Module Integration | Signal Flow | Purpose | Advanced Synergy |
 |-------------------|-------------|---------|------------------|
 | **Ochd LFO 1 → CV (PAR1)** | Organic parameter modulation | **Natural synthesis evolution** | **Flowing algorithm character** |
 | **Ochd LFO 3 → Algorithm Button** | Organic algorithm progression | **Smooth synthesis transitions** | **Natural voice development** |
@@ -360,13 +360,13 @@
 
 ## Pairs Well With
 
-### **Phase 2 Module Synergies (Modulation & CV Sources):**
+### **Advanced Module Synergies (Modulation & CV Sources):**
 - **DivKid Ochd & Expander:** Ochd LFOs → Pico Voice CV inputs for natural voice parameter development
 - **Make Noise Wogglebug:** Wogglebug chaos CVs → Pico Voice parameters for controlled chaos voice processing
 - **Mutable Marbles:** Marbles X/Y outputs → Pico Voice modulation for pattern-driven voice control
 - **4ms RCD v2:** RCD divisions → rhythmic voice parameter changes and algorithm switching
 - **Cre8audio Function Junction:** Function + Pico Voice = complete voice ecosystem with natural/chaos/pattern modulation
-- **Cross-Phase 2 Integration:** Pico Voice processes all Phase 2 modulation sources into unified synthesis relationships
+- **Cross-Advanced Integration:** Pico Voice processes all Advanced modulation sources into unified synthesis relationships
 
 ### **Essential Partners:**
 - **Envelope Generators:** For shaping Karplus Strong and other algorithm responses with dynamic control
@@ -465,7 +465,7 @@ Erica Synths challenged themselves: "Can we make ANY superior functionality synt
 
 ---
 
-## Phase 2 Learning Path
+## **Advanced Learning Path**
 
 ### **Recommended Study Progression:**
 1. **Start with Pico Voice fundamentals:** Master 8-algorithm operation, CV assignment, and voice synthesis concepts
@@ -480,12 +480,12 @@ Erica Synths challenged themselves: "Can we make ANY superior functionality synt
 - **Pico Voice + Wogglebug:** Master chaos-driven voice processing for controlled unpredictability in synthesis
 - **Pico Voice + Marbles:** Understand pattern-driven voice control with adaptive synthesis relationships
 - **Pico Voice + RCD:** Explore rhythmic voice parameter changes and complex algorithmic voice processing
-- **All Phase 2 + Pico Voice:** Build complete voice ecosystems with multiple modulation types processing synthesis
+- **All Advanced + Pico Voice:** Build complete voice ecosystems with multiple modulation types processing synthesis
 
 ### **Skill Development Milestones:**
 - **Beginner:** Use different algorithms and basic CV assignment for voice synthesis
 - **Intermediate:** Master parameter interaction and algorithm switching for complex voice relationships
-- **Advanced:** Create Phase 2 integration patches with organic/chaos/pattern modulation of voice parameters
+- **Advanced:** Create Advanced integration patches with organic/chaos/pattern modulation of voice parameters
 - **Expert:** Design complete voice ecosystems where Pico Voice serves as synthesis core for multiple modulation types
 
 ### **Advanced Voice Concepts:**
@@ -502,7 +502,7 @@ Erica Synths challenged themselves: "Can we make ANY superior functionality synt
 
 ---
 
-**Bottom Line:** Pico Voice proves that great synthesis doesn't require massive modules. 8 professional algorithms, intuitive control, and that "bigger than it looks" sound make this the ultimate 3HP voice.
+**Bottom Line:** Pico Voice proves that great synthesis doesn't require massive modules. 8 professional algorithms, intuitive control, and that "bigger than it looks" sound make this the ultimate 3HP voice. As an **essential creative core within Advanced ecosystems**, it enables sophisticated synthesis and signal routing while maintaining the professional performance standards essential for both studio and performance applications in the most space-efficient format possible.
 
 ---
 
