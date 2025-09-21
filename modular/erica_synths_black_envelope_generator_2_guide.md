@@ -1,6 +1,7 @@
 # Erica Synths Black Envelope Generator 2 - Guide
 
-![Modular Synthesis](https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80)
+![Erica Synths Black Envelope Generator 2](https://github.com/DGretta/Music/raw/main/modular/images/erica_synths_black_envelope_generator_2/front_panel.jpg)
+*Erica Synths Black Envelope Generator 2 - Front panel showing controls and jacks*
 
 ## Classification
 **Module Type:** Envelope Generator  
