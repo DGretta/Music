@@ -7,7 +7,7 @@
 ## Quick Start: Get Your First Drum Sound in 5 Minutes
 
 ![Erica Synths Pico DRUM2](https://github.com/DGretta/Music/raw/main/modular/images/erica_synths_pico_drum2/front_panel.jpg)
-*Erica Synths Pico DRUM2 - Front panel showing TRIGG input, CV1/CV2 inputs, parameter knobs, and MODE button*
+*Erica Synths Pico DRUM2 - Compact 8-algorithm drum synthesizer with CV parameter control and algorithmic switching*
 
 **What is Pico DRUM2?** A compact yet versatile percussion synthesizer featuring 8 distinct drum synthesis algorithms, each with 3 CV-controllable parameters, algorithm switching, and 1V/oct tuning capability - all in just 3HP.
 
