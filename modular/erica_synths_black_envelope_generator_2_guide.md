@@ -1,5 +1,15 @@
 # Erica Synths Black Envelope Generator 2 - Guide
 
+![Modular Synthesis](https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80)
+
+## Classification
+**Module Type:** Envelope Generator  
+**Manufacturer:** Erica Synths  
+**Series:** Black Series  
+**Format:** Eurorack (8HP)  
+**Unique Features:** Internal gate generator, retriggering capability, full ADSR looping mode  
+**Key Innovation:** Transforms trigger-only sequencers into full ADSR envelope sources  
+
 **The Re-triggerable ADSR with Internal Gate Generator**
 
 ---
@@ -255,37 +265,37 @@
 ## Pairs Well With
 
 ### **Advanced Module Integration (Modulation & CV Sources):**
-- **DivKid Ochd & Expander:** Natural gate length automation creates organic envelope timing - multiple LFO outputs enable complex multi-parameter envelope modulation
-- **Make Noise Wogglebug:** Chaotic gate length control creates unpredictable but musical envelope timing variations
-- **Mutable Marbles:** Adaptive trigger generation provides evolving retrigger patterns that respond to musical context
-- **Squarp Hermod+:** Sequenced trigger patterns with quantization enable precise, programmable envelope timing sequences
-- **Cre8audio Function Junction:** CV processing for envelope parameter scaling, offsetting, and complex multi-source envelope control
-- **Cross-System Integration:** EG2 serves as envelope brain transforming sophisticated modular CV generation into dynamic envelope control
+• **DivKid Ochd & Expander:** Natural gate length automation creates organic envelope timing - multiple LFO outputs enable complex multi-parameter envelope modulation
+• **Make Noise Wogglebug:** Chaotic gate length control creates unpredictable but musical envelope timing variations
+• **Mutable Marbles:** Adaptive trigger generation provides evolving retrigger patterns that respond to musical context
+• **Squarp Hermod+:** Sequenced trigger patterns with quantization enable precise, programmable envelope timing sequences
+• **Cre8audio Function Junction:** CV processing for envelope parameter scaling, offsetting, and complex multi-source envelope control
+• **Cross-System Integration:** EG2 serves as envelope brain transforming sophisticated modular CV generation into dynamic envelope control
 
 ### **Perfect Partners for Beginners:**
-- **VCA modules:** Intellijel Quad VCA, Mutable Veils for amplitude control applications
-- **Filter modules:** Any filter with CV input benefits from EG2's envelope control
-- **Oscillator pitch:** Plaits, Rings, or any oscillator for envelope-controlled pitch sweeps
-- **Trigger sources:** Simple clock dividers, basic sequencers, or manual trigger buttons
-- **Multiple outputs:** Use EG2 output for simultaneous control of multiple parameters
+• **VCA modules:** Intellijel Quad VCA, Mutable Veils for amplitude control applications
+• **Filter modules:** Any filter with CV input benefits from EG2's envelope control
+• **Oscillator pitch:** Plaits, Rings, or any oscillator for envelope-controlled pitch sweeps
+• **Trigger sources:** Simple clock dividers, basic sequencers, or manual trigger buttons
+• **Multiple outputs:** Use EG2 output for simultaneous control of multiple parameters
 
 ### **Advanced Envelope Integration:**
-- **Multiple envelope generators:** Quadrax, Maths, or other envelope generators for coordinated multi-stage envelope processing
-- **Complex VCAs:** Optomix, LxD for more sophisticated amplitude control applications
-- **Waveshaping:** Fold processors benefit from envelope-controlled waveshaping intensity
-- **Effects processing:** Envelope control over effect parameters creates dynamic processing
+• **Multiple envelope generators:** Quadrax, Maths, or other envelope generators for coordinated multi-stage envelope processing
+• **Complex VCAs:** Optomix, LxD for more sophisticated amplitude control applications
+• **Waveshaping:** Fold processors benefit from envelope-controlled waveshaping intensity
+• **Effects processing:** Envelope control over effect parameters creates dynamic processing
 
 ### **Essential Envelope Partners:**
-- **Precision timing:** Modules requiring exact envelope timing benefit from EG2's internal gate precision
-- **Retriggering applications:** Drum modules, percussion generators that need complex retriggering patterns
-- **Gate length sensitive:** Modules that respond differently to various gate lengths
-- **CV processing:** Attenuators, offsets, and mixers for envelope signal conditioning
+• **Precision timing:** Modules requiring exact envelope timing benefit from EG2's internal gate precision
+• **Retriggering applications:** Drum modules, percussion generators that need complex retriggering patterns
+• **Gate length sensitive:** Modules that respond differently to various gate lengths
+• **CV processing:** Attenuators, offsets, and mixers for envelope signal conditioning
 
 ### **Advanced System Integration:**
-- **Performance systems:** Live envelope control through CV sources and manual adjustment
-- **Generative systems:** Self-evolving envelope behavior using chaos and learning circuits
-- **Hybrid envelope processing:** Complex coordination between multiple envelope sources
-- **Educational applications:** Understanding envelope fundamentals through hands-on internal gate operation
+• **Performance systems:** Live envelope control through CV sources and manual adjustment
+• **Generative systems:** Self-evolving envelope behavior using chaos and learning circuits
+• **Hybrid envelope processing:** Complex coordination between multiple envelope sources
+• **Educational applications:** Understanding envelope fundamentals through hands-on internal gate operation
 
 ---
 
