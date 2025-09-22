@@ -205,6 +205,51 @@ Each entry includes ALL physical interface elements:
 - ✅ Understand normalization - empty mixer inputs = internal sources, patched inputs = external sources
 - ✅ Function Generator has multiple modes - SUSTAIN (ASR), TRIGGER (AD), LOOP (cycling)
 
+### Intellijel Mixup ✅
+**Manual Source**: Official Intellijel manual + Framework compliance verification
+**Verification Date**: 2025-09-22
+
+**Physical Interface:**
+- **Inputs**: IN 1 (mono input), IN 2 (mono input), IN 3L (stereo left), IN 3R (stereo right), IN 4L (unity gain), IN 4R (unity gain), CHAIN-IN (3-pin expansion header)
+- **Outputs**: MIX L (stereo left mix), MIX R (stereo right mix), CHAIN-OUT (3-pin expansion header)
+- **Knobs**: LEVEL 1 (IN 1 volume), LEVEL 2 (IN 2 volume), LEVEL 3 (IN 3L/3R volume)
+- **Buttons**: None
+- **Switches**: MUTE 1 (IN 1 on/off), MUTE 2 (IN 2 on/off), MUTE 3 (IN 3L/3R on/off)
+- **LEDs**: CLIP LED (mix bus overload indicator)
+- **Displays**: None
+- **Other**: Chainable expansion system via back-panel 3-pin connectors
+
+**Technical Specifications:**
+- **Width**: 6HP
+- **Depth**: 25mm
+- **Power**: +12V: 30mA, -12V: 20mA
+- **Audio Quality**: AC-coupled inputs and outputs, logarithmic level controls
+
+**Interface Behavior:**
+- **Signal routing**: IN 1/2 appear at both MIX L/R (mono to stereo), IN 3L→MIX L, IN 3R→MIX R (true stereo)
+- **Unity gain inputs**: IN 4L/4R bypass front panel controls, connect directly to mix bus
+- **Chain expansion**: CHAIN-OUT carries complete mix to next Mixup module via CHAIN-IN connection
+- **Mute operation**: Down position = muted, Up position = signal passes through
+- **Clip detection**: LED illuminates when sum of all inputs causes mix bus overload
+- **Level controls**: Logarithmic audio taper for smooth volume control across entire range
+
+**Operational Modes:**
+- **Standalone mixer**: Individual module for basic 3-channel stereo mixing
+- **Chainable system**: Multiple units connected via CHAIN-IN/OUT for expanded mixing
+- **Submixer**: Use as section mixer feeding larger console or interface
+- **Performance mixer**: Real-time muting and level control for live modular performance
+
+**Common Mistakes:**
+- ❌ "1/4 inch jacks" - Uses 3.5mm Eurorack standard jacks only
+- ❌ "Audio interface module" - Pure mixer, no balanced outputs or studio interface features
+- ❌ "Headphone outputs" - MIX L/R are line-level mixer outputs, not headphone amplified
+- ❌ "Chain setup errors" - CHAIN-OUT from first unit must connect to CHAIN-IN on expansion unit
+- ❌ "Individual input clipping" - CLIP LED indicates mix bus overload, not individual input saturation
+- ❌ "Stereo input on IN 1/2" - IN 1 and IN 2 are mono inputs that appear on both MIX L/R outputs
+- ✅ Use "IN 1" not "Input 1", "MIX L" not "Mix Left", "LEVEL 1" not "Level 1"
+- ✅ Chain connection requires 3-pin cable between CHAIN-OUT and CHAIN-IN headers
+- ✅ True stereo sources use IN 3L/3R, mono sources use IN 1/2 for center positioning
+
 ### Instruo Arbhar ✅
 **Manual Source**: Official Instruo manual panel diagram + Guide verification
 **Verification Date**: 2025-09-21
