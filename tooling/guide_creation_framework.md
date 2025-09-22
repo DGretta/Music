@@ -35,6 +35,21 @@
 5. **Troubleshooting** - Common issues
 6. **Pairs Well With** - Integration suggestions with alternatives
 
+### **Mandatory Framework Compliance Requirements:**
+**Based on systematic testing findings (2025-09-22) - these gaps appeared in 100% of tested guides**
+
+1. **GitHub Image Integration (MANDATORY):**
+   - **Format:** `![Module Name](https://github.com/DGretta/Music/raw/main/modular/images/[module_name]/front_panel.jpg)`
+   - **Caption:** Descriptive text about module interface and key elements
+   - **Placement:** Near top of guide after title and description
+   - **Non-negotiable:** Every guide must include proper GitHub image integration
+
+2. **Enhanced Format Alternatives (MANDATORY - ALL PATCHES):**
+   - **Required for EVERY patch:** Budget/Premium/Different character options
+   - **Format:** Main Example + Alternative Options with specific module names
+   - **Cannot be skipped:** Testing revealed systematic omission when not explicitly required
+   - **All patches means ALL patches:** No exceptions for any patch in any guide
+
 ### **Quality Requirements:**
 - **Interface accuracy** - Verify jack names against `comprehensive_interface_database.md`
 - **No fabricated terminology** - Use actual module language
@@ -115,19 +130,38 @@
 ### **For New Guides:**
 1. Determine module classification
 2. Complete workflow checklist
-3. Single comprehensive write
-4. Document results
+3. Single comprehensive write with mandatory compliance elements
+4. **Verify framework compliance** using systematic testing criteria
+5. Document results
 
 ### **For Guide Updates:**
 1. Read entire existing guide
 2. Complete workflow checklist for specific changes
-3. Targeted edits for small changes
-4. Record efficiency
+3. **Check for systematic gaps** (GitHub image + enhanced format alternatives)
+4. Targeted edits for small changes OR comprehensive compliance update
+5. Record efficiency
+
+### **Framework Compliance Verification (Added 2025-09-22):**
+**Systematic testing revealed these elements were missing from 100% of guides before framework enhancement**
+
+**Mandatory Checklist:**
+- [ ] **GitHub image integration present** with proper URL format and descriptive caption
+- [ ] **Enhanced format alternatives in ALL patches** (budget/premium/different character)
+- [ ] **Required sections complete** per module classification
+- [ ] **Interface accuracy verified** against official manuals
+- [ ] **Terminology consistency** with documented standards
+
+**Testing Evidence:**
+- **Instruo Arbhar guide:** Missing image + enhanced alternatives
+- **Instruo Cs-L guide:** Missing image + enhanced alternatives  
+- **Pattern confirmed:** Same gaps across manufacturer, indicating framework requirement emphasis needed
+- **Solution:** Mandatory compliance requirements prevent systematic omissions
 
 ### **Emergency Protocols:**
 - **File operation failure:** Stop immediately, diagnose, ask for guidance
 - **Efficiency targets missed:** Document actual performance, analyze causes
 - **Quality issues:** Address using quality system protocols
+- **Framework compliance gaps:** Use systematic testing criteria to identify and resolve
 
 ---
 
