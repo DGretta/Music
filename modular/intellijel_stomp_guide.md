@@ -7,6 +7,43 @@
 
 ---
 
+## What This Unlocks From Your Existing Gear
+
+### **Effects Pedals (The Big One):**
+- **Guitar pedals collecting dust** - Distortion, overdrive, fuzz boxes suddenly become modular processors
+- **Bass effects** - Deep, powerful processors perfect for modular's wide frequency range
+- **Boutique pedals** - That expensive Chase Bliss or Empress pedal becomes a modular effect with CV automation
+- **Vintage effects** - Classic analog choruses, phasers, delays gain new life in modular context
+- **Expression-capable pedals** - Strymon, Boss, Walrus Audio pedals with expression inputs become fully automated
+
+### **Audio Interfaces & Studio Gear:**
+- **Multi-output interfaces** - Use line outputs as modular sends, inputs as returns
+- **Mixing consoles** - Send modular to console channels, return processed signals to modular
+- **Outboard processors** - Compressors, EQs, vintage gear becomes part of modular signal chain
+- **Re-amping boxes** - Use with Stomp for professional re-amping workflows
+
+### **Instruments:**
+- **Electric guitars** - Process through modular filters, effects, sequenced patterns
+- **Bass guitars** - Low-end perfect for modular processing, sub-oscillator territory
+- **Electric pianos** - Vintage Fender Rhodes through modular effects creates new textures
+- **Synthesizers with individual outputs** - Drum machines, analog synths become modular-processable
+- **Acoustic instruments with pickups** - Kalimba, violin, sax with contact mics enter modular world
+
+### **MIDI Gear:**
+- **Controllers with expression pedals** - Become CV automation sources through Stomp's expression outputs
+- **Keyboards with aftertouch** - Dynamic control over Stomp's expression parameters
+- **Control surfaces** - Sliders and knobs can control multiple Stomp parameters via CV conversion
+
+### **Forgotten Rack Gear:**
+- **90s digital processors** - Lexicon, Yamaha, Alesis effects with character impossible to recreate
+- **Vintage preamps** - Tube and solid-state character processing
+- **Old samplers** - Individual outputs become modular sources
+- **Drum machines** - Classic rhythm boxes processed through modular effects
+
+**Discovery moment:** That pile of "guitar-only" gear suddenly becomes a modular effects library, and every expression-capable pedal becomes an automated modular processor.
+
+---
+
 ## Quick Start: Get Your First Modular-to-Pedal Chain in 5 Minutes
 
 **What is Stomp?** A specialized interface module that bridges the gap between Eurorack modular and guitar/bass pedal ecosystems, providing proper impedance matching, level conversion, and CV-controlled expression pedal automation.
