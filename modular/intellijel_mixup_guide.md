@@ -200,10 +200,10 @@
 - **External Mixers:** Analog mixing consoles receive clean, balanced signals for further processing
 - **Patch Bays:** Professional patch bays enable flexible routing with Mixup as central output hub
 
-### **Phase 2 Module Integration:**
-- **Complete Ecosystems:** Mixup serves as final output stage for complex Phase 2 patches combining organic modulation, chaos, and pattern generation
+### **Advanced Module Integration:**
+- **Complete Ecosystems:** Mixup serves as final output stage for complex Advanced patches combining organic modulation, chaos, and pattern generation
 - **Multi-Voice Systems:** Essential for routing individual voices (Plaits, QD+QEX, Loquelic) to separate channels while maintaining complete mix
-- **Performance Systems:** Enables live performance of Phase 2 ecosystems with professional audio standards
+- **Performance Systems:** Enables live performance of Advanced ecosystems with professional audio standards
 - **Recording Integration:** Professional capture of sophisticated modular content for studio production
 
 ### **Advanced System Integration:**
