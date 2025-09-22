@@ -338,6 +338,31 @@ end tell
 
 **Critical Understanding:** Framework documentation and actual practice must remain synchronized. When practice changes without documentation updates, it creates systematic inconsistency that undermines the entire framework system. Every change must be both implemented AND documented.
 
+### **13. Multi-Patch Framework Compliance Estimation Failure**
+
+**Pattern:** Systematic underestimation of framework compliance operations that require per-patch editing
+**Examples:**
+- Cs-L guide: Estimated 2 calls ("comprehensive framework compliance update"), actual 9 calls (450% error)
+- Enhanced format alternatives: Assumed single edit operation, required 6 separate patch edits
+- Framework compliance scope: Failed to account for linear scaling with patch count
+- Bundle assumption: Incorrectly assumed alternatives could be bundled across patches in single edit
+
+**Root Cause:** Misunderstanding that enhanced format alternatives require individual edit operations per patch
+**Prevention:**
+- **Use patch count formula:** Number of patches + 2 (image integration + commit)
+- **Cannot bundle:** Enhanced format alternatives across patches require separate edits
+- **Linear scaling:** Framework compliance effort scales directly with patch count
+- **Example calculation:** 6-patch guide = 6 alternative edits + 1 image + 1 commit = 8 calls
+
+**Critical Understanding:** Multi-patch enhanced format work cannot be compressed into single operations. Each patch requiring alternatives needs individual edit operation. This represents a systematic estimation methodology gap requiring formula-based calculation rather than assumption-based estimation.
+
+**Case Study Analysis:**
+- **Promised:** "2 calls (edit file + git commit)"
+- **Actual:** 8 edits + 1 commit = 9 calls total
+- **Error magnitude:** 450% estimation failure
+- **Learning integration:** Added to workflow checklist estimation standards (2025-09-22)
+- **Prevention formula:** Patches requiring alternatives + image integration + commit = total calls
+
 ---
 
 ## **Core Operational Principles**

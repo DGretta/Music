@@ -36,6 +36,13 @@
 - **Framework compliance:** 2 calls (comprehensive update + commit)
 - **Dual-device updates:** 2 calls (multiple elements in single edit + commit)
 
+**Framework Compliance Operations (Added 2025-09-22):**
+- **Multi-patch enhanced format:** Count patches + 2 (image + commit)
+- **Formula:** Number of patches requiring alternatives + 1 image integration + 1 commit
+- **Example:** 6-patch guide = 6 alternative edits + 1 image + 1 commit = 8 calls
+- **Cannot bundle:** Enhanced format alternatives across patches require individual edit operations
+- **Learned from:** Cs-L guide estimation failure (estimated 2, actual 9 calls = 450% error)
+
 **Infrastructure Operations:**
 - **File renaming:** Number of files + 1 git commit
 - **Directory standardization:** Variable based on file count + 1 commit
@@ -45,6 +52,7 @@
 - Framework compliance work
 - Any substantial content creation
 - Multiple component integration
+- Multi-patch enhanced format additions
 
 ## **Pre-Execution Verification**
 
