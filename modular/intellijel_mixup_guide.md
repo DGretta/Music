@@ -185,8 +185,8 @@
 
 **Main Example:** Two Mixup modules chained for 6-voice mixing system (standard expansion approach)
 **Alternative Options:**
-- **Budget:** Single Mixup + external submixer for basic expansion
-- **Different character:** Happy Nerding 3xMIA + Doepfer A-138m for matrix mixing approach
+- **Budget:** Single Mixup + Doepfer A-138s Stereo Mixer for basic 6-channel expansion
+- **Different character:** Happy Nerding 3xMIA + WMD/SSF Toolbox for matrix mixing approach
 - **Premium:** Multiple Intellijel Stereo Mix 1U modules in 7U case for integrated mixing system
 
 ---
@@ -194,11 +194,10 @@
 ## Pairs Well With
 
 ### **Essential Studio Partners:**
-- **Audio Interfaces:** Focusrite, RME, Universal Audio interfaces benefit from Mixup's clean level matching
-- **Studio Monitors:** Genelec, Yamaha, KRK monitors receive proper line levels from main outputs
-- **Headphones:** Professional studio headphones (Beyerdynamic, Sennheiser, Audio-Technica) work optimally with dedicated headphone amp
-- **External Mixers:** Analog mixing consoles receive clean, balanced signals for further processing
-- **Patch Bays:** Professional patch bays enable flexible routing with Mixup as central output hub
+- **Audio Interfaces:** Focusrite, RME, Universal Audio interfaces receive clean Eurorack-level signals from Mixup outputs
+- **Studio Monitors:** Genelec, Yamaha, KRK monitors work well with Mixup's unbalanced 3.5mm outputs
+- **External Mixers:** Analog mixing consoles receive Eurorack-level signals for further processing
+- **Patch Bays:** Professional patch bays enable flexible routing with Mixup as central mixing hub
 
 ### **Advanced Module Integration:**
 - **Complete Ecosystems:** Mixup serves as final output stage for complex Advanced patches combining organic modulation, chaos, and pattern generation
@@ -209,38 +208,38 @@
 ### **Advanced System Integration:**
 - **Monitor Controllers:** Professional monitor controllers receive clean signals for advanced monitoring workflows
 - **Effect Processing:** External processors receive individual channels for separate treatment
-- **Mix Bus Processing:** Analog mix bus compressors and EQs receive proper levels for professional processing
-- **Mastering Integration:** Clean signals suitable for mastering chain integration
+- **Mix Bus Processing:** Analog mix bus compressors and EQs work with Mixup's Eurorack-level outputs
+- **Recording Integration:** Clean unbalanced signals suitable for modular recording workflows
 
 ---
 
-## Phase 2 Learning Path
+## Advanced Learning Path
 
 ### **Recommended Study Progression:**
-1. **Start with basic output:** Learn proper level matching and headphone monitoring
-2. **Add multi-channel routing:** Understand separate voice outputs and recording techniques
-3. **Include studio integration:** Connect to professional audio interfaces and monitoring
-4. **Advanced signal flow:** Master complex routing for Phase 2 ecosystem recording
+1. **Start with basic mixing:** Learn proper audio mixing and signal flow management
+2. **Add multi-channel routing:** Understand separate voice outputs and routing techniques
+3. **Include system expansion:** Connect multiple Mixup modules for larger systems
+4. **Advanced signal flow:** Master complex routing for Advanced ecosystem mixing
 5. **Performance application:** Apply learned concepts to live performance scenarios
 
 ### **Cross-Module Learning Opportunities:**
-- **Output Management:** Learn to route complex Phase 2 patches professionally
-- **Studio Integration:** Understand how modular fits into professional audio workflows
-- **Professional Standards:** Apply audio engineering principles to modular systems
-- **Monitoring Techniques:** Develop proper monitoring habits for modular synthesis
+- **Mix Management:** Learn to route complex Advanced patches through expandable mixing systems
+- **System Integration:** Understand how modular mixing fits into larger audio workflows
+- **Audio Standards:** Apply audio engineering principles to modular systems
+- **Signal Flow Techniques:** Develop proper signal routing habits for modular synthesis
 
 ### **Advanced Concepts:**
-- **Balanced Signal Theory:** Understanding XLR and TRS balanced connections for noise rejection
-- **Level Management:** Proper gain staging from modular through professional audio chain
-- **Impedance Matching:** How Mixup bridges modular and professional audio impedances
-- **Signal Integrity:** Maintaining audio quality through complex routing scenarios
+- **Signal Routing Theory:** Understanding chainable mixer architecture and expansion capabilities
+- **Level Management:** Proper gain staging from modular sources through mixing systems
+- **Signal Integrity:** Maintaining audio quality through complex modular routing scenarios
+- **System Architecture:** How Mixup fits into larger modular mixing and routing systems
 
 ### **Performance Applications:**
-- **Studio Recording:** Professional techniques for capturing modular performances
-- **Live Performance:** Reliable output management for stage performances  
-- **Sound Design:** Clean monitoring for detailed sound design work
-- **Broadcast Integration:** Meeting professional broadcast standards with modular content
+- **Live Mixing:** Real-time control techniques for dynamic modular performances
+- **System Expansion:** Building larger mixing systems for complex modular setups
+- **Signal Management:** Clean routing for detailed sound design work
+- **Recording Integration:** Integrating modular mixing with recording workflows
 
 ---
 
-**Bottom Line:** Mixup isn't just an output module - it's a **professional audio bridge** that transforms your modular synthesizer into a studio-ready instrument through proper level matching, balanced outputs, and dedicated monitoring. Every connection teaches something new about professional audio standards and signal flow. As the **output brain of Phase 2 ecosystems**, it ensures that sophisticated modular content reaches recording systems and monitors with studio-quality integrity and professional reliability.
+**Bottom Line:** Mixup isn't just a simple mixer - it's a **modular mixing foundation** that combines multiple audio sources with independent control and expandable architecture through chainable connections. Every patch teaches something new about audio mixing principles and signal flow management. As the **mixing brain of Advanced ecosystems**, it ensures that sophisticated modular content is properly balanced and routed with professional-quality audio integrity and performance flexibility.
