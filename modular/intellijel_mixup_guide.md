@@ -1,202 +1,193 @@
 # Intellijel Mixup - Guide
 
-**The Modular Output Interface for Studio Integration**
+**The Chainable Stereo Audio Utility Mixer**
+
+![Intellijel Mixup](https://github.com/DGretta/Music/raw/main/modular/images/intellijel_mixup/front_panel.jpg)
+*6HP stereo audio mixer with expandable inputs, mute controls, and chainable back panel connectors for larger mixing systems*
 
 ---
 
-## Quick Start: Get Your First Modular-to-Studio Connection in 5 Minutes
+## Quick Start: Get Your First Stereo Mix in 5 Minutes
 
-**What is Mixup?** A dedicated output interface module that routes your modular synthesizer audio to external mixers, audio interfaces, and monitoring systems with proper level matching and multiple output options.
+**What is Mixup?** A versatile 6HP stereo mixer that combines multiple audio sources with independent level controls and mute switches. It can be chained with other Mixup modules to create larger mixing systems for complex modular patches.
 
-### Your First Modular Output Setup
-1. **Connect main mix** - Patch your final modular mix to Mixup's Main L/R inputs
-2. **Set output levels** - Use the main output attenuators to match your external gear
-3. **Connect to interface** - Route Main outputs to your audio interface line inputs
-4. **Monitor setup** - Connect headphones to Mixup's headphone output
-5. **Adjust headphone level** - Set comfortable monitoring level with headphone volume control
+### Your First Stereo Mix Setup
+1. **Connect audio sources** - Patch your voices into IN 1, IN 2, and IN 3L/3R inputs
+2. **Set input levels** - Use LEVEL 1, LEVEL 2, and LEVEL 3 knobs to balance your mix
+3. **Use mute controls** - MUTE 1, MUTE 2, and MUTE 3 switches for performance control
+4. **Take your mix** - Final stereo mix appears at MIX L and MIX R outputs
+5. **Monitor levels** - Watch the CLIP LED to avoid overloading the mix bus
 
-**Congratulations!** You've just created a professional modular-to-studio interface with proper level matching!
+**Congratulations!** You've just created a professional stereo mix with independent channel control!
 
 ---
 
-## Essential Parameters (The Output Controls)
+## Essential Parameters (The Mix Controls)
 
-### **1. Main L/R Inputs - The Primary Audio Inputs**
-- **What it does:** Accepts your main modular mix for output routing
-- **Character:** High-quality audio path designed for final mix processing
-- **Signal type:** Eurorack audio levels, designed for mixed content
+### **1. LEVEL 1 Knob - Input 1 Volume Control**
+- **What it does:** Controls the volume of IN 1 (mono input) sent to both MIX L and MIX R outputs
+- **Character:** Logarithmic audio taper for smooth volume control across entire range
+- **Signal routing:** IN 1 appears at both left and right mix outputs (mono to stereo)
 - **Input impedance:** Optimized for modular audio sources
-- **Pro tip:** Use these for your final stereo mix or main mono output
+- **Pro tip:** Start with moderate levels to leave headroom for additional sources
 
-### **2. Main L/R Attenuators - The Output Level Control**
-- **What it does:** Adjusts the output level sent to external gear
-- **Character:** CCW reduces level, CW increases level, 12 o'clock typically matches line level
-- **Range descriptions:** CCW (very low), 12 o'clock (line level), CW (hot output)
-- **Purpose:** Match modular levels to external mixer/interface requirements
-- **Pro tip:** Start at 12 o'clock and adjust based on your external gear's input sensitivity
+### **2. LEVEL 2 Knob - Input 2 Volume Control**
+- **What it does:** Controls the volume of IN 2 (mono input) sent to both MIX L and MIX R outputs
+- **Character:** Same logarithmic audio taper as LEVEL 1 for consistent feel
+- **Signal routing:** IN 2 appears at both left and right mix outputs (mono to stereo)
+- **Purpose:** Independent level control for second mono source
+- **Pro tip:** Use for secondary voices or modulation sources that need separate level control
 
-### **3. Aux L/R Inputs - The Secondary Audio Inputs**
-- **What it does:** Additional audio inputs for separate sources or sends
-- **Character:** Same high-quality audio path as main inputs
-- **Signal type:** Eurorack audio levels, independent from main inputs
-- **Typical usage:** Separate voice outputs, effect returns, or alternate mixes
-- **Pro tip:** Use for individual voice outputs when you need separate control
+### **3. LEVEL 3 Knob - Input 3 Stereo Volume Control**
+- **What it does:** Controls the volume of both IN 3L and IN 3R simultaneously
+- **Character:** Shared control for stereo pair with logarithmic audio taper
+- **Signal routing:** IN 3L → MIX L, IN 3R → MIX R (true stereo)
+- **Mono usage:** If only IN 3L connected, signal appears at both MIX L and MIX R
+- **Pro tip:** Perfect for stereo sources like reverb returns or stereo oscillators
 
-### **4. Aux L/R Attenuators - The Secondary Level Control**
-- **What it does:** Independent level control for auxiliary inputs
-- **Character:** Same range and behavior as main attenuators
-- **Range descriptions:** CCW (very low), 12 o'clock (line level), CW (hot output)
-- **Purpose:** Independent level matching for secondary sources
-- **Pro tip:** Allows different level settings for main mix vs individual voices
+### **4. MUTE 1 Switch - Input 1 On/Off Control**
+- **What it does:** Completely removes IN 1 from both MIX outputs when engaged (down position)
+- **Character:** Hard mute with no audio bleed-through
+- **Usage:** Performance control for bringing voices in and out of mix
+- **AC-coupled design:** Minimizes pops when muting/unmuting audio signals
+- **Pro tip:** Essential for live performance and dynamic mix changes
 
-### **5. Main Outputs (¼" TRS) - The Studio Connection**
-- **What it does:** Balanced TRS outputs for professional audio connections
-- **Character:** Clean, low-noise outputs suitable for studio equipment
-- **Signal type:** Line level, balanced for noise rejection over long cable runs
-- **Typical usage:** Connect to audio interface, mixer line inputs, or monitoring system
-- **Pro tip:** Use balanced TRS cables for best signal integrity
+### **5. MUTE 2 Switch - Input 2 On/Off Control**
+- **What it does:** Completely removes IN 2 from both MIX outputs when engaged (down position)
+- **Character:** Same hard mute behavior as MUTE 1
+- **Purpose:** Independent performance control for second mono input
+- **Operation:** Up = signal passes, Down = signal muted
+- **Pro tip:** Combine with MUTE 1 for call-and-response performance techniques
 
-### **6. Aux Outputs (¼" TRS) - The Secondary Studio Connection**
-- **What it does:** Additional balanced outputs for auxiliary audio paths
-- **Character:** Same professional quality as main outputs
-- **Signal type:** Line level, balanced, independent from main outputs
-- **Typical usage:** Separate recording channels, effect sends, or alternate monitoring
-- **Pro tip:** Enables multi-channel recording or separate processing chains
+### **6. MUTE 3 Switch - Input 3 Stereo On/Off Control**
+- **What it does:** Simultaneously mutes both IN 3L and IN 3R when engaged (down position)
+- **Character:** Shared mute control for stereo pair
+- **Purpose:** Performance control for stereo sources
+- **Behavior:** Affects both channels of stereo input simultaneously
+- **Pro tip:** Great for dropping stereo effects or textural elements during performance
 
-### **7. Headphone Output - The Personal Monitoring**
-- **What it does:** Dedicated headphone amplifier for direct monitoring
-- **Character:** Clean, powerful headphone amp suitable for studio monitoring
-- **Signal source:** Monitors the main output signal
-- **Output type:** ¼" TRS headphone jack with dedicated volume control
-- **Pro tip:** Essential for monitoring modular output without external headphone amp
+### **7. IN 4L/4R - Unity Gain Auxiliary Inputs**
+- **What they do:** Direct stereo inputs to mix bus with no level or mute control
+- **Character:** Unity gain (no amplification or attenuation)
+- **Signal routing:** IN 4L → MIX L, IN 4R → MIX R, no front panel controls
+- **Mono usage:** If only IN 4L connected, signal appears at both MIX L and MIX R
+- **Pro tip:** Use for sources that need consistent level or quick patch additions
 
-### **8. Headphone Volume - The Monitor Level Control**
-- **What it does:** Controls headphone output level independently
-- **Character:** CCW (silent), CW (maximum volume)
-- **Range:** Wide range suitable for different headphone impedances
-- **Safety feature:** Independent control prevents accidental loud monitoring
-- **Pro tip:** Set conservatively to protect hearing, especially with efficient headphones
+### **8. CLIP LED - Mix Level Indicator**
+- **What it does:** Lights when the sum of all inputs causes MIX L or MIX R to clip
+- **Character:** Indicates overload of internal mix bus before outputs
+- **Sources monitored:** All front panel inputs plus any CHAIN-IN signals
+- **Prevention:** Reduce LEVEL knobs when LED lights to maintain clean output
+- **Pro tip:** Some LED activity is acceptable, but constant lighting indicates excessive levels
 
 ---
 
 ## Beginner Patch Ideas
 
-### **Patch 1: Basic Studio Output Setup**
+### **Patch 1: Basic Stereo Mix Setup**
 ```
 ┌─────────────────┐    ┌─────────────────┐    ┌─────────────────┐
-│  Your Modular   │    │ Intellijel      │    │ Audio Interface │
-│  Final Mix      │    │ Mixup           │    │ or Mixer        │
+│ Voice 1 (Mono)  │    │ Intellijel      │    │ Audio Output    │
+│ (Oscillator)    │    │ Mixup           │    │ Destination     │
 │                 │    │                 │    │                 │
-│ L Mix Out ○─────┼────┼─ Main L Input ◀ │    │ Line Input L ◀──┼──┐
-│                 │    │                 │    │                 │  │
-│ R Mix Out ○─────┼────┼─ Main R Input ◀ │    │ Line Input R ◀──┼──┼──┐
-└─────────────────┘    │                 │    │                 │  │  │
-                       │ Main Atten: 12  │    │                 │  │  │
-                       │                 │    │                 │  │  │
-                       │ Main L Out ○────┼────┼─ ¼" TRS         │  │  │
-                       │                 │    │                 │  │  │
-                       │ Main R Out ○────┼────┼─ ¼" TRS         │  │  │
-                       │                 │    └─────────────────┘  │  │
-┌─────────────────┐    │ Headphone ○─────┼────────────────────────┼──┼──┐
-│   Headphones    │    │ Volume: 10 o'cl │                        │  │  │
-│                 │    │                 │                        │  │  │
-│ L/R Input ◀─────┼────┼─ ¼" TRS         │                        │  │  │
-└─────────────────┘    └─────────────────┘                        │  │  │
+│ Audio Out ○─────┼────┼─▶ IN 1         │    │                 │
+└─────────────────┘    │                 │    │                 │
+                       │ LEVEL 1: 2      │    │                 │
+┌─────────────────┐    │ MUTE 1: Up      │    │                 │
+│ Voice 2 (Mono)  │    │                 │    │                 │
+│ (Filter)        │    │ IN 2 ◀──────────┼────┼─ Audio In       │
+│                 │    │                 │    │                 │
+│ Audio Out ○─────┼────┼─▶ IN 2         │    │                 │
+└─────────────────┘    │                 │    │                 │
+                       │ LEVEL 2: 3      │    │                 │
+┌─────────────────┐    │ MUTE 2: Up      │    │                 │
+│ Stereo Source   │    │                 │    │                 │
+│ (Reverb)        │    │ IN 3L ◀─────────┼────┼─ L Out          │
+│                 │    │                 │    │                 │
+│ L Out ○─────────┼────┼─▶ IN 3L        │    │ MIX L ○─────────┼────┼─ To Interface  │
+│                 │    │                 │    │                 │    │                 │
+│ R Out ○─────────┼────┼─▶ IN 3R        │    │ MIX R ○─────────┼────┼─ To Interface  │
+└─────────────────┘    │                 │    │                 │    │                 │
+                       │ LEVEL 3: 2      │    │                 │    │                 │
+                       │ MUTE 3: Up      │    │                 │    │                 │
+                       │                 │    │                 │    │                 │
+                       │ CLIP LED: Off   │    │                 │    │                 │
+                       └─────────────────┘    └─────────────────┘    │                 │
 ```
 
-**Setup:** Basic stereo output routing from modular to studio equipment
-**Controls:** Main attenuators at 12 o'clock for line level, headphone volume conservatively set
-**Result:** Clean, professional audio routing with independent headphone monitoring
-**Performance:** Real-time level adjustment without affecting headphone monitoring
-**Applications:** Studio recording, live performance setup, basic monitoring needs
+**Setup:** Basic three-source stereo mixing with independent level control
+**Controls:** LEVEL knobs balance sources, MUTE switches for performance control
+**Result:** Clean stereo mix with individual source control and level monitoring
+**Performance:** Real-time muting and level adjustment for dynamic mixing
+**Applications:** Basic voice mixing, simple performance patches, submix creation
 
-### **Patch 2: Advanced - Multi-Source Phase 2 Output Management**
+**Main Example:** Mutable Plaits + Make Noise QPAS + Intellijel Rainmaker → Mixup (classic voice + filter + reverb chain)
+**Alternative Options:**
+- **Budget:** Simple oscillator + basic filter + FX Aid Pro for affordable mixing setup
+- **Different character:** Buchla complex oscillator + Morgasmatron + Magneto for West Coast mixing approach
+- **Premium:** Make Noise DPO + Optomix + Strymon Magneto for high-end modular mixing chain
+
+### **Patch 2: Advanced - Expandable Mixer Chain System**
 ```
 ┌─────────────────┐    ┌─────────────────┐    ┌─────────────────┐    ┌─────────────────┐
-│ Phase 2 Main    │    │ Intellijel      │    │ Audio Interface │    │ External Mixer  │
-│ Ecosystem Mix   │    │ Mixup           │    │ Multi-Channel   │    │ or Monitoring   │
+│ Mixup #1        │    │ Mixup #2        │    │ Audio Interface │    │ Final Output    │
+│ (Primary)       │    │ (Expansion)     │    │ or Mixer        │    │ Destination     │
 │                 │    │                 │    │                 │    │                 │
-│ Ecosystem L ○───┼────┼─ Main L Input ◀ │    │ Input 1 ◀───────┼────┼─ Main L ○       │
+│ Voice 1 → IN 1  │    │ Voice 4 → IN 1  │    │ Input L ◀───────┼────┼─ Final L        │
 │                 │    │                 │    │                 │    │                 │
-│ Ecosystem R ○───┼────┼─ Main R Input ◀ │    │ Input 2 ◀───────┼────┼─ Main R ○       │
+│ Voice 2 → IN 2  │    │ Voice 5 → IN 2  │    │ Input R ◀───────┼────┼─ Final R        │
+│                 │    │                 │    │                 │    │                 │
+│ Stereo FX→IN 3L/R│    │ Drums → IN 3L/R │    │                 │    │                 │
+│                 │    │                 │    │                 │    │                 │
+│ CHAIN-OUT ○─────┼────┼─▶ CHAIN-IN      │    │                 │    │                 │
+│                 │    │                 │    │                 │    │                 │
+│ [No direct out] │    │ MIX L ○─────────┼────┼─▶ Line Input    │    │                 │
+│                 │    │                 │    │                 │    │                 │
+│ [Feeds Mixup #2]│    │ MIX R ○─────────┼────┼─▶ Line Input    │    │                 │
 └─────────────────┘    │                 │    │                 │    │                 │
-                       │ Main Atten: 1   │    │ Input 3 ◀───────┼────┼─ Aux L ○        │
-┌─────────────────┐    │                 │    │                 │    │                 │
-│ Individual      │    │ Aux L Input ◀───┼────┼─ Lead Voice     │    │ Input 4 ◀───────┼────┼─ Aux R ○        │
-│ Voice Outputs   │    │                 │    │ (Plaits)        │    │                 │    │                 │
-│                 │    │ Aux R Input ◀───┼────┼─ Drum Voice     │    │                 │    │                 │
-│ Lead Voice ○────┼────┼─ Aux L Input    │    │ (QD+QEX)        │    │                 │    │                 │
-│                 │    │                 │    │                 │    │                 │    │                 │
-│ Drum Voice ○────┼────┼─ Aux R Input    │    │ Aux Atten: 2    │    │                 │    │                 │
-└─────────────────┘    │                 │    │                 │    │                 │    │                 │
-                       │ Main L Out ○────┼────┼─ ¼" TRS         │    │                 │    │                 │
-┌─────────────────┐    │                 │    │                 │    │                 │    │                 │
-│   Studio        │    │ Main R Out ○────┼────┼─ ¼" TRS         │    │                 │    │                 │
-│   Monitors      │    │                 │    │                 │    │                 │    │                 │
-│                 │    │ Aux L Out ○─────┼────┼─ ¼" TRS         │    │                 │    │                 │
-│ L Monitor ◀─────┼────┼─ From Mixer     │    │                 │    │                 │    │                 │
-│                 │    │                 │    │ Aux R Out ○─────┼────┼─ ¼" TRS         │    │                 │
-│ R Monitor ◀─────┼────┼─ From Mixer     │    │                 │    │                 │    │                 │
-└─────────────────┘    │                 │    └─────────────────┘    │                 │    │                 │
-                       │                 │                           │                 │    │                 │
-┌─────────────────┐    │ Headphone ○─────┼──────────────────────────┼─ Monitor Mix    │    │                 │
-│   Headphones    │    │ Volume: 11 o'cl │                          │                 │    │                 │
-│                 │    │                 │                          │                 │    │                 │
-│ L/R Input ◀─────┼────┼─ ¼" TRS         │                          │                 │    │                 │
-└─────────────────┘    └─────────────────┘                          └─────────────────┘    │                 │
-                                                                                            │                 │
-                       ┌─────────────────────────────────────────────────────────────────┼─ Control Room   │
-                       │                                                                 │  Monitoring      │
-                       │ Professional Studio Integration:                                │                 │
-                       │ • Main outputs: Complete Phase 2 ecosystem mix                 │                 │
-                       │ • Aux outputs: Individual voices for separate processing       │                 │
-                       │ • Multi-channel recording capability                           │                 │
-                       │ • Independent headphone monitoring                             │                 │
-                       │ • External mixer integration for advanced control              │                 │
-                       └─────────────────────────────────────────────────────────────────┘                 │
+                       │ Combined Signal │    │                 │    │                 │
+┌─────────────────┐    │ = All 6 voices  │    │                 │    │                 │
+│ Performance     │    │ + Both FX       │    │                 │    │                 │
+│ Control         │    │ + Individual    │    │                 │    │                 │
+│                 │    │   Level/Mute    │    │                 │    │                 │
+│ MUTE 1-3 ◀──────┼────┼─ Real-time Mix  │    │                 │    │                 │
+│ LEVEL 1-3 ◀─────┼────┼─ Control        │    │                 │    │                 │
+└─────────────────┘    └─────────────────┘    └─────────────────┘    └─────────────────┘
 ```
 
 **Module Integration:**
-| Integration | Signal Flow | Purpose | Phase 2 Synergy |
+| Integration | Signal Flow | Purpose | Advanced Synergy |
 |-------------|-------------|---------|------------------|
-| **Main Mix → Mixup** | Complete ecosystem → Main outputs | **Professional studio routing** | **Clean final output for complex patches** |
-| **Individual Voices → Aux** | Separate sources → Aux outputs | **Multi-channel recording** | **Independent processing of Phase 2 elements** |
-| **Mixup → Interface** | Balanced outputs → Recording system | **Professional signal integrity** | **Studio-quality capture of modular content** |
-| **Mixup → Monitoring** | Headphone output → Direct monitoring | **Real-time feedback** | **Immediate assessment of complex patches** |
+| **Mixup #1 → Mixup #2** | CHAIN-OUT → CHAIN-IN | **Serial expansion** | **Transparent signal flow** |
+| **Individual Sources** | Voices → separate inputs | **Independent control** | **Performance flexibility** |
+| **Combined Output** | All sources → final mix | **Unified output** | **Professional signal management** |
+| **Live Control** | Mute/Level controls | **Real-time mixing** | **Performance-ready operation** |
 
 **Setup Instructions:**
-- **Main Inputs:** Complete Phase 2 ecosystem mix (organic + chaos + patterns + voices)
-- **Main Attenuators:** 1 o'clock for slightly hot signal to interface
-- **Aux Inputs:** Individual voice outputs for separate recording channels
-- **Aux Attenuators:** 2 o'clock for individual voice prominence
-- **Output Routing:** Main to primary recording, Aux to secondary channels
-- **Monitoring:** Headphone mix from main outputs for real-time assessment
+- **Mixup #1:** Primary voices and stereo effects with individual level control
+- **Mixup #2:** Additional voices and drum sources for expanded mixing
+- **Chain Connection:** 3-pin link cable from Mixup #1 CHAIN-OUT to Mixup #2 CHAIN-IN
+- **Final Output:** Mixup #2 provides combined mix of all six voices plus effects
+- **Performance Control:** All individual mute and level controls remain functional
 
-**Advanced Studio Integration:**
-- **Multi-channel recording:** Capture both full mix and individual elements simultaneously
-- **Separate processing chains:** Process complete mix and individual voices differently
-- **Professional monitoring:** Clean headphone feed independent of recording levels
-- **External mixer integration:** Route to professional mixer for additional control
-- **Signal integrity:** Balanced outputs maintain quality over long cable runs
+**Advanced Mixing System:**
+- **Expandable inputs:** Up to 6 independent mono sources plus 2 stereo sources
+- **Independent control:** Each input maintains individual level and mute control
+- **Clean signal path:** Audio-grade components throughout chain for professional quality
+- **Performance ready:** Real-time mixing control for live performance applications
+- **Studio integration:** Professional output suitable for recording or further processing
 
 **Learning Objectives:**
-- **Professional audio standards:** Understanding balanced signals and proper level matching
-- **Multi-channel workflow:** Managing complex modular content in studio environment
-- **Phase 2 system output:** Proper routing of sophisticated modular ecosystems
-- **Studio integration:** Connecting modular systems to professional audio workflows
-- **Monitoring best practices:** Safe and effective modular monitoring techniques
+- **Signal routing:** Understanding chainable mixer architecture and signal flow
+- **System expansion:** Building larger mixing systems from modular components
+- **Performance mixing:** Real-time control techniques for dynamic mixing
+- **Professional audio:** Clean signal management and studio integration practices
 
-**Alternative Approaches:**
-- **Simpler setup:** Use only main outputs for basic stereo recording
-- **Expanded routing:** Add external patch bay for more complex routing options
-- **Monitor mixing:** Use external monitor controller for advanced monitoring
-- **Direct monitoring:** Connect some sources directly to interface for comparison
-
-**Performance Applications:**
-- **Studio Recording:** Professional capture of Phase 2 ecosystem performances
-- **Live Performance:** Reliable output for live modular performances
-- **Sound Design:** Clean monitoring for detailed sound design work
-- **Mixing Integration:** Seamless integration with traditional mixing workflows
+**Main Example:** Two Mixup modules chained for 6-voice mixing system (standard expansion approach)
+**Alternative Options:**
+- **Budget:** Single Mixup + external submixer for basic expansion
+- **Different character:** Happy Nerding 3xMIA + Doepfer A-138m for matrix mixing approach
+- **Premium:** Multiple Intellijel Stereo Mix 1U modules in 7U case for integrated mixing system
 
 ---
 
