@@ -141,21 +141,27 @@
 4. Targeted edits for small changes OR comprehensive compliance update
 5. Record efficiency
 
-### **Framework Compliance Verification (Added 2025-09-22):**
-**Systematic testing revealed these elements were missing from 100% of guides before framework enhancement**
+### **Framework Compliance Verification (Enhanced 2025-09-22):**
+**Comprehensive verification checklist - systematic testing revealed tunnel vision failures when verification was incomplete**
 
-**Mandatory Checklist:**
+**Mandatory Checklist (ALL Requirements):**
 - [ ] **GitHub image integration present** with proper URL format and descriptive caption
 - [ ] **Enhanced format alternatives in ALL patches** (budget/premium/different character)
-- [ ] **Required sections complete** per module classification
+- [ ] **Terminology consistency** - "Advanced" not "Phase 2" throughout entire guide
+- [ ] **Required sections complete** per module classification (Quick Start, Essential Parameters, etc.)
 - [ ] **Interface accuracy verified** against official manuals
-- [ ] **Terminology consistency** with documented standards
+- [ ] **Language standards applied** - circuit-based descriptions, exact manufacturer terminology
+- [ ] **Visual standards compliance** - signal coding, ASCII symbols, module boxes
+- [ ] **Historical context appropriateness** - included when educationally valuable, properly integrated
+- [ ] **Cross-references functional** - links to other guides work correctly
+- [ ] **Educational progression clear** - learning objectives and skill development milestones
 
-**Testing Evidence:**
-- **Instruo Arbhar guide:** Missing image + enhanced alternatives
-- **Instruo Cs-L guide:** Missing image + enhanced alternatives  
-- **Pattern confirmed:** Same gaps across manufacturer, indicating framework requirement emphasis needed
-- **Solution:** Mandatory compliance requirements prevent systematic omissions
+**Testing Evidence & Tunnel Vision Prevention:**
+- **Instruo Arbhar guide:** Missing image + enhanced alternatives + terminology violations
+- **Instruo Cs-L guide:** Missing image + enhanced alternatives + terminology violations  
+- **Pattern:** Tunnel vision on specific gaps missed comprehensive framework verification
+- **Solution:** Complete checklist prevents partial compliance claims
+- **Critical understanding:** "Framework compliance" means ALL requirements, not just targeted fixes
 
 ### **Emergency Protocols:**
 - **File operation failure:** Stop immediately, diagnose, ask for guidance

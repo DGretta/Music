@@ -352,13 +352,13 @@ This represents **advanced West Coast consciousness** - where organic breathing,
 
 ## Pairs Well With
 
-### **Phase 2 Module Synergies (Modulation & CV Sources):**
+### **Advanced Module Synergies (Modulation & CV Sources):**
 - **DivKid Ochd & Expander:** Ochd LFOs → Cs-L CV inputs for organic breathing West Coast synthesis
 - **Make Noise Wogglebug:** Wogglebug chaos CVs → Cs-L parameters for controlled chaos West Coast processing  
 - **Mutable Marbles:** Marbles X/Y outputs → Cs-L modulation for AI-driven West Coast control
 - **4ms RCD v2:** RCD divisions → Cs-L triggers for polyrhythmic West Coast sequencing
 - **Cre8audio Function Junction:** Function + Cs-L = complete West Coast ecosystem with complex modulation
-- **Cross-Phase 2 Integration:** Cs-L processes all Phase 2 modulation sources into unified West Coast synthesis
+- **Cross-Advanced Integration:** Cs-L processes all Advanced modulation sources into unified West Coast synthesis
 
 ### **Perfect Partners for Beginners:**
 - **Low Pass Gate (Optomix, Cinnamon):** Classic pairing for West Coast synthesis - shaped dynamics
@@ -384,11 +384,11 @@ This represents **advanced West Coast consciousness** - where organic breathing,
 - **Logic modules:** Combine Cs-L triggers and gates for complex West Coast timing relationships
 - **Phase 1 modules:** Cs-L integrates perfectly with Plaits, Maths, and other core synthesis modules
 
-### **Pro Tip:** Cs-L excels as a **complete voice** on its own - unlike simple oscillators, it can create full, evolving tones without needing filters or extensive modulation. Perfect as the centerpiece of a small West Coast system or as the synthesis brain of a complete Phase 2 ecosystem.
+### **Pro Tip:** Cs-L excels as a **complete voice** on its own - unlike simple oscillators, it can create full, evolving tones without needing filters or extensive modulation. Perfect as the centerpiece of a small West Coast system or as the synthesis brain of a complete Advanced ecosystem.
 
 ---
 
-## Phase 2 Learning Path
+## Advanced Learning Path
 
 ### **Recommended Study Progression:**
 1. **Start with Cs-L fundamentals:** Master wavefolding, FM synthesis, and complex oscillator mathematics
@@ -403,12 +403,12 @@ This represents **advanced West Coast consciousness** - where organic breathing,
 - **Cs-L + Wogglebug:** Master chaos-driven wavefolding and FM for controlled unpredictability in West Coast systems
 - **Cs-L + Marbles:** Understand AI-driven West Coast synthesis with learning harmonic relationships
 - **Cs-L + RCD:** Explore polyrhythmic triggering of West Coast voices and complex timing relationships
-- **All Phase 2 + Cs-L:** Build complete West Coast ecosystems with multiple modulation intelligence types
+- **All Advanced + Cs-L:** Build complete West Coast ecosystems with multiple modulation intelligence types
 
 ### **Skill Development Milestones:**
 - **Beginner:** Use individual oscillators for basic wavefolding and FM bell tones
 - **Intermediate:** Master INDEX system and cross-modulation for complex harmonic relationships
-- **Advanced:** Create Phase 2 integration patches with organic/chaos/AI modulation of West Coast parameters
+- **Advanced:** Create Advanced integration patches with organic/chaos/AI modulation of West Coast parameters
 - **Expert:** Design complete West Coast ecosystems where Cs-L serves as synthesis brain for multiple intelligence types
 
 ### **Advanced West Coast Concepts:**
@@ -425,7 +425,7 @@ This represents **advanced West Coast consciousness** - where organic breathing,
 
 ---
 
-**Bottom Line:** Cs-L isn't just a complex oscillator - it's a **West Coast synthesis processor** that transforms simple CV into rich harmonic complexity through mathematical wavefolding relationships. Every patch teaches you something new about how complex oscillator synthesis really works. As the **synthesis brain of Phase 2 ecosystems**, it transforms organic breathing, controlled chaos, and artificial intelligence into unified West Coast musical mathematics.
+**Bottom Line:** Cs-L isn't just a complex oscillator - it's a **West Coast synthesis processor** that transforms simple CV into rich harmonic complexity through mathematical wavefolding relationships. Every patch teaches you something new about how complex oscillator synthesis really works. As the **synthesis brain of Advanced ecosystems**, it transforms organic breathing, controlled chaos, and artificial intelligence into unified West Coast musical mathematics.
 
 ---
 

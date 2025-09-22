@@ -43,6 +43,15 @@
 3. **Verify technical specifications** - power, voltage, frequency ranges against official specs
 4. **Check operational descriptions** - ensure guide instructions match manual procedures
 5. **Validate configuration details** - settings, modes, and special functions accurately described
+6. **COMPREHENSIVE FRAMEWORK COMPLIANCE** - verify ALL documented standards (added 2025-09-22)
+   - **GitHub image integration** with proper format and caption
+   - **Enhanced format alternatives** in every patch (budget/premium/different character)
+   - **Terminology consistency** - "Advanced" not "Phase 2" throughout guide
+   - **Language standards** - circuit-based descriptions, manufacturer terminology
+   - **Visual standards** - signal coding, ASCII symbols, module boxes
+   - **Educational progression** - clear learning objectives and skill milestones
+   - **Historical context appropriateness** - when educationally valuable
+   - **Cross-reference functionality** - all guide links work correctly
 
 **Documentation Sources (Priority Order):**
 1. **Official manufacturer manual** (primary source)
@@ -143,6 +152,16 @@
 - [ ] **Technical specifications verified against manual**
 - [ ] **Operational procedures verified against manual**
 - [ ] **Configuration details verified against manual**
+
+**Framework Standards Verification (Enhanced 2025-09-22):**
+- [ ] **GitHub image integration** - proper URL format and descriptive caption
+- [ ] **Enhanced format alternatives** - budget/premium/different character in ALL patches
+- [ ] **Terminology consistency** - "Advanced" not "Phase 2" throughout entire guide
+- [ ] **Language standards compliance** - circuit-based descriptions, manufacturer terminology
+- [ ] **Visual standards applied** - signal coding, ASCII symbols, module boxes
+- [ ] **Educational progression present** - learning objectives and skill development milestones
+- [ ] **Historical context appropriate** - included when educationally valuable, properly integrated
+- [ ] **Cross-references functional** - all guide links work correctly
 
 **Visual Reference Verification:**
 - [ ] **Front panel image shows actual module interface**
