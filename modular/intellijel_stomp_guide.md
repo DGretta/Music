@@ -2,6 +2,9 @@
 
 **The Eurorack-to-Pedal Bridge with Expression Control**
 
+![Intellijel Stomp](https://github.com/DGretta/Music/raw/main/modular/images/intellijel_stomp/front_panel.jpg)
+*Intellijel Stomp - Effects pedal send/return module with expression control and built-in LFO for automated pedal parameter control*
+
 ---
 
 ## Quick Start: Get Your First Modular-to-Pedal Chain in 5 Minutes
@@ -87,6 +90,13 @@
 **Result:** Warm synthesis processed through vintage tape echo emulation
 **Performance:** Real-time MIX control blends clean synthesis with processed echo
 
+**Alternative Module Options:**
+- **Instead of Mutable Plaits:** Try Noise Engineering Loquelic Iteritas for complex harmonic content, or Erica Synths Pico Voice for compact 8-algorithm synthesis
+- **Budget alternatives:** 2HP Pluck provides simple synthesis, Doepfer A-110-1 offers classic VCO tones
+- **Different character:** Make Noise 0-Coast for West Coast synthesis, Instruo Cs-L for pure sine wave fundamentals
+- **Instead of Boss RE-202:** Try Strymon El Capistan for premium tape echo, or TC Electronic Flashback for budget digital delay
+- **Premium pedal:** Empress Echosystem for comprehensive delay algorithms, Chase Bliss Thermae for pitch-shifting delays
+
 ### **Patch 2: Guitar Input with Modular Processing**
 ```
 ┌─────────────────┐    ┌─────────────────┐    ┌─────────────────┐
@@ -109,6 +119,12 @@
 **Result:** Guitar processed through Soviet-style analog filtering
 **Performance:** Live filter cutoff control transforms guitar tone in real-time
 
+**Alternative Module Options:**
+- **Instead of Erica Synths Black Polivoks VCF:** Try Make Noise STO for aggressive resonance, or Intellijel Morgasmatron for stereo filtering
+- **Budget alternatives:** Doepfer A-120 provides classic Moog-style filtering, 2HP VCF offers compact lowpass filtering
+- **Different character:** WMD/SSF Pole-Zero for unique filter topology, Rossum Electro-Music Evolution for digital precision
+- **Premium options:** Mannequins Sisters for complex filter relationships, Verbos Electronics Multi-Delay for pristine analog filtering
+
 ### **Patch 3: Dual Pedal Chain Integration**
 ```
 ┌─────────────────┐    ┌─────────────────┐    ┌─────────────────┐    ┌─────────────────┐
@@ -129,6 +145,14 @@
 **Controls:** El Capistan time/feedback, Julianna rate/depth for layered time-based effects
 **Result:** Complex synthesis processed through professional-grade time-based effect chain
 **Performance:** Stomp MIX control balances dry synthesis against processed effect chain
+
+**Alternative Module Options:**
+- **Instead of Noise Engineering Loquelic Iteritas:** Try Mutable Instruments Braids for versatile synthesis algorithms, or Instruo Arbhar for granular textures
+- **Budget alternatives:** Erica Synths Pico Voice provides 8 algorithms, 2HP Bell offers simple FM synthesis
+- **Different character:** Make Noise STO for pure sine wave fundamentals, Verbos Complex Oscillator for West Coast approach
+- **Instead of Strymon El Capistan:** Try Boss RE-202 for classic space echo, or TC Electronic Flashback for budget digital delay
+- **Instead of Walrus Audio Julianna:** Try Boss CE-2W for vintage chorus, or EHX Small Clone for budget analog chorus
+- **Premium pedal chain:** Empress Reverb + Chase Bliss Warped Vinyl for ultimate time-based processing
 
 ### **Patch 4: Expression Pedal Integration**
 ```
@@ -153,135 +177,31 @@
 **Result:** Automated multi-effect processing with cyclical parameter changes
 **Performance:** Real-time LFO rate adjustment creates different automation characters
 
----
+**Alternative Module Options:**
+- **Instead of Make Noise Plaits:** Try Mutable Instruments Braids for algorithm variety, or Erica Synths Pico Voice for compact synthesis
+- **Budget alternatives:** Doepfer A-110-1 provides classic VCO tones, 2HP Pluck offers simple synthesis
+- **Different character:** Instruo Cs-L for pure sine fundamentals, Make Noise STO for aggressive harmonic content
+- **Instead of Behringer FX600:** Try Boss RV-6 for expression-controlled reverb, or Zoom MS-50G for expression-controlled multi-effects
+- **Premium pedal:** Strymon BigSky for comprehensive expression-controlled reverbs, Empress Zoia for programmable expression control
 
-### **Patch 5: Intermediate - Expression Pedal Automation**
-```
-┌─────────────────┐    ┌─────────────────┐    ┌─────────────────┐    ┌─────────────────┐
-│   DivKid Ochd   │    │ Intellijel Stomp│    │ Strymon El      │    │  Take 5 Analog  │
-│   & Expander    │    │                 │    │ Capistan        │    │  Synthesizer    │
-│                 │    │ LEVEL: LINE     │    │ Tape Echo       │    │                 │
-│ LFO 1 ○─────────┼────┼─ CV Input ◀     │    │                 │    │ Audio Out ○─────┼──┐
-│ (Slow)          │    │                 │    │ Expression ◀────┼────┼─ Expression ○   │  │
-└─────────────────┘    │ EXPR LEVEL: 10  │    │ (Tape Speed)    │    └─────────────────┘  │
-                       │                 │    │                 │                         │
-                       │ ¼" SEND ○───────┼────┼─ Input ◀        │                         │
-                       │                 │    │                 │                         │
-                       │ MIX: 2 o'clock  │    │ Output ○────────┼──┐                      │
-                       │                 │    └─────────────────┘  │                      │
-                       │ ¼" RETURN ◀─────┼───────────────────────┘                      │
-                       │                 │                                                │
-                       │ Audio Out ○─────┼────────────────────────────────────────────────┘
-                       └─────────────────┘
-```
 
-**Module Integration:**
-| Module Integration | Signal Flow | Purpose | Phase 2 Synergy |
-|-------------------|-------------|---------|------------------|
-| **Ochd → Stomp** | LFO CV → Expression scaling | **Automated tape speed control** | **Natural timing variations** |
-| **Take 5 → Stomp** | Analog synthesis → Send | **Source signal processing** | **Rich analog tones for processing** |
-| **Stomp → El Capistan** | Expression CV → Tape parameters | **Automated vintage effects** | **Musical timing automation** |
-
-### **Patch 6: Advanced - Chaos Expression Mathematics**
-```
-┌─────────────────┐    ┌─────────────────┐    ┌─────────────────┐    ┌─────────────────┐
-│ Make Noise      │    │ Intellijel Stomp│    │ Walrus Audio    │    │ Boss RE-202     │
-│ Wogglebug       │    │                 │    │ Julianna        │    │ Space Echo      │
-│                 │    │ LEVEL: LINE     │    │ Chorus/Vibrato  │    │                 │
-│ Smooth ○────────┼────┼─ CV Input ◀     │    │                 │    │ Input ◀─────────┼──┐
-│                 │    │                 │    │ Expression ◀────┼────┼─ Expression ○   │  │
-│ Stepped ○───────┼──┐ │ EXPR LEVEL: 1   │    │ (Rate/Depth)    │    └─────────────────┘  │
-└─────────────────┘  │ │                 │    │                 │                         │
-                     │ │ ¼" SEND ○───────┼────┼─ Input ◀        │                         │
-┌─────────────────┐  │ │                 │    │                 │                         │
-│  Noise Eng.     │  │ │ MIX: 3 o'clock  │    │ Output ○────────┼──┐                      │
-│  Loquelic       │  │ │                 │    └─────────────────┘  │                      │
-│  Iteritas       │  │ │ ¼" RETURN ◀─────┼───────────────────────┘                      │
-│                 │  │ │                 │                                                │
-│ Audio Out ○─────┼──┘ │ Audio Out ○─────┼────────────────────────────────────────────────┘
-└─────────────────┘    └─────────────────┘
-```
-
-**Module Integration:**
-| Module Integration | Signal Flow | Purpose | Phase 2 Synergy |
-|-------------------|-------------|---------|------------------|
-| **Wogglebug → Stomp** | Chaos CV → Expression scaling | **Unpredictable modulation** | **Mathematical randomness control** |
-| **Loquelic → Stomp** | Complex synthesis → Send | **Rich harmonic source** | **Chaos-processed complex tones** |
-| **Stomp → Julianna** | Expression CV → Chorus parameters | **Chaotic modulation effects** | **Unpredictable texture evolution** |
-
-### **Patch 7: Expert - Complete Expression Control Ecosystem**
-```
-┌─────────────────┐    ┌─────────────────┐    ┌─────────────────┐    ┌─────────────────┐
-│ Squarp Hermod+  │    │   MetaModule    │    │ Cre8audio       │    │ Intellijel Stomp│
-│                 │    │                 │    │ Function        │    │                 │
-│ CV Track 1 ○────┼────┼─ CV Input A ◀   │    │ Junction        │    │ LEVEL: LINE     │
-│ (Sequences)     │    │                 │    │                 │    │                 │
-│                 │    │ Fundamental     │    │ Input A ◀───────┼────┼─ CV A ○         │
-│ CV Track 2 ○────┼──┐ │ VCO Plugin      │    │                 │    │                 │
-│ (Quantized)     │  │ │                 │    │ Attenuvert A ○──┼────┼─ CV Input ◀     │
-│                 │  │ │ CV Output ○─────┼────┼─ Input B ◀      │    │                 │
-│ Trigger Out ○───┼──┼─┼─ Trig Input ◀   │    │                 │    │ EXPR LEVEL: 2   │
-└─────────────────┘  │ │                 │    │ Sum Output ○────┼────┼─ CV B Input ◀   │
-                     │ │ Audio Out ○─────┼──┐ │                 │    │                 │
-                     │ └─────────────────┘  │ │ Offset ○────────┼────┼─ MIX CV ◀       │
-                     │                      │ └─────────────────┘    │                 │
-                     │ ┌─────────────────┐  │                        │ Expression A ○──┼──┐
-                     │ │  Strymon El     │  │                        │                 │  │
-                     │ │  Capistan       │  │                        │ Expression B ○──┼──┼──┐
-                     │ │  Tape Echo      │  │                        │                 │  │  │
-                     │ │                 │  │                        │ ¼" SEND ○───────┼──┼──┼──┐
-                     │ │ Expression A ◀──┼──┼────────────────────────┼─ Expression A   │  │  │  │
-                     │ │ (Tape Speed)    │  │                        │                 │  │  │  │
-                     │ │                 │  │                        │ Audio Out ○─────┼──┼──┼──┼──▶
-                     │ │ Input ◀─────────┼──┼────────────────────────┼─ ¼" SEND        │  │  │  │
-                     │ │                 │  │                        └─────────────────┘  │  │  │
-                     │ │ Output ○────────┼──┼──┐                                          │  │  │
-                     │ └─────────────────┘  │  │                                          │  │  │
-                     │                      │  │ ┌─────────────────┐                     │  │  │
-                     │                      │  │ │ Walrus Audio    │                     │  │  │
-                     │                      │  │ │ Julianna        │                     │  │  │
-                     │                      │  │ │ Chorus/Vibrato  │                     │  │  │
-                     │                      │  │ │                 │                     │  │  │
-                     │                      │  │ │ Expression B ◀──┼─────────────────────┘  │  │
-                     │                      │  │ │ (Rate & Depth)  │                        │  │
-                     │                      │  │ │                 │                        │  │
-                     │                      │  └─┼─ Input ◀        │                        │  │
-                     │                      │    │                 │                        │  │
-                     │                      │    │ Output ○────────┼────────────────────────┘  │
-                     │                      │    └─────────────────┘                           │
-                     │                      │                                                  │
-                     └──────────────────────┼──────────────────────────────────────────────────┘
-                                            │
-                     ┌─────────────────┐    │
-                     │ Intellijel Stomp│    │
-                     │ (Return Path)   │    │
-                     │                 │    │
-                     │ ¼" RETURN ◀─────┼────┘
-                     │                 │
-                     │ MIX: CV Control │
-                     │                 │
-                     │ Final Out ○─────┼──▶ Back to Modular
-                     └─────────────────┘
-```
-
-**Complete System Integration:**
-| Layer | Function | Stomp Role | Musical Result |
-|-------|----------|------------|----------------|
-| **Sequencing (Hermod+)** | Programmed patterns | **CV source coordination** | **Structured expression automation** |
-| **Synthesis (MetaModule)** | Fundamental VCO plugin | **Signal source processing** | **Controlled harmonic content** |
-| **Processing (Function Junction)** | CV manipulation | **Expression scaling/offset** | **Precise parameter control** |
-| **Expression (Stomp)** | Multi-pedal automation | **System brain** | **Coordinated pedal ecosystem** |
 
 ---
 
 ## Pairs Well With
 
-### **Phase 2 Module Synergies (Modulation & CV Sources):**
-- **DivKid Ochd & Expander:** Coordinated LFO automation for natural expression pedal timing
-- **Make Noise Wogglebug:** Chaos-controlled expression automation creates unpredictable but musical pedal parameter evolution
+### **Advanced Module Synergies (Modulation & CV Sources):**
+- **DivKid Ochd & Expander:** Coordinated LFO automation for natural expression pedal timing - slow LFO rates create musical tape speed variations
+- **Make Noise Wogglebug:** Chaos-controlled expression automation creates unpredictable but musical pedal parameter evolution - smooth and stepped outputs provide different automation characters
 - **Mutable Marbles:** Learning circuits provide adaptive expression pedal automation that evolves with musical context
-- **Squarp Hermod+:** Sequenced expression control with quantization enables precise, programmed pedal automation sequences
-- **Cre8audio Function Junction:** CV processing for expression voltage scaling, offsetting, and complex multi-source expression control
+- **Squarp Hermod+:** Sequenced expression control with quantization enables precise, programmed pedal automation sequences - CV tracks can automate multiple pedal parameters simultaneously
+- **Cre8audio Function Junction:** CV processing for expression voltage scaling, offsetting, and complex multi-source expression control - essential for multi-pedal automation ecosystems
+
+### **Advanced Integration Concepts:**
+- **Expression Pedal Automation:** Use Stomp's internal LFO or external CV sources to automate expression-capable pedals (Strymon, Boss, Walrus Audio)
+- **Chaos Expression Mathematics:** Integrate Wogglebug chaos outputs for unpredictable but musical pedal parameter evolution
+- **Complete Expression Ecosystems:** Combine Hermod+ sequencing, MetaModule synthesis, Function Junction CV processing, and multiple expression-capable pedals for comprehensive automated effect chains
+- **Multi-Pedal Coordination:** Use Function Junction to scale and offset multiple CV sources for coordinated expression control across pedal chains
 
 ### **Perfect Partners for Beginners:**
 - **Mutable Plaits:** Rich synthesis source that benefits from pedal processing character
@@ -296,7 +216,7 @@
 
 ---
 
-## Phase 2 Learning Path
+## Advanced Learning Path
 
 ### **Recommended Study Progression:**
 1. **Start with Stomp fundamentals:** Understanding impedance matching, level conversion, and send/return concepts
@@ -310,7 +230,7 @@
 - **Stomp + Ochd:** Natural timing automation for musical expression pedal control
 - **Stomp + Wogglebug:** Mathematical chaos applied to expression pedal automation
 - **Stomp + Hermod+:** Sequenced expression automation with quantization and programming capabilities
-- **All Phase 2 + Stomp:** Complete ecosystem enabling sophisticated pedal automation within modular systems
+- **Advanced ecosystem integration:** Complete system enabling sophisticated pedal automation within modular systems
 
 ### **Advanced Expression Control Concepts:**
 - **Impedance Theory:** Understanding high-Z vs low-Z, instrument vs line levels, and proper signal matching
@@ -319,4 +239,4 @@
 
 ---
 
-**Bottom Line:** Stomp isn't just an interface - it's a **bridge processor** that transforms modular CV generation into expression pedal automation through proper impedance conversion and level management. Every patch teaches something new about how signal flow and impedance matching really work. As the **expression automation brain of Phase 2 ecosystems**, it transforms organic modulation, controlled chaos, and pattern learning into unified pedal expression control that bridges the modular and pedal worlds seamlessly.
+**Bottom Line:** Stomp isn't just an interface - it's a **bridge processor** that transforms modular CV generation into expression pedal automation through proper impedance conversion and level management. Every patch teaches something new about how signal flow and impedance matching really work. As the **expression automation brain of advanced ecosystems**, it transforms organic modulation, controlled chaos, and pattern learning into unified pedal expression control that bridges the modular and pedal worlds seamlessly.
