@@ -360,43 +360,12 @@
 
 ### **Patch 4: Mermaid Test
 ```mermaid
-flowchart TB
-  %% Modules
-  OCHD[DivKid Ochd<br/>(Organic LFOs)]
-  WOG[Make Noise Wogglebug<br/>(Chaos)]
-  MARB[Mutable Marbles<br/>(AI)]
-  PLAITS[Mutable Plaits<br/>(Synthesis)]
-  MATHS[Maths<br/>(Mathematical Brain)]
-  OUT[Complete Musical Ecosystem<br/>Organic + Chaos + AI + Maths = Evolution]
-
-  %% OCHD outputs
-  OCHD -->|LFO 1| WOG
-  OCHD -->|LFO 3| WOG
-  OCHD -->|LFO 7| WOG
-
-  %% Wogglebug outputs
-  WOG -->|Stepped| MATHS
-  WOG -->|Smooth| MATHS
-  WOG -->|Woggle| MATHS
-
-  %% Marbles outputs
-  MARB -->|X1 Out| PLAITS
-  MARB -->|X2 Out| PLAITS
-  MARB -->|t1 Out| PLAITS
-  MARB -->|Y Out| PLAITS
-
-  %% Plaits CV
-  PLAITS -->|Model CV| MATHS
-  PLAITS -->|Timbre CV| MATHS
-  PLAITS -->|Trigger| MATHS
-  PLAITS -->|Level CV| MATHS
-
-  %% Maths processing
-  MATHS -->|SUM Out| OUT
-  MATHS -->|OR Out| OUT
-  MATHS -->|AND Out| OUT
-  MATHS -->|Learning/Feedback| OUT
+flowchart LR
+  OSC1[Oscillator 1] --> VCF[Filter]
+  VCF --> VCA[VCA]
+  VCA --> OUT[Output]
 ```
+
 
 **Complete System Integration:**
 
