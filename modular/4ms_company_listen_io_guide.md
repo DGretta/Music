@@ -25,7 +25,7 @@
 ### **Effects and Processors:**
 - **Hardware reverbs** - Lexicon, TC Electronic, vintage spring reverbs become modular effects
 - **Vintage effects units** - 80s/90s rack processors with character impossible to recreate
-- **Guitar pedals** - Any effects pedal becomes a modular processor (combine with Stomp for full integration)
+- **Guitar pedals** - Any effects pedal becomes a modular processor (combine with the Intellijel Stomp for full integration)
 - **Dynamics processors** - Compressors, limiters, gates from your rack collection
 - **EQ units** - Graphic, parametric, vintage tube EQs for tone shaping
 
