@@ -1,6 +1,56 @@
 # Visual Communication Standards
 
-**Systematic framework for clear, consistent visual communication in modular synthesizer guides**
+**Quick reference for daily-use patterns + comprehensive framework for systematic visual communication**
+
+---
+
+## **🚀 Quick Reference: 5 Essential Patterns**
+
+### **1. GitHub Image Integration (Most Common)**
+```markdown
+![Module Name](https://github.com/DGretta/Music/raw/main/modular/images/[module_name]/front_panel.jpg)
+*Module description and key interface elements*
+```
+
+### **2. Signal Type Color Coding (Every Guide)**
+```
+🔴 Audio │ 🔵 CV │ 🟡 Gate
+```
+
+### **3. Basic ASCII Module Box (Standard Format)**
+```
+┌─────────────────┐
+│   Module Name   │
+│                 │
+│ Input ◀─────────┼── Signal In
+│       ║         │
+│ Output ○────────┼── Signal Out
+│        ║        │
+└────────║────────┘
+         ║
+   Signal Type
+```
+
+### **4. Simple Signal Flow (Left-to-Right)**
+```
+🔴 Audio │ 🔵 CV │ 🟡 Gate
+
+Source → Process → Destination
+  │        │        │
+  VCO   → Filter → Output
+```
+
+### **5. Core ASCII Symbols**
+- **○** = Output jack
+- **◀** = Input jack
+- **──** = Audio cable (🔴)
+- **║** = CV cable (🔵)
+- **┈┈** = Gate cable (🟡)
+- **┼** = Connection point
+
+---
+
+## **📖 Comprehensive Reference**
 
 ## **Module Image Integration**
 
