@@ -159,6 +159,52 @@ Each entry includes ALL physical interface elements:
 - ✅ Use "A-6 Quantizer" for pitch CV processing, "B-5 LFO" for modulation, "C-5 Resonator" for audio processing
 - ✅ Match algorithm category to signal type: A/B for CV, C/D for audio, E-N for specialized functions
 
+### Cre8audio Function Junction ✅
+**Manual Source**: https://cre8audio.squarespace.com/s/Function-Junction-Manual.pdf + ModularGrid verification
+**Verification Date**: 2025-09-21
+
+**Physical Interface:**
+- **Inputs**: A IN JACK (ADSR gate/trigger), F IN JACK (Function gate/trigger), F MOD JACK (Function modulation), A LOOP JACK (ADSR loop control), 1A JACK (mixer ch1, normalled to ADSR), 2F JACK (mixer ch2, normalled to Function), 3L JACK (mixer ch3, normalled to LFO)
+- **Outputs**: A OUT JACK (ADSR envelope), F OUT JACK (Function output), F TRIG JACK (Function end-of-decay trigger), L TRI JACK (LFO triangle), L SQR JACK (LFO square), 1 OUT JACK (mixer ch1 breakout), 2 OUT JACK (mixer ch2 breakout), MIX JACK (mixer sum), +OR JACK (analog logic OR)
+- **Knobs**: ATTACK KNOB, DECAY KNOB, SUSTAIN KNOB, RELEASE KNOB (ADSR section), ATTACK KNOB, DECAY KNOB, CURVE KNOB, MOD KNOB (Function section), RATE KNOB (LFO section), OUTPUT 1 KNOB, OUTPUT 2 KNOB, OUTPUT 3 KNOB (mixer attenuverters)
+- **Buttons**: LONG BUTTON, LOOP BUTTON (ADSR section), MOD BUTTON, LOOP BUTTON, SUSTAIN BUTTON (Function section)
+- **Switches**: None
+- **LEDs**: Section activity LEDs for ADSR, Function, LFO, and mixer channels
+- **Displays**: None
+- **Other**: Normalization system (mixer inputs automatically connect to internal modulators when unpatched)
+
+**Interface Behavior:**
+- **ADSR section**: Standard 4-stage envelope (0V-10V), LONG button extends times, LOOP button enables cycling
+- **Function Generator**: Variable attack/decay shapes, CURVE knob (exponential/linear/logarithmic), MOD input with attenuverter, SUSTAIN/TRIGGER modes, LOOP mode creates LFO
+- **LFO section**: Simple triangle/square LFO with rate control
+- **Mixer section**: 3-channel attenuverting mixer, normalled inputs, individual breakout outputs, MIX sum output, +OR analog logic
+- **Normalization**: 1A→ADSR, 2F→Function, 3L→LFO (disconnects when jacks patched)
+- **A LOOP JACK**: External gate control for ADSR loop mode (toggles on/off)
+- **F TRIG JACK**: Outputs trigger at end of Function decay stage
+- **Attenuverters**: 12 o'clock = OFF, clockwise = positive, counter-clockwise = inverted
+
+**Operational Modes:**
+- **ADSR SUSTAIN mode**: Standard ADSR envelope behavior
+- **Function SUSTAIN mode**: ASR envelope (attack, sustain, release)
+- **Function TRIGGER mode**: AD envelope (attack, decay only)
+- **Function LOOP mode**: Cycling LFO using internal F TRIG→F IN connection
+- **Mixer configurations**: 3-channel mixer, 3 independent attenuverters, 1 attenuverter + 2-channel mixer
+
+**Common Mistakes:**
+- ❌ "A GATE input" - it's "A IN JACK"
+- ❌ "ADSR OUT" - it's "A OUT JACK"
+- ❌ "Triangle output" - it's "L TRI JACK"
+- ❌ "Square output" - it's "L SQR JACK"
+- ❌ "OR+ output" - it's "+OR JACK" (symbol placement matters)
+- ❌ "Ch1 Out" - it's "1 OUT JACK"
+- ❌ "MIX output" - it's "MIX JACK"
+- ❌ Forgetting normalization behavior - mixer inputs auto-connect to internal sources
+- ❌ "The Function Generator isn't working" - check SUSTAIN vs TRIGGER mode setting
+- ❌ "Loop mode doesn't trigger" - LOOP mode uses internal F TRIG→F IN, external triggers ignored
+- ✅ Use exact jack names as printed on panel
+- ✅ Understand normalization - empty mixer inputs = internal sources, patched inputs = external sources
+- ✅ Function Generator has multiple modes - SUSTAIN (ASR), TRIGGER (AD), LOOP (cycling)
+
 ### Make Noise Maths ✅
 **Manual Source**: Make Noise official documentation + verified by community
 **Verification Date**: 2025-09-18
@@ -207,9 +253,7 @@ Each entry includes ALL physical interface elements:
 - Make Noise Wogglebug
 - Mutable Marbles  
 - 4ms RCD v2
-- Cre8audio Function Junction
 - Mutable Plaits
-- Disting mk4
 - [All other modules in guides]
 
 ---

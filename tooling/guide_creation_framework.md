@@ -63,6 +63,27 @@
 
 ---
 
+## **Terminology Standards**
+
+### **Learning Progression Terminology:**
+- **Patch Classifications:** Basic → Intermediate → Advanced → Expert (→ Master for highly complex platforms)
+- **Module Integration:** Use "Advanced" for sophisticated multi-module coordination
+- **System Design:** "Advanced integration" for complex modulation networks and ecosystem design
+- **Cross-Module Learning:** "Advanced synergies" for multi-module coordination techniques
+
+### **Deprecated Terminology:**
+- **❌ "Phase 2"** - Replaced with "Advanced" throughout all guides
+- **❌ "Phase 1"** - Use specific skill levels (Basic, Intermediate, Advanced)
+- **Rationale:** "Advanced" provides clearer skill progression indication than abstract phase numbering
+
+### **Section Naming Standards:**
+- **"Advanced Module Synergies"** (not "Phase 2 Module Synergies")
+- **"Advanced Learning Path"** (not "Phase 2 Learning Path")
+- **"Advanced Integration Concepts"** (not "Cross-Phase 2 Integration")
+- **"System Integration"** for ecosystem-level coordination
+
+---
+
 ## **Module Classification Standards**
 
 ### **Utility Modules (2-3 Patches Required):**

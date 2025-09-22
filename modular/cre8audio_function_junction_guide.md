@@ -13,8 +13,8 @@
 
 ### Your First Envelope-Controlled Sound
 1. **Connect any audio source** → **VCA audio input**
-2. **Connect Function Junction ADSR OUT** → **VCA CV input**
-3. **Connect gate/trigger source** → **Function Junction A GATE input**
+2. **Connect Function Junction A OUT JACK** → **VCA CV input**
+3. **Connect gate/trigger source** → **Function Junction A IN JACK**
 4. **Adjust ADSR knobs** - Attack, Decay, Sustain, Release to taste
 5. **Trigger your gate** and hear the envelope shape your sound!
 6. **Bonus:** Try the LOOP button to make it cycle like an LFO
@@ -27,8 +27,8 @@
 
 ### **1. ADSR Envelope - Your Dynamic Shaper**
 - **A, D, S, R knobs:** Classic four-stage envelope control
-- **A GATE input:** Trigger/gate input for envelope
-- **ADSR OUT:** Standard envelope output (0V-10V)
+- **A IN JACK:** Trigger/gate input for envelope
+- **A OUT JACK:** Standard envelope output (0V-10V)
 - **LOOP button:** Makes envelope cycle continuously = instant LFO!
 - **A LOOP jack:** External gate control for loop on/off
 - **LONG button:** Doubles envelope times for ultra-slow movements
@@ -47,8 +47,8 @@
 
 ### **3. LFO - The Rhythm Master**
 - **RATE knob:** Speed control from very slow to audio rate
-- **Triangle output:** Smooth, curved modulation
-- **Square output:** Stepped, on/off modulation
+- **L TRI JACK:** Smooth, curved modulation
+- **L SQR JACK:** Stepped, on/off modulation
 - **Simple but effective:** Sometimes you just need a solid LFO!
 - **Normalled to mixer:** Channel 3 gets LFO automatically
 
@@ -57,9 +57,9 @@
 - **Channel 1 (1A):** Normalled to ADSR output
 - **Channel 2 (2F):** Normalled to Function Generator output  
 - **Channel 3 (3L):** Normalled to LFO output
-- **Individual outputs:** Channels 1 & 2 have separate outs
-- **MIX output:** Combines all three channels
-- **OR+ output:** Outputs highest voltage among the three channels
+- **Individual outputs:** 1 OUT JACK & 2 OUT JACK for channels 1 & 2
+- **MIX JACK:** Combines all three channels
+- **+OR JACK:** Outputs highest voltage among the three channels
 - **Magic:** Can be 3 independent attenuverters OR a 3-channel mixer
 
 ### **5. Advanced Features**
@@ -92,14 +92,14 @@
                     │   Cre8audio        │      ║
                     │ Function Junction  │      ║
                     │                    │      ║
-                    │ A GATE Input    ◀──┼──────┘
+                    │ A IN JACK       ◀──┼──────┘
                     │                    │
                     │ A: Attack    ●     │
                     │ D: Decay     ●     │
                     │ S: Sustain   ●     │
                     │ R: Release   ●     │
                     │                    │
-                    │ ADSR OUT ○─────────┼─── CV (Blue)
+                    │ A OUT JACK ○───────┼─── CV (Blue)
                     └────────────────────┘      ║
                                                   ▼
                     ┌────────────────────┐      ║
@@ -115,8 +115,8 @@
 
 | Connection | Cable Type | Purpose | Learning Objective |
 |------------|------------|---------|-------------------|
-| Gate Source → A GATE | Gate (Yellow) | **Trigger envelope** | **Understand gate-to-envelope relationship** |
-| ADSR OUT → VCA CV | CV (Blue) | **Control amplitude** | **Learn envelope modulation basics** |
+| Gate Source → A IN JACK | Gate (Yellow) | **Trigger envelope** | **Understand gate-to-envelope relationship** |
+| A OUT JACK → VCA CV | CV (Blue) | **Control amplitude** | **Learn envelope modulation basics** |
 | Audio Source → VCA Audio In | Audio (Red) | **Signal to be shaped** | **Complete signal chain concept** |
 
 **Module Settings:**
@@ -133,20 +133,20 @@
 - Experience classic synthesizer voice architecture
 
 **Visual Feedback:**
-- **ADSR LED:** Flashes on gate triggers, shows envelope activity
+- **A OUT LED:** Flashes on gate triggers, shows envelope activity
 - **VCA response:** Hear audio shaped by envelope
 - **A/D/S/R knob effects:** Turn each knob to hear envelope shape changes
 - **Result:** Classic synthesizer voice with proper amplitude shaping
 
-### **Patch 2: Intermediate - Phase 2 Modulation Processing**
+### **Patch 2: Intermediate - Advanced Modulation Processing**
 ```
    ┌────────────────────┐      ┌────────────────────┐
    │     DivKid Ochd    │      │   Cre8audio        │
-   │    (Phase 2)       │      │ Function Junction  │
-   │                    │      │   (Phase 2)        │
+   │    (Advanced)     │      │ Function Junction  │
+   │                    │      │   (Advanced)        │
    │ LFO 2 ○────────────┼──────┼─▶ F MOD CV         │
    │       ║            │      │                    │
-   │ Trigger 1○─────────┼──────┼─▶ F IN             │
+   │ Trigger 1○─────────┼──────┼─▶ F IN JACK        │
    │       ║            │      │                    │
    │ LFO 6 ○────────────┼──────┼─▶ LFO Rate CV      │
    │       ║            │      │                    │
@@ -155,9 +155,9 @@
    │       ║            │      │ LOOP:   ON         │
    │       ║            │      │ MOD:    Attack     │
    │       ║            │      │                    │
-   │       ║            │      │ F OUT ○────────────┼─── CV (Blue)
+   │       ║            │      │ F OUT JACK ○───────┼─── CV (Blue)
    │       ║            │      │       ║            │
-   │       ║            │      │ LFO Tri○───────────┼─── CV (Blue)
+   │       ║            │      │ L TRI JACK ○───────┼─── CV (Blue)
    │       ║            │      │       ║            │
    └───────║────────────┘      └───────║────────────┘
            ║                           ║    ║
@@ -174,13 +174,13 @@
    └────────────────────┘      └──────────────────┘
 ```
 
-| Connection | Cable Type | Purpose | Phase 2 Integration |
+| Connection | Cable Type | Purpose | Advanced Integration |
 |------------|------------|---------|--------------------|
-| Ochd LFO 2 → F MOD CV | CV (Blue) | **Organic envelope shaping** | **Phase 2 modulation processing** |
-| Ochd Trigger 1 → F IN | Gate (Yellow) | **Organic timing** | **Non-mechanical function triggers** |
+| Ochd LFO 2 → F MOD CV | CV (Blue) | **Organic envelope shaping** | **Advanced modulation processing** |
+| Ochd Trigger 1 → F IN JACK | Gate (Yellow) | **Organic timing** | **Non-mechanical function triggers** |
 | Ochd LFO 6 → LFO Rate CV | CV (Blue) | **Tempo modulation** | **Organic LFO speed control** |
-| F OUT → Filter Cutoff | CV (Blue) | **Shaped filter modulation** | **Musical envelope filtering** |
-| LFO Triangle → Oscillator PWM | CV (Blue) | **Pulse width modulation** | **Organic timbral changes** |
+| F OUT JACK → Filter Cutoff | CV (Blue) | **Shaped filter modulation** | **Musical envelope filtering** |
+| L TRI JACK → Oscillator PWM | CV (Blue) | **Pulse width modulation** | **Organic timbral changes** |
 
 **Module Settings:**
 - **Function Generator:** Attack 9 o'clock, Decay 12 o'clock, LOOP ON
@@ -189,7 +189,7 @@
 - **LFO Rate:** 2 o'clock (active modulation speed)
 
 **Learning Objectives:**
-- **Phase 2 modulation processing:** Use Function Junction to shape organic modulation
+- **Advanced modulation processing:** Use Function Junction to shape organic modulation
 - **Multi-section coordination:** Function, LFO, and mixer working together
 - **Organic envelope shaping:** Ochd LFOs control envelope characteristics
 - **Complex modulation routing:** Multiple modulation sources to different destinations
@@ -206,7 +206,7 @@
 - **Organic evolution:** All modulation sources drift and evolve together
 - **Result:** Complex, evolving modulation that breathes with organic life
 
-### **Patch 3: Advanced - Phase 2 AI Integration with Marbles**
+### **Patch 3: Advanced - Advanced AI Integration with Marbles**
 ```
 ┌─────────────┐    ┌─────────────┐    ┌─────────────┐
 │ Mutable     │───▶│ Cre8audio   │───▶│   Complex   │
@@ -222,13 +222,13 @@
 └─────────────┘    │ Ch3 (3L)  ◀─┼────┼─            │    Timbral
         ▲          │ [Norm LFO]  │    │ OR+ Out ◀──┼─── Evolution
         │          │             │    └─────────────┘
-        │          │ A GATE   ◀──┼────────────── [From t1]
+        │          │ A IN JACK ◀──┼────────────── [From t1]
         │          │             │
-        │          │ MIX Out  ───┼─────────────▶ [Main pitch CV]
+        │          │ MIX JACK ───┼─────────────▶ [Main pitch CV]
         │          │             │
-        │          │ Ch1 Out  ───┼─────────────▶ [FM modulation]
+        │          │ 1 OUT JACK ───┼─────────────▶ [FM modulation]
         │          │             │
-        │          │ Ch2 Out  ───┼─────────────▶ [Sync modulation]
+        │          │ 2 OUT JACK ───┼─────────────▶ [Sync modulation]
         │          │             │
         │          │ Attenuv. 1: │ (X1 amount)
         │          │ 10 o'clock  │
@@ -276,15 +276,15 @@
 - **Complex oscillator response:** Hear multiple simultaneous modulations creating rich timbres
 - **Result:** Evolving, intelligent musical complexity from simple AI decisions
 
-### **Patch 4: Expert - Complete Phase 2 Modulation Ecosystem Hub**
+### **Patch 4: Expert - Complete Advanced Modulation Ecosystem Hub**
 ```
 ┌─────────────┐    ┌─────────────┐    ┌─────────────┐
-│ Phase 2     │◀──▶│ Cre8audio   │───▶│ Synthesis   │
+│ Advanced     │◀──▶│ Cre8audio   │───▶│ Synthesis   │
 │ Modulation  │    │ Function    │    │ Network     │
 │ Sources     │    │ Junction    │    │             │
 │             │    │ (Hub)       │    │ Multiple    │
 │ Ochd LFOs ──┼───▶│             │    │ Oscillators │
-│ 1, 3, 7     │    │ A GATE    ◀─┼────┼─            │
+│ 1, 3, 7     │    │ A IN JACK ◀─┼────┼─            │
 │             │    │             │    │ Multiple    │
 │ Marbles  ───┼───▶│ F MOD CV  ◀─┼────┼─ Filters    │
 │ X1, X2, Y   │    │             │    │             │
@@ -296,24 +296,24 @@
 │ Stepped     │    │ Ch2 In    ◀─┼────┼─ Distribution│
 │ Smooth      │    │ Ch3 In    ◀─┼────┼─            │
 │ Ring-Mod    │    │             │    │ Matrix      │
-└─────────────┘    │ MIX Out  ───┼───▶│             │
-        ▲          │ Ch1 Out  ───┼───▶│ Complex     │
-        │          │ Ch2 Out  ───┼───▶│ Musical     │
-        │          │ OR+ Out  ───┼───▶│ Evolution   │
+└─────────────┘    │ MIX JACK ───┼───▶│ Complex     │
+        ▲          │ 1 OUT JACK ───┼───▶│ Musical     │
+        │          │ 2 OUT JACK ───┼───▶│ Evolution   │
+        │          │ +OR JACK ───┼───▶│             │
         │          │             │    │             │
         │          │ F TRIG   ───┼────┼─ Audio Out──┼─── Complete
         │          │             │    └─────────────┘   System
         │          │ Self-Patch: │
-        │          │ F TRIG→A GT │
-        │          │ ADSR→F MOD  │
+        │          │ F TRIG→A IN │
+        │          │ A OUT→F MOD │
         │          └─────────────┘
         │
         └──────────── Phase 2 Ecosystem Feedback
 ```
 
-**Complete Phase 2 Integration as Modulation Hub:**
+**Complete Advanced Integration as Modulation Hub:**
 
-| Phase 2 Module | Function Junction Role | System Integration | Musical Result |
+| Advanced Module | Function Junction Role | System Integration | Musical Result |
 |---------------|----------------------|-------------------|----------------|
 | **DivKid Ochd** | Organic envelope shaping | **LFOs → MOD inputs** | **Organic envelope evolution** |
 | **Mutable Marbles** | AI modulation processing | **X outputs → Mixer channels** | **Intelligent modulation mixing** |
@@ -322,31 +322,31 @@
 | **System Feedback** | Learning and adaptation | **Audio analysis → Rate/MOD** | **Self-improving modulation** |
 
 **Expert System Architecture:**
-- **Function Junction as central hub:** Processes all Phase 2 modulation sources
+- **Function Junction as central hub:** Processes all Advanced modulation sources
 - **Intelligent mixing:** AI-driven combination of organic, mathematical, and chaotic sources
 - **Self-patching networks:** Internal feedback creates complex recursive behaviors
 - **Adaptive processing:** System learns optimal modulation combinations over time
 
 **Learning Objectives:**
 - **Modulation ecosystem design:** Function Junction as processing center for entire system
-- **Phase 2 integration mastery:** All modules working together through central hub
+- **Advanced integration mastery:** All modules working together through central hub
 - **Complex system behavior:** Understand emergent properties of interconnected modulators
 - **Performance-level patching:** Real-time control of complex modulation networks
 
 **Expert Techniques:**
-- **Hub-and-spoke architecture:** Function Junction processes inputs from all Phase 2 modules
+- **Hub-and-spoke architecture:** Function Junction processes inputs from all Advanced modules
 - **Cascading feedback:** F TRIG → A GATE creates self-generating envelope chains
 - **Multi-source mixing:** Different modulation philosophies combined intelligently
 - **System-level thinking:** Design modulation networks, not individual connections
 
 **Performance Evolution:**
-1. **Initialization** (0-2 min): All Phase 2 modules establish foundational patterns
+1. **Initialization** (0-2 min): All Advanced modules establish foundational patterns
 2. **Integration** (2-10 min): Function Junction begins processing and mixing sources
 3. **Emergence** (10-30 min): Complex behaviors emerge from simple modulation interactions
 4. **Optimization** (30+ min): System finds optimal modulation combinations for musical content
 
 **Advanced Philosophy:**
-Function Junction becomes the **neural center** of a Phase 2 modulation brain: Ochd provides organic timing, Marbles adds intelligence, RCD contributes mathematical precision, Wogglebug introduces controlled chaos, and Function Junction processes it all into musical modulation that shapes synthesis networks. The system thinks in modulation.
+Function Junction becomes the **neural center** of an Advanced modulation brain: Ochd provides organic timing, Marbles adds intelligence, RCD contributes mathematical precision, Wogglebug introduces controlled chaos, and Function Junction processes it all into musical modulation that shapes synthesis networks. The system thinks in modulation.
 
 ---
 
@@ -393,11 +393,11 @@ Function Junction becomes the **neural center** of a Phase 2 modulation brain: O
 - **F MOD knob:** Controls amount of modulation (attenuverter)
 - **Powerful feature:** Can create complex modulation interactions
 
-### **OR+ Output vs MIX Output**
-- **MIX output:** Sum of all three channels (can create complex shapes)
-- **OR+ output:** Only the highest voltage among the three (peak selector)
-- **Different uses:** MIX for blended modulation, OR+ for "winner takes all"
-- **Don't ignore OR+:** Great for selecting strongest modulation signal
+### **+OR JACK vs MIX JACK**
+- **MIX JACK:** Sum of all three channels (can create complex shapes)
+- **+OR JACK:** Only the highest voltage among the three (peak selector)
+- **Different uses:** MIX JACK for blended modulation, +OR JACK for "winner takes all"
+- **Don't ignore +OR JACK:** Great for selecting strongest modulation signal
 
 ---
 
@@ -416,12 +416,12 @@ Function Junction becomes the **neural center** of a Phase 2 modulation brain: O
 
 ## Pairs Well With
 
-### **Phase 2 Module Synergies (Modulation & CV Sources):**
+### **Advanced Module Synergies (Modulation & CV Sources):**
 - **DivKid Ochd & Expander:** Ochd LFOs → Function Junction MOD inputs for organic envelope shaping
 - **Make Noise Wogglebug:** Wogglebug chaos CVs → All Function Junction inputs for controlled uncertainty
 - **Mutable Marbles:** Marbles X/Y outputs → Mixer channels for intelligent modulation processing
 - **4ms RCD v2:** RCD divisions → Function/ADSR triggers for polyrhythmic envelope generation
-- **Cross-Phase 2 Integration:** All Phase 2 modules feed Function Junction for unified modulation processing
+- **Cross-Advanced Integration:** All Advanced modules feed Function Junction for unified modulation processing
 
 ### **Phase 1 Module Integration (Core Synthesis):**
 - **Make Noise Maths:** Maths + Function Junction = ultimate modulation powerhouse combination
@@ -444,7 +444,7 @@ Function Junction becomes the **neural center** of a Phase 2 modulation brain: O
 
 ---
 
-## Phase 2 Learning Path
+## **Advanced Learning Path**
 
 ### **Recommended Study Progression:**
 1. **Start with Function Junction fundamentals:** Master ADSR, Function Generator, LFO, and Mixer sections
@@ -452,25 +452,25 @@ Function Junction becomes the **neural center** of a Phase 2 modulation brain: O
 3. **Include controlled chaos:** Use Make Noise Wogglebug for unpredictable modulation processing (see Wogglebug guide)
 4. **Add algorithmic intelligence:** Apply Mutable Marbles for sophisticated modulation control (see Marbles guide)
 5. **Include polyrhythmic timing:** Use 4ms RCD v2 for mathematical envelope triggering (see RCD guide)
-6. **Complete the ecosystem:** Integrate all Phase 2 modules for unified modulation processing
+6. **Complete the ecosystem:** Integrate all Advanced modules for unified modulation processing
 
 ### **Cross-Module Learning Opportunities:**
 - **Function Junction + Ochd:** Learn organic envelope shaping through breathing modulation
 - **Function Junction + Wogglebug:** Master chaotic modulation processing with controlled uncertainty
 - **Function Junction + Marbles:** Understand intelligent modulation mixing and AI-driven envelope control
 - **Function Junction + RCD:** Explore polyrhythmic envelope generation with mathematical precision
-- **All Phase 2 + Function Junction:** Build complete modulation ecosystems with central processing hub
+- **All Advanced + Function Junction:** Build complete modulation ecosystems with central processing hub
 
 ### **Skill Development Milestones:**
 - **Beginner:** Master individual Function Junction sections and basic envelope control
 - **Intermediate:** Understand normalling system and multi-source modulation mixing
-- **Advanced:** Create Phase 2 integration patches with sophisticated modulation processing
-- **Expert:** Design modulation ecosystems where Function Junction processes all Phase 2 sources
+- **Advanced:** Create Advanced integration patches with sophisticated modulation processing
+- **Expert:** Design modulation ecosystems where Function Junction processes all Advanced sources
 
 ### **Advanced Integration Concepts:**
-- **Modulation Processing Hub:** Function Junction as central processor for all Phase 2 modulation
+- **Modulation Processing Hub:** Function Junction as central processor for all Advanced modulation
 - **Multi-Source Mixing:** Combine organic, chaotic, algorithmic, and mathematical modulation
-- **Envelope Evolution:** Use Phase 2 sources to control envelope characteristics dynamically
+- **Envelope Evolution:** Use Advanced sources to control envelope characteristics dynamically
 - **System-Level Modulation:** Design patches where modulation sources enhance each other
 
 ### **Performance Applications:**
@@ -484,21 +484,21 @@ Function Junction becomes the **neural center** of a Phase 2 modulation brain: O
 ## Why This Module Rocks
 
 ### **The Philosophy:**
-Function Junction represents **modular efficiency at its finest** - four essential modulation tools in one module, designed to work independently or together. Unlike single-purpose modules, Function Junction adapts to whatever your patch needs: envelope generator, LFO, function processor, or modulation mixer. **In Phase 2 ecosystems, it becomes the intelligent processing hub that transforms all modulation sources into musical expression.**
+Function Junction represents **modular efficiency at its finest** - four essential modulation tools in one module, designed to work independently or together. Unlike single-purpose modules, Function Junction adapts to whatever your patch needs: envelope generator, LFO, function processor, or modulation mixer. **In Advanced ecosystems, it becomes the intelligent processing hub that transforms all modulation sources into musical expression.**
 
 ### **Perfect For:**
 - **Beginner builders** needing essential modulation tools without HP sprawl
 - **Space-conscious systems** requiring maximum functionality per HP
 - **Performance musicians** wanting immediate access to all modulation types
 - **Modulation enthusiasts** seeking sophisticated processing and mixing capabilities
-- **Phase 2 system builders** creating intelligent modulation ecosystems
+- **Advanced system builders** creating intelligent modulation ecosystems
 
 ### **The Modulation Hub Experience:**
-Using Function Junction teaches you about **modulation as a musical instrument** rather than just a technical necessity. The normalling system shows how different modulation types complement each other, while the mixer section reveals how combining sources creates entirely new possibilities. **As the processing center of Phase 2 networks, it transforms simple modulation into complex musical intelligence.**
+Using Function Junction teaches you about **modulation as a musical instrument** rather than just a technical necessity. The normalling system shows how different modulation types complement each other, while the mixer section reveals how combining sources creates entirely new possibilities. **As the processing center of Advanced networks, it transforms simple modulation into complex musical intelligence.**
 
 ---
 
-**Bottom Line:** Function Junction isn't just four modules in one - it's a **complete modulation ecosystem** that grows with your understanding. From basic envelope duties to sophisticated Phase 2 integration, it provides the tools to shape any sound with musical intelligence. **You get immediate utility with endless depth for modulation exploration.**
+**Bottom Line:** Function Junction isn't just four modules in one - it's a **complete modulation ecosystem** that grows with your understanding. From basic envelope duties to sophisticated Advanced integration, it provides the tools to shape any sound with musical intelligence. **You get immediate utility with endless depth for modulation exploration.**
 
 ---
 
