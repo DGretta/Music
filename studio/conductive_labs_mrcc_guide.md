@@ -2,7 +2,7 @@
 
 **The Essential MIDI Routing Hub for Professional Studios**
 
-![Conductive Labs MRCC](https://github.com/DGretta/Music/raw/main/studio/images/conductive_labs_mrcc/front_panel.jpg)
+![Conductive Labs MRCC](https://github.com/DGretta/Music/raw/main/studio/images/conductive_labs/mrcc/front_panel.jpg)
 *Conductive Labs MRCC - 11x17 MIDI routing matrix with USB host ports, 5-pin DIN connections, and comprehensive routing control via front panel interface*
 
 ---
