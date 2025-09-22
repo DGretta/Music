@@ -2,6 +2,9 @@
 
 **The West Coast Synthesis Powerhouse**
 
+![Instruo Cs-L Complex Oscillator](https://github.com/DGretta/Music/raw/main/modular/images/instruo_csl/front_panel.jpg)
+*West Coast complex oscillator with dual cores, wavefolding, FM, sync, and ring modulation - the synthesis brain for harmonic complexity*
+
 ---
 
 ## Quick Start: Get Your First Complex Sound in 5 Minutes
@@ -65,6 +68,12 @@
 **Controls:** WAVEFOLD fader = brightness, SYMMETRY = character
 **Sound:** Rich, harmonically complex lead tones that evolve as you play
 
+**Main Example:** Cs-L OSC B → Intellijel Morgasmatron filter (West Coast classic pairing)
+**Alternative Options:**
+- **Budget:** Cs-L → Doepfer A-120 low pass filter
+- **Different character:** Cs-L → Make Noise QPAS stereo filter for spatial West Coast
+- **Premium:** Cs-L → Buchla 292 Low Pass Gate for authentic West Coast dynamics
+
 ### **Patch 2: Intermediate - Phase 2 Organic West Coast Processing**
 ```
    ┌─────────────────────┐      ┌─────────────────────┐
@@ -118,6 +127,12 @@
 - **Musical drift:** Pitch relationships that evolve naturally over time
 - **System breathing:** Entire West Coast voice breathes as unified organism
 
+**Main Example:** DivKid Ochd → Instruo Cs-L (organic breathing West Coast synthesis)
+**Alternative Options:**
+- **Budget:** 2HP LFO + Doepfer A-143-3 → simple oscillator with basic wavefolding
+- **Different character:** Batumi geometric patterns → Cs-L for mathematical breathing
+- **Premium:** Buchla 266 Source of Uncertainty → Buchla 259 for authentic organic West Coast
+
 ### **Patch 3: Complex Harmonic Voice**
 ```
 [Keyboard] ──1V/OCT──→ [Cs-L OSC A 1V/OCT] 
@@ -128,6 +143,12 @@
 **Controls:** Envelope shapes the timbre dynamically, mix both FINAL outputs
 **Sound:** Keyboard-played complex tones with evolving harmonic content
 
+**Main Example:** Make Noise Maths envelope → Cs-L wavefold CV for dynamic West Coast timbres
+**Alternative Options:**
+- **Budget:** Doepfer A-140 ADSR → Cs-L for basic envelope control
+- **Different character:** Intellijel Quadrax complex envelopes → Cs-L for sophisticated harmonic evolution
+- **Premium:** Buchla 281 Quad Function Generator → Cs-L for authentic West Coast envelope dynamics
+
 ### **Patch 4: FM Bell Tones (Basic)**
 ```
 [Keyboard] ──1V/OCT──→ [Cs-L OSC B 1V/OCT]
@@ -137,6 +158,12 @@
 **Visual:** FM ATTENUATOR positions control modulation depth
 **Controls:** OSC A frequency = timbre, FM ATTENUATOR = brightness/metallicness  
 **Sound:** Classic FM bell and chime sounds with rich harmonic content
+
+**Main Example:** Cs-L internal FM routing (OSC B → OSC A) for classic West Coast FM bells
+**Alternative Options:**
+- **Budget:** Doepfer A-110-1 → A-110-2 for basic FM synthesis
+- **Different character:** Mutable Plaits FM algorithm for digital FM bells
+- **Premium:** Buchla 259 Complex Waveform Generator for authentic Buchla FM synthesis
 
 ### **Patch 5: Advanced - Chaos Mathematics in West Coast Synthesis**
 ```
@@ -190,6 +217,12 @@
 - **Mathematical chaos:** Understanding how chaos algorithms affect musical parameters
 - **Harmonic unpredictability:** Wavefolds driven by chaotic modulation
 - **Controlled randomness:** Musical chaos that stays musical through West Coast processing
+
+**Main Example:** Make Noise Wogglebug → Instruo Cs-L (chaos-driven West Coast synthesis)
+**Alternative Options:**
+- **Budget:** Turing Machine + simple oscillator for basic chaos modulation
+- **Different character:** Mutable Marbles X/Y → Cs-L for AI-controlled chaos patterns
+- **Premium:** Buchla 266 Source of Uncertainty → Buchla 259 for authentic chaos West Coast
 
 ### **Patch 6: Expert - Complete Phase 2 West Coast Ecosystem**
 ```
@@ -253,6 +286,12 @@
 
 **Philosophical Achievement:**
 This represents **advanced West Coast consciousness** - where organic breathing, controlled chaos, and artificial intelligence all become complex oscillator synthesis, processed through analog West Coast mathematics into pure evolved musical intelligence.
+
+**Main Example:** Complete Phase 2 ecosystem (Ochd + Wogglebug + Marbles + Cs-L)
+**Alternative Options:**
+- **Budget:** Basic LFO + simple oscillator + manual controls for entry-level West Coast
+- **Different character:** Batumi + Turing Machine + simple FM oscillator for mathematical West Coast
+- **Premium:** Complete Buchla system (266 + 259 + 292) for authentic West Coast consciousness
 
 ---
 
