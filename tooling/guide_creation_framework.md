@@ -34,6 +34,26 @@
 4. **Common Use Cases** - Real-world applications
 5. **Troubleshooting** - Common issues
 6. **Pairs Well With** - Integration suggestions with alternatives
+7. **What This Unlocks From Your Existing Gear** (Optional but Strongly Encouraged) - Include when module creates genuine new possibilities with commonly-owned equipment
+
+### **"Existing Gear Integration" Section Guidelines:**
+**Include this section when:**
+- Module genuinely opens up integration possibilities with common existing gear
+- There are specific, practical examples that would excite users about new workflows
+- The connections aren't already obvious from the patch examples
+- The integration actually enhances the module's utility (not random gear mentions)
+
+**Examples of good fits:**
+- Interface modules (Stomp, audio interfaces, MIDI converters) - unlock pedals, studio gear, controllers
+- Utility modules with unique capabilities - clock dividers (unlock drum machines), sample & holds (unlock field recorders)
+- Modules that bridge different signal types - envelope followers (unlock dynamic mics, instruments)
+
+**Skip this section when:**
+- Module function is self-contained (basic VCAs, simple LFOs)
+- Integration possibilities are already covered in patch examples
+- Would require forced content rather than genuine discovery
+
+**Quality test:** Does this section make someone think "I never realized I could do that with equipment I already have!" If not, skip it.
 
 ### **Mandatory Framework Compliance Requirements:**
 **Based on systematic testing findings (2025-09-22) - these gaps appeared in 100% of tested guides**
