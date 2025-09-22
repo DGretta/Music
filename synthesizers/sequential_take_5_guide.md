@@ -1,7 +1,7 @@
 # Sequential Take 5 Guide
 *Complete 5-voice analog polysynth with Prophet-5 heritage*
 
-![Sequential Take 5](https://github.com/DGretta/Music/raw/main/modular/images/sequential_take_5/front_panel.jpg)
+![Sequential Take 5](https://github.com/DGretta/Music/raw/main/synthesizers/images/sequential/take_5/front_panel.jpg)
 *Sequential Take 5 front panel showing oscillators, filter, envelopes, modulation matrix, and performance controls*
 
 ---
