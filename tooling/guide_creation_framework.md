@@ -103,6 +103,17 @@
 - **Circuit-based descriptions** - No AI/intelligence references
 - **"Advanced"** not "Phase 2" throughout all guides
 - **Exact manufacturer terminology** - Honor module-specific language
+- **Manufacturer + Module naming** - Always use "Manufacturer Module" format for consistency and searchability
+
+**Module Naming Standards:**
+- ✅ **Correct:** "Intellijel Stomp", "4ms Listen IO", "Make Noise Maths", "Erica Synths Pico Voice"
+- ❌ **Incorrect:** "Stomp", "Listen IO", "Maths", "Pico Voice" (manufacturer missing)
+- **Rationale:** Searchability (users look under manufacturer sections), clarity (multiple manufacturers may have similar names), framework consistency
+
+**Naming Guidelines:**
+- **First reference:** Always include full manufacturer name
+- **Cross-references:** Always use full manufacturer + module name for guide linking
+- **Alternative suggestions:** Include manufacturer names in module alternatives
 
 ### **Progression Terminology:**
 - **Patches:** Basic → Intermediate → Advanced → Expert
