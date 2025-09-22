@@ -61,7 +61,7 @@
 1. **GitHub Image Integration (MANDATORY):**
    - **Format:** `![Module Name](https://github.com/DGretta/Music/raw/main/modular/images/[module_name]/front_panel.jpg)`
    - **Caption:** Descriptive text about module interface and key elements
-   - **Placement:** Near top of guide after title and description
+   - **Placement:** Immediately after title + tagline, before all content sections (provides immediate visual context)
    - **Non-negotiable:** Every guide must include proper GitHub image integration
 
 2. **Enhanced Format Alternatives (MANDATORY - ALL PATCHES):**
