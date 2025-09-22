@@ -360,16 +360,16 @@
 
 ### **Patch 4: Mermaid Test
 ```mermaid
-flowchart LR
+flowchart LR 
   OSC1[Oscillator 1] --> VCF[Filter]
   VCF --> VCA[VCA]
   VCA --> OUT[Output]
 ```
 
 
-**Complete System Integration:**
+**Complete System Integration:** 
 
-| Layer | Function | Maths Role | Musical Result |
+| Layer | Function | Maths Role | Musical Results |
 |-------|----------|------------|----------------|
 | **Organic (Ochd)** | Natural breathing | **Channels 1,3 processing** | **Mathematical breathing** |
 | **Chaos (Wogglebug)** | Controlled uncertainty | **CV mixing and offset** | **Mathematical chaos** |
