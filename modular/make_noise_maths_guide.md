@@ -361,49 +361,41 @@
 ### **Patch 4: Mermaid Test
 ```mermaid
 flowchart TB
-
   %% Modules
-  OCHD[DivKid Ochd\n(Organic LFOs)]
-  WOG[Make Noise Wogglebug\n(Chaos)]
-  MARB[Mutable Marbles\n(AI / Random)]
-  PLAITS[Mutable Plaits\n(Synthesis)]
-  MATHS[Maths\n(Mathematical Brain)]
-  ECO[Complete Musical Ecosystem]
+  OCHD[DivKid Ochd<br/>(Organic LFOs)]
+  WOG[Make Noise Wogglebug<br/>(Chaos)]
+  MARB[Mutable Marbles<br/>(AI)]
+  PLAITS[Mutable Plaits<br/>(Synthesis)]
+  MATHS[Maths<br/>(Mathematical Brain)]
+  OUT[Complete Musical Ecosystem<br/>Organic + Chaos + AI + Maths = Evolution]
 
-  %% OCHD Outputs to Wogglebug
-  OCHD -- LFO1 --> WOG
-  OCHD -- LFO3 --> WOG
-  OCHD -- LFO7 --> WOG
+  %% OCHD outputs
+  OCHD -->|LFO 1| WOG
+  OCHD -->|LFO 3| WOG
+  OCHD -->|LFO 7| WOG
 
-  %% Wogglebug Outputs
-  WOG -- Stepped --> MARB
-  WOG -- Smooth --> MARB
-  WOG -- Woggle --> MARB
+  %% Wogglebug outputs
+  WOG -->|Stepped| MATHS
+  WOG -->|Smooth| MATHS
+  WOG -->|Woggle| MATHS
 
-  %% Marbles Outputs
-  MARB -- X1 Out --> PLAITS
-  MARB -- X2 Out --> PLAITS
-  MARB -- t1 Out --> PLAITS
-  MARB -- Y Out --> PLAITS
+  %% Marbles outputs
+  MARB -->|X1 Out| PLAITS
+  MARB -->|X2 Out| PLAITS
+  MARB -->|t1 Out| PLAITS
+  MARB -->|Y Out| PLAITS
 
-  %% Plaits to Maths
-  PLAITS -- Model CV --> MATHS
-  PLAITS -- Timbre CV --> MATHS
-  PLAITS -- Trigger --> MATHS
-  PLAITS -- Level CV --> MATHS
+  %% Plaits CV
+  PLAITS -->|Model CV| MATHS
+  PLAITS -->|Timbre CV| MATHS
+  PLAITS -->|Trigger| MATHS
+  PLAITS -->|Level CV| MATHS
 
-  %% Maths Internal Flow
-  MATHS -- Ch1 Signal (Organic CV) --> MATHS
-  MATHS -- Ch3 Signal (Chaos CV) --> MATHS
-  MATHS -- Ch2 Signal (AI CV) --> MATHS
-  MATHS -- Ch4 Signal (AI CV) --> MATHS
-
-  MATHS -- Unity Outs + SUM --> MATHS
-  MATHS -- OR / AND Outs --> MATHS
-
-  %% Final System
-  MATHS --> ECO
-  ECO -->|"System Output"| ECO_OUT[Evolving Intelligence]
+  %% Maths processing
+  MATHS -->|SUM Out| OUT
+  MATHS -->|OR Out| OUT
+  MATHS -->|AND Out| OUT
+  MATHS -->|Learning/Feedback| OUT
 ```
 
 **Complete System Integration:**
