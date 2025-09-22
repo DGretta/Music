@@ -239,4 +239,4 @@
 
 ---
 
-**Bottom Line:** Stomp isn't just an interface - it's a **bridge processor** that transforms modular CV generation into expression pedal automation through proper impedance conversion and level management. Every patch teaches something new about how signal flow and impedance matching really work. As the **expression automation brain of advanced ecosystems**, it transforms organic modulation, controlled chaos, and pattern learning into unified pedal expression control that bridges the modular and pedal worlds seamlessly.
+**Bottom Line:** Stomp handles the technical barriers between modular and pedal worlds - impedance matching, level conversion, and expression automation - so you can focus on the creative connections between your sound sources and effects. It's an essential bridge that gets out of the way and lets your musical ideas flow between different gear ecosystems.
