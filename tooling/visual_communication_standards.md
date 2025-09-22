@@ -8,8 +8,13 @@
 
 ### **1. GitHub Image Integration (Most Common)**
 ```markdown
-![Module Name](https://github.com/DGretta/Music/raw/main/modular/images/[module_name]/front_panel.jpg)
-*Module description and key interface elements*
+![Device Name](https://github.com/DGretta/Music/raw/main/[category]/images/[manufacturer]/[device_name]/front_panel.jpg)
+*Device description and key interface elements*
+
+# Examples by category:
+![Module Name](https://github.com/DGretta/Music/raw/main/modular/images/[manufacturer]/[module_name]/front_panel.jpg)
+![Synthesizer Name](https://github.com/DGretta/Music/raw/main/synthesizers/images/[manufacturer]/[synth_name]/front_panel.jpg)
+![Studio Device](https://github.com/DGretta/Music/raw/main/studio/images/[manufacturer]/[device_name]/front_panel.jpg)
 ```
 
 ### **2. Signal Type Color Coding (Every Guide)**
@@ -131,17 +136,46 @@ Source → Process → Destination
 5. **Documentation:** Track image sources and maintain file organization
 
 ### **File Organization Standards**
+
+**Multi-Category Directory Structure:**
 ```
-~/claude/Music/modular/images/
-├── polyvoks/
-│   ├── front_panel.jpg
-│   └── detail_shots/ (if needed)
-├── disting/
-│   ├── front_panel.jpg
-│   └── algorithm_display.jpg
-└── [module_name]/
-    ├── front_panel.jpg
-    └── [additional images]
+~/claude/Music/
+├── modular/
+│   └── images/
+│       ├── [manufacturer]/
+│       │   └── [module_name]/
+│       │       ├── front_panel.jpg
+│       │       └── detail_shots/ (if needed)
+│       └── example_structure/
+│           ├── erica_synths/
+│           │   └── black_polyvoks_vcf/
+│           │       └── front_panel.jpg
+│           └── expert_sleepers/
+│               └── disting_mk4/
+│                   ├── front_panel.jpg
+│                   └── algorithm_display.jpg
+├── synthesizers/
+│   └── images/
+│       └── [manufacturer]/
+│           └── [instrument_name]/
+│               ├── front_panel.jpg
+│               └── detail_shots/ (if needed)
+│       └── example_structure/
+│           ├── sequential/
+│           │   └── take_5/
+│           │       └── front_panel.jpg
+│           └── moog/
+│               └── subsequent_37/
+│                   └── front_panel.jpg
+├── studio/
+│   └── images/
+│       └── [manufacturer]/
+│           └── [device_name]/
+│               └── front_panel.jpg
+└── [other_categories]/
+    └── images/
+        └── [manufacturer]/
+            └── [device_name]/
 ```
 
 ### **GitHub Repository Integration**
@@ -154,19 +188,41 @@ Source → Process → Destination
 
 **GitHub Raw URL Structure:**
 - **Base:** `https://github.com/{username}/{repository}/raw/{branch}/`
-- **Path:** `modular/images/[module_name]/front_panel.jpg`
-- **Complete:** `https://github.com/DGretta/Music/raw/main/modular/images/[module_name]/front_panel.jpg`
+- **Category-specific paths:**
+  - **Modular:** `modular/images/[manufacturer]/[module_name]/front_panel.jpg`
+  - **Synthesizers:** `synthesizers/images/[manufacturer]/[instrument_name]/front_panel.jpg` 
+  - **Studio gear:** `studio/images/[manufacturer]/[device_name]/front_panel.jpg`
+- **Complete examples:**
+  - `https://github.com/DGretta/Music/raw/main/modular/images/erica_synths/black_polyvoks_vcf/front_panel.jpg`
+  - `https://github.com/DGretta/Music/raw/main/synthesizers/images/sequential/take_5/front_panel.jpg`
 
 **Implementation Examples:**
+
+**Modular Gear:**
 ```markdown
-![Erica Synths Black Polyvoks VCF](https://github.com/DGretta/Music/raw/main/modular/images/erica_synths_black_polyvoks_vcf/front_panel.jpg)
+![Erica Synths Black Polyvoks VCF](https://github.com/DGretta/Music/raw/main/modular/images/erica_synths/black_polyvoks_vcf/front_panel.jpg)
 *Erica Synths Black Polyvoks VCF - Front panel showing CV1, CV2, Audio In, and Filter Out*
 
-![4ms MetaModule](https://github.com/DGretta/Music/raw/main/modular/images/4ms_metamodule/front_panel.jpg)
+![4ms MetaModule](https://github.com/DGretta/Music/raw/main/modular/images/4ms/metamodule/front_panel.jpg)
 *4ms MetaModule - Main unit with core functionality*
 
-![4ms MetaModule AIO Expander](https://github.com/DGretta/Music/raw/main/modular/images/4ms_metamodule/aio_exp_panel.jpg)
-*MetaModule Audio I/O Expander - Additional inputs and outputs*
+![Expert Sleepers Disting mk4](https://github.com/DGretta/Music/raw/main/modular/images/expert_sleepers/disting_mk4/front_panel.jpg)
+*Expert Sleepers Disting mk4 - Multi-algorithm digital processor*
+```
+
+**Complete Synthesizers:**
+```markdown
+![Sequential Take 5](https://github.com/DGretta/Music/raw/main/synthesizers/images/sequential/take_5/front_panel.jpg)
+*Sequential Take 5 - 5-voice analog polysynth with Prophet-5 heritage*
+
+![Moog Subsequent 37](https://github.com/DGretta/Music/raw/main/synthesizers/images/moog/subsequent_37/front_panel.jpg)
+*Moog Subsequent 37 - Paraphonic analog synthesizer with classic Moog filter*
+```
+
+**Studio Equipment:**
+```markdown
+![Focusrite Scarlett 2i2](https://github.com/DGretta/Music/raw/main/studio/images/focusrite/scarlett_2i2/front_panel.jpg)
+*Focusrite Scarlett 2i2 - USB audio interface with two inputs*
 ```
 
 ### **Integration with Existing Standards**
