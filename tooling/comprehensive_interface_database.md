@@ -205,6 +205,49 @@ Each entry includes ALL physical interface elements:
 - ✅ Understand normalization - empty mixer inputs = internal sources, patched inputs = external sources
 - ✅ Function Generator has multiple modes - SUSTAIN (ASR), TRIGGER (AD), LOOP (cycling)
 
+### Instruo Arbhar ✅
+**Manual Source**: Official Instruo manual panel diagram + Guide verification
+**Verification Date**: 2025-09-21
+
+**Physical Interface:**
+- **Inputs**: Input (In), Capture Pulse Input, Strike Input, Scan CV Input, Intensity CV Input, Length CV Input, 1V/Octave Input, Onset Input
+- **Outputs**: Output 1, Output 2, Pulse Output
+- **Knobs**: Input Level Knob, Dry/Wet Mix, Output Level Knob, Layer Knob, Intensity Knob, Length Knob, Scan Knob, Spray Knob, Pitch Knob, Pitch Deviation Knob, Sensitivity Knob, Hold Knob, Dub Knob
+- **Buttons**: Capture Button, Shift Button, Strike Button
+- **Switches**: None
+- **LEDs**: Input Indicator, Layer Indicators (6 levels: α,β,γ,δ,ε,ζ), Granular Stream Display, Grain Direction Indicators, Onset Indicator
+- **Displays**: Granular Stream Display (visual grain activity), Grain Window display
+- **Other**: Condenser Microphone (built-in), 6-layer memory system (10 seconds each)
+
+**Interface Behavior:**
+- **Granular Processing**: Two engines - Continuous (Intensity controlled) and Strike (manual triggering)
+- **Six-layer system**: Independent 10-second memory slots with layer selection and mixing
+- **Capture system**: Records 10 seconds into selected layer, microphone active when no input patched
+- **Scan modes**: Manual scan vs Follow mode (automatic playback with speed control)
+- **Pitch tracking**: 1V/Oct input for chromatic granular playing
+- **CV modulation**: Extensive CV control over Scan, Intensity, Length, and Pitch parameters
+- **Wavetable mode**: LENGTH fully counter-clockwise creates oscillator mode
+- **Omega mode**: Layer knob fully clockwise links all layers together
+
+**Operational Modes:**
+- **Scan Mode**: Manual position control with SCAN knob
+- **Follow Mode**: Automatic playback, SCAN controls speed (switch: Hold SHIFT+CAPTURE, turn SCAN)
+- **Wavetable Mode**: Oscillator mode when LENGTH at minimum
+- **Strike Mode**: Manual grain triggering via Strike button/input
+- **Multi-layer Mode**: Up to 6 simultaneous layers in Omega position
+
+**Common Mistakes:**
+- ❌ "No sound output" - Check Input Level knob, ensure audio source connected or use built-in microphone
+- ❌ "Sounds broken/glitchy" - This is normal granular behavior, try adjusting LENGTH and INTENSITY
+- ❌ "Can't capture audio" - Ensure correct layer selected, press CAPTURE firmly until LED lights
+- ❌ "Wrong layer playing" - Check Layer Knob position and corresponding LED indicators
+- ❌ "Can't control with CV" - Verify CV input connections, check CV source voltage levels
+- ❌ "Pitch tracking not working" - Use 1V/Oct input, ensure PITCH knob at 12 o'clock for accurate tracking
+- ❌ "Lost my recording" - Recordings are volatile, save important captures externally
+- ✅ Use built-in microphone for quick captures without patching audio sources
+- ✅ Start with familiar sounds (voice) to understand granular processing behavior
+- ✅ INTENSITY at 12 o'clock provides maximum grain density for rich textures
+
 ### Make Noise Maths ✅
 **Manual Source**: Make Noise official documentation + verified by community
 **Verification Date**: 2025-09-18
