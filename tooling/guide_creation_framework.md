@@ -21,7 +21,112 @@
 - **Structure:** Basic → Intermediate → Advanced → Expert
 - **Focus:** Demonstrate functional breadth with practical guidance
 
+### **Complete Synthesizers (4-5 Patches):**
+- **What:** Self-contained instruments (Desktop synths, keyboard synths, grooveboxes)
+- **Structure:** Basic → Intermediate → Advanced → Expert
+- **Focus:** Studio integration, performance techniques, sound design mastery
+
+### **Studio Equipment (3-4 Patches):**
+- **What:** Recording/production gear (Interfaces, processors, controllers)
+- **Structure:** Basic → Intermediate → Advanced (→ Expert for complex gear)
+- **Focus:** Workflow integration, professional techniques
+
 **Classification Decision:** Primary function + creative potential + parameter complexity
+
+---
+
+## **Synthesizer-Specific Framework Enhancements**
+
+### **Content Structure for Complete Synthesizers**
+
+**Required Sections (Adapted from Modular Standards):**
+1. **Quick Start** - First sound in 5 minutes with preset recommendation
+2. **Essential Parameters** - Core synthesis sections with signal flow diagram
+3. **What This Unlocks From Your Existing Gear** - Studio/performance integration focus
+4. **Patch Examples** - 4-5 programming tutorials with similar synthesizer alternatives
+5. **Advanced Techniques** - Instrument-specific features (modulation matrix, alternative tunings, etc.)
+6. **Common Use Cases** - Studio, live, sound design, learning applications
+7. **Historical Context** - When educationally valuable (vintage reissues, influential designs)
+8. **Troubleshooting** - Synthesizer-specific issues (calibration, MIDI, performance)
+9. **Pairs Well With** - Studio gear, controllers, processing equipment
+
+### **Synthesizer Alternative Format**
+
+**Enhanced Format for Complete Synthesizers:**
+```
+**Main Example:** Take 5 hard sync lead technique
+**Similar Synthesizer Options:**
+- **Budget:** Behringer DeepMind 6, Korg Minilogue XD
+- **Different character:** Moog Subsequent 37 (Moog filter), Novation Peak (digital algorithms)
+- **Premium:** Sequential Prophet Rev2, Moog One
+```
+
+**Selection Criteria:**
+- **Budget tier:** Under $800, accessible alternatives with similar capabilities
+- **Different character:** Different synthesis approach (analog vs digital, different filter types)
+- **Premium tier:** $1500+, flagship instruments with enhanced features
+
+### **Studio Integration Focus**
+
+**"What This Unlocks" for Synthesizers:**
+- **MIDI Controllers:** Transform basic controllers into professional workstations
+- **Audio Interfaces:** Add analog character to digital workflows
+- **Expression Pedals:** Real-time performance control and filter sweeps
+- **Hardware Sequencers:** Clock sync and bidirectional MIDI communication
+- **Studio Effects:** External processing integration and auxiliary sends
+- **Performance Setups:** Transform practice into professional performance rigs
+
+### **Synthesizer-Specific Visual Standards**
+
+**Internal Signal Flow Diagrams:**
+```
+🔴 Audio │ 🔵 CV │ 🟡 Gate
+
+┌─OSCILLATORS─┐    ┌─FILTER──┐    ┌─AMPLIFIER─┐    ┌─EFFECTS─┐
+│ OSC 1    ○──┼────┼─▶Cutoff │    │          │    │         │
+│ OSC 2    ○──┼────┼─ Reso   ├────┼─▶VCA ○───┼────┼─▶Out ○──┼──🔴
+│ Sub/Noise○──┼────┼─ Drive  │    │     ↑    │    │  ↑  ↑   │
+└─────────────┘    └─────────┘    └─────┼────┘    └──┼──┼───┘
+                                        │            │  │
+                   ┌─MODULATION─────────┼────────────┘  │
+                   │ LFO/ENV ○──────────┘               │
+                   │ Mod Matrix ○───────────────────────┘ 🔵
+                   └─────────────────────────────────────────┘
+```
+
+**Performance Control Integration:**
+```
+🔴 Audio │ 🔵 CV │ 🟡 Gate
+
+┌─PERFORMANCE CONTROLS─┐    ┌─SYNTHESIZER─┐
+│ Mod Wheel     ∼──────┼────┼─▶LFO Amount │  ∼ = Real-time control 🔵
+│ Aftertouch    ∼──────┼────┼─▶Filter Cut │  
+│ Expression    ∼──────┼────┼─▶Reverb Mix │  Performance expression 🔵
+│ Sustain Pedal ∼──────┼────┼─▶Arp Hold   │
+└──────────────────────┘    └─────────────┘
+```
+
+### **Synthesizer Programming Techniques**
+
+**Essential Programming Skills:**
+- **Two-oscillator fundamentals:** Detuning, sync, FM techniques
+- **Filter envelope shaping:** Attack/decay/sustain/release relationships
+- **Modulation matrix usage:** Advanced routing beyond front-panel controls
+- **Performance integration:** Real-time expression techniques
+- **Studio workflow:** MIDI integration, recording techniques
+
+**Advanced Synthesizer Features:**
+- **Alternative tunings:** Microtonal and historical temperaments
+- **Unison/chord memory:** Monophonic stacking and chord triggering
+- **Multi-timbral programming:** When applicable to specific instruments
+- **External processing integration:** Auxiliary sends, effects loops
+
+### **Educational Progression for Synthesizers**
+
+**Basic Level:** Single-oscillator patches, basic filter sweeps, preset exploration
+**Intermediate Level:** Multi-oscillator programming, envelope coordination, effects integration
+**Advanced Level:** Modulation matrix, performance techniques, alternative tunings
+**Expert Level:** Complex sound design, studio integration, advanced performance techniques
 
 ---
 
@@ -80,13 +185,33 @@
 
 ## **Enhanced Format Standards**
 
-### **Required Format (Every Patch):**
+### **Implementation Examples:**
+
+**Modular Module Guide:**
 ```
 **Main Example:** Maths Ch1 → filter cutoff (complex modulation)
 **Alternative Options:**
 - **Budget:** 2HP LFO, Doepfer A-143-3
 - **Different character:** Batumi geometric patterns, Ochd organic breathing  
 - **Premium:** Intellijel Quadrax complex envelopes
+```
+
+**Complete Synthesizer Guide:**
+```
+**Main Example:** Take 5 hard sync lead technique
+**Similar Synthesizer Options:**
+- **Budget:** Arturia MicroBrute, Korg MS-20 Mini
+- **Different character:** Moog Matriarch (Moog sync), Novation Peak (digital sync)
+- **Premium:** Sequential Prophet Rev2, Moog One
+```
+
+**Studio Equipment Guide:**
+```
+**Main Example:** Focusrite Scarlett 2i2 direct recording setup
+**Alternative Options:**
+- **Budget:** Behringer U-Phoria UM2, PreSonus AudioBox USB 96
+- **Different character:** MOTU M2 (enhanced monitoring), Zoom PodTrak P4 (podcast focus)
+- **Premium:** Universal Audio Apollo Twin, RME Babyface Pro FS
 ```
 
 ### **Visual Standards:**
