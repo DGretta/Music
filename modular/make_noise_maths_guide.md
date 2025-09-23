@@ -88,14 +88,36 @@
 ## Beginner Patch Ideas
 
 ### **Patch 1: Classic Envelope Generator**
+
+**Mermaid Diagram:**
+```mermaid
+graph LR
+    SEQ[Sequencer<br/>Gate Out] -->|Gate 🟡| MATHS[Maths<br/>Ch1 Trig In]
+    MATHS -->|CV 🔵| VCA[VCA<br/>CV Input]
+    VCA -->|Audio 🔴| OUT[Audio Out]
+    
+    style MATHS fill:#e1f5fe
+    style SEQ fill:#f3e5f5
+    style VCA fill:#e8f5e8
 ```
-┌─────────────┐    ┌──────────────┐    ┌─────────────┐
-│ Sequencer   │───▶│    Maths     │───▶│     VCA     │───▶ Audio Out
-│ (Gate Out)  │    │ Ch1 TRIG IN  │    │   CV Input  │
-└─────────────┘    │              │    └─────────────┘
-                   │ Ch1 UNITY OUT│
-                   │   [LED ●]    │
-                   └──────────────┘
+
+**ASCII Alternative:**
+```
+🔴 Audio │ 🔵 CV │ 🟡 Gate
+
+┌─Sequencer─┐    ┌─────Maths─────┐    ┌─VCA──┐    ┌─Output─┐
+│ Gate ○────┼────┼─▶ Ch1 Trig    │    │      │    │       │
+│           │    │               │    │      │    │       │
+│           │    │ Ch1 Unity ○───┼────┼─▶CV  │    │       │
+│           │    │               │    │   ║  │    │       │
+└───────────┘    └───────────────┘    │ Audio◀────┼───────│ 🔴
+                                       │   ║  │    │       │
+                                       │ Out ○─────┼─▶ Out │
+                                       │     ║     │       │
+                                       └─────║─────┘       │
+                                             ║             │
+                                      CV (Blue)            │
+                                                           🔴
 ```
 
 | Connection | Cable Type | Notes |
@@ -118,8 +140,47 @@
 - **Different character:** Intellijel Quadrax complex functions, Joranalogue Contour 1 west coast
 - **Premium:** Serge DUSG, Buchla 281t quad function generator
 
-### **Patch 2: Intermediate - Phase 2 Organic Integration with Ochd**
+### **Patch 2: Intermediate - Organic Mathematical Processing**
+
+**Mermaid Diagram:**
+```mermaid
+graph TB
+    subgraph "Organic Intelligence"
+        OCHD[DivKid Ochd<br/>🌿 Breathing LFOs]
+    end
+    
+    subgraph "Mathematical Brain"
+        MATHS[Make Noise Maths<br/>🧠 Analog Computer]
+    end
+    
+    subgraph "Musical Destinations"
+        OSC[Oscillator FM]
+        FILT[Filter Cutoff]
+        VCA[VCA Control]
+        FX[Effects Parameters]
+    end
+    
+    OCHD -->|LFO1 🔵| MATHS
+    OCHD -->|LFO3 🔵| MATHS  
+    OCHD -->|LFO7 🔵| MATHS
+    
+    MATHS -->|Mathematical CV 🔵| OSC
+    MATHS -->|Mathematical CV 🔵| FILT
+    MATHS -->|Mathematical CV 🔵| VCA
+    MATHS -->|Mathematical CV 🔵| FX
+    
+    style OCHD fill:#c8e6c9
+    style MATHS fill:#e1f5fe
+    style OSC fill:#fff3e0
+    style FILT fill:#f3e5f5
+    style VCA fill:#e8f5e8
+    style FX fill:#fce4ec
 ```
+
+**ASCII Alternative:**
+```
+🔴 Audio │ 🔵 CV │ 🟡 Gate
+
    ┌─────────────────────┐      ┌─────────────────────┐
    │   DivKid Ochd      │      │   Make Noise Maths  │
    │    (Phase 2)       │      │    (Phase 1)        │
@@ -274,21 +335,17 @@
 - **Budget:** Make Noise Maths + Turing Machine, Ornament & Crime random algorithms
 - **Different character:** Make Noise Maths + Make Noise Wogglebug chaos, Benjolin feedback systems
 - **Premium:** Make Noise Maths + Buchla Source of Uncertainty, Serge random voltage
-```
-                   ┌──────────────┐    
-   No Input ──────▶│    Maths     │    
-   (Normalled)     │ Ch2 SIGNAL   │    
-                   │              │    ┌─────────────┐
-                   │ Ch2 VARIABLE │───▶│ Oscillator  │
-                   │   [LED ●]    │    │ V/OCT Input │
-                   └──────────────┘    └─────────────┘
-                          │                    ▲
-                          │                    │
-    ┌─────────────┐      │             ┌──────┴──────┐
-    │ Sequencer   │──────┼─────────────│    Mult     │
-    │ (CV Out)    │      │             │  (Mixer)    │
-    └─────────────┘      └─────────────│             │
-                                       └─────────────┘
+```mermaid
+graph TB
+    SEQ[Sequencer<br/>CV Out] -->|CV 🔵| MULT[Mult/Mixer]
+    MULT -->|CV 🔵| OSC[Oscillator<br/>V/Oct Input]
+    
+    MATHS[Maths Ch2<br/>+10V Internal] -->|Offset CV 🔵| MULT
+    
+    style MATHS fill:#e1f5fe
+    style SEQ fill:#f3e5f5
+    style OSC fill:#fff3e0
+    style MULT fill:#f1f8e9
 ```
 
 | Connection | Cable Type | Notes |
@@ -312,51 +369,90 @@
 - **Different character:** Intellijel Scales quantized transposition, Ornament & Crime SH-4 quantizer
 - **Premium:** Serge Precision Adder, Buchla 257e voltage processor
 
-### **Patch 4: Expert - Complete Phase 1+2 Mathematical Ecosystem**
+### **Patch 4: Expert - Complete Mathematical Ecosystem**
+
+**Mermaid System Overview:**
+```mermaid
+graph TB
+    subgraph "Intelligence Sources"
+        OCHD[DivKid Ochd<br/>🌿 Organic]
+        WOG[Make Noise Wogglebug<br/>⚡ Chaos]
+        MARBLES[Mutable Marbles<br/>🤖 AI]
+        PLAITS[Mutable Plaits<br/>🎵 Synthesis]
+    end
+    
+    subgraph "Mathematical Brain"
+        MATHS[Make Noise Maths<br/>🧠 Central Processing]
+    end
+    
+    subgraph "Musical Output"
+        SYSTEM[Complete Musical Ecosystem<br/>🎼 Evolving Intelligence]
+    end
+    
+    OCHD -->|Organic CV 🔵| MATHS
+    WOG -->|Chaos CV 🔵| MATHS
+    MARBLES -->|AI CV 🔵| MATHS
+    PLAITS -->|Synthesis CV 🔵| MATHS
+    
+    MATHS -->|Mathematical<br/>Processing 🔵| SYSTEM
+    SYSTEM -->|Learning<br/>Feedback 🔵| MARBLES
+    
+    style OCHD fill:#c8e6c9
+    style WOG fill:#ffecb3
+    style MARBLES fill:#e1bee7
+    style PLAITS fill:#bbdefb
+    style MATHS fill:#e1f5fe
+    style SYSTEM fill:#f3e5f5
 ```
-┌─────────────┐ ┌─────────────┐ ┌─────────────┐ ┌─────────────┐
-│   DivKid    │ │ Make Noise  │ │ Mutable     │ │ Mutable     │
-│    Ochd     │ │ Wogglebug   │ │  Marbles    │ │  Plaits     │
-│ (Organic)   │ │ (Chaos)     │ │ (AI)        │ │ (Synthesis) │
-│             │ │             │ │             │ │             │
-│ LFO 1 ○─────┼─┼─Stepped ○   │ │ X1 Out ○────┼─┼─Model CV    │
-│       ║     │ │        ║    │ │       ║     │ │       ║     │
-│ LFO 3 ○─────┼─┼─Smooth ○    │ │ X2 Out ○────┼─┼─Timbre CV   │
-│       ║     │ │        ║    │ │       ║     │ │       ║     │
-│ LFO 7 ○─────┼─┼─Woggle ○    │ │ t1 Out ○────┼─┼─Trigger     │
-│       ║     │ │        ║    │ │       ║     │ │       ║     │
-└───────║─────┘ └────────║────┘ │ Y Out  ○────┼─┼─Level CV    │
-        ║                ║      │       ║     │ │       ║     │
-        ▼                ▼      └───────║─────┘ └───────║─────┘
-┌──────────────────────────────────────║──────────────║─────┐
-│                Make Noise Maths     ║              ║     │
-│           (Mathematical Brain)       ║              ║     │
-│                                      ▼              ▼     │
-│ Organic CV ◀─ Ch1 Signal  ┌─────────┐  Ch2 Signal ◀─ AI  │
-│ Chaos CV   ◀─ Ch3 Signal  │ Complex │  Ch4 Signal ◀─ CV  │
-│ AI Learning◀─ Attenuv.    │Mathematical              │   │
-│                           │Processing│                   │
-│ Ch1 Unity ○──────────────▶│         │◀─ Ch2 Variable ○  │
-│ Ch3 Unity ○──────────────▶│ Network │◀─ Ch4 Variable ○  │
-│ SUM Output○──────────────▶│         │◀─ OR Output   ○   │
-│ Learning  ○──────────────▶│ Audio   │◀─ AND Output  ○   │
-│ Feedback                  └─────────┘                    │
-└─────────────────────────────║───────────────────────────┘
-                              ║
-                         Mathematical
-                          Intelligence
-                              ▼
-                    ┌─────────────────────┐
-                    │  Complete Musical   │
-                    │     Ecosystem       │
-                    │                     │
-                    │ Organic + Chaos +   │
-                    │ AI + Mathematical   │
-                    │ = Musical Evolution │
-                    │                     │
-                    │ System Output ○─────┼─── Evolving Intelligence
-                    └─────────────────────┘
+
+**Detailed Signal Flow (Mermaid):**
+```mermaid
+flowchart LR
+    subgraph "Input Layer"
+        O[Ochd LFO1-8] 
+        W[Wogglebug CV1-3]
+        M[Marbles X1-3]
+        P[Plaits CV Out]
+    end
+    
+    subgraph "Maths Processing"
+        CH1[Ch1: Organic Processing]
+        CH2[Ch2: Chaos Processing]  
+        CH3[Ch3: AI Processing]
+        CH4[Ch4: Synthesis Processing]
+        SUM[SUM: Master Output]
+    end
+    
+    subgraph "Output Destinations"
+        OSC[Oscillator Control]
+        FILT[Filter Animation]
+        AMP[Amplitude Shaping]
+        PERF[Performance Control]
+    end
+    
+    O --> CH1
+    W --> CH2
+    M --> CH3
+    P --> CH4
+    
+    CH1 --> SUM
+    CH2 --> SUM
+    CH3 --> SUM
+    CH4 --> SUM
+    
+    SUM --> OSC
+    SUM --> FILT
+    SUM --> AMP
+    SUM --> PERF
+    
+    style O fill:#c8e6c9
+    style W fill:#ffecb3
+    style M fill:#e1bee7
+    style P fill:#bbdefb
+    style SUM fill:#e1f5fe
 ```
+
+**Detailed CV Routing (Technical Implementation):**
 
 ### **Patch 4: Mermaid Test
 ```mermaid
