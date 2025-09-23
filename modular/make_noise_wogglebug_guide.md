@@ -1,4 +1,8 @@
 # Make Noise Wogglebug - Beginner's Guide
+
+![Make Noise Wogglebug](https://github.com/DGretta/Music/raw/main/modular/images/make_noise/wogglebug/front_panel.jpg)
+*Source of musical uncertainty with Speed/Chaos control, Ego/Id balance, Woggle control, and Disturb button - generates stepped/smooth random CVs plus three chaos audio oscillators*
+
 *Your Synthesizer's ID Monster - Source of Musical Uncertainty*
 
 ---
