@@ -16,7 +16,7 @@
 
 ## Quick Start: Get Your First Otherworldly Reverb Working in 5 Minutes
 
-![EarthQuaker Devices Afterneath](https://github.com/DGretta/Music/raw/main/modular/images/earthquaker_devices_afterneath/front_panel.jpg)
+![EarthQuaker Devices Afterneath](https://github.com/DGretta/Music/raw/main/modular/images/earthquaker_devices/afterneath/front_panel.jpg)  
 *EarthQuaker Devices Afterneath - Front panel showing signature Drag control, 9 modes, and extensive CV inputs*
 
 **What is Afterneath?** A 16HP digital reverb module that sounds like "a wizard in a cave" - featuring the unique **Drag** parameter that separates delay lines for stuttering, warped effects, plus 9 operational modes, extensive CV control, and self-oscillation capabilities.
