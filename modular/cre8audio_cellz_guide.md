@@ -6,7 +6,7 @@
 
 ## Quick Start: Get Your First Touch Sequence in 5 Minutes
 
-![Cre8audio Cellz](https://github.com/DGretta/Music/raw/main/modular/images/cre8audio/cellz/front_panel.jpg)
+![Cre8audio Cellz](https://github.com/DGretta/Music/raw/main/modular/images/cre8audio/cellz/front_panel.jpg)  
 *Cre8audio Cellz - Touch-sensitive CV playground with 4×4 grid programming and dual output capability*
 
 **What is Cellz?** Think of it as a programmable touch-sensitive keyboard that outputs CV instead of MIDI. It's a 4×4 grid of touch pads where each pad can store two different voltage values. You can play it like an instrument, sequence it automatically, or use it as a creative controller for any CV-controllable parameter in your system.
