@@ -1,6 +1,6 @@
 # Erica Synths Black Polyvoks VCF V2 - Beginner's Guide
 
-![Erica Synths Black Polyvoks VCF](https://github.com/DGretta/Music/raw/main/modular/images/erica_synths_black_polyvoks_vcf/front_panel.jpg)
+![Erica Synths Black Polyvoks VCF](https://github.com/DGretta/Music/raw/main/modular/images/erica_synths/black_polyvoks/front_panel.jpg)  
 *Erica Synths Black Polyvoks VCF - Front panel showing CV1, CV2, Audio In, and Filter Out*
 
 ## Classification
