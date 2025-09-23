@@ -19,3 +19,6 @@ Thumbs.db
 
 # Log files
 *.log
+
+# Other files
+Conversation_Log_Documentation_vs_MPC_Kids.md
