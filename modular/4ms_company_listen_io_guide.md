@@ -2,7 +2,7 @@
 
 **The Essential Audio Interface for Modular Systems**
 
-![4ms Company Listen IO](https://github.com/DGretta/Music/raw/main/modular/images/4ms/listen_io/front_panel.jpg)
+![4ms Company Listen IO](https://github.com/DGretta/Music/raw/main/modular/images/4ms/listen_io/front_panel.jpg)   
 *4ms Company Listen IO - Dual-section audio interface showing Line In/Mod Out (top) and Mod In/Line Out (bottom)*
 
 ---
