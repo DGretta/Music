@@ -6,7 +6,7 @@
 
 ## Quick Start: Get Your First VCA Working in 5 Minutes
 
-![Erica Synths Pico VCA2](https://github.com/DGretta/Music/raw/main/modular/images/erica_synths_pico_vca2/front_panel.jpg)
+![Erica Synths Pico VCA2](https://github.com/DGretta/Music/raw/main/modular/images/erica_synths/pico_vca2/front_panel.jpg)  
 *Erica Synths Pico VCA2 - Dual linear VCA with bias control showing normalling configuration*
 
 **What is Pico VCA2?** A 3HP dual linear VCA module based on the professional AS3330 chip, featuring two independent voltage-controlled amplifiers with bias control on VCA1, input normalling for signal splitting, and DC coupling for both audio and CV amplitude control.
