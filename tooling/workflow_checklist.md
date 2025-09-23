@@ -43,6 +43,15 @@
 - **Multi-component integration:** Variable based on components
 - **Characteristics:** Content creation, research required, substantial additions
 
+**Content Scale Considerations (Added 2025-09-23):**
+**Additional dimension for complexity assessment - function calls don't tell the full story.**
+
+- **Small Scale:** <500 words, minimal research, single focus
+- **Medium Scale:** 500-2000 words, moderate complexity, multiple components  
+- **Large Scale:** 2000+ words, extensive research/verification, high error risk
+- **Critical insight:** A 10,000-word edit = 2 calls but massive complexity
+- **Usage note:** Monitor for scale mismatches that break operation type assumptions
+
 **File Operations:**
 - **Analysis only:** 1 call (file read)
 - **File edit + commit:** 2 calls minimum (edit + git commit)
