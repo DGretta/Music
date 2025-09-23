@@ -6,7 +6,7 @@
 
 ## Quick Start: Get Your First Sound in 5 Minutes
 
-![Erica Synths Pico LFO/S&H](https://github.com/DGretta/Music/raw/main/modular/images/erica_synths_pico_lfo_sh/front_panel.jpg)
+![Erica Synths Pico LFO/S&H](https://github.com/DGretta/Music/raw/main/modular/images/erica_synths/pico_lfo_sh/front_panel.jpg)  
 *Erica Synths Pico LFO/S&H - Dual analog modulation utility with simultaneous LFO and sample & hold processing*
 
 **What is Pico LFO/S&H?** A fully analog dual utility module combining a low frequency oscillator with simultaneous triangle and square outputs, plus a sample & hold circuit. It's the fundamental modulation source that every rack needs, condensed into just 3HP.
