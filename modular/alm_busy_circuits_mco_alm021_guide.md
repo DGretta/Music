@@ -6,7 +6,7 @@
 
 ## Quick Start: Get Your First Digital Sound in 5 Minutes
 
-![ALM Busy Circuits MCO ALM021](https://github.com/DGretta/Music/raw/main/modular/images/alm_busy_circuits_mco/front_panel.jpg)
+![ALM Busy Circuits MCO ALM021](https://github.com/DGretta/Music/raw/main/modular/images/alm_busy_circuits/mco_alm021/front_panel.jpg)
 *ALM Busy Circuits MCO ALM021 - Digital wavetable oscillator with 10 morphing waveforms and early 90s character*
 
 **What is MCO ALM021?** A compact 6HP digital oscillator featuring 10 morphing waveforms, variable pulse width segments (Alpha Juno style), sub oscillator output, and intentional early 90s digital character reminiscent of Ensoniq and Kawai synthesizers.
