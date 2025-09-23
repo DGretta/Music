@@ -27,21 +27,44 @@
 #### **Operation Type Distinction (Added 2025-09-23):**
 **Codified from proven streamlined execution sessions showing clear efficiency patterns.**
 
-**Small Infrastructure Edits (1-3 calls):**
-- **Image URL updates:** 2 calls (edit + commit)
-- **File name standardization:** 2 calls (rename + commit)
-- **Simple text corrections:** 2 calls (edit + commit)
-- **Directory path fixes:** 2 calls (edit + commit)
-- **Single file moves:** 2 calls (move + commit)
-- **License text updates:** 2 calls (edit + commit)
-- **Characteristics:** Repetitive, minimal content creation, infrastructure-focused
+**Small Infrastructure Maintenance (2-6 calls):**
+- **Image integration:** 2 calls (edit + commit) - Add missing GitHub images with proper nested directory structure
+- **Enhanced alternatives addition:** 4-6 calls (2-3 patch edits + 1 image + 1 commit) - Framework compliance for existing guides
+- **File name standardization:** 2 calls (rename + commit) - Correct manufacturer naming conventions
+- **Text corrections/updates:** 2 calls (edit + commit) - Fix terminology, remove outdated references
+- **Directory path fixes:** 2 calls (edit + commit) - Update image URLs for nested structure
+- **License updates:** 2 calls (edit + commit) - Standard license text changes
+- #### **Proven Efficient Workflow Patterns (Added 2025-09-23):**
+**Documented from successful streamlined execution demonstrating 5-6 call efficiency for infrastructure maintenance.**
 
-**Content Operations (4-8+ calls):**
-- **Framework compliance additions:** 4-8+ calls (varies by complexity)
-- **Enhanced format work:** 6-9+ calls (patch count + image + commit)
-- **Historical context creation:** 4-6 calls (research + content + integration + commit)
-- **Multi-component integration:** Variable based on components
-- **Characteristics:** Content creation, research required, substantial additions
+**Guide Enhancement Pattern (Links/Mordax Data proven success):**
+1. **Quick assessment:** 1 call (read file to identify missing elements)
+2. **Add missing image:** 1 call (edit with proper nested directory structure)
+3. **Add enhanced alternatives:** 2-3 calls (one edit per patch requiring alternatives)
+4. **Fix terminology:** 1 call (remove outdated references, align with standards)
+5. **Commit changes:** 1 call (comprehensive commit message)
+6. **Total efficiency:** 5-6 calls for complete framework compliance
+
+**Key Success Factors:**
+- **Pattern recognition:** Know exactly what's missing without extensive analysis
+- **Targeted scope:** Each edit addresses specific, well-defined issue
+- **No redundant reading:** Single assessment guides all subsequent edits
+- **Systematic approach:** Follow same sequence for predictable efficiency
+- **Proven results:** Links/Mordax Data/Mob of Emus all completed efficiently using this pattern
+
+**When to Use This Pattern:**
+- Existing guides needing framework compliance (missing images, enhanced alternatives)
+- Terminology updates (removing outdated references, aligning with standards)
+- Infrastructure corrections (file naming, directory structure)
+- **Do NOT use for:** New guide creation, complex content development, research-heavy operations
+
+**Content Creation Operations (6-15+ calls):**
+- **New guide creation:** 8-15+ calls (research + multiple sections + verification + commit)
+- **Complex framework compliance:** 6-12+ calls (varies by guide complexity and patch count)
+- **Historical context creation:** 6-10+ calls (research + content + integration + verification + commit)
+- **Multi-component integration:** Variable based on components and complexity
+- **System analysis and documentation:** 8-12+ calls (analysis + comprehensive content + commit)
+- **Characteristics:** Original content creation, research required, substantial additions, high complexity
 
 **Content Scale Considerations (Added 2025-09-23):**
 **Additional dimension for complexity assessment - function calls don't tell the full story.**
