@@ -16,7 +16,7 @@
 
 ## Quick Start: Get Your First Filtered Sound in 5 Minutes
 
-![Endorphines Squawk Dirty to Me](https://github.com/DGretta/Music/raw/main/modular/images/endorphines/squawk_dirty_to_me/front_panel.jpg)
+![Endorphines Squawk Dirty to Me](https://github.com/DGretta/Music/raw/main/modular/images/endorphines/squawk_dirty_to_me/front_panel.jpg)  
 *Endorphines Squawk Dirty to Me - Front panel showing 8 filter modes, Meta CV, and comprehensive filter controls in compact 6HP*
 
 **What is Squawk Dirty to Me?** Think of it as 8 different classic filters crammed into one tiny 6HP stereo module. From Minimoog ladder filters to MS-20 grunge, from low-pass gates to comb filters - it's a comprehensive filter arsenal with zero-delay feedback processing for that authentic analog sound.
