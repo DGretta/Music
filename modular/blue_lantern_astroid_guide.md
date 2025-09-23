@@ -6,7 +6,7 @@
 
 ## Quick Start: Get Your First 808 Kick in 5 Minutes
 
-![Blue Lantern Astroid](https://github.com/DGretta/Music/raw/main/modular/images/blue_lantern_astroid/front_panel.jpg)
+![Blue Lantern Astroid](https://github.com/DGretta/Music/raw/main/modular/images/blue_lantern/astroid/front_panel.jpg)
 *Blue Lantern Astroid - Twin-T analog drum synthesizer with accent control and boost circuit*
 
 **What is the Astroid?** A dedicated drum synthesis module using the classic "twin-T" circuit to generate sine wave percussion sounds. Features accent control for dynamic playing, boost circuit for square wave distortion, and covers the full spectrum of classic drum machine sounds from 808s to 909s to Gabber kicks.

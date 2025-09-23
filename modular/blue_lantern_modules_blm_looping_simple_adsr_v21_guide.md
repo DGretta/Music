@@ -6,7 +6,7 @@
 
 ## Quick Start: Get Your First Envelope Working in 5 Minutes
 
-![Blue Lantern Modules BLM Looping Simple ADSR v2.1](https://github.com/DGretta/Music/raw/main/modular/images/blue_lantern_blm_looping_simple_adsr_v21/front_panel.jpg)
+![Blue Lantern Modules BLM Looping Simple ADSR v2.1](https://github.com/DGretta/Music/raw/main/modular/images/blue_lantern/blm_looping_simple_adsr_v21/front_panel.jpg)
 *Blue Lantern Modules BLM Looping Simple ADSR v2.1 - Digital envelope generator with looping capabilities and CV level control*
 
 **What is BLM Simple ADSR v2.1?** A 7HP digital envelope generator providing classic ADSR envelopes with three operational modes: standard 1-shot, loop activated gate, and continuous loop. Features CV-controllable output level, time adjustment, and both linear and exponential curves for versatile envelope shaping.
