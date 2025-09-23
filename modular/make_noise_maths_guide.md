@@ -145,12 +145,12 @@ graph LR
 **Mermaid Diagram:**
 ```mermaid
 graph TB
-    subgraph "Organic Intelligence"
-        OCHD[DivKid Ochd<br/>🌿 Breathing LFOs]
+    subgraph "Variable Modulation"
+        OCHD[DivKid Ochd<br/>⚡ Variable Rate LFOs]
     end
     
-    subgraph "Mathematical Brain"
-        MATHS[Make Noise Maths<br/>🧠 Analog Computer]
+    subgraph "Signal Processing"
+        MATHS[Make Noise Maths<br/>⚙️ Function Generator]
     end
     
     subgraph "Musical Destinations"
@@ -164,10 +164,10 @@ graph TB
     OCHD -->|LFO3 🔵| MATHS  
     OCHD -->|LFO7 🔵| MATHS
     
-    MATHS -->|Mathematical CV 🔵| OSC
-    MATHS -->|Mathematical CV 🔵| FILT
-    MATHS -->|Mathematical CV 🔵| VCA
-    MATHS -->|Mathematical CV 🔵| FX
+    MATHS -->|Processed CV 🔵| OSC
+    MATHS -->|Processed CV 🔵| FILT
+    MATHS -->|Processed CV 🔵| VCA
+    MATHS -->|Processed CV 🔵| FX
     
     style OCHD fill:#c8e6c9
     style MATHS fill:#e1f5fe
@@ -374,28 +374,28 @@ graph TB
 **Mermaid System Overview:**
 ```mermaid
 graph TB
-    subgraph "Intelligence Sources"
-        OCHD[DivKid Ochd<br/>🌿 Organic]
-        WOG[Make Noise Wogglebug<br/>⚡ Chaos]
-        MARBLES[Mutable Marbles<br/>🤖 AI]
-        PLAITS[Mutable Plaits<br/>🎵 Synthesis]
+    subgraph "Modulation Sources"
+        OCHD[DivKid Ochd<br/>⚡ Variable LFOs]
+        WOG[Make Noise Wogglebug<br/>⚡ Random CV]
+        MARBLES[Mutable Marbles<br/>🎲 Algorithmic CV]
+        PLAITS[Mutable Plaits<br/>🎵 Audio/CV]
     end
     
-    subgraph "Mathematical Brain"
-        MATHS[Make Noise Maths<br/>🧠 Central Processing]
+    subgraph "Signal Processing"
+        MATHS[Make Noise Maths<br/>⚙️ Function Generator]
     end
     
     subgraph "Musical Output"
-        SYSTEM[Complete Musical Ecosystem<br/>🎼 Evolving Intelligence]
+        SYSTEM[Complete Musical System<br/>🎼 Processed Output]
     end
     
-    OCHD -->|Organic CV 🔵| MATHS
-    WOG -->|Chaos CV 🔵| MATHS
-    MARBLES -->|AI CV 🔵| MATHS
-    PLAITS -->|Synthesis CV 🔵| MATHS
+    OCHD -->|Variable CV 🔵| MATHS
+    WOG -->|Random CV 🔵| MATHS
+    MARBLES -->|Algorithmic CV 🔵| MATHS
+    PLAITS -->|Audio CV 🔵| MATHS
     
-    MATHS -->|Mathematical<br/>Processing 🔵| SYSTEM
-    SYSTEM -->|Learning<br/>Feedback 🔵| MARBLES
+    MATHS -->|Function<br/>Processing 🔵| SYSTEM
+    SYSTEM -->|Control<br/>Feedback 🔵| MARBLES
     
     style OCHD fill:#c8e6c9
     style WOG fill:#ffecb3
@@ -416,10 +416,10 @@ flowchart LR
     end
     
     subgraph "Maths Processing"
-        CH1[Ch1: Organic Processing]
-        CH2[Ch2: Chaos Processing]  
-        CH3[Ch3: AI Processing]
-        CH4[Ch4: Synthesis Processing]
+        CH1[Ch1: Variable Processing]
+        CH2[Ch2: Random Processing]  
+        CH3[Ch3: Algorithmic Processing]
+        CH4[Ch4: Audio Processing]
         SUM[SUM: Master Output]
     end
     
