@@ -1,6 +1,6 @@
 # Rossum Electro-Music Mob of Emus Beginner's Guide
 
-![Rossum Electro-Music Mob of Emus](https://github.com/DGretta/Music/raw/main/modular/images/rossum_electro_music/mob_of_emus/front_panel.jpg)
+![Rossum Electro-Music Mob of Emus](https://github.com/DGretta/Music/raw/main/modular/images/rossum_electro-music/mob_of_emus/front_panel.jpg)
 *Six-channel polyfunctional harmonic synthesis module with mathematical harmonic series control, individual channel programming, and Hex mode macro layer for complex additive synthesis and polyrhythmic modulation*
 
 *The Polyfunctional Harmonic Sextet*
