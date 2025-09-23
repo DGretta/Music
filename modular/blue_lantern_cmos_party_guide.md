@@ -6,7 +6,7 @@
 
 ## Quick Start: Get Your First Logic Pattern in 5 Minutes
 
-![Blue Lantern CMOS Party](https://github.com/DGretta/Music/raw/main/modular/images/blue_lantern/cmos_party/front_panel.jpg)
+![Blue Lantern CMOS Party](https://github.com/DGretta/Music/raw/main/modular/images/blue_lantern/cmos_party/front_panel.jpg)  
 *Blue Lantern CMOS Party - Complete boolean logic processor with all standard logic operations and inverted outputs*
 
 **What is the CMOS Party?** A comprehensive boolean logic module providing all five standard logic operations (AND, NAND, NOR, XOR, OR) plus inverted outputs, using reliable CD4000 CMOS logic ICs. Perfect for clock manipulation, trigger pattern generation, and audio rate logic processing with extremely low latency.
