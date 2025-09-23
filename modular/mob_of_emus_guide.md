@@ -225,7 +225,7 @@ Instead of randomly setting six channels, you can instantly access **thousands o
 
 **Generative Harmonic Evolution Integration:**
 
-| Module Integration | Signal Flow | Purpose | Phase 2 Synergy |
+| Module Integration | Signal Flow | Purpose | Advanced Synergy |
 |-------------------|-------------|---------|------------------|
 | **Bloom Random → Function Junction** | Generative patterns | **Pattern processing** | **Generative evolution creates sophisticated harmonic control patterns** |
 | **Function Junction Logic → Mob** | Processed generative | **Logic-enhanced harmony** | **Logic operations provide generative decision making for harmonic series** |
@@ -243,7 +243,7 @@ Instead of randomly setting six channels, you can instantly access **thousands o
 - **Budget alternatives:** **2HP Rnd** provides basic generative control for harmonic parameters
 - **Different approach:** **Wogglebug** for chaotic generative patterns combined with harmonic generation
 
-### **Patch 4: Intermediate - Phase 2 Organic Harmonic Evolution**
+### **Patch 4: Intermediate - Advanced Organic Harmonic Evolution**
 ```
 ┌─────────────┐ ┌─────────────────┐
 │  DivKid     │ │  Mob of Emus    │
@@ -284,7 +284,7 @@ Instead of randomly setting six channels, you can instantly access **thousands o
 
 **Organic Harmonic Evolution Integration:**
 
-| Module Integration | Signal Flow | Purpose | Phase 2 Synergy |
+| Module Integration | Signal Flow | Purpose | Advanced Synergy |
 |-------------------|-------------|---------|------------------|
 | **Ochd LFO 1 → Mob H.Gain** | Organic CV | **Natural harmonic balance** | **Creates breathing harmonic intensity that evolves naturally over time** |
 | **Ochd LFO 4 → Mob Variation** | Organic CV | **Organic pattern evolution** | **Smoothly varies harmonic patterns with natural timing** |
