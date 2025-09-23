@@ -6,7 +6,7 @@
 
 ## Quick Start: Get Your First Sound in 5 Minutes
 
-![Erica Synths Pico DSP](https://github.com/DGretta/Music/raw/main/modular/images/erica_synths_pico_dsp/front_panel.jpg)
+![Erica Synths Pico DSP](https://github.com/DGretta/Music/raw/main/modular/images/erica_synths/pico_dsp/front_panel.jpg)  
 *Erica Synths Pico DSP - Professional 8-algorithm stereo effects processor with CV parameter control*
 
 **What is Pico DSP?** A complete stereo effects processor with 8 custom DSP algorithms in just 3HP. It's like having a professional effects rack that takes any mono signal and creates wide, spacious stereo textures with everything from delays to reverbs to granular processing.
