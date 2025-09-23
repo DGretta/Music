@@ -1,6 +1,6 @@
 # Erica Synths Black Quad VCA2 - Guide
 
-![Erica Synths Black Quad VCA2](https://github.com/DGretta/Music/raw/main/modular/images/erica_synths_black_quad_vca2/front_panel.jpg)
+![Erica Synths Black Quad VCA2](https://github.com/DGretta/Music/raw/main/modular/images/erica_synths/black_quad_vca/front_panel.jpg)  
 *Erica Synths Black Quad VCA2 - Front panel showing four VCA channels with controls*
 
 ## Classification
