@@ -1,5 +1,8 @@
 # Mordax Data - Beginner's Guide
 
+![Mordax Data](https://github.com/DGretta/Music/raw/main/modular/images/mordax/data/front_panel.jpg)
+*Six-in-one analysis and generation module: oscilloscope, spectrum analyzer, tuner, waveform generator, voltmeter, and clock generator for complete system visualization and precision control*
+
 **The Swiss Army Knife of Eurorack**
 
 ---
