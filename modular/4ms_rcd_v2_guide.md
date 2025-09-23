@@ -6,7 +6,7 @@
 
 ## Quick Start: Get Your First Sound in 5 Minutes
 
-![4ms Rotating Clock Divider V2](https://github.com/DGretta/Music/raw/main/modular/images/4ms/rcd_v2/front_panel.jpg)
+![4ms Rotating Clock Divider V2](https://github.com/DGretta/Music/raw/main/modular/images/4ms/rcd_v2/front_panel.jpg)  
 *4ms Rotating Clock Divider V2 - Polyrhythm generator with Clock In, Rotate CV, Reset, and eight division outputs*
 
 **What is RCD V2?** A clock divider that creates 8 different slower tempos from one fast clock, but with a twist - the "Rotate" function lets you shift all divisions around in real-time, creating constantly evolving polyrhythms.
