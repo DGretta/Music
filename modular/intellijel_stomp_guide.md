@@ -2,7 +2,7 @@
 
 **The Eurorack-to-Pedal Bridge with Expression Control**
 
-![Intellijel Stomp](https://github.com/DGretta/Music/raw/main/modular/images/intellijel_stomp/front_panel.jpg)
+![Intellijel Stomp](https://github.com/DGretta/Music/raw/main/modular/images/intellijel/stomp/front_panel.jpg)  
 *Intellijel Stomp - Effects pedal send/return module with expression control and built-in LFO for automated pedal parameter control*
 
 ---
