@@ -16,7 +16,7 @@
 
 ## Quick Start: Get Your First Aggressive Filter Sweep in 5 Minutes
 
-![Doepfer A124 Wasp SE](https://github.com/DGretta/Music/raw/main/modular/images/doepfer/a124_wasp_se/front_panel.jpg)  
+![Doepfer A124 Wasp SE](https://github.com/DGretta/Music/raw/main/modular/images/doepfer/a_124_wasp_se/front_panel.jpg)  
 *Doepfer A124 Wasp SE - Front panel showing aggressive filter controls with Cutoff, Resonance, and CV inputs*
 
 **What is Wasp SE?** A recreation of the legendary Wasp filter from the Electronic Dream Plant Wasp synthesizer - famous for its aggressive, biting character and wild self-oscillation. Unlike gentle filters, the Wasp SE is designed to bite, scream, and add serious attitude to your sounds.
