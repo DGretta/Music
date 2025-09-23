@@ -6,7 +6,7 @@
 
 ## Quick Start: Essential Envelope Utility in 5 Minutes
 
-![Behringer Dual Envelope Generator 1003](https://github.com/DGretta/Music/raw/main/modular/images/behringer/dual_envelope_generator_1003/front_panel.jpg)
+![Behringer Dual Envelope Generator 1003](https://github.com/DGretta/Music/raw/main/modular/images/behringer/dual_envelope_generator_1003/front_panel.jpg)  
 *Behringer Dual Envelope Generator 1003 - Coordinated dual ADSR system with independent timing control*
 
 **What is the 1003?** A dual ADSR envelope generator that triggers both envelopes simultaneously from a single gate input. Each envelope can have completely different timing characteristics, making it perfect for coordinated dual modulation - like controlling both amplitude and filter cutoff with synchronized but independent envelope shapes.
