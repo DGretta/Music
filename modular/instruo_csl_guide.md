@@ -2,7 +2,7 @@
 
 **The West Coast Synthesis Powerhouse**
 
-![Instruo Cs-L Complex Oscillator](https://github.com/DGretta/Music/raw/main/modular/images/instruo_csl/front_panel.jpg)
+![Instruo Cs-L Complex Oscillator](https://github.com/DGretta/Music/raw/main/modular/images/instruo/csl/front_panel.jpg)  
 *West Coast complex oscillator with dual cores, wavefolding, FM, sync, and ring modulation - the synthesis brain for harmonic complexity*
 
 ---
