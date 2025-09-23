@@ -24,6 +24,25 @@
 #### **Updated Estimation Standards (Effective 2025-09-20):**
 **Learned from session data showing systematic underestimation when git commits not properly accounted for.**
 
+#### **Operation Type Distinction (Added 2025-09-23):**
+**Codified from proven streamlined execution sessions showing clear efficiency patterns.**
+
+**Small Infrastructure Edits (1-3 calls):**
+- **Image URL updates:** 2 calls (edit + commit)
+- **File name standardization:** 2 calls (rename + commit)
+- **Simple text corrections:** 2 calls (edit + commit)
+- **Directory path fixes:** 2 calls (edit + commit)
+- **Single file moves:** 2 calls (move + commit)
+- **License text updates:** 2 calls (edit + commit)
+- **Characteristics:** Repetitive, minimal content creation, infrastructure-focused
+
+**Content Operations (4-8+ calls):**
+- **Framework compliance additions:** 4-8+ calls (varies by complexity)
+- **Enhanced format work:** 6-9+ calls (patch count + image + commit)
+- **Historical context creation:** 4-6 calls (research + content + integration + commit)
+- **Multi-component integration:** Variable based on components
+- **Characteristics:** Content creation, research required, substantial additions
+
 **File Operations:**
 - **Analysis only:** 1 call (file read)
 - **File edit + commit:** 2 calls minimum (edit + git commit)
