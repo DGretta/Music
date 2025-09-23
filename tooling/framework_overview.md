@@ -32,6 +32,7 @@
 - **"I need to create new content"** → guide_creation_framework.md (Module classifications)
 - **"I need to fix something"** → accountability_tracking.md (Prevention strategies)
 - **"I need visual standards"** → visual_communication_standards.md (GitHub image integration)
+- **"I have an improvement idea"** → improvement_ideas.md (Innovation pipeline)
 
 ---
 
