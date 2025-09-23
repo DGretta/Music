@@ -5,8 +5,8 @@
 ---
 
 ## Quick Start: Get Your First Chiptune Sound in 5 Minutes
-
-![Cre8audio Chipz](https://github.com/DGretta/Music/raw/main/modular/images/cre8audio/chipz/front_panel.jpg)
+ 
+![Cre8audio Chipz](https://github.com/DGretta/Music/raw/main/modular/images/cre8audio/chipz/front_panel.jpg)  
 *Cre8audio Chipz - Front panel showing dual chiptune oscillators and LFO with morphing waveforms*
 
 **What is Chipz?** Think of it as three oscillators in one compact package - two chiptune-style VCOs inspired by classic 8-bit video game consoles (Commodore, Atari, NES) plus an LFO for modulation. Despite the nostalgic inspiration, it's capable of much more than just retro gaming sounds, offering everything from classic analog tones to digital noise textures.
