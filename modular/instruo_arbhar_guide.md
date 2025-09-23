@@ -2,9 +2,9 @@
 
 **The Granular Time Machine**
 
-![Instruo Arbhar](https://github.com/DGretta/Music/raw/main/modular/images/instruo/arbhar/front_panel.jpg)
-![Instruo Arbhar](https://github.com/DGretta/Music/raw/main/modular/images/instruo/arbhar/exp_panel.jpg)
+![Instruo Arbhar](https://github.com/DGretta/Music/raw/main/modular/images/instruo/arbhar/front_panel.jpg)  
 ![Instruo Arbhar](https://github.com/DGretta/Music/raw/main/modular/images/instruo/arbhar/usb_exp_panel.jpg)  
+![Instruo Arbhar](https://github.com/DGretta/Music/raw/main/modular/images/instruo/arbhar/exp_panel.jpg)    
 *Instruo Arbhar - Granular processor with 6-layer memory system, built-in microphone, and extensive CV control*
 
 ---
