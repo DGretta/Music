@@ -6,7 +6,7 @@
 
 ## Quick Start: Get Your First Sound in 5 Minutes
 
-![Erica Synths Pico Voice](https://github.com/DGretta/Music/raw/main/modular/images/erica_synths_pico_voice/front_panel.jpg)
+![Erica Synths Pico Voice](https://github.com/DGretta/Music/raw/main/modular/images/erica_synths/pico_voice/front_panel.jpg)  
 *Erica Synths Pico Voice - 8-algorithm synthesis module showing LED color coding and parameter controls*
 
 **What is Pico Voice?** A complete voice module packed into just 3HP with 8 different synthesis algorithms ranging from Karplus Strong string synthesis to TB-303 bassline emulation. It's like having 8 different synthesizers in the space of a single knob!
