@@ -6,7 +6,7 @@
 
 ## Quick Start: Get Your First Filtered Sound in 5 Minutes
 
-![Bizarre Jezabel Pkhia MK2](https://github.com/DGretta/Music/raw/main/modular/images/bizarre_jezabel/pkhia_mk2/front_panel.jpg)
+![Bizarre Jezabel Pkhia MK2](https://github.com/DGretta/Music/raw/main/modular/images/bizarre_jezabel/pkhia_mk2/front_panel.jpg)  
 *Bizarre Jezabel Pkhia MK2 - Dual analog stereo filter with pre-filter VCAs and multi-mode outputs*
 
 **What is Pkhia MK2?** A dual/stereo analog multi-mode filter AND VCA module designed specifically for stereo processing. It combines two analog filters with pre-filter VCAs, allowing complete dynamic and frequency shaping in one module. Each channel offers multiple filter modes (low-pass, band-pass, high-pass) plus voltage-controlled amplification, and they can work independently as dual-mono or together as a true stereo processor with integrated VCA control.
