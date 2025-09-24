@@ -1,5 +1,8 @@
 # Noise Engineering Loquelic Iteritas - Beginner's Guide
 
+![Noise Engineering Loquelic Iteritas](https://github.com/DGretta/Music/raw/main/modular/images/noise_engineering/loquelic_iteritas/front_panel.jpg)
+*Three-algorithm digital complex oscillator featuring VOSIM vocal simulation, Summation Synthesis, and Phase Modulation in 10HP*
+
 **The Three-Algorithm Digital Beast**
 
 ---
@@ -124,7 +127,7 @@ Mode: Any
 **Controls:** MODULATE controls how much the oscillators interact
 **Experiment:** Try different musical intervals between the sequences
 
-### **Patch 5: Expert - Complete Phase 2 Complex Synthesis Ecosystem**
+### **Patch 5: Expert - Complete Advanced Complex Synthesis Ecosystem**
 ```
 ┌─────────────┐ ┌─────────────┐ ┌─────────────┐ ┌─────────────┐
 │   DivKid    │ │ Make Noise  │ │ Mutable     │ │ 4ms RCD v2  │
@@ -185,7 +188,7 @@ Mode: Any
                     └─────────────────────┘       Digital Synthesis
 ```
 
-**Complete Phase 2 Complex Digital Synthesis Integration:**
+**Complete Advanced Complex Digital Synthesis Integration:**
 
 | Intelligence Layer | Function | Loquelic Iteritas Control | Digital Synthesis Result |
 |-------------------|----------|---------------------------|---------------------------|
@@ -196,18 +199,18 @@ Mode: Any
 | **Digital Algorithms** | Complex synthesis | **Three synthesis engines** | **Impossible analog-defying textures** |
 
 **Expert System Design:**
-- **Loquelic Iteritas as digital complexity engine:** All Phase 2 intelligence controls sophisticated digital algorithms
-- **Algorithm-specific behavior:** Each synthesis algorithm responds differently to same Phase 2 sources
+- **Loquelic Iteritas as digital complexity engine:** All Advanced intelligence controls sophisticated digital algorithms
+- **Algorithm-specific behavior:** Each synthesis algorithm responds differently to same Advanced sources
 - **Real-time algorithm switching:** Polyrhythmic triggers change synthesis character dynamically
 - **Multi-algorithm exploration:** Same modulation sources create completely different results per algorithm
-- **Digital transcendence:** Phase 2 intelligence controls impossible synthesis complexity
+- **Digital transcendence:** Advanced intelligence controls impossible synthesis complexity
 
 **Advanced Performance:**
-1. **Phase 2 initialization:** All intelligence sources establish their character
+1. **Advanced initialization:** All intelligence sources establish their character
 2. **Algorithm exploration:** Manual switching reveals how different algorithms respond to same sources
-3. **Real-time digital evolution:** Phase 2 sources drive impossible digital synthesis complexity
+3. **Real-time digital evolution:** Advanced sources drive impossible digital synthesis complexity
 4. **Algorithm interaction:** Use polyrhythmic triggers to switch algorithms musically
-5. **Digital complexity transcendence:** Sophisticated intelligence creates digital synthesis impossible with traditional methods
+5. **Digital complexity transcendence:** Advanced intelligence creates digital synthesis impossible with traditional methods
 
 **Philosophical Achievement:**
 This represents the **ultimate digital synthesis complexity** - where organic breathing, controlled chaos, sophisticated pattern generation, and mathematical precision all control impossible digital algorithms, creating synthesis textures that would be unachievable with traditional analog or simple digital methods under your creative direction.
@@ -224,7 +227,7 @@ This represents the **ultimate digital synthesis complexity** - where organic br
 6. **🎛️ Modulation Destination:** All four tone controls beg for CV modulation
 7. **⚡ Hard Sync Source:** Built-in sync for classic sync lead sounds
 8. **🧪 Algorithm Study:** Learn classic synthesis techniques in hardware form
-9. **🌀 Phase 2 Complex Synthesis:** Transform sophisticated modulation into impossible digital textures
+9. **🌀 Advanced Complex Synthesis:** Transform sophisticated modulation into impossible digital textures
 
 ---
 
@@ -282,13 +285,13 @@ This represents the **ultimate digital synthesis complexity** - where organic br
 
 ## Pairs Well With
 
-### **Phase 2 Module Synergies (Complex Digital Modulation):**
+### **Advanced Module Synergies (Complex Digital Modulation):**
 - **DivKid Ochd & Expander:** Ochd organic LFOs create breathing evolution in all three synthesis algorithms
 - **Make Noise Wogglebug:** Wogglebug chaos drives unpredictable digital complexity and harmonic folding
 - **Mutable Marbles:** Marbles patterns control dual pitch relationships and musical harmonic intervals
 - **4ms RCD v2:** RCD polyrhythmic triggers enable musical algorithm switching and timing control
 - **Cre8audio Function Junction:** Function Junction processed modulation adds sophisticated envelope control
-- **Cross-Phase 2 Integration:** All Phase 2 modules transform into impossible digital synthesis complexity
+- **Cross-Advanced Integration:** All Advanced modules transform into impossible digital synthesis complexity
 
 ### **Phase 1 Module Integration (Core Digital Synthesis):**
 - **Make Noise Maths:** Maths envelopes perfect for controlling algorithm parameters and synthesis dynamics
@@ -326,7 +329,7 @@ Noise Engineering Loquelic Iteritas represents **impossible digital synthesis** 
 - **Impossible analog textures:** Digital algorithms create sounds unachievable with traditional synthesis
 - **Educational synthesis laboratory:** Learn three classic synthesis techniques in hardware
 - **Compact complexity:** Three complete synthesizers in 10HP
-- **Phase 2 integration power:** All four tone controls respond beautifully to sophisticated modulation
+- **Advanced integration power:** All four tone controls respond beautifully to sophisticated modulation
 - **Algorithm exploration:** Same sources create completely different results per algorithm
 
 ### **Perfect For:**
@@ -334,18 +337,18 @@ Noise Engineering Loquelic Iteritas represents **impossible digital synthesis** 
 - **Sound designers:** Unique textures perfect for film scoring and experimental soundtracks
 - **Synthesis students:** Learn VOSIM, summation synthesis, and phase modulation hands-on
 - **Experimental musicians:** Algorithms encourage non-traditional musical thinking
-- **Phase 2 enthusiasts:** Transform sophisticated modulation into impossible digital complexity
+- **Advanced enthusiasts:** Transform sophisticated modulation into impossible digital complexity
 - **Anyone seeking unique sounds:** Textures impossible with traditional analog or simple digital synthesis
 
 ### **The Magic:**
 Loquelic Iteritas **democratizes legendary synthesis algorithms** - giving everyone access to VOSIM vocal simulation, mathematical summation synthesis, and complex phase modulation in affordable hardware form.
 
-### **Phase 2 Integration Power:**
-As the **complex digital synthesis engine of Phase 2 ecosystems**, Loquelic Iteritas transforms organic breathing, controlled chaos, sophisticated pattern generation, and mathematical precision into impossible digital textures. **You conduct electronic intelligence toward digital synthesis transcendence.**
+### **Advanced Integration Power:**
+As the **complex digital synthesis engine of Advanced ecosystems**, Loquelic Iteritas transforms organic breathing, controlled chaos, sophisticated pattern generation, and mathematical precision into impossible digital textures. **You conduct electronic intelligence toward digital synthesis transcendence.**
 
 ---
 
-## Phase 2 Learning Path
+## Advanced Learning Path
 
 ### **Recommended Study Progression:**
 1. **Start with Loquelic fundamentals:** Master all three algorithms and understand digital synthesis complexity
@@ -360,29 +363,29 @@ As the **complex digital synthesis engine of Phase 2 ecosystems**, Loquelic Iter
 - **Loquelic + Wogglebug:** Master chaotic digital complexity through unpredictable parameter control
 - **Loquelic + Marbles:** Understand sophisticated pattern-based digital harmonic relationships
 - **Loquelic + RCD:** Explore polyrhythmic algorithm switching for dynamic synthesis character changes
-- **All Phase 2 + Loquelic:** Build complete digital ecosystems where sophisticated intelligence controls impossible synthesis
+- **All Advanced + Loquelic:** Build complete digital ecosystems where sophisticated intelligence controls impossible synthesis
 
 ### **Skill Development Milestones:**
 - **Beginner:** Master individual algorithms and basic digital synthesis concepts
 - **Intermediate:** Understand algorithm-specific behavior and complex parameter interaction
-- **Advanced:** Create Phase 2 integration patches with sophisticated digital synthesis complexity
+- **Advanced:** Create Advanced integration patches with sophisticated digital synthesis complexity
 - **Expert:** Design digital ecosystems where sophisticated intelligence creates impossible synthesis textures
 
 ### **Advanced Digital Synthesis Concepts:**
 - **Multi-Algorithm Control:** Understand how same modulation creates different results per synthesis algorithm
-- **Phase 2 Digital Intelligence:** Use sophisticated pattern generation to control impossible digital complexity
+- **Advanced Digital Intelligence:** Use sophisticated pattern generation to control impossible digital complexity
 - **Algorithm Performance:** Real-time algorithm switching for dynamic synthesis character changes
 - **Digital Complexity Design:** Create patches where sophisticated intelligence controls legendary synthesis algorithms
 
 ### **Performance Applications:**
 - **Live Digital Control:** Real-time algorithm switching and parameter control for dynamic performance
 - **Generative Digital Systems:** Foundation for self-evolving digital synthesis complexity
-- **Educational Digital Tool:** Learn classic synthesis algorithms through hands-on Phase 2 integration
+- **Educational Digital Tool:** Learn classic synthesis algorithms through hands-on Advanced integration
 - **Creative Digital Direction:** Guide sophisticated pattern generation toward impossible digital synthesis
 
 ---
 
-**Bottom Line:** Noise Engineering Loquelic Iteritas isn't just a digital oscillator - it's an **impossible synthesis laboratory** that brings three legendary digital algorithms to modular synthesis. Every algorithm teaches you something new about digital synthesis possibilities, and Phase 2 integration reveals how sophisticated intelligence can control synthesis complexity impossible with traditional methods. As the **complex digital synthesis engine of Phase 2 ecosystems**, it transforms electronic intelligence into digital synthesis transcendence under your creative direction.
+**Bottom Line:** Noise Engineering Loquelic Iteritas isn't just a digital oscillator - it's an **impossible synthesis laboratory** that brings three legendary digital algorithms to modular synthesis. Every algorithm teaches you something new about digital synthesis possibilities, and Advanced integration reveals how sophisticated intelligence can control synthesis complexity impossible with traditional methods. As the **complex digital synthesis engine of Advanced ecosystems**, it transforms electronic intelligence into digital synthesis transcendence under your creative direction.
 
 ---
 
