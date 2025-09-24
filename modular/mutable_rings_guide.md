@@ -1,5 +1,8 @@
 # Mutable Instruments Rings - Beginner's Guide
 
+![Mutable Instruments Rings](https://github.com/DGretta/Music/raw/main/modular/images/mutable_instruments/rings/front_panel.jpg)
+*Physical modeling powerhouse with three acoustic resonator algorithms - Modal, Sympathetic, and String models for authentic instrument simulation*
+
 **The Physical Modeling Powerhouse**
 
 ---
