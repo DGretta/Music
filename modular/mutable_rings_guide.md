@@ -131,11 +131,11 @@
 **Controls:** STRUCTURE changes materials, BRIGHTNESS for tone, POSITION for character
 **Sound:** Beautiful, bell-like melodic sequences with natural decay
 
-### **Patch 2: Intermediate - Phase 2 Organic Evolution with Ochd**
+### **Patch 2: Intermediate - Advanced Organic Evolution with Ochd**
 ```
    ┌─────────────────────┐      ┌─────────────────────┐
    │   DivKid Ochd      │      │   Mutable Rings     │
-   │    (Phase 2)       │      │                     │
+   │    (Advanced)      │      │                     │
    │                    │      │                     │
    │ LFO 2 ○────────────┼──────┼─▶ STRUCTURE CV      │
    │       ║            │      │                     │
@@ -167,7 +167,7 @@
                                └─────────────────────┘     Modeling
 ```
 
-| Phase 2 Integration | Rings Parameter | Purpose | Organic Result |
+| Advanced Integration | Rings Parameter | Purpose | Organic Result |
 |-------------------|-----------------|---------|----------------|
 | **Ochd LFO 2 → Structure CV** | Physical modeling structure | **Evolving resonator character** | **Breathing acoustic spaces** |
 | **Ochd LFO 4 → Brightness CV** | Harmonic content | **Organic timbral evolution** | **Natural spectral movement** |
@@ -181,7 +181,7 @@
 - **Spatial processing:** Separate ODD/EVEN outputs for stereo imaging
 
 **Learning Objectives:**
-- **Phase 2 organic integration:** Ochd's breathing modulation applied to physical modeling
+- **Advanced organic integration:** Ochd's breathing modulation applied to physical modeling
 - **Multi-parameter organic control:** Multiple aspects of physical modeling evolving together
 - **Acoustic space simulation:** Physical modeling creating realistic acoustic environments
 - **Stereo physical modeling:** Using dual outputs for spatial acoustic simulation
@@ -248,7 +248,7 @@
 - **Chaotic performance:** Burst triggers simulate unpredictable playing techniques
 - **Spatial acoustic modeling:** Dual outputs create stereo acoustic instrument simulation
 
-### **Patch 4: Expert - Complete Phase 2 Physical Modeling Ecosystem**
+### **Patch 4: Expert - Complete Advanced Physical Modeling Ecosystem**
 ```
 ┌─────────────┐ ┌─────────────┐ ┌─────────────┐ ┌─────────────┐
 │   DivKid    │ │ Make Noise  │ │ Mutable     │ │ 4ms RCD v2  │
@@ -302,7 +302,7 @@
                     └─────────────────────┘       from Electronics
 ```
 
-**Complete Phase 2 Physical Modeling Integration:**
+**Complete Advanced Physical Modeling Integration:**
 
 | Intelligence Layer | Function | Rings Control | Musical Result |
 |-------------------|----------|---------------|----------------|
@@ -313,7 +313,7 @@
 | **Physical (Rings)** | Acoustic simulation | **Complete instrument modeling** | **Realistic acoustic instruments** |
 
 **Expert System Design:**
-- **Rings as acoustic reality engine:** All Phase 2 pattern generation becomes realistic instruments
+- **Rings as acoustic reality engine:** All Advanced pattern generation becomes realistic instruments
 - **Multi-source acoustic control:** Every aspect of instrument behavior under sophisticated control
 - **User-guided acoustic performance:** You direct sophisticated pattern generation toward acoustic realism
 - **Emergent acoustic complexity:** Simple electronic sources become complex acoustic instruments
@@ -390,7 +390,7 @@
 
 ---
 
-## Phase 2 Learning Path
+## Advanced Learning Path
 
 ### **Recommended Study Progression:**
 1. **Start with Rings fundamentals:** Master all three resonator models and polyphonic voice management
@@ -405,12 +405,12 @@
 - **Rings + Wogglebug:** Master chaotic modulation of acoustic parameters for controlled uncertainty
 - **Rings + Marbles:** Master sophisticated pattern-based control of acoustic instruments
 - **Rings + RCD:** Explore polyrhythmic acoustic triggering with mathematical precision
-- **All Phase 2 + Rings:** Build complete acoustic ecosystems with multiple pattern generation types under your guidance
+- **All Advanced + Rings:** Build complete acoustic ecosystems with multiple pattern generation types under your guidance
 
 ### **Skill Development Milestones:**
 - **Beginner:** Master individual resonator models and basic acoustic parameter control
 - **Intermediate:** Understand polyphonic voice management and CV control of acoustic parameters
-- **Advanced:** Create Phase 2 integration patches with sophisticated acoustic pattern generation
+- **Advanced:** Create Advanced integration patches with sophisticated acoustic pattern generation
 - **Expert:** Design acoustic ecosystems where you guide sophisticated pattern generation toward realistic instruments
 
 ### **Advanced Physical Modeling Concepts:**
@@ -457,24 +457,24 @@ Rings represents **acoustic reality through electronic means** - not just sound 
 ### **The Magic:**
 Rings **democratizes acoustic instrument access** - you don't need to learn violin technique, bell casting, or guitar construction. Just turn knobs and **every acoustic instrument becomes immediately playable**. It's like having a complete acoustic instrument collection that responds to electronic control.
 
-### **Phase 2 Integration Power:**
-As the **acoustic reality engine of Phase 2 ecosystems**, Rings transforms organic breathing, controlled chaos, sophisticated pattern generation, and mathematical processing into authentic acoustic instrument behavior. **You conduct electronic intelligence toward acoustic musical expression.**
+### **Advanced Integration Power:**
+As the **acoustic reality engine of Advanced ecosystems**, Rings transforms organic breathing, controlled chaos, Advanced pattern generation, and mathematical processing into authentic acoustic instrument behavior. **You conduct electronic intelligence toward acoustic musical expression.**
 
 ---
 
-**Bottom Line:** Rings isn't just a resonator - it's an **acoustic instrument laboratory** that brings the sound and behavior of real physical instruments to modular synthesis. Every patch teaches you something new about acoustic instrument physics and musical expression. As the **acoustic reality engine of Phase 2 ecosystems**, it transforms electronic pattern generation into living, breathing acoustic instruments under your creative direction.
+**Bottom Line:** Rings isn't just a resonator - it's an **acoustic instrument laboratory** that brings the sound and behavior of real physical instruments to modular synthesis. Every patch teaches you something new about acoustic instrument physics and musical expression. As the **acoustic reality engine of Advanced ecosystems**, it transforms electronic pattern generation into living, breathing acoustic instruments under your creative direction.**
 
 ---
 
 ## Pairs Well With
 
-### **Phase 2 Module Synergies (Modulation & CV Sources):**
+### **Advanced Module Synergies (Modulation & CV Sources):**
 - **DivKid Ochd & Expander:** Ochd LFOs → Rings Structure/Brightness/Damping for organic acoustic evolution
 - **Make Noise Wogglebug:** Wogglebug chaos CVs → Rings parameters for controlled uncertainty in acoustic simulation
 - **Mutable Marbles:** Marbles X/t outputs → Rings V/OCT/STRUM for sophisticated pattern-based acoustic control
 - **4ms RCD v2:** RCD divisions → Rings STRUM for polyrhythmic acoustic triggering
 - **Cre8audio Function Junction:** Function Junction outputs → Rings Position/Damping for processed acoustic modulation
-- **Cross-Phase 2 Integration:** All Phase 2 modules can control every aspect of physical modeling under your creative direction
+- **Cross-Advanced Integration:** All Advanced modules can control every aspect of physical modeling under your creative direction
 
 ### **Phase 1 Module Integration (Core Synthesis):**
 - **Make Noise Maths:** Maths envelopes perfect for Rings Brightness/Damping control and acoustic dynamics
