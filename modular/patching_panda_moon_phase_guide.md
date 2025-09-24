@@ -1,5 +1,8 @@
 # Patching Panda Moon Phase - Beginner's Guide
 
+![Patching Panda Moon Phase](https://github.com/DGretta/Music/raw/main/modular/images/patching_panda/moon_phase/front_panel.jpg)
+*Stereo imaging filter with 8 filter mode combinations, unique stereo imager, and spatial processing capabilities in 14HP*
+
 **The Stereo Imaging Filter That Breaks All the Rules**
 
 ---
