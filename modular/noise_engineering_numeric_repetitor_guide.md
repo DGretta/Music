@@ -1,5 +1,8 @@
 # Noise Engineering Numeric Repetitor - Beginner's Guide
 
+![Noise Engineering Numeric Repetitor](https://github.com/DGretta/Music/raw/main/modular/images/noise_engineering/numeric_repetitor/front_panel.jpg)
+*Mathematical rhythm generator using prime number theory and binary arithmetic to create complex polyrhythmic patterns from 32 curated rhythms*
+
 **The Mathematical Rhythm Generator**
 
 ---
@@ -109,11 +112,11 @@
 **Performance:** Adjust Product knobs in real-time for groove variations
 **Sync:** Use MEASURE input to stay locked with other sequencers
 
-### **Patch 4: Intermediate - Phase 2 Organic Mathematical Rhythms**
+### **Patch 4: Intermediate - Advanced Organic Mathematical Rhythms**
 ```
    ┌─────────────────────┐      ┌─────────────────────────┐
    │   DivKid Ochd      │      │  Noise Engineering      │
-   │    (Phase 2)       │      │  Numeric Repetitor      │
+│    (Advanced)     │      │  Numeric Repetitor      │
    │                    │      │    (Mathematical)       │
    │                    │      │                         │
    │ LFO 2 ○────────────┼──────┼─▶ PRIME CV Input        │
@@ -147,7 +150,7 @@
                                └─────────────────────────────────┘
 ```
 
-| Module Integration | Signal Flow | Purpose | Phase 2 Synergy |
+| Module Integration | Signal Flow | Purpose | Advanced Synergy |
 |-------------------|-------------|---------|------------------|
 | **Ochd LFO 2 → Prime CV** | Organic pattern selection | **Breathing prime rhythms** | **Natural rhythm evolution** |
 | **Ochd LFO 4 → Product 1 CV** | Organic variation control | **Living pattern variations** | **Organic mathematical drift** |
@@ -171,7 +174,7 @@
    ┌─────────────────────┐      ┌─────────────────────────┐
    │   Make Noise       │      │  Noise Engineering      │
    │   Wogglebug        │      │  Numeric Repetitor      │
-   │    (Phase 2)       │      │   (Mathematical)       │
+│    (Advanced)      │      │   (Mathematical)       │
    │                    │      │                         │
    │ Stepped CV ○───────┼──────┼─▶ PRIME CV Input        │
    │       ║            │      │                         │
@@ -218,7 +221,7 @@
 - **Unpredictable yet musical:** Chaos keeps mathematical patterns from becoming static
 - **Controlled randomness:** Mathematical processing keeps chaos musical and structured
 
-### **Patch 6: Expert - Complete Phase 2 Mathematical Ecosystem**
+### **Patch 6: Expert - Complete Advanced Mathematical Ecosystem**
 ```
 ┌─────────────┐ ┌─────────────┐ ┌─────────────┐ ┌─────────────────┐
 │   DivKid    │ │ Make Noise  │ │ Mutable     │ │ Noise Engineering│
@@ -346,13 +349,13 @@ This represents **advanced mathematical consciousness in rhythm** - where organi
 
 ## Pairs Well With
 
-### **Phase 2 Module Synergies (Modulation & CV Sources):**
+### **Advanced Module Synergies (Modulation & CV Sources):**
 - **DivKid Ochd & Expander:** Ochd LFOs → Numeric CV inputs for organic mathematical rhythm evolution
 - **Make Noise Wogglebug:** Wogglebug chaos CVs → Numeric parameters for controlled chaos mathematics
 - **Mutable Marbles:** Marbles X/Y outputs → Numeric modulation for AI-driven mathematical rhythm control
 - **4ms RCD v2:** RCD divisions → Numeric BEAT input for polyrhythmic mathematical timing
 - **Cre8audio Function Junction:** Function + Numeric = complete mathematical ecosystem with organic/chaos/AI modulation
-- **Cross-Phase 2 Integration:** Numeric processes all Phase 2 modulation sources into unified mathematical rhythmic relationships
+- **Cross-Advanced Integration:** Numeric processes all Advanced modulation sources into unified mathematical rhythmic relationships
 
 ### **Perfect Partners for Beginners:**
 - **Clock sources (Horologic Solum, Pamela's):** Essential foundation for mathematical rhythm generation
@@ -405,7 +408,7 @@ This represents **advanced mathematical consciousness in rhythm** - where organi
 
 ---
 
-## Phase 2 Learning Path
+## Advanced Learning Path
 
 ### **Recommended Study Progression:**
 1. **Start with Numeric fundamentals:** Master prime pattern selection, product variation control, and mathematical rhythm concepts
@@ -420,13 +423,13 @@ This represents **advanced mathematical consciousness in rhythm** - where organi
 - **Numeric + Wogglebug:** Master chaos-driven mathematical rhythm for controlled unpredictability in algorithmic systems
 - **Numeric + Marbles:** Understand AI-driven mathematical rhythm with learning polyrhythmic relationships
 - **Numeric + RCD:** Explore polyrhythmic mathematical timing relationships and complex algorithmic division
-- **All Phase 2 + Numeric:** Build complete mathematical ecosystems with multiple intelligence types processing algorithmic rhythms
+- **All Advanced + Numeric:** Build complete mathematical ecosystems with multiple intelligence types processing algorithmic rhythms
 
 ### **Skill Development Milestones:**
 - **Beginner:** Use individual prime patterns for basic mathematical rhythm generation
 - **Intermediate:** Master product variation control and CV modulation for complex mathematical relationships
-- **Advanced:** Create Phase 2 integration patches with organic/chaos/AI modulation of mathematical rhythm parameters
-- **Expert:** Design complete mathematical ecosystems where Numeric serves as rhythmic brain for multiple intelligence types
+- **Advanced:** Create Advanced integration patches with organic/chaos/AI modulation of mathematical rhythm parameters
+- **Expert:** Design complete mathematical ecosystems where Numeric serves as rhythmic brain for multiple Advanced intelligence types
 
 ### **Advanced Mathematical Concepts:**
 - **Prime Number Theory:** Understand how mathematical patterns create musical rhythms
@@ -442,7 +445,7 @@ This represents **advanced mathematical consciousness in rhythm** - where organi
 
 ---
 
-**Bottom Line:** Numeric Repetitor isn't just a rhythm generator - it's a **mathematical rhythm processor** that transforms simple modulation into complex polyrhythmic relationships through prime number algorithms. Every patch teaches you something new about how algorithmic rhythm generation really works. As the **rhythmic brain of Phase 2 ecosystems**, it transforms organic breathing, controlled chaos, and artificial intelligence into unified mathematical polyrhythmic evolution.
+**Bottom Line:** Numeric Repetitor isn't just a rhythm generator - it's a **mathematical rhythm processor** that transforms simple modulation into complex polyrhythmic relationships through prime number algorithms. Every patch teaches you something new about how algorithmic rhythm generation really works. As the **rhythmic brain of Advanced ecosystems**, it transforms organic breathing, controlled chaos, and artificial intelligence into unified mathematical polyrhythmic evolution.
 
 ---
 
