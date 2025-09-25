@@ -2,7 +2,7 @@
 
 *Unlocking the full potential of four analog VCOs with hard sync, linear FM, and complex modulation techniques*
 
-![Moog Matriarch](https://github.com/DGretta/Music/raw/main/synthesizers/images/moog_matriarch/front_panel.jpg)
+![Moog Matriarch](https://github.com/DGretta/Music/raw/main/synthesizers/images/moog/matriarch/front_panel.jpg)
 *The Moog Matriarch's four analog voltage-controlled oscillators offer unprecedented harmonic complexity through hard sync, linear FM, and sophisticated detuning relationships*
 
 ---
