@@ -316,7 +316,7 @@ Settings:
 
 The Moog Matriarch represents the pinnacle of Moog's semi-modular synthesizer family, building upon the foundation established by Mother-32 and Grandmother. Released in 2019, it combines the accessibility of preset-free analog synthesis with the expandability of modular systems.
 
-**Technical Innovation:** Matriarch's 4-oscillator paraphonic architecture is unique in the synthesizer world - most paraphonic instruments use 2 oscillators. The dual Ladder filter system with series/parallel/stereo routing provides unprecedented flexibility in a single instrument.
+**Technical Innovation:** Matriarch's 4-oscillator paraphonic architecture is distinctive, offering extensive harmonic complexity with independent voice allocation. The dual Ladder filter system with series/parallel/stereo routing provides unprecedented flexibility in a single instrument.
 
 **Educational Significance:** As a bridge between fixed-architecture synthesizers and full modular systems, Matriarch teaches fundamental synthesis concepts while providing 90+ patch points for advanced exploration. Its preset-free design encourages hands-on learning and experimentation.
 
