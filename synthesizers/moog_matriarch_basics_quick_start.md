@@ -2,7 +2,7 @@
 
 *Making your first sounds and understanding the fundamentals of this powerful 4-oscillator semi-modular analog synthesizer*
 
-![Moog Matriarch](https://github.com/DGretta/Music/raw/main/synthesizers/images/moog_matriarch/front_panel.jpg)
+![Moog Matriarch](https://github.com/DGretta/Music/raw/main/synthesizers/images/moog/matriarch/front_panel.jpg)
 *The Moog Matriarch semi-modular analog synthesizer with its distinctive 4-oscillator architecture, dual ladder filters, and extensive patch point matrix for modular integration*
 
 ---
