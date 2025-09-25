@@ -504,7 +504,7 @@ System Design Principles:
 ### Intermediate System Additions:
 - **Veils (Mutable Instruments)** - Quad VCA for level control and audio mixing
 - **Marbles (Mutable Instruments)** - Random voltage generation with musical constraints
-- **Pamela's New Workout (ALM)** - Advanced clock source with multiple outputs and functions
+- **Pam's Pro Workout (ALM)** - Advanced clock source with multiple outputs and functions
 - **FH-2 (Expert Sleepers)** - MIDI-to-CV interface for DAW and controller integration
 
 ### Advanced Performance System:
