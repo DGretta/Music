@@ -165,7 +165,7 @@ MODULATION OUTPUTS:
 
 **Main Example:** Integrating Matriarch with basic modular clock and LFO
 ```
-Required Modules: Clock source (Disting mk4, Pamela's New Workout) + LFO (Maths, Batumi)
+Required Modules: Clock source (Disting mk4, Pamela's Pro Workout) + LFO (Maths, Batumi)
 
 Connections:
 • External Clock OUT → Matriarch CLOCK IN (rear panel)
@@ -190,7 +190,7 @@ Performance Technique:
 **Learning objective:** Understand how external timing and modulation sources expand Matriarch's capabilities while maintaining playability.
 
 **Modular modules that work well:**
-- **Clock sources:** Pamela's New Workout, Disting mk4, Tempi, RCD Rotating Clock Divider
+- **Clock sources:** Pamela's Pro Workout, Disting mk4, Tempi, RCD Rotating Clock Divider
 - **LFOs:** Maths, Batumi, Ochd, Function (Make Noise), Tides (Mutable Instruments)
 
 **Similar Semi-Modular Options:**
@@ -504,7 +504,7 @@ System Design Principles:
 ### Intermediate System Additions:
 - **Veils (Mutable Instruments)** - Quad VCA for level control and audio mixing
 - **Marbles (Mutable Instruments)** - Random voltage generation with musical constraints
-- **Pam's Pro Workout (ALM)** - Advanced clock source with multiple outputs and functions
+- **Pamela's Pro Workout (ALM)** - Advanced clock source with multiple outputs and functions
 - **FH-2 (Expert Sleepers)** - MIDI-to-CV interface for DAW and controller integration
 
 ### Advanced Performance System:
