@@ -44,11 +44,18 @@
 - **Impact:** Eliminates decision paralysis, standardizes commit workflow
 - **Status:** FUTURE - Needs decision criteria refinement
 
-**ID: 004 - Framework Evolution Documentation**
-- **Observation:** No clear process for "noticed improvement" → actual framework update
-- **Solution:** This document + review cycle + implementation pathway
-- **Impact:** Systematic improvement rather than lost observations
-- **Status:** IMPLEMENTED - This document creation
+**ID: 005 - Technical Knowledge Translation Framework**
+- **Observation:** Component sourcing barriers caused by terminology gaps between industrial and consumer applications
+- **Solution:** Systematic documentation format translating technical specifications to plain language with multiple sourcing options
+- **Impact:** Democratizes technical knowledge, enables commodity pricing vs. specialty markup
+- **Status:** PROOF OF CONCEPT - Electronics component guide created, framework documented
+- **Implementation:** Template created for additional domains (mechanical, materials, audio equipment)
+
+**ID: 006 - Terminology Accessibility in Documentation**
+- **Observation:** Technical terms create barriers even when knowledge exists ("BOM" = explosive associations vs. "Parts List")
+- **Solution:** Proactive terminology review in documentation for accessibility
+- **Impact:** Wider accessibility without sacrificing technical accuracy
+- **Status:** IMPLEMENTED - Modified electronics guide terminology
 
 ---
 
