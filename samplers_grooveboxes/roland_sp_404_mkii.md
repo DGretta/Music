@@ -1,7 +1,7 @@
 # Roland SP-404 MKII
 **Performance sampler and beat machine for creative workflow mastery**
 
-![Roland SP-404 MKII](https://github.com/DGretta/Music/raw/main/samplers_grooveboxes/images/roland/sp_404_mkii/front_panel.jpg)
+![Roland SP-404 MKII](https://github.com/DGretta/Music/raw/main/samplers_grooveboxes/images/roland/sp_404_mkii/front_panel.jpg)  
 *Velocity-sensitive pads, real-time effects, and comprehensive sampling capabilities in a portable performance-ready instrument*
 
 ## Quick Start
