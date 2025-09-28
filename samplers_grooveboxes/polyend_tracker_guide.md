@@ -1,7 +1,7 @@
 # Polyend Tracker Guide
 *Standalone sampling sequencer for pattern-based composition and performance*
 
-![Polyend Tracker](https://github.com/DGretta/Music/raw/main/modular/images/polyend/tracker/front_panel.jpg)
+![Polyend Tracker](https://github.com/DGretta/Music/raw/main/samplers_grooveboxes/images/polyend/tracker/front_panel.jpg)
 *The Polyend Tracker's intuitive interface combines classic tracker workflow with modern sampling capabilities, featuring a 7" display, grid pads, and comprehensive I/O for studio integration.*
 
 ## Quick Start
