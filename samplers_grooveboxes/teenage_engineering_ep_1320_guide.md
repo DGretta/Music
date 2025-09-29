@@ -56,22 +56,39 @@
 └─────────────────────────────────────────────────────────────────────┘
 ```
 
-**Medieval Interface Language:**
-- **Paeds**: Sample trigger pads (16 total, 4 groups of 4)
-- **Altero**: Shift function for secondary controls
-- **Tempus**: Tempo and timing controls
-- **Sonus**: Song/sound selection and management
-- **Manus**: Hand/stop controls for stopping playback
-- **Quantum**: Quantization and note repeat functions
-- **Claves**: Keys and musical note functions
-- **Codex**: Settings and configuration menu
-- **Demus**: Demo mode and playback functions
+**Medieval Interface Translation:**
+
+| Latin Term | English Function | Location | Purpose |
+|------------|------------------|----------|----------|
+| **Paeds** | Sample Pads | Main grid (16 pads) | Trigger samples and record patterns |
+| **Altero** | Shift/Alt | Left side button | Access secondary functions |
+| **Tempus** | Tempo/Time | Top row | Control timing, tempo, and loop functions |
+| **Sonus** | Sound/Song | Top row | Sound library and song management |
+| **Manus** | Hand/Stop | Right side | Stop playback and exit modes |
+| **Quantum** | Quantize | Center | Quantization, note repeat, arpeggio |
+| **Claves** | Keys | Bottom row | Musical key and note functions |
+| **Codex** | Settings | Menu access | Configuration and system settings |
+| **Demus** | Demo | Combined with Altero | Demo mode and sample recording |
+| **Erado** | Erase | Combined function | Delete samples (with Sonus) |
+| **Intra** | Enter/Into | Navigation | Confirm selections and enter modes |
+| **Correctus** | Correct | Combined with Quantum | Individual note quantization |
+| **CHOPpeth** | Chop | Combined function | Auto-chop sample slicing mode |
+| **KnobX/KnobY** | Control Knobs | Physical knobs | Amplitude, effects, and parameter control |
+| **Groupa-D** | Groups A-D | Pad sections | Sample group selection (4 groups of 4 pads) |
+
+**Quick Reference for Common Operations:**
+- **Start sampling**: Hold **Altero** + press **Demus**
+- **Delete sample**: Hold **Erado** + **Sonus**
+- **Create loop**: Hold **Altero** + **Tempus**
+- **Auto-chop**: **Altero** + **Demus** + **Demus**
+- **Quantize individual notes**: **Altero** + **Quantum**
 
 **Sample Recording Architecture:**
 - **128MB total storage**: 96MB preloaded medieval sounds, 32MB user samples
-- **Recording modes**: Stereo (LR), Left (L), Right (R), Center Mono (C)
+- **Recording modes**: Stereo (LR), Left (L), Right (R), Center Mono (C) - select with **minus**/**plus** during sampling
 - **Input sources**: Built-in microphone, stereo line input jack
-- **Storage management**: Automatic sample assignment, manual slot selection available
+- **Volume control**: **KnobX** and **KnobY** control amplitude/volume (AMP) during recording
+- **Storage management**: Automatic assignment or manual destination (**Sonus** + number + **Intra** + **Altero** + **Demus**)
 
 ## Basic Patch: Medieval Percussion Ensemble
 *Layer authentic medieval drums with modern sequencing*
