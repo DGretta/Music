@@ -110,6 +110,69 @@ Module that outputs a rapid series of pulses when triggered, rather than a singl
 - *Modern examples:* Mutable Grids, Noise Engineering modules, various trigger utilities
 - *Performance technique:* Single trigger input creates complex rhythmic output
 
+**BANDPASS FILTER (BPF)**
+Filter that allows a specific frequency range to pass while attenuating frequencies above and below that range. Essential for formant synthesis, vocal sounds, and isolating specific harmonic content.
+- *Related:* Low-pass Filter, High-pass Filter, Resonance, Formant
+- *Parameters:* Center frequency, bandwidth (Q), resonance
+- *Musical applications:* Vocal formants, telephone effects, isolating drum hits from mixes
+- *Synthesis use:* Creating vowel sounds, emphasizing specific harmonics
+- *DAW context:* EQ bell curves are essentially bandpass filters
+- *Modular implementation:* Often created by combining HPF and LPF in series
+
+**BASS**
+Low-frequency content in music, typically below 200Hz. In synthesis, the foundation of most electronic music requiring specific techniques for power and clarity.
+- *Frequency ranges:* Sub-bass (20-60Hz), bass (60-200Hz), low-mids (200-500Hz)
+- *Related:* Sub-bass, Filter, Oscillator, Kick Drum
+- *Synthesis approach:* Sawtooth or square waves, low-pass filtering, fast attack envelopes
+- *Production challenges:* Phase issues, frequency masking, room acoustics
+- *Creative techniques:* Sidechain compression, bass layering, harmonic enhancement
+- *Monitoring note:* Requires full-range speakers or subwoofer for accurate assessment
+
+**BITCRUSHER/BIT REDUCTION**
+Digital audio effect that reduces bit depth to create lo-fi, gritty, or retro digital artifacts. Reduces the resolution of audio samples, creating quantization noise.
+- *Related:* Sample Rate Reduction, Digital Distortion, Lo-fi, Quantization
+- *Parameters:* Bit depth (1-16+ bits), sample rate reduction often included
+- *Character:* Harsh digital distortion, aliasing artifacts, stepped audio levels
+- *Musical use:* Retro video game sounds, industrial textures, creative destruction
+- *Technical effect:* Reduces dynamic range, adds harmonic and non-harmonic distortion
+- *Modern application:* Popular in electronic music for adding character to drums and leads
+
+**BOUNCE/BOUNCE TO DISK**
+Process of rendering/exporting a DAW project or track section to an audio file. Critical workflow concept connecting synthesis work to final production.
+- *Related:* Render, Export, Mixdown, Audio File, DAW Workflow
+- *Types:* Full mix bounce, stem bounces, individual track bounces
+- *Settings:* Sample rate, bit depth, file format (WAV, AIFF, MP3)
+- *Quality considerations:* Higher sample rates and bit depths for further processing
+- *Workflow integration:* Essential for sharing stems, mastering preparation, backup
+- *Real-time vs offline:* Real-time preserves plugin automation, offline is faster
+
+**BROWNIAN NOISE/RANDOM WALK**
+Type of random modulation where each new value is based on the previous value plus a random change. Creates smoother, more organic random movement than white noise.
+- *Related:* White Noise, Pink Noise, Random Modulation, Sample & Hold
+- *Character:* Smooth random movement, no sudden jumps, organic feel
+- *Mathematical:* Each step = previous value + random increment
+- *Musical applications:* Smooth filter sweeps, organic pitch bends, evolving textures
+- *Contrast with:* White noise (completely random), sample & hold (stepped random)
+- *Implementation:* Available in many random modules and software generators
+
+**BUFFER SIZE**
+Amount of audio data processed at once by digital audio systems. Smaller buffers = lower latency but higher CPU load; larger buffers = higher latency but more stable performance.
+- *Related:* Latency, Audio Interface, DAW Performance, Real-time Processing
+- *Common sizes:* 32, 64, 128, 256, 512, 1024 samples
+- *Latency calculation:* Buffer size ÷ sample rate = latency in seconds
+- *Performance trade-off:* Lower latency for tracking, higher for mixing complex projects
+- *Hardware integration:* Critical when combining software synthesis with hardware
+- *Troubleshooting:* First setting to adjust for audio dropouts or performance issues
+
+**BUS**
+Signal pathway that combines or routes multiple audio sources. Fundamental concept in mixers, DAWs, and modular systems for organizing and processing multiple signals together.
+- *Related:* Send, Return, Group, Submix, Signal Flow
+- *Types:* Mix bus (main output), aux bus (effects sends), group bus (instrument groups)
+- *DAW implementation:* Folder tracks, group channels, bus channels
+- *Modular context:* CV bus, audio bus, mult-channel mixers
+- *Processing advantage:* Apply effects to multiple sources simultaneously
+- *Mix technique:* Essential for organizing large projects and efficient processing
+
 **BUS BOARDS**
 Power distribution boards in Eurorack systems that distribute +12V, -12V, and +5V from the main power supply to individual module power headers.
 - *Related:* Eurorack, Power Supply, Flying Bus Cables, Module Power
@@ -120,6 +183,15 @@ Power distribution boards in Eurorack systems that distribute +12V, -12V, and +5
 - *Troubleshooting:* Central point for diagnosing power-related module issues
 - *Expansion:* Multiple bus boards can be chained for larger systems
 
+**BYPASS**
+Feature that allows audio to pass through an effect or processor unchanged, effectively turning the processing off while maintaining signal flow.
+- *Related:* True Bypass, Buffered Bypass, A/B Comparison, Effect Processing
+- *Types:* True bypass (direct connection), buffered bypass (through active circuit)
+- *Purpose:* Compare processed vs unprocessed signal, troubleshoot signal flow
+- *Guitar pedals:* Important for maintaining tone when effect is off
+- *DAW context:* Plugin bypass for CPU saving and comparison
+- *Modular use:* Switch modules often provide bypass functionality for patching flexibility
+
 ---
 
 ## Alternative Options
@@ -127,19 +199,24 @@ Power distribution boards in Eurorack systems that distribute +12V, -12V, and +5
 For different learning approaches to "B" section terminology:
 
 **Enhanced Alternative Options:**
-- **Budget:** Free manufacturer documentation focusing on "B" terms, online synthesis communities and forums
-- **Different character:** Video demonstrations of beating phenomena, Berlin School listening sessions with technical analysis
-- **Premium:** Professional audio engineering courses covering balanced audio systems, hands-on modular workshops exploring Buchla concepts
+- **Budget:** Free manufacturer documentation focusing on "B" terms, online synthesis communities and forums, DAW built-in filters for bandpass experiments
+- **Different character:** Video demonstrations of beating phenomena, Berlin School listening sessions with technical analysis, bitcrusher plugin experimentation
+- **Premium:** Professional audio engineering courses covering balanced audio systems, hands-on modular workshops exploring Buchla concepts, professional mixing courses covering bus routing
 
 **Practical Exploration:**
 - **Beating experiments:** Slightly detune two oscillators to hear beating effects firsthand
 - **Binary rhythm programming:** Create patterns using only on/off states in sequencers
 - **Bipolar/unipolar comparison:** Use offset modules to convert between signal types and hear differences
+- **Filter comparison:** Set up bandpass, low-pass, and high-pass filters in parallel to hear differences
+- **Bus routing practice:** Create instrument groups in your DAW and apply bus processing
+- **Buffer size testing:** Adjust audio interface buffer sizes while playing to understand latency trade-offs
 
 **Advanced Study:**
 - **Bark scale applications:** Analyze frequency content using bark-scaled spectrum analyzers
 - **BBD circuit analysis:** Study vintage delay pedal schematics to understand bucket brigade operation
 - **Berlin School production techniques:** Recreate classic sequencer patterns and modulation approaches
+- **Brownian modulation:** Compare random walk algorithms to standard random sources
+- **Bass synthesis analysis:** Study frequency spectrum of professional bass sounds across genres
 
 ---
 
