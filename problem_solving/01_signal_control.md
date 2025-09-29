@@ -173,34 +173,41 @@ You connect your modern Eurorack sequencer to a vintage synthesizer, expecting m
 
 **Why they're incompatible:**
 ```
-1V/Oct system:
-100Hz at 0V
-200Hz at 1V (one octave up)
-400Hz at 2V (two octaves up)
-800Hz at 3V (three octaves up)
-Linear voltage, exponential frequency
+1V/Octave (Modern Standard - Moog, Roland, ARP, Eurorack):
+0V = 110Hz (A2)
+1V = 220Hz (A3 - one octave up)
+2V = 440Hz (A4 - two octaves up)
+3V = 880Hz (A5 - three octaves up)
+Linear voltage change = exponential frequency change
+Each additional volt DOUBLES the frequency
 
-Hz/V system (example):
-100Hz at 0V  
-200Hz at 1V (one octave up)
-300Hz at 2V (perfect fifth above)
-400Hz at 3V (two octaves total)
-Different scaling, incompatible with 1V/Oct
+Other Historical Standards (ALL INCOMPATIBLE WITH 1V/OCT):
+- Yamaha/Korg: Hz/volt (specific scaling varied by manufacturer)
+- Buchla/EML: 1.2V/octave
+- EMS: 0.32V/octave (VCS3 used 0.26V/oct on oscillator 3)
+
+The Problem:
+These standards use different voltage-to-frequency relationships.
+A sequence that plays a melody on 1V/Oct gear will play wrong intervals
+on ANY other standard. There's no simple "shift everything up/down"
+fix - the mathematical relationships are fundamentally incompatible.
 ```
 
 ### Common Scenarios
 
 **Scenario 1: Eurorack sequencer to Korg MS-20**
-- **Problem:** Modern sequencer (1V/Oct) controlling vintage Korg (Hz/V)
-- **Expectation:** Musical melody
-- **Reality:** Wrong intervals, octaves don't track, sounds out of tune
-- **Solution:** Use 1V/Oct to Hz/V converter module (rare) OR tune each step individually (impractical)
+- **Problem:** Modern sequencer (1V/Oct) controlling vintage Korg MS-20 (Hz/V)
+- **Expectation:** Musical melody with correct intervals
+- **Reality:** Wrong intervals - what should be an octave isn't, melodies sound "off"
+- **Why common:** MS-20 is popular vintage synth still widely used
+- **Solution:** Dedicated converter module (rare/expensive) OR use MS-20's keyboard/sequencer
 
-**Scenario 2: Vintage Yamaha with modern MIDI-to-CV**
-- **Problem:** MIDI interface outputs 1V/Oct but synth expects Hz/V
-- **Expectation:** Keyboard control via MIDI
-- **Reality:** Chromatic scale sounds wrong, intervals aren't musical
-- **Solution:** Find vintage-specific MIDI interface OR use Hz/V-aware converter
+**Scenario 2: Vintage Yamaha/Korg with modern MIDI-to-CV**
+- **Problem:** Modern MIDI-to-CV converter outputs 1V/Oct, vintage synth expects Hz/V
+- **Expectation:** Play vintage synth from modern MIDI keyboard/DAW
+- **Reality:** Notes play at wrong pitches, intervals don't sound musical
+- **Reality check:** These vintage synths are still common in studios
+- **Solution:** Vintage-specific MIDI interfaces exist (research your specific model)
 
 **Scenario 3: Mixing standards in single patch**
 - **Problem:** Using both 1V/Oct and Hz/V oscillators in same system
@@ -213,8 +220,14 @@ Different scaling, incompatible with 1V/Oct
 **Before patching:**
 1. **Identify standards:** Check synthesizer specifications for pitch CV standard
 2. **Match standards:** Only patch together equipment using same standard
-3. **Modern equipment:** Almost universally 1V/Octave
-4. **Vintage red flags:** Korg, Yamaha equipment often Hz/V
+3. **Modern equipment:** Almost universally 1V/Octave (Eurorack, modern synths)
+4. **Vintage identification:**
+   - Korg MS-20, MS-10, others: Hz/V
+   - Yamaha CS series: Hz/V
+   - Buchla (vintage): 1.2V/octave
+   - EMS VCS3/Synthi: 0.32V/octave (or 0.26V/oct)
+   - Moog (all eras): 1V/octave
+   - Roland (most): 1V/octave
 
 **If you must mix standards:**
 - **Dedicated converters:** Some rare modules convert between standards
