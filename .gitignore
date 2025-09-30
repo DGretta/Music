@@ -20,3 +20,7 @@ MetaModuleManual.docx
 # Backup files
 *~
 *.bak
+
+# Old/Archived files
+*ARCHIVED*
+*archived*
