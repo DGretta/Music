@@ -67,10 +67,18 @@
 ### **Technical Advantages:**
 
 - **Intelligent Normalization:** The patchbay uses smart internal routing - signals flow where they need to go until you patch something different. This means immediate results without complexity, but infinite expandability when you're ready.
+  
+  **How Normalization Actually Works:** Mother-32 uses **semi-normalled jacks** - outputs remain connected to their internal destinations UNTIL you plug something into the corresponding input. For example, the VCO SAW output is internally connected to the filter input. Plug a cable into VCF IN and that internal connection breaks, routing your external signal instead. Unplug the cable and the internal connection restores automatically. This is why Mother-32 works perfectly with zero cables but expands infinitely when you patch.
+  
+  **What This Means Practically:** You never need to remember the "default patch" - it's always there underneath. Experimentation is safe because unplugging returns everything to normal. This is fundamentally different from fully-modular systems where you must manually create every connection.
 
 - **Eurorack Integration:** True 60HP Eurorack compatibility means it integrates seamlessly with modular systems while maintaining its standalone capability. It's both a complete instrument and a powerful modular voice.
+  
+  **Why 60HP Matters:** Standard Eurorack cases are sized in multiples of 42HP (the "1U" row height). At 60HP width, Mother-32 plus DFAM (also 60HP) = 120HP, which fits perfectly in common 84HP or 104HP cases with room for utilities. This isn't accidental - Moog designed these dimensions for optimal case integration.
 
 - **MIDI-CV Bridge:** Built-in MIDI to CV conversion with comprehensive implementation makes it a perfect bridge between traditional MIDI setups and CV-based modular systems.
+  
+  **Why This Is More Than Just "MIDI Control":** Mother-32 doesn't just respond to MIDI - it **translates MIDI into the CV/Gate language** that modular gear speaks. MIDI note-on becomes 1V/octave CV (industry standard). MIDI velocity becomes a 0-5V modulation source. MIDI clock becomes analog clock pulses. This means your MIDI controller can control not just Mother-32, but anything patched to Mother-32's CV outputs. It's a **protocol bridge**, not just an input method.
 
 ### **Creative Potential:**
 
@@ -202,6 +210,56 @@ PATCHBAY (32 x 3.5mm jacks)
 
 **Control Integration:** Front panel controls set base values, while CV inputs add/subtract from these settings. This allows both manual control and voltage control of all parameters.
 
+### **Why the Patchbay Matters: Understanding Mother-32's 32 Connection Points**
+
+The patchbay isn't just "advanced features" - it's what makes Mother-32 **semi-modular** instead of just a mono synth. Here's why each category matters:
+
+**CV Inputs (VCO 1V/OCT, VCO LIN FM, VCO MOD, VCF CUTOFF, VCF RES, VCA CV, MIX CV):**
+- **Why They Exist:** Allow external voltage sources to control parameters beyond what internal modulation can do. The front panel controls set the **base value**, CV inputs add/subtract from that base.
+- **1V/OCT vs LIN FM:** Two different ways to control pitch. **1V/OCT** (1 volt per octave) is the musical standard - every 1V increase = one octave higher. This lets you play Mother-32 from external sequencers or keyboards. **LIN FM** (linear FM) responds linearly, not musically - perfect for creating metallic, bell-like tones through frequency modulation.
+- **What Goes Wrong:** Beginners send audio-rate signals (like VCO outputs) to CV inputs expecting audio-rate FM. Mother-32's FM is **through-zero FM** at the VCO MOD input, but LIN FM responds better to lower frequency modulation. For audio-rate FM, use VCO MOD input, not LIN FM.
+- **Musical Use:** Patch an external sequencer's CV to 1V/OCT to play melodies while Mother-32's internal sequencer controls filter cutoff via VCF CUTOFF CV.
+
+**Audio Outputs (VCO SAW, VCO PUL, NOISE, VCF OUT, VCA OUT):**
+- **Why Separate Outputs Matter:** Access signals at different stages of the signal chain. **VCO SAW/PUL** are pre-filter (bright, raw), **VCF OUT** is post-filter but pre-VCA (constant level), **VCA OUT** is the final mixed signal.
+- **When To Use Each:** 
+  - **VCO SAW/PUL:** Send raw oscillator to external effects or filters while Mother-32's filter handles a different VCO
+  - **VCF OUT:** Process filtered signal through external VCA or dynamics while Mother-32's VCA handles something else  
+  - **VCA OUT:** Main output, fully processed through Mother-32's signal chain
+  - **NOISE:** White noise source for percussion hits, wind sounds, or modulation randomness
+- **What Goes Wrong:** Patching VCO SAW to an external destination but expecting to hear the filtered sound - the filter is AFTER the VCO output in the signal chain. Use VCF OUT if you want filtered audio out.
+
+**Modulation Outputs (LFO TRI, LFO SQ, EG OUT):**
+- **Why They Exist:** Share Mother-32's modulation sources with external modules or even other synthesizers.
+- **Example Use:** LFO TRI to multiple destinations creates synchronized modulation across your entire system - all modules wobble together at the same rate. EG OUT provides an envelope that's synchronized to Mother-32's sequencer or MIDI input.
+- **Hidden Power:** These aren't just for modular - patch EG OUT to an external effects pedal's expression input for rhythm-synchronized effects intensity.
+
+**Sequencer Outputs (KB OUT, GATE OUT, ASSIGN OUT, TEMPO OUT, RUN/STOP, RESET):**
+- **Why These Matter:** Mother-32's powerful sequencer can **control other gear**, not just itself.
+- **KB OUT:** The pitch CV from the sequencer - 1V/octave standard, can drive any oscillator or synth with CV input
+- **GATE OUT:** Trigger signal that's HIGH when a note plays, LOW during rests - drives envelope generators, triggers drum modules
+- **ASSIGN OUT:** Programmable per-step voltage (like velocity in MIDI) - assign different voltages to each step for accent patterns, timbral variation, or sequencing parameters beyond pitch
+- **TEMPO OUT:** Analog clock pulses at the current BPM - synchronizes other sequencers and drum machines
+- **What Goes Wrong:** Users patch GATE OUT to VCF CUTOFF CV expecting rhythmic filter movement but get slow, sluggish response. Gates are ON/OFF signals, not smooth modulation - use ASSIGN OUT or EG OUT for smooth filter sweeps.
+
+**Sequencer Inputs (GATE IN, TEMPO IN, RUN/STOP, RESET IN, HOLD IN):**
+- **Why They Exist:** External control of Mother-32's sequencer behavior
+- **GATE IN:** Triggers individual steps manually - performance technique for "playing" the sequencer like an instrument
+- **TEMPO IN:** Sync to external clock source (another sequencer, drum machine, or DAW)
+- **RUN/STOP:** Start/stop the sequencer via external trigger - sync with other gear for simultaneous start
+- **RESET IN:** Jump back to step 1 - create polyrhythmic patterns by resetting at different intervals than the sequence length
+- **HOLD IN:** Gate signal that holds the current step - create "stuttering" effects or freeze patterns mid-sequence
+
+**Utility Jacks (MULT 1, MULT 2, MIX 1, MIX 2, EXT AUDIO IN, VC MIX, VC MIX CONTROL):**
+- **MULT (Buffered Multiple):** Copy one signal to multiple destinations without voltage sag. Critical when sending one modulation source (like LFO) to 3+ modules simultaneously.
+- **Why Buffered Matters:** Passive mults (simple cable splitters) cause voltage drop when split many ways, weakening modulation. Mother-32's buffered mults maintain full signal strength to all destinations.
+- **MIX 1 & MIX 2:** Simple audio mixers for combining multiple sources. Unlike the main MIX knob (VCO/noise), these accept any audio input.
+- **VC MIX & VC MIX CONTROL:** Voltage-controlled crossfading between MIX 1 and MIX 2 sources. Apply LFO to VC MIX CONTROL for automatic crossfading between two audio sources.
+- **EXT AUDIO IN:** Process external audio through Mother-32's filter and VCA - your guitar, drum machine, or field recordings get the Moog treatment.
+
+**The Key Insight:**
+Mother-32's patchbay transforms it from "great mono synth" to "complete modular system nucleus." It can **sequence other gear** (via KB OUT/GATE OUT), **be sequenced by other gear** (via 1V/OCT and GATE IN), **process external audio** (via EXT AUDIO IN), and **share modulation** across an entire setup (via LFO/EG outputs). Without the patchbay, it's a synth. With the patchbay, it's a **system integrator**.
+
 ---
 
 ## Internal Mastery Patch: "Classic Moog Voice"
@@ -304,6 +362,129 @@ Once you've mastered this internal voice, you're ready to explore:
 - Advanced performance techniques and pattern manipulation
 
 **Experiment freely!** The beauty of the Mother-32 is that you can't break anything by turning knobs or changing settings. Every control affects the sound in musical ways, so trust your ears and explore.
+
+---
+
+## Common Mistakes and How to Avoid Them
+
+### **"My patches sound weak or thin"**
+**Problem:** Using high-pass filter mode when you want bass sounds
+**Why:** The HP/LP switch determines which frequencies pass through. **Low-pass** lets lows through (removes highs) for fat bass. **High-pass** lets highs through (removes lows) for thin leads and effects. Many beginners leave the switch in HP mode by accident.
+**Solution:**
+- Use **LOW PASS** mode for bass, pads, warm sounds (most common)
+- Use **HIGH PASS** mode for leads, effects, removing muddy low frequencies
+- The switch is easy to flip accidentally - always verify filter mode when patching
+
+### **"The sequencer won't record my notes"**
+**Problem:** Not in correct recording mode or sequence is full
+**Why:** Mother-32 has multiple sequencer modes. **Keyboard mode** (SHIFT + KB) lets you play notes that the sequencer will use. **Step mode** (SHIFT + STEP) lets you program steps individually. Recording requires being in the right mode.
+**Solution:**
+- Press **SHIFT + REC** to enter record mode (REC LED blinks)
+- Ensure you're in **Keyboard mode** (SHIFT + KB) if playing notes to record
+- If sequence is full (32 steps), use **SET END** to shorten loop length
+- Press **RUN/STOP** to exit recording and hear your sequence
+
+### **"Patching to 1V/OCT doesn't seem to do anything"**
+**Problem:** Internal sequencer KB OUT is already controlling pitch via normalization
+**Why:** **Semi-normalled patchbay** means the internal sequencer's KB OUT is automatically connected to VCO 1V/OCT input. When you patch an external source to 1V/OCT, both signals add together (your external CV + internal sequencer CV), creating unexpected pitches.
+**Solution:**
+- **Mute internal sequencer:** Hold SHIFT + press both SET END and HOLD/REST simultaneously to disable internal CV
+- **Or embrace the addition:** Patch your external CV to **VC MIX** or another parameter instead
+- **Understanding normalization:** Any patch to 1V/OCT **adds to** (doesn't replace) internal CV unless you disable the internal sequencer
+
+### **"My external gear won't sync to Mother-32's tempo"**
+**Problem:** TEMPO OUT clock division mismatch or external gear expects different pulse width
+**Why:** Mother-32 outputs **analog clock pulses** from TEMPO OUT. But different gear expects different pulse rates - some want 1 pulse per step, others want 24 pulses per quarter note (MIDI standard). Mother-32 outputs **1 pulse per step**, which isn't the same timing as MIDI clock.
+**Solution:**
+- If syncing to MIDI gear, use **MIDI OUT** (back panel) not TEMPO OUT
+- If syncing to modular, use **clock dividers** between TEMPO OUT and target module
+- For Moog DFAM: TEMPO OUT directly to DFAM's ADV/CLOCK IN works perfectly (same pulse rate)
+- Some gear has **clock division** settings - adjust external module to match Mother-32's pulse rate
+
+### **"The filter doesn't sweep when I patch LFO to it"**
+**Problem:** VCF MOD AMOUNT knob is at zero or polarity is wrong
+**Why:** Patching to **VCF CUTOFF CV** doesn't automatically create filter movement - the **VCF MOD AMOUNT** knob controls how much the CV affects cutoff. At zero (fully counterclockwise), external CV has no effect. Additionally, the **± polarity switch** determines whether CV opens (+) or closes (-) the filter.
+**Solution:**
+- Patch **LFO TRI** or **LFO SQ** to **VCF CUTOFF CV**
+- Turn **VCF MOD AMOUNT** to 12 o'clock or higher
+- Ensure **± polarity** is set to **+** for typical upward sweeps
+- Set **CUTOFF** base frequency low (9-10 o'clock) so you can hear the sweep range
+
+### **"GATE OUT triggers my drum module but timing is weird"**
+**Problem:** Gate length too short/long for receiving module's trigger input
+**Why:** **GATE OUT** duration is controlled by the **TEMPO/GATE LENGTH** knob. Too short and triggers might not register. Too long and consecutive notes blur together. Different modules have different trigger sensitivity.
+**Solution:**
+- Adjust **TEMPO/GATE LENGTH** while in **TEMPO mode** (shift function)
+- For most drum modules: gate length around **30-50ms** (10-11 o'clock range)
+- If triggers miss notes: increase gate length
+- If consecutive hits blur: decrease gate length
+- Test by triggering a single-note pattern and adjusting until reliable
+
+### **"External audio through EXT AUDIO IN is too quiet/loud/distorted"**
+**Problem:** Signal level mismatch - Mother-32 expects modular-level signals
+**Why:** **EXT AUDIO IN** expects **modular-level signals** (0-10V peak to peak, roughly -5V to +5V). Line-level signals (typical audio interfaces/mixers) are much quieter (~0-2V). Instrument-level (guitars) even quieter. Conversely, hot modular signals can overdrive.
+**Solution:**
+- **Too quiet:** Boost external source before Mother-32, or add a preamp/boost pedal
+- **Too loud/distorted:** Reduce sending device's output level, or use an attenuator
+- **Perfect level:** External signal peaks around 5V = sweet spot for Mother-32's input
+- Line-level sources typically need **+10 to +20dB gain** to reach modular levels
+
+### **"Pattern changes/edits don't save"**
+**Problem:** Not understanding Pattern vs Bank storage system
+**Why:** Mother-32 has **8 patterns per bank** (64 patterns total across 8 banks). When you edit a pattern, changes are **temporary in RAM** until you **store** them. Power cycling without saving loses all edits.
+**Solution:**
+- After editing pattern: Press **SHIFT + PATTERN** to enter store mode
+- Select destination pattern slot (1-8) while holding SHIFT
+- Pattern blinks to confirm storage
+- To change banks: Press **SHIFT + BANK** and select bank (A-H)
+- **Critical:** Store patterns before powering off or they're lost forever
+
+### **"My sequences sound robotic and mechanical"**
+**Problem:** No velocity/accent variation, all notes same length and volume
+**Why:** Unlike MIDI sequencers with automatic velocity recording, Mother-32's **ASSIGN** function must be **manually programmed** per step. Without accent programming, every step triggers at the same intensity.
+**Solution:**
+- **Add accents:** While holding **RESET/ACCENT**, press steps that should be louder
+- **Vary gate lengths:** Adjust **TEMPO/GATE LENGTH** per step while in record/edit mode
+- **Use rests:** Press **HOLD/REST** on certain steps to create rhythmic space
+- **Program ASSIGN values:** Per-step ASSIGN voltage creates dynamics when patched to VCF or VCA CV
+- **Apply swing:** Adjust timing feel (requires firmware 1.1+ - hold SHIFT + turn TEMPO knob)
+
+### **"VCO is out of tune with external gear"**
+**Problem:** VCO FREQUENCY knob offset or oscillator calibration drift
+**Why:** The **VCO FREQUENCY** knob adds/subtracts from incoming 1V/OCT CV. If the knob isn't centered (12 o'clock), external CV sources will be sharp or flat. Additionally, analog oscillators can drift slightly with temperature.
+**Solution:**
+- Set **VCO FREQUENCY** to exactly **12 o'clock** (center detent) for accurate tracking
+- If oscillator seems consistently sharp/flat: perform **oscillator calibration** (see manual)
+- Warm up unit for 10-15 minutes before critical tuning work
+- For precise tuning: use a chromatic tuner on Mother-32's output
+
+### **"LFO modulation is too fast/slow or doesn't sync to tempo"**
+**Problem:** LFO RATE knob at extreme position or expecting tempo-sync that doesn't exist
+**Why:** Mother-32's **LFO is free-running** - it doesn't automatically sync to sequencer tempo. The **RATE knob** ranges from extremely slow (minutes per cycle) to audio rate (creates tones above ~20Hz). Without external sync, LFO and sequencer drift apart.
+**Solution:**
+- For subtle modulation: LFO RATE around 9-10 o'clock (slow wobble)
+- For vibrato effects: LFO RATE around 11-1 o'clock (musical vibrato range)
+- For tempo-synced modulation: patch **TEMPO OUT** to **LFO RATE CV** input (requires external attenuator/offset usually)
+- Or use **EG OUT** instead of LFO - EG syncs to sequencer triggers automatically
+
+### **"ASSIGN output doesn't seem to do anything"**
+**Problem:** ASSIGN values not programmed or ASSIGN OUT not patched to meaningful destination
+**Why:** **ASSIGN** is a per-step programmable voltage (0-5V range). By default, all steps have the **same ASSIGN voltage**, so connecting ASSIGN OUT to a parameter creates no variation. You must **program different values per step**.
+**Solution:**
+- Enter **step programming mode:** Hold SHIFT + press individual step buttons
+- While holding step button, turn **TEMPO/GATE LENGTH** knob to set ASSIGN voltage for that step
+- Patch **ASSIGN OUT** to **VCF CUTOFF CV**, **VCA CV**, or **VCF RES CV** to hear effect
+- Higher ASSIGN values on accented steps creates dynamics matched to rhythm
+- Think of ASSIGN as "velocity per step" for expressive sequencing
+
+### **The Pattern Recognition:**
+Most Mother-32 problems come from:
+1. **Not understanding semi-normalled patching** (internal connections remain until interrupted)
+2. **Forgetting to save patterns** (edits lost on power cycle)
+3. **Filter mode confusion** (HP when you wanted LP, or vice versa)
+4. **Modulation amount at zero** (patching CV but not turning up MOD AMOUNT knob)
+
+Understanding these four patterns prevents 90% of beginner frustration.
 
 ---
 
