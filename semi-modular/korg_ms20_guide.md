@@ -1,5 +1,33 @@
-# Korg MS-20 - Complete Guide
-*The Legendary Semi-Modular That Defined Analog Synthesis*
+# Korg MS-20 Mini - Complete Guide
+*The Legendary Semi-Modular Synthesizer - 2013 Reissue*
+
+---
+
+## About This Guide
+
+**This guide covers the MS-20 Mini (2013 reissue), not the vintage MS-20 (1978).** While the Mini faithfully recreates the original's sound and functionality at 86% scale, there are important differences:
+
+**MS-20 Mini Advantages:**
+- **USB MIDI:** Built-in USB MIDI connectivity for modern DAW integration
+- **Compact size:** 86% scale (smaller footprint, mini-keys)
+- **Modern reliability:** Contemporary components with vintage character
+- **Availability:** Currently in production, no vintage maintenance issues
+- **Affordability:** Significantly less expensive than vintage originals
+
+**Vintage MS-20 Advantages:**
+- **Full-size keyboard:** Standard key size, easier to play
+- **Original components:** Specific vintage circuit tolerances (some prefer the character)
+- **Collector value:** Investment-grade vintage instrument
+- **Historical authenticity:** The actual instrument from the 1970s golden era
+
+**Key Technical Differences:**
+- **Size:** Mini is 86% scale of original (smaller panel, mini-keys)
+- **Patch jacks:** Mini uses 3.5mm jacks instead of original's 1/4" jacks
+- **USB MIDI:** Mini includes USB MIDI (vintage had no MIDI at all)
+- **Circuit:** Mini uses some modern components while maintaining vintage character
+- **Filter:** Mini's filter is slightly different from vintage (some debate about exact character match)
+
+⚠️ **Technical Specification - Verify:** Filter circuit differences between Mini and vintage require confirmation in Korg documentation.
 
 ---
 
@@ -35,6 +63,9 @@
 - **Comprehensive routing:** Audio and CV patch points for every major function
 - **Educational clarity:** Each patch point clearly labeled with function and signal type
 - **External integration:** CV inputs and outputs for connecting with other synthesizers and sequencers
+- **Mini-specific:** Uses 3.5mm (1/8") patch jacks - same as Eurorack modular standard (vintage used 1/4" jacks)
+  - **Why This Matters:** Mini's 3.5mm jacks are directly compatible with Eurorack modules without adapters
+  - **Vintage Compatibility:** Need 3.5mm to 1/4" adapters to connect with vintage gear using larger jacks
 
 ### **Signal Flow Understanding:**
 - **Internal Path:** VCO → VCF → VCA → Output (classic subtractive synthesis)
