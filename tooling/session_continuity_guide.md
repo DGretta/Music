@@ -6,6 +6,30 @@
 
 ## First Steps in Any Session
 
+### Recommended Session Intro:
+
+```
+Read these files in order:
+1. ~/claude/Music/tooling/project_philosophy.md (WHY this exists)
+2. ~/claude/Music/tooling/framework_overview.md (standards & terminology)
+3. ~/claude/Music/tooling/guide_enhancement_pattern.md (HOW to enhance)
+4. ~/claude/Music/tooling/session_continuity_guide.md (working together)
+5. Check recent git commits for context
+
+This is a generational knowledge transmission project documenting ~500 
+musical instruments. Not user manuals - we're teaching interconnection 
+and understanding across generations.
+
+Today's focus: [instrument name or "what jumped out"]
+```
+
+### Why This Order:
+1. **Philosophy** - WHY (foundation, purpose, interconnection principle)
+2. **Framework** - WHAT (standards, terminology, structure, ground rules)
+3. **Pattern** - HOW (enhancement process, verification workflow, quality standards)
+4. **Continuity** - WHO (creator context, communication style, collaboration patterns)
+5. **Commits** - WHERE (current state, in-progress work, recent changes)
+
 ### 1. Read These Documents (in order):
 1. **`tooling/project_philosophy.md`** - WHY this project exists, what it really is
 2. **`tooling/framework_overview.md`** - Standards, terminology, structure
