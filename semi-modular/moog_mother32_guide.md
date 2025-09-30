@@ -217,6 +217,12 @@ The patchbay isn't just "advanced features" - it's what makes Mother-32 **semi-m
 **CV Inputs (VCO 1V/OCT, VCO LIN FM, VCO MOD, VCF CUTOFF, VCF RES, VCA CV, MIX CV):**
 - **Why They Exist:** Allow external voltage sources to control parameters beyond what internal modulation can do. The front panel controls set the **base value**, CV inputs add/subtract from that base.
 - **1V/OCT vs LIN FM:** Two different ways to control pitch. **1V/OCT** (1 volt per octave) is the musical standard - every 1V increase = one octave higher. This lets you play Mother-32 from external sequencers or keyboards. **LIN FM** (linear FM) responds linearly, not musically - perfect for creating metallic, bell-like tones through frequency modulation.
+- **Critical Voltage Range Detail:** Mother-32 uses **bipolar CV range (-5V to +5V)** for most CV inputs, while most Eurorack modules use **unipolar (0-10V)**. This matters because:
+  - **0V on Mother-32** = center position/no modulation
+  - **Negative voltages** modulate downward (lower pitch, darker filter, etc.)
+  - **Positive voltages** modulate upward (higher pitch, brighter filter, etc.)
+  - **Eurorack modules** sending 0-10V signals to Mother-32 will only modulate in the positive direction (0-5V range is used, 5-10V is clipped)
+  - **To use full range:** You need an **offset module** to shift 0-10V signals to -5V to +5V
 - **What Goes Wrong:** Beginners send audio-rate signals (like VCO outputs) to CV inputs expecting audio-rate FM. Mother-32's FM is **through-zero FM** at the VCO MOD input, but LIN FM responds better to lower frequency modulation. For audio-rate FM, use VCO MOD input, not LIN FM.
 - **Musical Use:** Patch an external sequencer's CV to 1V/OCT to play melodies while Mother-32's internal sequencer controls filter cutoff via VCF CUTOFF CV.
 
@@ -477,14 +483,28 @@ Once you've mastered this internal voice, you're ready to explore:
 - Higher ASSIGN values on accented steps creates dynamics matched to rhythm
 - Think of ASSIGN as "velocity per step" for expressive sequencing
 
+### **"Modulation from Eurorack modules seems weak or one-sided"**
+**Problem:** Voltage range mismatch between Mother-32's bipolar inputs and Eurorack's unipolar outputs
+**Why:** Mother-32 expects **bipolar CV (-5V to +5V)** where 0V = no modulation. Most Eurorack modules output **unipolar CV (0-10V)** where 0V = minimum and 10V = maximum. When you patch Eurorack 0-10V into Mother-32:
+  - The 0-5V portion works (positive modulation)
+  - The 5-10V portion gets clipped (Mother-32 can't accept above +5V)
+  - You never get negative modulation (darker filter, lower pitch, etc.)
+  - Modulation range is effectively **half** what you expect
+**Solution:**
+- Use an **offset/attenuator module** (like Mutable Instruments Shades) to shift 0-10V to -5V to +5V
+- Or embrace single-direction modulation - use Mother-32's front panel to set parameter low, then positive CV only sweeps upward
+- **Mother-32's own outputs** (LFO, EG, KB OUT) are already bipolar-compatible with itself
+- When purchasing modular gear to pair with Mother-32, prioritize **bipolar-capable modules** or plan for offset utilities
+
 ### **The Pattern Recognition:**
 Most Mother-32 problems come from:
 1. **Not understanding semi-normalled patching** (internal connections remain until interrupted)
 2. **Forgetting to save patterns** (edits lost on power cycle)
 3. **Filter mode confusion** (HP when you wanted LP, or vice versa)
 4. **Modulation amount at zero** (patching CV but not turning up MOD AMOUNT knob)
+5. **Voltage range mismatch** (bipolar Mother-32 vs unipolar Eurorack, half the expected range)
 
-Understanding these four patterns prevents 90% of beginner frustration.
+Understanding these five patterns prevents 90% of beginner frustration.
 
 ---
 
