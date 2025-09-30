@@ -200,6 +200,51 @@ Before considering a guide "enhanced," verify:
 - [ ] Technical explanations for key mechanisms
 - [ ] Musical context for all features
 
+### **Technical Accuracy Requirements:**
+- [ ] All voltage ranges verified against official documentation
+- [ ] All firmware features confirmed to exist
+- [ ] All timing specifications checked against manuals
+- [ ] All compatibility claims verified (SD cards, cables, etc.)
+- [ ] Manufacturer-specific terminology used correctly
+- [ ] No unverified numerical specifications
+
+### **Verification Workflow:**
+
+**When adding technical specifications:**
+1. **If certain from training data AND commonly known:** Include with confidence
+2. **If specific numbers/ranges:** Mark with ⚠️ flag for verification
+3. **If manufacturer-specific implementation:** Flag for manual verification
+4. **If uncertain:** Flag or omit entirely
+
+**Examples of what needs verification:**
+- ⚠️ Exact voltage ranges (e.g., "-5V to +5V")
+- ⚠️ Timing thresholds (e.g., "500ms sustain detection")
+- ⚠️ Firmware version features (e.g., "requires firmware 1.1+")
+- ⚠️ Compatibility specifications (e.g., "32GB SD card maximum")
+- ⚠️ Resistance values (e.g., "1kΩ to 100kΩ skin resistance")
+- ⚠️ Specific knob positions (e.g., "30-50ms at 10-11 o'clock")
+
+**Examples of what's safe to include:**
+- ✅ Conceptual explanations ("Why three envelopes create realistic drums")
+- ✅ General synthesis principles ("Low-pass filters remove high frequencies")
+- ✅ Standard protocols ("1V/octave is the modular standard")
+- ✅ Common issues ("Loose alligator clips create intermittent connections")
+- ✅ Musical context ("Use for bass, leads, pads, etc.")
+
+**Flagging Format:**
+```markdown
+⚠️ **Technical Specification - Verify:** Mother-32 uses bipolar CV range 
+(-5V to +5V) for most inputs. [Verify in Mother-32 manual]
+```
+
+**Post-Enhancement Verification:**
+After completing enhancements, create a verification checklist:
+1. List all technical claims with specific numbers
+2. Mark verification source (manual page, official specs, etc.)
+3. User verifies against official documentation
+4. Update guide with confirmed specs or remove unverifiable claims
+5. Document verification status in commit message
+
 ### **Structure Requirements:**
 - [ ] Common Mistakes near beginning (users search for problems first)
 - [ ] Why This Instrument Excels before or after Common Mistakes
@@ -342,9 +387,30 @@ When enhancing a guide:
 - User feedback reveals missing elements
 - Framework terminology changes
 - Better examples found in enhanced guides
+- Verification requirements change
+
+**Verification Status Tracking:**
+
+For each enhanced guide, maintain a verification log:
+
+```markdown
+## [Instrument Name] - Technical Verification Status
+
+### Verified Claims:
+- ✅ Voltage range: -5V to +5V (verified in manual p.XX)
+- ✅ Swing feature: Firmware 1.1+ (verified in changelog)
+
+### Pending Verification:
+- ⚠️ Gate length timing: "30-50ms at 10-11 o'clock" (needs manual check)
+- ⚠️ Sustain threshold: "~500ms" (needs testing or manual confirmation)
+
+### Corrections Made:
+- ❌ Originally claimed X, corrected to Y (date, commit hash)
+```
 
 **Version History:**
 - v1.0 (2025-01-30): Initial pattern documentation from DFAM/Pulsar-23/SP-404 MKII work
+- v1.1 (2025-01-30): Added technical accuracy requirements and verification workflow
 
 ---
 
