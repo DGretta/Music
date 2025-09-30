@@ -51,14 +51,16 @@
 ### **"USB MIDI is not working with my DAW"**
 **Problem:** Computer does not recognize MS-20 Mini, or MIDI notes are not triggering the synth.
 
-**Why This Happens:** Operating systems require MIDI device configuration, DAWs need MIDI preferences set, or the USB cable is power-only (no data). The MS-20 Mini is class-compliant on modern operating systems, but older systems or specific DAWs may require the KORG USB-MIDI driver.
+**Why This Happens:** Operating systems require MIDI device configuration, DAWs need MIDI preferences set, or the USB cable is power-only (no data). The MS-20 Mini is class-compliant on macOS and modern Linux systems (no driver needed), but Windows requires the KORG USB-MIDI driver.
 
 **Technical Specifications:**
-- USB MIDI: Type B connector
+- MIDI Connections: Both USB MIDI (Type B) AND 5-pin DIN MIDI IN jack
 - MIDI Channel: Fixed to Channel 1 (cannot be changed)
-- Note Range: Receives notes 12-91 (C0 to G6)
-- Velocity: Transmitted at fixed value 64, reception disabled
-- Messages: Note On/Off only - no CC, pitch bend, or program changes
+- Note Range Transmitted: 48-84 (C2 to C6, 37 keys)
+- Note Range Received: Accepts all note numbers (kk = any), velocity values 0-127
+- Velocity: Transmitted at fixed value 64, received velocity is ignored
+- Transmitted Messages: Note On/Off only (no CC, pitch bend, program changes)
+- Received Messages: Note On/Off, All Sound Off (CC 120), All Note Off (CC 123), Omni/Mono/Poly Mode messages (CC 124-127), Active Sensing
 
 **Solution (macOS):**
 1. Connect MS-20 Mini to Mac via USB cable
@@ -69,11 +71,17 @@
 6. Draw or record MIDI notes - MS-20 should respond
 
 **Solution (Windows):**
-1. Connect MS-20 Mini to Windows PC
-2. Windows should recognize as class-compliant device
-3. If not recognized, download KORG USB-MIDI driver from Korg website
+1. Download and install KORG USB-MIDI driver from Korg website FIRST
+2. Connect MS-20 Mini to Windows PC via USB
+3. Windows should now recognize "MS-20 mini" as MIDI device
 4. In DAW MIDI settings, enable "MS-20 mini"
 5. Create MIDI track with output set to "MS-20 mini"
+
+**Alternative: Use 5-pin MIDI IN instead:**
+- Connect MIDI interface's MIDI OUT to MS-20 Mini's MIDI IN jack
+- No drivers needed for standard MIDI interface
+- Same functionality as USB MIDI (Channel 1 fixed)
+- Useful if USB driver issues persist or for hardware sequencers
 
 **If Still Not Working:**
 - Try different USB cable (some are power-only, no data)
