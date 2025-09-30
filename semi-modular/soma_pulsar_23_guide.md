@@ -32,8 +32,8 @@
   - **What Goes Wrong:** Recording loops that are too long eats memory quickly (finite recording time per looper). Loops of very different lengths can create chaotic polyrhythms that lose musical coherence. Users often record expecting precise tempo lock but get organic drift - this is intentional SOMA design. If you want metronomic precision, use MIDI; if you want organic evolution, embrace the looper drift.
   
 - **Clock Generator + Dividers:** Master timing with multiple subdivisions
-- **Controlled Chaos Generator:** Organic randomness for evolving patterns
-- **LFO + Sample & Hold:** Modulation sources that can also serve as sound generators
+- **SHAOS (Sample & Hold And Organismic Source):** Combined chaos generator and sample & hold for organic randomness and stepped voltages
+- **LFO:** Modulation source that can also serve as sound generator
 - **2-Channel CV Effects Processor:** Process internal or external audio
 - **Distortion + 2 Controlled Amplifiers:** Signal shaping and dynamics
 - **Envelope Generators:** 4 flexible envelope generators with sustain recognition
@@ -392,10 +392,10 @@ PULSAR-23 AS SYSTEM HUB
 - **Why This Happens:** Pulsar's loopers use analog recording (like old tape loops), not digital sample-accurate recording. Small timing variations accumulate over multiple loop cycles, creating organic drift. Additionally, if you record loops at different times without sync, they start at different points in the clock cycle.
 - **Solution:** If you want locked sync, use MIDI clock input and trigger all loop recording starts from the same clock division. If you want organic, evolving polyrhythms, embrace the drift - SOMA considers this a feature. The loops phase in and out of alignment, creating musical variation over time.
 
-**"The chaos generator makes everything unusable"**
-- **Problem:** Using full chaos modulation depth, overwhelming the system
-- **Why Chaos Exists:** Controlled randomness creates organic variation - the difference between "alive" and "mechanical." But chaos needs **attenuation** to be musical. At 100% depth, chaos destroys rhythmic coherence. At 10-30% depth, it adds subtle variation that makes patterns feel human.
-- **Solution:** Start with chaos generator output attenuated significantly (use attenuators or partial alligator clip contact). Apply chaos to parameters that benefit from variation (filter cutoff, decay times) rather than critical rhythm elements (clock divisions, trigger timing). Think of chaos as **organic seasoning**, not the main ingredient.
+**"The SHAOS module makes everything unusable"**
+- **Problem:** Using full SHAOS modulation depth, overwhelming the system
+- **Why SHAOS Exists:** SHAOS combines chaos (organic randomness) with sample & hold (stepped voltages). Controlled randomness creates organic variation - the difference between "alive" and "mechanical." But SHAOS needs **attenuation** to be musical. At 100% depth, chaos destroys rhythmic coherence. At 10-30% depth, it adds subtle variation that makes patterns feel human.
+- **Solution:** Start with SHAOS output attenuated significantly (use attenuators or partial alligator clip contact). Apply SHAOS to parameters that benefit from variation (filter cutoff, decay times) rather than critical rhythm elements (clock divisions, trigger timing). Think of SHAOS as **organic seasoning**, not the main ingredient.
 
 **"Sustain recognition is inconsistent"**
 - **Problem:** Holding times near the 0.5-second threshold get inconsistent results
@@ -495,11 +495,11 @@ Pulsar-23 approaches rhythm as a **living system** rather than a mechanical devi
 - **Musical Result:** Smooth transitions between roles - modulation becomes audio, audio becomes modulation
 - **Why It's Better:** Expands sonic palette without adding more modules
 
-**5. Controlled Chaos Generator:**
+**5. SHAOS Module (Sample & Hold And Organismic Source):**
 - **Traditional:** Randomness is "broken" or "malfunctioning" - avoided in professional equipment
-- **Organismic:** Chaos is **a compositional tool** for creating organic variation and evolution
-- **Musical Result:** Patterns that breathe, evolve, and surprise without becoming completely random
-- **Why It's Better:** Achieves the "human feel" of subtle variation without programming every detail
+- **Organismic:** SHAOS combines chaos and sample & hold as **compositional tools** for creating organic variation, evolution, and stepped modulation
+- **Musical Result:** Patterns that breathe, evolve, and surprise without becoming completely random. Sample & hold creates stepped voltages for rhythmic modulation.
+- **Why It's Better:** Achieves the "human feel" of subtle variation without programming every detail. S&H provides quantized randomness for melodic sequences.
 
 **6. Body Conductivity Integration:**
 - **Traditional:** Musician and instrument are separate - interface is buttons, knobs, and screens
@@ -568,7 +568,7 @@ Pulsar-23 **thinks in living systems** rather than mechanical sequences. Each pa
 
 ---
 
-## Phase 2 Learning Path
+## Advanced Learning Path
 
 ### **Recommended Study Progression:**
 1. **Start with Pulsar-23 fundamentals:** Master touch control, looper workflow, and basic organismic principles
