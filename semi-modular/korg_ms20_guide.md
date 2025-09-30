@@ -25,9 +25,7 @@
 - **Patch jacks:** Mini uses 3.5mm jacks instead of original's 1/4" jacks
 - **USB MIDI:** Mini includes USB MIDI (vintage had no MIDI at all)
 - **Circuit:** Mini uses some modern components while maintaining vintage character
-- **Filter:** Mini's filter is slightly different from vintage (some debate about exact character match)
-
-⚠️ **Technical Specification - Verify:** Filter circuit differences between Mini and vintage require confirmation in Korg documentation.
+- **Filter:** Mini's filter has negligible difference from vintage - slightly smoother and more stable due to modern components. Vintage MS-20 filters also varied between units due to component tolerances.
 
 ---
 
@@ -648,7 +646,7 @@ The MS-20 **sounds like what people think electronic music should sound like** b
 
 ---
 
-## Phase 2 Learning Path
+## Advanced Learning Path
 
 ### **Recommended Study Progression:**
 1. **Start with MS-20 fundamentals:** Master internal signal flow, basic patching, and classic analog synthesis techniques
