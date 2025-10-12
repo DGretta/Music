@@ -219,9 +219,9 @@ INPUT FX    ENVELOPE/      BUS 1&2      EFX MOTION    BUS 3&4
 ### Patch 1: Basic Beat Creation
 **Main Example:** Load preset drum samples, create simple 4/4 pattern
 **Alternative Options:**
-- **Budget:** Korg Volca Sample 2, Teenage Engineering PO-33
-- **Different character:** Elektron Model:Samples (euclidean sequencing), Akai MPC One (traditional MPC workflow)
-- **Premium:** Elektron Octatrack (advanced sampling), Native Instruments Maschine+
+- **Budget:** Korg Volca Sample 2 ($160, 200 samples with motion sequencing but simpler interface), Teenage Engineering PO-33 ($90, ultra-portable micro sampler with built-in mic)
+- **Different character:** Elektron Model:Samples ($400, euclidean sequencing and parameter locks but limited effects), Akai MPC One ($700, traditional MPC workflow with larger pads and deeper DAW integration)
+- **Premium:** Elektron Octatrack MKII ($1400, 8 stereo tracks with advanced sequencer but steeper learning curve), Native Instruments Maschine+ ($1400, standalone production suite with extensive software library)
 
 **Setup:**
 1. Power on → Project 1 loads with preset samples
@@ -235,9 +235,9 @@ INPUT FX    ENVELOPE/      BUS 1&2      EFX MOTION    BUS 3&4
 ### Patch 2: Sampling and Effects Processing  
 **Main Example:** Sample external audio, apply vintage vinyl simulation, build lo-fi beat
 **Alternative Options:**
-- **Budget:** Boss RC-1 Loop Station, Zoom R8 MultiTrak
-- **Different character:** Teenage Engineering OP-1 (tape-style sampling), Novation Circuit Rhythm (sample manipulation focus)
-- **Premium:** Elektron Digitakt (parameter locking), MPC Live II (full production suite)
+- **Budget:** Boss RC-1 Loop Station ($100, simple phrase sampler with unlimited overdubs but no sequencing), Zoom R8 MultiTrak ($200, 8-track recorder with basic sampling but focused on recording workflow)
+- **Different character:** Teenage Engineering OP-1 field ($2000, tape-style sampling with 4-track recorder paradigm and unique interface), Novation Circuit Rhythm ($330, grid-based sample manipulation with different performance approach)
+- **Premium:** Elektron Digitakt ($850, parameter locks and conditional trigs for deeper sequencer programming), MPC Live II ($1200, full production suite with touchscreen and extensive effects)
 
 **Setup:**
 1. Connect audio source to INPUT jack on front panel
@@ -254,9 +254,9 @@ INPUT FX    ENVELOPE/      BUS 1&2      EFX MOTION    BUS 3&4
 ### Patch 3: Pattern Sequencing and Arrangement
 **Main Example:** Create 8-bar song section with pattern chains, effect automation
 **Alternative Options:**
-- **Budget:** Arturia DrumBrute Impact, Korg SQ-64
-- **Different character:** Polyend Tracker (tracker-style sequencing), Elektron Model:Cycles (FM-based groovebox)  
-- **Premium:** Sequential Tempest (analog drum synthesis), Elektron Analog Rytm (analog+sample hybrid)
+- **Budget:** Arturia DrumBrute Impact ($300, analog drums with simpler pattern sequencer and performance modes), Korg SQ-64 ($300, dedicated MIDI/CV sequencer with polyphonic capabilities)
+- **Different character:** Polyend Tracker ($600, tracker-style vertical sequencing with sample manipulation focus), Elektron Model:Cycles ($330, FM-based groovebox with parameter locks but synthesis instead of sampling)  
+- **Premium:** Sequential Tempest ($2000, analog drum synthesis with Dave Smith sound design depth), Elektron Analog Rytm MKII ($1700, analog synthesis + sampling hybrid with extensive modulation)
 
 **Setup:**
 1. Create basic 4/4 pattern (from Patch 1)
@@ -273,9 +273,9 @@ INPUT FX    ENVELOPE/      BUS 1&2      EFX MOTION    BUS 3&4
 ### Patch 4: Advanced Performance Techniques
 **Main Example:** Live remixing with skip-back sampling, real-time chopping, DJ-style transitions
 **Alternative Options:**
-- **Budget:** Native Instruments Traktor Kontrol S2, Pioneer DDJ-FLX4
-- **Different character:** Ableton Push 3 (session view performance), Novation Launchpad Pro (clip launching)
-- **Premium:** Pioneer DJM-S11 (professional DJ effects), Native Instruments Maschine Studio (full production performance)
+- **Budget:** Native Instruments Traktor Kontrol S2 ($300, DJ controller with mixing and effects but limited sampling), Pioneer DDJ-FLX4 ($230, beginner DJ controller with smart mixing features)
+- **Different character:** Ableton Push 3 ($2000, session view performance with deep DAW integration and standalone mode), Novation Launchpad Pro MK3 ($400, clip launching focused on Ableton Live workflow)
+- **Premium:** Pioneer DJM-S11 ($2500, professional DJ mixer with extensive effects and scratch features), Native Instruments Maschine Studio ($1000, full production performance with extensive pad control and software library)
 
 **Setup:**
 1. Load completed pattern from previous patches
