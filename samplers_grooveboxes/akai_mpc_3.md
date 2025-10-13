@@ -10,10 +10,6 @@
 
 ---
 
-[Previous sections remain exactly as written, continuing from where we left off with Advanced Techniques...]
-
----
-
 ## Common Use Cases
 
 ### Beat Making and Production
