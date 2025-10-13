@@ -12,7 +12,9 @@ modular_manuals/*.docx
 # Other document types to exclude globally
 *.txt
 *.docx
+*.pdf
 MetaModuleManual.docx
+MPC_bible_3
 
 # System files
 .DS_Store
