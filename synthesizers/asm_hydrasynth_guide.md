@@ -2,7 +2,7 @@
 
 *49-key digital synthesizer with polyphonic aftertouch, advanced waveshaping, and deep modulation*
 
-![ASM Hydrasynth Keyboard](https://github.com/DGretta/Music/raw/main/synthesizers/images/asm/hydrasynth_keyboard/front_panel.jpg)
+![ASM Hydrasynth Keyboard](https://github.com/DGretta/Music/raw/main/synthesizers/images/asm/hydrasynth_keyboard/front_panel.jpg)  
 *The Hydrasynth Keyboard features a 49-key polytouch keyboard, large ribbon controller, dual OLED displays, and comprehensive hands-on control with dedicated knobs for all major synthesis parameters. The desktop version offers 24 velocity-sensitive RGB pads instead of keys.*
 
 ---
