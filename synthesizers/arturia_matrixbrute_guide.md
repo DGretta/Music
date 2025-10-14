@@ -1,7 +1,7 @@
 # Arturia MatrixBrute - Complete Guide
 *Flagship Analog Monosynth with 16x16 Modulation Matrix and Semi-Modular Patchbay*
 
-![Arturia MatrixBrute](https://github.com/DGretta/Music/raw/main/synthesizers/images/arturia/matrixbrute/front_panel.jpg)
+![Arturia MatrixBrute](https://github.com/DGretta/Music/raw/main/synthesizers/images/arturia/matrixbrute/front_panel.jpg)  
 *Arturia MatrixBrute front panel featuring the revolutionary 16x16 LED modulation matrix, three Brute oscillators, dual filter architecture (Steiner-Parker + Moog Ladder), comprehensive modulation sources, analog effects, and 49-key velocity-sensitive keyboard with aftertouch*
 
 ---
