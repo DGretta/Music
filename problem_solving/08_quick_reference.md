@@ -82,14 +82,14 @@ This guide provides **fast diagnostic paths** for common problems. Each section 
 ### "Devices won't sync at all"
 
 **Quick checks:**
-1. ☐ Master/slave settings correct?
+1. ☐ Master/secondary settings correct?
 2. ☐ Same sync standard? (MIDI clock, DIN sync, analog clock)
 3. ☐ Cables properly connected?
 4. ☐ PPQN matching across all devices?
-5. ☐ External sync enabled on slave devices?
+5. ☐ External sync enabled on secondary devices?
 
 **Diagnostic path:**
-- **No sync at all** → Check connections, master/slave settings
+- **No sync at all** → Check connections, master/secondary settings
 - **Wrong tempo relationship** → Check PPQN settings (must match)
 - **Different standards** → Need converter (DIN sync ↔ MIDI, MIDI ↔ CV)
 
@@ -101,7 +101,7 @@ This guide provides **fast diagnostic paths** for common problems. Each section 
 
 **Immediate fixes:**
 1. ☐ **Single master clock** - Only ONE device generates timing
-2. ☐ **All slaves external sync** - Disable internal clocks on slaves
+2. ☐ **All other devices set to external sync** - Disable internal clocks on secondaries
 3. ☐ **Same power circuit** - All gear on same electrical circuit
 4. ☐ **Quality cables** - Replace cheap MIDI/clock cables
 
@@ -114,7 +114,7 @@ This guide provides **fast diagnostic paths** for common problems. Each section 
 ### "Devices won't start together"
 
 **Quick checks:**
-1. ☐ MIDI Start/Stop enabled on slaves?
+1. ☐ MIDI Start/Stop enabled on other, secondary, devices?
 2. ☐ Analog clock? (No start/stop - manual start required)
 3. ☐ Transport messages enabled on master?
 4. ☐ Song Position Pointer enabled if required?
@@ -422,13 +422,13 @@ Quick checks:
 
 ### Timing Problems
 ```
-1. Devices won't sync → Check master/slave settings
+1. Devices won't sync → Check master/other settings
    ↓
 2. Still no sync? → Verify same sync standard (MIDI/DIN/Analog)
    ↓
 3. Synced but wrong tempo? → Match PPQN settings
    ↓
-4. Drifts over time? → Single master clock, all slaves external sync
+4. Drifts over time? → Single master clock, all other devices set to use external sync
    ↓
 5. Won't start together? → Check transport control settings
 ```
