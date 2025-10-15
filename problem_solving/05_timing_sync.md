@@ -249,7 +249,7 @@ LIMITATIONS:
 SOLUTION: MIDI Clock
 - Connect via MIDI cables
 - Set one device as master (clock source)
-- Set others as slaves (receive clock)
+- Set others as secondary (receive clock)
 - Check all devices set to 24 PPQN
 - Use MIDI Start/Stop for transport control
 ```
@@ -279,7 +279,7 @@ COMPLEX SETUP:
 2. MIDI to modern synths directly
 3. MIDI to DIN Sync converter for vintage Roland
 4. MIDI to CV for modular (analog clock out)
-5. All slaves receive timing from DAW
+5. All secondary devices receive timing from DAW
 ```
 
 ---
@@ -354,14 +354,14 @@ Your devices start in sync but gradually drift apart over time. Or timing feels 
 ```
 USE SINGLE MASTER CLOCK:
 ✓ One device generates clock for all others
-✓ All slaves receive from same source
+✓ All other devices receive from same source
 ✓ Don't chain internal clocks
 
 GOOD PRACTICE:
 - DAW as master (most stable)
 - Or dedicated clock source (very stable)
 - All other devices receive clock externally
-- Disable internal clocks on slaves
+- Disable internal clocks on other devices
 
 BAD PRACTICE:
 ✗ Multiple devices generating independent clocks
@@ -445,7 +445,7 @@ MUSICAL USE:
 
 ### The Confusion
 
-You hit start on your master device, but slaves don't start, or they start at wrong positions. Or everything starts but at different points in their sequences. Transport control (start/stop/continue) doesn't work reliably.
+You hit start on your master device, but other devices don't start, or they start at wrong positions. Or everything starts but at different points in their sequences. Transport control (start/stop/continue) doesn't work reliably.
 
 ### Why This Happens
 
@@ -505,7 +505,7 @@ TROUBLESHOOTING:
 ### "Devices won't sync at all"
 1. **Check connections:** Cables properly connected?
 2. **Verify standards match:** MIDI to MIDI, DIN to DIN?
-3. **Master/slave settings:** One master, others slaves
+3. **Master/subordinate settings:** One master, others devices in the chain
 4. **PPQN matching:** All devices same resolution?
 
 ### "Trigger vs gate confusion"
@@ -516,8 +516,8 @@ TROUBLESHOOTING:
 
 ### "Everything drifts out of sync"
 1. **Single master clock:** Only one device generates timing
-2. **External sync:** All slaves receive from master
-3. **Disable internal clocks:** On all slave devices
+2. **External sync:** All secondary devices receive from master
+3. **Disable internal clocks:** On all secondary devices
 4. **Cable quality:** Use good cables for clock signals
 
 ### "Different speeds even though synced"
@@ -529,7 +529,7 @@ TROUBLESHOOTING:
 1. **MIDI start/stop enabled:** Check device settings
 2. **Analog clock:** Doesn't include start/stop (manual start)
 3. **Transport control:** Verify master sends start messages
-4. **Slave devices:** Check if listening to transport
+4. **Secodary devices:** Check if listening to transport
 
 ---
 
@@ -555,9 +555,9 @@ TROUBLESHOOTING:
 
 **Preventing Drift:**
 - Single master clock source
-- All slaves external sync (not internal)
+- All other devices external sync (not internal)
 - Quality cables for clock signals
-- Disable internal clocks on slaves
+- Disable internal clocks on secondary devices
 
 **Clock Division/Multiplication:**
 - Division = slower (/2 = half-time)
@@ -573,7 +573,7 @@ TROUBLESHOOTING:
 
 **When In Doubt:**
 - Use MIDI clock for modern gear (24 PPQN)
-- One master, all others slaves
+- One master, all others secondary
 - Quality cables matter for timing
 - Check module specs for trigger vs gate
 - Test simple 2-device setup first
@@ -584,7 +584,7 @@ TROUBLESHOOTING:
 
 ---
 
-**Related Dictionary Terms:** Trigger, Gate, Clock, MIDI, DIN Sync, PPQN, Sync, Master/Slave, Transport, MIDI Clock, Analog Clock
+**Related Dictionary Terms:** Trigger, Gate, Clock, MIDI, DIN Sync, PPQN, Sync, Master/Secondary, Transport, MIDI Clock, Analog Clock
 
 **Related Problem-Solving Guides:**
 - Guide #1: Signal and Control (gate polarity, CV behavior)
