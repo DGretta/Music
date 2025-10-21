@@ -3157,6 +3157,828 @@ The Hydrasynth supports three clock synchronization methods: Internal (Hydrasynt
 
 ---
 
+## Effects Section
+
+The Hydrasynth provides four effects modules in series: Pre-FX → Delay → Reverb → Post-FX. This routing enables both subtle enhancement and dramatic transformation of the synthesis engine output. Pre-FX and Post-FX offer nine identical effect types with preset templates, while Delay and Reverb provide dedicated processing with multiple algorithms.
+
+**Signal Flow:**
+```
+Synthesis Engine (OSC → Mutants → Mixer → Filters → Amp)
+    ↓
+Pre-FX (9 types: Chorus, Flanger, Rotary, Phaser, Lo-Fi, Tremolo, EQ, Compressor, Distort)
+    ↓
+Delay (5 types: Basic Mono, Basic Stereo, Pan Delay, LRC Delay, Reverse)
+    ↓
+Reverb (4 types: Hall, Room, Plate, Cloud)
+    ↓
+Post-FX (9 types: same as Pre-FX)
+    ↓
+Master Output
+```
+
+**Key Concepts:**
+- **Pre-FX placement:** Before delay/reverb, affects dry signal character (e.g., chorus before reverb creates lush pad)
+- **Post-FX placement:** After delay/reverb, processes wet signal (e.g., distortion after reverb creates aggressive space)
+- **Per-patch settings:** All effects settings save with patch
+- **Preset templates:** Each effect type includes starting point presets
+
+---
+
+### Pre-FX and Post-FX
+
+Pre-FX and Post-FX are identical in functionality - both offer the same nine effect types with the same parameters and preset templates. Their only difference is signal path position: Pre-FX processes before Delay/Reverb, Post-FX processes after.
+
+**Access Pre-FX:** Press **[PRE-FX]** button → Two pages of parameters
+**Access Post-FX:** Press **[POST-FX]** button → Two pages of parameters (identical to Pre-FX)
+
+---
+
+**Nine Effect Types:**
+
+**1. Chorus**
+- **Function:** Duplicates signal with slight pitch/time modulation for thickness
+- **Character:** Lush, ensemble-like doubling effect
+- **Common uses:** Thicken single oscillator, add movement to pads, simulate multiple voices
+- **Parameters:** Rate (modulation speed), Depth (pitch modulation amount), Mix
+- **Typical settings:** Slow rate (0.3-0.8 Hz), moderate depth for subtle doubling
+
+**2. Flanger**
+- **Function:** Short delay with feedback and modulated delay time
+- **Character:** Jet-like sweeping, metallic resonance
+- **Common uses:** Dramatic sweeps, retro synth effects, motion on static sounds
+- **Parameters:** Rate (sweep speed), Depth (sweep range), Feedback (resonance intensity), Mix
+- **Typical settings:** Moderate feedback (40-60%) for classic flange, high feedback (80%+) for extreme resonance
+
+**3. Rotary**
+- **Function:** Leslie speaker cabinet simulation (rotating horn and drum)
+- **Character:** Vintage organ-style modulation with Doppler effect
+- **Common uses:** Classic keyboard sounds, warm pad movement, retro character
+- **Parameters:** Rate (rotation speed - slow/fast), Depth, Drive (cabinet overdrive), Mix
+- **Typical settings:** Slow rate for pads, fast rate for dramatic vibrato
+
+**4. Phaser**
+- **Function:** All-pass filters create moving notches in frequency spectrum
+- **Character:** Swirling, vowel-like sweeps
+- **Common uses:** Vintage synth movement, vocal-like filtering, animated pads
+- **Parameters:** Rate (sweep speed), Depth (notch movement range), Feedback (resonance), Stages (number of notches), Mix
+- **Typical settings:** Low feedback for subtle movement, high feedback (70%+) for resonant sweeps
+
+**5. Lo-Fi**
+- **Function:** Bit reduction and sample rate reduction for digital degradation
+- **Character:** Gritty, vintage digital, aliasing artifacts
+- **Common uses:** Retro video game sounds, aggressive digital distortion, creative degradation
+- **Parameters:** Bit Depth (bit reduction amount), Sample Rate (downsampling amount), Mix
+- **Typical settings:** Moderate settings (6-8 bit, 8-16kHz) for character without complete destruction
+
+**6. Tremolo**
+- **Function:** Amplitude modulation (volume pulsing)
+- **Character:** Rhythmic volume changes, helicopter effect at high rates
+- **Common uses:** Rhythmic pads, pulsing leads, tempo-synced movement
+- **Parameters:** Rate (pulse speed), Depth (modulation intensity), Waveform (sine/triangle/square), Mix
+- **Typical settings:** BPM sync On for rhythmic tremolo locked to tempo
+
+**7. EQ**
+- **Function:** Three-band equalizer (Low, Mid, High)
+- **Character:** Tonal shaping, frequency emphasis/reduction
+- **Common uses:** Remove mud, add brightness, shape timbre, compensate for other effects
+- **Parameters:** Low Freq/Gain, Mid Freq/Gain/Q, High Freq/Gain
+- **Typical settings:** Cut low end (80-120 Hz) for clarity, boost high (8-12 kHz) for air
+
+**8. Compressor**
+- **Function:** Dynamic range reduction (reduces loud signals, maintains quiet signals)
+- **Character:** Increases sustain, evens dynamics, adds punch
+- **Common uses:** Sustain leads, fatten bass, control dynamics, "glue" complex sounds
+- **Parameters:** Threshold (level where compression starts), Ratio (compression amount), Attack, Release, Makeup Gain
+- **Typical settings:** Moderate ratio (3:1 to 6:1) for musical compression, high ratio (10:1+) for limiting
+
+**9. Distort**
+- **Function:** Waveshaping/saturation adds harmonic distortion
+- **Character:** Warm saturation to aggressive fuzz
+- **Common uses:** Add aggression to leads, warm up pads, create aggressive bass, vintage analog character
+- **Parameters:** Drive (input gain/distortion amount), Tone (post-distortion filter), Output Level, Mix
+- **Typical settings:** Low drive (20-40%) for warmth, high drive (70%+) for fuzz
+
+---
+
+**Pre-FX vs. Post-FX - Placement Strategy:**
+
+**Use Pre-FX when:**
+- Effect should be part of the "dry" sound character
+- Want effect to be processed by delay/reverb (e.g., chorus before reverb = chorused reflections)
+- Creating foundational timbre (EQ, Compressor, subtle Chorus)
+- Example: Chorus (Pre-FX) → Reverb creates lush, spacious doubled sound
+
+**Use Post-FX when:**
+- Effect should process the entire wet signal (reverb + delay tails)
+- Creating aggressive final character (Distort, Lo-Fi)
+- Want effect after ambience is established
+- Example: Distort (Post-FX) after Reverb creates distorted reverb tails
+
+**Use Both Pre-FX and Post-FX when:**
+- Creating complex effect chains (e.g., Chorus before reverb + EQ after reverb)
+- Different effect types needed at different positions
+- Maximum timbral transformation desired
+- Example: Chorus (Pre-FX) + Reverb + Compressor (Post-FX) = lush with controlled dynamics
+
+---
+
+**Effect Programming Examples:**
+
+**Example 1 - Lush Pad (Pre-FX Chorus):**
+- Pre-FX: Chorus, Rate = 0.4 Hz, Depth = 50, Mix = 40%
+- Delay: Off
+- Reverb: Hall, Time = 4.5s, Dry/Wet = 35%
+- Post-FX: Off
+- **Result:** Subtle chorus thickness feeds into spacious reverb, classic lush pad
+
+**Example 2 - Aggressive Lead (Post-FX Distort):**
+- Pre-FX: Off
+- Delay: Basic Stereo, Time = 1/8 (BPM sync), Feedback = 30, Dry/Wet = 20%
+- Reverb: Room, Time = 1.8s, Dry/Wet = 15%
+- Post-FX: Distort, Drive = 75%, Tone = +20 (bright), Mix = 60%
+- **Result:** Clean lead with space, distortion processes entire mix for aggressive character
+
+**Example 3 - Vintage Organ (Pre-FX Rotary):**
+- Pre-FX: Rotary, Rate = Fast, Drive = 45%, Mix = 70%
+- Delay: Off
+- Reverb: Room, Time = 1.2s, Dry/Wet = 25%
+- Post-FX: Compressor, Ratio = 4:1, Attack = Fast, Mix = 100%
+- **Result:** Leslie speaker simulation with controlled dynamics, classic organ tone
+
+**Example 4 - Lo-Fi Texture (Pre + Post FX):**
+- Pre-FX: Lo-Fi, Bit Depth = 6-bit, Sample Rate = 12kHz, Mix = 80%
+- Delay: Reverse, Time = 1/4 (BPM sync), Feedback = 50, Dry/Wet = 40%
+- Reverb: Cloud, Time = 6s, Dry/Wet = 30%
+- Post-FX: EQ, Low = -6dB at 100Hz, High = +4dB at 10kHz
+- **Result:** Degraded signal with backward delays, EQ shapes final character
+
+**Example 5 - Rhythmic Movement (Pre-FX Tremolo):**
+- Pre-FX: Tremolo, Rate = 1/8 (BPM sync), Depth = 70%, Waveform = Square, Mix = 100%
+- Delay: Pan Delay, Time = 1/16 (BPM sync), Feedback = 40, Dry/Wet = 30%
+- Reverb: Plate, Time = 2.5s, Dry/Wet = 20%
+- Post-FX: Off
+- **Result:** Rhythmic gating feeds into ping-pong delays, tempo-locked movement
+
+---
+
+### Delay
+
+The Hydrasynth's Delay module provides five distinct delay algorithms, from simple mono/stereo repeats to complex reverse and pattern-based delays. All delays support BPM synchronization for tempo-locked rhythmic effects.
+
+**Access Delay:** Press **[DELAY]** button → Two pages of parameters
+
+---
+
+**Five Delay Types:**
+
+**1. Basic Mono**
+- **Function:** Combines stereo input to mono, single delay line
+- **Character:** Centered, classic slapback or echo
+- **Use cases:** Doubling effect (short time, low feedback), vocal-style echo, mono thickening
+- **Typical settings:** 80-120ms for slapback, 250-500ms for discrete echo
+
+**2. Basic Stereo**
+- **Function:** Independent left and right delay lines, preserves stereo image
+- **Character:** Wide stereo delays, maintains spatial positioning
+- **Use cases:** Stereo pads with space, leads with width, preserving existing stereo field
+- **Typical settings:** Same time for both channels, moderate feedback (30-50%)
+
+**3. Pan Delay**
+- **Function:** Alternates between left and right channels (ping-pong)
+- **Character:** Classic ping-pong stereo movement
+- **Use cases:** Wide stereo delays, rhythmic spatial movement, classic synth delays
+- **Typical settings:** 1/8 or 1/16 note (BPM sync), moderate feedback for multiple repeats
+
+**4. LRC Delay**
+- **Function:** Pattern of Left → Right → Center, repeats
+- **Character:** Complex spatial pattern, three-position movement
+- **Use cases:** Unusual spatial effects, complex rhythmic delays, experimental movement
+- **Typical settings:** BPM sync for musical patterns, moderate-high feedback (50-70%)
+
+**5. Reverse**
+- **Function:** Records incoming audio, plays it backward on repeat
+- **Character:** Reversed echo, tape-rewind effect
+- **Use cases:** Experimental textures, reversed reverb simulation, dramatic effects
+- **Typical settings:** Longer times (1/2 or 1/1 note) for recognizable backward phrases
+
+---
+
+**Delay Parameters (All Types):**
+
+**Access Delay:** Press **[DELAY]** button
+
+**Page 1:**
+- **Type:** Basic Mono, Basic Stereo, Pan Delay, LRC Delay, Reverse
+- **Time:** 1ms to 3.0 seconds (BPM Off) or 1/64T to 1/1 Dot (BPM On)
+  - Delay period before repeat
+  - Short times (1-50ms): Thickening, doubling
+  - Medium times (50-250ms): Slapback, discrete echo
+  - Long times (250ms+): Distinct rhythmic repeats
+  
+- **Feedback:** 0.0 to 128.0
+  - Amount of delayed signal fed back into delay input
+  - 0 = single repeat
+  - 64 = moderate decay (3-5 repeats)
+  - 100+ = long decay (10+ repeats)
+  - 128 = near-infinite repeats (eventual runaway)
+  
+- **Wet Tone:** -64.0 to +64.0 (filter control for delayed signal)
+  - Negative values (-64 to -0.1): Low-pass filter (dark delays, reduces high frequencies on repeats)
+  - 0: No filtering (full bandwidth)
+  - Positive values (+0.1 to +64): High-pass filter (bright delays, reduces low frequencies on repeats)
+  - **Use case:** Negative Wet Tone creates classic analog delay darkness
+
+**Page 2:**
+- **BPM Sync:** Off or On
+  - Off = Time measured in milliseconds/seconds
+  - On = Time quantized to tempo divisions (1/64T to 1/1 Dot)
+  - **Use case:** BPM On for rhythmic delays locked to tempo
+  
+- **Feed Tone:** 0.0 to 128.0 (feedback high-frequency decay)
+  - Controls how quickly high frequencies decay in feedback loop
+  - 0 = Maximum HF decay (dark, filtered repeats)
+  - 64 = Moderate HF decay (natural analog-style darkening)
+  - 128 = No HF decay (bright repeats maintain high frequencies)
+  - **Different from Wet Tone:** Feed Tone affects only the feedback loop, Wet Tone affects all delayed signal
+  
+- **Dry/Wet:** 0.0% to 100.0%
+  - 0% = No delay (dry signal only)
+  - 50% = Equal dry and wet (balanced)
+  - 100% = Only delayed signal (no dry)
+  - **Typical settings:** 20-40% for subtle space, 50-70% for obvious effect
+
+---
+
+**Delay Programming Examples:**
+
+**Example 1 - Slapback (Basic Mono):**
+- Type: Basic Mono
+- Time: 120ms (BPM Off)
+- Feedback: 0 (single repeat)
+- Wet Tone: -20 (slightly dark)
+- Dry/Wet: 25%
+- **Result:** Classic slapback doubling, single dark repeat
+- **Use case:** Thicken lead lines, vintage vocal-style echo
+
+**Example 2 - Rhythmic Ping-Pong (Pan Delay):**
+- Type: Pan Delay
+- BPM Sync: On, Time: 1/8
+- Feedback: 50 (4-5 repeats)
+- Wet Tone: 0 (full bandwidth)
+- Feed Tone: 80 (bright repeats)
+- Dry/Wet: 35%
+- **Result:** Eighth-note ping-pong delays with bright character
+- **Use case:** Rhythmic lead support, tempo-locked space
+
+**Example 3 - Analog-Style Decay (Basic Stereo):**
+- Type: Basic Stereo
+- BPM Sync: On, Time: 1/4 Dot (dotted quarter)
+- Feedback: 70 (long decay)
+- Wet Tone: -40 (dark, filtered)
+- Feed Tone: 30 (aggressive HF decay)
+- Dry/Wet: 45%
+- **Result:** Classic analog delay - repeats get progressively darker
+- **Use case:** Vintage synth delays, dub-style echo, warm space
+
+**Example 4 - Reverse Texture (Reverse):**
+- Type: Reverse
+- BPM Sync: On, Time: 1/1 (whole note)
+- Feedback: 40 (2-3 backward repeats)
+- Wet Tone: +15 (slightly bright)
+- Dry/Wet: 50%
+- **Result:** Whole-note backward echoes
+- **Use case:** Experimental pads, dramatic effects, reversed reverb simulation
+
+**Example 5 - Spatial Pattern (LRC Delay):**
+- Type: LRC Delay
+- BPM Sync: On, Time: 1/16
+- Feedback: 65 (moderate decay with pattern)
+- Wet Tone: 0
+- Feed Tone: 100 (maintain brightness)
+- Dry/Wet: 40%
+- **Result:** Fast Left-Right-Center pattern
+- **Use case:** Complex spatial movement, rhythmic enhancement
+
+---
+
+### Reverb
+
+The Hydrasynth's Reverb module offers four distinct reverb algorithms from natural spaces (Hall, Room) to metallic/shimmer effects (Plate, Cloud). All reverbs share identical parameters with extensive control over decay time, damping, and tonal character.
+
+**Access Reverb:** Press **[REVERB]** button → Two pages of parameters
+
+---
+
+**Four Reverb Types:**
+
+**1. Hall**
+- **Character:** Large concert hall, spacious with long smooth decay
+- **Use cases:** Orchestral pads, ambient textures, huge spaces
+- **Typical settings:** Long Time (4-8s), moderate damping for natural character
+
+**2. Room**
+- **Character:** Small to medium room, shorter decay with early reflections
+- **Use cases:** Realistic space, subtle ambience, natural room sound
+- **Typical settings:** Short-medium Time (1-3s), minimal damping for clarity
+
+**3. Plate**
+- **Character:** Metallic plate reverb, bright with shimmer
+- **Use cases:** Vintage reverb character, bright pads, percussive ambience
+- **Typical settings:** Medium Time (2-4s), low Hi Damp for brightness
+
+**4. Cloud**
+- **Character:** Dense, diffuse, shimmer-heavy reverb
+- **Use cases:** Ambient washes, experimental textures, thick reverb beds
+- **Typical settings:** Long Time (6-15s), Freeze mode for infinite sustain
+
+---
+
+**Reverb Parameters (All Types):**
+
+**Page 1:**
+- **Type:** Hall, Room, Plate, Cloud
+  
+- **PreDelay:** 0.5ms to 250ms
+  - Time between dry signal and reverb onset
+  - Short PreDelay (0-20ms): Immediate reverb, thick sound
+  - Medium PreDelay (20-80ms): Separation between dry and wet, clarity
+  - Long PreDelay (80-250ms): Distinct gap, rhythmic effect
+  - **Use case:** PreDelay creates space for dry signal to remain clear
+  
+- **Time:** 120ms to 90 seconds, plus Freeze mode
+  - Reverb decay time
+  - Short Time (120ms-1s): Small rooms, subtle space
+  - Medium Time (1-4s): Natural room to hall
+  - Long Time (4-15s): Large halls, ambient washes
+  - Very Long Time (15-90s): Extreme ambience
+  - **Freeze:** Infinite sustain (no decay, reverb continues indefinitely without damping)
+  - **Use case:** Freeze mode for drone-like sustained reverb beds
+  
+- **Tone:** -64.0 to +64.0 (filter control for reverb signal)
+  - Negative values (-64 to -0.1): Low-pass filter (dark reverb, reduces high frequencies)
+  - 0: No filtering (full bandwidth)
+  - Positive values (+0.1 to +64): High-pass filter (bright reverb, reduces low frequencies)
+  - **Use case:** Negative Tone for warm, dark ambience; positive for airy, bright space
+
+**Page 2:**
+- **Hi Damp:** 0.0 to 128.0 (high-frequency decay time in reverb)
+  - 0 = Fast HF decay (dark, muted reverb)
+  - 64 = Moderate HF decay (natural room character)
+  - 128 = Slow HF decay (bright, shimmery reverb)
+  - **Use case:** Low Hi Damp for warm reverb, high Hi Damp for bright plate/cloud character
+  
+- **Lo Damp:** 0.0 to 128.0 (low-frequency decay time in reverb)
+  - 0 = Fast LF decay (thin, reduced bass in reverb)
+  - 64 = Moderate LF decay (balanced)
+  - 128 = Slow LF decay (bass-heavy reverb)
+  - **Use case:** Reduce Lo Damp to prevent muddy reverb on bass-heavy sounds
+  
+- **Dry/Wet:** 0.0% to 100.0%
+  - 0% = No reverb (dry signal only)
+  - 30-50% = Balanced mix (subtle to obvious reverb)
+  - 100% = Only reverb (no dry signal)
+  - **Typical settings:** 20-35% for natural space, 50%+ for obvious effect
+
+---
+
+**Reverb Programming Examples:**
+
+**Example 1 - Natural Room (Room):**
+- Type: Room
+- PreDelay: 15ms
+- Time: 1.8s
+- Tone: 0 (neutral)
+- Hi Damp: 70 (natural decay)
+- Lo Damp: 60 (balanced bass)
+- Dry/Wet: 25%
+- **Result:** Subtle, natural room ambience
+- **Use case:** Realistic space without obvious reverb character
+
+**Example 2 - Large Hall (Hall):**
+- Type: Hall
+- PreDelay: 40ms (clarity)
+- Time: 6.5s
+- Tone: -15 (slightly warm)
+- Hi Damp: 80 (bright, long decay)
+- Lo Damp: 50 (prevent mud)
+- Dry/Wet: 35%
+- **Result:** Spacious concert hall, clear with long tail
+- **Use case:** Orchestral pads, ambient leads
+
+**Example 3 - Bright Plate (Plate):**
+- Type: Plate
+- PreDelay: 8ms (immediate)
+- Time: 3.2s
+- Tone: +20 (bright)
+- Hi Damp: 110 (shimmery high end)
+- Lo Damp: 40 (reduced bass)
+- Dry/Wet: 40%
+- **Result:** Classic bright plate with metallic shimmer
+- **Use case:** Vintage synth leads, percussive sounds
+
+**Example 4 - Ambient Cloud (Cloud, Freeze):**
+- Type: Cloud
+- PreDelay: 100ms (separation)
+- Time: Freeze (infinite)
+- Tone: 0
+- Hi Damp: 128 (maximum shimmer)
+- Lo Damp: 80 (thick bass)
+- Dry/Wet: 60%
+- **Result:** Infinite sustaining reverb with shimmer
+- **Use case:** Ambient drone beds, experimental textures, hold notes indefinitely
+
+**Example 5 - Dark Ambience (Hall, Dark):**
+- Type: Hall
+- PreDelay: 25ms
+- Time: 8s
+- Tone: -45 (very dark)
+- Hi Damp: 30 (fast HF decay)
+- Lo Damp: 90 (maintain bass)
+- Dry/Wet: 45%
+- **Result:** Warm, dark, enveloping space
+- **Use case:** Dark pads, cinematic ambience, warm character
+
+---
+
+### Effects Routing Strategies
+
+The four effects modules work in series, enabling complex processing chains. Understanding signal flow and module interaction creates everything from subtle enhancement to dramatic transformation.
+
+**Signal Flow Recap:**
+```
+Synthesizer → Pre-FX → Delay → Reverb → Post-FX → Output
+```
+
+---
+
+**Strategy 1: Minimal Processing (Reverb Only)**
+
+**Configuration:**
+- Pre-FX: Off
+- Delay: Off
+- Reverb: Room, Time = 2s, Dry/Wet = 25%
+- Post-FX: Off
+
+**Use case:** Natural space without coloration, focus on synthesis
+**Character:** Clean, unprocessed tone with subtle room ambience
+
+---
+
+**Strategy 2: Classic Synth (Chorus + Reverb)**
+
+**Configuration:**
+- Pre-FX: Chorus, Rate = 0.5 Hz, Depth = 40, Mix = 35%
+- Delay: Off
+- Reverb: Hall, Time = 4s, Dry/Wet = 30%
+- Post-FX: Off
+
+**Use case:** Lush pads, thick leads
+**Character:** Chorus thickness feeds into spacious reverb, classic lush sound
+**Why Pre-FX:** Chorused signal creates multiple "voices" that reverb processes independently
+
+---
+
+**Strategy 3: Rhythmic Space (Delay + Reverb)**
+
+**Configuration:**
+- Pre-FX: Off
+- Delay: Pan Delay, BPM On, Time = 1/8, Feedback = 45, Dry/Wet = 30%
+- Reverb: Plate, Time = 2.5s, Dry/Wet = 25%
+- Post-FX: Off
+
+**Use case:** Rhythmic leads, tempo-locked movement
+**Character:** Ping-pong delays with reverb tails, creates rhythmic space
+**Interaction:** Reverb processes delay tails, extends rhythmic pattern
+
+---
+
+**Strategy 4: Aggressive Processing (Pre-FX Distort + Post-FX EQ)**
+
+**Configuration:**
+- Pre-FX: Distort, Drive = 70%, Mix = 60%
+- Delay: Basic Stereo, Time = 1/4, Feedback = 25, Dry/Wet = 20%
+- Reverb: Room, Time = 1.5s, Dry/Wet = 15%
+- Post-FX: EQ, Low = -4dB at 100Hz, High = +6dB at 8kHz
+
+**Use case:** Aggressive leads, controlled distortion
+**Character:** Distorted signal with space, EQ shapes final character
+**Why Post-FX:** EQ after reverb shapes entire mix including ambience
+
+---
+
+**Strategy 5: Maximum Transformation (All Effects Active)**
+
+**Configuration:**
+- Pre-FX: Lo-Fi, Bit Depth = 8-bit, Sample Rate = 10kHz, Mix = 70%
+- Delay: Reverse, BPM On, Time = 1/2, Feedback = 55, Dry/Wet = 45%
+- Reverb: Cloud, Time = Freeze, Hi Damp = 128, Dry/Wet = 50%
+- Post-FX: Compressor, Ratio = 6:1, Attack = Medium, Mix = 100%
+
+**Use case:** Experimental textures, ambient soundscapes
+**Character:** Degraded signal with backward delays and infinite reverb, compressed for consistency
+**Interaction:** Each stage dramatically alters previous stage's output
+
+---
+
+**Strategy 6: Vintage Character (Rotary + Analog Delay + Plate)**
+
+**Configuration:**
+- Pre-FX: Rotary, Rate = Slow, Drive = 50%, Mix = 80%
+- Delay: Basic Stereo, Time = 380ms, Feedback = 60, Wet Tone = -35, Feed Tone = 40, Dry/Wet = 35%
+- Reverb: Plate, Time = 3s, Hi Damp = 90, Dry/Wet = 30%
+- Post-FX: Off
+
+**Use case:** Vintage organ/synth tones
+**Character:** Leslie speaker simulation with dark analog delays and bright plate reverb
+**Why this order:** Rotary movement feeds into delay, delay tails feed into reverb for complex vintage space
+
+---
+
+**Strategy 7: Performance-Based (Expression Pedal Controls Effects)**
+
+**Configuration:**
+- Pre-FX: Phaser, Rate = 0.6 Hz, Depth = 60, Feedback = 50, Mix = 40%
+- Delay: Pan Delay, BPM On, Time = 1/16, Feedback = 50, Dry/Wet = 30%
+- Reverb: Hall, Time = 5s, Dry/Wet = 35%
+- Post-FX: Off
+- **Mod Matrix:** ExpPedal → Reverb Dry/Wet (Depth: +65, allows pedal to sweep reverb from 0-65%)
+
+**Use case:** Dynamic ambience control during performance
+**Character:** Foot pedal controls reverb amount, phaser and delay remain constant
+**Interaction:** Expression pedal adds/removes space without touching other effects
+
+---
+
+## System Setup and Calibration
+
+The Hydrasynth's System Setup menu provides configuration for hardware calibration, MIDI/USB settings, and global preferences. Accessing these pages enables optimization for specific workflows, external equipment, and performance needs.
+
+**Access System Setup:** Press **[SYSTEM]** button → Navigate pages with Page Up/Down arrows
+
+---
+
+### Ribbon Controller Calibration and Configuration
+
+The ribbon controller requires calibration for optimal response and offers three operational modes with distinct behaviors.
+
+**Ribbon Setup Pages:** System Setup pages 75 and 105 (refer to manual for specific parameters)
+
+**Three Ribbon Modes (Press [RIBBON] button, Control knob 1 selects mode):**
+
+**Mode 1: Pitch Bend**
+- **Function:** Horizontal pitch bend, touch point becomes center reference
+- **Behavior:** Touch anywhere = zero pitch, slide left = bend down, slide right = bend up
+- **Range:** Set by PitchBnd parameter in Voice module (0-24 semitones)
+- **Lock Global:** Makes pitch bend settings apply to all patches (otherwise per-patch)
+- **Use case:** Traditional pitch bend with larger control surface than pitch wheel
+
+**Mode 2: Theremin**
+- **Function:** Ribbon becomes monophonic synthesizer (solo instrument)
+- **Behavior:** Ribbon position = absolute pitch (like Theremin or keyboard)
+- **Range options:** Keyboard range (default), 2-octave range, or 6-octave range
+- **Additional parameters:** Key and scale selection (separate page)
+- **Use case:** Play melodies on ribbon, alternative to keyboard, expressive solo lines
+- **CV integration:** Set Control Voltage Source = Theremin (System Setup page 7) to send ribbon pitch to CV Pitch Out
+
+**Mode 3: Mod Only**
+- **Function:** Ribbon as pure modulation source (no pitch control)
+- **Behavior:** Ribbon position routes to Mod Matrix as modulation source
+- **Available sources:** RbnAbs (bipolar), RbnAbs+ (unipolar), RbnRel (relative)
+- **Hold parameter:** If On, modulation level maintains when finger lifted (latch)
+- **Lock Global:** Makes Mod Only settings apply to all patches
+- **Shortcut:** Hold [RIBBON] + press destination Control button = creates instant mod route
+- **Use case:** Filter sweeps, parameter control, gestural modulation without pitch changes
+
+**Ribbon Calibration:**
+- **Sensitivity:** Adjust touch sensitivity for light/heavy playing styles
+- **Dead zones:** Configure edges or center areas with reduced sensitivity
+- **Reference:** Manual pages 75 and 105 for specific calibration procedures
+
+---
+
+### Polyphonic Aftertouch Calibration
+
+**Aftertouch Setup Pages:** System Setup pages 99 and 101
+
+**Aftertouch Sensitivity Parameters:**
+
+- **Threshold:** 0-127 (pressure required before aftertouch engages)
+  - Low values (0-30): Very sensitive, light touch triggers aftertouch
+  - Medium values (40-60): Balanced sensitivity
+  - High values (70-127): Heavy pressure required (reduces accidental triggering)
+  - **Adjust to match playing style:** Light players use low threshold, heavy players use high threshold
+  
+- **Curve:** -64 to +64 (response curve shape)
+  - Negative values: More response at light pressure, less at heavy pressure (exponential)
+  - 0: Linear response throughout pressure range
+  - Positive values: Less response at light pressure, more at heavy pressure (logarithmic)
+  - **Musical effect:** Negative curve = sensitive expression, positive curve = controlled expression
+
+**Calibration Workflow:**
+1. Route PolyAftT → Filter 1 Cutoff (Depth: +96) for clear visual/audio feedback
+2. Play notes with typical playing pressure
+3. Adjust Threshold until aftertouch engages comfortably
+4. Adjust Curve for desired response feel
+5. Test across full pressure range
+6. Settings apply globally to all patches
+
+**Typical Calibration Presets:**
+- **Sensitive/Expressive:** Threshold = 25, Curve = -20
+- **Balanced:** Threshold = 45, Curve = 0
+- **Heavy/Controlled:** Threshold = 65, Curve = +15
+
+---
+
+### MIDI Configuration
+
+**MIDI Setup Pages:** System Setup pages 100 and 116
+
+**MIDI Channel Configuration:**
+- **MIDI Channel:** 1-16 or Omni (receives on all channels)
+- **MIDI Thru:** On/Off (retransmits received MIDI messages to MIDI Out)
+- **Local Control:** On/Off (disconnects keyboard from internal synth engine for use as MIDI controller only)
+
+**Program Change:**
+- **Program Change Enable:** On/Off (respond to MIDI program change messages)
+- **Program Change Send:** On/Off (send program change when switching patches)
+- **Bank Select:** Enable/Disable bank select messages (MSB/LSB)
+
+**MIDI CC Mapping:**
+- **All Mod Matrix sources available as MIDI CC sources** (route external MIDI CC to any parameter)
+- **MIDI CC output:** Route internal parameters to MIDI CC Out for controlling external gear
+- **Custom CC assignments:** Map any parameter to any CC number
+
+**MIDI Implementation:**
+- **Note On/Off:** Standard velocity-sensitive note messages
+- **Polyphonic Aftertouch:** Sends per-note aftertouch (CC)
+- **Channel Aftertouch:** Sends channel pressure
+- **Pitch Bend:** Standard pitch bend messages
+- **Mod Wheel:** CC#1 (standard modulation wheel)
+- **Expression:** CC#11 (expression pedal)
+- **Sustain:** CC#64 (sustain pedal)
+
+**MIDI Clock (covered in Session 4):**
+- **Clock Source:** Internal, MIDI, USB
+- **Clock Send:** On/Off (send MIDI clock to external devices)
+
+---
+
+### USB Configuration
+
+The Hydrasynth supports both USB MIDI and USB Audio simultaneously over a single USB connection.
+
+**USB MIDI:**
+- **Automatic:** Hydrasynth appears as MIDI device when connected to computer
+- **Bidirectional:** Send/receive MIDI notes, CC, program change, clock
+- **DAW integration:** Recognized by all major DAWs (Ableton, Logic, Cubase, etc.)
+- **Multi-channel:** Supports 16 MIDI channels over USB
+
+**USB Audio:**
+- **Stereo output:** Hydrasynth audio streams to computer (recording interface)
+- **Stereo input:** Computer audio streams to Hydrasynth (external audio processing)
+- **Simultaneous:** MIDI and audio work together over single USB cable
+- **Latency:** Low-latency performance for real-time playing and recording
+- **Sample rates:** Standard rates supported (44.1kHz, 48kHz, etc.)
+
+**USB Configuration in DAW:**
+1. Connect USB cable from Hydrasynth to computer
+2. **For MIDI:** Select "Hydrasynth" as MIDI input/output device in DAW
+3. **For Audio:** Select "Hydrasynth" as audio input device in DAW preferences
+4. **Set buffer size:** Lower buffer (64-128 samples) for low latency, higher buffer (256-512) for stability
+5. **Enable MIDI clock:** In DAW preferences, enable "Send MIDI Clock" to Hydrasynth for tempo sync
+
+**Workflow Example - DAW Integration:**
+1. USB cable connects Hydrasynth to computer
+2. **MIDI:** DAW sends notes to Hydrasynth, Hydrasynth plays internal sounds
+3. **Audio:** Hydrasynth audio streams into DAW via USB, records to audio track
+4. **Clock:** DAW sends USB clock, Hydrasynth arpeggiator and effects sync to project tempo
+5. **Result:** Integrated recording with perfect sync, no separate audio interface needed
+
+---
+
+## Troubleshooting and Maintenance
+
+Common issues and solutions for optimal Hydrasynth performance.
+
+**No Sound Output:**
+- Check Master Volume knob (front panel)
+- Verify audio cables connected to L/R outputs
+- Check Mixer module - ensure at least one OSC volume > 0
+- Verify Amp Level not at 0 (Amp module)
+- Check effects Dry/Wet settings (100% wet with no effects = silence)
+
+**Pitch Tracking Issues:**
+- Tune external oscillators to match Hydrasynth reference note
+- Adjust CV Offset parameter (System Setup page 7, -99 to +99 cents)
+- Verify correct voltage standard selected (V/Oct vs Hz/V vs Buchla)
+- Check Reference Note setting matches external gear expectations
+
+**Gate Not Triggering External Modules:**
+- Verify Gate Type (V-trig for modern, S-trig for vintage)
+- Check Gate Volt setting (5V standard for Eurorack, 10V for Buchla)
+- Test with known-working cable
+- Verify external module gate input requirements match Hydrasynth output
+
+**Ribbon Controller Not Responding:**
+- Calibrate ribbon sensitivity (System Setup pages 75, 105)
+- Clean ribbon surface with microfiber cloth (remove oils/residue)
+- Check Ribbon mode (Pitch Bend/Theremin/Mod Only) matches intent
+- Verify Range and Smoothing parameters not set to extremes
+
+**Aftertouch Not Working:**
+- Check Threshold setting (may be set too high)
+- Verify Mod Matrix routes exist (PolyAftT or MonoAftT to destination)
+- Calibrate aftertouch sensitivity (System Setup pages 99, 101)
+- Apply pressure gradually - polyphonic aftertouch requires sustained pressure
+
+**MIDI Not Receiving/Sending:**
+- Check MIDI channel matches sending/receiving device
+- Verify MIDI cables connected correctly (Out → In, In → Out)
+- Enable MIDI Thru if daisy-chaining multiple devices
+- Check Local Control (Off = keyboard disconnected from synth for MIDI-only use)
+
+**USB Not Recognized:**
+- Try different USB cable (use high-quality cable, avoid long runs)
+- Connect directly to computer USB port (avoid hubs if possible)
+- Restart Hydrasynth and computer
+- Update computer USB drivers
+- Check DAW recognizes Hydrasynth in MIDI/Audio device preferences
+
+**Clock Sync Issues:**
+- Verify Clock Source setting (Internal/MIDI/USB) matches actual clock source
+- Check Clock Rate (PPQN) matches receiving device expectations
+- For MIDI clock: Ensure sending device has "Send MIDI Clock" enabled
+- For USB clock: Enable "Send MIDI Clock" in DAW transport settings
+- Test with Clock Out → external device to verify pulses
+
+**Effects Not Audible:**
+- Check Dry/Wet mix parameters (may be set to 0% = all dry)
+- Verify effect type selected (not set to "Off" or default)
+- Check Pre-FX/Post-FX placement matches intended signal flow
+- For Delay/Reverb: Increase Dry/Wet mix gradually to hear effect
+
+**Unwanted Noise/Hum:**
+- Check audio cables for damage or poor shielding
+- Verify power supply firmly connected
+- Isolate from other electrical devices (lighting dimmers, power supplies)
+- Use balanced cables where possible
+- Check for ground loops (multiple grounded devices in signal chain)
+
+**Firmware Updates:**
+- Check ASM website for latest firmware: https://www.ashunsoundmachines.com
+- Follow manufacturer instructions for firmware update procedure
+- Never power off during firmware update
+- Backup patches before updating (if possible)
+
+**Factory Reset (Use with Caution):**
+- Factory reset erases all user patches and settings
+- Refer to manual for specific reset procedure
+- Only perform if troubleshooting other methods exhausted
+- Consider contacting ASM support before factory reset
+
+**General Maintenance:**
+- Keep keyboard and ribbon clean (microfiber cloth, no liquids on keys)
+- Store in stable temperature/humidity environment
+- Avoid exposing to direct sunlight or extreme temperatures
+- Regularly backup patches (if backup method available)
+- Clean exterior with dry cloth
+
+---
+
+## Session 5 Complete - Effects, System Setup, and Configuration Established
+
+**What Session 5 Added:**
+- Complete effects section (Pre-FX, Delay, Reverb, Post-FX)
+- 9 Pre/Post-FX types with parameters and use cases (Chorus, Flanger, Rotary, Phaser, Lo-Fi, Tremolo, EQ, Compressor, Distort)
+- 5 Delay types with all parameters (Basic Mono/Stereo, Pan, LRC, Reverse)
+- 4 Reverb types with all parameters (Hall, Room, Plate, Cloud + Freeze mode)
+- Effects routing strategies (7 practical configurations from minimal to maximum processing)
+- System setup and calibration (ribbon 3 modes, aftertouch sensitivity/curve)
+- MIDI configuration (channels, program change, CC mapping, clock)
+- USB configuration (MIDI + Audio simultaneous)
+- Troubleshooting and maintenance (common issues with solutions)
+
+**Foundation Complete (Sessions 1-5):**
+- ✅ Synthesis engine (oscillators, mutants, mixer, filters)
+- ✅ Modulation system (envelopes, LFOs, Mod Matrix, Macros)
+- ✅ Performance features (ribbon, aftertouch, arpeggiator, voice management, tuning, controllers)
+- ✅ CV/Gate/Clock integration (modular connectivity, voltage standards, system hub techniques)
+- ✅ Effects and system (Pre-FX, Delay, Reverb, Post-FX, routing, calibration, MIDI/USB, troubleshooting)
+
+**Coming in Session 6 (Final Session):**
+- Patch Examples 1-5 (Basic → Intermediate → Advanced → Expert → Master)
+- Complete programming tutorials with step-by-step instructions
+- Alternative synthesizer options (budget/different character/premium tiers)
+- Pairs Well With (complementary gear for studio integration)
+- Historical context and synthesis innovations
+- Why This Instrument Excels section
+
+---
+
+*ASM Hydrasynth Keyboard - Session 5 of 6 - Effects and System Configuration Complete*
+
+---
+
 ## Session 1 Complete - Foundation Established
 
 **What We've Covered:**
