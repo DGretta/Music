@@ -558,6 +558,1916 @@ The Morph parameter is a powerful modulation destination:
 
 ---
 
+## Modulation System
+
+### Modulation Architecture Overview
+
+The Hydrasynth's modulation system provides unprecedented depth for a hardware synthesizer - 32 independent modulation routes, 5 fully-featured DAHDSR envelopes, 5 multi-waveform LFOs with step sequencing, plus 8 programmable Macros that can each control up to 8 destinations simultaneously. This architecture enables everything from simple filter sweeps to complex evolving soundscapes that would require extensive modular patching on other systems.
+
+**Pre-Wired Connections vs. Mod Matrix Routing:**
+
+The Hydrasynth provides convenience through pre-wired modulation connections while maintaining flexibility through the Mod Matrix:
+
+**Pre-Wired Connections (No Mod Matrix slots used):**
+- **ENV 1 → Filters:** Dedicated ENV1amt parameter on both Filter 1 and Filter 2
+- **ENV 2 → Amplifier:** Hardwired to VCA, depth controlled by AmpLevel parameter
+- **LFO 1 → Filters:** Dedicated LFO1amt parameter on both Filter 1 and Filter 2  
+- **LFO 2 → Amplifier:** Dedicated LFO2Amt parameter in Amp module
+
+**Mod Matrix Routing (Uses mod slots):**
+- **All other modulation:** ENV 3-5, LFO 3-5, performance controls, CV inputs, MIDI sources
+- **Additional ENV 1/2 destinations:** Beyond their pre-wired connections
+- **Additional LFO 1/2 destinations:** Beyond their pre-wired connections
+
+**Modulation System Diagram:**
+```
+🔵 Modulation Architecture
+
+┌─MODULATION SOURCES (35 Total)──────────────────────────────┐
+│                                                             │
+│  ┌─ENVELOPES──────┐    ┌─LFOs───────────┐                 │
+│  │ ENV 1 [Filter] │    │ LFO 1 [Filter] │                 │
+│  │ ENV 2 [Amp]    │    │ LFO 2 [Amp]    │  Pre-wired ──┐ │
+│  │ ENV 3          │    │ LFO 3          │  connections  │ │
+│  │ ENV 4          │    │ LFO 4          │               │ │
+│  │ ENV 5          │    │ LFO 5          │               │ │
+│  └────────────────┘    └────────────────┘               │ │
+│                                                          │ │
+│  ┌─PERFORMANCE────┐    ┌─CV/MIDI────────┐              │ │
+│  │ Mod Wheel      │    │ Mod In 1       │              │ │
+│  │ Pitch Wheel    │    │ Mod In 2       │              │ │
+│  │ Ribbon (3 modes)    │ Expression     │              │ │
+│  │ Aftertouch (2) │    │ Sustain Pedal  │              │ │
+│  │ Velocity (2)   │    │ MIDI CC 0-127  │              │ │
+│  │ Keytrack       │    │ MPE (3 modes)  │              │ │
+│  └────────────────┘    └────────────────┘               │ │
+│                                                          │ │
+└──────────────────────────────────────────────────────────┼─┘
+                                                           │
+                    ┌──────────────────────────────────────┘
+                    │
+                    ▼
+         ┌─MOD MATRIX (32 Slots)───┐
+         │ Source → Destination    │
+         │ Depth: -128 to +128     │
+         └─────────────────────────┘
+                    │
+         ┌──────────┼──────────┐
+         │          │          │
+         ▼          ▼          ▼
+    ┌─MACROS─┐  Filter   Oscillator
+    │ Macro1 │  Cutoff   Pitch/Wave
+    │ Macro2 │  Morph    Mutant Depth
+    │ ...    │  Drive    Pan/Level
+    │ Macro8 │  ENV amt  FX params
+    │ (8 dst │  LFO amt  + 191 more
+    │  each) │           destinations
+    └────────┘
+         │
+         └─→ Up to 8 parameters per Macro
+
+🔵 = Modulation signals
+```
+
+**Key Modulation Concepts:**
+
+**Modulation Depth and Polarity:**
+- **Positive depth (+1 to +128):** Modulation increases parameter value
+- **Negative depth (-1 to -128):** Modulation decreases parameter value or inverts waveform phase
+- **Zero depth (0):** No modulation applied
+- **Example:** LFO → Filter Cutoff at depth +64 opens filter when LFO is high; at depth -64 closes filter when LFO is high
+
+**Modulation Stacking:**
+- Multiple sources can modulate the same destination simultaneously
+- Results are additive within parameter range limits
+- **Example:** ENV1amt = +50 on Filter 1 + LFO 1 routed via Mod Matrix (depth +30) = combined envelope + LFO modulation
+
+---
+
+### Envelope Section
+
+All five envelopes in the Hydrasynth are identical in capabilities - each is a full DAHDSR (Delay, Attack, Hold, Decay, Sustain, Release) envelope with looping, multiple trigger sources, adjustable curves, and BPM sync. This uniformity means once you understand one envelope, you understand them all.
+
+**Access:** Press **[ENV 1]** through **[ENV 5]** buttons → Three pages of parameters per envelope
+
+**Envelope Architecture:**
+
+```
+Envelope Stages:
+
+    Delay      Attack     Hold       Decay              Release
+     (D)        (A)        (H)        (D)                (R)
+      │          │          │          │                  │
+      │          │          │          │                  │
+0 ────┴──────────┘          └──────────┐                 │
+                                        │    Sustain (S)  │
+                                        ├────────────────┐│
+                                        │                ││
+                                        └────────────────┘└──→ 0
+
+← Time spent at zero → ← Rising → ← Peak → ← Falling → ← Held → ← Falling →
+
+Note: Sustain is a LEVEL (0-128), not a time duration
+      All other stages are TIME values (0ms to 60 seconds or synced divisions)
+```
+
+**Pre-Wired Envelope Connections:**
+- **ENV 1:** Hardwired to both Filter 1 and Filter 2 (depth controlled by ENV1amt parameter on each filter)
+- **ENV 2:** Hardwired to Amplifier (depth controlled by AmpLevel parameter)
+- **ENV 3-5:** Available only through Mod Matrix routing
+
+**Common Envelope Applications:**
+- **ENV 1 → Filters:** Classic filter sweep (increase Attack for slow bloom, decrease for plucky attack)
+- **ENV 2 → Amplifier:** Controls note volume shape (short Attack/Release = percussive, long = pad-like)
+- **ENV 3 → OSC pitch:** Pitch drop effect (set negative depth, adjust Decay time for speed)
+- **ENV 4 → Mutant Depth:** Timed waveshaping intensity (increases complexity during Attack, fades during Release)
+- **ENV 5 → LFO Rate:** Accelerating/decelerating modulation (LFO speeds up or slows down over time)
+
+---
+
+**Envelope Parameters: Page 1**
+
+**Access:** Press any **[ENV 1-5]** button, page 1 appears automatically
+
+- **Attack:** 0ms to 36.0 seconds (BPM Off) or 1/64T to 64' bars (BPM On)
+  - Time from zero to peak after Delay+Hold stages complete
+  - Hold SHIFT + turn knob for coarse adjustment
+  - Hold SHIFT + press Control button to set duration by holding time
+  
+- **Decay:** 0ms to 60.0 seconds (BPM Off) or 1/64T to 64' bars (BPM On)
+  - Time from peak to Sustain level
+  - Longer Decay = gradual transition to sustain, shorter = abrupt
+  
+- **Sustain:** 0.0 to 128.0 (LEVEL, not time)
+  - Resting level held after Decay stage until note release
+  - 0 = envelope falls to zero after Decay, 128 = envelope stays at peak
+  - **Critical understanding:** Sustain is the HEIGHT the envelope maintains, not how long it stays there
+  
+- **Release:** 0ms to 60.0 seconds (BPM Off) or 1/64T to 64' bars (BPM On)
+  - Time from current level to zero after note release
+  - Longer Release = gradual fade, shorter = abrupt cutoff
+  
+- **Delay:** 0ms to 32.0 seconds (BPM Off) or 1/64T to 64' bars (BPM On)
+  - Time spent at zero before Attack stage begins
+  - Useful for staggered modulation (ENV 3 starts immediately, ENV 4 delayed by 2 seconds)
+  
+- **Hold:** 0ms to 36.0 seconds (BPM Off) or 1/64T to 64' bars (BPM On)  
+  - Time spent at peak after Attack before Decay begins
+  - Creates plateau at top of envelope
+  
+- **BPM Sync:** Off or On
+  - Off = envelope stages measured in seconds/milliseconds
+  - On = envelope stages quantized to tempo divisions (1/64T to 64 bars)
+  - When On, all time-based stages (D-A-H-D-R) use musical subdivisions
+
+**Envelope Timing Examples:**
+
+**Percussive Pluck:**
+- Attack: 5ms, Decay: 300ms, Sustain: 0, Release: 50ms
+- Result: Fast attack, quick decay to silence, brief tail on release
+
+**Pad Swell:**  
+- Attack: 2.5s, Decay: 1.5s, Sustain: 80, Release: 3.0s
+- Result: Slow bloom, gradual settle to sustain level, long fade on release
+
+**Rhythmic Sync:**
+- BPM: On, Attack: 1/16, Decay: 1/8, Sustain: 64, Release: 1/4
+- Result: Envelope phases lock to tempo, creates rhythmic modulation in sync with track
+
+---
+
+**Envelope Parameters: Page 2**
+
+**Access:** Press **[ENV X]** button, then Page Down arrow
+
+- **AtkCurve:** -64 (Logarithmic) through 0 (Linear) to +64 (Exponential)
+  - Logarithmic (negative values): Slow start, accelerates upward
+  - Linear (0): Constant rate of change
+  - Exponential (positive values): Fast start, decelerates as it approaches peak
+  - **Example:** Exponential Attack (-40) creates "punchy" filter openings
+  
+- **DecCurve:** -64 (Logarithmic) through 0 (Linear) to +64 (Exponential)
+  - Same curve behavior as Attack but applied to Decay stage
+  - Affects transition from peak to Sustain level
+  
+- **RelCurve:** -64 (Logarithmic) through 0 (Linear) to +64 (Exponential)
+  - Same curve behavior applied to Release stage  
+  - Affects fade to zero after note release
+  
+- **Legato:** Off or On
+  - Off = envelope retriggers with every new note
+  - On = envelope only retriggers if all previous notes have been released
+  - **Use case:** Legato On enables smooth monophonic playing (bass lines, lead solos)
+  
+- **Reset:** Off or On (only available when Legato = Off)
+  - Off = when polyphony exceeded, 9th note continues from envelope's current position
+  - On = when polyphony exceeded, 9th note resets envelope from beginning
+  - **Example:** Reset On ensures every note gets full Attack stage even when playing fast
+  
+- **Freerun:** Off or On
+  - Off = envelope responds normally to note on/off
+  - On = envelope always runs through all stages regardless of note length
+  - **Use case:** Freerun On with short notes creates consistent modulation regardless of playing style
+  
+- **Env Loop:** Off, 2-50, or Infinite
+  - Off = envelope runs once per note
+  - 2-50 = envelope loops specified number of times (loops Attack-Hold-Decay stages)
+  - Infinite = envelope loops continuously, functions like complex LFO
+  - **Example:** Infinite loop with fast Attack/Decay creates rhythmic tremolo effect
+
+**Envelope Shape Examples:**
+
+**Natural Decay (Logarithmic Decay -40):**
+- Mimics acoustic instrument behavior
+- Fast initial decay, gradually slows as it approaches Sustain
+- Use for realistic plucked/struck sounds
+
+**Synthesized Sweep (Linear curves all at 0):**
+- Mechanical, predictable movement
+- Constant rate of change throughout all stages
+- Use for precise, controlled modulation
+
+**Punchy Attack (Exponential Attack +50):**
+- Immediate impact, slows as it reaches peak
+- Creates "forward" sound character
+- Use for aggressive leads, punchy bass
+
+---
+
+**Envelope Parameters: Page 3**
+
+**Access:** Press **[ENV X]** button, then Page Down arrow twice
+
+Page 3 controls envelope triggering - each envelope can have up to 4 independent trigger sources active simultaneously.
+
+- **TrigSrc1:** Note On (default), LFO 1-5, Rbn On, Rbn Release, SusPed On, Mod In 1, Mod In 2, or OFF
+  - Primary trigger source for envelope
+  - **Note:** ENV 2's TrigSrc1 is locked to Note On (cannot be changed) to ensure amplitude envelope functions
+  
+- **TrigSrc2:** Same options as TrigSrc1
+  - Secondary trigger source
+  - Both sources can trigger envelope independently
+  
+- **TrigSrc3:** Same options as TrigSrc1
+  - Third trigger source
+  
+- **TrigSrc4:** Same options as TrigSrc1  
+  - Fourth trigger source
+  
+- **Tap Trigger:** (Control button 5)
+  - Manual trigger button - press to fire envelope once
+  - Envelope does not sustain while button is held
+  - Useful for testing envelope shapes during programming
+
+**Multiple Trigger Source Behavior:**
+- When multiple sources are active, envelope triggers when ANY source fires
+- Each trigger restarts envelope from beginning (unless Legato mode prevents it)
+- **Example:** TrigSrc1 = Note On, TrigSrc2 = LFO 3 → Envelope triggers on both keyboard notes AND LFO cycles
+
+**Advanced Triggering Applications:**
+
+**LFO-Triggered Modulation:**
+- ENV 3: TrigSrc1 = LFO 4, route ENV 3 → Mutant 2 Depth
+- Result: Waveshaping intensity pulses rhythmically in sync with LFO 4 rate
+- **Use case:** Create movement without continuous LFO modulation
+
+**Ribbon-Triggered Effects:**  
+- ENV 4: TrigSrc1 = Rbn On (fires when ribbon touched), route ENV 4 → Reverb Mix
+- Result: Reverb swells in when ribbon is touched, fades out based on Release time
+- **Use case:** Performance-based effect intensity control
+
+**Sustain Pedal Envelopes:**
+- ENV 5: TrigSrc1 = SusPed On, route ENV 5 → Filter 1 Cutoff (negative depth)
+- Result: Filter closes when sustain pedal pressed, returns when released
+- **Use case:** Pedal-controlled timbral changes
+
+**CV-Triggered Envelopes:**
+- ENV 3: TrigSrc1 = Mod In 1, route ENV 3 → OSC 1 Semi
+- Result: External gate signals trigger pitch transposition envelopes
+- **Use case:** Eurorack integration, melodic sequences from external sequencer
+
+---
+
+### LFO Section  
+
+The Hydrasynth provides five identical LFOs, each with 11 waveforms including a 64-step programmable Step LFO. Like the envelopes, LFOs 1 and 2 have pre-wired connections to filters and amplifier, while LFOs 3-5 are available exclusively through the Mod Matrix.
+
+**Access:** Press **[LFO 1]** through **[LFO 5]** buttons → Two pages of parameters per LFO
+
+**Pre-Wired LFO Connections:**
+- **LFO 1 → Filters:** Dedicated LFO1amt parameter on both Filter 1 and Filter 2
+- **LFO 2 → Amplifier:** Dedicated LFO2Amt parameter in Amp module  
+- **LFO 3-5:** Available only through Mod Matrix routing
+
+**Common LFO Applications:**
+- **LFO 1 → Filter Cutoff:** Classic filter wobble (adjust Rate for speed, LFO1amt for intensity)
+- **LFO 2 → Amplifier:** Tremolo effect (slower rates = pulsing, faster rates = ring mod territory)
+- **LFO 3 → WaveScan position:** Morphing wavetable timbres (slow Rate for evolving pads)
+- **LFO 4 → Pan:** Auto-panning effect (stereo movement, rate sets speed)
+- **LFO 5 → Mutant Ratio:** Sweeping harmonic content (creates moving filter-like effects)
+
+**Available Waveforms (11 Total):**
+- **Sine:** Smooth, musical modulation
+- **Triangle:** Linear rise and fall
+- **Saw Up:** Rising ramp
+- **Saw Down:** Falling ramp  
+- **Square:** On/off switching (50% duty cycle)
+- **Pulse 27%:** Narrow pulse (27% high, 73% low)
+- **Pulse 13%:** Very narrow pulse (13% high, 87% low)
+- **S&H (Sample & Hold):** Stepped random values, changes at Rate frequency
+- **Noise:** Continuous random modulation (smooth random, not stepped)
+- **Random:** Similar to S&H but with smoothing between steps
+- **Step:** User-programmable 64-step sequencer (see Step LFO section below)
+
+---
+
+**LFO Parameters: Page 1**
+
+**Access:** Press any **[LFO 1-5]** button, page 1 appears automatically
+
+- **Wave:** Sine, Triangle, Saw Up, Saw Down, Square, Pulse27%, Pulse13%, S&H, Noise, Random, Step
+  - Selects LFO waveform character
+  - Step waveform reveals additional programming parameters on page 2
+  
+- **Rate:** 0.02 to 150.0 Hz (BPM Off) or 64' bars to 1/64T (BPM On)
+  - LFO speed - higher values = faster modulation
+  - Hold SHIFT + press Control button 2 to set Rate by holding duration
+  - At audio rates (>20 Hz), LFO can function as additional oscillator or ring mod source
+  
+- **BPM Sync:** Off or On
+  - Off = LFO rate measured in Hertz (cycles per second)
+  - On = LFO rate quantized to tempo divisions (64 bars down to 1/64T)
+  - **Use case:** BPM On locks modulation to track tempo for rhythmic movement
+  
+- **TrigSync:** Poly, Single, or Off
+  - **Poly:** Each note has independent LFO starting from phase 0° (lush pads, independent voice movement)
+  - **Single:** All voices share one LFO, each new note retriggers LFO from phase 0° (monophonic leads, synchronized movement)
+  - **Off:** LFO runs freely, notes trigger at random points in LFO cycle (evolving, unpredictable modulation)
+  
+- **Delay:** 0ms to 32.0 seconds (BPM Off) or 1/64T to 64' bars (BPM On)
+  - Time before LFO modulation begins after note trigger
+  - **Example:** Delay vibrato on sustained notes (immediate attack, vibrato fades in after 1 second)
+  
+- **Fade In:** 0ms to 5943ms (BPM Off) or 1/64T to 64' bars (BPM On)
+  - Time for LFO to ramp from zero amplitude to full amplitude
+  - Works after Delay period completes
+  - **Example:** Gradual vibrato intensity increase
+  
+- **Phase:** 0° to 360°
+  - Starting position in LFO waveform cycle
+  - 0° = waveform starts at zero crossing going positive
+  - 90° = waveform starts at positive peak  
+  - 180° = waveform starts at zero crossing going negative
+  - 270° = waveform starts at negative peak
+  - **Use case:** Phase-offset multiple LFOs for complex stereo movement
+  
+- **Level:** 0.0 to 128.0
+  - Maximum amplitude of LFO
+  - Scales all mod routes using this LFO as source
+  - **Use case:** Master intensity control for LFO affecting multiple destinations
+
+**LFO Timing and Sync Examples:**
+
+**Slow Pad Movement (Unsync'd):**
+- Rate: 0.12 Hz, TrigSync: Poly, Delay: 0, Fade In: 2000ms
+- Result: Each voice has independent slow modulation, gradual onset
+
+**Rhythmic Filter Pump (Sync'd):**
+- BPM: On, Rate: 1/8, TrigSync: Single, Phase: 0°
+- Result: Filter modulation locked to eighth notes, retriggered with each note
+
+**Stereo Auto-Pan:**  
+- LFO 3: Rate: 0.5 Hz, Phase: 0°, route to Pan (depth +64)
+- LFO 4: Rate: 0.5 Hz, Phase: 180°, route to different oscillator Pan (depth +64)  
+- Result: Two oscillators pan in opposite directions, creating stereo width
+
+---
+
+**LFO Parameters: Page 2**
+
+**Access:** Press **[LFO X]** button, then Page Down arrow
+
+- **Steps:** 2-64 (only visible when Wave = Step)
+  - Number of steps in Step LFO sequence
+  - Each step can have independent pitch/modulation value
+  - Longer step counts = longer sequences before looping
+  
+- **Smooth:** 0-127 (only visible when Wave = Step)
+  - Slew/portamento between step values  
+  - 0 = abrupt jumps between steps
+  - 127 = smooth glides, steps blend together
+  - **Use case:** Smooth creates flowing melodic lines from step sequence
+  
+- **One-Shot:** Off or On
+  - Off = LFO loops continuously
+  - On = LFO completes one cycle then stops
+  - **Use case:** One-Shot On for single envelope-like modulation sweep
+  
+- **SemiLock:** Off or On (only visible when Wave = Step)
+  - Off = step values range 0-128 (continuous modulation values)
+  - On = step values quantized to semitones (chromatic pitch values)
+  - **Use case:** SemiLock On for melodic Step LFO sequences
+  
+- **Step Edit:** (Control button 8, only visible when Wave = Step)
+  - Accesses Step LFO programming page
+  - Program up to 64 individual step values
+  - See Step LFO Programming section below
+
+---
+
+**Step LFO Programming**
+
+The Step LFO transforms any LFO into a 64-step sequencer capable of melodic patterns, rhythmic modulation, or complex parameter automation.
+
+**Access:** Press **[LFO X]** → Set Wave = Step → Page Down → Press Control button 8 (Step Edit)
+
+**Step Edit Page:**
+- 8 steps visible at once (Steps 1-8 on first page)
+- Use Page Up/Down arrows to access steps 9-16, 17-24, etc.
+- Each step has independent value: -12semi to +12semi (SemiLock On) or 0.0 to 128.0 (SemiLock Off)
+
+**Programming Methods:**
+
+**Method 1 - Control Knobs:**
+- Turn Control knob (1-8) to set value for that step
+- Hold SHIFT + turn knob for fine adjustment
+
+**Method 2 - Keyboard Entry (SemiLock On only):**
+- Hold Control button for desired step
+- Play key within 2-octave range around middle C
+- Step value set to that semitone offset
+- **Desktop model:** Use pads (Pad Key determines reference pitch)
+
+**Method 3 - Initialize/Reset:**
+- Hold INIT + press Control button to reset that step to 0
+
+**Step LFO Shortcuts:**
+
+**Quick Sequential Fill:**
+- Hold SHIFT + turn Control knob 3
+- Steps 3-8 populate with sequential waveforms
+- Continues pattern if repeated on next page
+
+**Copy Step Pattern:**
+- Hold SAVE + press source step Control button
+- Press destination step Control button  
+- Pattern copies to new location
+
+**Step LFO Application Examples:**
+
+**Melodic Bass Sequence:**
+1. LFO 3: Wave = Step, Steps = 16, SemiLock = On
+2. BPM Sync = On, Rate = 1/16 (sixteenth note steps)
+3. Program 16-step bass line using keyboard entry
+4. Route LFO 3 → OSC 1 Pitch (depth +128 for full semitone range)
+5. Route LFO 3 → OSC 2 Pitch (depth +128) for unison thickness
+6. Result: 16-step bass sequence loops, both oscillators play melody
+
+**Rhythmic Filter Sequence:**
+1. LFO 4: Wave = Step, Steps = 8, SemiLock = Off
+2. BPM Sync = On, Rate = 1/8, Smooth = 40
+3. Program values: 20, 80, 40, 100, 30, 90, 50, 110
+4. Route LFO 4 → Filter 1 Cutoff (depth +64)
+5. Result: Rhythmic filter movement in sync with tempo, smooth transitions
+
+**Complex Modulation Sequence:**
+1. LFO 5: Wave = Step, Steps = 32, SemiLock = Off  
+2. BPM Sync = Off, Rate = 0.08 Hz (slow, ~12 seconds per cycle)
+3. Program 32 steps with varying values creating contour
+4. Route LFO 5 → Mutant 1 Ratio (depth +64)
+5. Route LFO 5 → Mutant 2 Dry/Wet (depth +32)
+6. Result: Long-form evolving timbral changes, no obvious repetition
+
+**Step LFO Range and Routing:**
+
+**Chromatic Pitch Control (SemiLock On):**
+- Step values: -12semi to +12semi (2-octave range)
+- For full semitone pitch control:
+  - Set LFO Level = 128
+  - Mod Matrix depth = +128 to destination OSC pitch
+- Result: Step values directly correspond to chromatic pitches
+
+**Parameter Modulation (SemiLock Off):**  
+- Step values: 0.0 to 128.0 (full parameter range)
+- Mod Matrix depth determines modulation intensity
+- **Example:** Step pattern 0-32-64-96-128-96-64-32 creates rising/falling contour
+
+---
+
+### Mod Matrix Section
+
+The 32-slot Mod Matrix is where the Hydrasynth's modulation system reaches its full potential. With 35 sources and 191 destinations available, the matrix enables everything from simple vibrato to complex, evolving timbral transformations that would require extensive cable patching on modular systems.
+
+**Access:** Press **[MOD MATRIX]** button → 32 slots across multiple pages
+
+**Mod Matrix Architecture:**
+- **32 independent slots:** Each slot = one modulation route (Source → Destination)
+- **35 modulation sources:** Envelopes, LFOs, performance controls, CV inputs, MIDI
+- **191 modulation destinations:** Nearly every parameter in the synthesizer
+- **Depth range:** -128 to +128 per slot (bipolar modulation with intensity control)
+
+**Modulation Sources (35 Total):**
+
+**Envelopes (5):**
+- ENV 1, ENV 2, ENV 3, ENV 4, ENV 5
+- All envelopes available even though ENV 1-2 have pre-wired connections
+
+**LFOs (10 - includes unipolar variants):**
+- LFO 1, LFO 2, LFO 3, LFO 4, LFO 5 (bipolar: -1 to +1)
+- LFO 1+, LFO 2+, LFO 3+, LFO 4+, LFO 5+ (unipolar: 0 to +1)
+- **Unipolar LFOs:** Useful for destinations that shouldn't go negative (volume, mix levels)
+
+**Aftertouch (2):**  
+- MonoAftT (Channel Aftertouch): Single pressure value for all held notes
+- PolyAftT (Polyphonic Aftertouch): Independent pressure per key
+
+**Performance Controls (5):**
+- Keytrack (keyboard position as modulation, C4 = center)
+- Velo On (Note On velocity)
+- Velo Off (Note Off velocity - not generated by Hydrasynth keys but recognized from MIDI)
+- PitchWhl (Pitch wheel position)
+- ModWhl (Modulation wheel position)
+
+**Ribbon Controller (3):**
+- RbnAbs (Ribbon Absolute bipolar: center = 0, left = negative, right = positive)  
+- RbnAbs+ (Ribbon Absolute unipolar: left = 0, right = maximum)
+- RbnRel (Ribbon Relative: touch point = 0, movement from touch = modulation)
+
+**Pedals (2):**
+- ExpPedal (Expression pedal position)
+- SusPedal (Sustain pedal on/off)
+
+**CV Inputs (2):**
+- Mod In 1 (CV input 1, voltage range configurable in System Setup)
+- Mod In 2 (CV input 2, voltage range configurable in System Setup)
+
+**MPE (3):**
+- MPE-X (MPE pitch bend per note)
+- MPE-Yabs (MPE CC#74 absolute mode)
+- MPE-Yrel (MPE CC#74 relative mode)
+
+**MIDI:**  
+- CC [000-127] (Any MIDI Continuous Controller number)
+
+**Modulation Destinations (191 Total - Key Categories):**
+
+**Arpeggiator:** Mode, Division, Swing, Gate, Octave, OctMode, Length, Phrase, Ratchet, Chance
+
+**Oscillators:**
+- OSC 1-2: Pitch (±12 semitones), Wave (waveform selection), WaveScan (morph position)
+- OSC 3: Pitch (±12 semitones), Wave (waveform selection)  
+- All Osc: Pitch (modulates all three oscillators simultaneously)
+
+**Mutators (1-4):**
+- Ratio, Depth, Window, Feedback, Dry/Wet, Warp [1-8] (8 warp points per Mutant for PW-ASM mode)
+
+**Ring Modulator:**
+- Depth (ring modulation intensity)
+
+**Mixer:**
+- Osc1Vol, Osc2Vol, Osc3Vol, RingVol, NoiseVol (source levels)
+- Osc1Pan, Osc2Pan, Osc3Pan, RingPan, NoisePan (stereo positioning)
+- Osc1F1/2, Osc2F1/2, Osc3F1/2, RingF1/2, NoisF1/2 (filter routing ratios)
+
+**Filters:**
+- Filter 1: Cutoff, Resonance, Drive, Control (Vowel formant control), ENV1amt, LFO1amt, Keytrack
+- Filter 2: Morph, Cutoff, Resonance, ENV1amt, LFO1amt, Keytrack
+
+**Amplifier:**
+- LFO2Amt (tremolo intensity), Level (pre-FX gain)
+
+**Effects:**
+- Pre-FX: Param1, Param2, Dry/Wet
+- Delay: Time, Feedback, Wet Tone, FeedTone, Dry/Wet
+- Reverb: Time, Tone, HiDamp, LoDamp, Dry/Wet  
+- Post-FX: Param1, Param2, Dry/Wet
+
+**Envelopes (1-5):**
+- Attack, Hold, Decay, Sustain, Release (create meta-modulation - envelopes modulating envelopes)
+
+**LFOs (1-5):**
+- Rate, Level (LFOs modulating LFO speed or intensity)
+
+**Mod Matrix:**
+- Depth [1-32] (modulate the depth of any mod route - meta-modulation)
+
+**Macros:**  
+- Macro 1 through Macro 8 (modulate macro positions)
+
+**Voice:**
+- Detune, AnalogFL (analog feel amount), PitchBnd (bend range), Vib Amt (vibrato depth), Vib Rate (vibrato speed), GlidTime (glide time)
+
+**CV Outputs:**
+- ModOut 1, ModOut 2 (send modulation to Eurorack via CV jacks)
+
+**MIDI:**
+- CC [000-127] (send modulation as MIDI CC data)
+
+---
+
+**Creating Mod Routes - Three Methods:**
+
+**Method 1 - Full Matrix Navigation:**
+1. Press **[MOD MATRIX]**
+2. Press Control button for empty slot (top or bottom row)
+3. Turn upper Control knob to select Source (or press module button shortcut)
+4. Press bottom Control button to move to Destination field  
+5. Turn upper Control knob to select Destination module (or press module button shortcut)
+6. Press bottom Control button to move to Parameter field
+7. Turn upper Control knob to select specific parameter within module
+8. Turn lower Control knob to set Depth (-128 to +128)
+9. Route is active immediately
+
+**Method 2 - Direct Parameter Assignment (Fastest):**
+1. Access module with parameter you want to modulate (e.g., press **[FILTER 1]**)
+2. Hold source module button (e.g., hold **[LFO 3]**)
+3. Press Control button next to target parameter (e.g., Resonance)
+4. Mod Matrix opens with route pre-configured: LFO 3 → Filter 1 Resonance
+5. Turn lower Control knob to set Depth
+6. Route is active immediately
+
+**Method 3 - Module-to-Module Quick Route:**
+1. From Home page (or any page), hold source module button
+2. Press destination module button
+3. Mod Matrix opens with first parameter of destination selected
+4. Turn upper Control knob to select different parameter if needed (or turn top-panel knob)
+5. Turn lower Control knob to set Depth
+6. Route is active immediately
+
+**Mod Matrix Shortcuts:**
+
+**Copy Route to Another Slot:**
+- Hold source route Control button (top or bottom)
+- Press destination route Control button
+- All settings copied (Source, Destination, Depth)
+- Useful for similar routes with minor variations
+
+**Clear Single Route:**
+- Hold INIT + press route Control button
+- Route cleared instantly
+
+**Clear Entire Mod Matrix:**  
+- Hold INIT + press **[MOD MATRIX]** button
+- Confirmation prompt appears
+- Press INIT again to confirm (clears all 32 slots)
+- Press EXIT to cancel
+
+**Randomize Entire Mod Matrix:**
+- Hold RANDOM + press **[MOD MATRIX]** button twice
+- Confirmation after first press
+- Second press randomizes all routes
+- **Caution:** Results can be chaotic - use as starting point for experimentation
+
+---
+
+**Practical Mod Matrix Examples:**
+
+**Example 1 - Velocity-Sensitive Waveshaping:**
+- **Route:** Velo On → Mutant 1 Depth
+- **Depth:** +80
+- **Result:** Harder playing increases waveshaping intensity, softer playing keeps timbre cleaner
+- **Use case:** Dynamic timbral response in lead patches
+
+**Example 2 - Aftertouch Filter Morph:**  
+- **Route:** PolyAftT → Filter 2 Morph
+- **Depth:** +64
+- **Result:** Pressing keys harder morphs Filter 2 from low-pass toward band-pass or high-pass
+- **Use case:** Performance-based timbral shifts, works per-note with polyphonic aftertouch
+
+**Example 3 - Evolving WaveScan Position:**
+- **Route:** LFO 3 → OSC 1 WaveScan
+- **LFO 3 settings:** Wave = Sine, Rate = 0.08 Hz, TrigSync = Poly
+- **Depth:** +64 (allows morph through 5 waveforms of 8-position wavelist)
+- **Result:** Slow, smooth wavetable morphing with independent movement per voice
+- **Use case:** Evolving pad textures
+
+**Example 4 - Rhythmic Pan Modulation:**
+- **Route:** LFO 4 → Osc1Pan
+- **LFO 4 settings:** Wave = Saw Up, BPM = On, Rate = 1/4, TrigSync = Single
+- **Depth:** +64 (pans from center to hard right over quarter note)
+- **Result:** Oscillator 1 sweeps from center to right in sync with tempo
+- **Additional route:** LFO 4 → Osc2Pan (Depth: -64) for opposite pan movement
+- **Use case:** Stereo movement locked to track tempo
+
+**Example 5 - Envelope-Controlled LFO Rate:**  
+- **Route:** ENV 3 → LFO 1 Rate
+- **ENV 3 settings:** Attack = 3.0s, Decay = 2.0s, Sustain = 64, Release = 4.0s
+- **Depth:** +80
+- **Result:** Filter LFO (LFO 1) accelerates during attack, settles to moderate speed, slows on release
+- **Use case:** Organic filter movement that evolves with note shape
+
+**Example 6 - Meta-Modulation (Modulating Modulation):**
+- **Initial route:** LFO 1 → Filter 1 Cutoff (Depth: +64) - this is Mod Matrix slot 1
+- **Meta route:** LFO 5 → ModMtrx Depth 1 (Depth: +64)
+- **LFO 5 settings:** Wave = Triangle, Rate = 0.2 Hz
+- **Result:** LFO 1's influence on filter cutoff is itself modulated by LFO 5 (intensity varies slowly)
+- **Use case:** Complex, non-repetitive modulation that sounds less "machine-like"
+
+**Example 7 - CV Input to Synthesis Parameters:**
+- **Route 1:** Mod In 1 → OSC 1 Pitch (Depth: +64)
+- **Route 2:** Mod In 1 → OSC 2 Pitch (Depth: +64)
+- **Route 3:** Mod In 2 → Filter 1 Cutoff (Depth: +96)
+- **CV Setup (System Setup page 9):** Mod In 1 = 1V/Oct, Mod In 2 = 0-5V
+- **Result:** Eurorack sequencer controls oscillator pitch (melodic) and filter frequency simultaneously  
+- **Use case:** Hydrasynth as Eurorack-controlled sound source
+
+**Example 8 - Expression Pedal Multi-Parameter Sweep:**
+- **Route 1:** ExpPedal → Filter 1 Cutoff (Depth: +96)
+- **Route 2:** ExpPedal → Reverb Mix (Depth: +64)
+- **Route 3:** ExpPedal → Osc3Vol (Depth: -32, starts Osc 3 at medium level, reduces as pedal moves)
+- **Result:** Pedal simultaneously opens filter, increases reverb, and reduces sub-oscillator level
+- **Use case:** Complex timbral shifts via single continuous controller
+
+---
+
+### Macro System
+
+Macros are the Hydrasynth's "super-controls" - each of the 8 Macros can control up to 8 parameters simultaneously, and they're instantly accessible from the Home page via the 8 Control knobs and buttons around the right display. This transforms complex multi-parameter changes into single-knob adjustments, essential for both sound design and live performance.
+
+**Access:** Press **[MACRO ASSIGN]** button → 8 macro slots, each with up to 8 destinations
+
+**Macro Architecture:**
+- **8 Macros total** per patch
+- **8 destinations per Macro** (up to 8 parameters controlled by each Macro knob/button)
+- **Control knob:** Sweeps through parameter range (0.0 to 128.0)
+- **Control button:** Triggers preset value (behavior: Toggle, Trigger, Switch, or Reset - set in System Setup)
+- **Home page integration:** All 8 Macros immediately available without menu diving
+
+**Macro vs. Mod Matrix:**
+
+**Macros:**
+- Performance-focused, instant access from Home page
+- Up to 8 destinations per Macro
+- Knob + button control per Macro
+- Saved per patch (different Macros for each sound)
+- Can control Mod Matrix depths
+
+**Mod Matrix:**  
+- Modulation-focused, accessed via dedicated button
+- One destination per slot (32 total slots)
+- Depth control only
+- Can modulate Macro positions
+
+**Macros and Mod Matrix can modulate each other** - route LFO to Macro position via Mod Matrix, or use Macro to control multiple Mod Matrix route depths simultaneously.
+
+---
+
+**Macro Assignment Workflow:**
+
+1. **Access Macro Edit Page:**
+   - Press **[MACRO ASSIGN]**
+   - Press Control button for desired Macro (1-8)
+   - Macro Edit page appears showing 8 destination slots
+
+2. **Assign First Destination:**
+   - Press Control button 2 to activate Assign mode
+   - Orange module buttons light up (potential destinations)
+   - Press desired module button (e.g., **[FILTER 1]**)
+   - First parameter of that module appears as destination
+   - Turn upper Control knob to select different parameter within module (or turn top-panel knob for that parameter)
+   - Turn lower Control knob to set modulation Depth for this destination
+
+3. **Assign Additional Destinations:**
+   - Press Control button for next destination slot (3, 4, 5, etc.)
+   - Repeat step 2 for each additional destination
+   - Up to 8 destinations can be assigned per Macro
+
+4. **Set Button Value:**
+   - Navigate to Button Value field (middle row of display)
+   - Turn Control knob to set value button will trigger
+   - Button behavior (Toggle/Trigger/Switch/Reset) set in System Setup, page 2
+
+5. **Name the Macro (Optional):**  
+   - Page to Macro naming page (page 4 within Macro Edit)
+   - Choose from 100+ preset names or create custom name (8 characters max)
+   - Name appears on Home page for easy identification
+
+6. **Test from Home Page:**
+   - Press **[HOME]**
+   - Turn corresponding Control knob - all assigned parameters move simultaneously
+   - Press Control button - button value triggers based on System Setup behavior
+
+**Macro Button Behaviors (Set in System Setup, Page 2):**
+
+- **Toggle:** Button switches between Button Value and current knob position
+- **Trigger:** Button holds Button Value while pressed, returns to knob position when released
+- **Switch:** Only one Macro button can be active at a time (selecting new button deselects others)
+- **Reset:** Button returns Macro knob to zero position
+
+**Holding SHIFT + Macro Button:**
+- Temporarily inverts button behavior
+- Toggle → Trigger (hold for Button Value)
+- Trigger → Hold (latches Button Value until pressed again)
+- Switch → Multiple buttons can be active
+- Reset → (no SHIFT function)
+
+---
+
+**Practical Macro Examples:**
+
+**Macro 1 - "Aggression" (Multi-Parameter Intensity Control):**
+- Destination 1: Filter 1 Resonance (Depth: +64)
+- Destination 2: Filter 1 Drive (Depth: +96)
+- Destination 3: Mutant 1 Depth (Depth: +48)  
+- Destination 4: Mutant 2 Depth (Depth: +48)
+- Destination 5: ENV 1 Decay (Depth: -32, shortens decay as Macro increases)
+- Destination 6: Reverb Mix (Depth: -24, reduces reverb as Macro increases for drier, more aggressive sound)
+- **Result:** Single knob transforms pad into aggressive lead by increasing resonance, drive, waveshaping while shortening envelope and reducing reverb
+- **Use case:** Sound design exploration, performance transitions between sections
+
+**Macro 2 - "Filter Sweep + Width" (Timbre and Stereo Control):**
+- Destination 1: Filter 1 Cutoff (Depth: +96)
+- Destination 2: Filter 2 Morph (Depth: +64, moves from LP toward BP/HP)
+- Destination 3: Voice Stereo Width (Depth: +64, widens as filter opens)
+- **Button Value:** 80 (moderately open filter with wide stereo)
+- **Result:** Knob controls brightness and width simultaneously, button snaps to "open" position
+- **Use case:** Quick timbral shifts, button for instant "wide open" sound
+
+**Macro 3 - "Motion" (Multi-LFO Rate Control):**  
+- Destination 1: LFO 1 Rate (Depth: +64)
+- Destination 2: LFO 3 Rate (Depth: +48)
+- Destination 3: LFO 4 Rate (Depth: +80)
+- **Result:** Single knob speeds up or slows down multiple LFOs simultaneously
+- **Use case:** Add motion to static pad, slow down for ambient sections, speed up for intensity
+
+**Macro 4 - "Mod Matrix Master" (Control Multiple Route Depths):**
+- Destination 1: ModMtrx Depth 5 (Depth: +128, assuming slot 5 = LFO 3 → WaveScan)
+- Destination 2: ModMtrx Depth 8 (Depth: +128, assuming slot 8 = LFO 4 → Pan)
+- Destination 3: ModMtrx Depth 12 (Depth: +96, assuming slot 12 = ENV 3 → Mutant Ratio)
+- **Result:** Single knob scales intensity of multiple modulation routes simultaneously
+- **Use case:** Master "modulation intensity" control, reduces all movement when at zero
+
+**Macro 5 - "Delay Throw" (Performance Effect):**
+- Destination 1: Delay Mix (Depth: +96)
+- Destination 2: Delay Feedback (Depth: +80)
+- Destination 3: Delay Time (Depth: +32, lengthens delay time as Macro increases)
+- **Button Value:** 110 (high mix, high feedback, longer time = runaway delay effect)
+- **Result:** Knob adds delay smoothly, button creates delay throw effect
+- **Use case:** Live performance, delay throws at ends of phrases
+
+**Macro 6 - "Character Morph" (Source Blend with Timbral Shift):**
+- Destination 1: Osc1Vol (Depth: -64, reduces as Macro increases)
+- Destination 2: Osc2Vol (Depth: +64, increases as Macro increases)  
+- Destination 3: Osc2 WaveScan (Depth: +48, morphs OSC 2 through wavetable)
+- Destination 4: Filter 2 Morph (Depth: +32, changes filter character)
+- **Result:** Crossfades from OSC 1 to OSC 2 while simultaneously morphing OSC 2's waveform and filter character
+- **Use case:** Dramatic timbral transformations from single knob movement
+
+**Macro 7 - "Space" (Reverb and Width):**
+- Destination 1: Reverb Mix (Depth: +96)
+- Destination 2: Reverb Time (Depth: +64)
+- Destination 3: Voice Stereo Width (Depth: +48)
+- Destination 4: Pre-FX Mix (Depth: +32, assuming chorus in Pre-FX slot)
+- **Result:** Single knob adds depth, space, and width to sound
+- **Use case:** Quick ambient transitions, zero = dry/narrow, max = huge/spacious
+
+**Macro 8 - "Attack" (Envelope Speed Control):**
+- Destination 1: ENV 1 Attack (Depth: -64, shortens as Macro increases)
+- Destination 2: ENV 2 Attack (Depth: -64, shortens as Macro increases)
+- Destination 3: ENV 1 Release (Depth: -32, shortens as Macro increases)  
+- Destination 4: ENV 2 Release (Depth: -32, shortens as Macro increases)
+- **Result:** Single knob transitions sound from slow pads (low Macro) to percussive plucks (high Macro)
+- **Use case:** Adapt same patch for different musical contexts without switching presets
+
+---
+
+**Macro Save Options (During Patch Save):**
+
+When saving a patch, Control knob 4 on the Save page determines how current Macro positions are handled:
+
+- **Return:** All Macro knobs return to zero, buttons to Off
+  - **Use case:** Macro edits were temporary, save patch at base state
+  
+- **Save:** Current Macro knob positions and button states are stored
+  - **Use case:** Want patch to load with Macros at current positions (e.g., filter moderately open)
+  
+- **Convert:** Macro values are converted into the actual parameter values they control, Macros return to zero
+  - **Use case:** Used Macros for sound design, want to "flatten" the result into the patch itself
+
+---
+
+## Session 2 Complete - Modulation System Established
+
+**What Session 2 Added:**
+- Complete modulation architecture overview with system diagram
+- All 5 DAHDSR envelopes (parameters, looping, triggering, curves, BPM sync)
+- All 5 LFOs (11 waveforms, Step LFO programming, BPM sync, phase control)
+- Complete Mod Matrix documentation (32 slots, 35 sources, 191 destinations, routing methods)
+- Macro system (8 Macros × 8 destinations, assignment workflow, button behaviors)
+- Basic routing examples throughout (velocity→waveshaping, aftertouch→filter morph, CV→pitch, etc.)
+- Meta-modulation concepts (envelopes modulating LFOs, Macros controlling Mod Matrix depths)
+
+**Foundation Complete (Sessions 1-2):**
+- ✅ Synthesis engine (oscillators, mutants, mixer, filters)
+- ✅ Modulation system (envelopes, LFOs, Mod Matrix, Macros)
+
+**Coming in Session 3:**
+- Performance features (ribbon controller dedicated section with 3 modes)
+- Polyphonic aftertouch integration techniques
+- Arpeggiator (8 modes, phrase library, ratcheting, clock sync)
+- Voice management (unison modes, analog feel, glide, voice allocation)
+- Alternative tuning systems and scales (microtonality, historical temperaments)
+- Wheels and pedals integration
+
+**Coming in Session 4:**
+- CV/Gate/Clock integration workflows with Eurorack systems
+- Bidirectional CV modulation (Hydrasynth→modular and modular→Hydrasynth)
+- Clock sync strategies (MIDI, USB, CV clock standards)
+- Eurorack system hub techniques
+
+**Coming in Session 5:**
+- Effects section (Pre-FX, Delay, Reverb, Post-FX)
+- System setup and calibration (ribbon, wheels, CV voltage standards)
+- Troubleshooting and maintenance
+- MIDI/USB configuration
+
+**Coming in Session 6:**
+- Patch Examples 1-5 (Basic → Intermediate → Advanced → Expert)
+- Complete programming tutorials with step-by-step instructions
+- Alternative synthesizer options (budget/different character/premium tiers)
+
+---
+
+*ASM Hydrasynth Keyboard - Session 2 of 6 - Modulation System Complete*
+
+---
+
+## Performance Features
+
+### Ribbon Controller
+
+The Hydrasynth Keyboard's ribbon controller is a 49-key-length continuous touch surface positioned directly above the keyboard, providing expressive pitch control, modulation, and performance techniques unavailable on traditional synthesizers. Unlike small ribbon strips found on other instruments, the Hydrasynth's full-length ribbon enables precise melodic playing, dramatic pitch sweeps, and gestural performance techniques.
+
+**Physical Characteristics:**
+- **Length:** Extends entire keyboard width (~800mm)
+- **Position:** Mounted directly above keys for easy thumb/finger access while playing
+- **Surface:** Capacitive touch-sensitive (no moving parts)
+- **Visual feedback:** LED position indicator shows touch location
+
+**Access Ribbon Settings:** Press **[RIBBON]** button → Single page of parameters
+
+**Ribbon Parameters:**
+
+- **Mode:** Absolute, Relative, or XY Mod (three distinct operating modes - see detailed explanations below)
+  
+- **Range:** 2 to 48 semitones (±1 to ±24 semitones from center/touch point)
+  - Determines pitch bend range or modulation span
+  - Common settings: 2 semitones (subtle vibrato), 12 semitones (octave bends), 24 semitones (two-octave sweeps)
+  - Applies to Absolute and Relative modes; XY Mod uses full 0-127 range
+
+- **Quant:** Off or On
+  - Off = continuous pitch/modulation (smooth sweeps)
+  - On = quantized to semitones (chromatic steps, no microtones)
+  - **Use case:** Quant On enables accurate melodic playing on ribbon
+
+- **RbnCurve:** -64 (Logarithmic) through 0 (Linear) to +64 (Exponential)
+  - Affects response curve for touch-to-modulation mapping
+  - Logarithmic (negative): More control near center/touch point, less at extremes
+  - Linear (0): Proportional response across entire ribbon
+  - Exponential (positive): Less control near center, more at extremes
+  - **Pro tip:** Exponential curves work well for dramatic pitch bends, logarithmic for precise vibrato control
+
+- **Smoothing:** 0-127
+  - Filters rapid position changes to reduce jitter
+  - 0 = instant response (can sound steppy with slight hand movement)
+  - 127 = heavily smoothed (glides slowly to new positions)
+  - **Recommended:** 15-30 for most applications (removes jitter, maintains responsiveness)
+
+---
+
+**Three Ribbon Modes:**
+
+**Mode 1: Absolute**
+
+Ribbon position maps to pitch bend amount with center as zero.
+
+**Operation:**
+- **Center touch:** No pitch change (0 semitones)
+- **Left of center:** Pitch bends down (up to -Range semitones)
+- **Right of center:** Pitch bends up (up to +Range semitones)
+- **Proportional:** Distance from center determines bend amount
+
+**Use cases:**
+- **Traditional pitch bend:** Replace or augment pitch wheel with larger control surface
+- **Vibrato:** Rock finger side-to-side around center point
+- **Interval jumps:** Quant On + Range 12 = chromatic note selection within octave
+- **Slide guitar/pedal steel emulation:** Long sweeps across keyboard width
+
+**Programming example - Classic vibrato:**
+1. Mode: Absolute
+2. Range: 2 semitones (±1 semitone vibrato)
+3. Quant: Off (smooth pitch modulation)
+4. RbnCurve: 0 (linear response)
+5. Smoothing: 20 (removes jitter, maintains expression)
+6. **Technique:** Touch near center, rock finger left-right for musical vibrato
+
+**Programming example - Chromatic ribbon keyboard:**
+1. Mode: Absolute  
+2. Range: 24 semitones (±12 semitones = 2 octaves)
+3. Quant: On (quantized to semitones)
+4. RbnCurve: 0 (linear)
+5. Smoothing: 10 (tight response for note accuracy)
+6. **Technique:** Ribbon becomes 2-octave chromatic keyboard, slide finger for melodic lines
+
+---
+
+**Mode 2: Relative**
+
+Touch point becomes zero reference, movement from touch creates modulation.
+
+**Operation:**
+- **Initial touch:** Establishes reference point (no immediate pitch change)
+- **Move left from touch:** Pitch bends down (up to -Range semitones)
+- **Move right from touch:** Pitch bends up (up to +Range semitones)
+- **Release and retouch:** New reference point established
+
+**Key difference from Absolute:**
+- Absolute: Center of ribbon is always zero
+- Relative: Wherever you touch becomes zero
+
+**Use cases:**
+- **Guitar-style bends:** Touch note, bend up or down from playing position
+- **Theremin-style playing:** Initial touch establishes pitch, movement creates vibrato/glissando from stable pitch
+- **Polyphonic bends:** Touch ribbon while playing, all held notes bend together from their current pitches
+- **Performance technique:** Touch, move, release, touch elsewhere, move = multiple independent bend gestures without repositioning hand to center
+
+**Programming example - Guitar-style note bending:**
+1. Mode: Relative
+2. Range: 4 semitones (±2 semitones, typical guitar bend range)
+3. Quant: Off (smooth bends)
+4. RbnCurve: -20 (more control near touch point)
+5. Smoothing: 15 (natural bend feel)
+6. **Technique:** Play note on keyboard, touch ribbon near middle, slide finger right to bend pitch up 1-2 semitones
+
+**Programming example - Theremin emulation:**
+1. Mode: Relative
+2. Range: 24 semitones (wide pitch range)
+3. Quant: Off
+4. RbnCurve: 0
+5. Smoothing: 40 (portamento-like slides between pitches)
+6. **Via Mod Matrix:** RbnRel → OSC 1 Pitch (depth +128), RbnRel → OSC 2 Pitch (depth +128)
+7. **Technique:** Hold chord, touch and move on ribbon for expressive pitch variations independent of keyboard
+
+---
+
+**Mode 3: XY Mod**
+
+Ribbon splits into X-axis (horizontal position) and Y-axis (vertical pressure) modulation sources.
+
+**Operation:**
+- **X-axis (horizontal position):** Left = 0, Right = 127 (continuous position across ribbon width)
+- **Y-axis (vertical pressure):** Light touch = 0, Heavy pressure = 127 (pressure applied to ribbon)
+- **Both axes available simultaneously** as independent modulation sources in Mod Matrix
+- **No pitch bend:** XY Mod disables pitch bend function, ribbon becomes pure modulation controller
+
+**Modulation Source Names:**
+- **RbnAbs (Absolute bipolar):** Used in XY Mod for X-axis, range -64 to +64 (center = 0)
+- **RbnAbs+ (Absolute unipolar):** Used in XY Mod for X-axis, range 0 to 127 (left = 0, right = 127)
+- **Y-axis:** Pressure detected but not named separately (accessed via RbnAbs vertical component in XY mode)
+
+**Use cases:**
+- **Filter cutoff + resonance:** X-axis → Cutoff, Y-axis → Resonance (sweep and emphasize simultaneously)
+- **Wavetable position + waveshaping:** X-axis → WaveScan position, Y-axis → Mutant Depth (morph and shape together)
+- **Dual LFO rate control:** X-axis → LFO 1 Rate, Y-axis → LFO 2 Rate (independent speed control)
+- **Pan + reverb:** X-axis → Pan position, Y-axis → Reverb Mix (spatial positioning with depth)
+- **Complex performance gestures:** Single ribbon motion controls multiple sound parameters simultaneously
+
+**Programming example - Filter sweep with dynamic resonance:**
+1. Mode: XY Mod
+2. **Mod Matrix route 1:** RbnAbs+ → Filter 1 Cutoff (depth +96)
+3. **Mod Matrix route 2:** RbnAbs (Y-axis pressure) → Filter 1 Resonance (depth +64)
+4. **Result:** Slide finger left-right sweeps filter frequency, pressing harder increases resonance
+5. **Use case:** Single gesture creates dynamic filter movement impossible with single-axis control
+
+**Programming example - WaveScan morphing with waveshaping intensity:**
+1. Mode: XY Mod
+2. OSC 1: WaveScan mode with 8-position wavelist
+3. **Mod Matrix route 1:** RbnAbs+ → OSC 1 WaveScan (depth +96, allows morphing through 6-7 waveforms)
+4. **Mod Matrix route 2:** RbnAbs Y-pressure → Mutant 1 Depth (depth +80)
+5. **Result:** Horizontal movement morphs through wavetable, vertical pressure adds waveshaping complexity
+6. **Use case:** Continuous timbral evolution with expressive intensity control
+
+---
+
+**Ribbon Performance Techniques:**
+
+**Vibrato (Absolute or Relative mode):**
+- Small side-to-side motion around center (Absolute) or touch point (Relative)
+- Range: 1-2 semitones for musical vibrato, 2-4 semitones for dramatic effect
+- **Technique variation:** Slow vibrato for emotional expression, fast for tension
+
+**Pitch Dive/Rise (Absolute mode):**
+- Start at far right (pitch at maximum), slide left across entire ribbon
+- Or start at far left, slide right for rising pitch
+- Quant Off for smooth sweep, Quant On for chromatic run
+- **Use case:** Intro/outro effects, dramatic transitions
+
+**Interval Jumps (Absolute mode, Quant On):**
+- Tap specific ribbon positions for chromatic intervals
+- Range 12 (octave) or 24 (two octaves) enables melodic playing
+- **Practice:** Learn ribbon position-to-pitch mapping through experimentation
+
+**String Bends (Relative mode):**
+- Touch ribbon after playing note on keyboard
+- Slide finger upward (right) for bend up, downward (left) for bend down  
+- Release and retouch for next bend (new reference point each touch)
+- **Pair with:** Held chords - touch ribbon to bend entire chord in unison
+
+**Gestural Timbre Control (XY Mod mode):**
+- Sweep across ribbon width while varying pressure
+- Creates two-dimensional sound evolution
+- Route X and Y axes to complementary parameters (e.g., brightness and depth)
+
+**Theremin-Style Performance (Relative mode):**
+- Smoothing 40-60 for portamento-like slides
+- Wide Range (12-24 semitones) for expressive pitch variation
+- Touch, hold, slide for continuous pitch control
+- **Pair with:** Vibrato from Mod Wheel for independent expression
+
+---
+
+### Polyphonic Aftertouch
+
+The Hydrasynth Keyboard's polyphonic aftertouch (polytouch) keybed is a defining feature - each of the 49 keys senses finger pressure independently, enabling per-note expression unavailable on most synthesizers. This transforms static chords into dynamically evolving textures and allows nuanced control over individual voices within polyphonic passages.
+
+**What is Polyphonic Aftertouch?**
+
+**Channel Aftertouch (common on most synths):**
+- Single pressure sensor for entire keyboard
+- All held notes respond identically to pressure
+- Example: Press three-note chord harder, all three notes brighten equally
+
+**Polyphonic Aftertouch (Hydrasynth Keyboard):**
+- Independent pressure sensor per key
+- Each note responds to its key's pressure independently  
+- Example: Press three-note chord, apply pressure to only top note, only top note brightens
+
+**Musical Implications:**
+- Individual note emphasis within chords (accent melody note while holding chord)
+- Dynamic voice movement (some notes swell, others remain static)
+- Expressive lead playing (vibrato and filter movement respond to playing touch)
+- Pad animation (held chord evolves as pressure varies across keys)
+
+**Access in Mod Matrix:**
+- **Source name:** PolyAftT (Polyphonic Aftertouch)
+- **Range:** 0 (no pressure) to 127 (maximum pressure) per key
+- **Polyphonic behavior:** Modulation applies independently to each voice
+
+**Also available: MonoAftT (Channel Aftertouch)**
+- Single pressure value, highest pressed key determines value
+- All voices respond identically
+- **Use case:** When uniform pressure response desired across all notes
+
+---
+
+**Polyphonic Aftertouch Routing Strategies:**
+
+**Strategy 1 - Per-Note Filter Brightness:**
+
+**Route:** PolyAftT → Filter 1 Cutoff
+- **Depth:** +64 to +96
+- **Result:** Pressing individual keys harder opens filter on only those notes
+- **Musical application:** Play chord, emphasize melody notes by pressing harder
+- **Example:** Pad chord with melody note on top - press top key harder to make it sing above chord
+
+**Strategy 2 - Independent Vibrato Depth:**
+
+**Route 1:** LFO 3 → OSC 1 Pitch (depth +5, subtle vibrato)
+- **Route 2:** PolyAftT → ModMtrx Depth (route 1) (depth +64)
+- **Result:** LFO creates vibrato, pressure increases vibrato depth per-note
+- **Musical application:** Sustained notes get more vibrato as you press harder, short notes have minimal vibrato
+- **Technique:** Play passage, apply pressure only to long sustained notes for expressive vibrato
+
+**Strategy 3 - Polyphonic Waveshaping:**
+
+**Route:** PolyAftT → Mutant 1 Depth
+- **Depth:** +80
+- **Mutant 1 settings:** FM-Lin mode with moderate Ratio and Dry/Wet
+- **Result:** Pressing keys harder increases harmonic complexity on individual notes
+- **Musical application:** Held chord becomes animated as different notes gain/lose brightness independently
+
+**Strategy 4 - Dynamic Amplitude Control:**
+
+**Route:** PolyAftT → Amp Level
+- **Depth:** +32 (adds volume on top of ENV 2 level)
+- **Result:** Pressing keys harder increases volume of individual notes
+- **Musical application:** Accent specific chord tones, bring out inner voices
+- **Caution:** Moderate depth to avoid excessive volume spikes
+
+**Strategy 5 - Filter Morph (Filter 2):**
+
+**Route:** PolyAftT → Filter 2 Morph  
+- **Depth:** +64
+- **Filter 2 settings:** LP-BP-HP mode, Morph starting at 20 (mostly low-pass)
+- **Result:** Pressing keys harder morphs filter from LP toward BP/HP on individual notes
+- **Musical application:** Chord starts warm (LP), individual notes brighten (BP/HP) as pressure applied
+
+**Strategy 6 - Multiple Destination Complexity:**
+
+**Route 1:** PolyAftT → Filter 1 Cutoff (depth +64)
+- **Route 2:** PolyAftT → Mutant 2 Depth (depth +48)
+- **Route 3:** PolyAftT → Reverb Mix (depth +24)
+- **Result:** Pressure simultaneously opens filter, increases waveshaping, and adds reverb per-note
+- **Musical application:** Complete timbral transformation from single expressive gesture
+
+---
+
+**Polyphonic vs. Channel Aftertouch - When to Use Each:**
+
+**Use PolyAftT when:**
+- Playing chords with melody emphasis (accent top or inner voices)
+- Creating evolving pad textures (individual notes swell/fade independently)
+- Expressive lead playing (vibrato/filter response per-note)
+- You want maximum expressive control
+
+**Use MonoAftT when:**
+- Controlling global patch parameters (reverb mix, delay feedback)
+- Uniform response desired across all voices (all notes should respond identically)
+- Modulating tempo-synced effects (arpeggiator rate, LFO speed)
+- Simpler, more predictable behavior needed
+
+**Can use both simultaneously:**
+- **Example:** PolyAftT → Filter Cutoff (per-note brightness), MonoAftT → Reverb Time (global space control)
+
+---
+
+**Calibrating Aftertouch Response:**
+
+Aftertouch sensitivity can be adjusted in System Setup (Page 5):
+
+**Access:** Press **[SYSTEM]** → Page to System Setup page 5 → PolyAftT section
+
+- **Threshold:** 0-127 (pressure required before aftertouch engages)
+  - Low values (0-30): Light touch triggers aftertouch (very sensitive)
+  - Medium values (40-60): Moderate pressure required (balanced)
+  - High values (70-127): Heavy pressure required (reduces accidental triggering)
+  
+- **Curve:** -64 to +64 (response curve shape)
+  - Negative values: More response at light pressure, less at heavy pressure
+  - 0: Linear response throughout pressure range
+  - Positive values: Less response at light pressure, more at heavy pressure
+
+**Recommended starting points:**
+- **Sensitive/expressive:** Threshold 25, Curve -20
+- **Balanced:** Threshold 40, Curve 0  
+- **Heavy/controlled:** Threshold 60, Curve +15
+
+**Test and adjust:**
+1. Route PolyAftT → Filter 1 Cutoff (depth +96) for clear feedback
+2. Play notes, vary pressure to find comfortable response
+3. Adjust Threshold and Curve until natural feel achieved
+4. Settings apply globally to all patches
+
+---
+
+### Arpeggiator
+
+The Hydrasynth's arpeggiator transforms held chords into rhythmic patterns with extensive control over note order, timing, gate length, octave range, and phrase variations. Eight arpeggiator modes plus a phrase library enable everything from classic synth arpeggios to complex melodic sequences.
+
+**Access:** Press **[ARP]** button → Two pages of parameters
+
+**Basic Operation:**
+1. Press **[ARP]** button (button lights, arpeggiator enabled)
+2. Hold chord on keyboard  
+3. Arpeggiator plays held notes according to Mode and Division settings
+4. Press **[ARP]** again to disable (button unlit)
+
+**Arpeggiator Parameters - Page 1:**
+
+- **Mode:** Up, Down, UpDown, DownUp, Order, Random, Walk, Phrase (eight modes - see detailed explanations below)
+  - Determines order notes are played within held chord
+  
+- **Division:** 1/64T to 4 bars (tempo-synced note duration)
+  - Common settings: 1/16 (sixteenth notes), 1/8 (eighth notes), 1/4 (quarter notes)
+  - Triplet divisions available (1/64T, 1/32T, 1/16T, 1/8T, 1/4T)
+  - Dotted divisions available (1/32., 1/16., 1/8., 1/4., 1/2., 1/1.)
+  
+- **Swing:** 50-75%
+  - 50% = straight timing (no swing)
+  - 75% = maximum swing (long-short rhythm like triplet feel)
+  - **Example:** Division 1/16, Swing 66% = shuffled sixteenth notes
+  
+- **Gate:** 5-200%
+  - Controls note length as percentage of Division
+  - 50% = notes play for half of Division time (staccato)
+  - 100% = notes play for full Division time (legato, notes touch)
+  - 200% = notes overlap significantly (smooth, connected)
+  - **Example:** Division 1/8, Gate 25% = short, plucky eighth notes
+
+- **Octave:** 1-4 octaves
+  - Number of octaves arpeggio spans
+  - **Example:** Hold C-E-G (C major triad), Octave 2 = plays C-E-G-C-E-G (two octaves)
+  
+- **OctMode:** Up, Down, UpDown, DownUp
+  - Determines how octaves are traversed
+  - **Up:** Plays chord in first octave, then second octave, etc.
+  - **Down:** Plays chord in highest octave first, descends through octaves
+  - **UpDown:** Ascends through octaves, then descends (palindrome)
+  - **DownUp:** Descends through octaves, then ascends
+
+- **Length:** 1-32 steps
+  - Maximum number of notes arpeggiator plays before looping
+  - **Shorter than full pattern:** Creates truncated, repeating fragments
+  - **Example:** Hold 3-note chord, Octave 3, Length 5 = plays 5 notes then loops (incomplete pattern)
+
+- **Phrase:** OFF, 1-128 (phrase library selection, only active when Mode = Phrase)
+  - 128 preset rhythmic/melodic patterns
+  - Held chord determines pitch material, phrase determines rhythm/order
+
+---
+
+**Arpeggiator Parameters - Page 2:**
+
+- **Ratchet:** Off, 1/64T to 1/2. (note subdivision for ratcheting)
+  - When Ratchet is active, some notes repeat rapidly at Ratchet division before advancing
+  - Creates drum-roll effect on selected notes
+  - **Example:** Division 1/8, Ratchet 1/32 = some eighth notes become four thirty-second note bursts
+  
+- **RatchProb:** 0-100% (ratchet probability per note)
+  - 0% = ratcheting never occurs
+  - 50% = approximately half of notes ratchet
+  - 100% = every note ratchets
+  - **Use case:** Add variety to arpeggios (some notes ratchet, others don't)
+
+- **Chance:** 0-100% (probability each note plays)
+  - 100% = all notes play (no gaps)
+  - 50% = approximately half of notes skip (sparse, rhythmic gaps)
+  - 0% = no notes play (arpeggiator generates rhythm but no output)
+  - **Use case:** Create evolving, unpredictable patterns with rhythmic gaps
+
+- **Velocity:** Off, Vel Avg, Vel Play, Vel Step
+  - **Off:** All arpeggiated notes play at velocity 100
+  - **Vel Avg:** Average velocity of held keys determines arpeggio velocity
+  - **Vel Play:** Each arpeggio note plays at velocity of its source key
+  - **Vel Step:** Velocity alternates in programmed pattern (see Velocity Sequencer below)
+  
+- **Vel Step Sequencer:** (8 steps visible, access via Control buttons when Velocity = Vel Step)
+  - Program up to 32 velocity values (velocity pattern independent of note pattern)
+  - Each step: 0-127 velocity
+  - **Example:** Pattern of 64-100-80-127-64-100-80-100 creates accented rhythm
+
+**Latch Mode:**
+- Hold **[ARP]** button for 1 second → Latch mode engages (button blinks)
+- Play chord, release keys → Arpeggio continues until new chord played or Latch disengaged
+- **Use case:** Hands-free arpeggios, play melody over held arpeggio chord
+
+---
+
+**Eight Arpeggiator Modes:**
+
+**Mode 1: Up**
+- Plays held notes from lowest to highest pitch
+- **Example:** Hold C-E-G → plays C, E, G, C, E, G, ... (loops)
+- **With Octave 2:** C, E, G, C(+12), E(+12), G(+12), C, E, G, ...
+- **Use case:** Classic ascending arpeggio, uplifting character
+
+**Mode 2: Down**
+- Plays held notes from highest to lowest pitch
+- **Example:** Hold C-E-G → plays G, E, C, G, E, C, ... (loops)
+- **With Octave 2:** G(+12), E(+12), C(+12), G, E, C, G(+12), ...
+- **Use case:** Descending arpeggio, darker/grounded character
+
+**Mode 3: UpDown**
+- Plays held notes ascending, then descending (palindrome)
+- **Top and bottom notes play once** (no repetition at direction change)
+- **Example:** Hold C-E-G → plays C, E, G, E, C, E, G, E, ... (smooth reversal)
+- **Use case:** Wave-like motion, balanced ascending/descending feel
+
+**Mode 4: DownUp**  
+- Plays held notes descending, then ascending (inverted palindrome)
+- **Top and bottom notes play once**
+- **Example:** Hold C-E-G → plays G, E, C, E, G, E, C, E, ... (smooth reversal)
+- **Use case:** Inverted wave motion
+
+**Mode 5: Order**
+- Plays notes in order pressed (first key pressed = first note, etc.)
+- **Preserves playing sequence** regardless of pitch
+- **Example:** Play G, then C, then E → arpeggio plays G, C, E, G, C, E, ...
+- **Use case:** Custom note order, melodic control, non-pitch-sorted patterns
+
+**Mode 6: Random**
+- Randomly selects from held notes (true random, no pattern)
+- **Each cycle produces different sequence**
+- **Example:** Hold C-E-G → might play E, C, G, C, C, E, G, E, C, ... (unpredictable)
+- **Use case:** Generative textures, evolving patterns, experimental sounds
+
+**Mode 7: Walk**
+- Steps through held notes one at a time (up or down by one note per step)
+- **Similar to UpDown but can change direction randomly**
+- **Example:** Hold C-E-G → might play C, E, G, E, G, E, C, E, ...
+- **Use case:** Organic, wandering patterns
+
+**Mode 8: Phrase**
+- Uses preset phrase from phrase library (1-128)
+- **Phrase determines rhythm, note order, velocity, and articulation**
+- **Held chord provides pitch material** (phrase pattern applied to held notes)
+- **Example:** Phrase 042 might be a funky sixteenth note pattern - held chord determines pitches
+- **Use case:** Instant rhythmic/melodic inspiration, explore phrase library for song starters
+
+**Phrase Library Organization:**
+- Phrases 1-32: Basic rhythmic patterns
+- Phrases 33-64: Syncopated/swing patterns
+- Phrases 65-96: Melodic sequences
+- Phrases 97-128: Complex/experimental patterns
+- **Exploration method:** Set Mode = Phrase, hold chord, turn Phrase knob to audition different patterns
+
+---
+
+**Arpeggiator Programming Examples:**
+
+**Classic Analog Arp (Up mode):**
+- Mode: Up
+- Division: 1/16 (sixteenth notes)
+- Swing: 50% (straight)
+- Gate: 50% (staccato)
+- Octave: 2
+- OctMode: Up
+- Length: 32 (full pattern)  
+- Chance: 100%, Ratchet: Off
+- **Result:** Classic ascending sixteenth note arpeggio spanning two octaves
+
+**Rhythmic Pad (UpDown mode with Chance):**
+- Mode: UpDown
+- Division: 1/8 (eighth notes)
+- Swing: 54% (slight shuffle)
+- Gate: 150% (overlapping notes, smooth)
+- Octave: 1
+- Length: 32
+- Chance: 65% (some notes skip, creating gaps)
+- **Result:** Smooth pad-like arpeggio with evolving rhythmic gaps
+
+**Percussive Sequence (Order mode with Ratchet):**
+- Mode: Order (play chord in specific order: root, fifth, octave)
+- Division: 1/16
+- Swing: 62% (moderate swing)
+- Gate: 25% (very short, percussive)
+- Octave: 1
+- Ratchet: 1/32, RatchProb: 40%
+- **Result:** Rhythmic, percussive pattern with occasional ratcheted bursts
+
+**Generative Texture (Random mode with Chance):**
+- Mode: Random
+- Division: 1/16T (triplet sixteenths)
+- Swing: 50%
+- Gate: 80% (moderate length)
+- Octave: 3 (wide range)
+- Chance: 70% (sparse, gaps between notes)
+- Ratchet: 1/64, RatchProb: 25%
+- **Result:** Evolving, unpredictable texture with wide pitch range and occasional rapid bursts
+
+**Phrase-Based Groove (Phrase mode):**
+- Mode: Phrase
+- Phrase: 042 (or explore library)
+- Division: 1/16 (phrase timing referenced to sixteenth notes)
+- Octave: 2
+- Length: 16 (truncate phrase for shorter loop)
+- **Result:** Instant groove based on preset phrase applied to held chord
+
+---
+
+**Arpeggiator + Performance Features:**
+
+**Arpeggiator + Ribbon:**
+- Arpeggio plays, use ribbon for pitch bends/vibrato on entire arpeggio
+- **Example:** Hold chord, Latch On, use ribbon for dramatic pitch swoops while arp continues
+
+**Arpeggiator + Polyphonic Aftertouch:**
+- Press individual chord notes harder to emphasize specific arpeggio pitches
+- **Via Mod Matrix:** PolyAftT → Filter Cutoff (arpeggiated notes brighten when their source keys pressed harder)
+
+**Arpeggiator + Mod Matrix:**
+- Route arp clock-synced LFOs for rhythmic filter/modulation in sync with arp pattern
+- **Example:** LFO 1 BPM On, Rate = Division (e.g., 1/16), route to Filter Cutoff for synchronized filter pump
+
+**Arpeggiator + Macros:**
+- Assign Macro to control multiple arp parameters (Division, Gate, Swing simultaneously)
+- **Example:** Macro 1 → Arp Division + Arp Gate = single knob transforms arp from slow legato to fast staccato
+
+---
+
+### Voice Management
+
+The Hydrasynth's voice architecture extends beyond basic 8-voice polyphony, offering unison modes, analog feel randomization, glide (portamento), and sophisticated voice allocation strategies. Understanding these features enables both rich polyphonic textures and expressive monophonic lead playing.
+
+**Access Voice Settings:** Press **[VOICE]** button → Two pages of parameters
+
+---
+
+**Voice Parameters - Page 1:**
+
+- **Unison:** Off, 2, 4, or 8 voices
+  - Determines how many voices are stacked per played note
+  - **Off:** Standard polyphony (8 independent voices)
+  - **2:** Each note uses 2 voices (4-note polyphony)
+  - **4:** Each note uses 4 voices (2-note polyphony)
+  - **8:** Each note uses all 8 voices (monophonic, massive thickness)
+  
+- **Detune:** 0.0-128.0 (detuning amount between unison voices)
+  - 0 = all unison voices perfectly in tune (no detuning)
+  - 64 = moderate detuning (lush chorus effect)
+  - 128 = maximum detuning (very wide, obvious pitch spread)
+  - **Only active when Unison ≠ Off**
+  
+- **Spread:** 0-127 (stereo width of unison voices)
+  - 0 = all unison voices panned center (mono)
+  - 127 = unison voices spread across full stereo field
+  - **Example:** Unison 4, Spread 100 = 4 voices spread left-to-right
+  - **Only active when Unison ≠ Off**
+
+- **AnalogFL (Analog Feel):** 0-127
+  - Adds subtle randomization to pitch, filter cutoff, and envelope timing per voice
+  - 0 = perfectly precise (digital stability)
+  - 64 = moderate analog drift (vintage synth character)
+  - 127 = maximum drift (obvious pitch/timing variation)
+  - **Affects all voices,** regardless of Unison setting
+  - **Caution:** High values can sound out-of-tune on melodic content
+
+- **PitchBnd (Pitch Bend Range):** 0-24 semitones
+  - Determines pitch wheel range in semitones
+  - Common settings: 2 (whole step), 7 (perfect fifth), 12 (octave)
+  - Also affects Ribbon Controller range in Absolute/Relative modes
+  
+- **Vib Amt (Vibrato Amount):** 0-127 (vibrato depth)
+  - Controls depth of Mod Wheel vibrato (pre-wired modulation)
+  - 0 = no vibrato regardless of Mod Wheel position
+  - 127 = maximum vibrato depth at full Mod Wheel
+  - **Tip:** Set to moderate value (40-60) for musical vibrato range
+
+- **Vib Rate (Vibrato Rate):** 0.5-12.0 Hz (vibrato speed)
+  - Controls LFO speed of Mod Wheel vibrato
+  - Slow (2-4 Hz): Musical vibrato (vocal/string-like)
+  - Fast (8-12 Hz): Aggressive vibrato (can approach ring mod)
+  - **Pre-wired:** Mod Wheel controls vibrato depth, Vib Rate sets speed
+
+---
+
+**Voice Parameters - Page 2:**
+
+- **GlidTime (Glide Time):** 0-8000ms (portamento time)
+  - Time to glide from one note's pitch to the next
+  - 0 = no glide (instant pitch change)
+  - 500-1500ms = moderate glide (musical portamento)
+  - 4000-8000ms = slow glide (dramatic pitch sweeps)
+  - **Only active when GlidMode ≠ Off**
+
+- **GlidMode:** Off, Always, Legato
+  - **Off:** No glide, pitches change instantly
+  - **Always:** Glide occurs between all notes (even when releasing all keys between notes)
+  - **Legato:** Glide only when playing legato (one note held while next is played)
+  - **Use case:** Legato mode enables selective glide (staccato playing = no glide, legato playing = glide)
+
+- **GlidCurve:** -64 (Logarithmic) to +64 (Exponential)
+  - Shapes glide acceleration
+  - Logarithmic (negative): Fast initial glide, slows as it approaches target
+  - Linear (0): Constant glide speed
+  - Exponential (positive): Slow initial glide, accelerates toward target
+  - **Musical character:** Logarithmic feels natural, exponential feels dramatic
+
+- **VoiceMode:** Poly, Mono, Legato
+  - **Poly:** Full 8-voice polyphony (or reduced by Unison setting)
+  - **Mono:** Only one voice at a time (monophonic synthesizer behavior)
+  - **Legato:** Monophonic with retrigger only on first note of phrase
+  - **Legato use case:** Smooth lead lines without envelope retriggering between notes
+
+- **Steal:** Oldest, Newest, Quietest, Off
+  - Determines which voice is stolen when polyphony exceeded
+  - **Oldest:** Longest-held note is stolen (maintains most recent notes)
+  - **Newest:** Most recently played note is stolen (maintains earliest notes)
+  - **Quietest:** Lowest-amplitude voice is stolen (perceptually least noticeable)
+  - **Off:** No stealing (9th note triggers no voice, silently ignored)
+
+- **Priority:** Last, Low, High
+  - In Mono/Legato VoiceMode, determines which note plays when multiple keys held
+  - **Last:** Most recently played key has priority
+  - **Low:** Lowest note has priority (bass note playing)
+  - **High:** Highest note has priority (melody note playing)
+  - **Only active in Mono or Legato VoiceMode**
+
+---
+
+**Unison Mode Details:**
+
+**Unison = 2 (4-note polyphony):**
+- Each note uses 2 voices
+- Voices slightly detuned (Detune parameter) and spread in stereo (Spread parameter)
+- **Use case:** Lush pads, leads with thickness, chords with movement
+
+**Unison = 4 (2-note polyphony):**
+- Each note uses 4 voices
+- Significant detuning and stereo spread possible
+- **Use case:** Massive leads, rich two-note intervals, thick bass
+
+**Unison = 8 (monophonic):**
+- All 8 voices play single note
+- **Maximum detuning and spread** creates supersaw-style thickness
+- **Use case:** Lead synth lines, bass with huge presence, monophonic performance
+
+**Unison Voice Tuning Algorithm:**
+- Voices tuned in complementary ratios (not random)
+- Some voices slightly sharp, others slightly flat
+- **Creates chorus effect** without phase cancellation issues
+- **Spread parameter:** Spreads detuned voices across stereo field for width
+
+**Practical Unison Settings:**
+
+**Subtle Thickness (Unison 2):**
+- Detune: 15-25 (slight detuning, barely perceptible pitch movement)
+- Spread: 40-60 (moderate stereo width)
+- **Character:** Enhances polyphonic patches without obvious detuning
+
+**Classic Analog Unison (Unison 4):**
+- Detune: 30-50 (noticeable detuning, lush analog character)
+- Spread: 80-100 (wide stereo field)
+- **Character:** Vintage polysynth sound, rich two-note chords
+
+**Supersaw Lead (Unison 8):**
+- Detune: 50-80 (significant detuning, massive width)
+- Spread: 120-127 (maximum stereo spread)
+- **Character:** Modern trance/EDM lead sound, mono playing only
+
+---
+
+**Glide (Portamento) Applications:**
+
+**Monophonic Lead with Legato Glide:**
+- VoiceMode: Legato
+- GlidMode: Legato  
+- GlidTime: 80-150ms (fast glide between legato notes)
+- GlidCurve: -20 (logarithmic, natural feel)
+- **Result:** Notes played legato glide smoothly, staccato notes jump instantly
+- **Use case:** Expressive lead playing, slide between some notes, jump to others
+
+**Bass Slide (Always Glide):**
+- VoiceMode: Mono
+- GlidMode: Always
+- GlidTime: 200-400ms (moderate glide speed)
+- GlidCurve: 0 (linear)
+- **Result:** All notes glide to each other, classic bass slide effect
+- **Use case:** Funk/disco bass lines, acid bass
+
+**Dramatic Pitch Sweep:**
+- GlidMode: Always
+- GlidTime: 3000-6000ms (very slow glide)
+- GlidCurve: +30 (exponential, accelerates toward target)
+- **Result:** Slow, dramatic pitch sweeps between notes
+- **Use case:** Intro/outro effects, experimental sounds, cinematic textures
+
+**Polyphonic Glide:**
+- VoiceMode: Poly
+- GlidMode: Always
+- GlidTime: 500-1000ms (moderate glide)
+- **Result:** Each voice glides independently to new notes (unusual, complex movement)
+- **Use case:** Evolving pad textures, morphing chords
+
+---
+
+**Voice Allocation and Stealing:**
+
+**Understanding Voice Stealing:**
+- Hydrasynth has 8 voices (or fewer when Unison active)
+- When polyphony exceeded (playing 9th note with 8 voices), one voice must be stolen
+- **Steal parameter** determines which voice is replaced
+
+**Steal Mode Comparison:**
+
+**Oldest (Default, most common):**
+- Longest-held note stolen first
+- **Pro:** Maintains most recent playing (what you just played stays)
+- **Con:** Sustained bass note or pad can be stolen unexpectedly
+- **Best for:** Lead playing, fast passages where recent notes matter most
+
+**Newest:**
+- Most recently played note stolen
+- **Pro:** Maintains earliest notes (held chord stays intact)
+- **Con:** New melody notes may not sound if polyphony exceeded
+- **Best for:** Sustaining bass/pad while playing melody over top
+
+**Quietest:**
+- Lowest-amplitude voice stolen (considers envelope position)
+- **Pro:** Least perceptible voice loss
+- **Con:** Unpredictable which note stolen (depends on envelope/VCA levels)
+- **Best for:** Dense polyphonic passages where stealing should be transparent
+
+**Off:**
+- No voice stealing (polyphony limit hard stop)
+- 9th note triggers nothing
+- **Pro:** Predictable behavior, no unexpected note loss
+- **Con:** Additional notes simply ignored
+- **Best for:** Controlled playing where exceeding polyphony is mistake to avoid
+
+---
+
+**Analog Feel Randomization:**
+
+**What Analog Feel Affects:**
+- **Oscillator pitch:** Slight random drift per voice (vintage VCO instability)
+- **Filter cutoff:** Subtle randomization per voice (component tolerance)
+- **Envelope timing:** Minor variations in Attack/Decay times (capacitor variance)
+
+**AnalogFL Settings:**
+- **0-20:** Minimal drift (mostly digital precision)
+- **21-50:** Subtle analog character (vintage synth warmth)
+- **51-80:** Noticeable drift (obvious vintage character)
+- **81-127:** Extreme drift (can sound detuned/out-of-time)
+
+**Use cases:**
+- **Pads:** Moderate AnalogFL (40-60) adds movement, prevents static sound
+- **Leads:** Low AnalogFL (15-30) adds warmth without pitchiness
+- **Bass:** Very low AnalogFL (5-15) maintains punch, slight variation
+- **Evolving textures:** High AnalogFL (70-100) creates organic, unstable timbres
+
+**Caution with AnalogFL:**
+- High values can cause tuning issues (especially with Unison detuning)
+- May conflict with precise melodic content
+- Start low, increase gradually until character achieved
+
+---
+
+### Alternative Tuning Systems and Scales
+
+The Hydrasynth supports microtuning and alternative temperaments, enabling exploration beyond standard 12-tone equal temperament (12-TET). This opens access to historical tunings, world music scales, and experimental microtonal compositions.
+
+**Access Tuning Settings:** Press **[SYSTEM]** → Page to System Setup page 8 → Tuning section
+
+**Tuning Parameters:**
+
+- **Scale:** Equal Temperament (12-TET default), Just Intonation, Pythagorean, Meantone, Werckmeister III, + 20 additional scales
+  - **Equal Temperament (12-TET):** Standard Western tuning (divide octave into 12 equal steps)
+  - **Just Intonation:** Pure intervals based on simple ratios (3:2 perfect fifth, 5:4 major third)
+  - **Pythagorean:** Based on perfect fifths (3:2 ratio), pure fifths but sharp thirds
+  - **Meantone:** Historical temperament (compromised tuning for Renaissance music)
+  - **Werckmeister III:** Well temperament (unequal intervals, good for all keys with distinct characters)
+  - **Additional scales:** Include Middle Eastern maqams, Indian ragas, blues scales, whole tone, pentatonic variants
+
+- **Root Note:** C, C#, D, D#, E, F, F#, G, G#, A, A#, B
+  - Determines which note is the tuning reference (1/1 ratio)
+  - **Matters for non-equal temperaments** where different keys have distinct interval relationships
+  - **Example:** Just Intonation in C sounds pure for C major, less pure for F# major
+
+- **Reference Frequency:** 400.0-480.0 Hz (default 440.0 Hz)
+  - Frequency of A4 ("concert pitch")
+  - Standard: 440 Hz
+  - Historical: 415 Hz (Baroque), 432 Hz (alternative tuning)
+  - **Affects global tuning** - all notes shift proportionally
+
+**User Scales (Custom Microtuning):**
+- Press Control button 8 on Tuning page to access User Scale editor
+- Program custom scale with 12 pitch values (one per chromatic step)
+- Each pitch: -64 to +64 cents (±64 cents = ±0.64 semitones)
+- **Example custom scale:** 0, 10, 0, 15, 0, -5, 0, 5, 0, 20, 0, -10 (detuned equal temperament)
+- Up to 20 User Scales can be stored
+
+---
+
+**Alternative Tuning System Examples:**
+
+**Just Intonation for Chordal Music:**
+- Scale: Just Intonation
+- Root Note: C (or key of your music)
+- Reference Frequency: 440 Hz
+- **Result:** Major and minor triads sound exceptionally pure and resonant in root key
+- **Limitation:** Chords in distant keys sound more dissonant (deliberate character of Just Intonation)
+- **Use case:** Modal music, Renaissance-style polyphony, pure harmonic exploration
+
+**Historical Baroque Tuning:**
+- Scale: Werckmeister III
+- Root Note: C
+- Reference Frequency: 415 Hz (Baroque pitch)
+- **Result:** Well-tempered tuning with distinct key characters, lower overall pitch
+- **Use case:** Period-accurate classical synthesis, historical music recreation
+
+**Pythagorean for Melody:**
+- Scale: Pythagorean
+- Root Note: D
+- Reference Frequency: 440 Hz  
+- **Result:** Pure perfect fifths, great for modal melodies and drone-based music
+- **Limitation:** Major thirds are sharp compared to Just Intonation or Equal Temperament
+- **Use case:** Medieval-style drones, modal lead lines, ethnic music emulation
+
+**Blues/Microtonal Exploration:**
+- Scale: User Scale (custom)
+- Program "blue notes": C=0, Db=0, D=0, Eb=-15 (flattened), E=0, F=0, F#=0, G=0, Ab=0, A=0, Bb=-10 (flattened), B=0
+- **Result:** Flattened thirds and sevenths create blues-inflected scale
+- **Use case:** Blues lead playing, microtonal pitch bends approximated in scale
+
+**Quarter-Tone Scale (24-TET):**
+- Scale: User Scale (custom)
+- Program quarter tones: C=0, C#=50 (quarter-tone up), D=0, D#=50, E=0, F=0, F#=50, G=0, G#=50, A=0, A#=50, B=0
+- **Result:** 24 equal divisions per octave (chromatic scale includes quarter-tones)
+- **Use case:** Middle Eastern maqam emulation, microtonal composition
+
+---
+
+**Practical Considerations for Alternative Tunings:**
+
+**Preset-Based Tuning:**
+- Tuning settings are **global** (affect all patches)
+- To use different tunings with different patches, change tuning setting when loading patch
+- Consider documenting which patches were designed for specific tunings
+
+**Equal Temperament Compromise:**
+- 12-TET is compromise tuning (no intervals perfectly pure)
+- Slight "beating" between intervals is characteristic of standard tuning
+- Historical/Just tunings eliminate beating for certain intervals, add it to others
+
+**Key-Specific Tunings:**
+- Non-equal temperaments (Just, Pythagorean, Meantone) sound best in specific keys
+- **Root Note parameter** determines which key is "home" with purest intervals
+- Playing in distant keys may sound dissonant (this is feature, not bug - distinct key colors)
+
+**Reference Frequency Impact:**
+- Changing reference frequency shifts entire pitch spectrum
+- **432 Hz tuning:** Lower, allegedly "more relaxing" (controversial claim)
+- **415 Hz (Baroque):** Historically accurate for pre-1800s music
+- **Other frequencies:** Explore for tonal color (subtle but perceptible differences)
+
+---
+
+### Wheels and Pedals
+
+The Hydrasynth provides standard pitch and modulation wheels plus inputs for expression pedal and sustain pedal. These controllers integrate with the modulation system for real-time performance control.
+
+**Pitch Wheel:**
+- **Pre-wired:** Controls pitch bend for all oscillators
+- **Range:** Set via PitchBnd parameter in Voice module (0-24 semitones)
+- **Spring-loaded:** Returns to center when released
+- **Mod Matrix:** Can route PitchWhl source to additional destinations beyond pitch
+
+**Modulation Wheel:**
+- **Pre-wired:** Controls vibrato depth (Vib Amt parameter determines maximum depth)
+- **Vibrato speed:** Set via Vib Rate parameter in Voice module
+- **Stays in position:** Does not return to zero when released
+- **Mod Matrix:** Can route ModWhl source to additional destinations (filter, effects, etc.)
+
+**Expression Pedal Input (rear panel):**
+- **Standard 1/4" TRS jack**
+- **Polarity:** Configurable in System Setup (Tip or Ring active)
+- **Mod Matrix source:** ExpPedal (0-127 continuous controller)
+- **Common uses:**
+  - Volume swells (route to Amp Level)
+  - Filter sweeps (route to Filter Cutoff)
+  - Effects mix (route to Reverb/Delay mix)
+  - Multi-parameter control via Macro (assign ExpPedal → Macro, Macro controls 8 parameters)
+
+**Sustain Pedal Input (rear panel):**
+- **Standard 1/4" TS or TRS jack**
+- **Polarity:** Configurable in System Setup (Normally Open or Normally Closed)
+- **Function:** Standard sustain (holds notes after key release)
+- **Mod Matrix source:** SusPedal (on/off switch, can trigger envelopes or modulate parameters)
+- **Half-damper support:** TRS pedals with continuous control recognized as 0-127 value
+
+**Configuring Pedal Polarity (System Setup page 9):**
+1. Connect pedal to appropriate rear-panel jack
+2. Press **[SYSTEM]** → Page to System Setup page 9
+3. Locate pedal polarity setting
+4. If pedal behavior inverted (sustain when released, off when pressed), change polarity setting
+5. Test: Press pedal, verify expected behavior
+
+---
+
+## Session 3 Complete - Performance Features Established
+
+**What Session 3 Added:**
+- Ribbon controller (3 modes: Absolute, Relative, XY Mod) with detailed operation and performance techniques
+- Polyphonic aftertouch integration and routing strategies (per-note expression capabilities)
+- Complete arpeggiator documentation (8 modes, phrase library, ratcheting, velocity sequencing)
+- Voice management (unison modes with detuning/spread, analog feel, glide/portamento, voice allocation/stealing)
+- Alternative tuning systems and scales (microtuning, historical temperaments, user scale programming)
+- Wheels and pedals integration (pitch wheel, mod wheel, expression pedal, sustain pedal)
+
+**Foundation Complete (Sessions 1-3):**
+- ✅ Synthesis engine (oscillators, mutants, mixer, filters)
+- ✅ Modulation system (envelopes, LFOs, Mod Matrix, Macros)
+- ✅ Performance features (ribbon, aftertouch, arpeggiator, voice management, tuning, controllers)
+
+**Coming in Session 4:**
+- CV/Gate/Clock integration workflows with Eurorack systems
+- Bidirectional CV modulation (Hydrasynth→modular and modular→Hydrasynth)
+- Clock sync strategies (MIDI, USB, CV clock standards)
+- Eurorack system hub techniques
+- Voltage standard configuration (V/Oct, Hz/V, Buchla standards)
+
+**Coming in Session 5:**
+- Effects section (Pre-FX, Delay, Reverb, Post-FX)
+- All available effects types and parameters
+- Effects routing strategies
+- System setup and calibration (ribbon, wheels, CV voltage standards)
+- Troubleshooting and maintenance
+- MIDI/USB configuration
+
+**Coming in Session 6:**
+- Patch Examples 1-5 (Basic → Intermediate → Advanced → Expert)
+- Complete programming tutorials with step-by-step instructions
+- Alternative synthesizer options (budget/different character/premium tiers)
+- Pairs Well With (complementary gear)
+- Historical context and synthesis innovations
+
+---
+
+*ASM Hydrasynth Keyboard - Session 3 of 6 - Performance Features Complete*
+
+---
+
 ## Session 1 Complete - Foundation Established
 
 **What We've Covered:**
