@@ -2498,6 +2498,665 @@ The Hydrasynth provides standard pitch and modulation wheels plus inputs for exp
 
 ---
 
+## CV/Gate/Clock Integration
+
+The Hydrasynth Keyboard provides comprehensive CV/Gate/Clock connectivity for integration with Eurorack modular systems, enabling the Hydrasynth to function as both a controller and sound source within modular workflows. Seven 3.5mm jacks on the rear panel support bidirectional CV modulation, pitch/gate control, and clock synchronization across multiple voltage standards.
+
+**Physical Interface Overview:**
+
+**Rear Panel CV/Gate Jacks (3.5mm TS):**
+- **Pitch Out:** Sends keyboard pitch as control voltage to external oscillators
+- **Gate Out:** Sends gate/trigger signals when notes played
+- **Mod Out 1:** Sends any Mod Matrix source as CV (user-assignable)
+- **Mod Out 2:** Sends any Mod Matrix source as CV (user-assignable)
+- **Clock Out:** Sends tempo clock to sync external sequencers/devices
+- **Mod In 1:** Receives CV for modulation (Mod Matrix source)
+- **Mod In 2:** Receives CV for modulation (Mod Matrix source)
+
+**Key Capabilities:**
+- **Bidirectional modulation:** Send modulation to modular (Mod Out 1/2), receive modulation from modular (Mod In 1/2)
+- **Multiple voltage standards:** V/Oct (0-10V or ±5V), Hz/V, Buchla 1.2V/Oct
+- **Flexible gate standards:** V-trig or S-trig, 3V/5V/10V output levels
+- **Per-patch CV configuration:** Each patch can use different voltage standards
+- **Clock sync:** Variable analog clock, MIDI clock, USB clock
+
+---
+
+### CV Outputs
+
+The five CV output jacks convert Hydrasynth performance data into control voltages for external modular equipment. Each output serves a specific function, though Mod Out 1 and Mod Out 2 are user-assignable via System Setup.
+
+**Access CV Output Settings:** Press **[SYSTEM]** → Page to System Setup page 7 → CV-Pitch Gate section
+
+---
+
+**Pitch Out:**
+
+Sends keyboard pitch as control voltage to external oscillators.
+
+**Voltage Standard Configuration (System Setup Page 7):**
+
+- **Control Voltage Range:** Octave 0-10V, -/+5V, Hz 0-10V, Octave 1.2V
+  - **Octave 0-10V:** 1 volt per octave, 0-10V range (Eurorack standard, positive voltages only)
+  - **-/+5V:** 1 volt per octave, ±5V range (bipolar, allows negative voltages for sub-bass)
+  - **Hz 0-10V:** Hertz per volt (Buchla/Serge standard, exponential response)
+  - **Octave 1.2V:** 1.2 volts per octave (Buchla standard)
+  
+- **Reference Note:** C-1 to G9
+  - Sets which keyboard note corresponds to reference voltage
+  - **V/Oct:** Reference Note = lowest note in voltage range (e.g., C2 = 2V in 0-10V range)
+  - **Hz/V:** Reference Note = 1V reference frequency
+  - **Common setting:** C3 or C4 for middle-C reference
+
+- **Control Voltage Offset:** -99 cents to +99 cents
+  - Fine-tune CV output for calibration with external oscillators
+  - **Use case:** Compensate for slight pitch drift in analog oscillators
+  - **Calibration:** Play reference note (e.g., A4), tune external oscillator to 440Hz, adjust offset if needed
+
+- **Control Voltage Source:** Keyboard, Theremin
+  - **Keyboard:** Pitch CV follows keyboard playing (standard)
+  - **Theremin:** Pitch CV follows ribbon controller position in Relative mode
+  - **Use case:** Theremin mode enables ribbon controller to control external oscillator pitch
+
+**Pitch Out Workflows:**
+
+**Workflow 1 - External Oscillator (Replace Internal Oscillators):**
+1. **Hydrasynth:** Turn all internal OSC 1-3 volumes to 0 (Mixer module)
+2. **Cable:** Pitch Out → External oscillator 1V/Oct input
+3. **Cable:** Gate Out → External oscillator gate/trigger input
+4. **Cable:** External oscillator audio out → Hydrasynth audio input (or mixer)
+5. **System Setup:** Octave 0-10V, Reference Note = C2
+6. **Result:** Keyboard plays external oscillator, Hydrasynth envelopes/filters can process external audio if routed through audio inputs
+
+**Workflow 2 - Hybrid Voice (Internal + External Oscillators):**
+1. **Hydrasynth:** OSC 1 and OSC 2 active with moderate volume
+2. **Cable:** Pitch Out → External oscillator CV input
+3. **Cable:** Gate Out → External oscillator gate input
+4. **Cable:** External oscillator audio out → Mixer (same channel as Hydrasynth)
+5. **Result:** External oscillator plays in unison with Hydrasynth oscillators, thickens sound
+
+**Workflow 3 - Melody to Modular Sequencer:**
+1. **Hydrasynth:** Play melody/chord progression on keyboard
+2. **Cable:** Pitch Out → Eurorack quantizer or sample & hold input
+3. **Cable:** Gate Out → Eurorack sequencer clock or trigger input
+4. **External sequencer:** Captures pitch/rhythm, plays back melodic sequence
+5. **Result:** Transfer melody ideas from keyboard to modular sequencer for further processing
+
+---
+
+**Gate Out:**
+
+Sends gate/trigger signals when notes are played to control external envelopes, VCAs, or sequencer triggers.
+
+**Gate Configuration (System Setup Page 7):**
+
+- **Gate Type:** V-trig, S-trig
+  - **V-trig (Voltage trigger):** Gate high = note on, gate low = note off (Eurorack standard)
+  - **S-trig (Short trigger):** Inverted logic, gate low = note on (vintage Moog/Korg standard)
+  - **Most modern modular:** Use V-trig
+  
+- **Gate Volt:** 3V, 5V, 10V (gate output voltage level)
+  - **3V:** Lower level (some vintage equipment)
+  - **5V:** Common Eurorack standard
+  - **10V:** Higher level (Buchla, some Serge modules)
+  - **Most modern modular:** Use 5V
+
+**Gate Out Behavior:**
+- **Polyphonic:** Gate Out follows highest note played (priority = High in mono terms)
+- **Note duration:** Gate stays high while key held, goes low on release
+- **Retriggering:** New note triggers new gate pulse even if previous note still held
+
+**Gate Out Workflows:**
+
+**Workflow 1 - Trigger External Envelope:**
+1. **Cable:** Gate Out → External envelope generator gate input
+2. **Cable:** Envelope output → External VCA CV input
+3. **System Setup:** Gate Type = V-trig, Gate Volt = 5V
+4. **Result:** Keyboard notes trigger external envelope, shapes amplitude of external audio source
+
+**Workflow 2 - Clock Eurorack Sequencer:**
+1. **Cable:** Gate Out → Eurorack sequencer clock/trigger input
+2. **Hydrasynth:** Play rhythmic pattern on keyboard (e.g., sixteenth notes)
+3. **External sequencer:** Advances one step per gate pulse
+4. **Result:** Keyboard playing tempo controls sequencer speed, manual clock source
+
+**Workflow 3 - Trigger Drum Modules:**
+1. **Cable:** Gate Out → Eurorack drum module trigger input
+2. **Hydrasynth:** Play keys to trigger drum sounds
+3. **Result:** Hydrasynth keyboard becomes trigger source for modular percussion
+
+---
+
+**Mod Out 1 & Mod Out 2:**
+
+User-assignable CV outputs that can send any Mod Matrix source to external modular equipment.
+
+**Configuration:** Press **[SYSTEM]** → Page to System Setup page 8 → CV Mod Out section
+
+**Available Sources (send these to modular):**
+- Envelopes: ENV 1-5
+- LFOs: LFO 1-5, LFO 1-5+ (unipolar variants)
+- Performance: Mod Wheel, Pitch Wheel, Ribbon (Abs/Abs+/Rel), Aftertouch (Poly/Mono), Velocity, Keytrack
+- Pedals: Expression Pedal, Sustain Pedal
+- Mod Matrix: Any Mod Matrix slot depth (send modulation amount as CV)
+- Macros: Macro 1-8 positions
+- MIDI: Any MIDI CC value
+
+**Voltage Range Configuration:**
+- **Mod Out 1:** Independent voltage range (0-5V, 0-10V, ±5V, ±10V)
+- **Mod Out 2:** Independent voltage range (separate from Mod Out 1)
+- **Unipolar sources (0-127):** Map to unipolar voltage ranges (0-5V, 0-10V)
+- **Bipolar sources (-64 to +64):** Map to bipolar voltage ranges (±5V, ±10V)
+
+**Mod Out Workflows:**
+
+**Workflow 1 - LFO to External Filter:**
+1. **System Setup:** Mod Out 1 Source = LFO 3, Voltage Range = 0-5V
+2. **Cable:** Mod Out 1 → External filter cutoff CV input
+3. **LFO 3 settings:** Wave = Sine, Rate = 0.3 Hz, Level = 128
+4. **Result:** LFO 3 modulates external filter cutoff, synchronized with internal modulation
+
+**Workflow 2 - Envelope to External VCA:**
+1. **System Setup:** Mod Out 2 Source = ENV 2, Voltage Range = 0-10V
+2. **Cable:** Mod Out 2 → External VCA CV input
+3. **Cable:** Gate Out → External envelope trigger (if needed)
+4. **Result:** Hydrasynth's amplitude envelope controls external VCA, synced envelope shaping
+
+**Workflow 3 - Ribbon Controller to Modular:**
+1. **System Setup:** Mod Out 1 Source = Ribbon Abs+, Voltage Range = 0-10V
+2. **Cable:** Mod Out 1 → External oscillator FM input or wavefolder CV
+3. **Ribbon mode:** XY Mod (horizontal position becomes CV)
+4. **Result:** Ribbon sweeps control external timbre, gestural performance control
+
+**Workflow 4 - Macro to Multiple Modular Parameters:**
+1. **Hydrasynth Macro 1:** Assigned to control Filter Cutoff + Reverb Mix + OSC 2 Detune (8 internal destinations)
+2. **System Setup:** Mod Out 1 Source = Macro 1, Voltage Range = 0-5V
+3. **Cable:** Mod Out 1 → External module CV input (e.g., delay time)
+4. **Result:** Macro 1 knob controls 8 internal parameters + 1 external parameter simultaneously, unified macro control
+
+**Workflow 5 - Expression Pedal to Eurorack:**
+1. **System Setup:** Mod Out 2 Source = Expression Pedal, Voltage Range = 0-10V
+2. **Cable:** Mod Out 2 → Eurorack VCA or mixer CV input
+3. **Result:** Expression pedal controls external module levels, foot-controlled dynamics
+
+---
+
+**Clock Out:**
+
+Sends tempo clock pulses to synchronize external sequencers, drum machines, and modular equipment.
+
+**Clock Configuration:** Press **[SYSTEM]** → Page to System Setup page 6 → Clock section
+
+**Clock Source Options:**
+- **Internal:** Hydrasynth generates clock based on Tempo parameter
+- **MIDI:** Hydrasynth receives MIDI clock, outputs converted to analog clock
+- **USB:** Hydrasynth receives USB clock, outputs converted to analog clock
+
+**Clock Rate (PPQN - Pulses Per Quarter Note):**
+- **1 PPQN:** One pulse per quarter note (slow, basic sync)
+- **2 PPQN:** Two pulses per quarter note
+- **4 PPQN:** Four pulses per quarter note (sixteenth note resolution)
+- **8 PPQN:** Eight pulses per quarter note (thirty-second note resolution)
+- **24 PPQN:** Standard MIDI clock rate (high resolution)
+- **48 PPQN:** Double MIDI clock (very high resolution)
+
+**Common PPQN Settings by Device:**
+- **Eurorack sequencers:** Typically 4 PPQN or 8 PPQN (check module manual)
+- **Drum machines:** Often 24 PPQN (MIDI clock standard)
+- **Vintage sequencers:** May require 1 PPQN or 2 PPQN (step-per-pulse)
+
+**Clock Out Workflows:**
+
+**Workflow 1 - Sync Eurorack Sequencer:**
+1. **System Setup:** Clock Source = Internal, Clock Rate = 4 PPQN
+2. **Hydrasynth:** Set Tempo = 120 BPM
+3. **Cable:** Clock Out → Eurorack sequencer clock input
+4. **External sequencer:** Set to external clock mode
+5. **Result:** Eurorack sequencer advances in sync with Hydrasynth tempo, lockstep synchronization
+
+**Workflow 2 - Master Clock for Modular System:**
+1. **System Setup:** Clock Source = Internal, Clock Rate = 8 PPQN
+2. **Cable:** Clock Out → Clock multiplier/divider module input
+3. **Clock mult/div:** Distribute multiple clock rates to sequencers, envelopes, LFOs
+4. **Result:** Hydrasynth becomes master tempo source for entire modular system
+
+**Workflow 3 - Tempo-Sync Modular to DAW:**
+1. **DAW:** Send MIDI clock to Hydrasynth via USB
+2. **System Setup:** Clock Source = USB, Clock Rate = 24 PPQN
+3. **Cable:** Clock Out → Eurorack sequencer clock input
+4. **Result:** DAW controls both Hydrasynth and modular tempo simultaneously
+
+**Workflow 4 - Trigger Sample & Hold:**
+1. **System Setup:** Clock Rate = 2 PPQN (slow triggers)
+2. **Cable:** Clock Out → Sample & Hold trigger input
+3. **Cable:** Noise source → Sample & Hold signal input
+4. **Cable:** Sample & Hold output → Oscillator pitch CV
+5. **Result:** Random pitch changes synchronized to tempo
+
+---
+
+### CV Inputs
+
+The two CV input jacks (Mod In 1 and Mod In 2) receive control voltages from external modular equipment and route them into the Hydrasynth's Mod Matrix as modulation sources. Each input has independent voltage range configuration, enabling diverse modulation sources to control synthesis parameters.
+
+**Access CV Input Settings:** Press **[SYSTEM]** → Page to System Setup page 8 → CV Mod In section
+
+**Mod In 1 & Mod In 2 Configuration:**
+
+- **Voltage Range:** 0-5V, 0-10V, ±5V, ±10V (independent per input)
+  - **0-5V:** Unipolar, Eurorack standard (0V = no modulation, 5V = maximum)
+  - **0-10V:** Unipolar, extended range (some Buchla/Serge modules)
+  - **±5V:** Bipolar, allows negative modulation (LFOs, envelopes with negative output)
+  - **±10V:** Bipolar, extended range
+  
+- **Voltage range determines modulation behavior:**
+  - **Unipolar (0-5V, 0-10V):** Incoming CV always adds modulation (positive depth)
+  - **Bipolar (±5V, ±10V):** Incoming CV can add or subtract modulation (0V = center, negative voltages reduce parameter)
+
+**Mod In Sources in Mod Matrix:**
+- **Mod In 1:** Appears as modulation source in Mod Matrix
+- **Mod In 2:** Appears as modulation source in Mod Matrix
+- **Can modulate any Mod Matrix destination** (191 destinations available)
+- **Multiple routes possible:** Single Mod In source can control multiple parameters simultaneously
+
+**Voltage Range Selection Strategy:**
+- **Mod In 1 = 0-5V (unipolar):** Use for envelopes, unipolar LFOs, sequencer CV (always positive modulation)
+- **Mod In 2 = ±5V (bipolar):** Use for bipolar LFOs, randomization, modulation that should go negative
+- **Match external source:** Check external module output voltage, set Mod In range accordingly
+
+---
+
+**CV Input Workflows:**
+
+**Workflow 1 - Eurorack Envelope to Hydrasynth Filter:**
+1. **Cable:** Eurorack envelope output → Mod In 1
+2. **System Setup:** Mod In 1 Voltage Range = 0-5V
+3. **Mod Matrix:** Mod In 1 → Filter 1 Cutoff (Depth: +80)
+4. **External trigger:** Gate Out → Eurorack envelope trigger (or separate trigger source)
+5. **Result:** External envelope controls Hydrasynth filter, modular envelope shaping
+
+**Workflow 2 - Eurorack LFO to Hydrasynth Oscillator Pitch:**
+1. **Cable:** Eurorack LFO output → Mod In 2
+2. **System Setup:** Mod In 2 Voltage Range = ±5V (bipolar LFO)
+3. **Mod Matrix:** Mod In 2 → OSC 1 Pitch (Depth: +20, subtle vibrato)
+4. **External LFO:** Sine wave, ~4 Hz
+5. **Result:** Eurorack LFO creates vibrato on Hydrasynth oscillators
+
+**Workflow 3 - Eurorack Sequencer to WaveScan Position:**
+1. **Cable:** Eurorack sequencer CV output → Mod In 1
+2. **System Setup:** Mod In 1 Voltage Range = 0-10V
+3. **Mod Matrix:** Mod In 1 → OSC 1 WaveScan (Depth: +96, wide morphing range)
+4. **OSC 1:** WaveScan mode with 8-position wavelist
+5. **Result:** External sequencer CV morphs through wavetable, sequenced timbral changes
+
+**Workflow 4 - Eurorack Random Voltage to Multiple Parameters:**
+1. **Cable:** Eurorack random/noise source → Mod In 2
+2. **System Setup:** Mod In 2 Voltage Range = ±5V
+3. **Mod Matrix Route 1:** Mod In 2 → Filter 1 Cutoff (Depth: +40)
+4. **Mod Matrix Route 2:** Mod In 2 → Mutant 1 Ratio (Depth: +30)
+5. **Mod Matrix Route 3:** Mod In 2 → Pan (Depth: +50)
+6. **Result:** Single random source modulates filter, waveshaping, and stereo position simultaneously
+
+**Workflow 5 - Eurorack Pressure/Touch to Polyphonic Aftertouch Simulation:**
+1. **Cable:** Eurorack pressure sensor/ribbon output → Mod In 1
+2. **System Setup:** Mod In 1 Voltage Range = 0-5V
+3. **Mod Matrix:** Mod In 1 → Filter 2 Morph (Depth: +64)
+4. **Result:** External pressure control affects filter character, alternative expression source
+
+**Workflow 6 - Bidirectional Cross-Modulation:**
+1. **Hydrasynth → Modular:** Mod Out 1 (ENV 3) → Eurorack VCA CV
+2. **Modular → Hydrasynth:** Eurorack LFO → Mod In 1 → Hydrasynth Filter Cutoff
+3. **Result:** Hydrasynth envelope controls modular amplitude, modular LFO controls Hydrasynth timbre (bidirectional influence)
+
+---
+
+### Voltage Standard Configuration
+
+The Hydrasynth supports multiple voltage standards for CV/Gate communication, enabling compatibility with Eurorack (V/Oct), Buchla (Hz/V, 1.2V/Oct), vintage synthesizers (S-trig), and custom voltage ranges. Voltage standards are configured per-patch, allowing different patches to interface with different modular equipment.
+
+**Access Voltage Standards:** Press **[SYSTEM]** → Page to System Setup page 7 (Pitch/Gate) and page 8 (Mod In/Out)
+
+---
+
+**Pitch CV Standards (System Setup Page 7):**
+
+**Standard 1: Octave 0-10V (Eurorack V/Oct, Positive Only)**
+- **Voltage per octave:** 1 volt
+- **Range:** 0-10V (10-octave span)
+- **Zero point:** 0V
+- **Use case:** Standard Eurorack, most modern modular synthesizers
+- **Example:** C2 = 2V, C3 = 3V, C4 = 4V, etc.
+
+**Standard 2: -/+5V (Eurorack V/Oct, Bipolar)**
+- **Voltage per octave:** 1 volt
+- **Range:** -5V to +5V (10-octave span)
+- **Zero point:** 0V (typically C3 or C4)
+- **Use case:** Systems requiring negative voltages for sub-bass range
+- **Example:** C1 = -2V, C3 = 0V, C5 = +2V
+
+**Standard 3: Hz 0-10V (Buchla/Serge Hz/V)**
+- **Response:** Hertz per volt (linear frequency, not exponential like V/Oct)
+- **Range:** 0-10V
+- **Characteristic:** Exponential relationship (higher voltages = exponentially higher frequencies)
+- **Use case:** Buchla, Serge, and other West Coast modular systems
+- **Reference Note:** Sets 1V frequency reference
+
+**Standard 4: Octave 1.2V (Buchla 1.2V/Oct)**
+- **Voltage per octave:** 1.2 volts
+- **Range:** ~12 octaves in 0-14.4V span
+- **Use case:** Buchla systems (different from standard 1V/Oct)
+- **Example:** C2 = 2.4V, C3 = 3.6V, C4 = 4.8V
+
+**Voltage Standard Selection:**
+1. Identify external oscillator voltage standard (check module manual)
+2. Set Hydrasynth to matching standard (System Setup page 7)
+3. Set Reference Note (typically C2, C3, or C4)
+4. Calibrate using CV Offset if needed (±99 cents fine-tuning)
+
+**Multi-Standard Workflow:**
+- **Patch 1:** Eurorack (Octave 0-10V) for modern modular
+- **Patch 2:** Buchla (Hz 0-10V) for West Coast system
+- **Patch 3:** Vintage (Octave 1.2V) for Buchla 200 series
+- **Switch patches** = switch voltage standards instantly
+
+---
+
+**Gate Standards (System Setup Page 7):**
+
+**V-trig (Voltage Trigger) - Modern Standard:**
+- **Logic:** High voltage = note on, Low voltage = note off
+- **Voltage levels:** 3V, 5V, or 10V (user-selectable)
+- **Use case:** Eurorack, modern modular synthesizers (most common)
+- **Compatibility:** Virtually all modern modules
+
+**S-trig (Short Trigger) - Vintage Standard:**
+- **Logic:** Low voltage = note on, High voltage = note off (inverted from V-trig)
+- **Use case:** Vintage Moog, Korg, ARP synthesizers
+- **Compatibility:** Older equipment expecting ground/short trigger
+
+**Gate Voltage Selection:**
+- **3V:** Some vintage equipment, lower voltage modules
+- **5V:** Standard Eurorack (most common, recommended default)
+- **10V:** Buchla, some Serge modules, vintage equipment
+
+**Gate Configuration Strategy:**
+1. Check external module trigger input requirements (manual or online specs)
+2. Set Gate Type (V-trig for modern, S-trig for vintage)
+3. Set Gate Volt (5V default, adjust if module requires different level)
+4. Test: Play note on Hydrasynth, verify external envelope/VCA triggers correctly
+
+---
+
+**Mod In/Out Voltage Ranges (System Setup Page 8):**
+
+**0-5V (Unipolar, Eurorack Standard):**
+- **Range:** 0V = minimum, 5V = maximum
+- **Use case:** Most Eurorack envelopes, unipolar LFOs, sequencer CV
+- **Modulation behavior:** Always positive (adds to parameter value)
+
+**0-10V (Unipolar, Extended Range):**
+- **Range:** 0V = minimum, 10V = maximum
+- **Use case:** Buchla, Serge, modules with extended voltage ranges
+- **Modulation behavior:** Always positive, wider range than 0-5V
+
+**±5V (Bipolar, Standard):**
+- **Range:** -5V to +5V, 0V = center/neutral
+- **Use case:** Bipolar LFOs, modulation sources that go negative
+- **Modulation behavior:** Negative voltages reduce parameter, positive voltages increase
+
+**±10V (Bipolar, Extended Range):**
+- **Range:** -10V to +10V, 0V = center/neutral
+- **Use case:** Extended bipolar modulation
+- **Modulation behavior:** Same as ±5V but wider range
+
+**Voltage Range Matching:**
+- **Mod Out:** Set to match receiving module's CV input range
+- **Mod In:** Set to match sending module's CV output range
+- **Example:** Eurorack LFO outputs 0-5V → Set Mod In = 0-5V
+- **Example:** Buchla function generator outputs ±10V → Set Mod In = ±10V
+
+---
+
+### Eurorack System Hub Techniques
+
+The Hydrasynth can function as the central controller, sound source, or modulation hub within a Eurorack system, leveraging its keyboard, polyphonic aftertouch, modulation system, and CV/Gate outputs to expand modular capabilities.
+
+**Hub Technique 1: Keyboard + Modulation Brain**
+
+**Configuration:**
+- **Pitch Out + Gate Out** → Multiple Eurorack voices (use buffered mult or stackcables)
+- **Mod Out 1** → Envelope 1 output → Distribute to multiple VCA CV inputs
+- **Mod Out 2** → LFO 1 output → Distribute to multiple filter CV inputs
+- **Mod In 1** → Eurorack random source → Hydrasynth Mutant depth modulation
+- **Clock Out** → Eurorack sequencer → Synchronized rhythm generation
+
+**Result:** Hydrasynth provides keyboard control, envelopes, LFOs, and clock for entire modular system while remaining playable as synthesizer
+
+**Hub Technique 2: Polyphonic Aftertouch for Modular**
+
+**Configuration:**
+- **Mod Matrix:** PolyAftT → ModOut 1 (Depth: +127)
+- **System Setup:** Mod Out 1 Voltage Range = 0-5V
+- **Cable:** Mod Out 1 → Eurorack VCA or filter CV input
+- **Pitch/Gate:** Control modular voice from keyboard
+
+**Result:** Polyphonic aftertouch (per-note pressure) controls modular VCA or filter, bringing polyphonic expression to monophonic modular
+
+**Limitation:** Mod Out sends highest pressed key's aftertouch value (priority = High), not truly polyphonic to modular, but enables per-note expression on lead lines
+
+**Hub Technique 3: Macro-Controlled Modular Ecosystem**
+
+**Configuration:**
+- **Hydrasynth Macro 1:** Controls 8 internal parameters (Filter, Mutant, Reverb, etc.)
+- **Mod Out 1 Source:** Macro 1 position
+- **Cable:** Mod Out 1 → Eurorack VCA CV input
+- **Mod Out 2 Source:** Macro 2 position
+- **Cable:** Mod Out 2 → Eurorack delay time CV input
+
+**Result:** Macro knobs control internal Hydrasynth parameters + external modular parameters simultaneously, unified performance control
+
+**Hub Technique 4: Bidirectional Modulation Complex**
+
+**Configuration:**
+- **Hydrasynth → Modular:**
+  - ENV 3 → Mod Out 1 → Eurorack wavefolder CV
+  - LFO 4 → Mod Out 2 → Eurorack VCA CV
+- **Modular → Hydrasynth:**
+  - Eurorack envelope → Mod In 1 → Hydrasynth Filter 2 Morph
+  - Eurorack LFO → Mod In 2 → Hydrasynth WaveScan position
+
+**Result:** Hydrasynth and modular modulate each other, creating complex interdependent timbral evolution
+
+**Hub Technique 5: Master Clock + Sub-Clocks**
+
+**Configuration:**
+- **Clock Out** → Clock multiplier/divider module input
+- **Clock mult output 1** (×4) → Fast sequencer clock
+- **Clock mult output 2** (÷2) → Slow LFO reset
+- **Clock mult output 3** (÷4) → Sample & Hold trigger
+
+**Result:** Single Hydrasynth tempo generates multiple synchronized clock rates for complex polyrhythmic modular patches
+
+**Hub Technique 6: Alternate Tuning for Modular**
+
+**Configuration:**
+- **Hydrasynth:** Select alternative tuning (Just Intonation, Pythagorean, quarter-tone, etc.)
+- **Pitch Out** → Eurorack oscillator 1V/Oct input
+- **Gate Out** → Eurorack envelope trigger
+
+**Result:** Microtonal/historical temperaments applied to modular oscillators, enables non-12TET modular playing without quantizer programming
+
+**Hub Technique 7: Modular as Hydrasynth External Processing**
+
+**Configuration:**
+- **Hydrasynth audio out** → Eurorack filter/distortion/effect input
+- **Mod Out 1** (LFO 1) → Eurorack filter cutoff CV
+- **Mod Out 2** (ENV 1) → Eurorack VCA CV
+- **Eurorack effect output** → Mixer/audio interface
+
+**Result:** Hydrasynth synth voice processed through external modular effects, with synchronized modulation from Hydrasynth LFOs/envelopes
+
+---
+
+### Clock Sync Strategies
+
+The Hydrasynth supports three clock synchronization methods: Internal (Hydrasynth generates tempo), MIDI Clock (external MIDI clock received), and USB Clock (DAW/computer clock received). Clock Out jack converts selected clock source to analog pulses for Eurorack synchronization.
+
+**Access Clock Settings:** Press **[SYSTEM]** → Page to System Setup page 6 → Clock section
+
+---
+
+**Strategy 1: Hydrasynth as Master Clock (Internal)**
+
+**Configuration:**
+- **System Setup:** Clock Source = Internal
+- **Tempo:** Set desired BPM (e.g., 120 BPM)
+- **Clock Rate:** Set PPQN based on receiving device (typically 4 or 8 PPQN for Eurorack)
+- **Cable:** Clock Out → Eurorack sequencer/device clock input
+
+**Use case:** Standalone performance, Hydrasynth controls tempo for entire system
+
+**Advantages:**
+- Simple setup, no external clock needed
+- Tempo knob on Hydrasynth controls everything
+- Arpeggiator, LFOs, and Eurorack all synchronized
+
+**Disadvantages:**
+- Changing tempo requires pressing Tempo button on Hydrasynth
+- No DAW integration for recording
+
+---
+
+**Strategy 2: MIDI Clock from External Sequencer**
+
+**Configuration:**
+- **External:** MIDI sequencer or drum machine sends MIDI clock via 5-pin MIDI
+- **Cable:** External MIDI Out → Hydrasynth MIDI In
+- **System Setup:** Clock Source = MIDI
+- **Clock Rate:** Set PPQN for Clock Out (converted from MIDI clock)
+- **Cable:** Clock Out → Eurorack device clock input
+
+**Use case:** External hardware sequencer controls tempo for Hydrasynth + modular
+
+**Advantages:**
+- External sequencer sets tempo
+- Hydrasynth arpeggiator syncs to external tempo
+- Clock Out provides analog clock for Eurorack from MIDI source
+
+**Disadvantages:**
+- Requires external MIDI clock source
+- MIDI clock can have jitter (less stable than internal)
+
+---
+
+**Strategy 3: USB Clock from DAW (Most Common for Recording)**
+
+**Configuration:**
+- **Cable:** USB cable from computer to Hydrasynth
+- **DAW:** Enable MIDI clock output to Hydrasynth
+- **System Setup:** Clock Source = USB
+- **Clock Rate:** Set PPQN for Clock Out
+- **Cable:** Clock Out → Eurorack device clock input
+
+**Use case:** Recording Hydrasynth + modular synchronized to DAW project tempo
+
+**Advantages:**
+- Perfect sync with DAW for multitrack recording
+- Tempo changes in DAW affect Hydrasynth and modular
+- Clock Out provides analog clock derived from DAW tempo
+
+**Disadvantages:**
+- Requires computer/DAW connection
+- USB clock can have latency (typically minimal)
+
+---
+
+**Strategy 4: Hybrid - MIDI In, Clock Out to Modular**
+
+**Configuration:**
+- **DAW** → MIDI clock via USB → Hydrasynth
+- **Hydrasynth** → Clock Out → Eurorack sequencer
+- **Hydrasynth** → Pitch/Gate Out → Eurorack voice
+- **Eurorack sequencer** → CV → Different Eurorack voice
+
+**Result:** DAW controls tempo, Hydrasynth plays one voice, Eurorack sequencer plays another voice, everything synchronized
+
+**Use case:** Complex arrangements with DAW, Hydrasynth, and modular all playing different parts in sync
+
+---
+
+**PPQN Selection Guide:**
+
+**1 PPQN (1 pulse per quarter note):**
+- **Use case:** Basic step sequencers (one step = one quarter note)
+- **Resolution:** Low, suitable for slow sequences
+
+**4 PPQN (4 pulses per quarter note):**
+- **Use case:** Most Eurorack sequencers (sixteenth note resolution)
+- **Resolution:** Standard for typical modular sequencing
+- **Recommended:** Default for Eurorack systems
+
+**8 PPQN (8 pulses per quarter note):**
+- **Use case:** Higher resolution sequences (thirty-second note resolution)
+- **Resolution:** Good for fast sequences or ratcheting effects
+
+**24 PPQN (MIDI clock standard):**
+- **Use case:** MIDI-to-CV converters expecting MIDI clock rate
+- **Resolution:** Very high, matches MIDI specification
+- **Use case:** Precise synchronization with MIDI-compatible Eurorack modules
+
+**48 PPQN:**
+- **Use case:** Ultra-high resolution, rarely needed
+- **Resolution:** Extremely precise timing
+
+**Testing Clock Sync:**
+1. Set Clock Rate to 4 PPQN (start conservative)
+2. Set Tempo to 120 BPM
+3. Connect Clock Out to external device
+4. Verify external device advances correctly (4 pulses = 1 quarter note)
+5. If too fast/slow, adjust PPQN (increase PPQN = faster pulses, decrease = slower pulses)
+
+---
+
+## Session 4 Complete - CV/Gate/Clock Integration Established
+
+**What Session 4 Added:**
+- Complete CV/Gate/Clock physical interface overview (7 jacks, 3.5mm TS)
+- CV Outputs (Pitch, Gate, Mod Out 1/2, Clock Out) with voltage standards and workflows
+- CV Inputs (Mod In 1/2) with Mod Matrix integration and practical routing examples
+- Voltage standard configuration (V/Oct, Hz/V, Buchla, S-trig, gate voltages)
+- Bidirectional CV workflows (Hydrasynth→modular and modular→Hydrasynth)
+- Eurorack system hub techniques (7 practical integration methods)
+- Clock sync strategies (Internal, MIDI, USB) with PPQN selection guide
+- 15+ practical workflow examples throughout (not just specs)
+
+**Foundation Complete (Sessions 1-4):**
+- ✅ Synthesis engine (oscillators, mutants, mixer, filters)
+- ✅ Modulation system (envelopes, LFOs, Mod Matrix, Macros)
+- ✅ Performance features (ribbon, aftertouch, arpeggiator, voice management, tuning, controllers)
+- ✅ CV/Gate/Clock integration (modular connectivity, voltage standards, system hub techniques)
+
+**Coming in Session 5:**
+- Effects section (Pre-FX, Delay, Reverb, Post-FX)
+- All available effects types and parameters
+- Effects routing strategies
+- System setup and calibration (ribbon, wheels, CV voltage standards)
+- Troubleshooting and maintenance
+- MIDI/USB configuration
+
+**Coming in Session 6:**
+- Patch Examples 1-5 (Basic → Intermediate → Advanced → Expert → Master)
+- Complete programming tutorials with step-by-step instructions
+- Alternative synthesizer options (budget/different character/premium tiers)
+- Pairs Well With (complementary gear)
+- Historical context and synthesis innovations
+
+---
+
+*ASM Hydrasynth Keyboard - Session 4 of 6 - CV/Gate/Clock Integration Complete*
+
+---
+
 ## Session 1 Complete - Foundation Established
 
 **What We've Covered:**
