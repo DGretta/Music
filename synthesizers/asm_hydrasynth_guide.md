@@ -2103,25 +2103,33 @@ The Hydrasynth's voice architecture extends beyond basic 8-voice polyphony, offe
 
 **Voice Parameters - Page 2:**
 
-- **GlidTime (Glide Time):** 0-8000ms (portamento time)
-  - Time to glide from one note's pitch to the next
-  - 0 = no glide (instant pitch change)
-  - 500-1500ms = moderate glide (musical portamento)
-  - 4000-8000ms = slow glide (dramatic pitch sweeps)
-  - **Only active when GlidMode ≠ Off**
+- **Glide Time:** 0-127 (portamento/glissando rate)
+  - Controls speed of pitch transition between notes
+  - 0 = instant pitch change (effectively no glide)
+  - Lower values (1-40) = fast glide/glissando
+  - Medium values (41-85) = moderate musical portamento
+  - Higher values (86-127) = slow dramatic pitch sweeps
+  - **Only active when Glide ≠ Off**
 
-- **GlidMode:** Off, Always, Legato
+- **Glide:** Off, Glide, Glissando (three modes)
   - **Off:** No glide, pitches change instantly
-  - **Always:** Glide occurs between all notes (even when releasing all keys between notes)
-  - **Legato:** Glide only when playing legato (one note held while next is played)
-  - **Use case:** Legato mode enables selective glide (staccato playing = no glide, legato playing = glide)
+  - **Glide:** Smooth continuous pitch slide between notes (traditional portamento)
+  - **Glissando:** Stepped chromatic pitch slide (discrete semitone steps between start and end notes)
+  - **Glissando + non-chromatic scales:** When alternative scale selected (Voice page 3), glissando follows that scale's steps instead of chromatic steps
+  - **Use case:** Glide for smooth portamento, Glissando for chromatic runs or scale-based melodic transitions
 
-- **GlidCurve:** -64 (Logarithmic) to +64 (Exponential)
-  - Shapes glide acceleration
-  - Logarithmic (negative): Fast initial glide, slows as it approaches target
-  - Linear (0): Constant glide speed
-  - Exponential (positive): Slow initial glide, accelerates toward target
-  - **Musical character:** Logarithmic feels natural, exponential feels dramatic
+- **Glide Curve:** Exp (-64) > Lin (0) > Log (64)
+  - Shapes glide/glissando acceleration curve
+  - Exponential (negative values): Rises slowly at first, accelerates upward; falls quickly then slows
+  - Linear (0): Constant rate of change throughout
+  - Logarithmic (positive values): Rises quickly at first, slows near peak; falls slowly then accelerates
+  - **Musical character:** Logarithmic feels natural for upward slides, exponential feels dramatic
+
+- **Glide Legato:** Off, On (separate parameter controlling when glide occurs)
+  - **Off:** All notes glide regardless of playing style (staccato and legato both glide)
+  - **On:** Only legato playing triggers glide (staccato notes change pitch instantly)
+  - **Legato definition:** One note held while next note is played
+  - **Polyphony consideration:** Less predictable in Poly VoiceMode - each voice has independent legato state, glide only occurs when same voice retriggered
 
 - **VoiceMode:** Poly, Mono, Legato
   - **Poly:** Full 8-voice polyphony (or reduced by Unison setting)
@@ -2187,37 +2195,59 @@ The Hydrasynth's voice architecture extends beyond basic 8-voice polyphony, offe
 
 ---
 
-**Glide (Portamento) Applications:**
+**Glide and Glissando Applications:**
 
 **Monophonic Lead with Legato Glide:**
 - VoiceMode: Legato
-- GlidMode: Legato  
-- GlidTime: 80-150ms (fast glide between legato notes)
-- GlidCurve: -20 (logarithmic, natural feel)
+- Glide: Glide (smooth portamento)
+- Glide Legato: On
+- Glide Time: 25-40 (fast glide between legato notes)
+- Glide Curve: +20 (logarithmic, natural upward feel)
 - **Result:** Notes played legato glide smoothly, staccato notes jump instantly
 - **Use case:** Expressive lead playing, slide between some notes, jump to others
 
-**Bass Slide (Always Glide):**
+**Bass Slide (All Notes Glide):**
 - VoiceMode: Mono
-- GlidMode: Always
-- GlidTime: 200-400ms (moderate glide speed)
-- GlidCurve: 0 (linear)
+- Glide: Glide (smooth portamento)
+- Glide Legato: Off (all notes glide)
+- Glide Time: 50-80 (moderate glide speed)
+- Glide Curve: 0 (linear, consistent speed)
 - **Result:** All notes glide to each other, classic bass slide effect
 - **Use case:** Funk/disco bass lines, acid bass
 
+**Chromatic Run (Glissando):**
+- VoiceMode: Mono
+- Glide: Glissando (stepped chromatic)
+- Glide Legato: Off
+- Glide Time: 60-100 (moderate step speed)
+- Glide Curve: 0 (linear)
+- **Result:** Chromatic steps between played notes (like piano glissando)
+- **Use case:** Harp-like runs, chromatic flourishes, vintage synthesizer effects
+
+**Scale-Based Glissando:**
+- Voice page 3: Select non-chromatic scale (e.g., Pentatonic, Blues, Whole Tone)
+- Glide: Glissando (follows selected scale)
+- Glide Legato: Off
+- Glide Time: 70-90
+- **Result:** Glissando follows scale steps instead of chromatic steps
+- **Use case:** Musical melodic transitions, scale-appropriate runs, ethnic music emulation
+
 **Dramatic Pitch Sweep:**
-- GlidMode: Always
-- GlidTime: 3000-6000ms (very slow glide)
-- GlidCurve: +30 (exponential, accelerates toward target)
+- Glide: Glide (smooth portamento)
+- Glide Legato: Off
+- Glide Time: 110-127 (very slow glide)
+- Glide Curve: -40 (exponential, accelerates toward target)
 - **Result:** Slow, dramatic pitch sweeps between notes
 - **Use case:** Intro/outro effects, experimental sounds, cinematic textures
 
 **Polyphonic Glide:**
 - VoiceMode: Poly
-- GlidMode: Always
-- GlidTime: 500-1000ms (moderate glide)
+- Glide: Glide (smooth portamento)
+- Glide Legato: Off
+- Glide Time: 60-90 (moderate glide)
 - **Result:** Each voice glides independently to new notes (unusual, complex movement)
 - **Use case:** Evolving pad textures, morphing chords
+- **Note:** Glide Legato less predictable in Poly mode (each voice has independent legato state)
 
 ---
 
