@@ -4005,12 +4005,29 @@ Common issues and solutions for optimal Hydrasynth performance.
 - Effects section (Pre-FX, Delay, Reverb, Post-FX)
 - System setup and calibration
 - Troubleshooting and maintenance
+
 **Coming in Session 6:**
 - Patch Examples 1-5 (Basic → Intermediate → Advanced → Expert → Master)
 - Alternative synthesizer options
 - Pairs Well With section
 - Historical Context
 - Why This Instrument Excels
+
+---
+
+*ASM Hydrasynth Keyboard - Session 5 of 6 - Effects and System Configuration Complete*
+
+---
+
+- Alternative synthesizer options
+
+- Pairs Well With section
+
+- Historical Context
+
+- Why This Instrument Excels
+
+
 
 ---
 
