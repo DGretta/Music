@@ -106,9 +106,9 @@ If an oscillator "tracks 1V/octave," it means the pitch relationship stays music
 Note  ║ 
   C#  ║ 
   C   ║ ●───────────────────  ← Note at step 1, held
-  B   ║       ●─────          ← Note at step 3
+  B   ║         ●─────         ← Note at step 3
   A#  ║ 
-  A   ║             ●───      ← Note at step 5
+  A   ║                 ●───    ← Note at step 5
   G#  ║ 
       ║─┼───┼───┼───┼───┼───┼
 Step: ║ 1   2   3   4   5   6
