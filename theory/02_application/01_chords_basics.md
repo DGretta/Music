@@ -498,6 +498,175 @@ Powerful, ambiguous, heavy sound
 
 ---
 
+## The Power Chord Exception
+
+### What is a Power Chord?
+
+**A power chord is root + fifth only - technically just two notes.**
+
+```
+C Power Chord (C5):
+  G ●  ← Fifth (7 semitones from C)
+  F
+  E
+  D
+  C ●  ← Root
+
+Only two notes: C and G
+No third = neither major nor minor
+```
+
+**The terminology contradiction:**
+- **Technically:** Not a chord (only two notes = interval)
+- **Practically:** Everyone calls it a "chord" anyway
+- **Reality:** Functions like a chord in musical contexts
+
+**Why the confusion?** Historical usage won out over technical accuracy. The name stuck.
+
+---
+
+### Why Power Chords Work
+
+**The missing third creates ambiguity:**
+```
+C Major:  C-E-G  (third = E, defines major quality)
+C Minor:  C-Eb-G (third = Eb, defines minor quality)
+C Power:  C-G    (no third = ambiguous, could be either)
+```
+
+**This ambiguity is their strength:**
+- Neither happy nor sad - just powerful and direct
+- Can move between major and minor contexts without clashing
+- Your brain fills in harmonic context from melody/bass
+- Works with both major and minor progressions
+
+**Example:**
+```
+Progression: C5 → Am → F5 → G5
+
+C5 works with both C major and C minor contexts
+Am defines minor tonality briefly
+F5 and G5 remain ambiguous
+Overall effect: powerful, not explicitly happy or sad
+```
+
+---
+
+### Why Power Chords Are So Common
+
+**In guitar-based music (rock, metal, punk):**
+
+**1. Sound quality under distortion:**
+```
+C Major (C-E-G) + heavy distortion = muddy, dissonant
+C Power (C-G) + heavy distortion = clear, powerful
+
+Why: Distortion creates additional harmonics (overtones)
+Three-note chords become too harmonically dense
+Two-note intervals stay clear and defined
+```
+
+**2. Easy to play:**
+- Guitar: Two fingers, movable shape, same fingering for all keys
+- Beginner-friendly: First "chord" many guitarists learn
+- Fast movement: Quick position changes for rhythm patterns
+
+**3. Aggressive character:**
+- Thick, powerful, driving sound
+- No soft "third" to sweeten the sound
+- Raw, direct, uncompromising
+- Perfect for heavy music aesthetics
+
+---
+
+### Power Chords in Synthesis
+
+**Two-oscillator setup:**
+```
+Keyboard CV ──┬──▶ OSC 1 (1V/oct) = Root
+              │
+              └──[+0.583V]──▶ OSC 2 = Fifth (+7 semitones)
+              
+Result: Power chord at any pitch
+Ambiguous harmony, powerful sound
+```
+
+**When to use in synthesis:**
+- Bass lines (root + fifth octave up for thickness)
+- Aggressive lead sounds (two detuned oscillators at fifth)
+- Pad sounds (slow attack, root + fifth for hollow texture)
+- When you want harmonic ambiguity (not explicitly major/minor)
+
+**Adding distortion/saturation:**
+- Clean power chord = hollow, open
+- Distorted power chord = thick, aggressive, saturated
+- Heavy processing can make two notes sound like more
+
+---
+
+### Extended Power Chords
+
+**Some variations add extra notes while maintaining power chord character:**
+
+**Octave doubling:**
+```
+C5 with octave: C (low) - G - C (high)
+Three notes, but still called power chord
+Thicker, fuller, more powerful
+```
+
+**Adding root an octave down:**
+```
+C5 with bass: C (very low) - C - G
+Common in metal for maximum heaviness
+Bass note + power chord = massive sound
+```
+
+**In synthesis:**
+```
+OSC 1: Root (low octave) = 0V
+OSC 2: Root (mid) = +1V  
+OSC 3: Fifth (mid) = +1.583V
+
+Three oscillators, still "power chord" character
+```
+
+---
+
+### When NOT to Use Power Chords
+
+**Power chords work great for:**
+- Heavy/aggressive music (rock, metal, industrial)
+- Driving rhythm sections
+- When harmonic ambiguity serves the music
+- Under heavy distortion/processing
+
+**Power chords DON'T work well for:**
+- Jazz (needs harmonic sophistication - thirds, sevenths, extensions)
+- Ballads (often need emotional clarity of major/minor)
+- Complex harmony (progressions that depend on third movement)
+- Clean, acoustic contexts where the "missing" third becomes obvious
+
+**The rule:** If the music needs clear major/minor emotional quality, use full triads. If the music needs power and aggression, power chords excel.
+
+---
+
+### The Bottom Line
+
+**Yes, power chords are technically just intervals (two notes), not chords (three+ notes).**
+
+**But:**
+- Everyone calls them chords
+- They function like chords in musical contexts
+- They have their own legitimate role in harmony
+- The terminology isn't going to change
+
+**For practical purposes:** Treat power chords as a special category - not quite an interval, not quite a full chord, but a musically valid entity with specific uses and character.
+
+**In this curriculum:** We'll continue calling them "power chords" because that's what everyone calls them, while acknowledging they're technically a two-note interval functioning as a chord substitute.
+
+---
+
 ## Try This (If You Want)
 
 ### Exercise 1: Chord Quality Recognition
