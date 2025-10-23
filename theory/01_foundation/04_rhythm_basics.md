@@ -218,6 +218,198 @@ Most gear defaults to 4/4. You can create other feels through clock division and
 
 ---
 
+## Rhythmic Terminology and Beat Names
+
+### Downbeat and Upbeat
+
+**Downbeat:**
+The main beats in a bar - where you'd naturally tap your foot or nod your head.
+
+```
+4/4 time:
+Count:     1    2    3    4  |
+Downbeats: ●    ●    ●    ●  |
+           ↑                   
+        "The one" (strongest downbeat)
+```
+
+**In 4/4 time:** Beats 1, 2, 3, and 4 are downbeats.
+**Why "down":** Historically from conducting - the conductor's hand moves down on these beats.
+
+**Upbeat:**
+The beats between the main beats - the "and" counts.
+
+```
+4/4 with eighth notes:
+Count:     1   &   2   &   3   &   4   &  |
+Downbeats: ●       ●       ●       ●      |
+Upbeats:       ●       ●       ●       ●  |
+           ↓   ↑   ↓   ↑   ↓   ↑   ↓   ↑
+         Down Up Down Up Down Up Down Up
+```
+
+**In synthesis:**
+- Downbeats = clock pulses (main beats)
+- Upbeats = in-between pulses (when clock is multiplied by 2)
+
+**Musical effect:**
+- Playing on downbeats = solid, grounded, predictable
+- Playing on upbeats = floating, syncopated, unexpected
+- Mixing both = rhythmic complexity and interest
+
+### "The One" (Beat 1)
+
+**What it is:** The first beat of each bar - the strongest downbeat.
+
+```
+Bars:      |─────── Bar 1 ─────|─────── Bar 2 ─────|
+Count:     1    2    3    4    1    2    3    4
+The One:   ●                   ●
+           ↑                   ↑
+        Strongest          Strongest
+```
+
+**Why it matters:**
+- Defines where the bar starts
+- Strongest emphasis point
+- Often where kick drum hits in dance music
+- "Finding the one" = understanding where the measure begins
+
+**In practice:**
+- Kick drums often hit on "the one" for emphasis
+- Bass lines often start phrases on "the one"
+- Dropping all elements then bringing them back on "the one" = powerful moment
+
+### Backbeat
+
+**What it is:** Emphasis on beats 2 and 4 in 4/4 time.
+
+```
+4/4 time:
+Count:       1    2    3    4  |
+Backbeat:         ●         ●   |
+                  ↑         ↑
+            Snare hits here
+```
+
+**Why it's called "back" beat:** It emphasizes the "weaker" beats (2 and 4) rather than the "stronger" beats (1 and 3).
+
+**Musical character:**
+- Creates forward motion and groove
+- Essential to rock, funk, pop, most dance music
+- Snare drum typically hits the backbeat
+- Clapping often happens on backbeat
+
+**Classic pattern:**
+```
+Kick:  ●    ●    ●    ●    (on all four beats, or 1 and 3)
+Snare:      ●         ●    (backbeat - 2 and 4)
+Result: "Kick-SNARE-kick-SNARE" (classic drum pattern)
+```
+
+### Strong Beats vs Weak Beats
+
+**In 4/4 time:**
+```
+Count:       1    2    3    4  |
+Strength: Strong Weak Med  Weak |
+          ↑    ↑    ↑    ↑
+          Most      Less
+          emphasis  emphasis
+```
+
+**Beat hierarchy:**
+1. **Beat 1:** Strongest (downbeat, "the one")
+2. **Beat 3:** Medium strong (secondary emphasis)
+3. **Beats 2 and 4:** Weak (but often emphasized for backbeat)
+
+**Why this matters:**
+- Natural emphasis pattern humans perceive
+- Explains why backbeat (emphasizing 2 and 4) creates tension/interest
+- Helps understand where to place important musical events
+
+### On-Beat vs Off-Beat
+
+**On-beat:** Landing directly on the main pulse.
+
+```
+Pulse:    ●    ●    ●    ●  |
+On-beat:  ●    ●    ●    ●  |
+          ↑    ↑    ↑    ↑
+        Aligned with pulse
+```
+
+**Off-beat:** Landing between the main pulses.
+
+```
+Pulse:     ●    ●    ●    ●  |
+Off-beat:    ●    ●    ●    ● |
+             ↑    ↑    ↑    ↑
+          Between pulses
+```
+
+**In eighth notes:**
+```
+Count:    1   &   2   &   3   &   4   &  |
+On-beat:  ●       ●       ●       ●      | (downbeats)
+Off-beat:     ●       ●       ●       ●  | (upbeats)
+```
+
+**Musical styles:**
+- **Reggae/Ska:** Heavy emphasis on off-beats (guitar chops on the "and")
+- **Disco:** Hi-hat often emphasizes off-beats for driving energy
+- **Funk:** Mix of on-beat and off-beat creates syncopation
+
+### "Playing on the Ands"
+
+**What it means:** Playing notes on the upbeats (the "&" counts between numbered beats).
+
+```
+Count:       1   &   2   &   3   &   4   &  |
+Playing:         ●       ●       ●       ●   |
+                 ↑       ↑       ↑       ↑
+              These are "the ands"
+```
+
+**Effect:**
+- Creates syncopation and forward motion
+- Sounds more energetic than only downbeats
+- Essential for funk, disco, house music
+- Hi-hats often play on "the ands" for continuous eighth-note feel
+
+**Example pattern:**
+```
+Bass:    1   -   2   -   3   -   4   -  | (on downbeats only)
+Hi-hat:  1   &   2   &   3   &   4   &  | (on downbeats AND upbeats)
+         ●   ●   ●   ●   ●   ●   ●   ●  |
+```
+
+### Practical Application in Synthesis
+
+**Programming with this terminology:**
+
+**Four-on-the-floor (house/techno):**
+```
+Kick drum on:  The one, and beats 2, 3, 4 (all downbeats)
+Snare on:      Backbeat (2 and 4)
+Hi-hat on:     The ands (all upbeats)
+```
+
+**Syncopated funk pattern:**
+```
+Kick on:   1, the "and" of 2, 4 (mix of on-beat and off-beat)
+Snare on:  Backbeat (2 and 4)
+Hi-hat on: Continuous eighths (on-beat and off-beat)
+```
+
+**When someone says:**
+- "Put the snare on the backbeat" = beats 2 and 4
+- "Emphasize the one" = make beat 1 stronger
+- "Play it on the upbeats" = trigger on the "&" counts
+- "It's too on the nose" = too much emphasis on downbeats, needs syncopation
+
+---
+
 ## Rhythm in Practice
 
 ### Basic Drum Pattern (4/4 Time)
