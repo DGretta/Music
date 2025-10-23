@@ -318,10 +318,10 @@ When connecting different gear:
 
 **This concept connects to:**
 
-→ **[Intervals](intervals_basics.md)** *(Next Topic)*
+→ **[Intervals](02_intervals_basics.md)** *(Next Topic)*
 Understanding what a single note is prepares you to understand the distance between two notes.
 
-→ **[Basic Scales](scales_basics.md)**
+→ **[Basic Scales](03_scales_basics.md)**
 Scales are collections of specific notes. Understanding what notes are makes scales much clearer.
 
 → **[Synthesis Techniques](../../modular/README.md)**

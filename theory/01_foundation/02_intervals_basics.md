@@ -419,7 +419,7 @@ Everything else you'll learn naturally through use. When someone says "add a fou
 
 **This concept connects to:**
 
-→ **[Basic Scales](scales_basics.md)** *(Coming Soon)*
+→ **[Basic Scales](03_scales_basics.md)**
 Scales are specific patterns of intervals. Understanding intervals makes scale formulas make sense.
 
 → **[Chords](../02_application/chords_basics.md)** *(Coming Soon)*
@@ -466,9 +466,9 @@ Recognizing that intervals determine how notes relate sonically and emotionally.
 
 ## Next Steps
 
-**Ready to continue?** Move to [Basic Scales](scales_basics.md) *(Coming Soon)* to learn how specific interval patterns create scales.
+**Ready to continue?** Move to [Basic Scales](03_scales_basics.md) to learn how specific interval patterns create scales.
 
-**Want to review?** Go back to [What is a Note?](pitch_voltage_basics.md) if single-note concepts aren't clear yet.
+**Want to review?** Go back to [What is a Note?](01_pitch_voltage_basics.md) if single-note concepts aren't clear yet.
 
 **Want more depth?** Check the [Interval Reference Tables](../04_reference/interval_reference.md) *(Coming Soon)* for complete interval information.
 

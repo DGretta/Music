@@ -435,7 +435,7 @@ Function:
 
 **This concept connects to:**
 
-→ **[Intervals](intervals_basics.md)** *(Previous Topic)*
+→ **[Intervals](02_intervals_basics.md)** *(Previous Topic)*
 Scales are built from specific interval patterns. Understanding intervals makes scale construction clear.
 
 → **[Chords](../02_application/chords_basics.md)** *(Coming Soon)*
@@ -481,11 +481,11 @@ Knowing which scale to use for which mood and how to apply that knowledge to you
 
 ## Next Steps
 
-**Ready to continue?** Move to [Simple Rhythm](rhythm_basics.md) *(Coming Soon)* to complete the foundation layer.
+**Ready to continue?** Move to [Simple Rhythm](04_rhythm_basics.md) *(Coming Soon)* to complete the foundation layer.
 
 **Want to review?** 
-- Go back to [Intervals](intervals_basics.md) if interval relationships aren't clear
-- Go back to [What is a Note?](pitch_voltage_basics.md) if pitch fundamentals need reinforcement
+- Go back to [Intervals](02_intervals_basics.md) if interval relationships aren't clear
+- Go back to [What is a Note?](01_pitch_voltage_basics.md) if pitch fundamentals need reinforcement
 
 **Want more depth?** Check the [Scale Formulas Library](../04_reference/scale_formulas.md) *(Coming Soon)* for complete scale reference information.
 

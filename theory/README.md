@@ -67,22 +67,22 @@ You'll learn to think about music in whichever way makes sense for what you're d
 
 **Learn the building blocks that everything else depends on:**
 
-1. **[What is a Note?](01_foundation/pitch_voltage_basics.md)** *(Coming Soon)*
+1. **[What is a Note?](01_foundation/01_pitch_voltage_basics.md)**
    - Frequency, pitch, voltage, keyboard position, MIDI note numbers
    - Understanding that these are different views of the same thing
    - How oscillators, sequencers, and quantizers relate to pitch
 
-2. **[Intervals](01_foundation/intervals_basics.md)** *(Coming Soon)*
+2. **[Intervals](01_foundation/02_intervals_basics.md)**
    - Distance between notes (ratios, semitones, sound relationships)
    - Why some intervals sound consonant and others sound dissonant
    - Programming dual oscillators, sync, and FM with intention
 
-3. **[Basic Scales](01_foundation/scales_basics.md)** *(Coming Soon)*
+3. **[Basic Scales](01_foundation/03_scales_basics.md)**
    - Major, minor, and pentatonic scales
    - Why these notes work together
    - Setting up quantizers and programming melodic sequences
 
-4. **[Simple Rhythm](01_foundation/rhythm_basics.md)** *(Coming Soon)*
+4. **[Simple Rhythm](01_foundation/04_rhythm_basics.md)** *(Coming Soon)*
    - Time divisions, clock rates, gate patterns
    - When things happen (as important as what happens)
    - Programming drum patterns and clock dividers
@@ -302,7 +302,7 @@ Theory curriculum is new and evolving. If something doesn't make sense, it's pro
 
 ## Next Steps
 
-**Ready to start?** Head to [What is a Note?](01_foundation/pitch_voltage_basics.md) for the first foundation topic.
+**Ready to start?** Head to [What is a Note?](01_foundation/01_pitch_voltage_basics.md) for the first foundation topic.
 
 **Want to see how theory integrates with gear?** Check any module guide - theory explanations are included inline with links back to detailed curriculum content.
 
