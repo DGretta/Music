@@ -521,6 +521,323 @@ OSC 3: +0.583V   (G)
 
 ---
 
+## Progressions for Monophonic Bass
+
+### Bass Lines Outlining Progressions
+
+**A monophonic bass line can outline an entire chord progression.**
+
+**Most synthesizers are monophonic** - but progressions still apply. The bass line implies the harmony by playing strategic notes from each chord.
+
+---
+
+### Root Note Progressions
+
+**The simplest approach: play the root of each chord.**
+
+**I-IV-V-I in C major:**
+```
+Chords:     I (C maj)  IV (F maj)  V (G maj)  I (C maj)
+Bass line:  C          F           G          C
+
+Single notes, but clearly implies progression
+Listener's brain fills in the chords
+```
+
+**Why this works:**
+- Root note is the strongest identifier of a chord
+- Establishes harmonic foundation
+- Classic bass line technique
+- Works with any monophonic instrument
+
+**Example sequence:**
+```
+Bar 1 (I):   C ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ (whole note)
+Bar 2 (IV):  F ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ (whole note)
+Bar 3 (V):   G ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ (whole note)
+Bar 4 (I):   C ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ (whole note)
+
+Simple, clear, functional
+```
+
+---
+
+### Adding Rhythmic Interest
+
+**Static whole notes are boring. Add rhythm.**
+
+**I-IV-V-I with rhythmic variation:**
+```
+Bar 1 (I):   C ■■ C ■■ C ■■ C ■■ (quarter notes)
+Bar 2 (IV):  F ■■■■ F ■■■■ F ■■■■ F ■■■■ (half notes)
+Bar 3 (V):   G ■ G ■ G ■ G ■ G ■ G ■ G ■ G ■ (eighth notes, builds energy)
+Bar 4 (I):   C ─────────────── (whole note, resolves)
+
+Same progression, rhythmic variety creates interest
+```
+
+**Syncopation:**
+```
+Bar 1 (I):   C ■■ - ■■ - ■■ C ■■ (syncopated)
+Bar 2 (IV):  F ■■ F ■■ - ■■ F ■■ (off-beat emphasis)
+
+Off-beat accents create groove
+```
+
+---
+
+### Adding Chord Tones
+
+**Root + fifth creates more harmonic information.**
+
+**I-IV-V-I with fifths:**
+```
+Bar 1 (I - C major):   C → G (root-fifth)
+Bar 2 (IV - F major):  F → C (root-fifth)
+Bar 3 (V - G major):   G → D (root-fifth)
+Bar 4 (I - C major):   C → G (root-fifth)
+
+Two notes per chord, more harmonic clarity
+```
+
+**Root + third defines major/minor quality:**
+```
+Bar 1 (I):   C → E (root-third, shows major)
+Bar 2 (IV):  F → A (root-third, shows major)
+Bar 3 (V):   G → B (root-third, shows major)
+Bar 4 (I):   C → E (root-third, shows major)
+
+Defines chord quality, not just root
+```
+
+**Full arpeggios (root-third-fifth):**
+```
+Bar 1 (I):   C → E → G → E
+Bar 2 (IV):  F → A → C → A
+Bar 3 (V):   G → B → D → B
+Bar 4 (I):   C → E → G → C
+
+Complete chord information in bass line
+```
+
+---
+
+### Walking Bass Lines
+
+**Stepwise connection between chord roots.**
+
+**I-IV-V-I walking bass:**
+```
+Bar 1 (I):   C → D (approach to IV)
+Bar 2 (IV):  F → G (approach to V)
+Bar 3 (V):   G → F → E → D (descending to I)
+Bar 4 (I):   C (resolution)
+
+Smooth stepwise movement between chords
+Jazz/blues technique
+```
+
+**Chromatic approach:**
+```
+Bar 1 (I):   C → Db → D → Eb (chromatic climb)
+Bar 2 (IV):  F → F# (chromatic approach to G)
+Bar 3 (V):   G → F# → F → E (chromatic descent)
+Bar 4 (I):   C (resolution)
+
+Half-step movements create smooth connection
+```
+
+---
+
+### Common Bass Line Patterns
+
+**Pattern 1: Root on downbeat**
+```
+Beat:  1    &    2    &    3    &    4    &
+Note:  C         C         C         C
+       ■         ■         ■         ■
+
+Solid, on-beat, establishes harmony clearly
+```
+
+**Pattern 2: Root-fifth alternation**
+```
+Beat:  1    &    2    &    3    &    4    &
+Note:  C    G    C    G    C    G    C    G
+       ■    ■    ■    ■    ■    ■    ■    ■
+
+Driving, powerful, emphasizes both root and fifth
+Classic disco/house pattern
+```
+
+**Pattern 3: Syncopated**
+```
+Beat:  1    &    2    &    3    &    4    &
+Note:  C         C    C              C    C
+       ■         ■    ■              ■    ■
+
+Off-beat emphasis creates groove
+Funk/R&B technique
+```
+
+**Pattern 4: Octave jump**
+```
+Beat:  1    &    2    &    3    &    4    &
+Note:  C         C         C         C
+       low       high      low       high
+
+Same root, different octaves
+Thick, full, powerful sound
+```
+
+---
+
+### Progression Examples for Mono Bass
+
+**I-V-vi-IV (Pop progression) in C major:**
+
+**Root notes only:**
+```
+Bar 1 (I):   C
+Bar 2 (V):   G
+Bar 3 (vi):  A
+Bar 4 (IV):  F
+
+Back to Bar 1 (loops)
+```
+
+**With fifths:**
+```
+Bar 1 (I):   C → G → C → G
+Bar 2 (V):   G → D → G → D
+Bar 3 (vi):  A → E → A → E
+Bar 4 (IV):  F → C → F → C
+```
+
+**Full arpeggios:**
+```
+Bar 1 (I):   C → E → G → E
+Bar 2 (V):   G → B → D → B
+Bar 3 (vi):  A → C → E → C
+Bar 4 (IV):  F → A → C → A
+```
+
+---
+
+**ii-V-I (Jazz progression) in C major:**
+
+**Walking bass:**
+```
+Bar 1 (ii - Dm):  D → E → F → F#
+Bar 2 (V - G7):   G → F → E → D
+Bar 3 (I - Cmaj): C (resolution)
+
+Stepwise movement, chromatic approach (F#)
+Classic jazz bass line
+```
+
+**Root-third-fifth arpeggios:**
+```
+Bar 1 (ii):  D → F → A → F
+Bar 2 (V):   G → B → D → F (adds seventh!)
+Bar 3 (I):   C → E → G → E
+
+Arpeggios outline seventh chords
+```
+
+---
+
+**I-bVII-IV (Rock progression) in C major:**
+
+**Power chord style (root-fifth):**
+```
+Bar 1 (I):    C → G → C → G
+Bar 2 (bVII): Bb → F → Bb → F
+Bar 3 (IV):   F → C → F → C
+
+Powerful, driving, rock aesthetic
+```
+
+**Octave jumps:**
+```
+Bar 1 (I):    C-low C-high C-low C-high
+Bar 2 (bVII): Bb-low Bb-high Bb-low Bb-high
+Bar 3 (IV):   F-low F-high F-low F-high
+
+Thick, heavy, maximum impact
+```
+
+---
+
+### Sequencing Monophonic Progressions
+
+**Practical approach for mono bass sequencers:**
+
+**Step 1: Determine your progression**
+```
+I-IV-V-I in C major
+```
+
+**Step 2: Choose your pattern**
+```
+Root-fifth alternation (simple, effective)
+```
+
+**Step 3: Program each bar**
+```
+Bar 1 (16 steps, I):  C-G-C-G-C-G-C-G-C-G-C-G-C-G-C-G
+Bar 2 (16 steps, IV): F-C-F-C-F-C-F-C-F-C-F-C-F-C-F-C
+Bar 3 (16 steps, V):  G-D-G-D-G-D-G-D-G-D-G-D-G-D-G-D
+Bar 4 (16 steps, I):  C-G-C-G-C-G-C-G-C-G-C-G-C-G-C-G
+```
+
+**Step 4: Add variation**
+```
+Vary rhythm, gate lengths, octaves
+Add fills on bar 4
+Create version for verse, different for chorus
+```
+
+---
+
+### TB-303 Style Bass Lines
+
+**The classic acid bass technique:**
+
+**Characteristics:**
+- Root-heavy with occasional fifths and octaves
+- Syncopated (off-beat accents)
+- Slides between notes
+- Filter automation follows rhythm
+
+**I-IV-V-I acid bass:**
+```
+Bar 1 (I):   C → - → C → G → C (slide) → C
+Bar 2 (IV):  F → F → - → C → F (slide) → F
+Bar 3 (V):   G → - → G → D → G → -
+Bar 4 (I):   C → C → G → - → C (slide) → C
+
+- = rest
+(slide) = glide/portamento between notes
+Syncopated, energetic, classic 303 feel
+```
+
+---
+
+### Why Progressions Matter for Mono Bass
+
+**Even with one note at a time:**
+
+1. **You're outlining chords** (arpeggio or root emphasis)
+2. **You're creating harmonic movement** (progression feels)
+3. **You're establishing key** (tonic function)
+4. **You're supporting other elements** (melody, drums)
+5. **You're telling the harmonic story** (tension/release)
+
+**Bottom line:** A monophonic bass line playing the right notes at the right time can imply an entire chord progression. Understanding progressions helps you choose which notes to play.
+
+---
+
 ## Common Confusions Addressed
 
 ### "Can I use any chords in any order?"
