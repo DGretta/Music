@@ -57,6 +57,13 @@
 - **Impact:** Wider accessibility without sacrificing technical accuracy
 - **Status:** IMPLEMENTED - Modified electronics guide terminology
 
+**ID: 007 - Relative Major/Minor Relationship Emphasis**
+- **Observation:** User discovered C major and A minor use same notes - significant "aha moment" not emphasized enough in current curriculum
+- **Solution:** Add prominent callout/section in Scales module about relative keys, add practical "same quantizer, different feeling" examples
+- **Impact:** Users understand why one quantizer setting can create both major and minor sequences, major practical discovery
+- **Status:** FUTURE - After Reference Layer complete, enhance Scales module with relative key emphasis and practical sequencing examples
+- **Location:** `theory/01_foundation/03_scales_basics.md` - add prominent section on relative major/minor with quantizer programming examples
+
 ---
 
 ## **Review Log**
