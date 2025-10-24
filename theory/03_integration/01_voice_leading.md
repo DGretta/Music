@@ -548,6 +548,33 @@ Can't control individual voice movement
 
 ---
 
+### "How does voice leading apply to my monosynth?"
+
+**Voice leading is fundamentally about multiple voices moving simultaneously.**
+
+If you only have one monophonic synthesizer:
+- Voice leading principles don't directly apply (you can't have multiple voices)
+- The concepts become relevant when you have:
+  - **Multiple mono synths** (each synth = one voice)
+  - **Multiple sequencer tracks** (each track = one voice)
+  - **Arranging/layering** (adding voices over time)
+  - **Future expansion** (understanding for when you add voices)
+
+**Practical application:**
+- **One monosynth:** Focus on melody construction and chord outlining (see Chords and Progressions modules for monophonic techniques)
+- **Two+ monosynths:** Voice leading applies - program each synth with smooth movement between chord changes
+- **Modular with mult:** Split CV to multiple oscillators = voice leading matters
+
+**Understanding voice leading helps even with mono:**
+- When you eventually layer multiple elements
+- When arranging with multiple instruments/tracks
+- When understanding how professional music achieves smoothness
+- When programming sequences that will have harmony added later
+
+**Bottom line:** Voice leading is a multi-voice concept. If you currently work monophonically, file this knowledge for when you add more voices to your setup.
+
+---
+
 ## Try This (If You Want)
 
 ### Exercise 1: Voice Leading Analysis
