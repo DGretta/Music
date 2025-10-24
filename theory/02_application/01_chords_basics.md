@@ -435,6 +435,343 @@ Keyboard CV ──┬──▶ OSC 1 = Root (C, lower octave)
 
 ---
 
+## Chords for Monophonic Synthesis
+
+### The Monophonic Reality
+
+**Most synthesizers are monophonic** - they can only play one note at a time. This includes:
+- Classic monosynths (Minimoog, TB-303, SH-101)
+- Most modular systems (single voice)
+- Many bass synths and lead synths
+- Single-oscillator setups
+
+**But chord theory still matters for monophonic synthesis.** Here's how:
+
+---
+
+### Chords as Arpeggios
+
+**An arpeggio is a chord played one note at a time.**
+
+**C major chord (simultaneous):**
+```
+All at once: C + E + G
+Three oscillators playing together
+```
+
+**C major arpeggio (sequential):**
+```
+Step:  1    2    3    4    5    6    7    8
+Note:  C    E    G    E    C    G    E    C
+       ●    ●    ●    ●    ●    ●    ●    ●
+
+Same three notes (C-E-G), played in sequence
+Brain still hears "C major chord"
+```
+
+**Why this works:**
+- Human perception combines rapid sequential notes into harmony
+- The arpeggio outlines the chord
+- Creates harmonic impression without simultaneous notes
+- Essential technique for monophonic sequencing
+
+**Common arpeggio patterns:**
+
+**Up pattern:**
+```
+C → E → G → C (octave up)
+Root → Third → Fifth → Octave
+Classic, ascending, builds energy
+```
+
+**Down pattern:**
+```
+C (octave up) → G → E → C
+Octave → Fifth → Third → Root
+Descending, releases energy
+```
+
+**Up-down pattern:**
+```
+C → E → G → E (back down)
+Root → Third → Fifth → Third
+Smooth, flowing, natural
+```
+
+**Alternating pattern:**
+```
+C → G → E → G (skipping around)
+Creates movement and interest
+```
+
+---
+
+### Bass Lines Outlining Chords
+
+**A bass line can imply a full chord progression by playing roots.**
+
+**Chord progression: C major → F major → G major → C major**
+
+**Full chords (polyphonic):**
+```
+Bar 1: C-E-G (C major)
+Bar 2: F-A-C (F major)
+Bar 3: G-B-D (G major)
+Bar 4: C-E-G (C major)
+```
+
+**Bass line only (monophonic):**
+```
+Bar 1: C (root of C major)
+Bar 2: F (root of F major)
+Bar 3: G (root of G major)
+Bar 4: C (root of C major)
+
+Single notes, but implies full I-IV-V-I progression
+```
+
+**Why this works:**
+- Root note strongly defines the chord
+- Listener's brain fills in the rest
+- Other elements (melody, drums) provide context
+- Classic bass line technique
+
+**Enhanced bass lines (add chord tones):**
+
+**Adding fifths:**
+```
+Bar 1: C → G (root-fifth)
+Bar 2: F → C (root-fifth)
+Bar 3: G → D (root-fifth)
+Bar 4: C → G (root-fifth)
+
+More harmonic information than root alone
+```
+
+**Adding thirds:**
+```
+Bar 1: C → E → G (root-third-fifth = arpeggio)
+Bar 2: F → A → C
+Bar 3: G → B → D
+Bar 4: C → E → G
+
+Full chord arpeggiated in bass line
+```
+
+**Walking bass (stepwise connection):**
+```
+C → D → E → F → G → A → B → C
+
+Connects chord roots with stepwise movement
+Jazz/blues technique, very smooth
+```
+
+---
+
+### Power Chord Bass Lines
+
+**Power chords work perfectly for monophonic bass lines.**
+
+**C5 power chord pattern:**
+```
+Step:  1    2    3    4    5    6    7    8
+Note:  C    G    C    G    C    G    C    C
+       ●    ●    ●    ●    ●    ●    ●    ●
+
+Alternating root-fifth
+Powerful, driving, unambiguous
+```
+
+**Octave jump pattern:**
+```
+Step:  1    2    3    4    5    6    7    8
+Note:  C    C    C    C    C    C    C    C
+       low  high low  high low  high low  high
+
+Same note, different octaves
+Thick, powerful, simple
+```
+
+**Root-fifth-octave pattern:**
+```
+Step:  1    2    3    4    5    6    7    8
+Note:  C    G    C    -    C    G    C    -
+       low  low  high      low  low  high
+
+Complete power chord as arpeggio
+Rest on step 4, 8 creates space
+```
+
+**Why power chords work for mono bass:**
+- Only two different notes needed (root + fifth)
+- Harmonically ambiguous (works with major or minor on top)
+- Heavy, powerful character
+- Easy to program and play
+
+---
+
+### Implying Chord Changes
+
+**You can outline an entire progression with one monophonic voice.**
+
+**Example: I-vi-IV-V in C major**
+
+**Method 1: Root notes only**
+```
+Bar 1 (I - C major):    C
+Bar 2 (vi - A minor):   A
+Bar 3 (IV - F major):   F
+Bar 4 (V - G major):    G
+
+Simplest approach, clear harmonic movement
+```
+
+**Method 2: Root + fifth per bar**
+```
+Bar 1 (I):     C → G
+Bar 2 (vi):    A → E
+Bar 3 (IV):    F → C
+Bar 4 (V):     G → D
+
+More harmonic information
+```
+
+**Method 3: Full arpeggios**
+```
+Bar 1 (I):     C → E → G → E
+Bar 2 (vi):    A → C → E → C
+Bar 3 (IV):    F → A → C → A
+Bar 4 (V):     G → B → D → B
+
+Complete harmonic picture
+Most information per voice
+```
+
+**Method 4: Melodic approach (chord tones with passing tones)**
+```
+Bar 1 (I):     C → D → E → F → G
+Bar 2 (vi):    A → G → F → E
+Bar 3 (IV):    F → G → A → G → F
+Bar 4 (V):     G → A → B → A → G
+
+Melodic line that outlines chords
+Land on chord tones, connect with passing tones
+```
+
+---
+
+### Sequencing Chords with One Oscillator
+
+**Practical monosynth sequencing techniques:**
+
+**Technique 1: Chord-per-bar arpeggios**
+```
+Set sequencer to 16 steps per bar
+
+Bar 1 (C major): C-E-G-C repeated 4 times
+Bar 2 (F major): F-A-C-F repeated 4 times
+Bar 3 (G major): G-B-D-G repeated 4 times
+Bar 4 (C major): C-E-G-C repeated 4 times
+
+Each bar arpeggiates one chord
+```
+
+**Technique 2: Rhythm + chord tones**
+```
+Use rhythmic pattern, vary pitch per chord:
+
+Rhythm: ■■ ■■ ■■■■ ■■ (kick-snare-kick-snare)
+
+Bar 1 (C major): C-C-E-C (rhythm on chord tones)
+Bar 2 (F major): F-F-A-F
+Bar 3 (G major): G-G-B-G
+Bar 4 (C major): C-C-E-C
+
+Rhythm stays consistent, pitches follow chords
+```
+
+**Technique 3: Hybrid (melody + chord outline)**
+```
+Create melodic line that emphasizes chord tones:
+
+Bar 1 (C major): C → D → E → G (stepwise to chord tones)
+Bar 2 (F major): F → G → A → C
+Bar 3 (G major): B → A → G → D (chord tones with passing)
+Bar 4 (C major): E → D → C (resolve to root)
+
+Melody + harmony combined
+```
+
+---
+
+### Monophonic Voicing Considerations
+
+**When you can only play one note at a time:**
+
+**Emphasize important notes:**
+- **Root notes on downbeats** (establish harmony)
+- **Thirds on accents** (define major/minor quality)
+- **Fifths for stability** (consonant, strong)
+- **Passing tones on weak beats** (connect chord tones)
+
+**Register matters:**
+- **Low register (bass):** Emphasize roots and fifths
+- **Mid register (lead):** Use full arpeggios, melodic lines
+- **High register (melody):** Chord tones with ornamentation
+
+**Gate length creates character:**
+- **Short gates (staccato):** Punchy arpeggios, rhythmic emphasis
+- **Long gates (legato):** Smooth, connected, melodic feel
+- **Mixed gates:** Varied articulation creates phrasing
+
+---
+
+### Multiple Monophonic Synths = Chords
+
+**If you have multiple monosynths:**
+
+**Three monosynths = full triad:**
+```
+Synth 1 (bass):  C (root)
+Synth 2 (mid):   E (third)
+Synth 3 (lead):  G (fifth)
+
+Three monophonic voices = C major chord
+```
+
+**Two monosynths = power chord or root+third:**
+```
+Option 1 (power chord):
+Synth 1: C (root)
+Synth 2: G (fifth)
+
+Option 2 (define quality):
+Synth 1: C (root)
+Synth 2: E (major third) or Eb (minor third)
+```
+
+**Sequencing multiple monos:**
+- Each synth gets one note of the chord
+- Change notes together for chord changes
+- Creates full harmony from monophonic parts
+- Classic modular technique
+
+---
+
+### Why Chord Theory Matters for Mono
+
+**Even with one note at a time, you need to know:**
+
+1. **Which notes belong to which chords** (for arpeggios)
+2. **How chords move in progressions** (for bass lines)
+3. **Chord tones vs passing tones** (for melodic lines)
+4. **Major vs minor quality** (for defining harmony)
+5. **Root-third-fifth relationships** (for note selection)
+
+**Bottom line:** Understanding chords helps you make informed choices about which single notes to play and when. Even monophonic music exists within harmonic context.
+
+---
+
 ## Common Confusions Addressed
 
 ### "What's the difference between a chord and an interval?"
