@@ -26,109 +26,171 @@
 
 ## **Page 1: Curriculum Structure - Integrated Learning Path**
 
-### **Foundation Layer (Beginner Skills):**
+### **Foundation Layer (Beginner Skills) - ✓ COMPLETE**
 
-**What is a Note?**
+**Status:** All 4 foundation modules built and committed
+
+**01 - Notes and Pitch** (`theory/01_foundation/01_notes_pitch_basics.md`)
 - **Integrated presentation:** Frequency (Hz), pitch names, voltage (1V/octave), keyboard position, MIDI note numbers
 - **Why it matters:** Understanding that these are all different ways to describe the same musical phenomenon
 - **Practical application:** Programming sequences, understanding oscillator tracking, setting quantizers
 - **Learning objective:** Can identify and program specific pitches using any reference system
+- **Built:** ✓ Complete with all vocabulary perspectives, exercises, and synthesis applications
 
-**Intervals**
+**02 - Intervals** (`theory/01_foundation/02_intervals_basics.md`)
 - **Integrated presentation:** Mathematical ratios (2:1, 3:2), semitone distances, sonic relationships, keyboard shapes
 - **Why it matters:** Foundation for everything else - scales, chords, harmony all built from intervals
 - **Practical application:** Creating melodies, programming dual oscillators, understanding sync and FM
 - **Learning objective:** Can hear and program interval relationships intentionally
+- **Built:** ✓ Complete with consonance/dissonance, voltage calculations, and synthesis applications
 
-**Basic Scales**
+**03 - Basic Scales** (`theory/01_foundation/03_scales_basics.md`)
 - **Integrated presentation:** Formulas (W-W-H-W-W-W-H), frequency relationships, quantizer patterns, keyboard shapes
 - **Why it matters:** Provides "safe notes" that work together, foundation for melody and harmony
 - **Practical application:** Setting up quantizers, programming melodic sequences, choosing preset scales
 - **Learning objective:** Can construct and use major/minor/pentatonic scales in any key
+- **Built:** ✓ Complete with major, natural minor, harmonic minor, pentatonic, and blues scales
 
-**Simple Rhythm**
+**04 - Rhythm Fundamentals** (`theory/01_foundation/04_rhythm_basics.md`)
 - **Integrated presentation:** Time divisions, clock rates, gate patterns, note duration, metric hierarchy
 - **Why it matters:** When things happen is as important as what happens
 - **Practical application:** Clock dividers, sequencer timing, programming drum patterns, gate length
 - **Learning objective:** Can program intentional rhythmic relationships and variations
+- **Built:** ✓ Complete with time signatures, note values, subdivisions, and sequencer applications
 
-### **Application Layer (Intermediate Skills):**
+### **Application Layer (Intermediate Skills) - ✓ COMPLETE**
 
-**Chords**
+**Status:** All 4 application modules built and committed, with monophonic synthesis additions
+
+**01 - Chords** (`theory/02_application/01_chords_basics.md`)
 - **Integrated presentation:** Stacked intervals, voltage relationships, harmonic series, keyboard voicings
 - **Why it matters:** Multiple notes sounding together create emotional character
 - **Practical application:** Programming chord sequences, stacking oscillators, understanding arpeggios
 - **Learning objective:** Can construct and program basic triads and seventh chords
+- **Built:** ✓ Complete with triads, seventh chords, power chords, inversions, voicings
+- **Enhanced:** ✓ Added comprehensive "Chords for Monophonic Synthesis" section (arpeggios, bass line outlining, power chord patterns)
 
-**Progressions**
+**02 - Progressions** (`theory/02_application/02_progressions_basics.md`)
 - **Integrated presentation:** Functional harmony basics, tension/release, common patterns, voice leading
 - **Why it matters:** Movement between chords creates musical narrative and emotional journey
 - **Practical application:** Sequencing chord changes, understanding song structure, creating variations
 - **Learning objective:** Can program common progressions and understand why they work
+- **Built:** ✓ Complete with I-IV-V, I-V-vi-IV, ii-V-I, cadences, and functional harmony
+- **Enhanced:** ✓ Added comprehensive "Progressions for Monophonic Bass" section (bass line patterns, walking bass, TB-303 style)
 
-**Melody Construction**
+**03 - Melody Construction** (`theory/02_application/03_melody_basics.md`)
 - **Integrated presentation:** Using scales/intervals intentionally, contour, phrasing, relationship to harmony
 - **Why it matters:** Creating memorable, intentional melodic lines rather than random note selection
 - **Practical application:** Programming lead lines, bass lines, counter-melodies
 - **Learning objective:** Can create melodic sequences that complement harmonic structure
+- **Built:** ✓ Complete with melodic contour, chord tone emphasis, rhythmic variation, and phrase structure
 
-**Rhythm Complexity**
+**04 - Rhythm Complexity** (`theory/02_application/04_rhythm_advanced.md`)
 - **Integrated presentation:** Syncopation, polyrhythms, clock division relationships, swing/groove
 - **Why it matters:** Rhythmic variation creates interest and movement
 - **Practical application:** Advanced sequencer programming, multiple clock sources, groove quantization
 - **Learning objective:** Can program complex rhythmic interactions intentionally
+- **Built:** ✓ Complete with syncopation, polyrhythms, metric modulation, and groove programming
 
-### **Integration Layer (Advanced Skills):**
+### **Integration Layer (Advanced Skills) - ✓ COMPLETE**
 
-**Voice Leading**
+**Status:** All 4 integration modules built and committed
+
+**01 - Voice Leading** (`theory/03_integration/01_voice_leading.md`)
 - **Integrated presentation:** Smooth transitions, counterpoint basics, independent lines, avoiding parallel motion
 - **Why it matters:** Multiple musical lines moving together with minimal awkward jumps
 - **Practical application:** Multi-voice sequencing, polyphonic patches, arrangement techniques
 - **Learning objective:** Can program multiple voices that move smoothly and independently
+- **Built:** ✓ Complete with three principles (minimal movement, common tones, contrary motion), voice leading techniques, and multi-voice examples
+- **Enhanced:** ✓ Added monophonic clarification (inherently multi-voice concept, when it applies)
 
-**Modulation**
+**02 - Modulation** (`theory/03_integration/02_modulation.md`)
 - **Integrated presentation:** Changing keys, pivot chords, tension/release, tonicization
 - **Why it matters:** Creates large-scale harmonic movement and interest over time
 - **Practical application:** Song sections, creative use of quantizers, key changes in sequences
 - **Learning objective:** Can plan and execute intentional key changes
+- **Built:** ✓ Complete with related keys, modulation techniques (pivot chord, direct, chromatic, sequential), and practical sequencing applications
+- **CRITICAL:** ✓ Distinguished music theory modulation from synthesis modulation (LFO) at start of module
 
-**Form and Arrangement**
+**03 - Form and Arrangement** (`theory/03_integration/03_form_arrangement.md`)
 - **Integrated presentation:** Song structures, development, variation, repetition and contrast
 - **Why it matters:** Organizing musical ideas into complete, satisfying compositions
 - **Practical application:** Track arrangement, section planning, building complete pieces
 - **Learning objective:** Can structure complete compositions with intentional form
+- **Built:** ✓ Complete with common forms (verse-chorus, AABA, 12-bar blues, build-drop), section functions, arrangement techniques, and energy curves
 
-**Synthesis + Theory Integration**
+**04 - Synthesis + Theory Connection** (`theory/03_integration/04_synthesis_theory_connection.md`)
 - **Integrated presentation:** How harmonic content relates to filter cutoffs, envelope shaping and musical phrasing, modulation depth and musical expression
 - **Why it matters:** Synthesis parameters are musical parameters - understanding theory improves sound design
 - **Practical application:** Musical filter programming, envelope timing, modulation musicality
 - **Learning objective:** Can make informed synthesis choices based on harmonic/melodic context
+- **Built:** ✓ Complete with waveform harmonics, filters as harmonic control, envelopes as phrasing, oscillator tuning/intervals, FM ratios, and LFO musical time
+- **Enhanced:** ✓ Added comprehensive "Practical Tuning Techniques" section (7 methods including by ear, keyboard reference, octave switches, Mordax Data, guitar tuners/phone apps, CV/quantizer, beatings method)
 
-### **Reference Layer (Consolidated Resources):**
+### **Reference Layer (Quick Lookup Resources) - ⚙️ IN PROGRESS (4 of 7 complete)**
 
-**Frequency Charts and Voltage Tables**
-- Concert pitch reference (A440)
-- MIDI note numbers to frequency
-- Voltage per octave calculations
-- Common tuning references
+**Status:** Core references built, advanced references pending
 
-**Scale Formulas and Interval Ratios**
-- Complete scale formula library
-- Interval ratio reference
-- Mode relationships
-- Common alterations
+**✓ 01 - Intervals Reference** (`theory/04_reference/intervals_reference.md`)
+- All 13 intervals (unison to octave) with semitones, ratios, consonance, voltages
+- Frequency calculation formulas and complete frequency tables (C0-C8)
+- Voltage calculations for 1V/octave standard (positive and negative)
+- Cents and fine-tuning (detune values, microtuning)
+- Interval inversions and common synthesis applications
+- **Built:** ✓ Complete comprehensive interval lookup tables
 
-**Chord Construction Reference**
-- Triad formulas
-- Seventh chord types
-- Extended harmony basics
-- Common substitutions
+**✓ 02 - Scales Reference** (`theory/04_reference/scales_reference.md`)
+- Major scale in all 12 keys with diatonic chords
+- Natural, harmonic, and melodic minor in all keys
+- Major and minor pentatonic in all keys
+- Major and minor blues scales
+- All seven modes (Ionian through Locrian) with detailed coverage of Dorian, Mixolydian, Phrygian, Lydian
+- Scale formulas (W-W-H-W notation), voltage patterns, selection guide by mood/genre
+- **Built:** ✓ Complete comprehensive scale lookup in all keys
 
-**Glossary - Bridging All Vocabularies**
-- Traditional music terms
-- Synthesis terminology
-- Mathematics/frequency concepts
-- Cross-referenced definitions
+**✓ 03 - Chords Reference** (`theory/04_reference/chords_reference.md`)
+- Triads: major, minor, diminished, augmented in all keys
+- Seventh chords: dominant 7, maj7, m7, m(maj7), m7♭5, dim7
+- Suspended chords: sus2 and sus4
+- Power chords (root + fifth) in all keys
+- Extended chords: 9ths, add chords, 6th chords
+- Chord formulas, voltage calculations, inversions, voicings (close, open, drop-2, drop-3)
+- Multi-oscillator programming examples and chord functions in keys
+- **Built:** ✓ Complete comprehensive chord construction lookup
+
+**✓ 04 - Progressions Reference** (`theory/04_reference/progressions_reference.md`)
+- Major key progressions: I-IV-V-I, I-V-vi-IV, I-vi-IV-V, I-bVII-IV in all keys
+- Minor key progressions: i-iv-v-i, i-iv-V-i, i-VI-III-VII in all keys
+- Jazz progressions: ii-V-I (major and minor), I-VI-ii-V
+- Blues progressions: 12-bar blues (basic and quick change)
+- Modal progressions: Dorian, Mixolydian, Phrygian
+- Electronic music progressions, bass line patterns, selection guide by function/genre
+- **Built:** ✓ Complete comprehensive progression lookup
+
+**⚙️ 05 - Voice Leading Reference** (`theory/04_reference/voice_leading_reference.md`)
+- Common progressions with optimal voice leading
+- Smooth vs rough voice leading examples
+- Chord inversion choices for minimal movement
+- **Status:** Not yet built
+
+**⚙️ 06 - Modulation Reference** (`theory/04_reference/modulation_reference.md`)
+- Key relationship chart (circle of fifths)
+- Closely related and distant key relationships
+- Pivot chord tables (common chords between keys)
+- Common modulation techniques and examples
+- **Status:** Not yet built
+
+**⚙️ 07 - Form and Arrangement Reference** (`theory/04_reference/form_reference.md`)
+- Common song forms with bar counts and templates
+- Electronic music forms (build-drop, loop-based)
+- Section length conventions and arrangement templates
+- **Status:** Not yet built
+
+**Reference Layer Overview** (`theory/04_reference/README.md`)
+- Quick lookup chart summary (circle of fifths, interval quality, common progressions)
+- Navigation to all reference documents
+- Usage guidance for beginners, intermediate, and advanced users
+- **Built:** ✓ Complete with descriptions of all planned references
 
 ---
 
