@@ -4,6 +4,20 @@
 
 ---
 
+## **Why Visual Standards Matter**
+
+These standards serve `project_philosophy.md`'s generational teaching obligation. Visual communication must work for users we'll never meet, using technology that doesn't exist yet.
+
+**Not just aesthetics - system integrity:** Clear, consistent visual language enables learning across time. Diagrams that work today must work in 2075 when explaining how people thought about electronic music in the early 21st century.
+
+**Interconnection through visual language:** Every diagram shows how signals connect, how modules integrate, how systems emerge from components - the fundamental interconnectedness that makes music technology comprehensible.
+
+**Why systematic visual standards:** From `framework_overview.md` - maintaining system integrity through disciplined process. Visual consistency is process discipline applied to communication. Arbitrary diagram styles degrade system integrity the same way skipping workflow steps does.
+
+**For framework context:** See `guide_creation_framework.md` for where visual standards integrate with guide requirements.
+
+---
+
 ## **🚀 Quick Reference: 5 Essential Patterns**
 
 ### **1. GitHub Image Integration (Most Common)**

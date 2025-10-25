@@ -4,6 +4,20 @@
 
 ---
 
+## **Verification Serves Generational Accuracy**
+
+From `project_philosophy.md`: These guides must work across generations, for children and their children, using technology we can't imagine. Technical errors compound - one wrong voltage specification propagates through every user who trusts the guide, every Claude who learns from it, every system that builds on this knowledge.
+
+**Teaching obligation through accuracy:** `framework_overview.md` explains why teaching correctly matters. Verification is how we ensure we're teaching correctly - not just teaching procedures, but teaching accurate understanding that preserves across time.
+
+**Quality system defines WHAT to verify:** `quality_system.md` establishes accuracy standards and verification requirements.
+
+**This strategy defines HOW to verify:** Systematic methodology, tool usage, source hierarchy, ensuring generational accuracy through disciplined verification process.
+
+**Interconnection in verification:** From `project_philosophy.md` - one verified module specification serves every guide that references it, every patch that uses it, every system that integrates it. Systematic verification multiplies accuracy across the entire documentation ecosystem.
+
+---
+
 ## **Framework Integration Overview**
 
 This verification strategy integrates with the established quality framework:

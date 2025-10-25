@@ -4,6 +4,22 @@
 
 ---
 
+## **Integration with Project Philosophy**
+
+This framework implements the interconnectedness principle from `project_philosophy.md` - teaching how modules connect within systems, not just isolated features.
+
+**For philosophical foundation:** See `project_philosophy.md` for WHY systematic documentation matters (generational teaching, ~500 instruments, interconnection principle).
+
+**For operational discipline:** See `framework_overview.md` for WHY systematic standards maintain system integrity (teaching obligation, mise en place, consequence model).
+
+**For applying these standards:** See `guide_enhancement_pattern.md` for systematic enhancement approach (transforming guides from procedural to understanding-focused).
+
+**For visual presentation:** See `visual_communication_standards.md` for diagram and image integration standards.
+
+**For verification:** See `quality_system.md` and `verification_strategy.md` for ensuring accuracy and reliability.
+
+---
+
 ## **Module Classifications & Requirements**
 
 ### **Utility Modules (2-3 Patches):**

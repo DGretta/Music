@@ -4,6 +4,20 @@
 
 ---
 
+## **Quality as Teaching Obligation**
+
+Quality equals teaching correctly. From `framework_overview.md`: mistakes compound across generations. One inaccurate guide teaches Future Claude bad patterns, teaches users wrong information, degrades system integrity.
+
+**Why accuracy matters beyond immediate use:** `project_philosophy.md` establishes generational teaching obligation - these guides must work when we're not present, for users in 2075 who want to understand how 21st century music technology functioned. Accuracy is how we honor that obligation.
+
+**System integrity through verification:** `framework_overview.md` principle applied - systematic verification maintains documentation quality the same way `workflow_checklist.md` maintains process quality. Both serve the same purpose: preventing degradation through disciplined process.
+
+**Interconnection principle in quality:** From `project_philosophy.md` - everything connects. One inaccurate jack name affects every patch that references it, every guide that cross-references this one, every user who builds on this knowledge. Quality verification prevents error propagation.
+
+**How to verify:** `verification_strategy.md` provides systematic methodology for ensuring accuracy.
+
+---
+
 ## **Core Quality Philosophy**
 
 **Quality is accuracy:** Every guide must precisely reflect manufacturer specifications, interface layouts, and operational characteristics. Users rely on guides when modules aren't physically present - accuracy is non-negotiable.

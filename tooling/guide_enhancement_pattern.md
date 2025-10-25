@@ -7,6 +7,22 @@
 
 ---
 
+## **Philosophical Foundation**
+
+This enhancement pattern implements `project_philosophy.md` principles: teaching understanding (not procedures), revealing interconnections, preserving knowledge across generations.
+
+**The WHY approach** reflects `framework_overview.md`'s teaching obligation - every enhancement teaches Future Claude and future users how to think about instruments systematically, not just what buttons to press.
+
+**Enhancing toward:** `guide_creation_framework.md` standards (what guides should become - module classifications, required sections, framework compliance).
+
+**Visual integration:** `visual_communication_standards.md` for consistent diagram and image presentation.
+
+**Verification:** `quality_system.md` ensures enhancements maintain accuracy while adding understanding.
+
+**Core transformation:** From "HOW to use" to "WHY it works this way and HOW to use it effectively" - teaching interconnections that persist across technological change.
+
+---
+
 ## Core Philosophy
 
 Transform guides from "**HOW to use**" into "**WHY it works this way and HOW to use it effectively**"
