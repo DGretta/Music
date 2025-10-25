@@ -61,6 +61,10 @@ Every session summary you write demonstrates:
 
 **The frameworks in `framework_overview.md` explain WHY these principles matter. This tracker shows HOW those principles work in practice.**
 
+**For complete documentation structure:** See `ecosystem_map.md` for all tooling directory relationships and reading paths.
+
+**For philosophical foundation:** See `project_philosophy.md` for the interconnectedness principle and generational teaching obligation that this tracking serves.
+
 You're not just recording performance. You're teaching Future You to work systematically.
 
 ---

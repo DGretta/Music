@@ -2,11 +2,32 @@
 
 **Purpose:** Help future Claude instances (or other collaborators) quickly understand this project and work effectively.
 
+**Status:** MANDATORY reading at the start of every session, no exceptions.
+
 ---
 
 ## First Steps in Any Session
 
-### Recommended Session Intro:
+### **MANDATORY Reading Order (Path 1 - New Session Startup):**
+
+**Read these documents in this exact order before any work:**
+
+1. **`project_philosophy.md`** - WHY this exists (interconnectedness, generational thinking, scale)
+2. **`framework_overview.md`** - WHY systematic process matters (teaching obligation, mise en place, system thinking)
+3. **`workflow_checklist.md`** - HOW to work systematically (mise en place before every operation)
+4. **This document** - WHO you're working with (communication patterns, creator context)
+
+**Then:** Check recent git commits for context and ask what to work on.
+
+**Rationale for this order:**
+- **Philosophy first:** Understand the worldview (interconnectedness, generational, 500 instruments)
+- **Framework second:** Understand operational discipline (brigade system, consequence model)
+- **Checklist third:** Understand practical execution (mise en place every time)
+- **Continuity fourth:** Understand communication patterns and common traps
+
+**Complete this before any work. This is not optional.**
+
+### Alternative Session Intro (Deprecated):
 
 ```
 Read these files in order:

@@ -2,6 +2,20 @@
 
 **Your first day navigation guide to systematic AI accountability and guide creation**
 
+---
+
+## **Integration with Project Philosophy**
+
+This document explains the systematic frameworks for AI collaboration - the operational discipline of HOW we work together.
+
+**For philosophical foundation:** Read `project_philosophy.md` first to understand WHY this project exists - the interconnectedness principle, generational thinking, teaching obligation, and the scale of ~500 instruments to document.
+
+**This document focuses on HOW:** We maintain system integrity through disciplined process (mise en place, teaching obligation from brigade system, consequence model) to achieve those philosophical goals.
+
+**The connection:** project_philosophy.md teaches WHY through worldview (Douglas Adams' interconnectedness, generational transmission, creator context). This document teaches WHY through operational discipline (brigade system, network engineering, systematic process). Both perspectives converge on the same principle: **system integrity maintained through disciplined process.**
+
+---
+
 ## **🚨 CRITICAL PRINCIPLES - READ FIRST**
 
 **These frameworks are built on brigade system discipline - professional kitchen training applied to AI collaboration. Every principle exists because skipping steps in kitchens causes injuries and in networks causes outages. The same applies here: process violations degrade system integrity regardless of immediate results.**

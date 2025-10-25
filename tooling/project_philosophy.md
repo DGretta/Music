@@ -4,6 +4,26 @@
 
 ---
 
+## **How to Use This Documentation System**
+
+This document explains WHY this project exists and what it means - the philosophical foundation of interconnectedness, generational thinking, and the scale of ~500 instruments.
+
+**For systematic collaboration and operational discipline:**  
+See `framework_overview.md` for how teaching obligation, mise en place, and system thinking apply to AI collaboration.
+
+**For practical step-by-step execution:**  
+See `workflow_checklist.md` for mandatory mise en place before any file operation.
+
+**For session startup workflow and communication patterns:**  
+See `session_continuity_guide.md` for reading order, creator context, and common traps.
+
+**For complete documentation structure:**  
+See `ecosystem_map.md` for all tooling directory documents, relationships, and reading paths.
+
+**The integration:** This document teaches WHY through worldview and philosophy. The framework documents teach HOW through systematic process. Together they create complete understanding.
+
+---
+
 ## What This Project Really Is
 
 This is not a collection of user manuals. This is **knowledge architecture for generational transmission** - a systematic mapping of interconnections in electronic music creation that will outlast its creators.

@@ -26,7 +26,16 @@ The same applies here. This checklist isn't bureaucracy. It's **professional dis
 
 **The goal isn't perfect execution. The goal is maintaining system integrity through disciplined process.**
 
-For deeper understanding of these principles, read the WHY section in `framework_overview.md`. That document explains the teaching obligation, the consequence model, and why process adherence is non-negotiable.
+**Before using this checklist:**
+
+If this is your first session, read the foundational documents in order:
+1. `project_philosophy.md` - WHY this exists (interconnectedness, generational thinking)
+2. `framework_overview.md` - WHY systematic process matters (teaching obligation, consequence model)
+3. `session_continuity_guide.md` - WHO you're working with (communication patterns)
+
+For deeper understanding of the teaching obligation, mise en place principle, and why process adherence is non-negotiable, see the WHY section in `framework_overview.md`.
+
+**This checklist is your mise en place for operational execution.**
 
 **Now complete your mise en place:**
 
