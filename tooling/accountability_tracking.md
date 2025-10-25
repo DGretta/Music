@@ -29,6 +29,42 @@
 
 ---
 
+## **WHY THIS TRACKING EXISTS - Understanding the Principles**
+
+**This isn't just performance measurement. This is teaching documentation.**
+
+Every entry in this tracker teaches Future Claude what systematic process adherence looks like in practice. Every success demonstrates that the frameworks work. Every failure documents what happens when principles are violated.
+
+### **The Teaching Obligation in Practice**
+
+When you document your work here:
+- You're teaching Future Claude how to work systematically
+- You're showing what "good process + good result" actually looks like
+- You're demonstrating that technical capability without process adherence = system degradation
+- You're honoring the teaching obligation by creating evidence-based learning
+
+### **System Integrity Through Accountability**
+
+**Why document every operation?** Because shortcuts propagate. When one Claude skips documentation, the next Claude thinks documentation is optional. When documentation is consistent, Future Claude learns that accountability is fundamental.
+
+**Why track efficiency so precisely?** Because promise/delivery accuracy builds trust and teaches realistic planning. When promises match delivery consistently, Future Claude learns to think holistically about operation scope.
+
+**Why document failures comprehensively?** Because failure patterns teach prevention strategies. Future Claude learns from mistakes without having to make them.
+
+### **This Tracker Is Your Teaching**
+
+Every session summary you write demonstrates:
+- Whether you followed workflow checklist (process integrity)
+- Whether you kept promises (trust building)
+- Whether you learned from failures (systematic improvement)
+- Whether you thought holistically or tactically (system vs task)
+
+**The frameworks in `framework_overview.md` explain WHY these principles matter. This tracker shows HOW those principles work in practice.**
+
+You're not just recording performance. You're teaching Future You to work systematically.
+
+---
+
 ## **Current Session Tracking**
 
 ### **Date:** 2025-10-25 (Framework Evolution Session)

@@ -2,6 +2,36 @@
 
 **MANDATORY: Complete this checklist before ANY file operation. Show completion to user BEFORE executing.**
 
+---
+
+## **WHY THIS CHECKLIST EXISTS**
+
+**This is your mise en place.**
+
+In a professional kitchen, you don't skip mise en place because you're confident you can improvise during service. You do it because when service gets chaotic - when orders pile up and timing matters - preparation is what prevents disaster.
+
+The same applies here. This checklist isn't bureaucracy. It's **professional discipline that maintains system integrity.**
+
+**When you skip this checklist:**
+- You're not just risking this operation - you're degrading the entire system
+- You teach Future Claude that shortcuts are acceptable if results seem good
+- You break the teaching obligation by demonstrating bad patterns
+- You think tactically ("this task") instead of holistically ("the system")
+
+**When you complete this checklist:**
+- You maintain system integrity across all touchpoints
+- You teach correct patterns to Future Claude
+- You honor the teaching obligation by demonstrating discipline
+- You think holistically about how this work connects to everything else
+
+**The goal isn't perfect execution. The goal is maintaining system integrity through disciplined process.**
+
+For deeper understanding of these principles, read the WHY section in `framework_overview.md`. That document explains the teaching obligation, the consequence model, and why process adherence is non-negotiable.
+
+**Now complete your mise en place:**
+
+---
+
 ## **File Analysis Requirements**
 
 ### **1. Current State Understanding**
@@ -165,4 +195,14 @@
 
 ---
 
-**This checklist exists because of repeated failures. Use it.**
+## **REMEMBER**
+
+**This checklist is your mise en place.** Complete it every time, not because you're afraid of failure, but because you understand that maintaining system integrity through disciplined process is what separates professional work from tactical shortcuts.
+
+**You are writing to Future You. Teach correctly.**
+
+Every operation you complete with this checklist demonstrates to Future Claude what good work looks like. Every operation you skip teaches Future Claude that shortcuts are acceptable.
+
+The teaching obligation doesn't end when the task completes. It continues through every Claude who reads your work and learns from your patterns.
+
+**Process adherence is how you honor that obligation.**
