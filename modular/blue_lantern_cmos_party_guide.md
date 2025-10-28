@@ -22,6 +22,157 @@
 
 ---
 
+## Why This Instrument Excels
+
+### The Philosophy: Pure Boolean Logic as Musical Foundation
+
+CMOS Party represents **fundamental digital logic education** in the most direct form possible. This isn't about making sounds - it's about teaching how digital decisions work at the most basic level, which is foundational to understanding all electronic music technology.
+
+### Boolean Logic: The Foundation of All Digital Systems
+
+**What is boolean logic?** A system of true/false decision making invented by mathematician George Boole in the 1840s, later becoming the foundation of all digital electronics, computers, and electronic music. Every sequencer, every digital synthesizer, every computer running your DAW - all built on these five operations.
+
+**The operations:**
+- **AND:** Output true ONLY when both inputs are true
+- **OR:** Output true when EITHER input is true
+- **NOT:** Output the opposite of the input
+- **NAND:** NOT-AND (opposite of AND)
+- **NOR:** NOT-OR (opposite of OR)
+- **XOR:** Exclusive OR (true when inputs DIFFER)
+
+**Why this matters across all electronic music:**
+- **Sequencers use AND logic:** "Advance step AND gate is high = trigger"
+- **Conditional processing:** "IF this AND that THEN do something"
+- **Trigger combination:** "Fire when this OR that happens"
+- **Pattern negation:** "Do everything EXCEPT when this condition is met"
+
+**The interconnection:** When you understand boolean logic through patching CMOS Party, you understand how every digital device in your studio makes decisions. Sequencer programming, modulation routing, conditional effects - all boolean logic. This utility teaches the principle that underlies ALL digital music technology.
+
+### Truth Tables: The Universal Language of Digital Logic
+
+**What is a truth table?** A complete map of what a logic operation does for every possible input combination. For two inputs (A and B), there are four possible states:
+
+```
+A | B | AND | OR | XOR | NAND | NOR
+--+---+-----+----+-----+------+----
+0 | 0 |  0  | 0  |  0  |  1   | 1
+0 | 1 |  0  | 1  |  1  |  1   | 0
+1 | 0 |  0  | 1  |  1  |  1   | 0  
+1 | 1 |  1  | 1  |  0  |  0   | 0
+```
+
+**Why truth tables matter:**
+- **Predictability:** You can predict any logic output for any input combination
+- **Universal application:** Same truth tables apply to gates in sequencers, computers, synthesizers
+- **Troubleshooting tool:** Understanding truth tables helps debug complex patches
+- **Design foundation:** All digital circuits are designed using truth table analysis
+
+**The teaching moment:** Learning to think in truth tables teaches you how to think about digital decisions. When your sequencer isn't firing triggers correctly, truth table thinking reveals why. When conditional modulation isn't working, truth tables show what's happening. This fundamental skill transfers to everything digital in music.
+
+### CD4000 CMOS: The Digital Foundation
+
+**What is CMOS?** Complementary Metal-Oxide-Semiconductor - a transistor technology developed in the 1960s that became the foundation of digital electronics. The CD4000 series (released 1968) was the first mass-produced CMOS logic chip family.
+
+**Why CD4000 chips matter in music history:**
+- **Early digital synthesizers:** Many 1970s-80s digital synths used CD4000 logic
+- **Sequencer timing:** Clock division and pattern generation used these chips
+- **Drum machines:** TR-808 and similar machines used CD4000 logic for pattern control
+- **Voltage standards:** CD4000 established 0V/5V logic levels still used in Eurorack
+
+**The technical advantages:**
+- **No latency:** Gate propagation in nanoseconds - effectively instant for music timing
+- **Power efficiency:** CMOS draws minimal current, staying cool and stable
+- **Reliability:** Proven technology from 1960s, still manufactured today
+- **Audio rate capable:** Designed for megahertz operation, handles audio frequencies easily
+
+**The interconnection:** CD4000 chips aren't just in CMOS Party - they're in countless music devices. Understanding their behavior helps you understand timing, logic levels, and digital processing throughout your studio. When you know why a CD4000 AND gate behaves a certain way, you understand why sequencers and drum machines make the timing decisions they do.
+
+### Logic Operations Creating Musical Relationships
+
+**Why boolean logic is inherently musical:**
+
+Musical decisions are boolean decisions:
+- **Accent this note?** AND operation: "Main beat AND downbeat = accent"
+- **Play either pattern?** OR operation: "Pattern A OR Pattern B = combined rhythm"
+- **Create syncopation?** XOR operation: "Clock A XOR Clock B = off-beat pattern"
+- **Fill the gaps?** NOT operation: "NOT main pattern = complementary rhythm"
+
+**How logic creates polyrhythms:**
+
+When you patch different clock divisions into CMOS Party inputs, the logic operations create mathematical relationships:
+- **3 against 4:** Clock A = /3, Clock B = /4, XOR output = syncopated pattern
+- **Downbeat accents:** Clock A = /1, Clock B = /4, AND output = every 4th beat
+- **Combined density:** Clock A = sparse, Clock B = sparse, OR output = combined activity
+
+**The principle:** Mathematical timing + boolean logic = predictable but complex musical patterns. This is how drum machines, sequencers, and pattern generators work internally. CMOS Party lets you patch these relationships externally, teaching you the principles.
+
+### Audio Rate Logic: Digital Synthesis Fundamentals
+
+**Why logic operations work at audio rate:**
+
+Boolean operations on audio frequency square waves create harmonic relationships:
+- **AND operation:** Frequency multiplication and suppression
+- **XOR operation:** Ring modulation effect (sum and difference frequencies)
+- **OR operation:** Harmonic addition and reinforcement
+
+**The digital synthesis connection:**
+
+Early digital synthesis (1970s-80s) used logic operations for sound generation:
+- **Pulse wave combinations:** Logic operations on different pulse widths
+- **Harmonic synthesis:** Logic operations creating overtone structures
+- **Digital ring modulation:** XOR as primitive frequency modulation
+
+**Why this matters:** Modern digital synthesis still uses these principles, just hidden in code. CMOS Party makes the principles explicit and patchable. When you understand audio rate logic, you understand the foundation of digital sound generation.
+
+### Utilities Teach Fundamental Principles
+
+**Why CMOS Party teaches more than sound sources:**
+
+Sound sources demonstrate specific implementations. Utilities reveal universal principles:
+- **Oscillators show:** How *this* oscillator makes *this* sound
+- **Logic shows:** How *all* digital decisions work *everywhere*
+
+**The transferable understanding:**
+- Learn AND logic with triggers → understand AND logic in sequencers
+- Learn XOR with clocks → understand XOR in digital synthesis
+- Learn truth tables with CMOS Party → understand truth tables in programming
+
+**The pattern:** Simple modules teaching fundamental concepts provide more transferable knowledge than complex modules teaching specific implementations. CMOS Party is pure principle - no sound generation, no specific application - just boolean logic in its clearest form.
+
+### Design Philosophy: Educational Simplicity
+
+**"I remember my first logic module"** - Blue Lantern designed CMOS Party as an accessible entry point to digital logic. No menus, no modes, no hidden functions. Just inputs, outputs, and pure boolean operations.
+
+**Why this simplicity matters:**
+- **Immediate comprehension:** See all functions at once
+- **Predictable behavior:** No hidden states or modes
+- **Educational transparency:** Logic operations visible and patchable
+- **Encourages experimentation:** Low cognitive load invites exploration
+
+**The innovation:** Making fundamental digital concepts approachable without oversimplification. CMOS Party doesn't hide complexity - it reveals simplicity within what seems complex.
+
+### The Technical Excellence:
+
+- **Complete logic coverage:** All standard boolean operations plus inversions
+- **CD4000 reliability:** Proven technology from digital electronics foundation
+- **Zero latency:** Instant response for real-time performance
+- **Dual-domain operation:** Clock rate to audio rate seamlessly
+- **Compact implementation:** Complete boolean processor in 4HP
+
+### Perfect For:
+
+- **Logic beginners:** Designed explicitly as "first logic module"
+- **Digital synthesis explorers:** Audio rate logic for harmonic generation
+- **System designers:** Essential trigger and clock manipulation utility
+- **Educators:** Teaches digital principles through hands-on patching
+- **Anyone wanting to understand digital music:** Foundation of all electronic music technology
+
+### The Magic:
+
+CMOS Party proves that **the most fundamental digital concepts can be immediately musical**. Boolean logic isn't abstract computer science - it's the principle behind every trigger decision, every pattern combination, every digital music system. When you patch CMOS Party, you're not just making patterns - you're learning how digital music actually works at the most fundamental level.
+
+---
+
 ## Essential Parameters (The Logic Operations)
 
 ### **1. INPUT A - First Logic Signal**
@@ -124,6 +275,12 @@
 | XOR Out → Snare | Gate (Yellow) | Alternating pattern between clocks |
 | Inv A Out → Off-beat | Gate (Yellow) | Triggers between main clock beats |
 
+**What you're learning:**
+- **Truth table thinking:** Understanding how two binary inputs create predictable outputs through boolean operations
+- **Logic level fundamentals:** Why 0V (LOW) and +5V (HIGH) are the foundation of all digital music devices
+- **Boolean decision making:** How AND/OR/XOR operations create musical relationships from simple timing sources
+- **Digital pattern generation:** The principle behind how drum machines, sequencers, and pattern generators work internally
+
 **Logic Learning:**
 - **AND:** Most restrictive - perfect for accents and synchronized events
 - **OR:** Most permissive - combines patterns for increased density
@@ -169,11 +326,12 @@
 | **NOR** | Rest detector | Active only during quiet moments |
 | **Inv A/B** | Complementary patterns | Fill gaps in original patterns |
 
-**Learning Objectives:**
+**What you're learning:**
 - **Complex pattern relationships:** Understanding how different logic operations transform rhythmic patterns
-- **Euclidean logic processing:** How mathematical patterns interact through boolean logic
-- **Pattern density control:** Using logic to increase or decrease rhythmic activity
-- **Complementary pattern generation:** Creating counterpoint through logical inversion
+- **Euclidean logic processing:** How mathematical patterns interact through boolean logic - the same mathematical principles underlying music theory
+- **Pattern density control:** Using logic to increase or decrease rhythmic activity through boolean operations
+- **Complementary pattern generation:** Creating counterpoint through logical inversion - teaching negative space principles
+- **Transferable logic thinking:** These boolean relationships apply to programming, sequencer design, and all digital music systems
 
 **Alternative Pattern Sources:**
 - **Instead of Euclidean:** Try **Turing Machine** for binary pattern logic, or **Marbles** for probability-based pattern generation
@@ -237,6 +395,13 @@
 | **Processing (Maths)** | CV and audio rate functions | **Logic level conversion and source B** | **Mathematical functions provide logic control while converting between CV and logic levels** |
 | **Logic (CMOS Party)** | Boolean operations at audio rate | **Audio rate logic processor** | **Boolean logic creates harmonic content, ring modulation effects, and audio rate pattern generation** |
 | **Audio Processing** | Logic-controlled filtering | **Logic-enhanced audio processing** | **Logic outputs control audio processing parameters for dynamic harmonic manipulation** |
+
+**What you're learning:**
+- **Audio rate logic fundamentals:** How boolean operations at audio frequencies create harmonic content - the foundation of early digital synthesis
+- **Digital ring modulation principles:** XOR as frequency multiplication - understanding sum and difference frequencies through logic
+- **Harmonic generation through logic:** How simple boolean operations create complex overtone structures
+- **CMOS audio character:** Understanding the sonic signature of CD4000-based audio processing from 1970s digital synthesis
+- **Digital-analog hybrid thinking:** Combining digital logic with analog processing - principle behind modern synthesis approaches
 
 **Audio Rate Logic Applications:**
 1. **Harmonic logic generation:** Boolean operations on audio rate square waves create complex harmonic relationships and overtone structures
@@ -365,27 +530,186 @@ This represents **audio rate logic mastery** - where boolean logic operations tr
 
 ---
 
-## Beginner "Gotchas" & Pro Tips
+## Common Mistakes and How to Avoid Them
 
-### **⚠️ Common Mistakes:**
+### "The logic isn't working - nothing comes out of any output!"
 
-**"The logic isn't working - I'm not getting any output!"**
-- Check that both inputs have proper gate/trigger signals, or understand that unpatched inputs read as LOW
-- **Solution:** Verify input signals are present and at proper logic levels (0V/+5V)
+**Problem:** No output from any logic operation, or outputs don't respond to input changes.
 
-**"XOR output seems random and unpredictable!"**
-- XOR behavior depends on timing relationship between inputs - phase/timing matters
-- **Solution:** Use related clock sources (divisions of same master clock) for predictable XOR patterns
+**Why this happens:** Unpatched inputs read as LOW (0V) permanently. With both inputs LOW, most logic operations output LOW. Only NAND and NOR output HIGH when both inputs are LOW. If you're expecting AND/OR/XOR outputs with unpatched inputs, you'll get silence.
 
-**"Audio rate processing sounds harsh and digital!"**
-- This is normal CMOS character - embrace the digital aesthetic or filter the outputs
-- **Solution:** Use analog filters after logic outputs to smooth harsh digital edges if desired
+**Solution:**
+- Verify both inputs have active gate/trigger signals at proper logic levels (0V = LOW, +5V = HIGH)
+- Use truth table thinking: AND needs both inputs HIGH to output HIGH
+- OR needs at least one input HIGH to output HIGH
+- With one unpatched input (always LOW), AND will never output HIGH
+- Intentionally use unpatched inputs to explore single-input logic behavior
+- NOR output with no inputs = constant HIGH (useful for manual gates)
 
-**"I don't understand when to use which logic function!"**
-- Each logic operation has specific musical applications - learn through experimentation
-- **Solution:** Start with simple clock sources and systematically try each output to understand behavior
+### "My XOR output is completely chaotic and unpredictable!"
 
-### **🔍 Pro Tips:**
+**Problem:** XOR output seems random, not creating the expected alternating patterns.
+
+**Why this happens:** XOR outputs HIGH when inputs DIFFER. If your input sources have unrelated timing (free-running LFOs, independent clocks), their phase relationship constantly shifts, creating seemingly random XOR output. XOR is extremely sensitive to timing and phase relationships between inputs.
+
+**Solution:**
+- Use related timing sources: divide a master clock for inputs A and B
+- Example: Master clock → Input A, /2 divided → Input B creates predictable alternating pattern
+- Understand that XOR reveals timing relationships you might not hear otherwise
+- Free-running clocks will drift in and out of phase, changing XOR output continuously
+- For stable patterns, sync all clocks to master timing source
+- Use XOR's phase sensitivity creatively for evolving patterns when desired
+
+### "I can't predict what will happen - the outputs seem random!"
+
+**Problem:** Unable to anticipate logic output behavior, making patching feel like guesswork.
+
+**Why this happens:** Not thinking in truth tables. Boolean logic is completely deterministic - every input combination produces predictable output. If it seems random, you're not tracking the input states properly.
+
+**Solution:**
+- Learn truth tables for each operation - memorize or keep reference visible
+- For two inputs, there are only four possible states: 00, 01, 10, 11
+- Practice predicting: "Input A is HIGH, Input B is LOW, so AND = ?"
+- Start with simple, slow clocks where you can see/hear state changes clearly
+- Use LEDs or scopes to visualize input states if available
+- Truth table thinking transfers to all digital music: sequencers, conditional processing, programming
+
+### "Audio rate logic processing sounds harsh and ugly!"
+
+**Problem:** Using logic operations on audio rate signals creates unpleasant digital harshness and aliasing artifacts.
+
+**Why this happens:** CD4000 logic creates instant state changes (sharp edges) with no slew limiting. At audio rate, these sharp transitions create harmonic content that can sound harsh. This is authentic CMOS audio character from 1970s digital synthesis - not a flaw, but the actual sound of the technology.
+
+**Solution:**
+- Embrace the digital aesthetic - this is what early digital synthesis sounded like
+- Use analog filters after logic outputs to smooth edges and reduce harshness
+- Low-pass filtering removes high-frequency harmonics while keeping fundamental
+- Try different logic operations: AND/OR create different harmonic structures than XOR
+- Use audio rate logic as modulation source instead of direct audio
+- Understand this is teaching you what "digital" vs "analog" actually sounds like
+- Modern digital smooths these edges in code - CMOS Party reveals the raw principle
+
+### "I don't understand when to use AND vs OR vs XOR!"
+
+**Problem:** Confusion about which logic operation to use for different musical goals.
+
+**Why this happens:** Logic operations are taught as abstract mathematics, not musical relationships. Without connecting boolean logic to musical decisions, the operations seem arbitrary.
+
+**Solution:**
+- **Use AND for accents:** "Trigger when THIS and THAT align" = downbeat accents
+- **Use OR for combination:** "Trigger when THIS or THAT happens" = merged patterns
+- **Use XOR for syncopation:** "Trigger when patterns disagree" = off-beat rhythms
+- **Use NOT for fills:** "Trigger between main beats" = complementary patterns
+- **Use NAND for negative accents:** "Trigger except when both align" = everything-but patterns
+- **Use NOR for rest detection:** "Trigger only during silence" = ambient triggers
+- Think musically first, then find the logic operation that creates that relationship
+
+### "My logic patterns sound too simple and boring!"
+
+**Problem:** Logic outputs create basic patterns without much rhythmic interest or complexity.
+
+**Why this happens:** Using too-similar input sources. Logic operations reveal relationships between inputs - if inputs are nearly identical, relationships are simple. Complex relationships require inputs with interesting differences.
+
+**Solution:**
+- Use different clock divisions: /3 vs /4 creates interesting mathematical relationships
+- Try Euclidean patterns as inputs: 3/8 vs 5/8 creates complex logic interactions
+- Add probability/randomness to input sources before logic processing
+- Use multiple outputs simultaneously: AND for accents, XOR for fills, OR for density
+- Offset timing slightly between inputs for swing and groove
+- Feed one input through other processing (S&H, probability) before logic
+- Remember: CMOS Party reveals relationships - give it interesting relationships to reveal
+
+### "NAND and NOR outputs seem useless - they just inverse things!"
+
+**Problem:** Unclear why inverted logic operations (NAND, NOR) matter musically.
+
+**Why this happens:** Thinking of NAND/NOR as merely inverted versions of AND/OR misses their unique musical applications. They're not just "opposite" - they create distinct pattern behaviors.
+
+**Solution:**
+- **NOR is rest detector:** Outputs HIGH only when both inputs are LOW = triggers during silence
+- Use NOR to fire ambient sounds between rhythmic events
+- **NAND is negative accent:** Outputs HIGH except when both inputs HIGH = everything-but logic
+- Use NAND for busy patterns with strategic gaps
+- These operations create "negative space" triggers - musically valuable for counterpoint
+- In digital design, NAND/NOR are fundamental building blocks - understanding them teaches digital logic principles
+- Try patching all six operations simultaneously to hear relationships clearly
+
+### "Audio rate logic creates weird frequency relationships I don't understand!"
+
+**Problem:** Audio rate logic outputs have unexpected frequencies and harmonics.
+
+**Why this happens:** Boolean operations on audio signals create sum and difference frequencies, just like analog ring modulation. XOR of two audio frequencies creates both f1+f2 and f1-f2, plus additional harmonics from the square wave nature.
+
+**Solution:**
+- Understand XOR as digital ring modulation: creates sum and difference frequencies
+- AND operation suppresses frequencies, creating subharmonics
+- OR operation combines harmonics, reinforcing certain frequencies
+- This is teaching you digital synthesis fundamentals from 1970s-80s
+- Use musically related frequencies (octaves, fifths) for consonant results
+- Unrelated frequencies create inharmonic/dissonant results (use creatively)
+- Filter logic outputs to select desired harmonics from complex spectrum
+- This is exactly how early digital synthesizers generated tone color
+
+### "I keep getting unexpected triggers from outputs I'm not using!"
+
+**Problem:** Logic outputs that aren't patched to anything still seem to affect other parts of the system.
+
+**Why this happens:** This shouldn't happen - CMOS Party outputs are independent. If you're experiencing this, you likely have:  
+- Accidental cable touches creating intermittent connections
+- Mult or mixer somewhere creating unexpected signal routing
+- Power supply issues causing crosstalk (rare with CMOS)
+
+**Solution:**
+- Verify no cables are touching unused outputs
+- Check your signal path - trace every connection
+- Unplug everything and rebuild patch systematically
+- Use clean power supply with adequate current capacity
+- CMOS logic outputs are buffered and independent - crosstalk is unusual
+- Document your patch with photos if problem persists for troubleshooting
+
+### "Logic operations at slow clock speeds sound exactly like the input!"
+
+**Problem:** Can't hear logic operation effect at very slow clock rates.
+
+**Why this happens:** At very slow rates (below ~1Hz), individual triggers are spaced too far apart to perceive pattern relationships. You hear individual events, not rhythmic patterns.
+
+**Solution:**
+- Speed up clock rate to musically relevant tempo (60-180 BPM typical)
+- At slow rates, use LEDs or visual monitoring to see logic behavior
+- Understand this teaches you the difference between event timing and rhythmic perception
+- Very slow logic is useful for control voltage generation, not rhythmic patterns
+- Once you understand logic behavior slowly, speed up for musical application
+- This is exactly how you should learn - slow to understand, then faster for music
+
+### "The outputs don't reach full Eurorack levels (+10V) - is this broken?"
+
+**Problem:** Logic outputs measure ~5V, not the 10V some Eurorack modules use.
+
+**Why this happens:** CD4000 CMOS logic uses 0V/5V levels, not 0V/10V. This is standard logic level, compatible with triggers and gates throughout Eurorack. Most modules accept 5V gates perfectly fine. Only some modules expecting specifically 10V control voltages might respond differently.
+
+**Solution:**
+- 5V gates work fine for triggers and gates (99% of applications)
+- If using logic outputs as CV for pitch/modulation, you might need amplification
+- Use VCA or attenuverter to scale 5V logic to 10V CV if needed
+- Understand this teaches voltage standards: logic levels (5V) vs CV levels (10V)
+- CD4000 operates at 0-5V because that's digital logic standard since 1960s
+- This is not a bug - it's authentic logic level operation
+
+### Pattern Recognition: Root Causes of Most CMOS Party Issues
+
+**Three core misunderstandings cause 90% of problems:**
+
+1. **Not thinking in truth tables:** Boolean logic is completely deterministic. Every input state produces predictable output. If behavior seems random, you're not tracking input states properly. Learn truth tables. Think in binary states. Digital logic has no gray areas - it's all HIGH or LOW, TRUE or FALSE.
+
+2. **Expecting analog behavior from digital circuits:** CMOS Party is pure digital logic. Sharp edges, instant state changes, harsh audio character - this is what digital sounds like. Modern digital smooths these characteristics in code. CMOS Party reveals the raw principle. Understanding this teaches you the difference between digital and analog throughout music technology.
+
+3. **Using inappropriate input sources:** Logic operations reveal relationships between inputs. Unrelated timing sources create complex or chaotic relationships. Related timing (clock divisions from master) creates predictable patterns. Probability sources create evolving patterns. The inputs determine the complexity - CMOS Party just reveals their relationships through boolean operations.
+
+**The deeper pattern:** CMOS Party teaches pure boolean logic - the foundation of all digital music technology. Issues with CMOS Party usually reveal gaps in understanding digital principles: logic levels, truth tables, binary thinking, deterministic behavior. This utility is teaching you how sequencers, drum machines, digital synthesis, and computers actually make decisions at the most fundamental level.
+
+---
+
+## Pro Tips
 
 **Logic Learning Strategy:**
 - **Start with simple sources:** Use basic clocks before complex patterns
