@@ -186,6 +186,241 @@ This bundle proves that **system design beats component collection**. Three care
 
 ---
 
+## Common Mistakes and How to Avoid Them
+
+### **"My Chipz is distorting everything and it sounds terrible!"**
+**Problem:** Chipz outputs overdriving NiftyCase audio section causing harsh clipping and distortion
+
+**Why It Happens:** Chipz generates modular-level hot signals (designed for further processing in larger systems) while NiftyCase expects more conservative levels for its simple summing mixer. The NiftyCase has no built-in attenuation or gain control - it just sums whatever you feed it and passes it to the output. When Chipz outputs hit the NiftyCase audio section at full volume, you're essentially overdriving a mixer with no headroom.
+
+**This teaches:** Gain staging is YOUR responsibility in modular. Unlike integrated instruments with automatic level management, modular systems require you to actively manage every signal level. This principle applies to any modular system - understanding signal levels and headroom is fundamental.
+
+**Solution:**
+- Start with Chipz TUNE and WAVE controls at very conservative positions
+- Gradually increase levels while monitoring for distortion
+- Add VCAs between Chipz and NiftyCase (Doepfer A-131, Intellijel uVCA)
+- Use 2HP Attenuator modules or passive attenuator cables
+- Consider external mixer with proper gain staging before NiftyCase
+- Remember: you can always add gain, but you can't remove clipping after it happens
+
+### **"I can't figure out how to 'feed' the Cellz pads with notes"**
+**Problem:** Cellz pad feeding process is non-obvious and requires specific button-hold technique
+
+**Why It Happens:** Cellz doesn't have a dedicated "record" or "learn" mode - the feeding process happens through a specific gesture: hold tune button + adjust knob + tap pad. If you don't hold the tune button while adjusting the knob, the knob does nothing. If you don't tap the pad while holding the button, the voltage doesn't store. The interface provides no visual feedback about this multi-step process.
+
+**This teaches:** Touch interfaces in modular often require specific gestural vocabulary. Unlike computer interfaces with visual feedback at every step, hardware instruments require learning physical techniques. This applies to all performance controllers - developing muscle memory for specific gestures is part of mastering expressive electronic instruments.
+
+**Solution:**
+- **Left Channel:** Hold LEFT tune button, adjust LEFT knob to desired voltage, tap pad to store
+- **Right Channel:** Hold RIGHT tune button, adjust RIGHT knob to desired voltage, tap pad to store  
+- Practice the gesture sequence until it becomes automatic
+- Feed all pads you plan to use before starting performance
+- You can re-feed pads during performance by repeating the gesture
+- Both tune buttons pressed simultaneously switches between semi-tone and free scaling modes
+
+### **"Cellz won't power on or behaves erratically"**
+**Problem:** Cellz 5V jumper set incorrectly or power connection issue
+
+**Why It Happens:** Cellz requires both standard Eurorack power (+12V, -12V, GND) AND 5V power for its microcontroller and touch sensing circuitry. The 5V can come from internal generation (using onboard regulator) or external supply (from case 5V rail). The jumper setting determines which source Cellz uses. If the jumper is set to EXTERNAL but your case doesn't provide 5V (or connection is poor), Cellz won't fully power up. NiftyCase DOES provide 5V, so jumper should be INTERNAL.
+
+**This teaches:** Power requirements in modular aren't standardized - some modules need 5V, some don't. Understanding power distribution (not just "plug it in") is essential. This applies to any modular system - you need to know your case's power specifications, track total current draw per rail, and understand individual module requirements. Power issues are the #1 cause of "mysterious" modular problems.
+
+**Solution:**
+- Set Cellz jumper to **INTERNAL** for NiftyCase systems
+- Verify 16-pin power cable connection - red stripe facing DOWN
+- Check that cable is fully seated in both Cellz and power header
+- If adding more modules, verify total power draw doesn't exceed NiftyCase capacity
+- Power sequence: turn on NiftyCase first, then Cellz
+
+### **"MIDI isn't controlling anything"**
+**Problem:** NiftyCase receiving MIDI but not generating CV/Gate outputs
+
+**Why It Happens:** NiftyCase has multiple MIDI modes (Channel 1/2 mono, Channel 3 duo, Channel 10 drums) and your external controller must match. If your keyboard is sending on Channel 3 but NiftyCase is in Channel 1 mode, nothing happens. Additionally, USB MIDI and DIN MIDI are separate inputs - only one should be connected to avoid MIDI feedback loops or confusion about which is active.
+
+**This teaches:** MIDI-to-CV conversion requires matching the sending channel to the receiving channel. This isn't NiftyCase-specific - it's fundamental MIDI protocol. Understanding MIDI channels, how messages route, and why channel mismatches cause "it's not working" problems applies to all electronic music equipment, modular or otherwise.
+
+**Solution:**
+- Verify your external controller is sending on Channel 1 (default NiftyCase mode)
+- Check NiftyCase status LED - should blink when receiving MIDI
+- Connect ONLY USB or ONLY DIN MIDI, never both simultaneously
+- Test with simple MIDI keyboard before complex DAW routing
+- Verify CV cables are connected: NiftyCase CV1 → Chipz Chip1 CV
+- Try different MIDI channels on your controller to find which NiftyCase is listening to
+
+### **"Cellz pads trigger but don't control Chipz pitch"**
+**Problem:** Cellz generates CV but Chipz isn't responding with pitch changes
+
+**Why It Happens:** Multiple possible causes - CV cable not connected, wrong CV cable destination, Chipz TUNE knob in extreme position, voltage range mismatch, or Cellz pads not properly fed with pitch voltages. When CV is patched to Chipz CV input, the TUNE knob becomes a ±2 octave transposer - if it's at extreme position, pitches may be outside audible range. Additionally, Cellz outputs 0-5V while full Eurorack range is 0-10V, so you're only accessing half the potential pitch range.
+
+**This teaches:** CV control requires complete signal path - source generates voltage, cable carries it, destination responds. If ANY part of this chain is broken, nothing happens. Understanding signal flow (not just "patch this to that") is fundamental to modular. This applies everywhere - audio paths, modulation paths, trigger paths all require complete connection and proper voltage ranges.
+
+**Solution:**
+- Verify cable connection: Cellz CV1 → Chipz Chip1 CV input
+- Check Chipz TUNE knob position - start at 12 o'clock (noon)
+- Verify Cellz pads are fed with appropriate voltages (hold tune button + adjust + tap)
+- Test Cellz CV output with multimeter if available (should show 0-5V range)
+- Try different Cellz pads - maybe specific pad wasn't fed properly
+- Remember: when CV is patched, TUNE becomes transposer, not absolute pitch
+
+### **"I'm holding multiple pads but they're not arpeggiating"**
+**Problem:** Multiple pad touches not triggering arpeggiation mode
+
+**Why It Happens:** Cellz arpeggiation requires SIMULTANEOUS pad touches - press and hold first pad, then press second pad while still holding first. If you release first pad before touching second, Cellz sees them as sequential note triggers, not chord for arpeggiation. Additionally, arpeggiation only works when pads are actually generating gate outputs (internal gate generation from touch) - if you're using external trigger inputs, arpeggiation won't engage.
+
+**This teaches:** Performance gestures on touch controllers have specific requirements. "Playing a chord" (simultaneous touches) is different from "playing notes quickly" (sequential touches). This distinction appears in all performance controllers - understanding how your instrument interprets timing and simultaneity is crucial for expressive playing.
+
+**Solution:**
+- Press and HOLD first pad
+- While still holding first pad, press second pad
+- Both pads must remain pressed for arpeggiation to engage
+- Try with just 2 pads first before attempting complex chords
+- Ensure you're not using external trigger inputs (which bypass touch-based arpeggiation)
+- Experiment with release timing - how long you hold affects arpeggio duration
+
+### **"My chiptune sounds are weak and thin, not punchy like game music"**
+**Problem:** Chiptune character lost due to over-filtering or wrong waveform selection
+
+**Why It Happens:** Authentic chiptune sound comes from harsh digital waveforms with rich harmonic content - think square waves and pulse width modulation, not smooth filtered sine waves. If Chipz FILTER is too closed (clockwise), you're removing the high-frequency harmonics that give chiptune its characteristic bite. If you're using triangle or sine waves (WAVE control fully counter-clockwise), you're missing the harmonic richness. Chipz is DESIGNED for intentional lo-fi digital aliasing - if you filter it heavily, you're working against its character.
+
+**This teaches:** Timbre comes from harmonic content. Square waves have odd harmonics creating hollow, video-game character. Filtering removes harmonics, softening sound. This isn't Chipz-specific - understanding how waveforms and filtering interact to create timbre is fundamental synthesis knowledge that applies to all synthesis methods.
+
+**Solution:**
+- Start with WAVE control toward square wave range (clockwise)
+- Keep FILTER more open (counter-clockwise) to preserve harmonics
+- Use Chip2 WIDTH control for pulse width modulation movement
+- Don't over-process - Chipz character IS the lo-fi digital artifacts
+- Layer both Chip1 and Chip2 for thicker, richer chiptune textures
+- Embrace the aliasing and bit-crushing - that's authentic chiptune aesthetic
+
+### **"I have cables everywhere and can't keep track of my patches"**
+**Problem:** Cable management chaos making it difficult to perform or troubleshoot
+
+**Why It Happens:** Three separate units with multiple connection points creates complex cable routing. Cellz sits in front, NiftyCase behind, and you need cables running between them, plus power cables, audio outputs, MIDI inputs. Long cables drape across workspace, short cables create tension, and without organization, you can't tell what's patched where. This is compounded when you start experimenting - you add a new patch cable, it works, but now you have 8 cables and can't remember which does what.
+
+**This teaches:** Cable management IS system design. In any modular system, physical organization affects both performance workflow and troubleshooting capability. This applies at all scales - whether 3 modules or 200. Developing systematic cable routing habits, using appropriate cable lengths, and maintaining visual clarity of signal flow is professional discipline, not just aesthetics.
+
+**Solution:**
+- **Use short cables** between Cellz and NiftyCase (6-12 inch lengths)
+- **Color-code by function:** CV = one color, audio = another, gates = third
+- **Route cables consistently:** CV control cables on left, audio on right
+- **Label cables** if working on long-term patch you want to remember
+- **Document complex patches:** Take photos or write down connections
+- **Develop personal routing conventions** and stick to them
+- **Remove unused cables immediately** - don't let experiments accumulate
+
+### **"Adding second Chipz output to NiftyCase makes everything quieter"**
+**Problem:** NiftyCase summing multiple signals without gain compensation
+
+**Why It Happens:** NiftyCase has two "to out" inputs that are passively summed (simple resistor mixing) before the rear 1/4" output. Passive mixing means signals combine but total output level stays roughly the same - so two signals at equal level will each appear ~6dB quieter than one signal alone. This isn't a flaw, it's how passive mixing works. The alternative (active mixing with gain makeup) would require more complex circuitry, which NiftyCase doesn't have to keep it simple and affordable.
+
+**This teaches:** Signal summing in modular requires understanding passive vs active mixing. Passive mixing is simple but loses level. Active mixing maintains level but needs power and circuitry. This principle appears everywhere in modular - unity gain isn't automatic, you need to manage it. Understanding this teaches you why mixer modules exist, why VCAs matter for level control, and why professional mixing requires active gain staging.
+
+**Solution:**
+- **Expect level drop** when using both NiftyCase inputs - this is normal
+- **Increase levels carefully** on both Chipz oscillators to compensate
+- **Watch for distortion** - you're now combining two hot signals
+- **Consider external mixer** for proper active summing with gain makeup
+- **Use VCAs before NiftyCase** to control individual signal levels precisely
+- **Alternative:** Send each Chipz output to separate channels on external mixer
+
+### **"Cellz external trigger inputs don't seem to work"**
+**Problem:** Patching triggers to Cellz UP/RIGHT inputs doesn't advance patterns as expected
+
+**Why It Happens:** External trigger inputs on Cellz are for sequencing through pads in specific directions (UP moves through pads vertically, RIGHT moves horizontally), but this only works when Cellz is in appropriate mode AND pads are fed with voltages. If you're expecting trigger inputs to create notes without pads being fed, nothing will happen - triggers just advance which pad is selected, they don't generate sound. Additionally, trigger behavior depends on whether you have gates still being sent to modules - external triggers might conflict with internal touch-based triggering.
+
+**This teaches:** Trigger vs gate vs CV are different signal types with different purposes. Triggers advance sequences or initiate events, gates sustain notes, CV controls pitch or parameters. Confusing these signal types causes "nothing works" problems. This distinction is fundamental across ALL electronic music - sequencers, drum machines, modular, MIDI all separate timing signals (triggers/clocks) from sustain signals (gates) from control signals (CV/CC).
+
+**Solution:**
+- **Feed pads first** - external triggers select which pad plays, but pads must have voltages
+- **Understand direction** - UP trigger moves vertically through grid, RIGHT moves horizontally
+- **Test with simple clock** - regular trigger source helps understand behavior
+- **Check trigger voltage** - Cellz expects standard Eurorack trigger/gate levels
+- **Read manual section on external sequencing** - behavior is specific and documented
+- **Start simple** - get one trigger input working before trying complex patterns
+
+### **"Chipz LFO outputs don't seem to modulate anything"**
+**Problem:** Patching LFO outputs to Chipz parameters doesn't create expected modulation
+
+**Why It Happens:** Chipz LFO generates modulation signals, but their effect depends on destination, LFO RATE, LFO DEPTH, and whether you understand what modulation depth means. If DEPTH is at zero, LFO generates signal but it's attenuated to nothing before reaching destination. If RATE is extremely slow, modulation is happening but so slowly you can't perceive it. If you're patching to parameter that doesn't have wide range (like FILTER when already fully open), modulation may be happening but within non-audible range.
+
+**This teaches:** Modulation requires three components working together - source (LFO), path (cable), AND destination with appropriate range. Additionally, modulation depth/amount controls are ATTENUATORS - they scale the modulation signal before it reaches destination. Understanding this teaches fundamental principle: modulation is voltage controlling voltage, and every step in the chain affects the result. This applies to ALL modulation routing in synthesis.
+
+**Solution:**
+- **Verify LFO DEPTH is not zero** - this is the attenuator for modulation amount
+- **Set RATE to visible range** - start around 12 o'clock for obvious modulation
+- **Check destination has range to move** - FILTER fully open means no room for modulation
+- **Use main LFO for slow modulation, 4X output for fast/audio rate effects**
+- **Start with obvious destination** - WIDTH (PWM) shows clear modulation results
+- **Listen AND watch** - some modulation is subtle but present
+
+### **"System seems unstable with noise and crackles"**
+**Problem:** Audio artifacts, instability, or erratic behavior appearing intermittently
+
+**Why It Happens:** Multiple possible causes - insufficient power (total current draw exceeding NiftyCase capacity), poor cable connections (especially power cables), ground loops (multiple ground paths creating interference), or electromagnetic interference from nearby devices. As you add modules beyond basic bundle, power requirements increase and stability margins decrease. Eurorack systems are sensitive to power quality, and NiftyCase is entry-level power supply without extensive filtering or regulation.
+
+**This teaches:** System stability in modular requires attention to power budgeting, proper connections, and signal integrity. This isn't specific to this bundle - it's fundamental to ANY modular system. Understanding power requirements, current draw per rail (+12V, -12V, 5V), and total capacity teaches you how to grow systems sustainably. Noise and instability are often power-related, not module defects.
+
+**Solution:**
+- **Calculate total power draw** - add up all module specifications
+- **Compare to NiftyCase capacity** - ensure you're within limits on all rails
+- **Check all power connections** - reseat cables, verify red stripe orientation
+- **Eliminate ground loops** - ensure single ground path for audio connections
+- **Move away from RF sources** - Wi-Fi routers, phones, computers generate interference
+- **Consider power upgrade** if adding many modules beyond basic bundle
+- **Test modules individually** - isolate which module might be causing issues
+
+---
+
+### **Pattern Recognition: Root Causes of Most Bundle Issues**
+
+After troubleshooting hundreds of bundle setups, **four core misunderstandings cause 90% of problems:**
+
+**1. Expecting Automatic Gain Staging and Level Management**
+
+The bundle provides connectivity but not automatic level control. Chipz outputs are HOT by modular standards, NiftyCase sums without attenuation, and there's no "master volume that just works." 
+
+**Why this causes problems:** Users coming from integrated instruments (keyboards, grooveboxes) expect automatic level management. But modular philosophy is: YOU control every signal level deliberately. This requires understanding gain staging, headroom, and signal flow.
+
+**What this teaches:** Voltage level management is core modular skill. Every signal in modular has level, every connection affects level, and maintaining proper gain structure throughout signal path is YOUR responsibility. Learning this with bundle teaches principle that applies to any modular system of any size.
+
+**2. Treating Bundle as Three Separate Modules Instead of Integrated System**
+
+Missing that bundle power comes from INTEGRATION - the Cellz → Chipz → NiftyCase workflow creates capability impossible with components separately.
+
+**Why this causes problems:** Users patch Cellz CV to Chipz and wonder why it's not magical. They use NiftyCase just as power supply and MIDI converter. They don't develop integrated performance techniques. The bundle becomes three mediocre modules instead of one powerful instrument.
+
+**What this teaches:** System thinking - how components work together creates emergent capability. Understanding this teaches you that modular isn't about collecting modules, it's about designing signal flows and integration patterns. The same principle applies whether you have 3 modules or 300.
+
+**3. Underestimating Physical Workflow and Cable Management**
+
+Ignoring that physical arrangement, cable routing, and muscle memory matter as much as patch design.
+
+**Why this causes problems:** Cellz and NiftyCase poorly positioned creates awkward performance workflow. Cable chaos makes troubleshooting impossible. No documented patches means can't recreate sounds. Physical aspects undermine musical capability.
+
+**What this teaches:** Modular performance requires physical design - not just signal flow design. Ergonomics, visual clarity, consistent routing, documentation - these aren't optional extras, they're essential skills for functional modular practice. This applies to all electronic music performance.
+
+**4. Misunderstanding Power Requirements and System Capacity**
+
+Treating power as "plug it in and forget it" rather than constrained resource requiring management.
+
+**Why this causes problems:** Cellz 5V jumper wrong, adding modules without power budgeting, not understanding current draw per rail. Results in mysterious failures, instability, noise, or modules not powering up.
+
+**What this teaches:** Power is limited resource in modular. Every module draws current, every case has capacity, and you must track both. Understanding power budgeting teaches fundamental system design skill: working within constraints, planning growth, recognizing limits. Essential for ANY modular system.
+
+**The Deeper Pattern:**
+
+These four misunderstandings reveal single underlying issue: **expecting integrated instrument behavior from modular components.** 
+
+Integrated instruments handle gain staging, power management, ergonomics automatically. Modular systems require YOU to design these elements deliberately. 
+
+The bundle teaches this lesson gently (only 3 components, limited complexity) but clearly (issues appear immediately if you don't understand principles).
+
+**That's exactly why it's excellent learning platform.** Issues you encounter with bundle aren't "problems to fix" - they're lessons about modular synthesis revealing themselves through practical experience. Understanding why these issues happen teaches you how modular works fundamentally.
+
+When you've mastered these four concepts with the bundle, you're ready to expand to larger modular systems - because you understand the principles, not just the procedures.
+
+---
+
 ## Essential Integration Parameters
 
 ### **Cellz Control Interface**
