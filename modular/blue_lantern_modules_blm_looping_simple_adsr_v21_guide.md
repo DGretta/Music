@@ -4,177 +4,6 @@
 
 ---
 
-## Common Mistakes and How to Avoid Them
-
-### "My envelope keeps sustaining forever - the release doesn't work!"
-
-**Problem:** Envelope stays at sustain level indefinitely instead of releasing when expected.
-
-**Why this happens:** **Sustain is a LEVEL, not a time.** This is the most common envelope misunderstanding. The envelope will hold at sustain level for as long as the gate signal remains HIGH. If your gate is still high, release hasn't started yet - sustain is doing exactly what it should.
-
-**Solution:**
-- Verify gate source returns to LOW after note ends
-- Check sequencer gate length - if 100%, gates never end, sustain continues indefinitely
-- Try shorter gate lengths (50-75%) to hear release phase
-- Use LED or scope to visualize gate signal timing
-- Remember: Release only starts AFTER gate goes LOW
-- This teaches you that envelopes respond to gate behavior - if gates don't end, neither do notes
-
-### "When I retrigger quickly, the envelope sounds wrong!"
-
-**Problem:** Rapid retriggering creates unexpected envelope behavior or cut-off sounds.
-
-**Why this happens:** If new gate arrives before previous envelope completes release phase, envelope restarts from current voltage, not 0V. This creates shorter attack (starting partway up) and changes envelope character. This is standard envelope behavior, not malfunction.
-
-**Solution:**
-- Understand this is normal retriggering behavior in most envelopes
-- If you need full attack every time, increase release time or decrease note density
-- Use envelope's natural retriggering for performance effects (legato-style playing)
-- This behavior teaches you about envelope states and timing interactions
-- Some modules have "reset to zero" options - BLM retriggers from current level
-- Learn to use retriggering creatively rather than fighting it
-
-### "My envelopes are way too fast/slow for the music!"
-
-**Problem:** Even with ADSR knobs adjusted, envelope timing doesn't match musical tempo or feel.
-
-**Why this happens:** Not using the TIME knob effectively. The TIME knob is a global timing multiplier for all envelope stages. Same ADSR knob positions can create millisecond-fast percussion envelopes OR multi-second pad envelopes depending on TIME setting.
-
-**Solution:**
-- Set envelope SHAPE with ADSR knobs (relative timing between stages)
-- Set envelope SPEED with TIME knob (overall tempo)
-- Workflow: Dial in desired envelope shape, then adjust TIME to match music
-- TIME doesn't affect sustain level (which is level, not time)
-- This teaches you separation of shape from speed - powerful workflow concept
-- Same envelope shape works for drums AND pads with different TIME settings
-
-### "I can't hear the difference between linear and exponential!"
-
-**Problem:** Curve switch seems to do nothing or makes minimal difference.
-
-**Why this happens:** Difference between linear and exponential curves is most obvious at longer times and depends heavily on musical context. Very fast envelopes or already-filtered sounds may not show much difference.
-
-**Solution:**
-- Test with long attack/decay times (multiple seconds) to hear difference clearly
-- Use bright oscillators (saw/square) not filtered sounds for obvious comparison
-- Exponential attack feels "natural" with gentle onset then acceleration
-- Linear attack feels "electronic" with constant rate from start to finish
-- Try both on same patch - you'll develop preference based on musical context
-- Exponential generally sounds more natural for most musical applications
-- This teaches you that curve selection affects character, especially at slower rates
-
-### "Loop mode doesn't seem to do anything!"
-
-**Problem:** Setting switch to LOOP mode doesn't produce expected looping behavior.
-
-**Why this happens:** If Time knob is at very slow settings, envelope cycle might take many seconds - seems like it's not looping when actually it's just very slow. Or ADSR settings create envelope that sounds continuous (high sustain with slow A/D/R).
-
-**Solution:**
-- Set TIME to faster values (clockwise) to hear looping clearly
-- Try simple settings: fast Attack, fast Decay, low Sustain, fast Release for obvious looping
-- Use loop modes for rhythmic modulation (tremolo, filter sweeps)
-- LOOP GATE mode requires gate input - won't loop without gate HIGH
-- Continuous LOOP mode ignores gate completely - loops continuously
-- This teaches you envelopes as rhythmic modulation sources, not just note shapers
-
-### "My VCA doesn't open - no sound comes through!"
-
-**Problem:** Patching envelope to VCA CV input doesn't produce audio output.
-
-**Why this happens:** Multiple potential issues: envelope level too low, VCA gain not set, audio not patched, or misunderstanding that envelopes need positive voltage to open VCAs.
-
-**Solution:**
-- Verify LEVEL knob is up (clockwise) for adequate envelope amplitude
-- Check VCA has audio input patched and gain control adjusted
-- Confirm envelope is actually triggering (use mult to check with LED/scope)
-- Remember: 0V = VCA closed, +V = VCA open - envelope must go positive
-- Test with continuous LOOP mode to verify VCA control without gates
-- This teaches you VCA control fundamentals and CV signal flow
-
-### "CV level control doesn't seem to do anything!"
-
-**Problem:** Patching CV to level input produces no effect on envelope amplitude.
-
-**Why this happens:** CV Amount attenuator is at minimum (fully counterclockwise). The attenuator determines how much CV affects level - at minimum, CV has zero effect regardless of voltage.
-
-**Solution:**
-- Turn CV Amount knob clockwise to increase CV modulation depth
-- Start with attenuator at 12 o'clock for moderate CV effect
-- Patch consistent CV source (not gate) for testing - LFO or sequencer CV output
-- Observe envelope amplitude changing with CV modulation
-- This teaches you CV depth control - attenuators are everywhere in modular
-- Understanding attenuverters/attenuators is fundamental to modular patching
-
-### "Attack is never instant no matter how far I turn the knob!"
-
-**Problem:** Even with Attack knob fully counterclockwise, envelope still has slight rise time.
-
-**Why this happens:** Digital implementation has minimum slew rate to prevent clicks/artifacts. Also, truly instant voltage changes are impossible in real-world electronics - some rise time always exists.
-
-**Solution:**
-- Understand this is normal behavior for smooth envelope generation
-- For truly percussive sounds, use very short attack + strong decay for punch
-- Perceived "instant" attack is often actually 1-10ms - our ears are forgiving
-- Physical limitation teaches you about digital smoothing and click prevention
-- Some clicks ARE from too-fast attacks - slight slew prevents this
-- Focus on musical result rather than absolute instantaneous theoretical perfection
-
-### "Decay seems to affect attack character even though I didn't change attack!"
-
-**Problem:** Changing decay time makes attack sound different, even with identical attack settings.
-
-**Why this happens:** Decay and attack interact perceptually. Fast decay after slow attack emphasizes attack swell. Slow decay after fast attack makes attack seem even more abrupt by comparison. Our perception is relative, not absolute.
-
-**Solution:**
-- Understand envelope stages interact perceptually even though they're technically separate
-- Design envelopes as complete shapes, not isolated parameters
-- Fast attack + fast decay = percussive
-- Slow attack + slow decay = swelling pad
-- Fast attack + slow decay = punchy sustaining tone
-- This teaches you envelope design is about overall shape, not just individual stages
-
-### "I want to control multiple things with one envelope but running out of outputs!"
-
-**Problem:** Need envelope to control VCA, filter, and maybe other parameters, but limited outputs.
-
-**Why this happens:** BLM has multiple parallel outputs, but eventually you might need more destinations than physical jacks.
-
-**Solution:**
-- BLM provides multiple parallel outputs - use them all simultaneously
-- For more destinations, use passive mult or buffered mult
-- Passive mult works fine for envelope signals (not critical for precise voltage)
-- One envelope can control many destinations - VCA + filter + pitch + modulation
-- This teaches you signal distribution in modular systems
-- Parallel outputs = convenience; mults = expansion when needed
-
-### "Release seems to get cut off when notes retrigger quickly!"
-
-**Problem:** Release phase doesn't complete its full decay before next note starts.
-
-**Why this happens:** This is normal behavior. When new gate arrives during release, envelope immediately restarts attack from current voltage. Release is interrupted by new trigger. This is how most envelope generators work.
-
-**Solution:**
-- Reduce note density or increase space between triggers for complete release
-- Understand this is musical behavior - fast playing naturally cuts off releases
-- Use longer release for legato playing, shorter release for staccato
-- Some styles want release cutoff (techno), others want complete release (ambient)
-- This teaches you envelope behavior in musical context, not just isolation
-- Learn to work WITH envelope behavior rather than fighting it
-
-### Pattern Recognition: Root Causes of Most Envelope Issues
-
-**Three core misunderstandings cause 90% of problems:**
-
-1. **Confusing LEVEL with TIME:** Sustain is a LEVEL. It holds at that voltage until gate ends. It's not a duration - it lasts as long as the gate is HIGH. Every frustration about "endless sustain" comes from expecting time when it's actually level. Understanding this distinction is fundamental to all ADSR operation.
-
-2. **Not understanding gate behavior:** Envelopes RESPOND to gates. If gates don't behave as expected, envelopes won't either. Gate length, timing, and retriggering directly control envelope behavior. The envelope is working correctly - it's showing you what the gate is doing. Learn to analyze gate signals, not blame envelopes.
-
-3. **Expecting theoretical perfection instead of musical reality:** Envelopes have minimum times, retriggering behavior, perceptual interactions between stages. This isn't malfunction - it's how envelopes work in reality. Digital envelopes have slew limiting, analog envelopes have component characteristics. Focus on musical results, not theoretical absolutes.
-
-**The deeper pattern:** Envelopes are deceptively simple - four stages, straightforward operation. But understanding them deeply teaches you: timing in synthesis, gate behavior, CV control, perceptual psychology, and how control signals shape everything. Issues with envelopes usually reveal gaps in understanding fundamental synthesis concepts that transfer to every modular context.
-
----
-
 ## Quick Start: Get Your First Envelope Working in 5 Minutes
 
 ![Blue Lantern Modules BLM Looping Simple ADSR v2.1](https://github.com/DGretta/Music/raw/main/modular/images/blue_lantern/simple_adsr_v2/front_panel.jpg)  
@@ -479,6 +308,177 @@ BLM Simple ADSR v2.1 proves that **fundamental utilities need not be basic**. AD
 
 ---
 
+## Common Mistakes and How to Avoid Them
+
+### "My envelope keeps sustaining forever - the release doesn't work!"
+
+**Problem:** Envelope stays at sustain level indefinitely instead of releasing when expected.
+
+**Why this happens:** **Sustain is a LEVEL, not a time.** This is the most common envelope misunderstanding. The envelope will hold at sustain level for as long as the gate signal remains HIGH. If your gate is still high, release hasn't started yet - sustain is doing exactly what it should.
+
+**Solution:**
+- Verify gate source returns to LOW after note ends
+- Check sequencer gate length - if 100%, gates never end, sustain continues indefinitely
+- Try shorter gate lengths (50-75%) to hear release phase
+- Use LED or scope to visualize gate signal timing
+- Remember: Release only starts AFTER gate goes LOW
+- This teaches you that envelopes respond to gate behavior - if gates don't end, neither do notes
+
+### "When I retrigger quickly, the envelope sounds wrong!"
+
+**Problem:** Rapid retriggering creates unexpected envelope behavior or cut-off sounds.
+
+**Why this happens:** If new gate arrives before previous envelope completes release phase, envelope restarts from current voltage, not 0V. This creates shorter attack (starting partway up) and changes envelope character. This is standard envelope behavior, not malfunction.
+
+**Solution:**
+- Understand this is normal retriggering behavior in most envelopes
+- If you need full attack every time, increase release time or decrease note density
+- Use envelope's natural retriggering for performance effects (legato-style playing)
+- This behavior teaches you about envelope states and timing interactions
+- Some modules have "reset to zero" options - BLM retriggers from current level
+- Learn to use retriggering creatively rather than fighting it
+
+### "My envelopes are way too fast/slow for the music!"
+
+**Problem:** Even with ADSR knobs adjusted, envelope timing doesn't match musical tempo or feel.
+
+**Why this happens:** Not using the TIME knob effectively. The TIME knob is a global timing multiplier for all envelope stages. Same ADSR knob positions can create millisecond-fast percussion envelopes OR multi-second pad envelopes depending on TIME setting.
+
+**Solution:**
+- Set envelope SHAPE with ADSR knobs (relative timing between stages)
+- Set envelope SPEED with TIME knob (overall tempo)
+- Workflow: Dial in desired envelope shape, then adjust TIME to match music
+- TIME doesn't affect sustain level (which is level, not time)
+- This teaches you separation of shape from speed - powerful workflow concept
+- Same envelope shape works for drums AND pads with different TIME settings
+
+### "I can't hear the difference between linear and exponential!"
+
+**Problem:** Curve switch seems to do nothing or makes minimal difference.
+
+**Why this happens:** Difference between linear and exponential curves is most obvious at longer times and depends heavily on musical context. Very fast envelopes or already-filtered sounds may not show much difference.
+
+**Solution:**
+- Test with long attack/decay times (multiple seconds) to hear difference clearly
+- Use bright oscillators (saw/square) not filtered sounds for obvious comparison
+- Exponential attack feels "natural" with gentle onset then acceleration
+- Linear attack feels "electronic" with constant rate from start to finish
+- Try both on same patch - you'll develop preference based on musical context
+- Exponential generally sounds more natural for most musical applications
+- This teaches you that curve selection affects character, especially at slower rates
+
+### "Loop mode doesn't seem to do anything!"
+
+**Problem:** Setting switch to LOOP mode doesn't produce expected looping behavior.
+
+**Why this happens:** If Time knob is at very slow settings, envelope cycle might take many seconds - seems like it's not looping when actually it's just very slow. Or ADSR settings create envelope that sounds continuous (high sustain with slow A/D/R).
+
+**Solution:**
+- Set TIME to faster values (clockwise) to hear looping clearly
+- Try simple settings: fast Attack, fast Decay, low Sustain, fast Release for obvious looping
+- Use loop modes for rhythmic modulation (tremolo, filter sweeps)
+- LOOP GATE mode requires gate input - won't loop without gate HIGH
+- Continuous LOOP mode ignores gate completely - loops continuously
+- This teaches you envelopes as rhythmic modulation sources, not just note shapers
+
+### "My VCA doesn't open - no sound comes through!"
+
+**Problem:** Patching envelope to VCA CV input doesn't produce audio output.
+
+**Why this happens:** Multiple potential issues: envelope level too low, VCA gain not set, audio not patched, or misunderstanding that envelopes need positive voltage to open VCAs.
+
+**Solution:**
+- Verify LEVEL knob is up (clockwise) for adequate envelope amplitude
+- Check VCA has audio input patched and gain control adjusted
+- Confirm envelope is actually triggering (use mult to check with LED/scope)
+- Remember: 0V = VCA closed, +V = VCA open - envelope must go positive
+- Test with continuous LOOP mode to verify VCA control without gates
+- This teaches you VCA control fundamentals and CV signal flow
+
+### "CV level control doesn't seem to do anything!"
+
+**Problem:** Patching CV to level input produces no effect on envelope amplitude.
+
+**Why this happens:** CV Amount attenuator is at minimum (fully counterclockwise). The attenuator determines how much CV affects level - at minimum, CV has zero effect regardless of voltage.
+
+**Solution:**
+- Turn CV Amount knob clockwise to increase CV modulation depth
+- Start with attenuator at 12 o'clock for moderate CV effect
+- Patch consistent CV source (not gate) for testing - LFO or sequencer CV output
+- Observe envelope amplitude changing with CV modulation
+- This teaches you CV depth control - attenuators are everywhere in modular
+- Understanding attenuverters/attenuators is fundamental to modular patching
+
+### "Attack is never instant no matter how far I turn the knob!"
+
+**Problem:** Even with Attack knob fully counterclockwise, envelope still has slight rise time.
+
+**Why this happens:** Digital implementation has minimum slew rate to prevent clicks/artifacts. Also, truly instant voltage changes are impossible in real-world electronics - some rise time always exists.
+
+**Solution:**
+- Understand this is normal behavior for smooth envelope generation
+- For truly percussive sounds, use very short attack + strong decay for punch
+- Perceived "instant" attack is often actually 1-10ms - our ears are forgiving
+- Physical limitation teaches you about digital smoothing and click prevention
+- Some clicks ARE from too-fast attacks - slight slew prevents this
+- Focus on musical result rather than absolute instantaneous theoretical perfection
+
+### "Decay seems to affect attack character even though I didn't change attack!"
+
+**Problem:** Changing decay time makes attack sound different, even with identical attack settings.
+
+**Why this happens:** Decay and attack interact perceptually. Fast decay after slow attack emphasizes attack swell. Slow decay after fast attack makes attack seem even more abrupt by comparison. Our perception is relative, not absolute.
+
+**Solution:**
+- Understand envelope stages interact perceptually even though they're technically separate
+- Design envelopes as complete shapes, not isolated parameters
+- Fast attack + fast decay = percussive
+- Slow attack + slow decay = swelling pad
+- Fast attack + slow decay = punchy sustaining tone
+- This teaches you envelope design is about overall shape, not just individual stages
+
+### "I want to control multiple things with one envelope but running out of outputs!"
+
+**Problem:** Need envelope to control VCA, filter, and maybe other parameters, but limited outputs.
+
+**Why this happens:** BLM has multiple parallel outputs, but eventually you might need more destinations than physical jacks.
+
+**Solution:**
+- BLM provides multiple parallel outputs - use them all simultaneously
+- For more destinations, use passive mult or buffered mult
+- Passive mult works fine for envelope signals (not critical for precise voltage)
+- One envelope can control many destinations - VCA + filter + pitch + modulation
+- This teaches you signal distribution in modular systems
+- Parallel outputs = convenience; mults = expansion when needed
+
+### "Release seems to get cut off when notes retrigger quickly!"
+
+**Problem:** Release phase doesn't complete its full decay before next note starts.
+
+**Why this happens:** This is normal behavior. When new gate arrives during release, envelope immediately restarts attack from current voltage. Release is interrupted by new trigger. This is how most envelope generators work.
+
+**Solution:**
+- Reduce note density or increase space between triggers for complete release
+- Understand this is musical behavior - fast playing naturally cuts off releases
+- Use longer release for legato playing, shorter release for staccato
+- Some styles want release cutoff (techno), others want complete release (ambient)
+- This teaches you envelope behavior in musical context, not just isolation
+- Learn to work WITH envelope behavior rather than fighting it
+
+### Pattern Recognition: Root Causes of Most Envelope Issues
+
+**Three core misunderstandings cause 90% of problems:**
+
+1. **Confusing LEVEL with TIME:** Sustain is a LEVEL. It holds at that voltage until gate ends. It's not a duration - it lasts as long as the gate is HIGH. Every frustration about "endless sustain" comes from expecting time when it's actually level. Understanding this distinction is fundamental to all ADSR operation.
+
+2. **Not understanding gate behavior:** Envelopes RESPOND to gates. If gates don't behave as expected, envelopes won't either. Gate length, timing, and retriggering directly control envelope behavior. The envelope is working correctly - it's showing you what the gate is doing. Learn to analyze gate signals, not blame envelopes.
+
+3. **Expecting theoretical perfection instead of musical reality:** Envelopes have minimum times, retriggering behavior, perceptual interactions between stages. This isn't malfunction - it's how envelopes work in reality. Digital envelopes have slew limiting, analog envelopes have component characteristics. Focus on musical results, not theoretical absolutes.
+
+**The deeper pattern:** Envelopes are deceptively simple - four stages, straightforward operation. But understanding them deeply teaches you: timing in synthesis, gate behavior, CV control, perceptual psychology, and how control signals shape everything. Issues with envelopes usually reveal gaps in understanding fundamental synthesis concepts that transfer to every modular context.
+
+---
+
 ## Beginner Patch Ideas
 
 ### **Patch 1: Basic - Essential ADSR Operation with VCA Control**
@@ -552,15 +552,15 @@ Basic ADSR Workflow:
                        │ • Attack: 10    │    │                 │    │ VCA CV ◀────────┼────┼─ OUT A ○        │
                        │ • Decay: 2      │    │                 │    │                 │
                        │ • Sustain: 8    │    │                 │    │                 │
-                       │ • Release: 3    │    │                 │    │                 │
-                       │ • Time: varies  │    │                 │    │ Filter CV ◀─────┼────┼─ OUT B ○        │
+                       │ • Release: 3    │    │                 │    │ Filter CV ◀─────┼────┼─ OUT B ○        │
+                       │ • Time: varies  │    │                 │    │                 │
                        │                 │    │                 │    │                 │
-                       │ Level: 10       │    │                 │    │                 │
-                       │ (modulated by   │    │                 │    │                 │
-                       │ expression CV)  │    │                 │    │ THRU ○──────────┼────┼─ Chain to       │
-                       └─────────────────┘    │                 │    │ Additional      │
-                                              │                 │    │ Envelopes       │
-                                              └─────────────────┘    └─────────────────┘
+                       │ Level: 10       │    │                 │    │ THRU ○──────────┼────┼─ Chain to       │
+                       │ (modulated by   │    │                 │    │ Additional      │
+                       │ expression CV)  │    │                 │    │ Envelopes       │
+                       └─────────────────┘    │                 │    │                 │
+                                              │                 │    └─────────────────┘
+                                              └─────────────────┘
 
 Advanced Operation Modes:
 ┌──────────────────────────────────────────────────────────────────────────────────────┐
