@@ -251,18 +251,21 @@ CMOS Party proves that **the most fundamental digital concepts can be immediatel
 │ Clock Out ○─────┼────┼─ Input A ◀      │    │                 │
 │                 │    │                 │    │                 │
 └─────────────────┘    │                 │    │                 │
-                       │ Input B ◀───────┼──┐ │                 │
-┌─────────────────┐    │ (Unpatched)     │  │ │                 │
-│  Clock Divider  │    │                 │  │ │                 │
-│   (/2 or /4)    │    │ AND Out ○───────┼──┼─┼─ Kick Drum     │
-│                 │    │ OR Out ○────────┼──┼─┼─ Hi-hat        │
-│ Div Out ○───────┼────┼─ Input B ◀      │  │ │                 │
-│                 │    │ XOR Out ○───────┼──┼─┼─ Snare         │
-└─────────────────┘    │ NAND Out ○──────┼──┼─┼─ Percussion    │
-                       │ NOR Out ○───────┼──┼─┼─ Effects Trig  │
-                       │                 │  │ │                 │
-                       │ Inv A Out ○─────┼──┼─┼─ Off-beat      │
-                       │ Inv B Out ○─────┼──┘ │                 │
+                       │                 │    │                 │
+┌─────────────────┐    │                 │    │                 │
+│  Clock Divider  │    │                 │    │                 │
+│   (/2 or /4)    │    │                 │    │                 │
+│                 │    │                 │    │                 │
+│ Div Out ○───────┼────┼─ Input B ◀      │    │                 │
+└─────────────────┘    │                 │    │                 │
+                       │ AND Out ○───────┼────┼─ Kick Drum     │
+                       │ OR Out ○────────┼────┼─ Hi-hat        │
+                       │ XOR Out ○───────┼────┼─ Snare         │
+                       │ NAND Out ○──────┼────┼─ Percussion    │
+                       │ NOR Out ○───────┼────┼─ Effects Trig  │
+                       │                 │    │                 │
+                       │ Inv A Out ○─────┼────┼─ Off-beat      │
+                       │ Inv B Out ○─────┼────┘                 │
                        └─────────────────┘    └─────────────────┘
 ```
 
