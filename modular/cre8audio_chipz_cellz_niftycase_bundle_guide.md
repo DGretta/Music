@@ -15,9 +15,9 @@
 
 **Step 1: Physical Setup**
 1. **Install Chipz in NiftyCase** - Use included screws, ensure power cable red stripe faces down
-2. **Connect Cellz power** - 16-pin Eurorack power cable, red stripe down
+2. **Install Cellz in NiftyCase** - Position next to Chipz in the row, power cable red stripe down
 3. **Set Cellz 5V jumper** - Set to "INTERNAL" (NiftyCase provides 5V power)
-4. **Position for performance** - Cellz in front, NiftyCase behind for easy access to both
+4. **Position modules** - Arrange Chipz and Cellz side-by-side for comfortable performance access to both
 
 **Step 2: Audio Connections**
 1. **Chipz Chip1 Out** → **NiftyCase "to out" input** (3.5mm TS cable)
