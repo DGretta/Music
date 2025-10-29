@@ -262,7 +262,7 @@ Cellz proves that **interface design is instrument design**. How you organize vo
 
 ### **2. Programming System - TUNE1 & TUNE2**
 - **TUNE1 button + left knob:** Programs OUT1 values for each pad
-- **TUNE2 button + left knob:** Programs OUT2 values for each pad  
+- **TUNE2 button + right knob:** Programs OUT2 values for each pad  
 - **Programming process:** Hold TUNE button, touch pad, turn knob, release
 - **Visual confirmation:** LEDs show which channel you're programming
 - **Independent values:** Each pad can have completely different voltages for OUT1/OUT2
@@ -540,7 +540,7 @@ Cellz proves that **interface design is instrument design**. How you organize vo
 
 **Alternative 2D Sequencers:**
 - **Instead of Cellz:** Try **Rene 2** for dedicated Cartesian sequencing with more complex addressing
-- **Instead of clock division:** Try **Pam's New Workout** for algorithmic clock generation and 2D control
+- **Instead of clock division:** Try **Pam's Pro Workout** for algorithmic clock generation and 2D control
 - **Budget alternative:** **Ornaments & Crime** in sequencer mode provides similar 2D sequencing
 - **Different character:** **Eloquencer** offers traditional step sequencer with 2D parameter control
 
@@ -572,7 +572,7 @@ Cellz proves that **interface design is instrument design**. How you organize vo
 
 ### **Perfect Partners for Beginners:**
 - **Chipz (Cre8audio):** Natural pairing - Cellz controls Chipz perfectly for NiftyBundle setup
-- **Quantizers (2HP Tune, Scales):** Essential for musical pitch control - converts raw CV to musical intervals
+- **Quantizers (2HP Tune, Intellijel Scales):** Essential for musical pitch control - converts raw CV to musical intervals
 - **VCAs (2HP VCA, Intellijel uVCA):** Use GATE outputs to control dynamics
 - **Clock Dividers:** Create interesting 2D sequencing patterns with divided clocks for grid navigation
 
@@ -589,9 +589,9 @@ Cellz proves that **interface design is instrument design**. How you organize vo
 - **Complex modulars:** Use as expressive controller for any CV-controllable parameter in large systems
 
 ### **Essential Performance Partners:**
-- **Analysis modules (Data, O_C):** Real-time monitoring and feedback for improved touch performance accuracy
-- **Chaos generators (Wogglebug, Turing Machine):** Organic evolution patterns that enhance human touch expression
-- **Recording systems (ES-9, FH-2):** Capture and analyze touch performances for detailed study and refinement
+- **Analysis modules (Mordax Data, Ornaments & Crime by Tunefish/After Later Audio/Plum Audio):** Real-time monitoring and feedback for improved touch performance accuracy
+- **Chaos generators (Make Noise Wogglebug, Music Thing Modular Turing Machine):** Organic evolution patterns that enhance human touch expression
+- **Recording systems (Expert Sleepers ES-9, Expert Sleepers FH-2):** Capture and analyze touch performances for detailed study and refinement
 - **Performance mixers:** Blend touch outputs with visual feedback for live performance systems
 
 ### **Advanced System Integration:**
