@@ -76,26 +76,26 @@
 - **Modulation friendly:** Excellent for LFO sweeps, envelope control, sequencing on both filters AND VCAs
 - **Dual CV system:** Complete independent control over filtering AND amplitude per channel
 
-### **6. Mystery Switch (Experimental Feature)**
+### **6. Mystery Switch (Function Unknown)**
 - **Location:** Left side near the lp outputs
 - **Symbol:** Solid gold circle overlapping a gold ring
-- **Function:** Unknown - requires experimentation!
-- **Possible functions:**
-  - **Filter coupling:** Links left and right filter responses
-  - **VCA bypass:** Bypasses VCA stage for direct filter output
-  - **Stereo mode:** Changes stereo processing behavior
-  - **Filter feedback:** Internal feedback routing between channels
-  - **Resonance coupling:** Links Q control between channels
-  - **Input routing:** Changes how i● and i●● inputs are processed
-- **Experiment with:** Try switching during different patches to discover its effect
-- **Boutique character:** Mystery features are common in hand-built European modules
-- **Document your findings:** Note what changes when you flip the switch!
+- **Function:** Currently undocumented - testing required
+- **Documentation status:** Bizarre Jezabel hasn't specified this switch's purpose in available materials
+- **User research needed:** If you discover what this controls, please document your findings
+- **Testing approach:** Try both positions during different patches and note any changes in:
+  - Filter response or coupling behavior
+  - Signal routing characteristics
+  - Stereo image or channel interaction
+  - VCA operation or bypass behavior
+  - Overall tonal character
+- **Hand-built reality:** European small-batch modules sometimes include features that emerge during the design process but remain undocumented
+- **Community knowledge:** Share findings with other Pkhia users to build collective understanding
 
 ### **7. Analog Filter Character**
 - **Warm analog tone:** Classic analog filter sound and behavior
 - **Musical resonance:** Natural self-oscillation at high resonance settings
 - **Smooth cutoff response:** Musical filter curves, not harsh digital steps
-- **Boutique quality:** Hand-built European craftsmanship
+- **Hand-built quality:** Small-batch European production with attention to analog detail
 - **Low noise:** Clean signal path with minimal added noise
 
 ---
@@ -104,9 +104,9 @@
 
 ### **Patch 1: Classic Stereo Filter + VCA Sweep**
 ```
-Stereo Source (Castor & Pollux, CS-L, Stereo Dipole) → Pkhia i ●, i ●●
-LFO (Batumi, Ochd, Pamela's NEW) → cvf ●● (linked filter control)
-Envelope/LFO (Maths, Function, Contour) → vca ●● (linked VCA control)
+Stereo Source (Noise Engineering Loquelic Iteritas Percido, Mutable Instruments Plaits) → Pkhia i ●, i ●●
+LFO (Xaoc Devices Batumi, Instruō øchd, ALM Busy Circuits Pamela's NEW Workout) → cvf ●● (linked filter control)
+Envelope/LFO (Make Noise Maths, Cre8audio Function Junction, Noise Engineering Contour) → vca ●● (linked VCA control)
 Output ← lp ●, lp ●● → Mixer (Mixup, Doepfer A-138)
 ```
 **Setup:** Use lp outputs for classic low-pass filtering with VCA dynamics
@@ -116,12 +116,12 @@ Output ← lp ●, lp ●● → Mixer (Mixup, Doepfer A-138)
 
 ### **Patch 2: Dual-Mono Processing with VCA Control**
 ```
-Mono Source 1 (Any VCO, Plaits, Braids) → Pkhia i ●
-Mono Source 2 (Different VCO, Rings, Elements) → Pkhia i ●●
-Envelope 1 (Maths Ch1, Function, Contour) → cvf ● (left filter)
-Envelope 2 (Maths Ch4, Different Function) → cvf ●● (right filter)
-Envelope 3 (Quadrax Ch1, ADSR) → vca ● (left VCA)
-Envelope 4 (Quadrax Ch2, Different ADSR) → vca ●● (right VCA)
+Mono Source 1 (Any VCO, Mutable Instruments Plaits, Mutable Instruments Braids) → Pkhia i ●
+Mono Source 2 (Different VCO, Mutable Instruments Rings, Mutable Instruments Elements) → Pkhia i ●●
+Envelope 1 (Make Noise Maths Ch1, Cre8audio Function Junction, Noise Engineering Contour) → cvf ● (left filter)
+Envelope 2 (Make Noise Maths Ch4, Different Function Junction) → cvf ●● (right filter)
+Envelope 3 (Intellijel Quadrax Ch1, ADSR) → vca ● (left VCA)
+Envelope 4 (Intellijel Quadrax Ch2, Different ADSR) → vca ●● (right VCA)
 Output ← Multiple filter modes → Mixer (Performance, Mixup)
 ```
 **Setup:** Two different sources, independent filter AND VCA envelope control
@@ -131,7 +131,7 @@ Output ← Multiple filter modes → Mixer (Performance, Mixup)
 
 ### **Patch 3: Parallel Multi-Mode Processing**
 ```
-Mono Source (Any VCO, Plaits, Braids) → Multiple (Doepfer A-180, Links) → Split to:
+Mono Source (Any VCO, Mutable Instruments Plaits, Mutable Instruments Braids) → Multiple (Doepfer A-180, Kinks) → Split to:
   │─ Pkhia i ● (left channel)
   └─ Pkhia i ●● (right channel)
 Output ← lp ● → Mixer Channel 1 (different filter modes)
@@ -144,10 +144,10 @@ Output ← hp ●● → Mixer Channel 2 (for frequency splitting)
 
 ### **Patch 4: Mono-to-Stereo Widening with VCA Animation**
 ```
-Mono Source (Any VCO, Plaits, Braids) → Pkhia i ● only
-LFO 1 (Batumi Ch1, Ochd) → cvf ● (slow rate)
-LFO 2 (Batumi Ch2, Different Ochd) → cvf ●● (slightly faster)
-LFO 3 (Quadrax, Maths) → vca ● (different phase)
+Mono Source (Any VCO, Mutable Instruments Plaits, Mutable Instruments Braids) → Pkhia i ● only
+LFO 1 (Xaoc Devices Batumi Ch1, Instruō øchd) → cvf ● (slow rate)
+LFO 2 (Xaoc Devices Batumi Ch2, Different øchd channel) → cvf ●● (slightly faster)
+LFO 3 (Intellijel Quadrax, Make Noise Maths) → vca ● (different phase)
 LFO 4 (Different channel) → vca ●● (different phase)
 Output ← lp ●, lp ●● → Stereo Mixer (Mixup, Performance)
 ```
@@ -205,16 +205,16 @@ Output ← lp ●, lp ●● → Stereo Mixer (Mixup, Performance)
 | **Cellz Gate2 → 1+2 1&2 VCA CV** | Linked VCA control | **Touch-triggered amplitude control** | **Touch gates create dramatic stereo VCA dynamics** |
 
 **Module Settings:**
-- **Cellz:** Touch sequencer generates expressive CV and gate patterns for real-time filter control
-- **Pkhia:** Touch-controlled signals create responsive stereo filter processing with human expression
-- **Performance control:** Touch interface provides immediate, expressive control over stereo filter characteristics
-- **Result:** Boutique stereo filter processing with touch-based expressive control and performance flexibility
+- **Cellz:** Touch sequencer generates CV and gate patterns for real-time filter control
+- **Pkhia:** Touch-controlled signals create responsive stereo filter processing
+- **Performance control:** Touch interface provides immediate control over stereo filter characteristics
+- **Result:** Analog stereo filter processing with touch-based performance flexibility
 
 **Learning Objectives:**
-- **Touch + Filter integration:** Expressive touch control applied to boutique analog stereo filtering
+- **Touch + Filter integration:** Touch control applied to analog stereo filtering
 - **Performance filtering:** Create touch-responsive stereo filter processing for live performance
-- **Expressive stereo control:** Understand how human touch enhances stereo filter character
-- **System expression:** Entire stereo filter system responds to human touch and expression
+- **Dynamic stereo control:** Understand how real-time control enhances stereo filter character
+- **System responsiveness:** Entire stereo filter system responds to performance input
 
 **Alternative Performance Sources:**
 - **Instead of Cellz:** Try **16n faderbank** for multi-channel stereo filter control, or **Tetrapad** for pressure-sensitive filter control
@@ -330,36 +330,36 @@ Output ← lp ●, lp ●● → Stereo Mixer (Mixup, Performance)
 | **Maths (4HP)** | Function generator | **Mathematical filter processing** | **Function generation enhances expressive control** |
 | **Pkhia mk2 (6HP)** | Stereo filter | **Boutique analog filter core** | **European craftsmanship with expressive control** |
 
-**Complete Expressive System Design:**
+**Complete System Design:**
 - **Hermod+ as sequence brain:** Multi-track sequencer + quantizer provides musical filter sequences with precise timing
-- **Cellz as expression interface:** Touch control provides real-time human expression over stereo filter parameters
-- **Maths as function processor:** Mathematical functions enhance and process expressive control signals
-- **Pkhia as analog core:** Boutique European stereo filter provides warm analog character with multi-mode processing
-- **Total ecosystem:** 34HP complete expressive filter workstation combining sequencing, touch, functions, and boutique filtering
+- **Cellz as performance interface:** Touch control provides real-time interaction with stereo filter parameters
+- **Maths as function processor:** Mathematical functions enhance and process control signals
+- **Pkhia as analog core:** Hand-built European stereo filter provides warm analog character with multi-mode processing
+- **Total ecosystem:** 34HP complete filter workstation combining sequencing, touch control, functions, and analog filtering
 
 **Performance Applications:**
-1. **Sequenced expressive filtering:** Hermod+ sequences combined with Cellz touch for hybrid sequenced/expressive control
+1. **Sequenced performance filtering:** Hermod+ sequences combined with Cellz touch for hybrid sequenced/performance control
 2. **Touch-responsive sequences:** Cellz touch modifies Hermod+ sequences in real-time for dynamic performance
-3. **Mathematical expression enhancement:** Maths processes touch control for complex expressive relationships
-4. **Boutique analog processing:** All digital control feeds European analog filter for warm, musical character
-5. **Complete filter performance:** Sequence, touch, process, and filter in one integrated expressive ecosystem
+3. **Mathematical enhancement:** Maths processes touch control for complex control relationships
+4. **Analog processing:** All digital control feeds European analog filter for warm, musical character
+5. **Complete filter performance:** Sequence, touch, process, and filter in one integrated performance ecosystem
 
 **Why This Complete Ecosystem Works:**
 - **Leverages multi-function capabilities:** Hermod+ serves as sequencer + quantizer + timing brain simultaneously
-- **Expression + Sequencing + Functions:** Three different approaches combine for complete expressive filter control
-- **Boutique analog character:** Digital control enhances but doesn't replace European analog filter warmth
+- **Performance + Sequencing + Functions:** Three different approaches combine for complete filter control
+- **Analog character:** Digital control enhances but doesn't replace European analog filter warmth
 - **Performance flexibility:** Touch interface allows real-time modification of sequenced filter patterns
-- **Combinable with other guides:** Different approach from other guide ecosystems allows simultaneous patch usage
+- **Combinable with other systems:** Different approach from other guide ecosystems allows simultaneous patch usage
 
-**Expert Expressive Performance:**
+**Expert Performance Workflow:**
 1. **Initialization:** Set Hermod+ sequences, configure Cellz touch interface, prepare Maths functions
-2. **Expressive sequences:** Hermod+ provides musical foundation → Cellz adds real-time expression → Maths enhances control → Pkhia analog processing
-3. **Touch modification:** Use Cellz to modify running sequences, creating dynamic expressive filter performance
-4. **Function enhancement:** Maths processes expressive signals for complex mathematical filter relationships
-5. **Filter mastery:** Complete ecosystem generates expressive stereo filtering with boutique European analog character
+2. **Performance sequences:** Hermod+ provides musical foundation → Cellz adds real-time control → Maths enhances signals → Pkhia analog processing
+3. **Touch modification:** Use Cellz to modify running sequences, creating dynamic performance
+4. **Function enhancement:** Maths processes control signals for complex mathematical filter relationships
+5. **Filter mastery:** Complete ecosystem generates responsive stereo filtering with European analog character
 
-**Philosophical Achievement:**
-This represents **complete expressive filter mastery** - where musical sequencing, human touch expression, and mathematical function processing all serve the boutique European analog filter, creating a complete workstation that bridges digital precision with analog warmth and human expression.
+**System Achievement:**
+This represents **complete performance filter mastery** - where musical sequencing, touch control, and mathematical function processing all serve the hand-built European analog filter, creating a complete workstation that bridges digital precision with analog warmth.
 
 ---
 
@@ -380,10 +380,10 @@ This represents **complete expressive filter mastery** - where musical sequencin
 
 ### **Version Confusion - MK2 vs Original**
 - **Different versions exist:** Pkhia, Pkhia MK2, Pkhi, etc.
-- **Feature differences:** Original has VCAs, MK2 may be filter-only
-- **Check your version:** Features described may vary by model
+- **Feature differences:** Both versions include dual filters with pre-filter VCAs, but panel layouts and specific controls may vary
+- **Check your version:** Control placement and labeling may differ between models
 - **ModularGrid listings:** Multiple entries for different versions
-- **Manual important:** Refer to documentation for your specific version
+- **Manual important:** Refer to documentation for your specific version to confirm exact features
 
 ### **Filter + VCA Architecture Confusion**
 - **Dual architecture:** Both FILTER and VCA sections with separate CV controls
@@ -417,10 +417,10 @@ This represents **complete expressive filter mastery** - where musical sequencin
 - **Boutique charm:** Mystery features add character and discovery to boutique modules
 - **Community knowledge:** Share findings with other Pkhia users online
 
-### **Boutique Module Characteristics**
-- **Small company:** Bizarre Jezabel is a boutique European manufacturer
+### **Small-Batch Module Characteristics**
+- **Small company:** Bizarre Jezabel is a European manufacturer focused on analog design
 - **Limited documentation:** May have less online information than major brands
-- **Build quality:** Hand-built modules with attention to analog detail
+- **Build quality:** Hand-assembled modules with attention to circuit design
 - **Availability:** May be harder to find than mainstream modules
 - **Support:** Contact manufacturer directly for technical questions
 
@@ -481,7 +481,7 @@ This represents **complete expressive filter mastery** - where musical sequencin
 
 ---
 
-## Phase 2 Learning Path
+## Advanced Learning Path
 
 ### **Recommended Study Progression:**
 1. **Start with Pkhia fundamentals:** Master dual filter architecture, stereo processing, and boutique European analog character
@@ -518,7 +518,7 @@ This represents **complete expressive filter mastery** - where musical sequencin
 
 ---
 
-**Bottom Line:** Pkhia MK2 isn't just a stereo filter - it's a **boutique expressive filter processor** that transforms touch expression, musical sequencing, and mathematical control into warm European analog stereo character. Every patch teaches you something new about how expressive stereo filtering really works. As the **analog filter core of expressive performance ecosystems**, it transforms multi-function control into unified boutique stereo evolution.
+**Bottom Line:** Pkhia MK2 isn't just a stereo filter - it's a **performance-oriented filter processor** that transforms touch control, musical sequencing, and CV modulation into warm European analog stereo character. Every patch teaches you something new about how responsive stereo filtering really works. As the **analog filter core of performance ecosystems**, it transforms multi-function control into unified stereo processing.
 
 ---
 
