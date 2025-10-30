@@ -341,7 +341,7 @@ This bundle proves that **system design beats component collection**. Three care
 ### **"I have cables everywhere and can't keep track of my patches"**
 **Problem:** Cable management chaos making it difficult to perform or troubleshoot
 
-**Why It Happens:** Three separate units with multiple connection points creates complex cable routing. Cellz sits in front, NiftyCase behind, and you need cables running between them, plus power cables, audio outputs, MIDI inputs. Long cables drape across workspace, short cables create tension, and without organization, you can't tell what's patched where. This is compounded when you start experimenting - you add a new patch cable, it works, but now you have 8 cables and can't remember which does what.
+**Why It Happens:** Two modules installed in compact 84HP case with multiple patch points creates cable density in small space. Even though Cellz and Chipz sit adjacent in the same row, you'll have CV cables, audio cables, and potential modulation cables running between them, plus rear MIDI connections and audio output from the case. In 84HP, even short cables can obscure module fronts and create visual confusion. When experimenting, you add new cables without removing old ones, and without organization, you can't tell what's patched where in the compact space.
 
 **This teaches:** Cable management IS system design. In any modular system, physical organization affects both performance workflow and troubleshooting capability. This applies at all scales - whether 3 modules or 200. Developing systematic cable routing habits, using appropriate cable lengths, and maintaining visual clarity of signal flow is professional discipline, not just aesthetics.
 
@@ -441,7 +441,7 @@ Missing that bundle power comes from INTEGRATION - the Cellz → Chipz → Nifty
 
 Ignoring that physical arrangement, cable routing, and muscle memory matter as much as patch design.
 
-**Why this causes problems:** Cellz and NiftyCase poorly positioned creates awkward performance workflow. Cable chaos makes troubleshooting impossible. No documented patches means can't recreate sounds. Physical aspects undermine musical capability.
+**Why this causes problems:** Module arrangement in the case affects workflow ergonomics. In compact 84HP space, cable routing and visual clarity matter. Poor cable management makes performance awkward and troubleshooting impossible. No documented patches means can't recreate sounds. Physical aspects undermine musical capability.
 
 **What this teaches:** Modular performance requires physical design - not just signal flow design. Ergonomics, visual clarity, consistent routing, documentation - these aren't optional extras, they're essential skills for functional modular practice. This applies to all electronic music performance.
 
