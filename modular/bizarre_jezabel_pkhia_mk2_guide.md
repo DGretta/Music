@@ -243,57 +243,81 @@ The multi-mode outputs reveal this: use modes independently when needed, use the
 
 ### **Patch 1: Classic Stereo Filter + VCA Sweep**
 ```
-Stereo Source (Noise Engineering Loquelic Iteritas Percido, Mutable Instruments Plaits) → Pkhia i ●, i ●●
+Stereo Source (Noise Engineering Loquelic Iteritas Percido, Mutable Instruments Plaits) → Pkhia i ●, i ●● (Audio - Red)
 LFO (Xaoc Devices Batumi, Instruō øchd, ALM Busy Circuits Pamela's NEW Workout) → cvf ●● (linked filter control)
 Envelope/LFO (Make Noise Maths, Cre8audio Function Junction, Noise Engineering Contour) → vca ●● (linked VCA control)
-Output ← lp ●, lp ●● → Mixer (Mixup, Doepfer A-138)
+Output ← lp ●, lp ●● → Mixer (Mixup, Doepfer A-138) (Audio - Red)
 ```
 **Setup:** Use lp outputs for classic low-pass filtering with VCA dynamics
 **Controls:** LFO creates filter sweeps, envelope/LFO adds amplitude modulation
 **Result:** Classic analog filter movement WITH dynamic VCA control on stereo material
 **Performance:** Adjust cutoff knobs for sweep ranges, VCA knobs for amplitude control
 
+**Learning Objectives:**
+- **Pre-filter VCA architecture:** Understand how VCA control before filtering shapes what reaches the filters
+- **Linked control basics:** Learn how linked CV inputs (cvf ●●, vca ●●) control both channels simultaneously
+- **Dual modulation concept:** Grasp how separate modulation of filter cutoff and VCA amplitude creates dynamic stereo processing
+- **Analog filter character:** Experience warm European analog filtering responding to CV modulation
+
 ### **Patch 2: Dual-Mono Processing with VCA Control**
 ```
-Mono Source 1 (Any VCO, Mutable Instruments Plaits, Mutable Instruments Braids) → Pkhia i ●
-Mono Source 2 (Different VCO, Mutable Instruments Rings, Mutable Instruments Elements) → Pkhia i ●●
+Mono Source 1 (Any VCO, Mutable Instruments Plaits, Mutable Instruments Braids) → Pkhia i ● (Audio - Red)
+Mono Source 2 (Different VCO, Mutable Instruments Rings, Mutable Instruments Elements) → Pkhia i ●● (Audio - Red)
 Envelope 1 (Make Noise Maths Ch1, Cre8audio Function Junction, Noise Engineering Contour) → cvf ● (left filter)
 Envelope 2 (Make Noise Maths Ch4, Different Function Junction) → cvf ●● (right filter)
 Envelope 3 (Intellijel Quadrax Ch1, ADSR) → vca ● (left VCA)
 Envelope 4 (Intellijel Quadrax Ch2, Different ADSR) → vca ●● (right VCA)
-Output ← Multiple filter modes → Mixer (Performance, Mixup)
+Output ← Multiple filter modes → Mixer (Performance, Mixup) (Audio - Red)
 ```
 **Setup:** Two different sources, independent filter AND VCA envelope control
 **Result:** Two mono sources with separate filter AND VCA envelopes
 **Creative:** Use different filter modes (lp vs hp) for contrast, different VCA envelopes for rhythm
 **Performance:** Independent cutoff AND amplitude control for each voice
 
+**Learning Objectives:**
+- **Independent channel control:** Master how individual CV inputs (cvf ●, cvf ●●, vca ●, vca ●●) enable completely separate processing per channel
+- **Dual-mono architecture:** Understand how Pkhia functions as two independent processors for different voices
+- **Multi-mode exploration:** Learn how different filter modes (lp vs hp) create frequency contrast between voices
+- **Complex envelope routing:** Grasp how four separate envelopes coordinate filter and VCA control for rhythmic independence
+
 ### **Patch 3: Parallel Multi-Mode Processing**
 ```
-Mono Source (Any VCO, Mutable Instruments Plaits, Mutable Instruments Braids) → Multiple (Doepfer A-180, Kinks) → Split to:
+Mono Source (Any VCO, Mutable Instruments Plaits, Mutable Instruments Braids) → Multiple (Doepfer A-180, Kinks) → Split to: (Audio - Red)
   │─ Pkhia i ● (left channel)
   └─ Pkhia i ●● (right channel)
-Output ← lp ● → Mixer Channel 1 (different filter modes)
-Output ← hp ●● → Mixer Channel 2 (for frequency splitting)
+Output ← lp ● → Mixer Channel 1 (different filter modes) (Audio - Red)
+Output ← hp ●● → Mixer Channel 2 (for frequency splitting) (Audio - Red)
 ```
 **Setup:** Same source through different filter modes
 **Result:** Parallel low-pass and high-pass processing
 **Mix:** Blend lp and hp for frequency-splitting effects
 **Advanced:** Try bp on one channel for three-way frequency split
 
+**Learning Objectives:**
+- **Multi-mode outputs concept:** Understand how simultaneous LP/BP/HP outputs enable parallel frequency processing
+- **Frequency splitting technique:** Learn how one source becomes multiple frequency bands through different filter modes
+- **Phase relationships:** Experience how mixing different filter modes can create phase interactions
+- **Parallel processing architecture:** Grasp how same signal through multiple processors creates complex timbral results
+
 ### **Patch 4: Mono-to-Stereo Widening with VCA Animation**
 ```
-Mono Source (Any VCO, Mutable Instruments Plaits, Mutable Instruments Braids) → Pkhia i ● only
+Mono Source (Any VCO, Mutable Instruments Plaits, Mutable Instruments Braids) → Pkhia i ● only (Audio - Red)
 LFO 1 (Xaoc Devices Batumi Ch1, Instruō øchd) → cvf ● (slow rate)
 LFO 2 (Xaoc Devices Batumi Ch2, Different øchd channel) → cvf ●● (slightly faster)
 LFO 3 (Intellijel Quadrax, Make Noise Maths) → vca ● (different phase)
 LFO 4 (Different channel) → vca ●● (different phase)
-Output ← lp ●, lp ●● → Stereo Mixer (Mixup, Performance)
+Output ← lp ●, lp ●● → Stereo Mixer (Mixup, Performance) (Audio - Red)
 ```
 **Setup:** Mono input, different LFO rates on each filter AND VCA
 **Result:** Mono source becomes wide stereo with moving filters AND animated amplitude
 **Timing:** Use related but different LFO speeds (2:3 ratio) for filter and VCA modulation
 **Width:** Different cutoff AND amplitude movements create dynamic stereo interest
+
+**Learning Objectives:**
+- **Mono-to-stereo technique:** Master how single input creates stereo width through differential processing
+- **Stereo imaging through differences:** Understand that stereo width comes from processing differences, not just panning
+- **Multi-LFO coordination:** Learn how multiple LFO rates create complex movement patterns across stereo field
+- **Filter + VCA animation:** Grasp how combined modulation of cutoff and amplitude creates dynamic three-dimensional stereo
 
 ### **Patch 5: Intermediate - Performance Stereo Control**
 ```
@@ -334,14 +358,14 @@ Output ← lp ●, lp ●● → Stereo Mixer (Mixup, Performance)
                              └──────────────────────────────┘
 ```
 
-| Touch + Filter Chain | Function | Purpose | Performance Integration |
-|---------------------|----------|---------|------------------------|
-| **Cellz CV1 → Left Filter CV** | Touch-controlled left filter | **Expressive left channel filter control** | **Touch interface creates expressive stereo filter control** |
-| **Cellz CV2 → Right Filter CV** | Touch-controlled right filter | **Expressive right channel filter control** | **Independent touch control of stereo filter channels** |
-| **Cellz CV3 → Left VCA CV** | Touch-controlled left VCA | **Expressive left channel amplitude control** | **Touch interface creates expressive stereo VCA control** |
-| **Cellz CV4 → Right VCA CV** | Touch-controlled right VCA | **Expressive right channel amplitude control** | **Independent touch control of stereo VCA channels** |
-| **Cellz Gate1 → 1+2 1&2 Filter CV** | Linked filter control | **Touch-triggered filter sweeps** | **Touch gates create dramatic stereo filter sweeps** |
-| **Cellz Gate2 → 1+2 1&2 VCA CV** | Linked VCA control | **Touch-triggered amplitude control** | **Touch gates create dramatic stereo VCA dynamics** |
+| Connection | Function | Result |
+|------------|----------|--------|
+| **Cellz CV1 → Left Filter** | Touch left filter cutoff | Expressive left channel control |
+| **Cellz CV2 → Right Filter** | Touch right filter cutoff | Expressive right channel control |
+| **Cellz CV3 → Left VCA** | Touch left VCA level | Left channel amplitude control |
+| **Cellz CV4 → Right VCA** | Touch right VCA level | Right channel amplitude control |
+| **Cellz Gate1 → Linked Filter** | Touch-triggered sweeps | Both filter cutoffs together |
+| **Cellz Gate2 → Linked VCA** | Touch-triggered dynamics | Both VCA levels together |
 
 **Module Settings:**
 - **Cellz:** Touch sequencer generates CV and gate patterns for real-time filter control
@@ -401,15 +425,15 @@ Output ← lp ●, lp ●● → Stereo Mixer (Mixup, Performance)
                              └──────────────────────────────┘
 ```
 
-| Sequencer + Filter Chain | Function | Purpose | Musical Integration |
-|--------------------------|----------|---------|--------------------|
-| **Hermod+ CV1 → Left Filter CV** | Sequenced left filter control | **Musical left channel filter sequences** | **Sequencer provides musical filter control for left channel** |
-| **Hermod+ CV2 → Right Filter CV** | Sequenced right filter control | **Musical right channel filter sequences** | **Independent sequenced control of right channel filtering** |
-| **Hermod+ CV3 → Left VCA CV** | Sequenced left VCA control | **Musical left channel amplitude sequences** | **Sequencer provides musical VCA control for left channel** |
-| **Hermod+ CV4 → Right VCA CV** | Sequenced right VCA control | **Musical right channel amplitude sequences** | **Independent sequenced control of right channel VCA** |
-| **Hermod+ Gate1 → 1+2 1&2 Filter CV** | Quantized filter control | **Musical filter sequences** | **Quantizer ensures musical filter frequency relationships** |
-| **Hermod+ Gate2 → 1+2 1&2 VCA CV** | Quantized VCA control | **Musical VCA sequences** | **Quantizer ensures musical VCA amplitude relationships** |
-| **Hermod+ Quantizer → Processing** | Musical CV processing | **Musical filter tracking** | **Built-in quantizer provides musical filter frequency control** |
+| Connection | Function | Result |
+|------------|----------|--------|
+| **Hermod+ CV1 → Left Filter** | Sequenced left filter control | Musical left channel sequences |
+| **Hermod+ CV2 → Right Filter** | Sequenced right filter control | Musical right channel sequences |
+| **Hermod+ CV3 → Left VCA** | Sequenced left VCA control | Musical left amplitude sequences |
+| **Hermod+ CV4 → Right VCA** | Sequenced right VCA control | Musical right amplitude sequences |
+| **Hermod+ Gate1 → Linked Filter** | Quantized filter sequences | Musical filter relationships |
+| **Hermod+ Gate2 → Linked VCA** | Quantized VCA sequences | Musical amplitude relationships |
+| **Hermod+ Quantizer** | Musical CV processing | Ensures musical filter tracking |
 
 **Module Settings:**
 - **Hermod+:** Multi-track sequencer + quantizer creates musical stereo filter sequences with built-in quantization
