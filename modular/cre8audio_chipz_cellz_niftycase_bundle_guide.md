@@ -683,10 +683,10 @@ Chipz outputs are designed for modular levels but can easily overdrive NiftyCase
 ## Bundle Setup and Configuration
 
 ### **Physical Arrangement**
-- **Cellz Position:** Front and center for easy pad access
-- **NiftyCase Position:** Behind Cellz, angled for knob access
-- **Cable Management:** Keep 3.5mm TS cables short and organized
-- **Power Consideration:** Ensure both units have adequate ventilation
+- **Module Order:** Cellz left, Chipz right (most common arrangement for ergonomic access)
+- **Case Placement:** Flat on desktop or work surface - no special angling needed
+- **Cable Management:** Keep 3.5mm TS cables short between adjacent modules
+- **Ventilation:** Ensure case has adequate airflow, avoid blocking rear panel vents
 
 ### **Power Setup Procedure**
 1. **Power off everything** before making connections
