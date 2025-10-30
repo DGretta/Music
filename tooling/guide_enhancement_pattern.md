@@ -73,6 +73,45 @@ The module-specific line should answer "what does this module do technically?" i
 
 **Verification requirement:** All specifications must be verified against official documentation. Flag with ⚠️ if uncertain.
 
+### **Availability Context (Optional Introduction Note)**
+
+For modules with notable availability situations, include a brief note in the introduction immediately after the "What is [Module]?" description. This helps users set appropriate expectations without muddying the Key Specifications.
+
+**When to include availability notes:**
+
+1. **Discontinued modules** (Mutable Instruments, legacy gear):
+   ```markdown
+   *Note: Mutable Instruments discontinued production in 2022. Plaits is available on the used market and through licensed manufacturers like After Later Audio.*
+   ```
+
+2. **Limited/small-batch production** (Bizarre Jezabel, small European makers):
+   ```markdown
+   *Note: Bizarre Jezabel produces modules in small batches with limited availability. Contact manufacturer directly for current production status.*
+   ```
+
+3. **Clones** (Behringer, budget reproductions):
+   ```markdown
+   *Note: [Module] is a clone of [Original Manufacturer] [Original Model], offering similar functionality at lower cost.*
+   ```
+
+4. **Regional restrictions** (when known):
+   ```markdown
+   *Note: Available primarily in [region], though used market options exist elsewhere.*
+   ```
+
+5. **Everything else:**
+   - No note needed (assume normal availability)
+
+**Why availability context matters:**
+- Prevents users from falling in love with modules they can't obtain
+- Sets expectations for rare/limited production modules
+- Provides context for discontinued gear (used market, clones, alternatives)
+- Helps users understand the module's market position
+
+**Verification approach:** Community knowledge - discontinuation announcements and availability changes spread quickly through modular communities. Use manufacturer announcements, ModularGrid status, and established community knowledge.
+
+**Future consideration:** DIY modules will be in separate directory/section with different guide structure (including build instructions).
+
 ---
 
 ## Interconnection Teaching: The Core Differentiator
