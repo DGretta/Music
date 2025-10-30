@@ -52,7 +52,7 @@ Every guide must include these elements in this order:
 **Key Specifications:**
 - **Width:** [X]HP
 - **Depth:** [X]mm
-- **Power:** [X]mA @ +12V / [X]mA @ -12V
+- **Power:** [X]mA @ +12V / [X]mA @ -12V / [X]mA @ +5V
 - **[Module-specific details]:** Architecture type, filter slope, CV ranges, etc.
 ```
 
