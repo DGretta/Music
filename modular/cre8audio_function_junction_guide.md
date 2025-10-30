@@ -268,7 +268,7 @@ The normalling system reveals this: use sections independently when needed, use 
 - **A/D/S/R knob effects:** Turn each knob to hear envelope shape changes
 - **Result:** Classic synthesizer voice with proper amplitude shaping
 
-### **Patch 2: Intermediate - Advanced Modulation Processing**
+### **Patch 2: Intermediate - Modulation Processing**
 ```
    ┌────────────────────┐      ┌────────────────────┐
    │     DivKid Ochd    │      │   Cre8audio        │
@@ -304,11 +304,11 @@ The normalling system reveals this: use sections independently when needed, use 
    └────────────────────┘      └──────────────────┘
 ```
 
-| Connection | Cable Type | Purpose | Advanced Integration |
-|------------|------------|---------|--------------------|
-| Ochd LFO 2 → F MOD CV | CV (Blue) | **Organic envelope shaping** | **Advanced modulation processing** |
-| Ochd Trigger 1 → F IN JACK | Gate (Yellow) | **Organic timing** | **Non-mechanical function triggers** |
-| Ochd LFO 6 → LFO Rate CV | CV (Blue) | **Tempo modulation** | **Organic LFO speed control** |
+| Connection | Cable Type | Purpose | Integration |
+|------------|------------|---------|---------------------|
+| øchd LFO 2 → F MOD CV | CV (Blue) | **Organic envelope shaping** | **Modulation processing** |
+| øchd Trigger 1 → F IN JACK | Gate (Yellow) | **Organic timing** | **Non-mechanical function triggers** |
+| øchd LFO 6 → LFO Rate CV | CV (Blue) | **Tempo modulation** | **Organic LFO speed control** |
 | F OUT JACK → Filter Cutoff | CV (Blue) | **Shaped filter modulation** | **Musical envelope filtering** |
 | L TRI JACK → Oscillator PWM | CV (Blue) | **Pulse width modulation** | **Organic timbral changes** |
 
@@ -319,24 +319,24 @@ The normalling system reveals this: use sections independently when needed, use 
 - **LFO Rate:** 2 o'clock (active modulation speed)
 
 **What you're learning:**
-- **Modulation of modulators:** Using one modulation source (Ochd LFO) to control another modulation source's behavior (Function Junction attack time) teaches cascading modulation - where modulators affect other modulators before affecting sound. This creates organic, evolving complexity impossible with direct modulation. Principle appears throughout advanced synthesis: LFO modulating envelope times, envelope modulating LFO rates, sequencer controlling modulation amounts.
-- **Function generator as processor:** Using Function Junction not just as envelope source but as modulation processor/shaper teaches you that envelopes aren't only for amplitude - they shape any voltage into musical curves. Function generator transforms Ochd's organic LFOs into attack-decay envelopes, which then modulate synthesis parameters. This is modulation architecture: sources, processors, destinations in deliberate chains.
+- **Modulation of modulators:** Using one modulation source (øchd LFO) to control another modulation source's behavior (Function Junction attack time) teaches cascading modulation - where modulators affect other modulators before affecting sound. This creates organic, evolving complexity impossible with direct modulation. Principle appears throughout advanced synthesis: LFO modulating envelope times, envelope modulating LFO rates, sequencer controlling modulation amounts.
+- **Function generator as processor:** Using Function Junction not just as envelope source but as modulation processor/shaper teaches you that envelopes aren't only for amplitude - they shape any voltage into musical curves. Function generator transforms øchd's organic LFOs into attack-decay envelopes, which then modulate synthesis parameters. This is modulation architecture: sources, processors, destinations in deliberate chains.
 - **Multi-section coordination:** How Function Junction's four sections (ADSR, Function, LFO, Mixer) work together simultaneously teaches system thinking - coordinating multiple processes toward musical goal rather than using modules in isolation. Function shapes one parameter, LFO shapes another, mixer combines them - this is orchestration at modulation level. Essential for complex patches.
-- **Organic timing vs mechanical timing:** Ochd's organic, drifting LFOs controlling Function Junction's precise envelopes creates hybrid: mechanical precision with organic feel. Understanding this teaches you that synthesis can blend predictable structure with unpredictable variation. This appears in all electronic music seeking human feel - combine steady timing with organic modulation for "imperfect perfection."
+- **Organic timing vs mechanical timing:** øchd's organic, drifting LFOs controlling Function Junction's precise envelopes creates hybrid: mechanical precision with organic feel. Understanding this teaches you that synthesis can blend predictable structure with unpredictable variation. This appears in all electronic music seeking human feel - combine steady timing with organic modulation for "imperfect perfection."
 
 **Advanced Techniques:**
-- **Organic function shaping:** Ochd LFO modulates attack time for evolving envelopes
+- **Organic function shaping:** øchd LFO modulates attack time for evolving envelopes
 - **Cascading modulation:** Function output shapes filter, LFO shapes oscillator
-- **Non-mechanical timing:** Ochd triggers create organic, breathing function cycles
-- **Tempo modulation:** LFO speed varies with Ochd's organic timing
+- **Non-mechanical timing:** øchd triggers create organic, breathing function cycles
+- **Tempo modulation:** LFO speed varies with øchd's organic timing
 
 **Visual Feedback:**
-- **Function LED activity:** Changes with Ochd trigger timing (organic, not mechanical)
-- **MOD LED:** Shows attack modulation from Ochd LFO 2
+- **Function LED activity:** Changes with øchd trigger timing (organic, not mechanical)
+- **MOD LED:** Shows attack modulation from øchd LFO 2
 - **Organic evolution:** All modulation sources drift and evolve together
 - **Result:** Complex, evolving modulation that breathes with organic life
 
-### **Patch 3: Advanced - Advanced AI Integration with Marbles**
+### **Patch 3: Advanced - Algorithmic Modulation with Marbles**
 ```
 ┌─────────────┐    ┌─────────────┐    ┌─────────────┐
 │ Mutable     │───▶│ Cre8audio   │───▶│   Complex   │
@@ -375,11 +375,11 @@ The normalling system reveals this: use sections independently when needed, use 
 
 | Module Chain | Signal Flow | Purpose | Advanced Concept |
 |-------------|-------------|---------|------------------|
-| **Marbles X1 → Ch1 (normalled ADSR)** | AI voltage | **Intelligent pitch modulation** | **AI controls envelope-shaped pitch** |
-| **Marbles t1 → ADSR Gate** | AI timing | **Musical trigger generation** | **AI timing triggers envelopes** |
-| **Marbles X2 → Ch2 (normalled Function)** | AI voltage | **Function-shaped modulation** | **AI controls complex envelope shapes** |
-| **Marbles Y → Ch3 (normalled LFO)** | AI voltage | **LFO amplitude control** | **AI controls modulation depth** |
-| **MIX → Oscillator 1V/Oct** | Complex CV | **Multi-source pitch control** | **Three intelligences control pitch** |
+| **Marbles X1 → Ch1 (normalled ADSR)** | Algorithmic voltage | **Algorithmic pitch modulation** | **Algorithm controls envelope-shaped pitch** |
+| **Marbles t1 → ADSR Gate** | Algorithmic timing | **Musical trigger generation** | **Algorithmic timing triggers envelopes** |
+| **Marbles X2 → Ch2 (normalled Function)** | Algorithmic voltage | **Function-shaped modulation** | **Algorithm controls complex envelope shapes** |
+| **Marbles Y → Ch3 (normalled LFO)** | Algorithmic voltage | **LFO amplitude control** | **Algorithm controls modulation depth** |
+| **MIX → Oscillator 1V/Oct** | Complex CV | **Multi-source pitch control** | **Three algorithmic sources control pitch** |
 | **Individual Outs → Oscillator** | Shaped CV | **Timbral modulation** | **Different shapes for different parameters** |
 
 **Module Settings:**
@@ -389,24 +389,24 @@ The normalling system reveals this: use sections independently when needed, use 
 - **LFO:** Moderate rate for vibrato/tremolo effects
 
 **What you're learning:**
-- **Normalling as modulation router:** Using Function Junction's normalling system (empty jacks = internal signals) with external voltages patched to mixer inputs teaches advanced routing technique. Marbles controls mixer channels which are normalled to Function Junction's internal modulators, creating three-layer control: Marbles AI → Function Junction processing → Synthesis parameters. This teaches that normalling isn't just convenience - it's architectural feature for complex routing.
-- **Parallel modulation paths:** Three simultaneous modulation shapes (ADSR, Function, LFO) each controlled by different Marbles outputs teaches parallel processing - multiple independent signal paths working simultaneously toward different destinations. MIX output combines for pitch control while individual outputs shape timbral parameters. This is modulation distribution: one intelligent source controlling multiple processors creating multiple effects.
-- **AI-driven modulation ecosystems:** Marbles' algorithmic intelligence making musical decisions about voltage relationships while Function Junction provides musical shaping teaches hybrid control: computational intelligence for decisions, analog processing for musicality. This appears in modern electronic music: algorithms choose what happens, analog circuits shape how it sounds. Understanding this teaches you to design instruments where machines make musical choices you wouldn't predict.
-- **Mixer as modulation matrix:** Using Function Junction's mixer not for mixing but as three-channel modulation processor controlled by single intelligent source teaches that "mixer" in modular context means "voltage combiner" with applications far beyond audio. Attenuverters scale Marbles' decisions, normalling routes to processors, outputs distribute shaped modulation - this is modulation matrix thinking applied to utility module.
+- **Normalling as modulation router:** Using Function Junction's normalling system (empty jacks = internal signals) with external voltages patched to mixer inputs teaches advanced routing technique. Marbles controls mixer channels which are normalled to Function Junction's internal modulators, creating three-layer control: Marbles algorithms → Function Junction processing → Synthesis parameters. This teaches that normalling isn't just convenience - it's architectural feature for complex routing.
+- **Parallel modulation paths:** Three simultaneous modulation shapes (ADSR, Function, LFO) each controlled by different Marbles outputs teaches parallel processing - multiple independent signal paths working simultaneously toward different destinations. MIX output combines for pitch control while individual outputs shape timbral parameters. This is modulation distribution: one algorithmic source controlling multiple processors creating multiple effects.
+- **Algorithmic modulation ecosystems:** Marbles' algorithms making musical decisions about voltage relationships while Function Junction provides musical shaping teaches hybrid control: computational algorithms for decisions, analog processing for musicality. This appears in modern electronic music: algorithms choose what happens, analog circuits shape how it sounds. Understanding this teaches you to design instruments where machines make musical choices you wouldn't predict.
+- **Mixer as modulation matrix:** Using Function Junction's mixer not for mixing but as three-channel modulation processor controlled by single algorithmic source teaches that "mixer" in modular context means "voltage combiner" with applications far beyond audio. Attenuverters scale Marbles' decisions, normalling routes to processors, outputs distribute shaped modulation - this is modulation matrix thinking applied to utility module.
 
 **Expert Techniques:**
 - **Normalled signal processing:** External voltages control internal modulators
 - **Parallel modulation routing:** Same source creates different effects via different processors
 - **Complex timbral control:** Multiple modulation types create evolving harmonic content
-- **AI modulation matrix:** Single intelligent source controls entire modulation network
+- **Algorithmic modulation matrix:** Single algorithmic source controls entire modulation network
 
 **Visual Feedback:**
 - **Channel LEDs:** Show individual modulation activity from each attenuverter
 - **ADSR/Function interaction:** Watch how AI voltages change envelope characteristics
 - **Complex oscillator response:** Hear multiple simultaneous modulations creating rich timbres
-- **Result:** Evolving, intelligent musical complexity from simple AI decisions
+- **Result:** Evolving, algorithmic musical complexity from Marbles' decisions
 
-### **Patch 4: Expert - Complete Advanced Modulation Ecosystem Hub**
+### **Patch 4: Expert - Complete Modulation Ecosystem Hub**
 ```
 ┌─────────────┐    ┌─────────────┐    ┌─────────────┐
 │ Advanced     │◀──▶│ Cre8audio   │───▶│ Synthesis   │
@@ -438,24 +438,24 @@ The normalling system reveals this: use sections independently when needed, use 
         │          │ A OUT→F MOD │
         │          └─────────────┘
         │
-        └──────────── Phase 2 Ecosystem Feedback
+        └──────────── Advanced Ecosystem Feedback
 ```
 
-**Complete Advanced Integration as Modulation Hub:**
+**Complete Integration as Modulation Hub:**
 
-| Advanced Module | Function Junction Role | System Integration | Musical Result |
+| Module | Function Junction Role | System Integration | Musical Result |
 |---------------|----------------------|-------------------|----------------|
-| **DivKid Ochd** | Organic envelope shaping | **LFOs → MOD inputs** | **Organic envelope evolution** |
-| **Mutable Marbles** | AI modulation processing | **X outputs → Mixer channels** | **Intelligent modulation mixing** |
-| **4ms RCD v2** | Polyrhythmic triggering | **Divisions → Trigger inputs** | **Mathematical envelope timing** |
+| **Instruō øchd** | Organic envelope shaping | **LFOs → MOD inputs** | **Organic envelope evolution** |
+| **Mutable Instruments Marbles** | Algorithmic modulation processing | **X outputs → Mixer channels** | **Algorithmic modulation mixing** |
+| **4ms RCD (Rotating Clock Divider)** | Polyrhythmic triggering | **Divisions → Trigger inputs** | **Mathematical envelope timing** |
 | **Make Noise Wogglebug** | Chaos modulation sources | **Chaos CVs → All inputs** | **Uncertainty in modulation** |
-| **System Feedback** | Learning and adaptation | **Audio analysis → Rate/MOD** | **Self-improving modulation** |
+| **System Feedback** | Recursive processing | **Audio analysis → Rate/MOD** | **Self-evolving modulation** |
 
 **Expert System Architecture:**
-- **Function Junction as central hub:** Processes all Advanced modulation sources
-- **Intelligent mixing:** AI-driven combination of organic, mathematical, and chaotic sources
+- **Function Junction as central hub:** Processes all modulation sources
+- **Algorithmic mixing:** Marbles-driven combination of organic, mathematical, and chaotic sources
 - **Self-patching networks:** Internal feedback creates complex recursive behaviors
-- **Adaptive processing:** System learns optimal modulation combinations over time
+- **Emergent processing:** System creates complex modulation through interaction
 
 **Learning Objectives:**
 - **Modulation ecosystem design:** Function Junction as processing center for entire system
@@ -470,21 +470,21 @@ The normalling system reveals this: use sections independently when needed, use 
 - **System-level thinking:** Design modulation networks, not individual connections
 
 **Performance Evolution:**
-1. **Initialization** (0-2 min): All Advanced modules establish foundational patterns
+1. **Initialization** (0-2 min): All modules establish foundational patterns
 2. **Integration** (2-10 min): Function Junction begins processing and mixing sources
 3. **Emergence** (10-30 min): Complex behaviors emerge from simple modulation interactions
-4. **Optimization** (30+ min): System finds optimal modulation combinations for musical content
+4. **Evolution** (30+ min): System develops organic modulation combinations through interaction
 
 **What you're learning:**
-- **Hub-and-spoke modulation architecture:** Function Junction as central processing hub for all advanced modulation sources teaches system design where one module integrates multiple specialized inputs. Ochd (organic), Marbles (intelligent), RCD (mathematical), Wogglebug (chaotic) each contribute unique modulation character, and Function Junction shapes/mixes/distributes them. This is modular system architecture: specialized sources feed central processor that serves multiple destinations.
-- **Modulation ecosystem thinking:** Understanding that modulation sources enhance each other through Function Junction's processing teaches ecosystem design rather than chain design. Not linear (A → B → C) but networked (all sources → processor → all destinations). Each advanced module contributes its character while Function Junction ensures musical integration. This is how complex modular systems work: specialized modules in coordinated networks.
-- **Multi-philosophy modulation:** Combining organic (Ochd), algorithmic (Marbles), mathematical (RCD), and chaotic (Wogglebug) modulation through single processor teaches that different modulation philosophies create richer results than single approach. Understanding this teaches you to design patches that blend precision with randomness, intelligence with chaos, mechanical timing with organic drift - creating music that's both controlled and surprising.
+- **Hub-and-spoke modulation architecture:** Function Junction as central processing hub for all modulation sources teaches system design where one module integrates multiple specialized inputs. Instruō øchd (organic), Mutable Instruments Marbles (algorithmic), 4ms RCD (mathematical), Make Noise Wogglebug (chaotic) each contribute unique modulation character, and Function Junction shapes/mixes/distributes them. This is modular system architecture: specialized sources feed central processor that serves multiple destinations.
+- **Modulation ecosystem thinking:** Understanding that modulation sources enhance each other through Function Junction's processing teaches ecosystem design rather than chain design. Not linear (A → B → C) but networked (all sources → processor → all destinations). Each module contributes its character while Function Junction ensures musical integration. This is how complex modular systems work: specialized modules in coordinated networks.
+- **Multi-philosophy modulation:** Combining organic (øchd), algorithmic (Marbles), mathematical (RCD), and chaotic (Wogglebug) modulation through single processor teaches that different modulation philosophies create richer results than single approach. Understanding this teaches you to design patches that blend precision with randomness, algorithms with chaos, mechanical timing with organic drift - creating music that's both controlled and surprising.
 - **Processing hub vs simple mixer:** Function Junction isn't just combining signals - it's processing each source through envelope shaping (ADSR/Function), adding independent modulation (LFO), mixing intelligently (attenuverters), selecting peaks (+OR), and distributing to multiple destinations. This teaches that "modulation processor" is distinct role from "modulation source" - processors shape character, sources provide raw material. Essential distinction for advanced patching.
 - **Self-generating modulation systems:** F TRIG → A IN self-patching while external sources control MOD inputs creates feedback loops where system generates its own timing while external sources influence characteristics. This teaches generative synthesis: patches that evolve and play themselves based on initial conditions but continue generating new material. Understanding feedback at modulation level teaches you how self-playing patches work.
 - **Complete modulation thinking:** This patch represents culmination of all modulation concepts: sources, processors, mixing, distribution, feedback, coordination, timing, shaping. When you understand this level of integration, you're thinking in complete modulation systems rather than individual connections. This is expert-level modular synthesis: designing instruments, not just making patches.
 
 **Advanced Philosophy:**
-Function Junction becomes the **neural center** of an advanced modulation brain: Ochd provides organic timing, Marbles adds intelligence, RCD contributes mathematical precision, Wogglebug introduces controlled chaos, and Function Junction processes it all into musical modulation that shapes synthesis networks. The system thinks in modulation.
+Function Junction becomes the **neural center** of a modulation ecosystem: Instruō øchd provides organic timing, Mutable Instruments Marbles adds algorithmic variation, 4ms RCD contributes mathematical precision, Make Noise Wogglebug introduces controlled chaos, and Function Junction processes it all into musical modulation that shapes synthesis networks. The system thinks in modulation.
 
 ---
 
@@ -738,19 +738,19 @@ Simple modules have obvious behavior - one purpose, clear controls, predictable 
 
 ## Pairs Well With
 
-### **Advanced Module Synergies (Modulation & CV Sources):**
-- **DivKid Ochd & Expander:** Ochd LFOs → Function Junction MOD inputs for organic envelope shaping
+### **Modulation & CV Source Synergies:**
+- **Instruō øchd & Expander:** øchd LFOs → Function Junction MOD inputs for organic envelope shaping
 - **Make Noise Wogglebug:** Wogglebug chaos CVs → All Function Junction inputs for controlled uncertainty
-- **Mutable Marbles:** Marbles X/Y outputs → Mixer channels for intelligent modulation processing
-- **4ms RCD v2:** RCD divisions → Function/ADSR triggers for polyrhythmic envelope generation
-- **Cross-Advanced Integration:** All Advanced modules feed Function Junction for unified modulation processing
+- **Mutable Instruments Marbles:** Marbles X/Y outputs → Mixer channels for algorithmic modulation processing
+- **4ms RCD (Rotating Clock Divider):** RCD divisions → Function/ADSR triggers for polyrhythmic envelope generation
+- **Cross-Module Integration:** All modulation sources feed Function Junction for unified processing
 
-### **Phase 1 Module Integration (Core Synthesis):**
+### **Core Synthesis Module Integration:**
 - **Make Noise Maths:** Maths + Function Junction = ultimate modulation powerhouse combination
 - **VCAs (2HP VCA, Veils):** Function Junction ADSR perfect for amplitude envelope control
 - **Filters (SEM, MMF):** Function Generator excels at filter cutoff and resonance modulation
 - **Oscillators:** LFO section handles vibrato, tremolo, and PWM duties perfectly
-- **Complete Phase 1 systems:** Function Junction as central modulation processor
+- **Complete Core Synthesis systems:** Function Junction as central modulation processor
 
 ### **Essential Utility Partners:**
 - **Attenuators/Offset:** Fine-tune modulation amounts beyond what internal mixer provides
@@ -770,18 +770,18 @@ Simple modules have obvious behavior - one purpose, clear controls, predictable 
 
 ### **Recommended Study Progression:**
 1. **Start with Function Junction fundamentals:** Master ADSR, Function Generator, LFO, and Mixer sections
-2. **Add organic modulation:** Integrate DivKid Ochd for natural envelope evolution (see Ochd guide)
+2. **Add organic modulation:** Integrate Instruō øchd for natural envelope evolution (see øchd guide)
 3. **Include controlled chaos:** Use Make Noise Wogglebug for unpredictable modulation processing (see Wogglebug guide)
-4. **Add algorithmic intelligence:** Apply Mutable Marbles for sophisticated modulation control (see Marbles guide)
-5. **Include polyrhythmic timing:** Use 4ms RCD v2 for mathematical envelope triggering (see RCD guide)
-6. **Complete the ecosystem:** Integrate all Advanced modules for unified modulation processing
+4. **Add algorithmic variation:** Apply Mutable Instruments Marbles for sophisticated modulation control (see Marbles guide)
+5. **Include polyrhythmic timing:** Use 4ms RCD (Rotating Clock Divider) for mathematical envelope triggering (see RCD guide)
+6. **Complete the ecosystem:** Integrate all modulation sources for unified processing
 
 ### **Cross-Module Learning Opportunities:**
-- **Function Junction + Ochd:** Learn organic envelope shaping through breathing modulation
+- **Function Junction + øchd:** Learn organic envelope shaping through breathing modulation
 - **Function Junction + Wogglebug:** Master chaotic modulation processing with controlled uncertainty
-- **Function Junction + Marbles:** Understand intelligent modulation mixing and AI-driven envelope control
+- **Function Junction + Marbles:** Understand algorithmic modulation mixing and envelope control
 - **Function Junction + RCD:** Explore polyrhythmic envelope generation with mathematical precision
-- **All Advanced + Function Junction:** Build complete modulation ecosystems with central processing hub
+- **All Sources + Function Junction:** Build complete modulation ecosystems with central processing hub
 
 ### **Skill Development Milestones:**
 - **Beginner:** Master individual Function Junction sections and basic envelope control
@@ -790,9 +790,9 @@ Simple modules have obvious behavior - one purpose, clear controls, predictable 
 - **Expert:** Design modulation ecosystems where Function Junction processes all Advanced sources
 
 ### **Advanced Integration Concepts:**
-- **Modulation Processing Hub:** Function Junction as central processor for all Advanced modulation
+- **Modulation Processing Hub:** Function Junction as central processor for all modulation sources
 - **Multi-Source Mixing:** Combine organic, chaotic, algorithmic, and mathematical modulation
-- **Envelope Evolution:** Use Advanced sources to control envelope characteristics dynamically
+- **Envelope Evolution:** Use external sources to control envelope characteristics dynamically
 - **System-Level Modulation:** Design patches where modulation sources enhance each other
 
 ### **Performance Applications:**
