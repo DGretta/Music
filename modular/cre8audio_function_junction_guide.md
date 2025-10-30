@@ -363,41 +363,225 @@ Function Junction becomes the **neural center** of an Advanced modulation brain:
 
 ---
 
-## Beginner "Gotchas"
+## Common Mistakes and How to Avoid Them
 
-### **Normalling Behavior Confusion**
-- **When inputs are empty:** Mixer channels automatically get ADSR, Function, LFO signals
-- **When you patch inputs:** The normalling disconnects and you get your patched signal
-- **This is powerful:** Instant access to all three modulators through mixer
-- **Can be confusing:** Why did my mixer behavior change when I patched something?
-- **Remember:** Empty jacks = automatic signals, patched jacks = your signals
+### **"I patched something into the mixer and now my modulation disappeared!"**
+**Problem:** Patching into mixer input jacks breaks the normalling, causing expected modulation to vanish
 
-### **Loop Button Functions**
-- **ADSR LOOP:** Makes envelope cycle continuously (becomes LFO)
-- **Function LOOP:** Makes function cycle continuously (becomes complex LFO)
-- **Independent:** Each can loop separately
-- **Visual feedback:** LEDs show when loop modes are active
-- **Don't forget:** Loop modes ignore new gate triggers until loop is disabled
+**Why It Happens:** Function Junction uses normalling - when mixer input jacks are empty, they automatically receive signals from internal sources (Channel 1 = ADSR, Channel 2 = Function, Channel 3 = LFO). When you patch into an input jack, you break that automatic connection and replace it with your patched signal. If you expected the ADSR to still be there while also sending your new signal, you'll be confused why modulation stopped.
 
-### **Attenuverter Control Direction**
-- **12 o'clock = no signal** (attenuverters start at zero)
-- **Clockwise from 12 = positive amount**
-- **Counter-clockwise from 12 = inverted/negative amount**
-- **Full CW or CCW = maximum positive or negative**
-- **Practice:** Turn knobs from 12 o'clock position to understand behavior
+**This teaches:** Normalling is fundamental modular design principle that appears everywhere. Understanding "empty jack = automatic connection, patched jack = your connection" teaches you how mult-normals, sequential switches, and many utility modules work. This isn't Function Junction-specific - it's a core modular concept for efficient patching. Normalling reduces patch cable clutter while maintaining flexibility.
 
-### **Function Generator Modulation Assignment**
-- **MOD button cycles:** Attack only → Decay only → Both → Attack only...
-- **Must press MOD button** to select what gets modulated
-- **LED indicates:** Which parameter(s) the F MOD input affects
-- **F MOD knob:** Controls amount of modulation (attenuverter)
-- **Powerful feature:** Can create complex modulation interactions
+**Solution:**
+- Understand normalling behavior: empty jacks get internal signals, patched jacks get your signals
+- If you need BOTH internal signal AND your signal, use an external mixer to combine them first
+- Use individual channel outputs (1 OUT, 2 OUT) if you want internal signals while using mixer for something else
+- Visual check: if jack is empty, it's receiving normalled signal; if jack has cable, it's receiving that cable's signal
+- Remember: normalling is convenience feature, not limitation - you can always access signals individually
 
-### **+OR JACK vs MIX JACK**
-- **MIX JACK:** Sum of all three channels (can create complex shapes)
-- **+OR JACK:** Only the highest voltage among the three (peak selector)
-- **Different uses:** MIX JACK for blended modulation, +OR JACK for "winner takes all"
-- **Don't ignore +OR JACK:** Great for selecting strongest modulation signal
+### **"The ADSR won't stop looping even when I send new gates!"**
+**Problem:** LOOP button engaged causes envelope to ignore gate triggers and cycle continuously
+
+**Why It Happens:** When LOOP button is active (LED lit), the ADSR becomes a cycling envelope generator - essentially an LFO with ADSR shape. In loop mode, the module ignores incoming gate triggers because it's self-triggering continuously. This is by design: loop mode means "cycle forever" not "cycle until new gate arrives." If you expect gates to restart the envelope while loop is active, nothing happens because the module is in fundamentally different operating mode.
+
+**This teaches:** Operating modes in modular aren't just parameter changes - they're fundamental behavior changes. Understanding that loop mode transforms an envelope generator into an LFO teaches you about modal synthesis where modules have distinct personalities depending on mode. This appears in oscillators (audio vs LFO mode), sequencers (forward vs random), and many modules with mode switches. Mode = different instrument.
+
+**Solution:**
+- Check LOOP button LED - if lit, envelope is cycling and ignoring gates
+- Press LOOP button to disable cycling if you want normal gate-triggered behavior
+- A LOOP jack allows external gate control of loop on/off - useful for performance switching
+- Function generator has separate LOOP button - each section loops independently
+- Use loop mode deliberately: great for creating cycling modulation without external LFO
+
+### **"My attenuverter knobs don't do anything at 12 o'clock!"**
+**Problem:** Attenuverters at center position (12 o'clock) output zero signal
+
+**Why It Happens:** Attenuverters are bidirectional controls that can pass positive voltage (clockwise from center), inverted/negative voltage (counter-clockwise from center), or nothing at all (center position). Center = zero attenuation = no signal passes through. This is different from standard knobs that have minimum at counter-clockwise and maximum at clockwise. If you turn an attenuverter to 12 o'clock expecting "medium amount," you get nothing because that's the zero point.
+
+**This teaches:** Attenuverters (attenuators + inverters) are fundamental CV processing tools throughout modular. Understanding bidirectional controls where center = zero teaches you voltage manipulation principles that appear in VCAs with CV, crossfaders, and any module that can invert signals. This is about voltage polarity control - positive, negative, or none. Essential concept for modulation routing and mixing.
+
+**Solution:**
+- Start attenuverter knobs at 12 o'clock (zero), then turn clockwise or counter-clockwise to hear effect
+- Clockwise from center = positive amount (increasing from zero to full positive)
+- Counter-clockwise from center = inverted/negative amount (increasing from zero to full negative)
+- Full CW or CCW = maximum positive or negative
+- Practice: with signal patched, turn knob through full range to understand bidirectional behavior
+- Visual feedback: channel LEDs show signal activity when attenuverters pass signal
+
+### **"I can't figure out which parameters the F MOD input is controlling!"**
+**Problem:** Function generator modulation assignment not clear, MOD button behavior confusing
+
+**Why It Happens:** Function generator's F MOD input can modulate Attack only, Decay only, or Both Attack and Decay - but you must press MOD button to cycle through these assignments. LED indicates current assignment, but if you're not watching LED or don't know to press MOD button, you won't understand why modulation affects what it does. Additionally, F MOD knob is an attenuverter controlling modulation amount, so if it's at center (zero), you won't hear any modulation regardless of MOD button assignment.
+
+**This teaches:** Modulation routing in modular often requires deliberate assignment - not everything modulates everything automatically. Understanding that modulation destinations need selection teaches you about modulation matrices, assigned CV inputs, and why some modules have switching for modulation routing. This is patch design: being intentional about what modulates what, not just patching and hoping.
+
+**Solution:**
+- Press MOD button to cycle: Attack only → Decay only → Both → Attack only (repeats)
+- Watch LED indicator to see current assignment
+- F MOD knob controls modulation amount - start at 12 o'clock (zero), turn clockwise for positive modulation
+- Test modulation: patch LFO to F MOD input, set F MOD knob to 2 o'clock, press MOD button and watch/hear parameter changes
+- Remember: MOD assignment is modal - affects all subsequent F MOD input behavior until changed
+
+### **"The MIX output sounds different than I expected when combining signals!"**
+**Problem:** Multiple modulation sources mixed together create unexpected combined waveforms
+
+**Why It Happens:** When you mix multiple modulation sources (ADSR + Function + LFO), they mathematically sum. If ADSR outputs 5V, Function outputs 3V, and LFO outputs 2V at the same moment, MIX outputs 10V (sum of all three). This can create complex, unexpected shapes - especially when envelopes overlap or LFO crosses through envelope curves. If you expected discrete separate modulations, mixing combines them into single composite modulation that might behave very differently than individual sources.
+
+**This teaches:** Signal mixing in modular is mathematical - voltages add. Understanding that mixing isn't "switching between sources" but "combining sources" teaches fundamental principle about CV math and audio mixing. This applies to all mixing: multiple oscillators, multiple envelopes, multiple LFOs. When you mix, you're creating new waveforms through addition. Essential for understanding complex modulation and audio mixing throughout synthesis.
+
+**Solution:**
+- Start with single channel - understand one source before mixing multiple
+- Use individual outputs (1 OUT, 2 OUT) to hear each source separately before mixing
+- Attenuverters control how much each source contributes to mix - turn down unused channels to zero
+- +OR JACK gives "winner" voltage instead of sum - try this for different mixing behavior
+- Visualize: if all three sources at maximum, mix could hit 30V (limited by module) - scale sources appropriately
+- Complex mixing is powerful for evolving modulation - embrace the unexpected shapes
+
+### **"My ADSR sustain doesn't work like I expect!"**
+**Problem:** Sustain level behavior confusing, especially relationship with gate length
+
+**Why It Happens:** Sustain is unique in ADSR - it's not a time control, it's a level control. Attack, Decay, and Release are times (how long), but Sustain is amplitude (how loud/high). The envelope rises during Attack, falls during Decay to Sustain level, HOLDS at Sustain level as long as gate is high, then falls during Release when gate goes low. If your gate is very short, you might never reach sustain phase - envelope just goes Attack → Decay → Release. If you expect sustain to be a time control like the others, behavior seems wrong.
+
+**This teaches:** ADSR structure reveals fundamental synthesis principle: envelopes have time parameters AND level parameters. Understanding that Sustain is level while A/D/R are times teaches you how temporal control (when things happen) differs from amplitude control (how loud things are). This applies to all dynamic processing: you control both timing and amplitude independently. Essential concept for shaping sounds musically.
+
+**Solution:**
+- Remember: A/D/R = time controls (how long), S = level control (how high voltage stays)
+- Sustain holds at set level as long as gate is high
+- Short gates may never reach sustain phase - envelope goes A → D → R
+- Long gates hold at sustain level indefinitely until gate goes low
+- Sustain at zero = no sustain (classic plucky envelope)
+- Sustain at full = envelope stays at peak after attack/decay (organ-like)
+- Test: hold long gate, adjust sustain knob, hear level change while gate held
+
+### **"Function generator envelope times are either too fast or too slow!"**
+**Problem:** Can't dial in usable envelope times, always too extreme
+
+**Why It Happens:** Function generator has different time ranges than ADSR, and LONG button behavior might not be understood. Function Attack/Decay default to faster, more percussive times suitable for function generation and transients. If you need slower envelope shapes like ADSR provides, function generator can feel too snappy. Alternatively, if you're using function for fast transients and LONG button is accidentally engaged, everything becomes extremely slow. The function generator is designed for different use cases than ADSR.
+
+**This teaches:** Different envelope generators serve different musical purposes. Understanding that Function generator optimizes for fast transient shaping while ADSR optimizes for musical note envelopes teaches you why modular systems often have multiple envelope types. Not all envelopes are interchangeable - each has sweet spot. This applies to all modular: specialized modules outperform general modules for specific tasks.
+
+**Solution:**
+- LONG button doubles all envelope times - check if LED is lit
+- Function generator excels at fast transients (percussion, plucks) - use ADSR for slower musical envelopes
+- SUSTAIN button on function generator creates ASR (Attack-Sustain-Release) behavior - useful for held notes
+- If function is too fast: enable LONG button for 2x slower times
+- If function is too slow: disable LONG button, adjust attack/decay to faster settings
+- Use right tool for job: ADSR for musical note shaping, Function for transients and modulation shaping
+- Both can loop - function loop creates more percussive cycling modulation than ADSR loop
+
+### **"The F TRIG output doesn't match my gate timing!"**
+**Problem:** End-of-decay trigger fires at unexpected times, doesn't align with gate input
+
+**Why It Happens:** F TRIG is end-of-DECAY trigger, not end-of-gate trigger. It fires when decay phase completes, which depends on decay time setting, not gate length. If decay is set to 500ms, F TRIG fires 500ms after attack completes, regardless of when gate goes low. If you're expecting F TRIG to follow your gate timing or trigger when gate ends, it won't - it triggers when function cycle decay completes. This is by design for creating cascading modulation and delayed triggers.
+
+**This teaches:** Trigger outputs in modular often derive from internal timing, not external gates. Understanding that F TRIG represents "function completed its decay" teaches you about derived timing and event generation. This appears in sequencers (end-of-sequence triggers), envelopes (end-of-cycle triggers), and many modules that generate timing from internal events. Triggers can be musical events, not just gate repeaters.
+
+**Solution:**
+- F TRIG fires when function decay phase completes (reaches zero voltage after decay)
+- Useful for cascading envelopes: F TRIG → other envelope triggers for sequential modulation
+- In LOOP mode, F TRIG creates rhythmic pulse at function cycle rate
+- Timing is decay-time dependent, not gate-length dependent
+- Use for: triggering next envelope stage, advancing sequencers, creating polyrhythmic patterns
+- If you need gate-timed triggers, use gate source directly - F TRIG is for function-timed events
+- Self-patch creativity: F TRIG → A IN JACK creates cascading envelope chains
+
+### **"Self-patching F TRIG to A IN creates weird behavior!"**
+**Problem:** Feedback patching causes unexpected envelope behavior or runaway modulation
+
+**Why It Happens:** Self-patching (using module's outputs to trigger its own inputs) creates feedback loops that can produce complex, sometimes chaotic behavior. When F TRIG triggers A IN JACK, function completion triggers ADSR, which might affect something that affects function, which triggers ADSR again... These feedback loops can create self-generating patterns or unstable behavior depending on settings. If your patch relies on specific timing and feedback disrupts it, results seem "broken" when they're actually operating exactly as patched - just in ways that are hard to predict.
+
+**This teaches:** Feedback patching is advanced modular technique that creates complex, self-generating behaviors. Understanding that outputs feeding inputs creates loops (not just signal paths) teaches you about generative patching, chaos, and emergent behavior. This appears throughout modular: audio feedback, CV feedback, trigger feedback. Feedback isn't mistake - it's powerful technique for self-playing patches. But it requires understanding that you're creating system, not just routing signals.
+
+**Solution:**
+- Self-patching is intentional advanced technique, not mistake - but requires understanding
+- Start simple: F TRIG → A IN with both in LOOP OFF mode creates single cascade (function triggers envelope)
+- Add LOOP buttons for self-generating patterns: both looping creates complex polyrhythmic interactions
+- Control feedback: use attenuverters, use external gates to reset, use MOD inputs to shape behavior
+- If behavior too chaotic: reduce feedback (remove self-patch), use external clock to stabilize
+- If behavior too static: increase feedback amount, add modulation to timing parameters
+- Document self-patches: these create emergent behavior that's hard to recreate without notes
+- Embrace unpredictability: feedback patching often produces happy accidents
+
+### **"The +OR jack doesn't seem to work right!"**
+**Problem:** +OR output doesn't behave like expected mixer output
+
+**Why It Happens:** +OR JACK is not a mixer - it's a peak selector (maximum voltage selector). It outputs only the highest voltage among the three channels at any given moment. If Channel 1 = 5V, Channel 2 = 3V, Channel 3 = 2V, +OR outputs 5V (only Channel 1). If voltages change and Channel 2 becomes highest at 7V, +OR switches to 7V (only Channel 2). This is fundamentally different from MIX JACK which sums all three (would output 10V in first example). If you expect +OR to blend signals like a mixer, you'll hear discrete switching between sources instead of smooth combination.
+
+**This teaches:** Peak selection is different mixing paradigm than summing. Understanding "maximum voltage wins" teaches you about comparators, priority systems, and how modular can make musical decisions ("which source is loudest right now?"). This appears in sequential switches, sample-and-hold circuits, and any system that selects rather than combines. Musical applications: +OR for "loudest modulation wins" behavior, creating complex modulation that switches between sources rather than blending them.
+
+**Solution:**
+- +OR JACK = maximum voltage selector (peak selector), not signal mixer
+- MIX JACK = signal summer (combines all three channels)
+- Use +OR when you want "winner takes all" modulation behavior
+- Use MIX when you want blended/combined modulation
+- +OR creates discrete switching between sources - musical for modulation selection
+- Test both: patch same sources to both outputs, hear dramatically different results
+- +OR useful for: selecting strongest envelope, choosing active modulation source, creating modulation priority systems
+- If you want traditional mixing, use MIX JACK; if you want selection/switching, use +OR JACK
+
+### **"I'm using all three channels but can't hear one of them!"**
+**Problem:** One mixer channel seems inactive or too quiet despite having signal patched
+
+**Why It Happens:** Most likely the attenuverter for that channel is at 12 o'clock (zero) position or only slightly turned from center. Attenuverters at center position pass no signal. Alternatively, if channel has no input patched, it receives normalled signal from internal source (Ch1=ADSR, Ch2=Function, Ch3=LFO) - but if that internal source isn't being triggered or isn't running, there's no signal to pass through. Another possibility: LED is lit showing signal present, but attenuverter is turned counter-clockwise from center (inverting signal) and inverted signal cancels out your other sources in the mix.
+
+**This teaches:** Signal flow in modular requires every stage to pass signal. Understanding that attenuverters at zero block signal entirely teaches you about gain staging and that "knob in middle position" doesn't mean "signal passing at medium level" when it's an attenuverter. This applies to all bidirectional controls and reminds you that signal path has multiple points where signal can be blocked. Systematic troubleshooting: check source, check connection, check attenuator, check destination.
+
+**Solution:**
+- Check channel attenuverter position - is it at 12 o'clock (zero) or slightly turned?
+- Turn attenuverter clockwise from center to pass positive signal (start at 2 o'clock, adjust)
+- Check channel LED - is it showing signal activity? If not, check source
+- If using normalled signal (no patch cable), ensure internal source is active (ADSR triggered, Function triggered, LFO running)
+- If channel LED shows activity but you don't hear it: check attenuverter, check if signal is inverted (CCW from center)
+- Test individual channel output (1 OUT or 2 OUT) before testing in mix - isolate the problem
+- If inverted signal causes problems in mix, either turn clockwise for positive or embrace inversion for phase cancellation effects
+
+---
+
+### **Pattern Recognition: Root Causes of Most Function Junction Issues**
+
+After troubleshooting countless Function Junction setups, **four core misunderstandings cause 90% of problems:**
+
+**1. Not Understanding Normalling as Active System Design**
+
+Normalling isn't just "automatic connections" - it's a deliberate system design philosophy where empty jacks provide intelligent defaults while patched jacks override them.
+
+**Why this causes problems:** Users treat normalling as passive behavior rather than active feature. They patch into mixer inputs without realizing they're breaking internal connections. They don't understand that normalling is about efficient patching - giving you instant access to internal signals while maintaining full flexibility.
+
+**What this teaches:** Normalling appears throughout modular - mult-normals, sequential switches, many utilities. Understanding "empty = default, patched = override" teaches fundamental modular design principle: intelligent defaults with complete override capability. This is system design thinking: providing workflow-optimized starting points that don't limit flexibility.
+
+**2. Confusing Time Controls with Level Controls**
+
+Attack, Decay, and Release are TIME parameters (how long). Sustain is LEVEL parameter (how high). Attenuverters are AMOUNT parameters (how much).
+
+**Why this causes problems:** Users expect all knobs to work similarly. They treat Sustain like a time control and wonder why short gates don't sustain. They set attenuverters to "medium" (12 o'clock) expecting medium signal and get nothing. They don't distinguish between temporal control (when), amplitude control (how loud), and processing control (how much).
+
+**What this teaches:** Synthesis parameters fall into different categories with different behaviors. Understanding time vs level vs amount teaches you to read module layouts and understand what each control actually does. This applies everywhere: oscillator pitch (frequency) vs oscillator level (amplitude), filter cutoff (frequency) vs filter resonance (emphasis), envelope times vs envelope levels. Parameter types have different musical meanings.
+
+**3. Expecting Intuitive Behavior from Advanced Features**
+
+Loop modes, modulation assignment, peak selection, end-of-decay triggers - these are deliberate advanced features with specific behaviors, not "obvious" functions.
+
+**Why this causes problems:** Users press buttons or patch things without understanding operational modes. Loop mode ignored gates - surprising if you don't know loops are self-generating. +OR outputs peak voltage - surprising if you expect mixing. F TRIG fires on function completion - surprising if you expect gate timing. MOD assignment requires button presses - surprising if you expect automatic routing.
+
+**What this teaches:** Advanced features require understanding their design purpose. Function Junction isn't "complicated" - it's feature-rich, and each feature serves specific musical purpose. Understanding that modal behavior, specialized outputs, and routing assignment are intentional teaches you to approach modules as designed instruments with specific capabilities, not just "boxes with jacks."
+
+**4. Not Recognizing Function Junction as Four Coordinated Modules**
+
+Treating Function Junction as single unit instead of understanding it's ADSR + Function + LFO + Mixer working together (or independently).
+
+**Why this causes problems:** Users patch randomly without understanding signal flow through four distinct sections. They don't realize mixer channels have individual outputs. They don't understand normalling routes internal sections through mixer automatically. They see one faceplate and think "one module" instead of "four coordinated modules."
+
+**What this teaches:** Complex modules are often multiple modules in single package. Understanding Function Junction as four sections teaches you to read module architecture: identify distinct functional blocks, understand how they interconnect, recognize when they operate independently vs together. This applies to all complex modules: think in functional blocks, not just "the module."
+
+**The Deeper Pattern:**
+
+These four misunderstandings reveal underlying issue: **expecting Function Junction to behave like simpler modules when it's actually sophisticated modulation ecosystem.** 
+
+Simple modules have obvious behavior - one purpose, clear controls, predictable results. Function Junction has intelligent defaults (normalling), multiple operating modes (loop, sustain, MOD assignment), coordinated sections (four modules in one), and advanced features (peak selection, end-of-decay triggers, bidirectional controls).
+
+**That's exactly why it's excellent teaching platform.** Issues you encounter aren't "problems to fix" - they're invitations to understand modular synthesis more deeply. When you master Function Junction's normalling, modes, and coordinated sections, you've learned principles that apply across all modular: system design, signal flow, parameter types, and how complex modules integrate multiple functions intelligently.
+
+**When you've mastered these four concepts, you're ready for advanced modular patching - because you understand the principles, not just the procedures.**
 
 ---
 
