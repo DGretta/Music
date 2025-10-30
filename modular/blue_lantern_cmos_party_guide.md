@@ -11,6 +11,15 @@
 
 **What is the CMOS Party?** A comprehensive boolean logic module providing all five standard logic operations (AND, NAND, NOR, XOR, OR) plus inverted outputs, using reliable CD4000 CMOS logic ICs. Perfect for clock manipulation, trigger pattern generation, and audio rate logic processing with extremely low latency.
 
+**Key Specifications:**
+- **Width:** 4HP
+- **Depth:** 25mm
+- **Power:** +12V: 20mA / -12V: 5mA
+- **Logic Operations:** AND, NAND, NOR, XOR, OR + Inversions
+- **ICs:** CD4000 series CMOS logic chips
+- **Response Time:** Nanosecond propagation (zero perceptible latency)
+- **Frequency Range:** DC to audio rate (20Hz-20kHz+)
+
 ### Your First Logic Clock Pattern
 1. **Connect clock sources** - Patch main clock to INPUT A, divided clock to INPUT B
 2. **Try the AND output** - Patch AND OUTPUT to sequencer clock input

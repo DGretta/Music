@@ -11,6 +11,15 @@
 
 **What is BLM Simple ADSR v2.1?** A 7HP digital envelope generator providing classic ADSR envelopes with three operational modes: standard 1-shot, loop activated gate, and continuous loop. Features CV-controllable output level, time adjustment, and both linear and exponential curves for versatile envelope shaping.
 
+**Key Specifications:**
+- **Width:** 7HP
+- **Depth:** 30mm
+- **Power:** +12V: 35mA / -12V: 5mA
+- **Envelope Type:** Digital ADSR with linear/exponential curves
+- **Modes:** 1-Shot, Loop Gate, Continuous Loop
+- **Output Range:** 0-10V (scalable via Level control)
+- **CV Inputs:** Gate, Level CV
+
 ### Your First Envelope
 1. **Connect gate source** - Patch sequencer or keyboard gate to green GATE input
 2. **Set ADSR parameters** - Adjust blue knobs: Attack, Decay, Sustain, Release

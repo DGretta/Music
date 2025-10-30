@@ -11,6 +11,15 @@
 
 **What is Cellz?** Think of it as a programmable touch-sensitive keyboard that outputs CV instead of MIDI. It's a 4×4 grid of touch pads where each pad can store two different voltage values. You can play it like an instrument, sequence it automatically, or use it as a creative controller for any CV-controllable parameter in your system.
 
+**Key Specifications:**
+- **Width:** 8HP
+- **Depth:** 38mm
+- **Power:** +12V: 95mA / -12V: 5mA
+- **Touch Pads:** 16 capacitive touch pads (4×4 grid)
+- **Outputs:** Dual independent CV (OUT1, OUT2) + Gates (GATE1, GATE2)
+- **CV Range:** 0-10V per output
+- **Sequencing:** 2D grid navigation via trigger inputs
+
 ### Your First Touch Melody
 1. **Connect Cellz OUT1** → **oscillator V/OCT input**
 2. **Connect Cellz GATE1** → **envelope generator or VCA**  

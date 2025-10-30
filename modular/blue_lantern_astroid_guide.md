@@ -11,6 +11,14 @@
 
 **What is the Astroid?** A dedicated drum synthesis module using the classic "twin-T" circuit to generate sine wave percussion sounds. Features accent control for dynamic playing, boost circuit for square wave distortion, and covers the full spectrum of classic drum machine sounds from 808s to 909s to Gabber kicks.
 
+**Key Specifications:**
+- **Width:** 6HP
+- **Depth:** 35mm
+- **Power:** +12V: 50mA / -12V: 10mA
+- **Oscillator:** Twin-T analog sine wave generator
+- **Controls:** Tune, Sweep, Tone, Decay, Accent, Boost
+- **Switch:** 3-position decay range selector
+
 ### Your First Classic Kick
 1. **Set initial positions** - Tune knob fully clockwise, Sweep knob at 12 o'clock
 2. **Connect trigger source** - Patch clock or sequencer trigger to TRIGGER INPUT
