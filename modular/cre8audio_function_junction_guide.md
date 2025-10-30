@@ -126,11 +126,11 @@
 - **Release:** 10 o'clock (natural release)
 - **LOOP:** OFF (single envelope per trigger)
 
-**Learning Objectives:**
-- Master basic ADSR envelope concept
-- Understand gate input triggering
-- Learn CV control of VCA amplitude
-- Experience classic synthesizer voice architecture
+**What you're learning:**
+- **ADSR envelope fundamentals:** How four stages (Attack, Decay, Sustain, Release) shape dynamics over time - this is THE foundational envelope type that appears in every synthesizer from hardware to software, analog to digital, vintage to modern. Understanding ADSR teaches you time-domain control: how sound evolves from beginning to end. This principle applies to filters, VCAs, modulation amounts, and any parameter that changes over time.
+- **Gate-to-envelope triggering:** How timing signals (gates) initiate dynamic events (envelopes) - the fundamental relationship behind all event-driven synthesis. This same principle appears in drum machines (pad triggers envelope), samplers (note triggers playback), sequencers (step triggers event), and any instrument that responds to timing. Understanding gate triggering teaches you event architecture in electronic music.
+- **CV control of amplitude:** How voltage modulates loudness through VCA - core principle of voltage-controlled synthesis. When envelope voltage rises, VCA opens and sound gets louder. When envelope voltage falls, VCA closes and sound gets quieter. This teaches you that synthesis is voltage controlling parameters, and that principle extends to every controllable aspect of sound.
+- **Classic voice architecture:** The signal chain Audio → VCA → Output with Envelope → VCA CV control represents foundational synthesizer voice structure used since 1960s. Understanding this architecture teaches you how virtually all synthesizers work internally, even when their interfaces hide the signal flow. This is synthesis thinking: sound sources, modulators, and processors in systematic relationship.
 
 **Visual Feedback:**
 - **A OUT LED:** Flashes on gate triggers, shows envelope activity
@@ -188,11 +188,11 @@
 - **F MOD Amount:** 11 o'clock (moderate organic influence)
 - **LFO Rate:** 2 o'clock (active modulation speed)
 
-**Learning Objectives:**
-- **Advanced modulation processing:** Use Function Junction to shape organic modulation
-- **Multi-section coordination:** Function, LFO, and mixer working together
-- **Organic envelope shaping:** Ochd LFOs control envelope characteristics
-- **Complex modulation routing:** Multiple modulation sources to different destinations
+**What you're learning:**
+- **Modulation of modulators:** Using one modulation source (Ochd LFO) to control another modulation source's behavior (Function Junction attack time) teaches cascading modulation - where modulators affect other modulators before affecting sound. This creates organic, evolving complexity impossible with direct modulation. Principle appears throughout advanced synthesis: LFO modulating envelope times, envelope modulating LFO rates, sequencer controlling modulation amounts.
+- **Function generator as processor:** Using Function Junction not just as envelope source but as modulation processor/shaper teaches you that envelopes aren't only for amplitude - they shape any voltage into musical curves. Function generator transforms Ochd's organic LFOs into attack-decay envelopes, which then modulate synthesis parameters. This is modulation architecture: sources, processors, destinations in deliberate chains.
+- **Multi-section coordination:** How Function Junction's four sections (ADSR, Function, LFO, Mixer) work together simultaneously teaches system thinking - coordinating multiple processes toward musical goal rather than using modules in isolation. Function shapes one parameter, LFO shapes another, mixer combines them - this is orchestration at modulation level. Essential for complex patches.
+- **Organic timing vs mechanical timing:** Ochd's organic, drifting LFOs controlling Function Junction's precise envelopes creates hybrid: mechanical precision with organic feel. Understanding this teaches you that synthesis can blend predictable structure with unpredictable variation. This appears in all electronic music seeking human feel - combine steady timing with organic modulation for "imperfect perfection."
 
 **Advanced Techniques:**
 - **Organic function shaping:** Ochd LFO modulates attack time for evolving envelopes
@@ -258,11 +258,11 @@
 - **Function:** Different curve from ADSR for timbral contrast
 - **LFO:** Moderate rate for vibrato/tremolo effects
 
-**Learning Objectives:**
-- **Advanced mixer techniques:** Using normalled signals with external control
-- **Multi-source modulation:** Three different modulation shapes simultaneously
-- **AI-driven complexity:** Marbles intelligence controls all modulation characteristics
-- **Hierarchical modulation:** AI controls modulators that control oscillator
+**What you're learning:**
+- **Normalling as modulation router:** Using Function Junction's normalling system (empty jacks = internal signals) with external voltages patched to mixer inputs teaches advanced routing technique. Marbles controls mixer channels which are normalled to Function Junction's internal modulators, creating three-layer control: Marbles AI → Function Junction processing → Synthesis parameters. This teaches that normalling isn't just convenience - it's architectural feature for complex routing.
+- **Parallel modulation paths:** Three simultaneous modulation shapes (ADSR, Function, LFO) each controlled by different Marbles outputs teaches parallel processing - multiple independent signal paths working simultaneously toward different destinations. MIX output combines for pitch control while individual outputs shape timbral parameters. This is modulation distribution: one intelligent source controlling multiple processors creating multiple effects.
+- **AI-driven modulation ecosystems:** Marbles' algorithmic intelligence making musical decisions about voltage relationships while Function Junction provides musical shaping teaches hybrid control: computational intelligence for decisions, analog processing for musicality. This appears in modern electronic music: algorithms choose what happens, analog circuits shape how it sounds. Understanding this teaches you to design instruments where machines make musical choices you wouldn't predict.
+- **Mixer as modulation matrix:** Using Function Junction's mixer not for mixing but as three-channel modulation processor controlled by single intelligent source teaches that "mixer" in modular context means "voltage combiner" with applications far beyond audio. Attenuverters scale Marbles' decisions, normalling routes to processors, outputs distribute shaped modulation - this is modulation matrix thinking applied to utility module.
 
 **Expert Techniques:**
 - **Normalled signal processing:** External voltages control internal modulators
@@ -345,8 +345,16 @@
 3. **Emergence** (10-30 min): Complex behaviors emerge from simple modulation interactions
 4. **Optimization** (30+ min): System finds optimal modulation combinations for musical content
 
+**What you're learning:**
+- **Hub-and-spoke modulation architecture:** Function Junction as central processing hub for all advanced modulation sources teaches system design where one module integrates multiple specialized inputs. Ochd (organic), Marbles (intelligent), RCD (mathematical), Wogglebug (chaotic) each contribute unique modulation character, and Function Junction shapes/mixes/distributes them. This is modular system architecture: specialized sources feed central processor that serves multiple destinations.
+- **Modulation ecosystem thinking:** Understanding that modulation sources enhance each other through Function Junction's processing teaches ecosystem design rather than chain design. Not linear (A → B → C) but networked (all sources → processor → all destinations). Each advanced module contributes its character while Function Junction ensures musical integration. This is how complex modular systems work: specialized modules in coordinated networks.
+- **Multi-philosophy modulation:** Combining organic (Ochd), algorithmic (Marbles), mathematical (RCD), and chaotic (Wogglebug) modulation through single processor teaches that different modulation philosophies create richer results than single approach. Understanding this teaches you to design patches that blend precision with randomness, intelligence with chaos, mechanical timing with organic drift - creating music that's both controlled and surprising.
+- **Processing hub vs simple mixer:** Function Junction isn't just combining signals - it's processing each source through envelope shaping (ADSR/Function), adding independent modulation (LFO), mixing intelligently (attenuverters), selecting peaks (+OR), and distributing to multiple destinations. This teaches that "modulation processor" is distinct role from "modulation source" - processors shape character, sources provide raw material. Essential distinction for advanced patching.
+- **Self-generating modulation systems:** F TRIG → A IN self-patching while external sources control MOD inputs creates feedback loops where system generates its own timing while external sources influence characteristics. This teaches generative synthesis: patches that evolve and play themselves based on initial conditions but continue generating new material. Understanding feedback at modulation level teaches you how self-playing patches work.
+- **Complete modulation thinking:** This patch represents culmination of all modulation concepts: sources, processors, mixing, distribution, feedback, coordination, timing, shaping. When you understand this level of integration, you're thinking in complete modulation systems rather than individual connections. This is expert-level modular synthesis: designing instruments, not just making patches.
+
 **Advanced Philosophy:**
-Function Junction becomes the **neural center** of an Advanced modulation brain: Ochd provides organic timing, Marbles adds intelligence, RCD contributes mathematical precision, Wogglebug introduces controlled chaos, and Function Junction processes it all into musical modulation that shapes synthesis networks. The system thinks in modulation.
+Function Junction becomes the **neural center** of an advanced modulation brain: Ochd provides organic timing, Marbles adds intelligence, RCD contributes mathematical precision, Wogglebug introduces controlled chaos, and Function Junction processes it all into musical modulation that shapes synthesis networks. The system thinks in modulation.
 
 ---
 
