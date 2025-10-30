@@ -35,6 +35,46 @@ Users need to understand:
 
 ---
 
+## Required Sections and Structure
+
+### **Quick Start Section**
+
+Every guide must include these elements in this order:
+
+1. **Module image** (GitHub-hosted with proper path)
+2. **Brief description** ("What is [Module]?" - 2-3 sentences)
+3. **Key Specifications** (NEW - see format below)
+4. **First patch** (5-minute quick start)
+
+**Key Specifications Format:**
+
+```markdown
+**Key Specifications:**
+- **Width:** [X]HP
+- **Depth:** [X]mm
+- **Power:** [X]mA @ +12V / [X]mA @ -12V
+- **[Module-specific details]:** Architecture type, filter slope, CV ranges, etc.
+```
+
+**Why Key Specifications matter:**
+- Users need practical reference info for rack planning (HP, depth, power)
+- Quick technical overview before diving into patches
+- Module-specific line provides context (what kind of module is this?)
+- Located where users naturally look first (Quick Start)
+
+**Module-specific details examples:**
+- **Filters:** "Architecture: Dual analog filters + Pre-filter VCAs" / "Filter Slope: 12dB (2-pole)"
+- **Oscillators:** "Frequency Range: 0.01Hz to 20kHz" / "Architecture: Analog VCO with waveshaping"
+- **Sequencers:** "Steps: 16 per track" / "Tracks: 8 polyphonic" / "Clock: Internal/External"
+- **Effects:** "Architecture: Stereo digital reverb" / "Sample Rate: 48kHz"
+- **Utilities:** "Channels: 4 independent" / "CV Range: ±10V"
+
+The module-specific line should answer "what does this module do technically?" in one concise specification.
+
+**Verification requirement:** All specifications must be verified against official documentation. Flag with ⚠️ if uncertain.
+
+---
+
 ## Interconnection Teaching: The Core Differentiator
 
 **This is what makes these guides different from manufacturer documentation.** Every guide should teach principles that transfer across instruments, not just isolated feature descriptions.
