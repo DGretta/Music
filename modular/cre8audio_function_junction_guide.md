@@ -11,6 +11,17 @@
 
 **What is Function Junction?** Think of it as four essential modules in one compact 16HP package: a full ADSR envelope, a flexible function generator, an LFO, and a 3-channel attenuverting mixer. Designed with Pittsburgh Modular, it's the Swiss Army knife of modulation that can handle everything from basic envelope duties to complex, evolving modulation scenarios.
 
+**Key Specifications:**
+- **Width:** 16HP
+- **Depth:** 38mm
+- **Power:** +12V: 85mA / -12V: 5mA
+- **Four Sections:** ADSR Envelope + Function Generator + LFO + 3-Channel Attenuverting Mixer
+- **ADSR:** Full Attack/Decay/Sustain/Release with Loop mode and external loop control
+- **Function Generator:** Attack/Decay with curve control, MOD input, Sustain button, Loop mode, end-of-decay trigger output
+- **LFO:** Rate control with Triangle and Square outputs
+- **Mixer:** 3 attenuverting channels with normalling (Ch1←ADSR, Ch2←Function, Ch3←LFO), individual outputs (1 OUT, 2 OUT), MIX output (sum), +OR output (peak selector)
+- **Special Features:** Intelligent normalling system, LONG button (2× envelope times), multiple trigger outputs
+
 ### Your First Envelope-Controlled Sound
 1. **Connect any audio source** → **VCA audio input**
 2. **Connect Function Junction A OUT JACK** → **VCA CV input**

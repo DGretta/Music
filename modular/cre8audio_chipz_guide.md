@@ -11,6 +11,16 @@
 
 **What is Chipz?** Think of it as three oscillators in one compact package - two chiptune-style VCOs inspired by classic 8-bit video game consoles (Commodore, Atari, NES) plus an LFO for modulation. Despite the nostalgic inspiration, it's capable of much more than just retro gaming sounds, offering everything from classic analog tones to digital noise textures.
 
+**Key Specifications:**
+- **Width:** 12HP
+- **Depth:** 38mm
+- **Power:** +12V: 75mA / -12V: 5mA
+- **Oscillators:** 2 independent chiptune VCOs + 1 LFO
+- **Waveforms:** 5 morphing waveforms per oscillator (Sine/Triangle/Saw/Square/Noise)
+- **CV Inputs:** V/OCT pitch control per oscillator + Filter CV (Chip1) + Width CV (Chip2)
+- **Special Feature:** LFO with 4X output for frequency multiplication
+- **Character:** Intentional lo-fi digital with aliasing and bit-crushing
+
 ### Your First Chiptune Beep
 1. **Connect Chip1 output** → **your mixer or audio interface**
 2. **Connect keyboard/sequencer CV** → **Chip1 CV input** (if available)

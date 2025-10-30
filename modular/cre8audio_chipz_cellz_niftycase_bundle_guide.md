@@ -11,6 +11,16 @@
 
 **What is the Bundle?** This is a complete chiptune performance ecosystem: Cellz provides 16-pad touchscreen control, Chipz generates authentic lo-fi chiptune sounds, and NiftyCase handles MIDI-to-CV conversion plus audio output. Together, they create a powerful standalone chiptune workstation that bridges tactile control with classic gaming sounds.
 
+**Key Specifications:**
+- **Bundle Components:** Chipz (12HP) + Cellz (8HP) + NiftyCase (84HP case)
+- **Total System:** Complete standalone chiptune workstation
+- **Power:** NiftyCase provides +12V/-12V/+5V power for all modules
+- **Cellz:** 16 capacitive touch pads, dual CV outputs (0-5V), dual gates
+- **Chipz:** 2 chiptune VCOs + LFO, lo-fi digital character
+- **NiftyCase:** MIDI-to-CV converter, audio summing mixer, Eurorack case
+- **Connectivity:** MIDI In (DIN + USB), Audio Out (1/4" TRS), Eurorack power distribution
+- **Expansion:** 64HP remaining space for additional modules
+
 ### Bundle Setup Procedure
 
 **Step 1: Physical Setup**
