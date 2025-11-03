@@ -256,31 +256,69 @@ CMOS Party proves that **the most fundamental digital concepts can be immediatel
 **Goal:** Learn truth tables and boolean logic operations by creating rhythmic patterns from two clock sources.
 
 ```
-┌─────────────────┐    ┌─────────────────┐    ┌─────────────────┐    ┌─────────────────┐    ┌─────────────────┐
-│ Squarp Hermod+  │    │   Mult (any)    │    │  4ms Rotating   │    │ Blue Lantern    │    │  vpme.de QD     │
-│ (System Clock)  │    │  2hp or Intelli │    │ Clock Divider   │    │   CMOS Party    │    │   Quad Drum     │
-│                 │    │   passive/buff  │    │      V2         │    │                 │    │                 │
-│ Clock Out ○─────┼────┼─ In             │    │                 │    │                 │    │                 │
-│                 │    │                 │    │                 │    │                 │    │                 │
-│ Set: 120 BPM    │    │ Out 1 ○─────────┼────┼─ Clock In ◀     │    │                 │    │                 │
-│ (Moderate tempo)│    │                 │    │                 │    │                 │    │                 │
-└─────────────────┘    │ Out 2 ○─────────┼────┼─ (To DATA scope)│    │ /1 Out ○────────┼────┼─ Input A ◀      │
-                       │                 │    │                 │    │                 │    │                 │
-                       │ Out 3 ○ (avail) │    │ /4 Out ○────────┼────┼─ Input B ◀      │    │                 │
-                       │                 │    │                 │    │                 │
-                       │ (Quarter note   │    │ AND Out ○───────┼────┼─ Ch1 Trig (Kick)│
-                       │  on /4 = every  │    │                 │    │   Decay: 11:00  │
-                       │  4th clock)     │    │ OR Out ○────────┼────┼─ Ch2 Trig (Hat) │
-                       │                 │    │                 │    │   Decay: 9:00   │
-                       └─────────────────┘    │ XOR Out ○───────┼────┼─ Ch3 Trig (Snare│
-                                              │                 │    │   Decay: 10:00  │
-┌─────────────────┐                           │ Inv A Out ○─────┼────┼─ Ch4 Trig (Perc)│
-│  Mordax DATA    │                           │                 │    │   Decay: 9:00   │
-│  (Oscilloscope) │                           │ NAND/NOR Outs   │    │                 │
-│                 │                           │ (Available for  │    │ Mix Out ○───────┼─→ Mixer
-│ Visualize logic │                           │  exploration)   │    │                 │
-│ timing & phase  │                           └─────────────────┘    └─────────────────┘
-└─────────────────┘
+┌─────────────────┐    ┌─────────────────┐    ┌─────────────────┐
+│ Squarp Hermod+  │    │   Mult (any)    │    │  4ms Rotating   │
+│ (System Clock)  │    │  2hp or Intelli │    │ Clock Divider   │
+│                 │    │   passive/buff  │    │      V2         │
+│ Clock Out ○─────┼────┼─ In             │    │                 │
+│                 │    │                 │    │ Clock In ◀──────┼────○ Out 1
+│ Set: 120 BPM    │    │ Out 1 ○─────────┼────┼─────────────────┼───→│
+│ (Moderate tempo)│    │                 │    │                 │
+└─────────────────┘    │ Out 2 ○─────────┼──┐ │ /1 Out ○────────┼──┐
+                       │                 │  │ │                 │  │
+                       │ Out 3 ○ (avail) │  │ │ /4 Out ○────────┼──┼─┐
+                       │                 │  │ │                 │  │ │
+                       └─────────────────┘  │ │ (Divides clock  │  │ │
+                                            │ │  /1=every beat  │  │ │
+┌─────────────────┐                        │ │  /4=every 4th)  │  │ │
+│  Mordax DATA    │                        │ └─────────────────┘  │ │
+│  (Oscilloscope) │                        │                      │ │
+│                 │◀───────────────────────┘                      │ │
+│ Ch1 In (Clock)  │                                               │ │
+│ Visualize logic │         ┌─────────────────┐                  │ │
+│ timing & phase  │         │ Blue Lantern    │                  │ │
+└─────────────────┘         │   CMOS Party    │                  │ │
+                            │                 │                  │ │
+                            │ Input A ◀────────┼──────────────────┘ │
+                            │                 │                    │
+                            │ Input B ◀────────┼────────────────────┘
+                            │                 │
+                            │ AND Out ○───────┼──┐
+                            │                 │  │
+                            │ OR Out ○────────┼──┼─┐
+                            │                 │  │ │
+                            │ XOR Out ○───────┼──┼─┼─┐
+                            │                 │  │ │ │
+                            │ Inv A Out ○─────┼──┼─┼─┼─┐
+                            │                 │  │ │ │ │
+                            │ NAND/NOR Outs   │  │ │ │ │
+                            │ (Available for  │  │ │ │ │
+                            │  exploration)   │  │ │ │ │
+                            └─────────────────┘  │ │ │ │
+                                                 │ │ │ │
+                            ┌─────────────────┐  │ │ │ │
+                            │  vpme.de QD     │  │ │ │ │
+                            │   Quad Drum     │  │ │ │ │
+                            │                 │  │ │ │ │
+                            │ Ch1 Trig ◀──────┼──┘ │ │ │
+                            │ (Kick sound)    │    │ │ │
+                            │ Decay: 11:00    │    │ │ │
+                            │                 │    │ │ │
+                            │ Ch2 Trig ◀──────┼────┘ │ │
+                            │ (Hat sound)     │      │ │
+                            │ Decay: 9:00     │      │ │
+                            │                 │      │ │
+                            │ Ch3 Trig ◀──────┼──────┘ │
+                            │ (Snare sound)   │        │
+                            │ Decay: 10:00    │        │
+                            │                 │        │
+                            │ Ch4 Trig ◀──────┼────────┘
+                            │ (Perc sound)    │
+                            │ Decay: 9:00     │
+                            │                 │
+                            │ Mix Out ○───────┼────────────→ Mixer
+                            │                 │
+                            └─────────────────┘
 ```
 
 #### **Module Requirements:**
