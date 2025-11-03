@@ -774,105 +774,305 @@ Understanding how different Euclidean combinations create different logic result
 - **Budget alternatives:** **2HP TM** for simple binary patterns, or basic clock dividers for rhythmic logic
 - **Different approach:** **Wogglebug** for chaotic patterns combined with logic processing
 
-### **Patch 3: Expert - Audio Rate Logic Processing Ecosystem**
+### **Patch 3: Expert - Audio Rate Logic Processing**
+
+**Goal:** Explore digital synthesis fundamentals by processing audio-rate square waves through boolean logic operations to create harmonic content and ring modulation effects.
+
 ```
-┌─────────────────┐    ┌─────────────────┐    ┌─────────────────┐    ┌─────────────────┐
-│  Mutable        │    │   Make Noise    │    │ Blue Lantern    │    │   Audio         │
-│  Plaits         │    │     Maths       │    │   CMOS Party    │    │ Processing      │
-│ (Square Wave)   │    │ (CV Processing) │    │ (Logic Proc)    │    │                 │
-│                 │    │                 │    │                 │    │                 │
-│ Square Out ○────┼────┼─ Ch1 Input ◀    │    │ Input A ◀───────┼────┼─ From Plaits   │
-│                 │    │                 │    │                 │    │                 │
-│ Saw Out ○───────┼────┼─ Ch2 Input ◀    │    │ Input B ◀───────┼────┼─ From Maths    │
-│                 │    │                 │    │                 │    │                 │
-│ Timbre CV ◀─────┼──┐ │ Ch1 Out ○───────┼────┼─ Input A        │    │                 │
-│ Morph CV ◀──────┼──┼─┼─ Ch2 Out ○      │    │                 │    │                 │
-└─────────────────┘  │ │ (Square Wave    │    │ AND Out ○───────┼────┼─ Harmonic Logic│
-                     │ │  Logic Level)   │    │ XOR Out ○───────┼────┼─ Ring Mod Alt  │
-┌─────────────────┐  │ │                 │    │ OR Out ○────────┼────┼─ Audio Combine │
-│   DivKid Ochd   │  │ │ Ch3 Input ◀─────┼──┐ │ NAND Out ○──────┼────┼─ Inverse Logic │
-│  (Organic LFO)  │  │ │                 │  │ │                 │    │                 │
-│                 │  │ │ Ch3 Out ○───────┼──┼─┼─ Input B Logic  │    │ Filter CV ◀─────┼──┐
-│ LFO 1 ○─────────┼──┘ │ (Audio Rate     │  │ │                 │    │                 │  │
-│ LFO 4 ○─────────┼────┼─ Ch4 Input ◀    │  │ │ Inv A Out ○─────┼────┼─ Phase Logic   │  │
-│                 │    │                 │  │ │ Inv B Out ○─────┼────┼─ Complement    │  │
-│ Natural         │    │ Ch4 Out ○───────┼──┘ └─────────────────┘    └─────────────────┘  │
-│ Breathing       │    │ (CV Control     │                                                 │
-│ Organic         │    │  for Logic)     │    ┌─────────────────┐                          │
-│ Modulation      │    │                 │    │  Audio Filter   │                          │
-│                 │    │ Complex         │    │  or Processor   │                          │
-│                 │    │ CV Generation   │    │                 │                          │
-│                 │    │ for Audio       │    │ Audio In ◀──────┼──────────────────────────┘
-│                 │    │ Rate Logic      │    │ CV In ◀─────────┼─── From Logic Outputs
-└─────────────────┘    └─────────────────┘    │                 │
-        ║                       ║              │ Audio Out ○─────┼─── Audio Rate Logic Processing
-        ▼                       ▼              └─────────────────┘
-┌─────────────────────────────────────────────────────────────────────────────────────────┐
-│                    Audio Rate Logic Processing Ecosystem                                 │
-│                                                                                         │
-│ Complex Synthesis + Mathematical Functions + Boolean Logic + Audio Processing          │
-│                                                                                         │
-│ Plaits      → Complex synthesis source + square wave generation + audio rate signals   │
-│ Maths       → CV processing + audio rate functions + logic level conversion           │
-│ CMOS Party  → Boolean logic operations + audio rate processing + harmonic generation  │
-│ Processing  → Audio filtering enhanced by logic-generated control voltages             │
-│                                                                                         │
-│ Audio Rate Logic Workstation (28HP total)                                             │
-│                                                                                         │
-│ Complex Audio Rate Logic Processing ○─────────────────────┼─── Audio Output            │
-└─────────────────────────────────────────────────────────────────────────────────────────┘
+┌─────────────────┐         ┌─────────────────┐         ┌─────────────────┐
+│ Mutable Plaits  │         │  Make Noise     │         │ Blue Lantern    │
+│ (Audio Source)  │         │     Maths       │         │   CMOS Party    │
+│                 │         │ (Logic Convert) │         │ (Audio Logic)   │
+│ Model: VA       │         │                 │         │                 │
+│ Freq: 220Hz(A3) │         │ Ch1 In ◀────────┼─────○   │                 │
+│ Timbre: 12:00   │         │                 │     │   │ Input A ◀───────┼─────○ Ch1 Out
+│ Harmonics: Low  │         │ Rise: Min       │     │   │                 │   │
+│                 │         │ Fall: Min       │     │   │                 │   │
+│ Square Out ○────┼─────────┼─────────────────┼────→│───┼─────────────────┼───┘
+│ 220Hz signal    │         │                 │         │                 │
+└─────────────────┘         │ Ch2 In ◀────────┼─────○   │ Input B ◀───────┼─────○ Ch2 Out
+                            │                 │     │   │                 │   │
+┌─────────────────┐         │ Rise: Min       │     │   │ AND Out ○───────┼───┐
+│ Plaits (2nd)    │         │ Fall: Min       │     │   │ (Harmonic mult) │   │
+│ or Alternative  │         │                 │     │   │                 │   │
+│                 │         │                 │     │   │ XOR Out ○───────┼───┼─┐
+│ Freq: 330Hz(E4) │         │ Ch1 Out ○───────┼─────┘   │ (Ring mod)      │   │ │
+│ Perfect 5th     │         │ (0-5V Logic)    │         │                 │   │ │
+│                 │         │                 │         │ OR Out ○────────┼───┼─┼─┐
+│ Square Out ○────┼─────────┼─────────────────┼────────→│─────────────────┼───┘ │ │
+│ 330Hz signal    │         │                 │         │                 │     │ │
+└─────────────────┘         │ Ch2 Out ○───────┼─────────┼─────────────────┼─────┘ │
+                            │ (0-5V Logic)    │         │                 │       │
+┌─────────────────┐         │                 │         │ NAND/NOR/Inv    │       │
+│  DivKid Ochd    │         │ Ch3 In ◀────────┼─────○   │ (Available for  │       │
+│ (Organic LFO)   │         │                 │   │     │  exploration)   │       │
+│                 │         │ Ch4 Available   │   │     │                 │       │
+│ LFO 1 ○─────────┼─────────┼─────────────────┼──→│     └─────────────────┘       │
+│ (Timbre mod)    │         │ (Modulation)    │                │                  │
+│                 │         │                 │                │                  │
+│ LFO 4 ○─────────┼─────┐   └─────────────────┘                │                  │
+│ (Filter mod)    │     │                                      │                  │
+└─────────────────┘     │   ┌─────────────────┐                │                  │
+                        │   │ Patching Panda  │                │                  │
+                        │   │   Moon Phase    │                │                  │
+                        │   │ (Stereo Filter) │                │                  │
+                        │   │                 │                │                  │
+                        │   │ Audio In L ◀────┼────────────────┘                  │
+                        │   │                 │                                   │
+                        │   │ Audio In R ◀────┼───────────────────────────────────┘
+                        │   │                 │
+                        └───┼─→ CV In         │
+                            │                 │
+                            │ Cutoff: 50-70%  │
+                            │ Resonance: 20%  │
+                            │ Mode: LP or BP  │
+                            │                 │
+                            │ Out L/R ○───────┼─────→ Mixer
+                            │                 │
+                            └─────────────────┘
+
+Signal Flow Summary:
+Plaits (220Hz + 330Hz square) → Maths (logic level conversion) → 
+CMOS Party (boolean operations) → Moon Phase (stereo filtering) → Output
+
+Ochd LFO 1 → Plaits Timbre (evolving harmonics)
+Ochd LFO 4 → Moon Phase Cutoff (breathing filter movement)
 ```
 
-**Audio Rate Logic Processing Integration:**
+#### **Module Requirements:**
 
-| Layer | Function | CMOS Party Role | Musical Result |
-|-------|----------|-----------------|----------------|
-| **Synthesis (Plaits)** | Complex square wave generation | **Audio rate logic source A** | **Complex synthesis enhanced by boolean logic processing at audio frequencies** |
-| **Processing (Maths)** | CV and audio rate functions | **Logic level conversion and source B** | **Mathematical functions provide logic control while converting between CV and logic levels** |
-| **Logic (CMOS Party)** | Boolean operations at audio rate | **Audio rate logic processor** | **Boolean logic creates harmonic content, ring modulation effects, and audio rate pattern generation** |
-| **Audio Processing** | Logic-controlled filtering | **Logic-enhanced audio processing** | **Logic outputs control audio processing parameters for dynamic harmonic manipulation** |
+**Primary Setup (Your Collection):**
+- **Audio Source:** Mutable Plaits (VA model for clean square waves, or use two Plaits if available)
+- **Logic Level Conversion:** Make Noise Maths (audio rate processing, clean square wave output)
+- **Logic Processing:** Blue Lantern CMOS Party (audio rate boolean operations)
+- **Audio Processing:** Patching Panda Moon Phase (stereo multimode filter for harmonic shaping)
+- **Modulation:** DivKid Ochd (organic LFOs for evolving timbres)
 
-**What you're learning:**
-- **Audio rate logic fundamentals:** How boolean operations at audio frequencies create harmonic content - the foundation of early digital synthesis
-- **Digital ring modulation principles:** XOR as frequency multiplication - understanding sum and difference frequencies through logic
-- **Harmonic generation through logic:** How simple boolean operations create complex overtone structures
-- **CMOS audio character:** Understanding the sonic signature of CD4000-based audio processing from 1970s digital synthesis
-- **Digital-analog hybrid thinking:** Combining digital logic with analog processing - principle behind modern synthesis approaches
+**Popular Alternatives:**
+- **Audio Source:** Any oscillator with clean square output (Noise Engineering Loquelic Iteritas, Winterbloom Castor & Pollux, ALM MCO)
+- **Logic Conversion:** VCAs with gain, comparators, or direct patching if oscillator outputs clean 0-5V squares
+- **Audio Processing:** Doepfer A-124 SE Wasp, Erica Black Polivoks VCF, Tiptop Forbidden Planet, any multimode filter
+- **Alternative approach:** Skip Maths if your oscillators output clean 0-5V logic-level squares
 
-**Audio Rate Logic Applications:**
-1. **Harmonic logic generation:** Boolean operations on audio rate square waves create complex harmonic relationships and overtone structures
-2. **Ring modulation alternatives:** XOR and other logic operations provide digital ring modulation and frequency beating effects  
-3. **Audio rate pattern generation:** Logic operations create rhythmic audio content and polyrhythmic audio patterns
-4. **Dynamic harmonic control:** Logic outputs modulate audio processing parameters for evolving harmonic content
-5. **Digital synthesis techniques:** Boolean logic as primitive digital synthesis method with classic CMOS character
+#### **Step-by-Step Patching:**
 
-**Advanced Audio Rate Concepts:**
-- **Logic harmonics:** How boolean operations create predictable harmonic relationships in audio signals
-- **CMOS audio character:** Understanding the sonic signature of CD4000-based audio processing
-- **Logic modulation:** Using audio rate logic outputs as control voltages for other audio processing
-- **Digital-analog hybrid:** Combining CMOS digital logic with analog synthesis and processing
+**Step 1: Configure Plaits for clean square waves**
+- Set Plaits Model to VA (Virtual Analog) - clean waveforms
+- Set Frequency to 220 Hz (A3) - musical fundamental
+- Set Timbre to 12 o'clock - moderate harmonic content
+- Set Harmonics to minimum - purest square wave
+- *Why 220Hz:* Musical frequency (A3), audible but not too high, good for hearing harmonic relationships
+- *Why VA model:* Cleanest square waves with minimal aliasing
 
-**Alternative Audio Sources:**
-- **Instead of Plaits:** Try **oscillator bank** for multiple square wave sources, or **Noise Engineering** modules for complex digital sources
-- **Logic alternatives:** **Intellijel Steppy** for different logic timing, or **Befaco Burst** for logic pattern generation
-- **Processing alternatives:** **Erica Synths Black VCF** for logic-controlled analog filtering, or **Noise Engineering** for digital processing
+**Step 2: Set up Maths for logic level conversion**
+- Patch Plaits Square Out → Maths Ch1 Input
+- Set Maths Ch1 Rise to minimum (fast attack)
+- Set Maths Ch1 Fall to minimum (fast decay)
+- Set Maths Ch1 attenuverter to maximum positive
+- Patch Maths Ch1 Out → CMOS Party Input A
+- *Why Maths:* Converts audio-rate square to clean 0-5V logic levels CMOS Party expects
+- *Why minimum slew:* Preserves sharp edges for proper logic operation
+- *Alternative:* If Plaits outputs clean 0-5V squares, patch directly to CMOS Party
 
-**Why This Audio Rate Approach Works:**
-- **Leverages CMOS Party's audio rate capability:** Demonstrates the module's full frequency range potential beyond simple clock logic
-- **Educational value:** Shows how digital logic principles apply to audio synthesis and processing
-- **Unique sonic character:** CD4000 logic ICs have distinctive audio characteristics different from modern digital processing
-- **Bridge concept:** Connects simple trigger logic understanding with advanced digital synthesis techniques
-- **Combinable approach:** Different multi-function combination allows integration with other guide ecosystems simultaneously
+**Step 3: Create second oscillator (perfect 5th)**
+- **Option A - If you have second Plaits/oscillator:**
+  - Tune to 330 Hz (E4) - perfect 5th above 220Hz
+  - Patch through Maths Ch2 for logic conversion
+  - Maths Ch2 Out → CMOS Party Input B
+- **Option B - Use Maths as oscillator:**
+  - Use Maths Ch2 as audio-rate function generator
+  - Tune to create complementary timing (not exact pitch matching)
+  - Self-patch for audio rate cycling
+- *Why perfect 5th (330Hz):* Creates consonant harmonic relationships through logic
+- *Why musical intervals:* Logic operations on harmonically-related frequencies sound musical
 
-**Expert Audio Rate Performance:**
-1. **Signal preparation:** Configure Plaits for clean square waves, set Maths for audio rate processing and logic level conversion
-2. **Logic configuration:** Route audio rate signals through different logic operations to understand their harmonic effects
-3. **Audio rate modulation:** Use logic outputs to control audio processing parameters for dynamic harmonic evolution
-4. **Performance control:** Real-time adjustment of logic source timing and processing parameters for expressive audio rate logic manipulation
-5. **System integration:** Combine audio rate logic with traditional synthesis methods for hybrid digital-analog sonic exploration
+**Step 4: Patch CMOS Party logic outputs to filter**
+- CMOS Party AND Out → Moon Phase Audio In L (harmonic multiplication)
+- CMOS Party XOR Out → Moon Phase Audio In R (ring modulation effect)
+- CMOS Party OR Out → Moon Phase CV In (modulate filter with combined signal)
+- *Optional:* Try other logic outputs (NAND, NOR, Inv) into additional filter inputs or mixer
+- *Why these outputs:*
+  - AND creates frequency multiplication and subharmonics
+  - XOR creates ring modulation (sum and difference frequencies)
+  - OR creates harmonic addition and reinforcement
 
-**Philosophical Achievement:**
-This represents **audio rate logic mastery** - where boolean logic operations transcend simple trigger processing to become a legitimate audio synthesis and processing technique, demonstrating the deep connection between digital logic principles and musical harmonic relationships at audio frequencies.
+**Step 5: Configure Moon Phase filter**
+- Set Mode to LP (low-pass) initially - smooths harsh digital edges
+- Set Cutoff to 50-70% - allows fundamental and some harmonics through
+- Set Resonance to 20% - adds character without self-oscillation
+- Set Filter tracking to taste
+- Moon Phase Out L/R → Mixer (stereo logic processing)
+- *Why LP mode:* Tames CD4000 harsh edges while keeping harmonic content
+- *Why low resonance:* Digital harmonics are already complex, don't need emphasis
+- *Alternative modes:* Try BP for harmonic isolation, HP for rhythmic clicks
+
+**Step 6: Add organic modulation with Ochd**
+- Patch Ochd LFO 1 → Plaits Timbre (slow evolution of harmonic content)
+- Patch Ochd LFO 4 → Moon Phase Cutoff CV (breathing filter movement)
+- Set Ochd to slow rates (natural breathing speed)
+- *Why Ochd:* Organic, non-synced modulation creates evolving audio rate logic textures
+- *Why these destinations:* Timbre changes source harmonics, filter movement shapes logic output harmonics
+- *Start subtle:* Too much modulation makes logic processing chaotic
+
+#### **Expected Results and Troubleshooting:**
+
+**What you should hear:**
+- **AND output:** Frequency multiplication effect - harsher tone with strong harmonics at 220Hz+330Hz mathematical relationships
+- **XOR output:** Digital ring modulation - sum (550Hz) and difference (110Hz) frequencies plus harmonic sidebands
+- **OR output:** Combined harmonic content - fuller spectrum with both fundamentals present
+- **Filtered result:** Softened digital edges, musical harmonic content, classic CMOS synthesis character
+
+**If logic outputs are silent:**
+- Check that Plaits is actually generating audio (hear it before patching to Maths)
+- Verify Maths is converting to clean logic levels (Ch1/Ch2 Out should show activity)
+- CMOS Party needs 0-5V logic levels, not full 10V audio signals
+- Try patching Plaits directly to CMOS Party if Maths isn't helping
+
+**If sound is too harsh/digital:**
+- This is authentic CD4000 character - embrace it or filter more
+- Lower Moon Phase cutoff frequency (30-50%) to remove more high harmonics
+- Add gentle low-pass filtering after Moon Phase
+- Try XOR output instead of AND - different harmonic structure
+- Remember: This IS what 1970s digital synthesis sounded like
+
+**If you hear unexpected frequencies:**
+- This is correct - boolean operations create sum and difference frequencies
+- XOR of 220Hz + 330Hz creates 110Hz (difference) and 550Hz (sum) plus harmonics
+- AND creates frequency multiplication - not just adding, but mathematical operations
+- These are the fundamental principles of digital ring modulation
+- Try using octaves (220Hz + 440Hz) for clearer relationships
+
+**If patterns sound rhythmic instead of tonal:**
+- Audio rate means fast enough to hear as pitch (above ~30Hz)
+- If you hear rhythmic pulsing, frequencies are too low
+- Increase both oscillator frequencies to 200Hz+ range
+- Or embrace the rhythmic quality - this is valid audio rate logic use
+
+**If modulation makes sound chaotic:**
+- Reduce Ochd modulation depth (use attenuators)
+- Start with just one modulation destination (just Timbre OR just Filter)
+- Ochd at fast rates can create unpredictable logic interactions
+- Keep Ochd slow for gentle evolution, not chaotic jumping
+
+**If Moon Phase isn't affecting sound:**
+- Verify audio is actually reaching filter inputs (check connections)
+- Try higher resonance (30-40%) to hear filter effect more clearly
+- Sweep cutoff manually to hear filter response
+- Check filter is not in bypass/through mode
+
+#### **Frequency Relationships for Audio Rate Logic:**
+
+Understanding which frequency combinations create musical vs experimental results:
+
+| Freq A | Freq B | Interval | Logic Character | XOR Creates | Musical Use |
+|--------|--------|----------|-----------------|-------------|-------------|
+| **220Hz** | **220Hz** | Unison | Phase cancellation | Silence or doubling | Test patching |
+| **220Hz** | **440Hz** | Octave | Consonant harmonics | 220Hz (diff), 660Hz (sum) | Musical synthesis |
+| **220Hz** | **330Hz** | Perfect 5th | Consonant complexity | 110Hz (diff), 550Hz (sum) | Classical harmony |
+| **220Hz** | **277Hz** | Minor 3rd | Darker consonance | 57Hz (diff), 497Hz (sum) | Minor key feel |
+| **220Hz** | **300Hz** | Inharmonic | Metallic/bell-like | 80Hz (diff), 520Hz (sum) | Percussion/FX |
+| **220Hz** | **233Hz** | Slight detune | Beating/chorus | 13Hz beating, 453Hz sum | Organic thickness |
+
+*Key insight:* Musical intervals (octave, 5th, 3rd) create consonant logic processing. Inharmonic relationships create metallic, percussive, or experimental timbres.
+
+#### **Experimentation Ideas:**
+
+**Explore different harmonic relationships:**
+- **Consonant (musical):** Octaves, perfect 5ths, major 3rds through logic for tonal synthesis
+- **Dissonant (experimental):** Prime number ratios (220Hz + 233Hz) for complex spectra
+- **Detuning:** Slight frequency offset (220Hz + 221Hz) creates beating and chorus effects
+- **Wide intervals:** Multiple octaves apart for sparse harmonic content
+
+**Try different logic operations:**
+- **AND:** Creates tight, focused harmonics - good for bass synthesis
+- **XOR:** Ring modulation effect - good for bells, metallic sounds, sci-fi FX
+- **OR:** Full harmonic spectrum - good for rich, complex tones
+- **NAND/NOR:** Inverted logic creates different harmonic structures - experimental timbres
+
+**Use multiple outputs simultaneously:**
+- Mix AND + XOR for combined harmonic multiplication and ring modulation
+- Pan different logic outputs across stereo field (AND left, XOR right)
+- Route each logic output through different filters for complex textures
+- Use one logic output as audio, another as filter CV modulation
+
+**Create audio rate patterns:**
+- Very low frequency logic (20-40Hz) creates rhythmic audio patterns
+- Sweep oscillator frequencies from rhythm to tone range
+- Use logic outputs to trigger envelopes at audio rate for granular-style effects
+- Patch multiple logic outputs to sequential switch for audio rate pattern morphing
+
+**Add feedback for complexity:**
+- Route logic output through VCA → back to Input A or B for recursive logic
+- Use logic output to modulate source oscillator frequency for FM-like effects
+- Patch logic output through wavefolder before filter for additional harmonic complexity
+
+**Modern hybrid approach:**
+- Run logic outputs through granular processor (Arbhar) for digital→granular hybrid
+- Use logic outputs as trigger sources for additional voices (layered synthesis)
+- Process through distortion (Ruina Versio) for aggressive digital character
+- Combine with analog oscillators for digital-analog hybrid timbres
+
+#### **What You're Learning:**
+
+**Digital synthesis fundamentals:**
+- Boolean operations on audio frequencies create harmonic content - this is how early digital synthesizers generated sound
+- **XOR = ring modulation:** Creates sum and difference frequencies mathematically
+- **AND = frequency multiplication:** Creates subharmonics and harmonic reinforcement
+- **OR = harmonic addition:** Combines spectra from both inputs
+- These principles underlie all digital synthesis, just implemented differently in modern systems
+
+**CD4000 CMOS audio character:**
+- Instant state changes (sharp edges) create rich harmonic content
+- No slew limiting means full harmonic spectrum from logic transitions
+- Characteristic "digital" sound of 1970s-80s synthesis
+- Modern digital synthesis smooths these edges in DSP - CMOS Party reveals the raw principle
+
+**Ring modulation principles:**
+- XOR logic creates digital ring modulation: f1 + f2 (sum) and f1 - f2 (difference)
+- Musical intervals create consonant ring mod (octaves sound natural)
+- Inharmonic intervals create metallic, bell-like timbres
+- Same math as analog ring modulation, just digital implementation
+
+**Harmonic generation through logic:**
+- Simple square waves + boolean operations = complex harmonic structures
+- Logic operations don't just combine audio - they create new frequencies
+- Filtering is essential to shape digital logic harmonics into musical content
+- This is literally how digital synthesis worked before DSP algorithms
+
+**Digital-analog hybrid thinking:**
+- CMOS Party provides digital processing, analog filters shape the result
+- Combining digital logic generation with analog filtering = hybrid synthesis approach
+- Modern synthesis often uses this principle: digital oscillators + analog filters
+- Understanding this reveals how digital and analog synthesis interconnect
+
+**Historical synthesis context:**
+- 1970s digital synths used logic chips exactly like this for sound generation
+- CD4000 chips in drum machines (TR-808) and early digital synths
+- Before DSP algorithms, digital synthesis meant logic operations on audio
+- CMOS Party lets you experience digital synthesis as it existed historically
+
+#### **Next Steps:**
+
+**After mastering audio rate logic:**
+- Experiment with very low frequencies (5-20Hz) for rhythmic audio rate patterns
+- Try non-musical frequency ratios for experimental sound design
+- Use multiple CMOS Party modules to chain audio rate logic operations
+- Explore feedback patching (logic output → oscillator FM input)
+
+**Advanced audio rate techniques:**
+- Use envelope followers on logic outputs to create dynamic processing
+- Route logic outputs through analog distortion for hybrid character
+- Combine with granular processing for digital-granular hybrid
+- Use logic outputs as both audio and modulation simultaneously
+
+**Integration with other patches:**
+- Use Patch 1's clock logic to gate audio rate logic (rhythmic gating)
+- Use Patch 2's Euclidean patterns to switch between logic outputs (pattern-based audio)
+- Combine clock-rate logic (rhythms) with audio-rate logic (timbres) for complete systems
+
+**Key takeaway:** Audio rate logic processing reveals fundamental digital synthesis principles. Boolean operations create harmonic content through mathematical relationships. This is how digital synthesis actually worked before modern DSP algorithms abstracted these principles into code. Understanding audio rate logic teaches you the foundation of all digital sound generation.
+
+
 
 ---
 
