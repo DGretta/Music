@@ -256,15 +256,17 @@ CMOS Party proves that **the most fundamental digital concepts can be immediatel
 **Goal:** Learn truth tables and boolean logic operations by creating rhythmic patterns from two clock sources.
 
 ```
-┌─────────────────┐    ┌─────────────────┐    ┌─────────────────┐    ┌─────────────────┐
-│ Squarp Hermod+  │    │  4ms Rotating   │    │ Blue Lantern    │    │  vpme.de QD     │
-│ (System Clock)  │    │ Clock Divider   │    │   CMOS Party    │    │   Quad Drum     │
-│                 │    │      V2         │    │                 │    │                 │
-│ Clock Out ○─────┼────┼─ Clock In ◀     │    │                 │    │                 │
-│                 │    │                 │    │                 │    │                 │
-│ Set: 120 BPM    │    │ /1 Out ○────────┼────┼─ Input A ◀      │    │                 │
-│ (Moderate tempo)│    │                 │    │                 │    │                 │
-└─────────────────┘    │ /4 Out ○────────┼────┼─ Input B ◀      │    │                 │
+┌─────────────────┐    ┌─────────────────┐    ┌─────────────────┐    ┌─────────────────┐    ┌─────────────────┐
+│ Squarp Hermod+  │    │   Mult (any)    │    │  4ms Rotating   │    │ Blue Lantern    │    │  vpme.de QD     │
+│ (System Clock)  │    │  2hp or Intelli │    │ Clock Divider   │    │   CMOS Party    │    │   Quad Drum     │
+│                 │    │   passive/buff  │    │      V2         │    │                 │    │                 │
+│ Clock Out ○─────┼────┼─ In             │    │                 │    │                 │    │                 │
+│                 │    │                 │    │                 │    │                 │    │                 │
+│ Set: 120 BPM    │    │ Out 1 ○─────────┼────┼─ Clock In ◀     │    │                 │    │                 │
+│ (Moderate tempo)│    │                 │    │                 │    │                 │    │                 │
+└─────────────────┘    │ Out 2 ○─────────┼────┼─ (To DATA scope)│    │ /1 Out ○────────┼────┼─ Input A ◀      │
+                       │                 │    │                 │    │                 │    │                 │
+                       │ Out 3 ○ (avail) │    │ /4 Out ○────────┼────┼─ Input B ◀      │    │                 │
                        │                 │    │                 │    │                 │
                        │ (Quarter note   │    │ AND Out ○───────┼────┼─ Ch1 Trig (Kick)│
                        │  on /4 = every  │    │                 │    │   Decay: 11:00  │
@@ -297,9 +299,13 @@ CMOS Party proves that **the most fundamental digital concepts can be immediatel
 
 #### **Step-by-Step Patching:**
 
-**Step 1: Set up clock source**
+**Step 1: Set up clock source and distribution**
 - Set Hermod+ to 120 BPM (moderate tempo, easy to hear relationships)
-- Patch Hermod+ Clock Out → 4ms RCD Clock In
+- Patch Hermod+ Clock Out → Mult In
+- Patch Mult Out 1 → 4ms RCD Clock In
+- Patch Mult Out 2 → Mordax DATA Ch1 (optional, for visualization)
+- *Why use a mult:* Clock signal needs to go to multiple destinations (RCD for division, optionally DATA for visualization). Mult allows one source to feed multiple inputs without signal degradation.
+- *Which mult to use:* Any passive mult works fine for clock signals (2hp Mult, Intellijel Mult). Buffered mult (Intellijel Buff Mult) not required but can be used.
 - *Why 120 BPM:* Fast enough to hear rhythmic patterns, slow enough to perceive individual logic operations
 
 **Step 2: Configure clock divisions**
