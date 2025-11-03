@@ -715,32 +715,32 @@ Astroid's Boost circuit at maximum recreates this aesthetic authentically - you'
 After mastering aggressive square wave kicks, try Patch 4 to explore organic drum evolution, or experiment with layering clean and boosted kicks for hybrid character.
 
 ### **Patch 4: Intermediate - Organic Drum Evolution**
-```
-┌─────────────────┐    ┌─────────────────┐    ┌─────────────────┐
-│   DivKid Ochd   │    │ Blue Lantern    │    │   Sequencer     │
-│  (Organic LFO   │    │    Astroid      │    │   or Clock      │
-│   System)       │    │                 │    │                 │
-│                 │    │ Tune: 1 o'clock │    │                 │
-│ LFO 1 (Slow) ○──┼────┼─ ※CV Mod to    │    │ Trigger ○───────┼──┐
-│                 │    │   Tune (via     │    │                 │  │
-│ LFO 4 (Med) ○───┼────┼─ ※external     │    └─────────────────┘  │
-│                 │    │   attenuator    │                         │
-│ LFO 8 (Fast) ○──┼────┼─ ※or VCA for   │                         │
-│                 │    │   modulation)   │                         │
-│ Natural         │    │                 │                         │
-│ Breathing       │    │ Sweep: 12 o'clk │                         │
-│ Organic         │    │ Tone: CV Mod    │                         │
-│ Evolution       │    │ Decay: CV Mod   │                         │
-│                 │    │                 │    ┌─────────────────┐  │
-│                 │    │ BD Out ○────────┼────┼─ Trigger In ◀   │  │
-│                 │    └─────────────────┘    │                 │  │
-│                 │                           │ Mixer/Effects   │  │
-└─────────────────┘                           │                 │  │
-                                              │ Audio Out ○─────┼──┘
-                                              └─────────────────┘
 
-※NOTE: Astroid has no CV inputs - modulation requires external VCAs/attenuators
+```mermaid
+graph LR
+    Clock[Sequencer/Clock<br/>Trigger Source] -->|Trigger| Astroid[Blue Lantern Astroid<br/>Tune: 1 o'clock<br/>Sweep: 12 o'clock<br/>Decay: Variable]
+    
+    Ochd[DivKid Ochd<br/>Organic LFO System] -->|LFO 1 Slow| VCA1[External VCA<br/>Manual Control]
+    Ochd -->|LFO 4 Medium| VCA2[External VCA<br/>Manual Control]
+    Ochd -->|LFO 8 Fast| VCA3[External VCA<br/>Manual Control]
+    
+    VCA1 -.->|Would modulate<br/>Tune if CV existed| Astroid
+    VCA2 -.->|Would modulate<br/>Tone if CV existed| Astroid
+    VCA3 -.->|Would modulate<br/>Decay if CV existed| Astroid
+    
+    Astroid -->|Audio Out| Mixer[Mixer/Effects<br/>Audio Output]
+    
+    style Astroid fill:#f9f,stroke:#333,stroke-width:2px
+    style Ochd fill:#bbf,stroke:#333,stroke-width:2px
+    style VCA1 fill:#fbb,stroke:#333,stroke-width:2px
+    style VCA2 fill:#fbb,stroke:#333,stroke-width:2px
+    style VCA3 fill:#fbb,stroke:#333,stroke-width:2px
 ```
+
+**Signal Flow Summary:**
+Sequencer (triggers) → Astroid (drum synthesis) → Mixer (audio output)
+
+**Limitation Note:** Astroid has NO CV inputs. The Ochd → VCA connections shown with dotted lines represent conceptual modulation that would require manually adjusting Astroid knobs in response to external CV, or using Astroid with different modules that do have CV inputs.
 
 **Organic Drum Evolution Integration:**
 
@@ -763,55 +763,56 @@ After mastering aggressive square wave kicks, try Patch 4 to explore organic dru
 - **Different approach:** **Befaco Rampage** for dual organic functions, or **ALM Pip Slope** for precise organic control
 
 ### **Patch 5: Advanced - Complete Polyrhythmic Drum Ecosystem**
+
+```mermaid
+graph TB
+    Hermod[Squarp Hermod+<br/>Multi-track Sequencer]
+    RCD[4ms RCD v2<br/>Clock Divider]
+    FJ[Cre8audio Function Junction<br/>Logic Processor]
+    Astroid[Blue Lantern Astroid<br/>Analog Drum Synth]
+    VCA[External VCA/Mixer<br/>Level Control]
+    
+    Hermod -->|Gate Track 1<br/>Master Clock| RCD
+    Hermod -->|Gate Track 2<br/>Direct Accent| Astroid
+    Hermod -->|Gate Track 3<br/>Additional Pattern| FJ
+    Hermod -->|CV Track 1<br/>Volume Control| VCA
+    
+    RCD -->|/1 Output| FJ
+    RCD -->|/4 Output| FJ
+    RCD -->|/8 Output| FJ
+    RCD -->|/16 Output| FJ
+    
+    FJ -->|AND Output<br/>Sparse Triggers| Astroid
+    FJ -->|OR Output<br/>Dense Triggers| Astroid
+    FJ -->|XOR Output<br/>Syncopated Pattern| Astroid
+    
+    Astroid -->|BD Audio Out| VCA
+    VCA -->|Audio Out| Output[System Output]
+    
+    style Hermod fill:#bbf,stroke:#333,stroke-width:2px
+    style RCD fill:#bfb,stroke:#333,stroke-width:2px
+    style FJ fill:#fbf,stroke:#333,stroke-width:2px
+    style Astroid fill:#f9f,stroke:#333,stroke-width:2px
+    style VCA fill:#fbb,stroke:#333,stroke-width:2px
 ```
-┌─────────────────┐    ┌─────────────────┐    ┌─────────────────┐    ┌─────────────────┐
-│   Squarp        │    │    4MS RCD v2   │    │  Cre8audio      │    │ Blue Lantern    │
-│   Hermod+       │    │ (Clock Division │    │ Function        │    │    Astroid      │
-│ (Sequencer)     │    │  Polyrhythmic)  │    │ Junction        │    │                 │
-│                 │    │                 │    │ (Logic Proc)    │    │                 │
-│ Gate Tr1 ○──────┼────┼─ Clock In ◀     │    │                 │    │ Tune: Variable  │
-│ (Master)        │    │                 │    │ Input A ◀───────┼────┼─ Accent Control│
-│                 │    │ /1 Out ○────────┼────┼─ Input B ◀      │    │ via Logic      │
-│ Gate Tr2 ○──────┼────┼─ /2 Out ○       │    │                 │    │                 │
-│ (Accent)        │    │ /4 Out ○────────┼────┼─ Input C ◀      │    │ Trigger In ◀────┼──┐
-│                 │    │ /8 Out ○        │    │                 │    │                 │  │
-│ CV Tr1 ○────────┼────┼─ /16 Out ○──────┼────┼─ Input D ◀      │    │ Accent In ◀─────┼──┼──┐
-│ (Pitch Seq)     │    │                 │    │                 │    │                 │  │  │
-│                 │    │ Polyrhythmic    │    │ AND Out ○───────┼────┼─ BD Out ○       │  │  │
-│ Multi-Track     │    │ Clock Tree      │    │ OR Out ○────────┼────┼─ To System      │  │  │
-│ Drum Control    │    │ 1,2,4,8,16 div  │    │ XOR Out ○       │    │                 │  │  │
-│                 │    │                 │    │ Logic Enhanced  │    │ Decay: Med      │  │  │
-│                 │    │                 │    │ Trigger Control │    │ Boost: Variable │  │  │
-└─────────────────┘    └─────────────────┘    └─────────────────┘    └─────────────────┘  │  │
-        ║                       ║                       ║                       ║         │  │
-        ▼                       ▼                       ▼                       ▼         │  │
-┌────────────────────────────────────────────────────────────────────────────────────────┴──┼──┐
-│                    Complete Polyrhythmic Drum Intelligence                                │  │
-│                                                                                            │  │
-│ Multi-Track Sequencing + Polyrhythmic Clocks + Logic Processing + Analog Drum Synthesis  │  │
-│                                                                                            │  │
-│ Hermod+      → Multi-track sequencer + drum programming + pitch sequences + gate control  │  │
-│ RCD v2       → Polyrhythmic clock division + related timing + musical subdivisions       │  │
-│ Function Jct → Logic operations + trigger processing + complex trigger relationships      │  │
-│ Astroid      → Twin-T analog drum synthesis + accent control + classic analog character   │  │
-│                                                                                            │  │
-│ Complete Polyrhythmic Drum Workstation (44HP total)                                      │  │
-│                                                                                            │  │
-│ Polyrhythmic Analog Drums ○─────────────────────────────────────────┼─── Complete Output │  │
-└────────────────────────────────────────────────────────────────────────────────────────────┘
-                                                                                                │
-                        ┌─────────────────┐                                                    │
-                        │    External     │                                                    │
-                        │   VCA/Mixer     │                                                    │
-                        │  (Level Ctrl)   │                                                    │
-                        │                 │                                                    │
-                        │ Audio In ◀──────┼────────────────────────────────────────────────────┘
-                        │                 │
-                        │ CV In ◀─────────┼─── From Hermod+ CV Track (Volume Control)
-                        │                 │
-                        │ Audio Out ○─────┼─── To System Output
-                        └─────────────────┘
-```
+
+**Signal Flow Summary:**
+1. **Sequencing Layer:** Hermod+ Gate Track 1 → RCD (clock divisions) → Function Junction (logic processing)
+2. **Trigger Paths:** 
+   - Direct: Hermod+ Gate Track 2 → Astroid Accent In
+   - Logic Enhanced: Function Junction (AND/OR/XOR outputs) → Astroid Trigger In
+   - Additional Pattern: Hermod+ Gate Track 3 → Function Junction (additional logic input)
+3. **Audio Path:** Astroid BD Out → VCA (level control) → System Output
+4. **Dynamics:** Hermod+ CV Track 1 → VCA (volume automation)
+
+**Module Connections Clarified:**
+- **Hermod+ Gate Track 1:** Master clock to RCD for polyrhythmic divisions
+- **Hermod+ Gate Track 2:** Direct accent triggers to Astroid
+- **Hermod+ Gate Track 3:** Additional pattern to Function Junction for logic combinations
+- **Hermod+ CV Track 1:** Volume automation to external VCA
+- **RCD /1, /4, /8, /16:** Clock divisions to Function Junction inputs
+- **Function Junction AND/OR/XOR:** Logic-processed triggers to Astroid trigger input
+- **Astroid BD Out:** Analog drum audio to VCA for level control
 
 **Complete Polyrhythmic Drum System Integration:**
 
