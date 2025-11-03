@@ -252,34 +252,180 @@ CMOS Party proves that **the most fundamental digital concepts can be immediatel
 ## Beginner Patch Ideas
 
 ### **Patch 1: Basic Logic Clock Exploration**
+
+**Goal:** Learn truth tables and boolean logic operations by creating rhythmic patterns from two clock sources.
+
 ```
-┌─────────────────┐    ┌─────────────────┐    ┌─────────────────┐
-│   Master Clock  │    │ Blue Lantern    │    │   Multiple      │
-│   (Quarter Note)│    │   CMOS Party    │    │  Destinations   │
-│                 │    │                 │    │                 │
-│ Clock Out ○─────┼────┼─ Input A ◀      │    │                 │
-│                 │    │                 │    │                 │
-└─────────────────┘    │                 │    │                 │
-                       │                 │    │                 │
-┌─────────────────┐    │                 │    │                 │
-│  Clock Divider  │    │                 │    │                 │
-│   (/2 or /4)    │    │                 │    │                 │
-│                 │    │                 │    │                 │
-│ Div Out ○───────┼────┼─ Input B ◀      │    │                 │
-└─────────────────┘    │                 │    │                 │
-                       │ AND Out ○───────┼────┼─ Kick Drum     │
-                       │ OR Out ○────────┼────┼─ Hi-hat        │
-                       │ XOR Out ○───────┼────┼─ Snare         │
-                       │ NAND Out ○──────┼────┼─ Percussion    │
-                       │ NOR Out ○───────┼────┼─ Effects Trig  │
-                       │                 │    │                 │
-                       │ Inv A Out ○─────┼────┼─ Off-beat      │
-                       │ Inv B Out ○─────┼────┘                 │
-                       └─────────────────┘    └─────────────────┘
+┌─────────────────┐    ┌─────────────────┐    ┌─────────────────┐    ┌─────────────────┐
+│ Squarp Hermod+  │    │  4ms Rotating   │    │ Blue Lantern    │    │  vpme.de QD     │
+│ (System Clock)  │    │ Clock Divider   │    │   CMOS Party    │    │   Quad Drum     │
+│                 │    │      V2         │    │                 │    │                 │
+│ Clock Out ○─────┼────┼─ Clock In ◀     │    │                 │    │                 │
+│                 │    │                 │    │                 │    │                 │
+│ Set: 120 BPM    │    │ /1 Out ○────────┼────┼─ Input A ◀      │    │                 │
+│ (Moderate tempo)│    │                 │    │                 │    │                 │
+└─────────────────┘    │ /4 Out ○────────┼────┼─ Input B ◀      │    │                 │
+                       │                 │    │                 │    │                 │
+                       │ (Quarter note   │    │ AND Out ○───────┼────┼─ Ch1 Trig (Kick)│
+                       │  on /4 = every  │    │                 │    │   Decay: 11:00  │
+                       │  4th clock)     │    │ OR Out ○────────┼────┼─ Ch2 Trig (Hat) │
+                       │                 │    │                 │    │   Decay: 9:00   │
+                       └─────────────────┘    │ XOR Out ○───────┼────┼─ Ch3 Trig (Snare│
+                                              │                 │    │   Decay: 10:00  │
+┌─────────────────┐                           │ Inv A Out ○─────┼────┼─ Ch4 Trig (Perc)│
+│  Mordax DATA    │                           │                 │    │   Decay: 9:00   │
+│  (Oscilloscope) │                           │ NAND/NOR Outs   │    │                 │
+│                 │                           │ (Available for  │    │ Mix Out ○───────┼─→ Mixer
+│ Visualize logic │                           │  exploration)   │    │                 │
+│ timing & phase  │                           └─────────────────┘    └─────────────────┘
+└─────────────────┘
 ```
 
+#### **Module Requirements:**
+
+**Primary Setup (Your Collection):**
+- **Clock Source:** Squarp Hermod+ (system clock, set to 120 BPM)
+- **Clock Division:** 4ms Rotating Clock Divider V2 (provides /1, /4, /8 divisions)
+- **Logic Processing:** Blue Lantern CMOS Party (all outputs available)
+- **Drum Voices:** vpme.de QD Quad Drum (4 channels for testing different logic outputs)
+- **Visualization (Optional):** Mordax DATA as oscilloscope to see timing relationships
+
+**Popular Alternatives:**
+- **Clock Source:** Pam's Pro Workout (very common, has built-in divisions), Qu-Bit Bloom (fractal clock generation)
+- **Clock Division:** If using Pam's or Bloom, use their internal divisions instead of separate divider
+- **Drum Voices:** Erica Pico Drums2, any drum module with trigger inputs, or even envelope generators triggering VCAs
+
+#### **Step-by-Step Patching:**
+
+**Step 1: Set up clock source**
+- Set Hermod+ to 120 BPM (moderate tempo, easy to hear relationships)
+- Patch Hermod+ Clock Out → 4ms RCD Clock In
+- *Why 120 BPM:* Fast enough to hear rhythmic patterns, slow enough to perceive individual logic operations
+
+**Step 2: Configure clock divisions**
+- Use RCD /1 output (every clock pulse) → CMOS Party Input A
+- Use RCD /4 output (every 4th clock pulse) → CMOS Party Input B
+- *Why /1 and /4:* Creates clear mathematical relationship - Input B divides Input A by 4, making logic operations easy to hear
+- *If no visual confirmation:* RCD has LEDs showing each division - verify they're blinking at expected rates
+
+**Step 3: Patch logic outputs to drums**
+- CMOS Party AND Out → QD Ch1 Trigger (set QD Ch1 to kick sound, decay around 11 o'clock for punchy bass)
+- CMOS Party OR Out → QD Ch2 Trigger (set QD Ch2 to hi-hat sound, decay around 9 o'clock for short crisp hits)
+- CMOS Party XOR Out → QD Ch3 Trigger (set QD Ch3 to snare sound, decay around 10 o'clock for moderate ring)
+- CMOS Party Inv A Out → QD Ch4 Trigger (set QD Ch4 to percussion sound, decay around 9 o'clock for accent hits)
+- *Why these assignments:* Tests four different logic operations simultaneously so you can hear how they differ
+
+**Step 4: Set up audio monitoring**
+- QD Mix Out → Mixer or audio interface
+- Start with moderate levels on all QD channels (around 12 o'clock)
+- *If individual outs available:* Can pan different logic outputs for stereo separation
+
+**Step 5: Optional visualization**
+- Connect CMOS Party Input A and Input B to Mordax DATA scope inputs
+- Watch timing relationships visually while hearing logic results
+- *What to observe:* Input A triggers 4 times for every Input B trigger - see how logic outputs respond
+
+#### **Expected Results and Troubleshooting:**
+
+**What you should hear:**
+- **AND output (Kick):** Fires ONLY when both clocks are high = every 4th beat creates downbeat accent
+- **OR output (Hi-hat):** Fires when EITHER clock is high = busier pattern with more triggers than either input alone
+- **XOR output (Snare):** Fires when clocks DIFFER = alternating pattern creating syncopation
+- **Inv A output (Percussion):** Fires between Input A beats = fills the gaps with complementary rhythm
+
+**If AND output isn't firing:**
+- Check that both Input A and Input B have active signals (RCD LEDs should be blinking)
+- Verify cables are fully inserted - loose connections read as LOW
+- Remember: AND only outputs HIGH when BOTH inputs are HIGH simultaneously
+
+**If all outputs seem chaotic:**
+- Verify Hermod+ is actually running (check for clock LED activity)
+- Make sure RCD is receiving clock (input LED should pulse)
+- Try slower tempo (60-80 BPM) to hear relationships more clearly
+
+**If XOR seems random:**
+- This usually means inputs have unrelated timing - check that RCD is dividing Hermod+ clock
+- XOR is extremely phase-sensitive - this is normal behavior with unsynced sources
+- With /1 and /4 from same source, XOR should create predictable alternating pattern
+
+**If drum triggers are silent:**
+- Check QD volume levels (start at 12 o'clock and adjust up)
+- Verify QD is receiving triggers (should have trigger indicators)
+- Try different QD voice algorithms - some are more immediately audible than others
+
+#### **Truth Table Reference:**
+
+Use this to predict what each logic output will do:
+
+| Input A (/1) | Input B (/4) | AND | OR | XOR | Inv A |
+|--------------|--------------|-----|----|----|-------|
+| LOW (0V)     | LOW (0V)     | 0   | 0  | 0  | HIGH  |
+| LOW (0V)     | HIGH (+5V)   | 0   | 1  | 1  | HIGH  |
+| HIGH (+5V)   | LOW (0V)     | 0   | 1  | 1  | LOW   |
+| HIGH (+5V)   | HIGH (+5V)   | 1   | 1  | 0  | LOW   |
+
+*How to use this:* When both inputs pulse together (both HIGH), AND outputs trigger. When inputs pulse at different times (one HIGH, one LOW), XOR outputs trigger. OR outputs trigger whenever either input pulses.
+
+#### **Experimentation Ideas:**
+
+**Change the division relationship:**
+- Try RCD /8 instead of /4 on Input B for different mathematical relationship
+- Try RCD /3 for non-standard time signature feel (polyrhythmic)
+- Use RCD rotate function to shift phase relationships while playing
+
+**Explore other logic outputs:**
+- NAND output: Active EXCEPT when both inputs high (inverse of AND) - try for everything-but-downbeat patterns
+- NOR output: Active ONLY when both inputs low (during silence) - try for ambient triggers in gaps
+- Inv B output: Complement of Input B - creates fills around quarter notes
+
+**Use multiple outputs simultaneously:**
+- Patch 5-6 logic outputs to different drum voices for complex polyrhythmic patterns
+- Notice how all outputs are mathematically related through the same two input clocks
+
+**Visualize with DATA:**
+- Watch Input A and B timing on scope
+- See exactly when each input goes HIGH/LOW
+- Understand why AND only triggers when both waveforms overlap at HIGH state
+
+#### **What You're Learning:**
+
+**Truth table thinking:**
+- Boolean logic is completely deterministic - every input combination produces predictable output
+- Learning to think in truth tables teaches you how ALL digital music devices make timing decisions
+- This thinking transfers to sequencer programming, conditional modulation, and understanding drum machine patterns
+
+**Logic level fundamentals:**
+- Digital signals are binary: 0V (LOW/false) or +5V (HIGH/true) - no in-between states
+- Gates and triggers in Eurorack are just boolean logic signals
+- Understanding logic levels reveals how modular communicates timing information
+
+**Boolean operations create musical relationships:**
+- **AND = "both required"** → downbeat accents, synchronized events
+- **OR = "either works"** → pattern combination, increased density
+- **XOR = "different only"** → syncopation, alternating patterns, call-and-response
+- **NOT/Inv = "opposite"** → fills, complementary patterns, negative space
+
+**Digital pattern generation principles:**
+- This is EXACTLY how drum machines and sequencers work internally
+- TR-808, TR-909, and modern sequencers use boolean logic for pattern generation
+- Understanding CMOS Party teaches you the foundation of all digital rhythm creation
+
+**Phase and timing relationships:**
+- Why /1 and /4 create clear downbeat accents through AND
+- How mathematical clock relationships create polyrhythmic patterns
+- What happens when timing sources drift out of phase (important for live performance)
+
+#### **Next Steps:**
+
+**After mastering basic logic:**
+- Try **Patch 2** with Euclidean patterns for more complex mathematical relationships
+- Experiment with probability sources (Marbles) into logic inputs for evolving patterns
+- Use audio rate signals instead of clocks for harmonic synthesis (Patch 3)
+- Chain multiple CMOS Party modules for advanced boolean algebra
+
+**Key takeaway:** Simple clock division + boolean logic = complex rhythmic patterns. This principle scales from basic trigger manipulation to advanced generative sequencing across all modular synthesis.
+
 | Connection | Cable Type | Logic Result |
-|------------|------------|--------------|
 | Master Clock → Input A | Gate (Yellow) | Primary timing reference |
 | Divided Clock → Input B | Gate (Yellow) | Secondary timing for comparison |
 | AND Out → Kick Drum | Gate (Yellow) | Triggers only when both clocks align |
