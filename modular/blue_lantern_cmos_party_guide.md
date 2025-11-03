@@ -495,27 +495,261 @@ Use this to predict what each logic output will do:
 - Use unpatched inputs (always LOW) to explore single-input logic behavior
 
 ### **Patch 2: Advanced Trigger Pattern Generation**
+
+**Goal:** Explore complex pattern relationships by combining Euclidean rhythms through boolean logic operations.
+
 ```
 ┌─────────────────┐    ┌─────────────────┐    ┌─────────────────┐
-│  Euclidean      │    │ Blue Lantern    │    │   Pattern       │
-│  Sequencer      │    │   CMOS Party    │    │  Enhancement    │
+│ Squarp Hermod+  │    │  vpme.de        │    │ Blue Lantern    │
+│ (System Clock)  │    │  Euclidean      │    │   CMOS Party    │
+│                 │    │  Circles V2     │    │                 │
+│ Clock Out ○─────┼────┼─ Clock In       │    │                 │
 │                 │    │                 │    │                 │
-│ Pattern A ○─────┼────┼─ Input A ◀      │    │                 │
-│ (3/8 Euclidean) │    │                 │    │                 │
-│                 │    │ AND Out ○───────┼────┼─ Accent Logic  │
-│ Pattern B ○─────┼────┼─ Input B ◀      │    │                 │
-│ (5/8 Euclidean) │    │ OR Out ○────────┼────┼─ Dense Pattern │
-│                 │    │ XOR Out ○───────┼────┼─ Syncopation   │
-└─────────────────┘    │ NAND Out ○──────┼────┼─ Inverse Logic │
-                       │ NOR Out ○───────┼────┼─ Rest Triggers │
-┌─────────────────┐    │                 │    │                 │
-│   Probability   │    │ Inv A Out ○─────┼────┼─ A Complement  │
-│   Generator     │    │ Inv B Out ○─────┼────┼─ B Complement  │
-│                 │    └─────────────────┘    └─────────────────┘
-│ Random A ○──────┼─┐
-│ Random B ○──────┼─┼─ To Sequential Switch → Inputs A & B
-└─────────────────┘ │   (Randomize Logic Sources)
+│ Set: 120 BPM    │    │ Ch1 Out ○───────┼────┼─ Input A ◀      │
+│                 │    │ (3 of 8 pattern)│    │                 │
+│                 │    │ Steps: 8        │    │ AND Out ○───────┼──┐
+└─────────────────┘    │ Pulses: 3       │    │                 │  │
+                       │ Rotation: 0     │    │ OR Out ○────────┼──┼─┐
+                       │                 │    │                 │  │ │
+                       │ Ch2 Out ○───────┼────┼─ Input B ◀      │  │ │
+                       │ (5 of 8 pattern)│    │                 │  │ │
+                       │ Steps: 8        │    │ XOR Out ○───────┼──┼─┼─┐
+                       │ Pulses: 5       │    │                 │  │ │ │
+                       │ Rotation: 0     │    │ NAND Out ○──────┼──┼─┼─┼─┐
+                       │                 │    │                 │  │ │ │ │
+                       │ Ch3-6 (available│    │ NOR Out ○───────┼──┼─┼─┼─┼─┐
+                       │  for more       │    │                 │  │ │ │ │ │
+                       │  patterns)      │    │ Inv A Out ○─────┼──┼─┼─┼─┼─┼─┐
+                       │                 │    │ Inv B Out ○─────┼──┼─┼─┼─┼─┼─┼─┐
+                       └─────────────────┘    └─────────────────┘  │ │ │ │ │ │ │
+                                                                    │ │ │ │ │ │ │
+                       ┌─────────────────┐                          │ │ │ │ │ │ │
+                       │  vpme.de QD     │                          │ │ │ │ │ │ │
+                       │   Quad Drum     │                          │ │ │ │ │ │ │
+                       │                 │                          │ │ │ │ │ │ │
+                       │ Ch1 Trig ◀──────┼──────────────────────────┘ │ │ │ │ │ │
+                       │ (Accent hits)   │                            │ │ │ │ │ │
+                       │                 │                            │ │ │ │ │ │
+                       │ Ch2 Trig ◀──────┼────────────────────────────┘ │ │ │ │ │
+                       │ (Dense pattern) │                              │ │ │ │ │
+                       │                 │                              │ │ │ │ │
+                       │ Ch3 Trig ◀──────┼──────────────────────────────┘ │ │ │ │
+                       │ (Syncopation)   │                                │ │ │ │
+                       │                 │                                │ │ │ │
+                       │ Ch4 Trig ◀──────┼────────────────────────────────┘ │ │ │
+                       │ (Everything-but)│                                  │ │ │
+                       │                 │                                  │ │ │
+                       │ Optional: Patch more outputs for exploration ◀─────┴─┴─┘
+                       │                 │
+                       │ Mix Out ○───────┼────────────────────────→ Mixer
+                       │                 │
+                       └─────────────────┘
+
+
+Optional Advanced Setup:
+┌─────────────────┐
+│ Mutable Marbles │
+│  (Probability)  │
+│                 │
+│ Use t outputs   │────→ Modulate Euclidean Circles parameters
+│ for random      │      (Steps, Pulses, Rotation, Offset)
+│ pattern         │      Creates evolving Euclidean patterns
+│ evolution       │
+└─────────────────┘
 ```
+
+#### **Module Requirements:**
+
+**Primary Setup (Your Collection):**
+- **Clock Source:** Squarp Hermod+ (system clock, set to 120 BPM)
+- **Pattern Generator:** vpme.de Euclidean Circles V2 (6-channel Euclidean sequencer)
+- **Logic Processing:** Blue Lantern CMOS Party (all outputs available)
+- **Drum Voices:** vpme.de QD Quad Drum (4+ channels for testing logic outputs)
+- **Optional Pattern Evolution:** Mutable Marbles (probability-based CV for modulating Euclidean parameters)
+
+**Popular Alternatives:**
+- **Pattern Generator:** Music Thing Turing Machine (you have it - binary patterns instead of Euclidean), Qu-Bit Bloom (fractal patterns)
+- **Probability/Random:** DivKid Ochd (organic LFOs), Make Noise Wogglebug (chaos), or basic S&H + noise
+- **Clock Source:** Pam's Pro Workout (has Euclidean built-in), standalone clock dividers
+- **Drum Voices:** Erica Pico Drums2, any trigger-receiving modules
+
+#### **Step-by-Step Patching:**
+
+**Step 1: Set up clock source**
+- Set Hermod+ to 120 BPM (moderate tempo for hearing pattern relationships)
+- Patch Hermod+ Clock Out → Euclidean Circles Clock In
+- *Why 120 BPM:* Fast enough for rhythmic patterns, slow enough to perceive Euclidean mathematics
+- *Clock note:* Euclidean Circles distributes clock internally to all 6 channels
+
+**Step 2: Configure Euclidean patterns**
+- **Channel 1 (Pattern A):**
+  - Steps: 8 (pattern length)
+  - Pulses: 3 (triggers per cycle)
+  - Rotation: 0 (starting position)
+  - Offset: 0 (no phase shift)
+  - *Result:* Classic 3/8 Euclidean = [X--X--X-] pattern
+- **Channel 2 (Pattern B):**
+  - Steps: 8 (same length as Ch1 for clear comparison)
+  - Pulses: 5 (more dense than Ch1)
+  - Rotation: 0 (aligned with Ch1)
+  - Offset: 0 (no phase shift)
+  - *Result:* Dense 5/8 Euclidean = [X-XX-XX-] pattern
+- *Why these settings:* 3/8 and 5/8 create interesting mathematical relationships when combined through logic - one sparse, one dense, both phase-aligned
+
+**Step 3: Patch Euclidean outputs to logic inputs**
+- Euclidean Circles Ch1 Out → CMOS Party Input A
+- Euclidean Circles Ch2 Out → CMOS Party Input B
+- *Why these channels:* Using two channels with different densities (3/8 vs 5/8) creates complex logic relationships
+
+**Step 4: Patch logic outputs to drums**
+- CMOS Party AND Out → QD Ch1 (accent hits - only when both patterns align)
+- CMOS Party OR Out → QD Ch2 (dense pattern - fires when either pattern triggers)
+- CMOS Party XOR Out → QD Ch3 (syncopation - fires when patterns disagree)
+- CMOS Party NAND Out → QD Ch4 (everything-but - active except when both align)
+- *Optional:* Patch NOR, Inv A, Inv B to additional channels for exploration
+- *Why these assignments:* Each logic operation reveals different mathematical relationships between the Euclidean patterns
+
+**Step 5: Set drum voices and levels**
+- QD Ch1: Kick or tom (accent hits need low, punchy sound)
+- QD Ch2: Hi-hat or cymbal (dense pattern works well with bright, short sounds)
+- QD Ch3: Snare or clap (syncopation needs clear attack)
+- QD Ch4: Percussion or shaker (complementary pattern for texture)
+- Set all QD channels to moderate levels (around 12 o'clock)
+- QD Mix Out → Mixer or audio interface
+
+**Step 6: Optional - Add pattern evolution with Marbles**
+- Patch Marbles t1 → Euclidean Circles Ch1 Steps CV (varies pattern length)
+- Patch Marbles t2 → Euclidean Circles Ch1 Pulses CV (varies density)
+- Patch Marbles t3 → Euclidean Circles Ch2 Rotation CV (shifts phase)
+- *Result:* Euclidean patterns evolve over time, creating constantly changing logic relationships
+- *Start conservative:* Use attenuators or Marbles' internal scaling - too much CV makes patterns unpredictable
+
+#### **Expected Results and Troubleshooting:**
+
+**What you should hear:**
+- **AND output (Ch1):** Only triggers when both 3/8 and 5/8 align = sparse accent pattern highlighting mathematical intersections
+- **OR output (Ch2):** Combines both patterns = busy rhythm with 3+5=8 triggers per cycle (all unique trigger points)
+- **XOR output (Ch3):** Fires when patterns disagree = syncopated off-beat rhythm between main hits
+- **NAND output (Ch4):** Everything except AND = fills all the gaps between accent hits
+
+**If no triggers from Euclidean Circles:**
+- Verify Hermod+ clock is running and connected to Euclidean Circles Clock In
+- Check that Steps and Pulses are set (not at 0)
+- Euclidean Circles should have LEDs showing active channels - verify Ch1 and Ch2 are lit
+- Try increasing Pulses value to ensure pattern is generating triggers
+
+**If AND output never fires:**
+- 3/8 and 5/8 patterns may not align often - this is mathematically correct
+- Try simpler patterns: 2/4 and 2/4 will show clear AND behavior
+- Remember: AND only fires when BOTH inputs are simultaneously HIGH
+- Use Rotation on one channel to shift phase and create more/fewer alignments
+
+**If patterns sound too similar:**
+- Increase the difference between Pulses values (try 2/8 vs 7/8 for maximum contrast)
+- Use Rotation to shift one pattern relative to the other
+- Try different Steps values (Ch1: 8, Ch2: 7 creates polyrhythmic phasing)
+
+**If Marbles modulation makes patterns chaotic:**
+- Reduce CV amount going to Euclidean Circles (use attenuators)
+- Start by modulating only one parameter (just Rotation, not Steps and Pulses)
+- Set Marbles to slower rates (BIAS toward longer times)
+- Remember: Euclidean math breaks down with extreme CV - use subtle modulation
+
+**If XOR output is too busy:**
+- This means patterns overlap frequently - mathematically correct for 3/8 + 5/8
+- Try patterns with less overlap (2/8 vs 3/8 creates sparser XOR)
+- XOR reveals every moment when inputs disagree - with dense patterns, disagreements are frequent
+
+#### **Euclidean Pattern Relationships:**
+
+Understanding how different Euclidean combinations create different logic results:
+
+| Ch1 Pattern | Ch2 Pattern | AND Character | OR Character | XOR Character |
+|-------------|-------------|---------------|--------------|---------------|
+| **3/8** | **5/8** | Sparse accents | Very dense | Moderate syncopation |
+| **2/8** | **2/8** (same) | Aligned hits | Same as inputs | Silent (inputs never differ) |
+| **2/8** | **7/8** | Very sparse | Almost constant | Very busy |
+| **3/8** | **4/8** | Occasional | Dense | Syncopated |
+| **5/16** | **7/16** | Rare | Very dense | Complex polyrhythm |
+
+*Key insight:* More similar patterns = more AND triggers, less XOR activity. More different patterns = less AND triggers, more XOR activity.
+
+#### **Experimentation Ideas:**
+
+**Explore different Euclidean relationships:**
+- **Complementary patterns:** 3/8 and 5/8 = 8/8 when combined through OR (all beat positions covered)
+- **Prime number Steps:** Use 7, 11, or 13 for Steps to create non-repeating patterns
+- **Polyrhythmic patterns:** Different Steps on Ch1 and Ch2 (8 vs 7) creates phasing
+- **Dense vs sparse:** 1/8 vs 7/8 creates maximum contrast
+
+**Use Rotation and Offset:**
+- **Rotation:** Shifts pattern within the cycle - try rotating Ch2 by 2 steps to shift XOR timing
+- **Offset:** Delays pattern start - creates intentional phase relationships
+- **Live performance:** Manually adjust Rotation while playing to morph patterns in real-time
+
+**Explore all six Euclidean channels:**
+- Use Ch3-6 for additional patterns into sequential switch → alternate Input A or Input B
+- Create evolving logic by switching which Euclidean patterns feed CMOS Party
+- Use multiple Euclidean outputs into mixer → create complex CV for other parameters
+
+**Use Marbles for controlled chaos:**
+- **t outputs:** Random gates that can replace/augment Euclidean patterns
+- **X outputs:** Random voltages for modulating Euclidean parameters
+- **SPREAD control:** Changes probability distribution of Marbles outputs
+- Start with Marbles modulating just Rotation for predictable evolution
+
+**Create pattern libraries:**
+- Document interesting Euclidean combinations that create musical results
+- Note which logic outputs work best for which pattern relationships
+- Save settings for different genres (sparse for ambient, dense for techno)
+
+#### **What You're Learning:**
+
+**Euclidean mathematics in music:**
+- Euclidean rhythm distribution spaces triggers evenly across a cycle
+- Ancient rhythmic patterns from world music are often Euclidean (3/8 is common in African drumming)
+- **E(k,n)** notation: k pulses distributed across n steps = mathematically even spacing
+- This is the same mathematics that distributes points evenly on a circle
+
+**Complex pattern relationships through logic:**
+- Boolean operations reveal mathematical relationships between any two patterns
+- AND finds intersections (where do patterns align?)
+- OR finds unions (what's the combined activity?)
+- XOR finds differences (where do patterns disagree?)
+- These same operations apply to any rhythmic patterns, not just Euclidean
+
+**Generative pattern thinking:**
+- Simple inputs (two Euclidean patterns) + logic operations = complex output (6+ related patterns)
+- Each logic output is mathematically related to the inputs but musically distinct
+- **Principle scales:** This approach works with any pattern sources (Turing Machine, Marbles, clock dividers)
+
+**Pattern density control:**
+- Sparse patterns through AND (restrictive logic)
+- Dense patterns through OR (permissive logic)
+- Complementary patterns through NOT/Inv (negative space)
+- Control density by choosing appropriate logic operations
+
+**Transferable composition techniques:**
+- Euclidean + logic = algorithmic composition approach
+- Same mathematical principles apply in DAW MIDI plugins
+- Understanding this teaches generative sequencing concepts used across all electronic music
+- Pattern relationships through logic is fundamental to techno, IDM, and experimental music
+
+#### **Next Steps:**
+
+**After mastering Euclidean logic:**
+- Try **Patch 3** for audio rate logic processing and harmonic generation
+- Combine Euclidean Circles with Turing Machine for binary + Euclidean logic
+- Use multiple CMOS Party modules to chain logic operations (AND output → Input A of second CMOS Party)
+- Explore Euclidean patterns modulating synthesis parameters instead of just triggering drums
+
+**Advanced Euclidean techniques:**
+- Use Marbles X outputs to modulate Euclidean parameters for generative evolution
+- Route logic outputs back to modulate Euclidean settings (feedback patching)
+- Use Euclidean Circles to generate both rhythms (gates) and melodies (CV)
+- Combine 6 Euclidean channels through multiple CMOS Party modules for maximum complexity
+
+**Key takeaway:** Euclidean mathematics + boolean logic = algorithmic rhythm generation. Simple settings create complex musical relationships. This principle scales from basic pattern manipulation to complete generative composition systems.
 
 **Advanced Pattern Relationships:**
 
