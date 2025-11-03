@@ -142,6 +142,66 @@ The Astroid proves that **sometimes the classics are classics for a reason**. Th
 
 ---
 
+## Essential Parameters (The Drum Designer Controls)
+
+### **1. TUNE Knob - The Pitch Foundation**
+- **What it does:** Sets the fundamental frequency of the twin-T oscillator
+- **Character:** Fully clockwise = highest pitch range, counterclockwise = lower bass frequencies
+- **Range descriptions:** Full CW (high pitched kicks), 12 o'clock (mid-range), CCW (deep 808 bass)
+- **CV controllable:** No - manual control only
+- **The WHY:** Coarse tuning across wide frequency range allows single module to cover everything from deep sub-bass kicks to high percussion tones, but requires Sweep knob for precision within selected range
+- **Pro tip:** Start fully clockwise for exploring, then reduce for deeper bass tones
+
+### **2. SWEEP Knob - The Fine Pitch Control**
+- **What it does:** Fine-tuning control for precise pitch adjustment within Tune range
+- **Character:** Works like a fine-tune control, adjusting frequency within the Tune setting
+- **Range descriptions:** CCW (lower within range), 12 o'clock (center), CW (higher within range)
+- **CV controllable:** No - manual control only
+- **The WHY:** Two-stage tuning (coarse + fine) provides both range and precision - you need broad frequency coverage AND exact pitch control, which single knob can't provide effectively
+- **Pro tip:** Use after setting Tune to dial in the exact pitch you want
+
+### **3. TONE Knob - The Character Shaper**
+- **What it does:** Controls the tonal character from muffled to sharp/poppy sounds
+- **Character:** Shapes the timbre and attack characteristics of the drum sound
+- **Range descriptions:** CCW (muffled, darker), 12 o'clock (balanced), CW (poppy, sharp attack)
+- **CV controllable:** No - manual control only
+- **The WHY:** Even pure sine waves need timbral shaping - Tone affects envelope curve and filtering to give you control over attack character and brightness without adding harmonics like Boost does
+- **Pro tip:** Clockwise for snappy 909-style sounds, counterclockwise for deep 808 warmth
+
+### **4. DECAY Knob - The Envelope Length**
+- **What it does:** Controls how long the drum sound sustains after trigger
+- **Character:** Shapes the overall envelope from short clicks to long 808 tails
+- **Range descriptions:** CCW (short, snappy), 12 o'clock (medium decay), CW (long 808 tails)
+- **CV controllable:** No - manual control only
+- **The WHY:** Time constant control through RC networks - the exponential decay curve you hear is the capacitor discharging through resistors, which is how all analog envelopes work
+- **Pro tip:** Combine with Decay Switch for precise envelope shaping
+
+### **5. ACCENT Knob - The Dynamic Boost**
+- **What it does:** Sets the volume increase when accent trigger is received
+- **Character:** Creates dynamic playing feel like classic drum machines
+- **Range descriptions:** CCW (no accent effect), 12 o'clock (moderate boost), CW (maximum boost)
+- **CV controllable:** No - manual control only
+- **The WHY:** Higher trigger voltage = more initial amplitude AND different envelope behavior - this recreates how acoustic drums sound different when hit harder, providing musical expression
+- **Pro tip:** 12 o'clock position gives most musical accent response
+
+### **6. BOOST Knob - The Sine to Square Distortion**
+- **What it does:** Pushes the clean sine wave into square wave distortion
+- **Character:** Transforms smooth sine percussion into aggressive square wave drums
+- **Range descriptions:** CCW (clean sine), 12 o'clock (mild distortion), CW (full square wave)
+- **CV controllable:** No - manual control only
+- **The WHY:** Waveshaping through clipping - as amplitude increases, waveform tops/bottoms flatten, creating odd harmonics progressively until you have full square wave with infinite harmonic series
+- **Pro tip:** Use sparingly for vintage drum machine grit, or full clockwise for Gabber intensity
+
+### **7. DECAY Switch - The Length Selector**
+- **What it does:** Three-position switch for different decay length ranges
+- **Positions:** Left (long 808 style), Center (medium drums), Right (short percussion)
+- **Character:** Changes the overall envelope timing behavior
+- **CV controllable:** No - hardware switch only
+- **The WHY:** Different musical contexts need fundamentally different time constants - three discrete ranges ensure appropriate timing for house/hip-hop (long), techno (medium), or Gabber/hardcore (short)
+- **Pro tip:** Left position for deep house kicks, right position for techno and Gabber
+
+---
+
 ## Common Mistakes and How to Avoid Them
 
 ### "My kicks don't sound deep enough, they sound like toms!"
@@ -307,7 +367,7 @@ The Astroid proves that **sometimes the classics are classics for a reason**. Th
 
 **Problem:** Some settings produce very loud output, others seem quieter, making gain staging and mixing difficult.
 
-**Why this happens:** Multiple factors affect output level:
+**Why it happens:** Multiple factors affect output level:
 - Boost circuit adds significant gain when engaged
 - Accent increases amplitude on accented hits
 - Decay length affects perceived loudness (longer sustain = more total energy)
@@ -338,69 +398,12 @@ The Astroid proves that **sometimes the classics are classics for a reason**. Th
 
 ---
 
-## Essential Parameters (The Drum Designer Controls)
-
-### **1. TUNE Knob - The Pitch Foundation**
-- **What it does:** Sets the fundamental frequency of the twin-T oscillator
-- **Character:** Fully clockwise = highest pitch range, counterclockwise = lower bass frequencies
-- **Range descriptions:** Full CW (high pitched kicks), 12 o'clock (mid-range), CCW (deep 808 bass)
-- **CV controllable:** No - manual control only
-- **The WHY:** Coarse tuning across wide frequency range allows single module to cover everything from deep sub-bass kicks to high percussion tones, but requires Sweep knob for precision within selected range
-- **Pro tip:** Start fully clockwise for exploring, then reduce for deeper bass tones
-
-### **2. SWEEP Knob - The Fine Pitch Control**
-- **What it does:** Fine-tuning control for precise pitch adjustment within Tune range
-- **Character:** Works like a fine-tune control, adjusting frequency within the Tune setting
-- **Range descriptions:** CCW (lower within range), 12 o'clock (center), CW (higher within range)
-- **CV controllable:** No - manual control only
-- **The WHY:** Two-stage tuning (coarse + fine) provides both range and precision - you need broad frequency coverage AND exact pitch control, which single knob can't provide effectively
-- **Pro tip:** Use after setting Tune to dial in the exact pitch you want
-
-### **3. TONE Knob - The Character Shaper**
-- **What it does:** Controls the tonal character from muffled to sharp/poppy sounds
-- **Character:** Shapes the timbre and attack characteristics of the drum sound
-- **Range descriptions:** CCW (muffled, darker), 12 o'clock (balanced), CW (poppy, sharp attack)
-- **CV controllable:** No - manual control only
-- **The WHY:** Even pure sine waves need timbral shaping - Tone affects envelope curve and filtering to give you control over attack character and brightness without adding harmonics like Boost does
-- **Pro tip:** Clockwise for snappy 909-style sounds, counterclockwise for deep 808 warmth
-
-### **4. DECAY Knob - The Envelope Length**
-- **What it does:** Controls how long the drum sound sustains after trigger
-- **Character:** Shapes the overall envelope from short clicks to long 808 tails
-- **Range descriptions:** CCW (short, snappy), 12 o'clock (medium decay), CW (long 808 tails)
-- **CV controllable:** No - manual control only
-- **The WHY:** Time constant control through RC networks - the exponential decay curve you hear is the capacitor discharging through resistors, which is how all analog envelopes work
-- **Pro tip:** Combine with Decay Switch for precise envelope shaping
-
-### **5. ACCENT Knob - The Dynamic Boost**
-- **What it does:** Sets the volume increase when accent trigger is received
-- **Character:** Creates dynamic playing feel like classic drum machines
-- **Range descriptions:** CCW (no accent effect), 12 o'clock (moderate boost), CW (maximum boost)
-- **CV controllable:** No - manual control only
-- **The WHY:** Higher trigger voltage = more initial amplitude AND different envelope behavior - this recreates how acoustic drums sound different when hit harder, providing musical expression
-- **Pro tip:** 12 o'clock position gives most musical accent response
-
-### **6. BOOST Knob - The Sine to Square Distortion**
-- **What it does:** Pushes the clean sine wave into square wave distortion
-- **Character:** Transforms smooth sine percussion into aggressive square wave drums
-- **Range descriptions:** CCW (clean sine), 12 o'clock (mild distortion), CW (full square wave)
-- **CV controllable:** No - manual control only
-- **The WHY:** Waveshaping through clipping - as amplitude increases, waveform tops/bottoms flatten, creating odd harmonics progressively until you have full square wave with infinite harmonic series
-- **Pro tip:** Use sparingly for vintage drum machine grit, or full clockwise for Gabber intensity
-
-### **7. DECAY Switch - The Length Selector**
-- **What it does:** Three-position switch for different decay length ranges
-- **Positions:** Left (long 808 style), Center (medium drums), Right (short percussion)
-- **Character:** Changes the overall envelope timing behavior
-- **CV controllable:** No - hardware switch only
-- **The WHY:** Different musical contexts need fundamentally different time constants - three discrete ranges ensure appropriate timing for house/hip-hop (long), techno (medium), or Gabber/hardcore (short)
-- **Pro tip:** Left position for deep house kicks, right position for techno and Gabber
-
----
-
 ## Beginner Patch Ideas
 
 ### **Patch 1: Classic 808 Kick Drum**
+
+**Goal:** Create authentic deep 808-style kick drum with long decay tail for house and hip-hop production.
+
 ```
 ┌─────────────────┐    ┌─────────────────┐    ┌─────────────────┐
 │   Clock/Step    │    │ Blue Lantern    │    │      Mixer      │
@@ -416,14 +419,82 @@ The Astroid proves that **sometimes the classics are classics for a reason**. Th
                        │                 │                         │
                        │ BD Out ○────────┼─────────────────────────┘
                        └─────────────────┘
+
+Signal Flow Summary:
+Clock/Sequencer (trigger source) → Astroid (drum synthesis) → Mixer (audio output)
 ```
-**Setup:** Classic deep 808 kick with long decay for house and hip-hop
-**Controls:** Tune for pitch, Decay for tail length, Tone for attack character
-**Result:** Warm, deep analog kick drum with authentic 808 character
-**What you're learning:** How twin-T circuits create pure sine fundamentals, why long decay times matter for sub-bass presence, how Tone shapes attack without adding harmonics
-**Performance:** Adjust Tune in real-time for pitch drops and rises
+
+#### **Module Requirements:**
+
+**Minimum Viable Product (What You Need):**
+- **Trigger Source:** Any clock or step sequencer (Hermod+, Pamela's, basic clock divider)
+- **Blue Lantern Astroid:** The drum synthesizer module
+- **Audio Destination:** Mixer, audio interface, or VCA for level control
+
+**Why Each Module:**
+- **Clock/Sequencer:** Provides trigger pulses that tell Astroid when to fire - without this, Astroid is silent
+- **Astroid:** Generates the actual drum sound using twin-T analog synthesis - this is your sound source
+- **Mixer/Output:** Gets the audio into your recording system or performance setup - Astroid needs somewhere to send audio
+
+**Popular Alternatives:**
+- **Trigger Source:** Pam's Pro Workout (very common), Qu-Bit Bloom (fractal clocks), any Eurorack clock module
+- **Audio Destination:** Intellijel Mixup (performance mixer), Erica Pico Mixer (compact), any Eurorack mixer
+
+#### **Complete Signal Flow:**
+
+**Step 1: Set up trigger source**
+- Configure your clock or sequencer to output triggers on desired rhythm (four-on-the-floor for classic kick pattern)
+- Patch trigger output → Astroid TRIGGER INPUT
+- *Why triggers matter:* Astroid is triggered, not gated - it generates complete drum sounds when triggered, then returns to silence
+
+**Step 2: Configure Astroid for 808 character**
+- Set Tune to 2 o'clock (deep bass range)
+- Set Sweep to 12 o'clock (center for neutral tuning within range)
+- Set Tone to 10 o'clock (warmer, darker 808 character)
+- Set Decay to 2 o'clock (long tail for classic 808 sustain)
+- Set Decay Switch to LEFT position (long decay range)
+- Leave Boost at minimum (pure sine wave, no square wave distortion)
+- Leave Accent disconnected for now (we'll add dynamics in Patch 2)
+
+**Step 3: Connect audio output**
+- Patch Astroid BD OUT → Mixer input channel
+- Set mixer channel to moderate level (around 12 o'clock to start)
+- *Why mixer matters:* Astroid has no volume control - you control level at mixer or with VCA
+
+**Step 4: Listen and adjust**
+- Trigger your pattern and listen to the kick
+- Adjust Tune/Sweep together for exact pitch you want
+- Increase Decay if kick feels too short
+- Adjust Tone for attack character (clockwise = snappier, counterclockwise = warmer)
+
+#### **Expected Results:**
+
+You should hear: Deep, warm analog kick drum with long sustaining tail characteristic of TR-808. Pure sine wave fundamental creates sub-bass power, long decay fills space between hits.
+
+If kick sounds too high-pitched: Lower Tune knob - you're probably above kick drum frequency range (should be ~40-60Hz).
+
+If kick sounds too short: Increase Decay knob or verify Decay Switch is in LEFT position for long range.
+
+If no sound at all: Check trigger cable connection, verify clock/sequencer is actually running and outputting triggers, check mixer level.
+
+#### **What You're Learning:**
+
+**Twin-T sine wave fundamentals:** How pure sine waves create maximum sub-bass energy - all power at fundamental frequency with no harmonics stealing energy. This is why 808s feel so powerful despite being simple circuits.
+
+**Decay time and sub-bass:** Long decay matters for bass frequencies because low frequencies need time to develop and be perceived by human hearing. Short decays work for hi-hats, not for kick drums.
+
+**Tone control without harmonics:** The Tone knob shapes attack and envelope character without adding harmonics like Boost does. This teaches you that timbral shaping can happen through envelope manipulation, not just harmonic content.
+
+**Complete signal chain thinking:** Understanding that synthesis modules need trigger sources and audio destinations - modules don't work in isolation, they're components in signal flow.
+
+#### **Next Steps:**
+
+After mastering basic 808 kicks, try Patch 2 to add dynamic accent control for groove and expression.
 
 ### **Patch 2: Dynamic Accent Integration**
+
+**Goal:** Add dynamic expression to kick drum patterns using accent control, creating groove and emphasis like classic drum machines.
+
 ```
 ┌─────────────────┐    ┌─────────────────┐    ┌─────────────────┐
 │   Step          │    │ Blue Lantern    │    │    Effects      │
@@ -442,14 +513,96 @@ The Astroid proves that **sometimes the classics are classics for a reason**. Th
                        │                 │                         │
                        │ BD Out ○────────┼─────────────────────────┘
                        └─────────────────┘
+
+Signal Flow Summary:
+Sequencer (two outputs: main + accent) → Astroid (drum synthesis with dynamics) → 
+Mixer/Effects (audio output with optional processing)
 ```
-**Setup:** Use two sequencer outputs for regular hits and accented downbeats
-**Controls:** Accent knob at 12 o'clock for musical dynamic response
-**Result:** Dynamic drum pattern with emphasized downbeats like classic drum machines
-**What you're learning:** How voltage level controls dynamic expression, why separate trigger inputs create groove, how accent circuits work in classic drum machines
-**Performance:** Create complex rhythmic feel with simple trigger programming
+
+#### **Module Requirements:**
+
+**Minimum Viable Product (What You Need):**
+- **Multi-output Sequencer:** Step sequencer with at least two gate/trigger outputs (Hermod+, Metropolix, or basic sequencer with multiple tracks)
+- **Blue Lantern Astroid:** The drum synthesizer with accent capability
+- **Audio Destination:** Mixer or effects processor for audio output
+
+**Why Each Module:**
+- **Multi-output Sequencer:** Provides both regular triggers AND accent triggers on different outputs - this is how you create dynamics
+- **Astroid:** Responds differently to accent triggers vs. regular triggers, creating dynamic expression
+- **Mixer/Effects:** Receives the dynamically varied drum sounds for recording or performance
+
+**Popular Alternatives:**
+- **Sequencer:** Pam's Pro Workout (multiple outputs), Qu-Bit Bloom (multiple channels), Make Noise Rene (multiple gates)
+- **Alternative Accent Source:** Use clock divider + logic to create accent triggers from main clock
+- **Audio Destination:** Any Eurorack mixer, or direct to audio interface with effects
+
+#### **Complete Signal Flow:**
+
+**Step 1: Set up dual-output sequencer**
+- Program your main kick pattern on one sequencer track (steps 1, 5, 9, 13 for four-on-the-floor)
+- Program accent pattern on second sequencer track (steps 1, 9 for downbeat emphasis)
+- Patch main pattern output → Astroid TRIGGER INPUT
+- Patch accent pattern output → Astroid ACCENT INPUT
+- *Why two outputs:* Main triggers = every kick, accent triggers = emphasized kicks. This separation creates dynamics.
+
+**Step 2: Configure Astroid for dynamic response**
+- Set Tune to 1 o'clock (moderate bass range, slightly higher than 808 for punch)
+- Set Sweep to 11 o'clock (fine-tune for exact pitch)
+- Set Tone to 12 o'clock (balanced attack character)
+- Set Decay to 1 o'clock (moderate decay for techno/house)
+- Set Decay Switch to CENTER position (medium decay range)
+- **CRITICAL:** Set Accent knob to 12 o'clock (this is the sweet spot for musical accent response)
+- Leave Boost at minimum unless you want additional harmonic content
+
+**Step 3: Connect audio and verify dynamics**
+- Patch Astroid BD OUT → Mixer input
+- Play your pattern and listen for dynamic variation
+- Accented hits (downbeats) should be noticeably louder and slightly brighter than regular hits
+- If accent effect is too subtle, increase Accent knob slightly (stay around 12-2 o'clock range)
+- If accent effect is too extreme or sounds wrong, decrease Accent knob
+
+**Step 4: Fine-tune accent response**
+- The Accent knob has a sweet spot around 12 o'clock - start there
+- Going too high (past 2-3 o'clock) actually reduces the musical effect
+- Adjust based on your mix - subtle accent in dense mixes, pronounced accent in sparse arrangements
+- Consider that accent affects both amplitude AND timbral character
+
+#### **Expected Results:**
+
+You should hear: Kick drum pattern where downbeats (steps 1, 9) hit noticeably harder and brighter than off-beats. This creates groove and rhythmic emphasis naturally.
+
+If no accent effect: Verify accent triggers are actually reaching Astroid (check cable), verify Accent knob isn't at zero, verify accent pattern is programmed correctly.
+
+If accent too extreme: Lower Accent knob - remember 12 o'clock is the sweet spot, higher isn't always more musical.
+
+If all hits sound the same: Check that main and accent patterns are different (accent should only fire on emphasized beats), verify cables aren't swapped.
+
+#### **What You're Learning:**
+
+**Voltage as expression:** Accent works by sending higher voltage triggers. Higher voltage = more initial amplitude = louder AND different timbral character. This teaches you that voltage level controls dynamics throughout modular synthesis.
+
+**Separate trigger inputs for dynamics:** Classic drum machines (808, 909) use separate accent circuits. Understanding this dual-input approach teaches you how electronic music creates dynamic expression without velocity-sensitive pads.
+
+**Accent circuit sweet spots:** The Accent knob has non-linear response - 12 o'clock is optimal, not maximum. This teaches you that analog circuits often have musical sweet spots that aren't at extreme settings.
+
+**Groove through dynamics:** Even simple four-on-the-floor patterns feel alive when downbeats are emphasized. This teaches you that dynamics create groove, not just complex rhythmic programming.
+
+#### **Performance Techniques:**
+
+**Real-time accent patterns:** Use sequencer to change which beats get accented, creating different groove feels on the fly.
+
+**Offset timing:** Try triggering accent slightly before or after main trigger for swing and groove variations.
+
+**Complex accent rhythms:** Accent every other beat, every third beat, or follow melodic emphasis for musical accent patterns.
+
+#### **Next Steps:**
+
+After mastering accent integration, try Patch 3 to explore aggressive square wave distortion for Gabber and hardcore styles.
 
 ### **Patch 3: Square Wave Gabber Destruction**
+
+**Goal:** Create aggressive Gabber/hardcore kicks using full square wave distortion and rapid-fire timing for industrial electronic music.
+
 ```
 ┌─────────────────┐    ┌─────────────────┐    ┌─────────────────┐
 │   Fast Clock    │    │ Blue Lantern    │    │   Distortion    │
@@ -466,12 +619,100 @@ The Astroid proves that **sometimes the classics are classics for a reason**. Th
                        │                 │                         │
                        │ BD Out ○────────┼─────────────────────────┘
                        └─────────────────┘
+
+Signal Flow Summary:
+Fast Clock (150+ BPM) → Astroid (square wave distortion) → 
+Distortion/Filter (optional additional processing) → Output
 ```
-**Setup:** Fast triggers with boost circuit creating aggressive square wave kicks
-**Controls:** Boost full clockwise for square wave distortion, short decay for rapid fire
-**Result:** Aggressive Gabber-style kicks with square wave harmonics
-**What you're learning:** How waveshaping transforms sine to square, why harmonic content matters for aggressive genres, how short decay prevents overlapping at fast tempos
-**Performance:** Extreme settings create industrial/hardcore electronic drums
+
+#### **Module Requirements:**
+
+**Minimum Viable Product (What You Need):**
+- **Fast Clock Source:** Clock module set to Gabber/hardcore tempo (150+ BPM, often 160-180+ BPM)
+- **Blue Lantern Astroid:** The drum synthesizer with boost circuit for square wave distortion
+- **Audio Output:** Direct to mixer, or through additional distortion/filter for even more aggression
+
+**Why Each Module:**
+- **Fast Clock:** Gabber requires rapid-fire kick drums at very high BPMs - this is signature to the genre
+- **Astroid:** Boost circuit transforms clean sine into aggressive square wave, creating harmonic saturation
+- **Optional Processing:** Additional distortion or filtering adds extra character for industrial applications
+
+**Popular Alternatives:**
+- **Clock Source:** Pam's Pro Workout (set to high BPM), Qu-Bit Bloom (fast clock division), any clock at 150+ BPM
+- **Additional Processing:** Erica Synths Acidbox (distortion), any Eurorack wavefolder or distortion
+- **Keep it simple:** Astroid alone with full boost is often enough - additional processing is optional
+
+#### **Complete Signal Flow:**
+
+**Step 1: Set up fast clock source**
+- Configure your clock to 150+ BPM (typical Gabber range: 160-180 BPM, can go 200+ for extreme hardcore)
+- Patch clock output → Astroid TRIGGER INPUT
+- *Why fast tempo matters:* Gabber is defined by rapid-fire kick drums - this isn't techno speed, it's significantly faster
+
+**Step 2: Configure Astroid for maximum aggression**
+- Set Tune to 3 o'clock (higher pitch for aggressive character, less sub-bass)
+- Set Sweep to 2 o'clock (fine-tune within that range)
+- Set Tone to 3 o'clock (sharp, poppy attack for maximum aggression)
+- Set Decay to 10 o'clock (short decay to prevent overlapping at high BPM)
+- Set Decay Switch to RIGHT position (short decay range for rapid-fire)
+- **CRITICAL:** Set Boost to FULL CLOCKWISE (this transforms sine to square wave with infinite harmonics)
+- Leave Accent disconnected unless you want specific beat emphasis
+
+**Step 3: Listen and adjust for genre**
+- Start playback at your target tempo
+- Listen for aggressive, distorted square wave character
+- If kicks overlap/muddy, reduce Decay knob further (try 9 o'clock)
+- If kicks sound too clean, verify Boost is fully clockwise
+- If you want even more aggression, add external distortion or wavefolder
+
+**Step 4: Fine-tune pitch and decay coordination**
+- Higher pitch (current setting) works better at fast tempos - prevents muddiness
+- Short decay is essential - at 180 BPM, kicks fire every ~330ms, so decay must be under that
+- Adjust Tune for exact character you want (higher = more aggressive, lower = more power)
+
+#### **Expected Results:**
+
+You should hear: Extremely aggressive, distorted square wave kicks firing rapidly. Harmonic saturation from Boost circuit, sharp attack from Tone setting, and short decay prevents overlapping at high BPM.
+
+If kicks sound muddy/overlapping: Decay is too long for your BPM. Reduce Decay knob or verify Switch is in RIGHT position. At 180 BPM, you need very short decay.
+
+If kicks sound too clean: Boost knob isn't at maximum. Turn fully clockwise for complete square wave transformation.
+
+If pattern feels wrong: Verify clock is actually at Gabber tempo (150+ BPM). Normal techno tempos (120-130) don't work for this style.
+
+#### **What You're Learning:**
+
+**Waveshaping through clipping:** The Boost circuit transforms sine to square by pushing amplitude until waveform tops and bottoms flatten. This is fundamental waveshaping - same principle as wavefolders, distortion, and all harmonic generation through non-linear processing.
+
+**Harmonic saturation:** Square waves contain infinite odd harmonics (1st, 3rd, 5th, 7th, etc.). This is why boosted Astroid sounds so different from clean sine - you've added entire harmonic series through distortion.
+
+**Tempo and decay coordination:** At high BPMs, envelope times must be shorter to prevent overlapping. This teaches you that timing parameters aren't absolute - they're relative to tempo and musical context.
+
+**Genre-specific synthesis:** Gabber/hardcore requires specific synthesis approaches - high pitch, short decay, maximum distortion. Understanding genre requirements teaches you how to dial in appropriate sounds for different musical contexts.
+
+#### **Advanced Gabber Techniques:**
+
+**Pitch automation:** Manually adjust Tune knob during performance for classic Gabber pitch drops and rises.
+
+**Extreme tempos:** Push clock to 200+ BPM for terror/speedcore applications - requires even shorter decay settings.
+
+**Additional distortion:** Run Astroid output through wavefolder or additional distortion for industrial/noise applications.
+
+**Accent for kick rolls:** Add accent triggers at specific moments for emphasized kick rolls (common in Gabber breakdowns).
+
+#### **Genre Context:**
+
+Gabber emerged in Rotterdam in early 1990s, characterized by:
+- Extremely fast tempos (160-200+ BPM)
+- Aggressive, distorted kick drums dominating the mix
+- Industrial aesthetic and hardcore attitude
+- Square wave saturation as signature sound
+
+Astroid's Boost circuit at maximum recreates this aesthetic authentically - you're using the same waveshaping principle that defined the genre.
+
+#### **Next Steps:**
+
+After mastering aggressive square wave kicks, try Patch 4 to explore organic drum evolution, or experiment with layering clean and boosted kicks for hybrid character.
 
 ### **Patch 4: Intermediate - Organic Drum Evolution**
 ```
