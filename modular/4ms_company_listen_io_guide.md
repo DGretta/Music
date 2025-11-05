@@ -430,6 +430,283 @@ Professional Studio Integration:
 
 ---
 
+## Common Mistakes and How to Avoid Them
+
+### **"My external instrument sounds distorted and harsh in modular"**
+
+**Problem:** Input gain set too high, causing clipping at the Line to Mod conversion stage
+
+**Why It Happens:** Coming from traditional recording, many users assume "more signal is better" and crank the Gain knob. But Listen IO can provide up to 30x gain - far more than most sources need. When you boost a line-level keyboard or phone output with maximum gain, you're multiplying an already strong signal by 30, pushing it well into clipping territory. The top LED flashing red isn't a "suggestion" - it's telling you the circuit is running out of headroom.
+
+**The deeper principle:** Gain staging is about **optimization, not maximization**. In professional audio, you want the strongest clean signal, not the loudest possible signal. Clipping creates harsh harmonics that can't be removed later - it's permanent distortion of your source material. The LED bar graph is teaching you to recognize optimal gain visually: strong signal (most LEDs lit) without clipping (red LED off).
+
+**Solution:**
+- Start with Gain at minimum (fully counterclockwise)
+- Play your external source at normal performance volume
+- Slowly increase Gain while watching the LED bar graph
+- Stop increasing when you see 4-6 LEDs consistently lit during loud passages
+- If red LED flashes even occasionally, reduce gain slightly
+- Remember: You can always add more gain in your modular processing chain
+
+**Alternative approach:** If you need distortion, get it from modular waveshapers or distortion modules where you can control the character. Input clipping is the wrong place for creative distortion - it happens before any processing can shape it musically.
+
+---
+
+### **"I can barely hear my guitar through the modular system"**
+
+**Problem:** Insufficient gain for instrument-level sources, or gain set correctly but modular processing reduces signal
+
+**Why It Happens:** Electric guitars output very low voltage compared to line-level equipment - typically 100mV or less. This is **instrument level**, about 10x quieter than line level (~1V) and 100x quieter than modular level (~10V). Listen IO needs to amplify this tiny signal by 20-30x to reach modular levels. If Gain is set conservatively, or if subsequent modular processing includes VCAs that reduce level, the guitar disappears.
+
+**The deeper principle:** **Understanding signal levels is fundamental to all audio work**. Instrument level (guitars, basses, dynamic microphones) requires significant amplification. Line level (keyboards, audio interfaces, effects processors) requires moderate amplification. Modular level is the highest operating level, providing headroom for processing. When sources are quieter than expected, it's usually a level mismatch, not a quality problem with the source.
+
+**Solution:**
+- For guitars/basses, expect to use Gain knob at 2-3 o'clock positions
+- Watch LED bar graph - you should see at least 3-4 LEDs during strumming/picking
+- If signal is still weak after maximum gain, your pickup output may be very low
+- Consider a guitar preamp or boost pedal before Listen IO for very low-output pickups
+- When patching to VCAs, keep VCA levels high initially - don't assume low VCA = subtle
+- Remember: Modular expects hot signals, so don't be afraid of strong gain
+
+**Alternative approach:** Use the guitar's volume knob as a performance control rather than trying to maintain constant level. Set Listen IO gain for maximum guitar volume, then use the guitar's own volume for dynamics.
+
+---
+
+### **"The LED bar graphs show signal but I hear nothing"**
+
+**Problem:** Wrong section being monitored - LEDs show input signal but output isn't patched, or vice versa
+
+**Why It Happens:** Listen IO has two completely independent sections with separate LED monitoring. The top LEDs monitor Line to Mod conversion (after Gain is applied), while bottom LEDs monitor Mod to Line conversion (after Level attenuation). New users often watch the wrong LED section for their signal path, seeing activity but hearing silence because the signal isn't actually reaching their destination.
+
+**The deeper principle:** **Signal flow requires complete paths**. Audio doesn't "leak" between sections - you must explicitly patch both input AND output. Visual monitoring only shows that stage is working; it doesn't guarantee your signal reaches its destination. This is the same principle in mixing consoles, patch bays, and all professional audio routing: seeing signal at one point doesn't mean it's reaching another point.
+
+**Solution:**
+- **For external sources:** Check top LEDs (Line to Mod), but remember to patch Mod Out to a modular destination
+- **For modular output:** Check bottom LEDs (Mod to Line), but remember to patch Mod In from your modular source
+- Trace complete signal path: Source → Line In → Gain → Mod Out → [Modular processing] → Mod In → Level → Line Out → Destination
+- If LEDs show activity but no sound, the break is after that LED stage
+- If no LED activity, the break is before or at that stage
+
+**Troubleshooting sequence:**
+1. Confirm source is playing/generating signal
+2. Check appropriate LED section for that signal path
+3. Verify patch cables are fully inserted (3.5mm jacks can be finicky)
+4. Test with headphones at Line Out to isolate monitoring from source issues
+
+---
+
+### **"My modular output sounds quiet even with Level knob maxed"**
+
+**Problem:** Modular source isn't strong enough, or expecting amplification when Level only attenuates
+
+**Why It Happens:** The Mod to Line section (bottom half) only provides **attenuation**, never amplification. Maximum Level knob position is unity gain (0dB) - the modular signal passes through unchanged. If your modular source is already quiet (low-output oscillators, heavily filtered signals, multiple attenuation stages), Listen IO can't boost it. This catches users who expect Level to work like Gain - but they're fundamentally different functions.
+
+**The deeper principle:** **Gain vs. attenuation serve different purposes**. Gain (top section) amplifies weak signals up to modular levels - it needs to boost because external sources are too quiet for modular. Attenuation (bottom section) reduces strong modular signals down to safe line levels - it needs to reduce because modular is too hot for external equipment. Understanding this asymmetry is essential: you build up signals that are too weak, and reduce signals that are too strong. Listen IO's design reflects this reality through separate gain and attenuation stages.
+
+**Solution:**
+- Before Listen IO, boost your modular signal using VCAs, mixers, or amplifier modules
+- Check your modular signal path for excessive attenuation (multiple passive mults, long cable runs)
+- Use active modules (VCAs with gain makeup, active mixers) rather than passive utilities
+- Consider a dedicated output amplifier module if your patches consistently run quiet
+- Remember: Listen IO assumes modular sources are already at proper modular levels (~10Vpp)
+
+**Signal chain optimization:**
+- Keep VCAs in your modular chain at 70-80% open for healthy levels
+- Use mixer channels near unity gain, not heavily attenuated
+- Route oscillators and sound sources with minimal attenuation before final output
+- Save dynamic control for performance (VCA expression), not fixed signal reduction
+
+---
+
+### **"Headphones sound different from my monitors"**
+
+**Problem:** Level mismatch between headphone volume and monitor volume, or acoustic environment differences
+
+**Why It Happens:** Line Out jacks serve double duty - they're both line outputs for studio monitors/interfaces AND headphone outputs. But headphones and monitors have vastly different impedance and sensitivity characteristics. What sounds "correct" on headphones at a given Level knob position may be too quiet or too loud through monitors. Additionally, acoustic environment dramatically affects perception - headphones eliminate room acoustics, while monitors include room reflections, bass buildup, and spatial information.
+
+**The deeper principle:** **Monitoring is about reference, not absolute volume**. Professional engineers use multiple monitoring systems (main monitors, near-fields, headphones, car stereos) specifically because each reveals different aspects of a mix. Headphones show detail and stereo image without room interference. Monitors show how the mix works in three-dimensional space with realistic bass response. Neither is "correct" - they're different perspectives on the same audio. Listen IO's dual output capability lets you use both perspectives simultaneously.
+
+**Solution:**
+- Set Level knob separately for headphone vs. monitor sessions
+- Mark your "headphone position" and "monitor position" on the panel with tape if you switch frequently
+- Use headphones for detail work (precise panning, subtle modulation, high-frequency content)
+- Use monitors for overall balance (bass levels, spatial width, room translation)
+- Remember: They should sound different - that's information, not a problem
+
+**Professional workflow:**
+- Start patches on monitors to understand overall character and bass response
+- Switch to headphones to fine-tune modulation depth and stereo movement
+- Return to monitors for final level decisions and complete mix context
+- Both perspectives reveal truth, just different aspects of it
+
+---
+
+### **"The red LED keeps flashing on the input section"**
+
+**Problem:** Input clipping from excessive gain, but user isn't sure how much to reduce
+
+**Why It Happens:** The red LED indicates clipping - the circuit has run out of voltage headroom and is "hard limiting" the signal peaks. But new users often don't understand how sensitive this threshold is. Even brief red LED flashes mean distortion is occurring on those peaks. Some users think "a little red is okay" because in traditional recording, meters often have "yellow zone" (approaching limits) and "red zone" (over limits). Listen IO's LED has no yellow zone - red means you're clipping.
+
+**The deeper principle:** **Headroom is your safety margin against distortion**. Professional signal flow maintains headroom at every stage - recording, processing, mixing. When you're "hitting red," you've eliminated all headroom at that stage. Any louder peak will distort. Any additional gain in the chain will amplify the distortion. Digital systems can sometimes recover from brief clipping through look-ahead limiting, but analog systems like Listen IO clip immediately and permanently. Understanding headroom means understanding that optimal signal level is NOT "as hot as possible" - it's "as hot as sustainable with margin for dynamics."
+
+**Solution:**
+- Red LED should never illuminate, even on the loudest peaks
+- Reduce Gain until red LED only flashes on absolutely maximum transients
+- Then reduce Gain slightly more to create headroom for unexpected loud moments
+- Aim for 4-6 LEDs lit on normal loud passages, with headroom for peaks
+- Remember: You can always add gain later in modular processing without clipping artifacts
+
+**When to break the rule:**
+- If you want intentional input distortion for creative effect, watch for harshness
+- Some sources (especially drum machines) benefit from slight clipping for aggression
+- But make this a conscious creative choice, not an accident from improper gain staging
+- Even creative clipping should be occasional and on peaks, not constant
+
+---
+
+### **"I can't hear my DAW playback through modular processing"**
+
+**Problem:** DAW return level doesn't match modular processing expectations, or monitoring is set up incorrectly
+
+**Why It Happens:** When routing DAW audio back into modular for processing, users often send it at line level from their audio interface. But even with Listen IO converting it to modular level, the gain staging might not match the rest of their modular setup. If they've been working with hot VCO signals and then patch in a conservatively-gained DAW return, it seems to vanish in the mix. The source is present (LEDs confirm), but it's not competing level-wise with existing modular signals.
+
+**The deeper principle:** **Gain staging affects all sources equally, but perceived level differs based on content**. A sine wave at -10dBu and a drum loop at -10dBu measure identically but sound different in terms of loudness because of different peak-to-RMS ratios. Complex program material (like DAW tracks) often has lower peak levels than simple modular tones, making level matching tricky. Professional engineers understand this and adjust for perceived loudness, not just measured level.
+
+**Solution:**
+- Increase DAW output level before sending to audio interface (boost in DAW mixer)
+- Use Listen IO's Gain control more aggressively for DAW returns than for instruments
+- If processing DAW audio through modular, include a VCA with gain makeup in the chain
+- Consider that modular VCOs run very hot - DAW returns don't need to match that level exactly
+- Use Listen IO's bottom section to monitor the mix including DAW returns
+
+**Workflow optimization:**
+- Create a dedicated DAW return track with +6dB gain as a starting point
+- Route DAW to audio interface at healthy levels (not conservative line level)
+- Treat DAW returns as you would any external instrument - gain stage appropriately
+- Remember: Listen IO bridges two different signal level worlds, but you control both sides
+
+---
+
+### **"I get noise when nothing is plugged into Line In"**
+
+**Problem:** Gain knob creates noise floor amplification when turned up with no source connected
+
+**Why It Happens:** All gain circuits amplify both signal AND noise. When there's no signal plugged into Line In, the Gain circuit is amplifying only its own noise floor - thermal noise from resistors, op-amp noise, power supply noise. At low gain settings this is inaudible. At high gain settings (necessary for guitars and low-output sources), this noise becomes audible. This isn't a defect - it's physics. Every preamp and gain stage exhibits this behavior.
+
+**The deeper principle:** **Noise floor exists in all analog circuits**. The trick is keeping it below audibility relative to your signal. This is why professional recording emphasizes strong source levels - the louder your source relative to the circuit's inherent noise, the better your signal-to-noise ratio. Listen IO's high gain range (30x) is necessary for quiet sources, but it necessarily amplifies more noise floor when those sources are very quiet or absent.
+
+**Solution:**
+- Keep Gain at minimum when Line In is unused
+- Only increase Gain when source is connected and playing
+- Use Mod Out with a switch/gate to mute the signal path when no external source is active
+- Consider the noise floor part of analog character if it's minimal - perfectionism about silence isn't necessary
+- If noise is excessive (loud hiss), check power supply and cable routing for interference
+
+**Professional perspective:**
+- Some noise floor is normal and acceptable in modular systems
+- Signal-to-noise ratio matters more than absolute silence
+- Strong source signals + appropriate gain = acceptable noise floor
+- Modular systems are inherently noisier than digital systems - embrace this as character
+
+---
+
+### **"External effects returns sound different than the dry signal"**n
+**Problem:** Level mismatch or processing in external effects changes perceived loudness and tone
+
+**Why It Happens:** When creating effects loops (modular → Line Out → external processor → Line In → modular), the signal goes through multiple conversion stages and the external processor itself. Even if both Listen IO sections are set optimally, the external processor adds its own gain staging, frequency response changes, and level adjustments. A reverb might output 10dB quieter than its input. A compressor might output louder. These level changes affect how the return integrates with your dry signal.
+
+**The deeper principle:** **Parallel processing requires level matching**. In professional mixing, when you create a send/return loop, you level-match the return so it integrates properly. Too quiet, and the effect seems weak. Too loud, and it overwhelms. This level matching is separate from the effect itself - it's infrastructure management. Listen IO provides the infrastructure (conversion both ways), but you manage the levels on both sides plus the external processor's own levels.
+
+**Solution:**
+- Set external processor output to its "unity gain" or "0dB" position initially
+- Adjust Listen IO's Gain (for return) to match the dry signal level
+- Use modular VCA or mixer to blend dry and wet signals at matched levels
+- If external processor has mix control, keep it 100% wet for parallel processing control
+- Level-match first, then adjust wet/dry balance musically
+
+**Effects loop optimization:**
+- Document gain/level settings for each external processor
+- Mark "return gain" positions on Listen IO panel for different effects
+- Use consistent signal levels out of modular to external processors
+- Consider that some effects (reverb, delay) intentionally sound quieter - this is correct
+
+---
+
+### **"Dual headphone outputs sound identical - what's the point?"**
+
+**Problem:** Not understanding the channel swapping feature and its applications
+
+**Why It Happens:** The left Line Out jack provides normal stereo (left signal to left ear, right signal to right ear). The right Line Out jack provides swapped stereo (right signal to left ear, left signal to right ear). On casual listening, these might sound "basically the same" because the content is identical - just swapped. But for certain applications (collaboration, stem monitoring, diagnostic work), this swapping is extremely useful.
+
+**The deeper principle:** **Flexible monitoring enables different workflows**. Sometimes you need to isolate one channel, sometimes you need to hear the "opposite perspective" of a stereo field, sometimes you need two people monitoring different aspects simultaneously. Professional systems provide this flexibility because different listening tasks require different monitoring approaches. Listen IO's implementation is elegant - same outputs, different configurations through jack choice.
+
+**Solution:**
+- Use left jack for primary monitoring (normal stereo)
+- Use right jack for second person's monitoring (they hear swapped channels)
+- Use both simultaneously when teaching - instructor hears normal, student hears swapped
+- Use swapped monitoring to check stereo field from opposite perspective
+- In mono setups, use right jack to check right channel specifically
+
+**Professional applications:**
+- Collaborative production: Two producers with different listening perspectives
+- Teaching: Instructor maintains normal reference while showing student alternate view
+- Diagnostic: Swap channels to isolate issues with stereo field
+- Performance: Performer gets swapped mix while engineer monitors normal mix
+
+---
+
+### **"I don't understand when to use the expansion headers"**
+
+**Problem:** Unclear about INS/OUTS header functionality and applications versus standard jacks
+
+**Why It Happens:** The expansion headers duplicate the functionality of the standard 3.5mm jacks but in a different physical format (3-pin headers). Users don't realize these are for adaptor modules (like Listen Up) that provide alternative connector types. Without an adaptor module, the headers seem purposeless. But the design intent is infrastructure flexibility - the same signals available in multiple physical formats through adaptors.
+
+**The deeper principle:** **Infrastructure design separates core functionality from physical connectivity**. Professional systems make signals available at intermediate points, allowing for connection method flexibility without redesigning the core module. This is the same principle used in patch bays, where the same signals appear on multiple connector types. Listen IO's headers aren't an afterthought - they're recognition that different studios, live rigs, and educational environments need different physical connectivity.
+
+**Solution:**
+- Use standard 3.5mm jacks for normal modular patching
+- Use expansion headers when you need different connector types (1/4", banana, etc.)
+- Obtain Listen Up or similar adaptor modules to use headers with standard studio equipment
+- Headers and jacks work simultaneously - you can use both at once
+- Consider headers for permanent installation routing (studio wiring, case mounting)
+
+**Applications for expansion headers:**
+- Educational settings: Banana jacks for safety and ease of use
+- Studio integration: 1/4" TRS for professional studio equipment
+- Live performance: Different connectors for FOH systems
+- Custom installations: Non-standard connectivity requirements
+- Future expansion: Adaptor modules for protocols that don't exist yet
+
+---
+
+### **Pattern Recognition: Understanding the Root Causes**
+
+**Four fundamental misunderstandings cause 90% of Listen IO issues:**
+
+**1. Expecting Signal Level Standards to Match Between Domains**
+
+Instrument level (~100mV), line level (~1V), and modular level (~10V) are different standards for good technical reasons. Each domain operates at the level that makes sense for its circuitry and headroom requirements. Listen IO bridges these domains through conversion, but users must understand that "line level" in their studio and "modular level" in their rack are intentionally different. The module doesn't make them the same - it translates between them. Issues with "too quiet" or "too loud" almost always trace to not understanding which signal level standard applies to which equipment.
+
+**2. Treating Gain and Attenuation as Identical Functions**
+
+Gain (top section) amplifies weak signals up. Attenuation (bottom section) reduces strong signals down. They're not mirror images - they serve different purposes in signal flow. Gain is active (adds voltage), attenuation is passive (removes voltage). This asymmetry confuses users who expect Level to "boost" like Gain does, or who don't understand why they can't make a modular signal louder with Level. Understanding gain vs. attenuation reveals a fundamental principle: signal flow requires building up weak sources and reducing strong sources. You can't reverse these operations.
+
+**3. Assuming Visual Monitoring Guarantees Complete Signal Path**
+
+LED bar graphs show signal at that stage - after Gain (top) or after Level (bottom). But seeing LEDs doesn't mean your signal reaches its final destination. Complete signal flow requires patching both input AND output, plus everything in between. This is the same principle in mixing consoles and patch bays: metering shows that stage is working, but doesn't confirm downstream connections. Users who see LED activity but hear nothing have a break in the signal path after the LED stage.
+
+**4. Missing the Bidirectional Infrastructure Concept**
+
+Listen IO isn't two separate modules crammed together. It's one bidirectional infrastructure module that treats "external to modular" and "modular to external" as equally important conversions. Users who think of it as "input module with bonus output" miss half its capability. Both directions are primary functions, both require quality conversion, both need proper gain staging. Understanding bidirectional thinking reveals that professional I/O isn't about getting signals in or getting signals out - it's about seamless integration between systems where signals flow both directions.
+
+**The Deeper Pattern:**
+
+Listen IO teaches professional signal flow principles through practical application: understanding signal levels, managing gain staging, monitoring signal health visually, and thinking about I/O as bidirectional infrastructure. Issues with Listen IO almost always reveal gaps in understanding these principles - which is exactly what makes it a teaching module. When you master Listen IO, you've mastered professional I/O concepts that apply to every mixing console, audio interface, and recording situation you'll ever encounter.
+
+The LED bar graphs, the separate gain and attenuation stages, the dual independent sections - these aren't just features. They're visible representations of how professional signal flow works. Understanding why things go wrong with Listen IO teaches you how to prevent problems across all audio systems.
+
+---
+
 ## Pairs Well With
 
 ### **Phase 2 Module Synergies (I/O Coordination):**
