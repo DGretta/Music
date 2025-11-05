@@ -797,12 +797,12 @@ The LED bar graphs, the separate gain and attenuation stages, the dual independe
 
 ## Pairs Well With
 
-### **Phase 2 Module Synergies (I/O Coordination):**
+### **Advanced Module Synergies (I/O Coordination):**
 - **Erica Synths modules:** Audio sources requiring external integration and professional output
 - **Make Noise Maths:** Complex CV generation for processing external instrument signals
 - **DivKid Ochd & Expander:** LFO modulation of external instrument processing parameters
 - **Links:** Signal routing and mixing of external and modular sources
-- **Cross-Phase 2 Integration:** Essential I/O interface enabling professional studio integration
+- **Cross-Advanced Integration:** Essential I/O interface enabling professional studio integration
 
 ### **Perfect Partners for I/O Applications:**
 - **External instruments:** Guitars, keyboards, drum machines, grooveboxes requiring modular integration
@@ -831,7 +831,7 @@ The LED bar graphs, the separate gain and attenuation stages, the dual independe
 
 ---
 
-## Phase 2 Learning Path
+## Advanced Learning Path
 
 ### **Recommended Study Progression:**
 1. **Start with basic I/O:** Master signal level conversion and LED monitoring
@@ -846,7 +846,7 @@ The LED bar graphs, the separate gain and attenuation stages, the dual independe
 - **Listen IO + VCA modules:** Amplitude control of converted external signals
 - **Listen IO + Effects modules:** Modular processing of external audio sources
 - **Listen IO + Mixer modules:** Professional output mixing and monitoring
-- **All Phase 2 + Listen IO:** Essential I/O infrastructure enabling professional modular/studio integration
+- **All Advanced modules + Listen IO:** Essential I/O infrastructure enabling professional modular/studio integration
 
 ### **Skill Development Milestones:**
 - **Beginner:** Basic I/O operation, gain staging, LED monitoring
@@ -868,4 +868,4 @@ The LED bar graphs, the separate gain and attenuation stages, the dual independe
 
 ---
 
-**Bottom Line:** Listen IO isn't just an audio interface - it's **essential studio infrastructure** that bridges the gap between modular synthesis and professional audio equipment with studio-quality conversion, comprehensive monitoring, and flexible connectivity options. Every patch teaches something new about professional I/O, from basic level conversion to complex studio integration. As **fundamental I/O infrastructure within Phase 2 ecosystems**, it enables professional studio integration, high-quality monitoring, and seamless external instrument integration while maintaining the signal integrity essential for professional recording and performance applications in the most compact and capable format possible.
+**Bottom Line:** Listen IO isn't just an audio interface - it's **essential studio infrastructure** that bridges the gap between modular synthesis and professional audio equipment with studio-quality conversion, comprehensive monitoring, and flexible connectivity options. Every patch teaches something new about professional I/O, from basic level conversion to complex studio integration. As **fundamental I/O infrastructure within Advanced modular ecosystems**, it enables professional studio integration, high-quality monitoring, and seamless external instrument integration while maintaining the signal integrity essential for professional recording and performance applications in the most compact and capable format possible.
