@@ -207,6 +207,34 @@ Each output shifts to the next higher division number:
 - Learn the power of rotation for pattern evolution
 - Discover odd divisions (/3, /5) vs. standard (/2, /4)
 
+**What You're Learning:**
+- **Polyrhythmic mathematics made tangible:** When Output 3 (/3) plays against Output 2 (/2), you're experiencing a 3:2 polyrhythm - they align every 6 beats. This isn't abstract theory, this is hearing the mathematical relationship between 2 and 3. Understanding this through direct experience teaches you why 3-against-4 grooves work in everything from African drumming to hip-hop production
+- **Rotation as relational transformation:** When slow LFO rotates divisions, Output 1 moves from /1 to /2 to /3. But you're not just hearing "kick drum gets slower" - you're hearing the relationship between kick and all other elements transform completely. /1 against /2 is a simple 2:1 relationship. /2 against /3 is a 3:2 polyrhythm. Same patch cables, completely different groove. This teaches that musical interest comes from relationships, not individual elements
+- **Odd divisions create tension:** /3 and /5 divisions don't align predictably with /2 and /4 like most drum machines provide. They create mathematical tension that resolves over longer cycles. This teaches you why odd-meter grooves (/3 = triplets, /5 = quintuplets) create such compelling rhythmic interest across all music traditions
+- **Visual feedback teaches timing theory:** Watching the LED flash rates makes timing relationships visible. Fast flash = low division number, slow flash = high division number. When two LEDs flash together, that's mathematical alignment - the moment polyrhythms resolve. This visual confirmation teaches rhythm theory without requiring you to count or calculate
+
+**Enhanced Alternatives:**
+
+| **Instead of This** | **Try This** | **Why It Works Better** | **What You Learn** |
+|---------------------|--------------|------------------------|--------------------|
+| **Static divisions (no rotation)** | **Stepped random to Rotate CV** | Sudden rhythmic "gear changes" every 4-8 bars creates dramatic section transitions | Rotation timing as arrangement tool - slow evolution vs sudden shifts |
+| **Single kick on Output 1** | **Kick on Outputs 1 AND 3** | Two kicks at /1 and /3 create polyrhythmic kick patterns, triplet feel against straight time | Layered polyrhythms - same sound at different divisions creates complexity |
+| **Basic LFO rotation** | **Envelope-triggered rotation** | Patch main sequencer downbeat to envelope, envelope to Rotate CV for controlled section changes | Musical structure through rotation - transform rhythms at song boundaries |
+| **All outputs to percussion** | **Outputs to modulation (LFO rates, envelope times)** | Use divisions as modulation clock rates instead of trigger sources | Timing infrastructure beyond percussion - polyrhythmic modulation |
+| **Moderate tempo (120 BPM)** | **Very fast tempo (160+ BPM) with Reset every 8 bars** | Fast clock with regular reset creates tight, urgent polyrhythmic complexity | Tempo and reset interaction - how speed affects polyrhythmic perception |
+
+**Experimentation Ideas:**
+
+1. **Prime number exploration:** Patch Outputs 2, 3, 5, 7 (all prime numbers) to four different percussion sounds. Let pattern run for 2 minutes without reset to hear the full mathematical cycle. Prime numbers create the longest, most complex polyrhythmic patterns.
+
+2. **Rotation speed comparison:** Try three different rotation rates - very slow (2-minute cycle), medium (30-second cycle), fast (5-second cycle). Listen to how rotation speed transforms the same basic pattern from gradual evolution to constant change to almost-random complexity.
+
+3. **Reset as musical punctuation:** Set up complex polyrhythm (/3, /5, /7), let it evolve for 30 seconds, then trigger Reset manually. Feel how reset provides resolution and structure to mathematical chaos - like a cadence in harmony or a downbeat in rhythm.
+
+4. **Division layering:** Patch Output 2 to kick, Output 4 to snare. Add Output 3 (triplets) to kick as well, so kick triggers from both /2 and /3. Creates polyrhythmic kick pattern where some hits align with snare, some don't.
+
+5. **Visual rhythm analysis:** Patch no sound outputs, just watch the LEDs for 2 minutes with slow rotation. Train your eyes to see mathematical relationships - when divisions align (LEDs flash together), when they separate. This visual training helps you hear polyrhythms more clearly.
+
 **Visual Feedback:**
 - **Output LEDs:** Watch different flash rates - faster = lower division numbers
 - **Rotation effect:** Listen as kick moves to Output 2 (half speed), then Output 3 (triplets)
