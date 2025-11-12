@@ -55,17 +55,6 @@ The key insight: **GHOST works because it's not trying to be one thing.** It's a
 
 In a modular system already full of specialized modules, GHOST's strength is that it *adapts.* It becomes what your patch asks it to become. That's why it justifies 16hp—not because it does one thing exceptionally, but because it does *many* things exceptionally, and the same physical module becomes different based on context.
 
-### Why This Matters for Your Teaching
-
-When you teach someone to use GHOST, you're not just teaching them an effects processor. You're teaching **modularity as a philosophy.**
-
-- **Routing order matters:** The sequence of processing changes character completely. This teaches signal flow thinking.
-- **Interconnection creates emergent behavior:** Micro-modulations show how systems interact. This teaches systems thinking.
-- **Constraints enable creativity:** Three routing choices force deeper exploration than infinite options would. This teaches creative discipline.
-- **Context defines function:** The same module serves different purposes depending on what you patch it into. This teaches relational thinking.
-
-These principles—signal flow, systems thinking, creative discipline, relational thinking—transfer to every other module in modular synthesis. Because the module embodies these concepts directly in its design, they become learnable through experimentation rather than explanation.
-
 ---
 
 ## The Routing Principle: Why Order Matters
