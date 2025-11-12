@@ -64,7 +64,7 @@ When you teach someone to use GHOST, you're not just teaching them an effects pr
 - **Constraints enable creativity:** Three routing choices force deeper exploration than infinite options would. This teaches creative discipline.
 - **Context defines function:** The same module serves different purposes depending on what you patch it into. This teaches relational thinking.
 
-These principles—signal flow, systems thinking, creative discipline, relational thinking—transfer to every other module in modular synthesis. GHOST is a teaching instrument, not just an effects processor. That's why it belongs in the guide system.
+These principles—signal flow, systems thinking, creative discipline, relational thinking—transfer to every other module in modular synthesis. Because the module embodies these concepts directly in its design, they become learnable through experimentation rather than explanation.
 
 ---
 
