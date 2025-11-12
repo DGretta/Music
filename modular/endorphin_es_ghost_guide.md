@@ -256,7 +256,196 @@ Each stage affects how the next stage sounds. You can't really predict exactly w
 
 ---
 
-## Next Steps
+## Common Mistakes and How to Avoid Them
+
+When working with FX → DIST → VCF routing, specific patterns emerge. Not bugs—just how the signal flow works. Understanding why they happen transforms them from frustrations into teachable moments.
+
+### **Mistake 1: "Everything becomes reverb mud, I can't hear my input anymore"**
+
+**What's happening:** Reverb DRY/WET knob is at full CW (100% wet), meaning distortion receives only the reverberated signal, not the original. By the time it gets to distortion, the original transient is buried under reverb tail.
+
+**Why this happens:** In this routing, reverb is *first*. Setting it full wet means you're feeding distortion a completely diffuse, decaying signal instead of something with definition.
+
+**How to fix it:** 
+- Start with Reverb DRY/WET around 30-50% (mix of clean + reverb)
+- Listen to how much original signal you hear vs. how much reverb character
+- Increase gradually until you have reverb character without losing the input definition
+- Use PRE-DELAY to separate the original sound from the reverb buildup—this maintains clarity even with higher wet levels
+
+**The principle:** In FX → DIST, spatial effects should *enhance* the signal, not replace it.
+
+---
+
+### **Mistake 2: "I turned up distortion and now it sounds like noise, not texture"**
+
+**What's happening:** Distortion knob is cranked to full CW, but the delay/reverb weren't set up to provide interesting material for distortion to color.
+
+**Why this happens:** Many people think "more distortion = more aggression." True, but in this routing, distortion's character depends on what's upstream. If delay/reverb are set subtly, heavy distortion has nothing interesting to work with and just becomes harsh.
+
+**How to fix it:**
+- Don't start with distortion high
+- Set up interesting delay/reverb character *first* (repeating patterns, spatial width, evolved textures)
+- Then add distortion gradually (start at 12 o'clock, turn up from there)
+- Listen for when distortion adds character vs. when it destroys it
+- Usually "sweet spot" is somewhere between 12 and 2 o'clock, not full CW
+
+**The principle:** Distortion in this chain is a *colorizer*, not a *generator*. It needs something with character to work on.
+
+---
+
+### **Mistake 3: "The reverb just makes everything muddy in the low end"**
+
+**What's happening:** You're feeding all frequencies (especially lows) into reverb, and the reverb's diffusion is creating phase cancellation that muddies the low end.
+
+**Why this happens:** Reverb algorithms are designed for full-spectrum signals. When bass frequencies get caught in reverb, they spread across the decay and muddy the mix. Then distortion amplifies that mud.
+
+**How to fix it:**
+- Use the FILTER (after distortion) to high-pass out low frequencies from the reverb's influence
+- Or: Set reverb TAIL shorter (less decay = less time for lows to muddy)
+- Or: Reduce Reverb DRY/WET so less reverb-muddied signal reaches distortion
+- Consider: Is the low end muddiness from reverb or from distortion processing? Check by muting reverb entirely
+
+**The principle:** Low frequencies in spatial effects create problems. Manage them explicitly.
+
+---
+
+### **Mistake 4: "My sidechain isn't doing anything. I patched the trigger but no ducking happens"**
+
+**What's happening:** Sidechain DEPTH (set with ROUTING + SIDECHAIN knob) is at 0% (full CCW), so even though the trigger is firing and the envelope is being generated, it's not affecting the audio level.
+
+**Why this happens:** The envelope is working, but you haven't told it how much to affect the signal. It's like turning down a volume knob to silent—nothing happens because there's nothing to duck.
+
+**How to fix it:**
+- While holding ROUTING button, turn SIDECHAIN knob CW to increase depth (start at 12 o'clock, ~50%)
+- You should hear the effect immediately—audio ducks when trigger fires
+- Adjust depth to taste (more CW = more aggressive ducking, more CCW = subtle effect)
+- Adjust release time (SIDECHAIN knob alone, no ROUTING) to control how long the duck lasts
+
+**The principle:** Controls have two functions: amount and character. Both matter.
+
+---
+
+### **Mistake 5: "Everything sounds so immediate and flat, like there's no space"**
+
+**What's happening:** Reverb PRE-DELAY is at minimum (set with ROUTING + TAIL knob), so the reverb starts immediately on the sound with no separation between original and reverb effect.
+
+**Why this happens:** Pre-delay creates the illusion of space by delaying the reverb slightly, so you hear the original sound first, then the reverb comes in after. Without it, it's all compressed into "now."
+
+**How to fix it:**
+- While holding ROUTING, turn TAIL knob CW to increase pre-delay (start at 12 o'clock, ~50%)
+- Listen—suddenly there's more space perception
+- Push further if you want even more separation
+- This is especially powerful with percussive inputs, where pre-delay makes the hit clear before reverb surrounds it
+
+**The principle:** Pre-delay is invisible but profound. It defines whether space sounds realistic.
+
+---
+
+### **Mistake 6: "My delay repeats are getting buried in distortion, they're not clear"**
+
+**What's happening:** Delay feedback (REPEATS knob) is high, creating many repeats, but DELAY TONE (set with ROUTING + REPEATS) is set dull/dark, so the repeats are losing definition as they enter distortion.
+
+**Why this happens:** Dull tone on many repeats = distortion processes a murky, undefined signal. No clarity because the repeats themselves lack brightness.
+
+**How to fix it:**
+- While holding ROUTING, turn REPEATS knob CW to brighten the delay tone
+- Now the repeats have articulation as they enter distortion
+- Experiment with different tone settings with the same feedback level—you'll hear massive difference
+- Balance: Bright repeats can be piercing if distortion is heavy; dull repeats get buried if distortion is light
+
+**The principle:** Tone shaping upstream of distortion is as important as the distortion itself.
+
+---
+
+### **Mistake 7: "I can't tell what the original sound is vs. what's processed"**
+
+**What's happening:** Global DRY/WET MIX (set with ROUTING + VOLUME/drive) is full CW (100% wet), so you're hearing only the processed signal, no reference to the original.
+
+**Why this happens:** Without the original signal as reference, your ears adapt to the processed sound as "normal," and you can't tell if you're over-processing or under-processing.
+
+**How to fix it:**
+- Set Global DRY/WET to around 50% (12 o'clock), so you hear both original and processed equally
+- This is your "reference" position—understand the character of your processing
+- Then adjust toward full wet (CW) or full dry (CCW) depending on how much effect you want
+- The "A/B" comparison between 50% and 100% wet teaches you how much character you're adding
+
+**The principle:** Hearing both dry and wet lets you measure your processing. Solo wet and you're flying blind.
+
+---
+
+### **Mistake 8: "The filter isn't doing anything, I turn it and nothing changes"**
+
+**What's happening:** Filter is in LP/HP isolator mode (default), and you're at 12 o'clock position (center = flat = no filtering), so adjustments don't sound dramatic.
+
+**Why this happens:** At center, the filter passes everything untouched. You need to move away from center to hear the effect. Also, if distortion and reverb are overwhelming, subtle filter changes don't cut through.
+
+**How to fix it:**
+- Turn FREQUENCY knob significantly away from center (either CCW to remove highs or CW to remove lows) to hear the effect clearly
+- Start at 10 o'clock or 2 o'clock position, not small movements from 12
+- If filter changes still feel subtle, increase RESONANCE to add emphasis—now changes are obvious
+- Consider switching to BAND-PASS filter (press BPF button) if you want more dramatic narrowing
+
+**The principle:** The isolator filter is subtle by design. Dramatic changes require either large knob movements or resonance emphasis.
+
+---
+
+### **Mistake 9: "I've got distortion and resonance both at full, and it's just chaos"**
+
+**What's happening:** DISTORTION knob is full CW AND RESONANCE knob is full CW, which means you have maximum saturation plus maximum filter emphasis, creating self-oscillation, feedback, and unpredictable chaos.
+
+**Why this happens:** Each control is powerful independently. Combined at extremes, they overwhelm each other and the reverb/delay upstream.
+
+**How to fix it:**
+- Use only one at full intensity, not both
+- If you want heavy distortion, keep resonance moderate (12 o'clock area)
+- If you want strong resonance/self-oscillation, keep distortion moderate
+- Let them cooperate, not fight
+- Start both moderate and increase one at a time to hear the difference each makes
+
+**The principle:** In FX → DIST → VCF, you're stacking complex processes. Restraint on some lets others shine.
+
+---
+
+### **Mistake 10: "Everything sounds thin or harsh, I can't get anything lush"**
+
+**What's happening:** You're using the filter in HIGH-PASS mode (CW past center), which removes low frequencies. Combined with bright delay tone and light reverb, the signal has no body.
+
+**Why this happens:** This routing can create thin sounds easily because distortion on already-thin material (sparse delays, thin reverb) creates harshness rather than lushness. You're stacking thinness at every stage.
+
+**How to fix it:**
+- Move filter toward LOW-PASS (CCW, away from center) to keep lows
+- Increase reverb DRY/WET to add thickness
+- Increase delay REPEATS for denser texture
+- Darken delay TONE (ROUTING + REPEATS CCW) so repeats are fat, not thin
+- Use moderate distortion (not heavy) so the thickness doesn't turn harsh
+- Add compression at the end to glue it together
+
+**The principle:** Lushness requires thickness at multiple stages. One thin link breaks the chain.
+
+---
+
+## Pattern Recognition: Root Causes
+
+These ten mistakes cluster around three root issues:
+
+**1. Forgetting signal flow order** (Mistakes 1, 2, 3)
+- Because reverb/delay come *first*, they define what distortion receives
+- Students often set distortion without considering what's upstream
+- Fix: Always dial in reverb/delay character before touching distortion
+
+**2. Forgetting hidden controls exist** (Mistakes 4, 5, 6, 8)
+- ROUTING button reveals crucial parameters (tone, depth, pre-delay, resonance)
+- Students find one set of controls and think that's all there is
+- Fix: After basic exploration, intentionally learn the ROUTING+ functions for each major control
+
+**3. Extreme settings thinking** (Mistakes 7, 9, 10)
+- "More is better" leads to full CW on everything
+- Students don't understand that processing stacks—each one compounds the previous
+- Fix: Develop reference points—know how 50% sounds, then learn how full wet/dry differs; understand that moderation on some parameters lets others work effectively
+
+Understanding these patterns helps you diagnose your own problems quickly.
+
+---
 
 **This foundation is ready for refinement through real-world testing.**
 
