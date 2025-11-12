@@ -430,20 +430,18 @@ These ten mistakes cluster around three root issues:
 
 **1. Forgetting signal flow order** (Mistakes 1, 2, 3)
 - Because reverb/delay come *first*, they define what distortion receives
-- Students often set distortion without considering what's upstream
-- Fix: Always dial in reverb/delay character before touching distortion
+- It's easy to set distortion without considering what's upstream
+- Solution: Always dial in reverb/delay character before touching distortion
 
 **2. Forgetting hidden controls exist** (Mistakes 4, 5, 6, 8)
 - ROUTING button reveals crucial parameters (tone, depth, pre-delay, resonance)
-- Students find one set of controls and think that's all there is
-- Fix: After basic exploration, intentionally learn the ROUTING+ functions for each major control
+- The basic front-panel controls feel complete until you discover there's more
+- Solution: After basic exploration, systematically learn the ROUTING+ functions for each major control section
 
 **3. Extreme settings thinking** (Mistakes 7, 9, 10)
 - "More is better" leads to full CW on everything
-- Students don't understand that processing stacks—each one compounds the previous
-- Fix: Develop reference points—know how 50% sounds, then learn how full wet/dry differs; understand that moderation on some parameters lets others work effectively
-
-Understanding these patterns helps you diagnose your own problems quickly.
+- Processing stacks—each stage compounds the previous one, creating unexpected effects at extremes
+- Solution: Develop reference points—know how 50% sounds, then understand how full wet/dry differs; recognize that moderation on some parameters enables others to work effectively
 
 ---
 
