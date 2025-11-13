@@ -1,7 +1,7 @@
 # GHOST Module Guide
 **Endorphin.es × Andrew Huang | 16hp Multi-Dimensional Effects Processor | Firmware V3.0+**
 
-![GHOST Module](https://github.com/DGretta/Music/raw/main/modular/images/endorphin_es/ghost/front_panel.jpg)
+![GHOST Module](https://github.com/DGretta/Music/raw/main/modular/images/endorphines/ghost/front_panel.jpg)  
 *Multi-dimensional effects processor with three signal routing chains, micro-modulation matrix, and comprehensive dynamics control*
 
 ---
