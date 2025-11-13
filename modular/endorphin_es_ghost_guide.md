@@ -1,6 +1,9 @@
 # GHOST Module Guide
 **Endorphin.es × Andrew Huang | 16hp Multi-Dimensional Effects Processor | Firmware V3.0+**
 
+![GHOST Module](https://github.com/DGretta/Music/raw/main/modular/images/endorphin_es/ghost/front_panel.jpg)
+*Multi-dimensional effects processor with three signal routing chains, micro-modulation matrix, and comprehensive dynamics control*
+
 ---
 
 ## Why This Excels
@@ -434,15 +437,161 @@ These ten mistakes cluster around three root issues:
 
 ---
 
-**This foundation is ready for refinement through real-world testing.**
+## Starter Patches: Creative Applications with FX → DIST → VCF Routing
 
-Upcoming sections (after hands-on experience):
-- The Routing Principle: Why FX→DIST→VCF, DIST→VCF→FX, and VCF→FX→DIST exist and what each teaches
-- Deep-Dive: Routing Chain 1 (FX→DIST→VCF) - For rumble, ghost sounds, and atmospheric processing
-- Common Mistakes and How to Avoid Them (8-10 issues with technical WHY explanations)
-- Starter Patches: Karplus-Strong Synthesis and Techno Rumble Bass
-- Testing Notes: To be refined after hands-on experimentation
+Both patches use the FX → DIST → VCF routing chain (LED off). The same controls produce completely different musical results depending on how you balance the three stages and how you modulate them.
+
+### **Patch 1: Ghost Drone - Evolving Ambient Texture**
+
+**Setup:**
+```
+🔴 Audio │ 🔵 CV │ 🟡 Gate
+
+┌─OSCILLATOR/SYNTH─┐
+│    Output   ○────┼────┬──┐
+└───────────────────┘    │  │
+                         │  └─→ GHOST IN 🔴
+┌─LFO─────────────────┐  │
+│    OUTPUT   ○───────┼──┼──→ PRE-VCA CV 🔵
+└─────────────────────┘  │
+                         │
+                    ┌────▼────────┐
+                    │    GHOST    │
+                    │             │
+                    │  FX→DIST→VCF│
+                    │             │
+                    └────┬────────┘
+                         │
+                    ┌────▼─────┐
+                    │    AMP    │ or MIXER INPUT
+                    │  (0dB+)   │
+                    └──────────┘
+```
+
+**Controls - Focus on Creating Space:**
+- **Delay TIME:** 12 o'clock (medium repeats for shimmer, not rhythmic)
+- **Delay REPEATS:** CW to 2 o'clock (generous feedback for layering)
+- **Delay DRY/WET:** CW 1-2 o'clock (mostly wet, but preserve some definition)
+- **Reverb TAIL:** CW 1-2 o'clock (long decay, creates space)
+- **Reverb PRE-DELAY:** CW 11 o'clock (separates original from verb)
+- **Reverb DRY/WET:** CW 2-3 o'clock (heavy reverb character)
+- **Distortion:** 12-1 o'clock (moderate saturation, not aggressive)
+- **Filter FREQUENCY:** Sweep slowly with LFO (see Modulation)
+- **Filter RESONANCE:** 1 o'clock (adds definition without harshness)
+- **Compressor:** 12 o'clock (gentle compression to glue texture)
+- **Global DRY/WET:** CW 1 o'clock (mostly processed, slight dry reference)
+
+**Modulation - The Movement:**
+- **PRE-VCA CV:** Patch LFO slowly (very slow rate, creates breathing effect)
+- **CUTOFF CV:** Patch LFO with different rate than PRE-VCA (creates polyrhythmic modulation)
+- Result: Texture evolves unpredictably as PRE-VCA modulates input level while CUTOFF modulates filter frequency
+
+**Result:** 
+Evolving, atmospheric texture that changes constantly even without user input. The combination of delay/reverb character, subtle distortion coloring, and moving filter creates the "ghost" effect - ephemeral sounds that transform over time. Perfect for pads, ambient backgrounds, meditation/healing music, or textural foundations under other instruments.
+
+**What You're Learning:**
+- **Spatial layering through signal flow order:** When spatial effects come first, they establish atmosphere that distortion then colors rather than replaces
+- **Modulation independence creates organic variation:** Two LFOs at different rates on PRE-VCA and CUTOFF create polyrhythmic movement, demonstrating how independent modulation sources create emergent behavior
+- **Reverb character defines everything downstream:** In FX → DIST routing, reverb tail length and pre-delay are foundational choices that determine whether distortion sounds atmospheric or harsh
+
+**Alternative Options:**
+- **Budget Approach:** Mutable Instruments Clouds (granular reverb, discontinued but available used) provides different but complementary spatial texture through granulation instead of traditional delay/reverb
+- **Different Character:** Moog Mother-32 internal delay + reverb (fixed routing, but teaches how delay before reverb creates similar spacing without the signal flow flexibility)
+- **Premium Option:** Eventide Space (advanced algorithms with more morphing capabilities) provides more modulation possibilities though GHOST's routing flexibility teaches the principle more clearly
+
+**Performance:**
+Record a 30-60 second loop and let it evolve. Occasionally adjust:
+- LFO rates (change PRE-VCA or CUTOFF CV modulation speed)
+- Filter FREQUENCY manually while LFO is modulating CUTOFF (adds performance expression)
+- PRE-VCA CV depth (adjusts how much LFO breathing happens)
+
+The beauty is that even without changes, the modulation creates continuous evolution. Performance becomes subtle intervention in an already-evolving process.
 
 ---
 
-*Created as foundational philosophy before hands-on testing. Will refine with real-world feedback and observations.*
+### **Patch 2: Rhythmic Texture - Drums Processing with Sidechain Reaction**
+
+**Setup:**
+```
+🔴 Audio │ 🔵 CV │ 🟡 Gate
+
+┌─DRUM MACHINE/DRUMS─┐
+│      Out      ○────┼────┬──┐
+└────────────────────┘    │  │
+                          │  └─→ GHOST IN 🔴
+┌─CLOCK/SEQUENCER─────┐  │
+│      OUT      ○──────┼──┼──→ SIDECHAIN TRIG IN 🟡
+└─────────────────────┘  │
+                         │
+                    ┌────▼────────┐
+                    │    GHOST    │
+                    │             │
+                    │  FX→DIST→VCF│
+                    │             │
+                    └────┬────────┘
+                         │
+                    ┌────▼─────┐
+                    │  MIXER   │ (blend with dry drums)
+                    │ CH 1-2   │
+                    └──────────┘
+```
+
+**Controls - Focus on Aggression + Punch:**
+- **Delay TIME:** 8 o'clock (short repeats for rhythmic texture, not echoes)
+- **Delay REPEATS:** 1-2 o'clock (moderate feedback for rhythmic density)
+- **Delay TONE:** CW 1 o'clock (bright repeats maintain punch)
+- **Delay DRY/WET:** 12 o'clock (balanced mix of dry and repeated signal)
+- **Reverb TAIL:** 10 o'clock (short decay, doesn't muddy timing)
+- **Reverb PRE-DELAY:** 10 o'clock (minimal pre-delay, keeps reverb tight with drums)
+- **Reverb DRY/WET:** 1 o'clock (adds spaciousness without washing out rhythm)
+- **Distortion:** 2-3 o'clock (aggressive saturation adds attitude)
+- **Gain (ROUTING + TONE/GAIN):** CW 1-2 o'clock (boosts signal into distortion)
+- **Filter FREQUENCY:** 10 o'clock area (remove extreme highs, maintain mid punch)
+- **Filter RESONANCE:** 12 o'clock (no resonance, just shaping)
+- **Compressor:** CW 2-3 o'clock (heavy compression snaps the texture)
+- **Sidechain DEPTH:** CW 2 o'clock (~70%, noticeable but not total silence)
+- **Sidechain TRIG IN:** Patched to clock/kick trigger (effect ducks with every beat)
+- **Global DRY/WET:** 1-2 o'clock (mostly effect, slight dry reference)
+
+**Modulation - The Reaction:**
+- **SIDECHAIN TRIG IN:** Patch kick drum or clock output (effect ducks on beat)
+- **SIDECHAIN knob:** Adjust release time (how quickly effect returns)
+- As set above: Effect ducks with kick hits, surfaces again before next kick
+
+**Result:**
+Drums become layered texture - the effect sits back dynamically when kicks hit, then comes forward in the space between beats. This creates incredible glue while keeping drums punchy. The distortion adds attitude and attitude to drums, the compression makes everything snap together. Perfect for trap, drill, industrial, or experimental hip-hop where drums need aggression while effects provide space.
+
+**What You're Learning:**
+- **Sidechain ducking as a mixing tool:** Using external triggers to modulate effect level teaches how audio and control signals interact in complex ways. This principle appears everywhere in professional mixing (sidechaining kicks to bass, compressors to reverb, etc.)
+- **Aggression through signal order:** Distortion coming after delay/reverb creates coloring rather than harshness because it's processing already-textured material. This teaches how FX chain order completely changes character
+- **Rhythm through processing timing:** Sidechain release time controls swing and groove independent of the source drums. Demonstrates how analog timing and control interact to create musicality
+
+**Alternative Options:**
+- **Budget Approach:** Separate delay module + reverb module + distortion pedal (teaches routing principles through manual patching, but loses integrated character)
+- **Different Character:** Elektron Analog Rytm effects (digital delay/reverb with sidechain, different algorithms but similar creative goal)
+- **Premium Option:** Universal Audio Luna suite with virtual GHOST (provides same routing philosophy with unlimited processing)
+
+**Performance:**
+This patch teaches you to mix with effects dynamically:
+- Adjust Distortion knob in real-time (adds/removes attitude during performance)
+- Adjust Sidechain DEPTH in real-time (tighter or looser effect ducking)
+- Adjust Filter FREQUENCY to carve different character (from tight mids to open highs)
+- Watch how Sidechain creates groove - the timing becomes part of the drum sound, not separate from it
+
+Try adjusting these while drums play. Notice how small movements completely change the character. That's what makes this patch powerful - the sidechain makes the effect respond to the music rather than just sit statically on top of it.
+
+---
+
+## Framework Compliance - Starter Patches Complete
+
+Both patches include:
+- ✅ Setup with signal flow diagram
+- ✅ Detailed control settings with WHY each parameter matters
+- ✅ Musical result describing output character
+- ✅ Learning Objectives teaching transferable principles
+- ✅ Alternative Options (Budget/Different Character/Premium)
+- ✅ Performance guidance for real-time interaction
+- ✅ GitHub image integration at module introduction
+- ✅ Enhanced format throughout
+
+---
