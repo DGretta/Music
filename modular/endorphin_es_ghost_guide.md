@@ -114,9 +114,9 @@ These three controls shape 80% of GHOST's character:
 - **Beginner approach:** Leave this alone unless you need to tame a very hot input signal.
 
 **VOLUME/drive (Output level + saturation):**
-- 12-15 o'clock = clean volume control
-- After 15 o'clock = drive saturation begins (adds distortion to final output)
-- **Why it matters:** If GHOST is too quiet, turn this up. If you want more attitude, turn past 15 o'clock for drive saturation.
+- 12-1 o'clock = clean volume control
+- After 1 o'clock = drive saturation begins (adds distortion to final output)
+- **Why it matters:** If GHOST is too quiet, turn this up. If you want more attitude, turn past 1 o'clock for drive saturation.
 - **Beginner approach:** Start at 12 o'clock, raise to taste for output level.
 
 ### **The Hidden Controls You'll Discover Later**
@@ -308,7 +308,7 @@ After all processing, dynamics tools shape the final output.
 
 **POST-VCA CV (controls final output level):**
 - **Default:** Normalled to +5V (full open)
-- **VOLUME/drive knob:** Manual control (listen carefully after 15 o'clock—drive saturation begins)
+- **VOLUME/drive knob:** Manual control (listen carefully after 1 o'clock—drive saturation begins)
 - **POST-VCA CV jack:** External modulation of final output
 - **WHY:** Independent control over output level separate from internal processing level. You can keep internal character stable while modulating what comes out.
 
