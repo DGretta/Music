@@ -4,6 +4,12 @@
 ![GHOST Module](https://github.com/DGretta/Music/raw/main/modular/images/endorphin_es/ghost/front_panel.jpg)
 *Multi-dimensional effects processor with three signal routing chains, micro-modulation matrix, and comprehensive dynamics control*
 
+**Key Specifications:**
+- **Width:** 16HP
+- **Depth:** 26mm
+- **Power:** 135mA @ +12V / 35mA @ -12V / 0mA @ +5V
+- **Architecture:** Three independent routing chains, micro-modulation matrix, sidechain dynamics control
+
 ---
 
 ## Why This Excels
@@ -57,6 +63,107 @@ You patch in audio from anywhere—a drum machine, a synthesizer, a voice, a fie
 The key insight: **GHOST works because it's not trying to be one thing.** It's a framework for creative sound processing. The framework is flexible enough that you define what it is through how you use it. Your patches define its role. The routing flexibility enables that redefinition to happen instantly.
 
 In a modular system already full of specialized modules, GHOST's strength is that it *adapts.* It becomes what your patch asks it to become. That's why it justifies 16hp—not because it does one thing exceptionally, but because it does *many* things exceptionally, and the same physical module becomes different based on context.
+
+---
+
+## Essential Parameters: Where to Start
+
+GHOST has 50+ accessible controls. Mastering all of them takes time. But you only need to understand a few things first:
+
+### **The Core Three: Routing + Distortion + Filter**
+
+These three controls shape 80% of GHOST's character:
+
+**ROUTING Button (LED indicator):**
+- This single button chooses between three signal flow orders
+- LED off = FX → DIST → VCF (spatial effects first, creates atmospheric textures)
+- LED semi-lit = DIST → VCF → FX (distortion first, cleaner aggression)
+- LED fully lit = VCF → FX → DIST (filter first, most filtered character)
+- **Why it matters:** Every other control works differently depending on this choice. Start here. Learn how changing this button on an already-patched setup completely transforms the sound.
+- **Beginner approach:** Leave it in FX → DIST → VCF (LED off) for your first explorations. This routing is most forgiving and teaches spatial thinking.
+
+**DISTORTION Knob:**
+- CCW = clean signal, no distortion
+- 12 o'clock = moderate saturation, musical coloring
+- CW = heavy saturation, aggressive character
+- **Why it matters:** This controls how "dark" or "heavy" your sound becomes. The sweet spot is usually 12 o'clock to 2 o'clock. Resist cranking it full CW at first.
+- **Beginner approach:** Start at 12 o'clock, leave it there while you explore other parameters.
+
+**FREQUENCY Knob (Bipolar Filter):**
+- CCW (9 o'clock area) = removes high frequencies (warm, dark)
+- 12 o'clock = no filtering (neutral, flat)
+- CW (3 o'clock area) = removes low frequencies (thin, bright)
+- **Why it matters:** This is your tonal shaper. Want something darker? Turn CCW. Want something brighter? Turn CW. More dramatic than you expect at first.
+- **Beginner approach:** Start at 12 o'clock (center, no filtering). Sweep it slowly CCW and CW to hear the range. This teaches you what "filtering" means.
+
+### **The Blend Controls: What Gets Processed**
+
+**Global DRY/WET (ROUTING + VOLUME/drive button):**
+- This controls how much of your processed signal you send out vs. the clean original
+- CCW = mostly unprocessed (what you put in comes out)
+- 12 o'clock = 50/50 blend of clean and processed
+- CW = mostly processed (you hear all the effects)
+- **Why it matters:** If everything sounds too extreme, lower this. If GHOST sounds "invisible," raise it.
+- **Beginner approach:** Keep this at 12 o'clock (50%) while learning. This gives you a reference point—you can hear both the original and what GHOST is doing.
+
+### **The Input/Output Levels: Preventing Clipping**
+
+**PRE-VCA (Input level to GHOST):**
+- Default is full open (+5V)
+- If your input is too loud and GHOST is clipping (distorting strangely), you can control input level here
+- **Beginner approach:** Leave this alone unless you need to tame a very hot input signal.
+
+**VOLUME/drive (Output level + saturation):**
+- 12-15 o'clock = clean volume control
+- After 15 o'clock = drive saturation begins (adds distortion to final output)
+- **Why it matters:** If GHOST is too quiet, turn this up. If you want more attitude, turn past 15 o'clock for drive saturation.
+- **Beginner approach:** Start at 12 o'clock, raise to taste for output level.
+
+### **The Hidden Controls You'll Discover Later**
+
+Hold down the ROUTING button and you access doubled parameters:
+- **TONE** (ROUTING + knobs) - Shapes character of delay and distortion
+- **PRE-DELAY** (ROUTING + TAIL) - Separates original sound from reverb
+- **DEPTH/AMOUNT** controls - Lets you control effect intensity independently
+
+**Beginner approach:** Don't touch these yet. Master the basic knobs first. These unlock once you're comfortable with the fundamentals.
+
+---
+
+## Quick Start: Make Your First Sound (5 Minutes)
+
+You don't need to understand everything. You need to make sound.
+
+**Patch It:**
+```
+Synth/VCO/Guitar → GHOST IN (audio)
+GHOST OUT → Mixer or Audio Interface
+```
+That's it. Any audio source works. Press play. Make sure GHOST's output level goes to your mixer/interface. Listen.
+
+**Try This:**
+1. **Knob Exploration:** Set all the big front-panel knobs to 12 o'clock first (safe starting point)
+2. **Turn DISTORTION knob:** Slowly turn it from 9 o'clock to 3 o'clock. You'll hear the character shift from clean to dark to aggressive. Notice when it sounds interesting to you.
+3. **Turn FREQUENCY knob:** Sweep it from 9 o'clock (warm) to 3 o'clock (bright) while your source is playing. Hear how tonal character changes?
+4. **Turn REVERB DRY/WET:** This adds space and echo. More CW = more space. Turn it up past 12 o'clock and listen to how atmospheric it becomes.
+5. **Turn DELAY DRY/WET:** This adds repeating echoes. Notice how it's different from reverb? Reverb is diffuse; delay has defined repeats.
+
+**What You Should Hear:**
+- **At 12 o'clock on all controls:** Clean-ish sound with minimal processing. Maybe a tiny bit of natural reverb/delay.
+- **Distortion CW:** Sound gets darker, heavier, more saturated. Too much = harsh/noisy (that's okay, you're learning).
+- **Frequency sweep:** Warm sounds (CCW) vs. bright sounds (CW). This is filtering. Everything in between.
+- **Reverb up:** Sound gets spacious, evolving, "washy" if you crank it. This is spatial processing.
+- **Delay up:** Sound gets rhythmic echoes layered under the original. Different character than reverb.
+
+**If It Sounds Weird:**
+- **Everything is distorted/noisy:** DISTORTION knob is too high. Turn it back to 12 o'clock.
+- **Sound is completely gone:** Global DRY/WET might be at CCW (dry only). Turn it CW toward 12 o'clock.
+- **Way too quiet:** VOLUME/drive is too low. Turn it CW past 12 o'clock.
+- **Clipping/digital artifacts:** Your input level is too hot. Lower your source volume before GHOST.
+
+**The Goal:** Spend 5 minutes. Touch knobs. Hear what they do. Don't overthink it. You're learning by listening, not reading.
+
+**Next:** Read Essential Parameters above to understand what you just heard. Then try one of the Starter Patches below.
 
 ---
 
@@ -441,6 +548,77 @@ These ten mistakes cluster around three root issues:
 
 Both patches use the FX → DIST → VCF routing chain (LED off). The same controls produce completely different musical results depending on how you balance the three stages and how you modulate them.
 
+### **Patch 0: The Foundation - Simple Audio Processing**
+
+Start here if you want to understand the basics without external modulation or triggers.
+
+**Setup:**
+```
+🔴 Audio │ 🔵 CV │ 🟡 Gate
+
+┌─SEQUENCER───────────┐
+│    GATE OUT    🟡──────────────────┐
+└─────────────────────┘                     │
+                                     │
+┌─VCO/SYNTH─────────┐      │
+│   PITCH CV IN   🔵─────────────────────│──→ GATE
+│   AUDIO OUT    🔴────────┬─────────────────────│
+└───────────────────┐    │
+                            │
+                        ┌──▼──┐
+                        │  GHOST  │
+                        │  FX→DIST→VCF│
+                        │         │
+                        └──┬──┘
+                            │
+                        ┌─▼─┐
+                        │ MIXER  │ or AUDIO OUT
+                        └────┘
+```
+
+**Controls - Everything at 12 o'clock First:**
+- **Delay TIME:** 12 o'clock
+- **Delay REPEATS:** 12 o'clock
+- **Delay DRY/WET:** 12 o'clock
+- **Reverb TAIL:** 12 o'clock
+- **Reverb DRY/WET:** 12 o'clock
+- **Distortion:** 12 o'clock
+- **Filter FREQUENCY:** 12 o'clock (neutral, no filtering)
+- **Filter RESONANCE:** 12 o'clock
+- **Compressor:** 12 o'clock
+- **Global DRY/WET:** 12 o'clock
+- **VOLUME/drive:** 12 o'clock
+
+This is your "baseline" setup. Everything is at neutral. Now explore one knob at a time:
+
+1. **Explore DISTORTION:** Turn it slowly CW to 2 o'clock, then back to 12 o'clock. Hear how it darkens? That’s distortion coloring your sequenced melody.
+2. **Explore FREQUENCY:** Turn it CCW to 10 o'clock (warm), then to 3 o'clock CW (bright). Your notes sound darker or brighter based on filter position.
+3. **Explore Delay/Reverb:** Add delay DRY/WET slowly CW to 1 o'clock. Now your notes have rhythmic echoes. Add reverb DRY/WET to 1 o'clock. Now notes have space.
+
+**Result:**
+You’ve learned the core of GHOST: Sequenced pitch variation → audio input → effects processing → output. You can hear exactly what each control does because nothing else is changing.
+
+**What You’re Learning:**
+- **Signal flow understanding:** Audio goes through GHOST in one direction. Controls shape how that happens.
+- **Parameter sensitivity:** How much change is 1 knob position? (Very little for some, dramatic for others)
+- **The relationship between parameters:** Distortion sounds different depending on delay/reverb upstream. Filter sounds different when distortion is different. Nothing exists in isolation.
+
+**Alternative Options:**
+- **Budget Approach:** SP-404 with internal sequencer and effects (teaches similar parameter interaction but fixed routing)
+- **Different Character:** Elektron Analog Rytm internal synth + effects (digital effects algorithms instead of analog)
+- **Premium Option:** Moog Moogerfooger pedals + guitar (analog effects chain but without the integrated routing flexibility)
+
+**Performance:**
+Change one parameter at a time while your sequence plays:
+- Turn Distortion knob slowly, notice when aggressive character comes in
+- Sweep Filter slowly up and down, creating tonal movement
+- Adjust Reverb/Delay DRY/WET to add/remove spatial processing
+- Adjust Global DRY/WET to hear how much processing you’re actually hearing
+
+The beauty of this patch is simplicity. One control change teaches you exactly what that control does.
+
+---
+
 ### **Patch 1: Ghost Drone - Evolving Ambient Texture**
 
 **Setup:**
@@ -582,16 +760,4 @@ Try adjusting these while drums play. Notice how small movements completely chan
 
 ---
 
-## Framework Compliance - Starter Patches Complete
-
-Both patches include:
-- ✅ Setup with signal flow diagram
-- ✅ Detailed control settings with WHY each parameter matters
-- ✅ Musical result describing output character
-- ✅ Learning Objectives teaching transferable principles
-- ✅ Alternative Options (Budget/Different Character/Premium)
-- ✅ Performance guidance for real-time interaction
-- ✅ GitHub image integration at module introduction
-- ✅ Enhanced format throughout
-
----
+*This guide is complete through Routing 1 (FX→DIST→VCF) with foundational philosophy, deep-dive exploration, common mistakes, and starter patches. The other two routing chains and advanced testing notes will be added after hands-on verification.*
