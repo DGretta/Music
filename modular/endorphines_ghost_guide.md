@@ -12,303 +12,40 @@
 
 ---
 
-## Starter Patches: Creative Applications with DIST → VCF → FX Routing
+## Quick Start: Make Your First Sound (5 Minutes)
 
-Both patches use the DIST → VCF → FX routing chain (LED semi-lit). The same controls produce completely different musical results depending on how you build distortion + filter character, then add spatial dimension.
+You don't need to understand everything. You need to make sound.
 
-### **Patch 3: The Foundation - Distorted Signal Exploration**
-
-Start here to understand distortion-first processing without external complexity.
-
-**Setup:**
+**Patch It:**
 ```
-🔴 Audio │ 🔵 CV │ 🟡 Gate
-
-┌─OSCILLATOR/SYNTH─────┐
-│    Output   ○────────────────────────→ GHOST IN 🔴
-└─────────────└
-
-                                                   ┌────────────────┐
-                                                   │     GHOST      │
-                                                   │  DIST→VCF→FX   │
-                                                   │   (LED semi)   │
-                                                   └────┬──────────└
-                                                        │
-                                                   ┌────▼─────┐
-                                                   │  MIXER   │ or AUDIO OUT
-                                                   │  CH 1    │
-                                                   └──────────┘
+Synth/VCO/Guitar → GHOST IN (audio)
+GHOST OUT → Mixer or Audio Interface
 ```
-
-**Controls - Everything at 12 o'clock First:**
-- **Distortion:** 12 o'clock (neutral, no coloring yet)
-- **Filter FREQUENCY:** 12 o'clock (neutral, no filtering)
-- **Filter RESONANCE:** 12 o'clock
-- **Delay TIME:** 12 o'clock
-- **Delay REPEATS:** 12 o'clock
-- **Delay DRY/WET:** 12 o'clock
-- **Reverb TAIL:** 12 o'clock
-- **Reverb DRY/WET:** 12 o'clock
-- **Compressor:** 12 o'clock
-- **Global DRY/WET:** 12 o'clock
-- **VOLUME/drive:** 12 o'clock
-
-This is your clean baseline. Now explore in this order:
-
-1. **Explore DISTORTION:** Turn it slowly CW to 2 o'clock. Hear how the clean tone becomes colored, rich, aggressive. Then back off to 1 o'clock (sweet spot). Notice: The distortion is upfront and clear, not soft.
-2. **Explore FREQUENCY:** With distortion at 1 o'clock, turn filter CCW to 10 o'clock (warm), then to 3 o'clock CW (bright). Hear how filter shapes the distorted character. Warm distortion vs. bright distortion.
-3. **Explore Delay/Reverb:** Add delay DRY/WET slowly to 1 o'clock. Notice the distorted tone now has echoes. Add reverb DRY/WET to 1 o'clock. Notice: Reverb spaces the distorted tone, doesn't muddy it.
-
-**Result:**
-You've heard the core of Routing 2: Distortion defines, filter shapes, spatial effects decorate. Nothing is softened. Everything is clear.
-
-**What You're Learning:**
-- **Signal flow:** Distortion first means the original tone is colored immediately, then shaped by filter, then spaced by reverb
-- **Distortion character:** Heavy distortion feels present and aggressive, not atmospheric
-- **Filter purpose:** In this routing, filter doesn't soften; it sculpts aggression
-- **Reverb role:** Reverb adds dimension, not complexity
-
-**Performance:**
-Change parameters while your tone plays:
-- Turn Distortion knob slowly, notice aggression building
-- Sweep Filter slowly up and down (try both directions)
-- Adjust Reverb/Delay DRY/WET to add/remove space
-
-Key insight: In this routing, every change is obvious because distortion-first is transparent.
-
----
-
-### **Patch 3.5: Intermediate Patch - Performance Modulation on Distorted Character**
-
-Move from static exploration to real-time control of a distorted tone.
-
-**Setup:**
-```
-🔴 Audio │ 🔵 CV │ 🟡 Gate
-
-┌─OSCILLATOR/SYNTH───────────┐
-│    Output   ○──────────────────────→ GHOST IN 🔴
-└─────────────└
-┌─Erica Synths Joystick2────┐
-│  X OUT     ○─────────────────────────────→ FREQUENCY CV 🔵
-│  Y OUT     ○─────────────────────────────→ DISTORTION (via ext VCA)
-└───────────────────└
-┌─Woggle (optional)─────┐
-│  OUT        ○─────────────────────────────→ REVERB DRY/WET (via CV)
-└───────────────────└
-
-                                                   ┌────────────────┐
-                                                   │     GHOST      │
-                                                   │  DIST→VCF→FX   │
-                                                   │   (LED semi)   │
-                                                   └────┬──────────└
-                                                        │
-                                                   ┌────▼─────┐
-                                                   │  MIXER   │ or AUDIO OUT
-                                                   │  CH 1    │
-                                                   └──────────┘
-```
-
-**Controls - Start with moderate distortion character:**
-- **Distortion:** 1-2 o'clock (established character)
-- **Filter FREQUENCY:** 12 o'clock (neutral, ready to be modulated)
-- **Filter RESONANCE:** 12-1 o'clock (moderate, stable base)
-- **Delay DRY/WET:** 1 o'clock (adds texture)
-- **Reverb DRY/WET:** 1 o'clock (adds space)
-- **Compressor:** 12 o'clock (light)
-- **Global DRY/WET:** 12 o'clock (reference balance)
-
-**Modulation - Real-Time Performance:**
-
-**Joystick2 X → FREQUENCY CV:**
-- Move joystick left/right to sweep filter across the distorted tone
-- Left (CCW) = warm aggression, Right (CW) = bright aggression
-- What you hear: Live filter sweeping over defined distorted character
-- This is wah-like but on distortion, not clean signal
-- Listen for: How filter changes feel smooth and expressive
-
-**Joystick2 Y → DISTORTION (via external VCA):**
-- Move joystick up/down to modulate distortion intensity
-- Up = more distortion aggression, Down = cleaner tone
-- What you hear: Tone morphing between clean and heavily-distorted
-- This teaches: Distortion can be dynamic and expressive, not static
-- Listen for: The attack of distortion appearing/disappearing
-
-**Woggle → REVERB DRY/WET (optional):**
-- Pressure on woggle = more reverb
-- Release = dry tone
-- What you hear: Space appearing and disappearing with gesture
-- Teaches: Space can be a performance dimension
-
-**Result:**
-A distorted tone that transforms in three dimensions:
-1. X-axis (Joystick X) = tonal character (warm to bright)
-2. Y-axis (Joystick Y) = saturation intensity
-3. Pressure (Woggle) = spatial dimension
-
-Same baseline as Patch 3, but now it's expressive and alive.
-
-**What You're Learning:**
-- **Performance expression:** Distortion-first routing can be performative if you modulate the distortion itself
-- **2D/3D control:** Multiple modulation sources create expressive depth
-- **Real-time character transformation:** Unlike Routing 1 (algorithmic evolution), this is direct human control of character
-
-**Alternative Setup (Simplified):**
-- Just Joystick2 X to FREQUENCY (simplest wah-like effect)
-- Just LFO to FREQUENCY (automatic filter sweep on distorted tone)
-- Sequencer CV to DISTORTION for rhythmic saturation changes
-
-**Performance:**
-Unlike previous patches, this requires active playing:
-- Sweep joystick slowly to find filter sweet spots
-- Modulate Y-axis for saturation morphing during performance
-- Use woggle for spatial punctuation
-- Combine movements for complex timbral evolution
-
-Key difference from Routing 1 Intermediate Patch: This focuses on performing the distorted character directly, not creating autonomous evolution.
-
----
-
-### **Patch 4: Cutting Lead - Presence Through Aggression**
-
-This patch showcases Routing 2's strength: creating tones that cut through a mix while remaining defined.
-
-**Setup:**
-```
-🔴 Audio │ 🔵 CV │ 🟡 Gate
-
-┌─OSCILLATOR/SYNTH───────────┐
-│    Output   ○──────────────────────→ GHOST IN 🔴
-└─────────────└
-┌─LFO─────────────┐
-│  OUTPUT   ○─────────────────────────→ FREQUENCY CV 🔵
-└─────────────└
-
-                                                   ┌────────────────┐
-                                                   │     GHOST      │
-                                                   │  DIST→VCF→FX   │
-                                                   │   (LED semi)   │
-                                                   └────┬──────────└
-                                                        │
-                                                   ┌────▼─────┐
-                                                   │  MIXER   │ or AUDIO OUT
-                                                   │  CH 1    │
-                                                   └──────────┘
-```
-
-**Controls - Build Presence:**
-- **Distortion:** 1-2 o'clock (colored, not extreme)
-- **Gain (ROUTING + TONE/GAIN):** CW 1 o'clock (boosts signal into distortion)
-- **Filter FREQUENCY:** 10 o'clock area (warm-to-mid frequencies)
-- **Filter RESONANCE:** 2 o'clock (adds presence peak)
-- **Delay TIME:** 9 o'clock (short repeats for rhythm)
-- **Delay REPEATS:** 12 o'clock (moderate feedback)
-- **Delay DRY/WET:** 12 o'clock (balanced)
-- **Reverb TAIL:** 10 o'clock (short, tight)
-- **Reverb DRY/WET:** 10 o'clock (minimal space, keeps definition)
-- **Compressor:** 1 o'clock (light-to-moderate, keeps peaks controlled)
-- **Global DRY/WET:** 12 o'clock
-
-**Modulation - Filter Evolution:**
-- **FREQUENCY CV:** Patch slow LFO
-- Filter sweeps slowly, creating evolving presence while maintaining distorted character
-- Result: Tone that's always present and cutting, but evolving
-
-**Result:**
-A distorted lead tone that:
-- Cuts through mixes (distortion + resonance presence)
-- Remains defined (minimal reverb, tight delay)
-- Evolves over time (LFO on filter)
-- Has character (warm-to-mid distortion)
-- Stays controlled (compression, moderate settings)
-
-Perfect for:
-- Lead synth lines that need to be heard
-- Bass textures that need presence
-- Rhythmic tones that need aggression
-- Performances where clarity matters
-
-**What You're Learning:**
-- **Presence as design choice:** Distortion + resonance + minimal reverb = presence through definition
-- **Compression on distortion:** How to keep aggressive tones controlled
-- **Routing trade-offs:** Space (reverb) vs. presence (definition). You can't have both at maximum; choose strategically
-
-**Performance:**
-Live adjustments while playing:
-- Manually sweep FREQUENCY (hand) to add articulation while LFO provides baseline movement
-- Adjust RESONANCE in real-time (add more presence for louder sections, reduce for softer)
-- Adjust COMPRESSOR DEPTH for tightness/looseness
-- Use Global DRY/WET to fade the effect in/out
-
-Key principle: In Routing 2, presence comes from good design, not from volume cranking.
-
----
-
-## Summary: What Routing 2 Teaches
-
-Routing 2 (DIST → VCF → FX) teaches aggressive clarity:
-- Distortion first = character is established upfront
-- Filter sculpts = definition is intentional
-- Spatial effects last = they decorate, not dominate
-- Reverb spaciousness doesn't mean softness
-
-Unlike Routing 1 which teaches atmospheric complexity, this routing teaches that aggression and clarity can coexist. Define first, decorate second.
-
----
-
-## Why This Excels
-
-### Design Philosophy: Routing Freedom as Creative Method
-
-Most effects processors follow a fixed signal path. You know what comes next. The audio flows through distortion, then filter, then delay—or some other predetermined order. This predictability is comfortable. It's also limiting.
-
-**The GHOST exists because Endorphin.es and Andrew Huang asked a different question: What if the order itself became an instrument?**
-
-The fundamental insight is that **routing order isn't just technical—it's creative.** When distortion comes before filtering, you get one set of tonal possibilities. When the filter comes before distortion, everything changes. When reverb processes the distorted signal versus the clean signal, you get fundamentally different character. Not variations on a theme—different *themes entirely.*
-
-This isn't new thinking in modular synthesis. But GHOST makes it intuitive and explorable. Three button presses. Three different signal processing philosophies available instantly, without repatching. That simplicity enables experimentation that would otherwise require hardware rewiring or complex software menu diving.
-
-### Andrew Huang's Perspective: Creative Constraints and Exploration
-
-Andrew Huang's approach to music production centers on one principle: **constraints force creativity.** He doesn't just ask "what can I make?" He asks "what can I make *within these specific limitations?*"
-
-That philosophy runs through GHOST's design:
-
-**1. Limited but powerful signal flow:** Instead of infinite routing complexity, you get three carefully chosen routing orders. Fewer options means each option is more explorable. You learn the character of each routing deeply rather than overwhelmed by infinite possibilities.
-
-**2. Micro-modulations creating emergent behavior:** The control matrix doesn't just let you adjust parameters independently. The way controls affect each other—the internal modulation interactions—creates "infinite, alive and unexpected interactions" (per the manual). **You can't predict exactly what will happen.** That unpredictability is the point. It forces creative listening and experimentation.
-
-**3. Creative effect processing becomes synthesis:** The manual notes GHOST can function as a complete Karplus-Strong synthesizer voice using the delay at audio rates. An effects processor that can *generate* sound is no longer just an effects processor. It's a sound design instrument. Constraints (no oscillators, no envelopes—just effects) force you to think differently about sound generation.
-
-**This is the Andrew Huang principle applied to hardware:** Give people powerful tools with intelligent limitations, and they create things they wouldn't have attempted with infinite options.
-
-### The Magic: Ephemeral Timbres and Interconnection
-
-The manual uses a specific word repeatedly: **ephemeral.** Fleeting. Transient. Sounds that exist briefly then transform. That's intentional language choice.
-
-Here's why that matters for interconnection thinking:
-
-When you patch something into GHOST, it doesn't become fixed. The routing flexibility means the same input can be processed completely differently depending on which chain you've selected. The same patch, different character. The same modulation source affects different aspects of the processing depending on routing.
-
-**This teaches a fundamental principle about modular systems: nothing is inherently an "effects processor" or "modulation source" or "sound generator."** Everything is relational. The same module serves different purposes depending on context. GHOST makes this explicit by making routing choices immediate and obvious.
-
-But here's what makes this philosophically powerful: Most people think of modules as having fixed roles. Distortion distorts. Reverb reverbs. Sequencers sequence. In reality, that role only exists in *context*—how things connect. GHOST reveals that truth. By showing three different routing orders for the same controls, it demonstrates that the character of any module depends entirely on what comes before and after it. This isn't a GHOST quirk. It's a principle of *all* modular synthesis. GHOST just makes it visible.
-
-The micro-modulation matrix compounds this insight. Controls don't exist in isolation. Changing RESONANCE also affects SAMPLE RATE (through the hidden lo-fi controls). Changing REVERB DRY/WET adds shimmer. The system *interconnects.* You can't think of any parameter as independent. This is synthesis, not just effects processing—complex systems generating emergent behavior from interconnected parts.
-
-That's why GHOST sounds different from every other effects processor. Not because it uses better algorithms (though it does). But because **the architecture teaches interconnection thinking directly through use.** When you hear how routing order changes everything, when you experience parameters affecting each other, when you patch external modulation and watch the character shift—you're learning a principle that applies everywhere. The module becomes a lesson in how everything connects, and that lesson fundamentally changes how you think about synthesis.
-
-### How It Fits: The Modular Ecosystem Role
-
-GHOST doesn't fit the traditional "effects processor" slot in a modular system. It's too flexible, too sound-generative, too interconnected.
-
-Instead, think of it as a **sound-design playground at the end of your signal chain.**
-
-You patch in audio from anywhere—a drum machine, a synthesizer, a voice, a field recording. GHOST processes it through your chosen routing chain. But it also becomes a texture generator, a rhythmic processor (when synced to clock), a spatial processor (through the mid/side widener), a voice processor (as shown in the Half-Life patch example).
-
-The key insight: **GHOST works because it's not trying to be one thing.** It's a framework for creative sound processing. The framework is flexible enough that you define what it is through how you use it. Your patches define its role. The routing flexibility enables that redefinition to happen instantly.
-
-In a modular system already full of specialized modules, GHOST's strength is that it *adapts.* It becomes what your patch asks it to become. That's why it justifies 16hp—not because it does one thing exceptionally, but because it does *many* things exceptionally, and the same physical module becomes different based on context.
+That's it. Any audio source works. Press play. Make sure GHOST's output level goes to your mixer/interface. Listen.
+
+**Try This:**
+1. **Knob Exploration:** Set all the big front-panel knobs to 12 o'clock first (safe starting point)
+2. **Turn DISTORTION knob:** Slowly turn it from 9 o'clock to 3 o'clock. You'll hear the character shift from clean to dark to aggressive. Notice when it sounds interesting to you.
+3. **Turn FREQUENCY knob:** Sweep it from 9 o'clock (warm) to 3 o'clock (bright) while your source is playing. Hear how tonal character changes?
+4. **Turn REVERB DRY/WET:** This adds space and echo. More CW = more space. Turn it up past 12 o'clock and listen to how atmospheric it becomes.
+5. **Turn DELAY DRY/WET:** This adds repeating echoes. Notice how it's different from reverb? Reverb is diffuse; delay has defined repeats.
+
+**What You Should Hear:**
+- **At 12 o'clock on all controls:** Clean-ish sound with minimal processing. Maybe a tiny bit of natural reverb/delay.
+- **Distortion CW:** Sound gets darker, heavier, more saturated. Too much = harsh/noisy (that's okay, you're learning).
+- **Frequency sweep:** Warm sounds (CCW) vs. bright sounds (CW). This is filtering. Everything in between.
+- **Reverb up:** Sound gets spacious, evolving, "washy" if you crank it. This is spatial processing.
+- **Delay up:** Sound gets rhythmic echoes layered under the original. Different character than reverb.
+
+**If It Sounds Weird:**
+- **Everything is distorted/noisy:** DISTORTION knob is too high. Turn it back to 12 o'clock.
+- **Sound is completely gone:** Global DRY/WET might be at CCW (dry only). Turn it CW toward 12 o'clock.
+- **Way too quiet:** VOLUME/drive is too low. Turn it CW past 12 o'clock.
+- **Clipping/digital artifacts:** Your input level is too hot. Lower your source volume before GHOST.
+
+**The Goal:** Spend 5 minutes. Touch knobs. Hear what they do. Don't overthink it. You're learning by listening, not reading.
+
+**Next:** Read Essential Parameters below to understand what you just heard. Then try one of the Starter Patches.
 
 ---
 
@@ -376,43 +113,6 @@ Hold down the ROUTING button and you access doubled parameters:
 
 ---
 
-## Quick Start: Make Your First Sound (5 Minutes)
-
-You don't need to understand everything. You need to make sound.
-
-**Patch It:**
-```
-Synth/VCO/Guitar → GHOST IN (audio)
-GHOST OUT → Mixer or Audio Interface
-```
-That's it. Any audio source works. Press play. Make sure GHOST's output level goes to your mixer/interface. Listen.
-
-**Try This:**
-1. **Knob Exploration:** Set all the big front-panel knobs to 12 o'clock first (safe starting point)
-2. **Turn DISTORTION knob:** Slowly turn it from 9 o'clock to 3 o'clock. You'll hear the character shift from clean to dark to aggressive. Notice when it sounds interesting to you.
-3. **Turn FREQUENCY knob:** Sweep it from 9 o'clock (warm) to 3 o'clock (bright) while your source is playing. Hear how tonal character changes?
-4. **Turn REVERB DRY/WET:** This adds space and echo. More CW = more space. Turn it up past 12 o'clock and listen to how atmospheric it becomes.
-5. **Turn DELAY DRY/WET:** This adds repeating echoes. Notice how it's different from reverb? Reverb is diffuse; delay has defined repeats.
-
-**What You Should Hear:**
-- **At 12 o'clock on all controls:** Clean-ish sound with minimal processing. Maybe a tiny bit of natural reverb/delay.
-- **Distortion CW:** Sound gets darker, heavier, more saturated. Too much = harsh/noisy (that's okay, you're learning).
-- **Frequency sweep:** Warm sounds (CCW) vs. bright sounds (CW). This is filtering. Everything in between.
-- **Reverb up:** Sound gets spacious, evolving, "washy" if you crank it. This is spatial processing.
-- **Delay up:** Sound gets rhythmic echoes layered under the original. Different character than reverb.
-
-**If It Sounds Weird:**
-- **Everything is distorted/noisy:** DISTORTION knob is too high. Turn it back to 12 o'clock.
-- **Sound is completely gone:** Global DRY/WET might be at CCW (dry only). Turn it CW toward 12 o'clock.
-- **Way too quiet:** VOLUME/drive is too low. Turn it CW past 12 o'clock.
-- **Clipping/digital artifacts:** Your input level is too hot. Lower your source volume before GHOST.
-
-**The Goal:** Spend 5 minutes. Touch knobs. Hear what they do. Don't overthink it. You're learning by listening, not reading.
-
-**Next:** Read Essential Parameters above to understand what you just heard. Then try one of the Starter Patches below.
-
----
-
 ## The Routing Principle: Why Order Matters
 
 **Here's a fundamental principle of signal processing that many people learn too late:**
@@ -438,6 +138,399 @@ This is how you learn signal flow thinking—not from theory, but from hearing t
 **VCF → FX → DIST** (button fully lit) - Filter shapes the clean signal first, then reverb/delay, then distortion colors everything. Heavy tones but with more filtered character driving the distortion.
 
 All three share the same controls. But the order changes what those controls accomplish. This is interconnection in action—nothing exists in isolation. Everything relates to what comes before and after.
+
+---
+
+## Why This Excels
+
+### Design Philosophy: Routing Freedom as Creative Method
+
+Most effects processors follow a fixed signal path. You know what comes next. The audio flows through distortion, then filter, then delay—or some other predetermined order. This predictability is comfortable. It's also limiting.
+
+**The GHOST exists because Endorphin.es and Andrew Huang asked a different question: What if the order itself became an instrument?**
+
+The fundamental insight is that **routing order isn't just technical—it's creative.** When distortion comes before filtering, you get one set of tonal possibilities. When the filter comes before distortion, everything changes. When reverb processes the distorted signal versus the clean signal, you get fundamentally different character. Not variations on a theme—different *themes entirely.*
+
+This isn't new thinking in modular synthesis. But GHOST makes it intuitive and explorable. Three button presses. Three different signal processing philosophies available instantly, without repatching. That simplicity enables experimentation that would otherwise require hardware rewiring or complex software menu diving.
+
+### Andrew Huang's Perspective: Creative Constraints and Exploration
+
+Andrew Huang's approach to music production centers on one principle: **constraints force creativity.** He doesn't just ask "what can I make?" He asks "what can I make *within these specific limitations?*"
+
+That philosophy runs through GHOST's design:
+
+**1. Limited but powerful signal flow:** Instead of infinite routing complexity, you get three carefully chosen routing orders. Fewer options means each option is more explorable. You learn the character of each routing deeply rather than overwhelmed by infinite possibilities.
+
+**2. Micro-modulations creating emergent behavior:** The control matrix doesn't just let you adjust parameters independently. The way controls affect each other—the internal modulation interactions—creates "infinite, alive and unexpected interactions" (per the manual). **You can't predict exactly what will happen.** That unpredictability is the point. It forces creative listening and experimentation.
+
+**3. Creative effect processing becomes synthesis:** The manual notes GHOST can function as a complete Karplus-Strong synthesizer voice using the delay at audio rates. An effects processor that can *generate* sound is no longer just an effects processor. It's a sound design instrument. Constraints (no oscillators, no envelopes—just effects) force you to think differently about sound generation.
+
+**This is the Andrew Huang principle applied to hardware:** Give people powerful tools with intelligent limitations, and they create things they wouldn't have attempted with infinite options.
+
+### The Magic: Ephemeral Timbres and Interconnection
+
+The manual uses a specific word repeatedly: **ephemeral.** Fleeting. Transient. Sounds that exist briefly then transform. That's intentional language choice.
+
+Here's why that matters for interconnection thinking:
+
+When you patch something into GHOST, it doesn't become fixed. The routing flexibility means the same input can be processed completely differently depending on which chain you've selected. The same patch, different character. The same modulation source affects different aspects of the processing depending on routing.
+
+**This teaches a fundamental principle about modular systems: nothing is inherently an "effects processor" or "modulation source" or "sound generator."** Everything is relational. The same module serves different purposes depending on context. GHOST makes this explicit by making routing choices immediate and obvious.
+
+But here's what makes this philosophically powerful: Most people think of modules as having fixed roles. Distortion distorts. Reverb reverbs. Sequencers sequence. In reality, that role only exists in *context*—how things connect. GHOST reveals that truth. By showing three different routing orders for the same controls, it demonstrates that the character of any module depends entirely on what comes before and after it. This isn't a GHOST quirk. It's a principle of *all* modular synthesis. GHOST just makes it visible.
+
+The micro-modulation matrix compounds this insight. Controls don't exist in isolation. Changing RESONANCE also affects SAMPLE RATE (through the hidden lo-fi controls). Changing REVERB DRY/WET adds shimmer. The system *interconnects.* You can't think of any parameter as independent. This is synthesis, not just effects processing—complex systems generating emergent behavior from interconnected parts.
+
+That's why GHOST sounds different from every other effects processor. Not because it uses better algorithms (though it does). But because **the architecture teaches interconnection thinking directly through use.** When you hear how routing order changes everything, when you experience parameters affecting each other, when you patch external modulation and watch the character shift—you're learning a principle that applies everywhere. The module becomes a lesson in how everything connects, and that lesson fundamentally changes how you think about synthesis.
+
+### How It Fits: The Modular Ecosystem Role
+
+GHOST doesn't fit the traditional "effects processor" slot in a modular system. It's too flexible, too sound-generative, too interconnected.
+
+Instead, think of it as a **sound-design playground at the end of your signal chain.**
+
+You patch in audio from anywhere—a drum machine, a synthesizer, a voice, a field recording. GHOST processes it through your chosen routing chain. But it also becomes a texture generator, a rhythmic processor (when synced to clock), a spatial processor (through the mid/side widener), a voice processor (as shown in the Half-Life patch example).
+
+The key insight: **GHOST works because it's not trying to be one thing.** It's a framework for creative sound processing. The framework is flexible enough that you define what it is through how you use it. Your patches define its role. The routing flexibility enables that redefinition to happen instantly.
+
+In a modular system already full of specialized modules, GHOST's strength is that it *adapts.* It becomes what your patch asks it to become. That's why it justifies 16hp—not because it does one thing exceptionally, but because it does *many* things exceptionally, and the same physical module becomes different based on context.
+
+---
+
+## Patch Examples: Progressive Learning
+
+All patches use practical, accessible control setups that teach how GHOST's routing order affects character.
+
+### **Patch 0: The Foundation - Simple Audio Processing (Basic)**
+
+Start here if you want to understand the basics without external modulation or triggers.
+
+**Setup:**
+```
+🔴 Audio │ 🔵 CV │ 🟡 Gate
+
+┌─SEQUENCER───────────┐
+│    GATE OUT    🟡──────────────────┐
+└─────────────────────┘                     │
+                                     │
+┌─VCO/SYNTH─────────┐      │
+│   PITCH CV IN   🔵─────────────────────│──→ GATE
+│   AUDIO OUT    🔴────────┬─────────────────────│
+└───────────────────┐    │
+                            │
+                        ┌──▼──┐
+                        │  GHOST  │
+                        │  FX→DIST→VCF│
+                        │         │
+                        └──┬──┘
+                            │
+                        ┌─▼─┐
+                        │ MIXER  │ or AUDIO OUT
+                        └────┘
+```
+
+**Routing:** FX → DIST → VCF (LED off)
+
+**Controls - Everything at 12 o'clock First:**
+- **Delay TIME:** 12 o'clock
+- **Delay REPEATS:** 12 o'clock
+- **Delay DRY/WET:** 12 o'clock
+- **Reverb TAIL:** 12 o'clock
+- **Reverb DRY/WET:** 12 o'clock
+- **Distortion:** 12 o'clock
+- **Filter FREQUENCY:** 12 o'clock (neutral, no filtering)
+- **Filter RESONANCE:** 12 o'clock
+- **Compressor:** 12 o'clock
+- **Global DRY/WET:** 12 o'clock
+- **VOLUME/drive:** 12 o'clock
+
+This is your "baseline" setup. Everything is at neutral. Now explore one knob at a time:
+
+1. **Explore DISTORTION:** Turn it slowly CW to 2 o'clock, then back to 12 o'clock. Hear how it darkens? That's distortion coloring your sequenced melody.
+2. **Explore FREQUENCY:** Turn it CCW to 10 o'clock (warm), then to 3 o'clock CW (bright). Your notes sound darker or brighter based on filter position.
+3. **Explore Delay/Reverb:** Add delay DRY/WET slowly CW to 1 o'clock. Now your notes have rhythmic echoes. Add reverb DRY/WET to 1 o'clock. Now notes have space.
+
+**Result:**
+You've learned the core of GHOST: Sequenced pitch variation → audio input → effects processing → output. You can hear exactly what each control does because nothing else is changing.
+
+**What You're Learning:**
+- **Signal flow understanding:** Audio goes through GHOST in one direction. Controls shape how that happens.
+- **Parameter sensitivity:** How much change is 1 knob position? (Very little for some, dramatic for others)
+- **The relationship between parameters:** Distortion sounds different depending on delay/reverb upstream. Filter sounds different when distortion is different. Nothing exists in isolation.
+
+**Alternative Options:**
+- **Budget Approach:** SP-404 with internal sequencer and effects (teaches similar parameter interaction but fixed routing)
+- **Different Character:** Elektron Analog Rytm internal synth + effects (digital effects algorithms instead of analog)
+- **Premium Option:** Moog Moogerfooger pedals + guitar (analog effects chain but without the integrated routing flexibility)
+
+**Performance:**
+Change one parameter at a time while your sequence plays:
+- Turn Distortion knob slowly, notice when aggressive character comes in
+- Sweep Filter slowly up and down, creating tonal movement
+- Adjust Reverb/Delay DRY/WET to add/remove spatial processing
+- Adjust Global DRY/WET to hear how much processing you're actually hearing
+
+The beauty of this patch is simplicity. One control change teaches you exactly what that control does.
+
+---
+
+### **Patch 0.5: Intermediate Patch - External Modulation from Performance Controllers**
+
+Move from front-panel-only exploration to using external CV sources. This teaches how external modulation changes GHOST's character without repatching audio.
+
+**Setup:**
+```
+🔴 Audio │ 🔵 CV │ 🟡 Gate
+
+┌─SEQUENCER/SYNTH─────┐
+│    Output   ○────┬──────┐
+└──────────────────┘    │  │
+                        │  └─→ GHOST IN 🔴
+┌─DivKid Ochd─────────┐ │
+│  CV OUT A   ○───────┼─┼──→ PRE-VCA CV 🔵
+│  CV OUT B   ○───────┼─┼──→ CUTOFF CV 🔵  (alternately)
+└──────────────────────┘ │
+┌─Erica Synths Joystick2 ┐│
+│  X OUT     ○───────┬───┼──→ (PRE-VCA or CUTOFF)
+│  Y OUT     ○───────┼───┘
+└────────────────────┘
+┌─Woggle (optional)──────┐
+│  OUT        ○───────────→ (Any remaining CV input)
+└────────────────────────┘
+
+                    ┌────────────────┐
+                    │     GHOST      │
+                    │  FX→DIST→VCF   │
+                    │   (LED off)    │
+                    └────┬───────────┘
+                         │
+                    ┌────▼─────┐
+                    │  MIXER   │ or AUDIO OUT
+                    │  CH 1    │
+                    └──────────┘
+```
+
+**Routing:** FX → DIST → VCF (LED off)
+
+**Controls - Start at 12 o'clock, then modulate:**
+- **Delay TIME:** 12 o'clock (neutral)
+- **Delay REPEATS:** 12 o'clock
+- **Delay DRY/WET:** 12 o'clock
+- **Reverb TAIL:** 12 o'clock
+- **Reverb DRY/WET:** 12 o'clock
+- **Distortion:** 12-1 o'clock (slightly colored, not aggressive)
+- **Filter FREQUENCY:** 12 o'clock (neutral)
+- **Filter RESONANCE:** 12 o'clock
+- **Compressor:** 12 o'clock
+- **Global DRY/WET:** 12 o'clock
+- **VOLUME/drive:** 12 o'clock
+
+**Modulation - The Learning:**
+
+This is where external modulation teaches interconnection:
+
+**Ochd → PRE-VCA CV (Input Level Modulation):**
+- Patch Ochd CV OUT A to GHOST PRE-VCA CV
+- Ochd is a complex sequencer: it generates polyrhythmic CV, random walks, algorithmic sequences
+- What you hear: Your audio input's level into GHOST breathes and evolves, creating dynamic intensity changes
+- Why it matters: PRE-VCA modulation affects how much signal enters the entire chain. Low PRE-VCA = subtle processing; high PRE-VCA = intense processing. By tying this to Ochd's algorithmic output, your processing intensity becomes *musical*—it evolves on a longer timescale than you'd manually turn the knob
+- Listen for: Moments when processing intensity swells (more signal entering distortion) vs. moments when it recedes (signal becomes subtle)
+
+**Joystick2 → CUTOFF CV (Performance Control):**
+- Patch Joystick2 X OUT to GHOST CUTOFF CV
+- Move the joystick left/right (X axis) while audio plays
+- What you hear: Filter frequency sweeps from warm (CCW) through neutral (center) to bright (CW) as you move the stick
+- Why it matters: This is *real-time* control. Unlike Ochd's algorithmic evolution, Joystick2 gives you immediate expression. You can sweep the filter in time with the music, carving character moment by moment
+- Listen for: How moving the stick changes tone in real time, and how that feels compared to manual knob turning (it's smoother, more expressive)
+
+**Joystick2 Y-axis (Optional Secondary Control):**
+- Y OUT can modulate something else: PRE-VCA CV, DISTORTION via external VCA, or Reverb DRY/WET if you have CV control
+- Move joystick up/down (Y axis) to modulate whichever parameter you chose
+- What you hear: Two-dimensional control—X axis changes tone, Y axis changes processing intensity (or whatever you patched)
+- Why it matters: XY controllers teach you to think of parameters as independent. You can modulate two aspects of the processing simultaneously, creating more complex, expressive character
+- Listen for: How moving the joystick creates 2D timbral space, not just 1D line
+
+**Woggle (Optional, if you have one):**
+- Woggle is a minimal performance interface: pressure and touch control
+- Patch to whichever CV input feels most expressive to you (maybe filter resonance if you have CV control of resonance, or compressor amount)
+- What you hear: Dynamic swells as you hold/release the Woggle
+- Why it matters: Different controller types teach different performance modes. Ochd teaches algorithmic evolution, Joystick2 teaches deliberate real-time control, Woggle teaches expressive gesture
+- Listen for: How different controller types feel different, even controlling similar parameters
+
+**Result:**
+Audio that transforms through multiple layers of modulation:
+1. **Ochd**: Sets a longer-term evolution arc (processing intensity slowly changes)
+2. **Joystick2 X**: Your real-time expression (tone carving)
+3. **Joystick2 Y**: Additional real-time dimension (intensity or whatever else)
+4. **Woggle**: Gestural expression (if included)
+
+Same GHOST settings as Patch 0, but now it feels alive and responsive.
+
+**What You're Learning:**
+- **Modulation source types:** Algorithmic (Ochd) + deliberate (Joystick) + gestural (Woggle) teach different creative approaches
+- **Parameter independence:** Each CV input modulates something different, revealing how GHOST has multiple dimensions of control
+- **Interconnection through control signals:** You're not just processing audio anymore. You're using CV to shape how GHOST processes audio. This is modular thinking: audio flows one direction, control signals shape it from outside
+- **Performance vs. automation:** Manual knob turns (Patch 0) feel different from performance control (this patch). Feeling that difference teaches why modulation matters
+
+**Alternative Setup (Simplified):**
+If you don't have all these modules, start with just one:
+- **Just Ochd:** Tie Ochd CV to PRE-VCA. Watch how algorithmic evolution changes processing intensity
+- **Just Joystick2:** Tie X to CUTOFF, Y to whatever else. This teaches 2D real-time control
+- **Any sequencer + LFO:** Sequencer to PRE-VCA (rhythmic), LFO to CUTOFF (organic evolution). Most modular systems have these
+
+**Performance:**
+Unlike Patch 0 (static exploration) and Patch 1 (hands-off evolution), this patch requires active control:
+- Let Ochd run, shaping processing intensity
+- Use Joystick2 X to sweep tones during musically interesting moments
+- Use Joystick2 Y for additional expression
+- Record what happens—you're performing with GHOST
+
+The difference between passive and active modulation becomes obvious. Patch 1 is meditative (watch the system evolve). This patch is expressive (you shape it as it evolves).
+
+---
+
+### **Patch 1: Ghost Drone - Evolving Ambient Texture (Advanced)**
+
+**Setup:**
+```
+🔴 Audio │ 🔵 CV │ 🟡 Gate
+
+┌─OSCILLATOR/SYNTH─┐
+│    Output   ○────┼────┬──┐
+└───────────────────┘    │  │
+                         │  └─→ GHOST IN 🔴
+┌─LFO─────────────────┐  │
+│    OUTPUT   ○───────┼──┼──→ PRE-VCA CV 🔵
+└─────────────────────┘  │
+                         │
+                    ┌────▼────────┐
+                    │    GHOST    │
+                    │             │
+                    │  FX→DIST→VCF│
+                    │             │
+                    └────┬────────┘
+                         │
+                    ┌────▼─────┐
+                    │    AMP    │ or MIXER INPUT
+                    │  (0dB+)   │
+                    └──────────┘
+```
+
+**Routing:** FX → DIST → VCF (LED off)
+
+**Controls - Focus on Creating Space:**
+- **Delay TIME:** 12 o'clock (medium repeats for shimmer, not rhythmic)
+- **Delay REPEATS:** CW to 2 o'clock (generous feedback for layering)
+- **Delay DRY/WET:** CW 1-2 o'clock (mostly wet, but preserve some definition)
+- **Reverb TAIL:** CW 1-2 o'clock (long decay, creates space)
+- **Reverb PRE-DELAY:** CW 11 o'clock (separates original from verb)
+- **Reverb DRY/WET:** CW 2-3 o'clock (heavy reverb character)
+- **Distortion:** 12-1 o'clock (moderate saturation, not aggressive)
+- **Filter FREQUENCY:** Sweep slowly with LFO (see Modulation)
+- **Filter RESONANCE:** 1 o'clock (adds definition without harshness)
+- **Compressor:** 12 o'clock (gentle compression to glue texture)
+- **Global DRY/WET:** CW 1 o'clock (mostly processed, slight dry reference)
+
+**Modulation - The Movement:**
+- **PRE-VCA CV:** Patch LFO slowly (very slow rate, creates breathing effect)
+- **CUTOFF CV:** Patch LFO with different rate than PRE-VCA (creates polyrhythmic modulation)
+- Result: Texture evolves unpredictably as PRE-VCA modulates input level while CUTOFF modulates filter frequency
+
+**Result:** 
+Evolving, atmospheric texture that changes constantly even without user input. The combination of delay/reverb character, subtle distortion coloring, and moving filter creates the "ghost" effect - ephemeral sounds that transform over time. Perfect for pads, ambient backgrounds, meditation/healing music, or textural foundations under other instruments.
+
+**What You're Learning:**
+- **Spatial layering through signal flow order:** When spatial effects come first, they establish atmosphere that distortion then colors rather than replaces
+- **Modulation independence creates organic variation:** Two LFOs at different rates on PRE-VCA and CUTOFF create polyrhythmic movement, demonstrating how independent modulation sources create emergent behavior
+- **Reverb character defines everything downstream:** In FX → DIST routing, reverb tail length and pre-delay are foundational choices that determine whether distortion sounds atmospheric or harsh
+
+**Alternative Options:**
+- **Budget Approach:** Mutable Instruments Clouds (granular reverb, discontinued but available used) provides different but complementary spatial texture through granulation instead of traditional delay/reverb
+- **Different Character:** Moog Mother-32 internal delay + reverb (fixed routing, but teaches how delay before reverb creates similar spacing without the signal flow flexibility)
+- **Premium Option:** Eventide Space (advanced algorithms with more morphing capabilities) provides more modulation possibilities though GHOST's routing flexibility teaches the principle more clearly
+
+**Performance:**
+Record a 30-60 second loop and let it evolve. Occasionally adjust:
+- LFO rates (change PRE-VCA or CUTOFF CV modulation speed)
+- Filter FREQUENCY manually while LFO is modulating CUTOFF (adds performance expression)
+- PRE-VCA CV depth (adjusts how much LFO breathing happens)
+
+The beauty is that even without changes, the modulation creates continuous evolution. Performance becomes subtle intervention in an already-evolving process.
+
+---
+
+### **Patch 2: Rhythmic Texture - Drums Processing with Sidechain Reaction (Advanced)**
+
+**Setup:**
+```
+🔴 Audio │ 🔵 CV │ 🟡 Gate
+
+┌─DRUM MACHINE/DRUMS─┐
+│      Out      ○────┼────┬──┐
+└────────────────────┘    │  │
+                          │  └─→ GHOST IN 🔴
+┌─CLOCK/SEQUENCER─────┐  │
+│      OUT      ○──────┼──┼──→ SIDECHAIN TRIG IN 🟡
+└─────────────────────┘  │
+                         │
+                    ┌────▼────────┐
+                    │    GHOST    │
+                    │             │
+                    │  FX→DIST→VCF│
+                    │             │
+                    └────┬────────┘
+                         │
+                    ┌────▼─────┐
+                    │  MIXER   │ (blend with dry drums)
+                    │ CH 1-2   │
+                    └──────────┘
+```
+
+**Routing:** FX → DIST → VCF (LED off)
+
+**Controls - Focus on Aggression + Punch:**
+- **Delay TIME:** 8 o'clock (short repeats for rhythmic texture, not echoes)
+- **Delay REPEATS:** 1-2 o'clock (moderate feedback for rhythmic density)
+- **Delay TONE:** CW 1 o'clock (bright repeats maintain punch)
+- **Delay DRY/WET:** 12 o'clock (balanced mix of dry and repeated signal)
+- **Reverb TAIL:** 10 o'clock (short decay, doesn't muddy timing)
+- **Reverb PRE-DELAY:** 10 o'clock (minimal pre-delay, keeps reverb tight with drums)
+- **Reverb DRY/WET:** 1 o'clock (adds spaciousness without washing out rhythm)
+- **Distortion:** 2-3 o'clock (aggressive saturation adds attitude)
+- **Gain (ROUTING + TONE/GAIN):** CW 1-2 o'clock (boosts signal into distortion)
+- **Filter FREQUENCY:** 10 o'clock area (remove extreme highs, maintain mid punch)
+- **Filter RESONANCE:** 12 o'clock (no resonance, just shaping)
+- **Compressor:** CW 2-3 o'clock (heavy compression snaps the texture)
+- **Sidechain DEPTH:** CW 2 o'clock (~70%, noticeable but not total silence)
+- **Sidechain TRIG IN:** Patched to clock/kick trigger (effect ducks with every beat)
+- **Global DRY/WET:** 1-2 o'clock (mostly effect, slight dry reference)
+
+**Modulation - The Reaction:**
+- **SIDECHAIN TRIG IN:** Patch kick drum or clock output (effect ducks on beat)
+- **SIDECHAIN knob:** Adjust release time (how quickly effect returns)
+- As set above: Effect ducks with kick hits, surfaces again before next kick
+
+**Result:**
+Drums become layered texture - the effect sits back dynamically when kicks hit, then comes forward in the space between beats. This creates incredible glue while keeping drums punchy. The distortion adds attitude to drums, the compression makes everything snap together. Perfect for trap, drill, industrial, or experimental hip-hop where drums need aggression while effects provide space.
+
+**What You're Learning:**
+- **Sidechain ducking as a mixing tool:** Using external triggers to modulate effect level teaches how audio and control signals interact in complex ways. This principle appears everywhere in professional mixing (sidechaining kicks to bass, compressors to reverb, etc.)
+- **Aggression through signal order:** Distortion coming after delay/reverb creates coloring rather than harshness because it's processing already-textured material. This teaches how FX chain order completely changes character
+- **Rhythm through processing timing:** Sidechain release time controls swing and groove independent of the source drums. Demonstrates how analog timing and control interact to create musicality
+
+**Alternative Options:**
+- **Budget Approach:** Separate delay module + reverb module + distortion pedal (teaches routing principles through manual patching, but loses integrated character)
+- **Different Character:** Elektron Analog Rytm effects (digital delay/reverb with sidechain, different algorithms but similar creative goal)
+- **Premium Option:** Universal Audio Luna suite with virtual GHOST (provides same routing philosophy with unlimited processing)
+
+**Performance:**
+This patch teaches you to mix with effects dynamically:
+- Adjust Distortion knob in real-time (adds/removes attitude during performance)
+- Adjust Sidechain DEPTH in real-time (tighter or looser effect ducking)
+- Adjust Filter FREQUENCY to carve different character (from tight mids to open highs)
+- Watch how Sidechain creates groove - the timing becomes part of the drum sound, not separate from it
+
+Try adjusting these while drums play. Notice how small movements completely change the character. That's what makes this patch powerful - the sidechain makes the effect respond to the music rather than just sit statically on top of it.
 
 ---
 
@@ -601,11 +694,11 @@ Each stage affects how the next stage sounds. You can't really predict exactly w
 
 ---
 
-## Common Mistakes and How to Avoid Them
+### **Common Mistakes and How to Avoid Them**
 
 When working with FX → DIST → VCF routing, specific patterns emerge. Not bugs—just how the signal flow works. Understanding why they happen transforms them from frustrations into teachable moments.
 
-### **Mistake 1: "Everything becomes reverb mud, I can't hear my input anymore"**
+#### **Mistake 1: "Everything becomes reverb mud, I can't hear my input anymore"**
 
 **What's happening:** Reverb DRY/WET is full CW (100% wet), so distortion processes only diffuse reverb tail, not the original transient.
 
@@ -621,7 +714,7 @@ When working with FX → DIST → VCF routing, specific patterns emerge. Not bug
 
 ---
 
-### **Mistake 2: "I turned up distortion and now it sounds like noise, not texture"**
+#### **Mistake 2: "I turned up distortion and now it sounds like noise, not texture"**
 
 **What's happening:** Distortion is full CW, but upstream delay/reverb lack interesting material for it to color.
 
@@ -636,7 +729,7 @@ When working with FX → DIST → VCF routing, specific patterns emerge. Not bug
 
 ---
 
-### **Mistake 3: "The reverb just makes everything muddy in the low end"**
+#### **Mistake 3: "The reverb just makes everything muddy in the low end"**
 
 **What's happening:** Low frequencies get caught in reverb diffusion, creating phase cancellation that muddies everything, then distortion amplifies the mud.
 
@@ -651,7 +744,7 @@ When working with FX → DIST → VCF routing, specific patterns emerge. Not bug
 
 ---
 
-### **Mistake 4: "My sidechain isn't doing anything. I patched the trigger but no ducking happens"**
+#### **Mistake 4: "My sidechain isn't doing anything. I patched the trigger but no ducking happens"**
 
 **What's happening:** Sidechain DEPTH (ROUTING + SIDECHAIN knob) is at 0%, so the envelope fires but has no effect on audio level.
 
@@ -666,7 +759,7 @@ When working with FX → DIST → VCF routing, specific patterns emerge. Not bug
 
 ---
 
-### **Mistake 5: "Everything sounds so immediate and flat, like there's no space"**
+#### **Mistake 5: "Everything sounds so immediate and flat, like there's no space"**
 
 **What's happening:** Reverb PRE-DELAY is at minimum (ROUTING + TAIL), so reverb starts immediately on the sound with no separation.
 
@@ -681,7 +774,7 @@ When working with FX → DIST → VCF routing, specific patterns emerge. Not bug
 
 ---
 
-### **Mistake 6: "My delay repeats are getting buried in distortion, they're not clear"**
+#### **Mistake 6: "My delay repeats are getting buried in distortion, they're not clear"**
 
 **What's happening:** Delay feedback is high but DELAY TONE (ROUTING + REPEATS) is dull, so repeats lose definition entering distortion.
 
@@ -696,7 +789,7 @@ When working with FX → DIST → VCF routing, specific patterns emerge. Not bug
 
 ---
 
-### **Mistake 7: "I can't tell what the original sound is vs. what's processed"**
+#### **Mistake 7: "I can't tell what the original sound is vs. what's processed"**
 
 **What's happening:** Global DRY/WET is full CW (100% wet), so you hear only processed signal with no reference to original.
 
@@ -711,7 +804,7 @@ When working with FX → DIST → VCF routing, specific patterns emerge. Not bug
 
 ---
 
-### **Mistake 8: "The filter isn't doing anything, I turn it and nothing changes"**
+#### **Mistake 8: "The filter isn't doing anything, I turn it and nothing changes"**
 
 **What's happening:** Filter is at 12 o'clock (center = flat = no effect), so adjustments sound subtle or inaudible.
 
@@ -726,7 +819,7 @@ When working with FX → DIST → VCF routing, specific patterns emerge. Not bug
 
 ---
 
-### **Mistake 9: "I've got distortion and resonance both at full, and it's just chaos"**
+#### **Mistake 9: "I've got distortion and resonance both at full, and it's just chaos"**
 
 **What's happening:** DISTORTION and RESONANCE are both full CW, creating maximum saturation + maximum filter emphasis = unpredictable feedback and chaos.
 
@@ -741,7 +834,7 @@ When working with FX → DIST → VCF routing, specific patterns emerge. Not bug
 
 ---
 
-### **Mistake 10: "Everything sounds thin or harsh, I can't get anything lush"**
+#### **Mistake 10: "Everything sounds thin or harsh, I can't get anything lush"**
 
 **What's happening:** Filter is in HIGH-PASS mode (CW), removing lows. Combined with bright delay tone and light reverb, signal has no body.
 
@@ -758,7 +851,7 @@ When working with FX → DIST → VCF routing, specific patterns emerge. Not bug
 
 ---
 
-## Pattern Recognition: Root Causes
+### **Pattern Recognition: Root Causes**
 
 These ten mistakes cluster around three root issues:
 
@@ -776,418 +869,6 @@ These ten mistakes cluster around three root issues:
 - "More is better" leads to full CW on everything
 - Processing stacks—each stage compounds the previous one, creating unexpected effects at extremes
 - Solution: Develop reference points—know how 50% sounds, then understand how full wet/dry differs; recognize that moderation on some parameters enables others to work effectively
-
----
-
-## What This Unlocks From Your Existing Gear
-
-GHOST doesn't exist in isolation. It connects to everything already in your setup. The routing flexibility and modulation control don't just transform GHOST—they reveal possibilities in gear you already own.
-
-### **Principle 1: External Sequencers → Modulation Sources**
-
-Your external sequencer (Elektron device, Torso Studio, Arturia, etc.) isn't just for triggering notes. Its CV outputs become GHOST modulation sources.
-
-**Workflow:**
-- Patch sequencer CV OUT → GHOST PRE-VCA CV or CUTOFF CV
-- Now your sequencer doesn't just trigger rhythm—it shapes GHOST's character in sync
-- Set sequencer to random or algorithmic CV, and GHOST responds with evolving processing
-- Result: Audio processing that *grooves* because it's synced to your musical timing, not arbitrary LFO rates
-
-**Why this matters:** Most people think sequencers are for note generation. Modular thinking says sequencers are *timing sources*. Their CV outputs can modulate anything. GHOST's three CV inputs make this obvious—you're not limited to one modulation type.
-
-### **Principle 2: Stomp Box Interface → GHOST Input Control**
-
-If you're processing guitar or bass through a Stomp box (or similar), GHOST becomes a final texture layer.
-
-**Workflow:**
-- Guitar/Bass → Stomp FX → GHOST IN
-- GHOST output → Amp/PA/Interface
-- Stomp controls initial character (distortion, modulation, ambience)
-- GHOST then processes that result through your chosen routing chain
-
-**Why this matters:** Each processor adds layers, but they're stacked predictably. GHOST's routing flexibility means you're not locked into "guitar distortion then spatial effects." You can choose whether spatial effects come first (creating atmospheric heavy textures) or last (adding space to already-shaped tone). The same Stomp output becomes completely different through different GHOST routings.
-
-### **Principle 3: External Triggers → Sidechain Ducking Sync**
-
-Any external gate/trigger becomes a dynamic control for GHOST's output.
-
-**Workflow:**
-- Drum machine gate output → GHOST SIDECHAIN TRIG IN
-- GHOST effect now ducks with your drum machine timing
-- Adjust SIDECHAIN DEPTH and release time to control how tight or loose the interaction feels
-- Result: GHOST processing that reacts to your drums, not sitting statically on top
-
-**Why this matters:** Sidechain ducking is how professional mixes glue together. Hearing GHOST respond dynamically to external triggers teaches you to think of modular processing as *reactive*, not just *additive*. The effect serves the music because it responds to timing.
-
-### **Principle 4: Modulation Density Through Layered CV Patching**
-
-When you patch multiple CV sources to GHOST simultaneously:
-- Sequencer modulating PRE-VCA
-- LFO modulating CUTOFF
-- Random modulating something else
-
-...GHOST's character evolves unpredictably. That unpredictability forces creative listening.
-
-**Workflow:**
-- Use one CV for rhythmic/musical modulation (sequencer)
-- Use another for organic/evolving modulation (slow LFO)
-- Use sidechain for reactive ducking (trigger)
-- Same audio input now becomes completely different depending on CV state combinations
-
-**Why this matters:** This teaches interconnection at scale. GHOST isn't just an effects processor anymore—it becomes a modulation-responsive system where audio + control signals create emergent textures. That principle applies to all modular synthesis.
-
-### **Real Workflow Example: Stomp + Sequencer Integration**
-
-You're processing bass through a Stomp with some distortion and modulation. You want that bass to become textural at certain points, then snap back to clarity.
-
-```
-Bass → Stomp (distortion ON, mod ON) → GHOST IN
-                                        ├─ SIDECHAIN TRIG IN ← Drum Machine Gate
-                                        ├─ PRE-VCA CV ← Sequencer Random CV
-                                        └─ CUTOFF CV ← Slow LFO
-GHOST OUT → Mixer Channel 1 (50% blend with Stomp dry out for reference)
-```
-
-What happens:
-1. **Stomp processes bass:** Adds saturation and movement
-2. **GHOST receives that:** Three routing choices determine if spatial effects come first (atmospheric) or last (colored)
-3. **Sequencer modulates PRE-VCA:** Bass processing intensity evolves musically, synced to your tempo
-4. **LFO modulates CUTOFF:** Independent tonal evolution, changing character constantly
-5. **Drum gate triggers sidechain:** When drums hit, GHOST ducks, sitting back in the mix
-6. **Result:** Bass that transforms throughout the song—heavy and atmospheric during intro, reactive and groovy during beats, spacious on breaks
-
-Without GHOST's routing flexibility and CV inputs, this workflow requires multiple modules and complex patching. GHOST provides it integrated—teaching you the principle while staying practical.
-
----
-
-## Starter Patches: Creative Applications with FX → DIST → VCF Routing
-
-Both patches use the FX → DIST → VCF routing chain (LED off). The same controls produce completely different musical results depending on how you balance the three stages and how you modulate them.
-
-### **Patch 0: The Foundation - Simple Audio Processing**
-
-Start here if you want to understand the basics without external modulation or triggers.
-
-**Setup:**
-```
-🔴 Audio │ 🔵 CV │ 🟡 Gate
-
-┌─SEQUENCER───────────┐
-│    GATE OUT    🟡──────────────────┐
-└─────────────────────┘                     │
-                                     │
-┌─VCO/SYNTH─────────┐      │
-│   PITCH CV IN   🔵─────────────────────│──→ GATE
-│   AUDIO OUT    🔴────────┬─────────────────────│
-└───────────────────┐    │
-                            │
-                        ┌──▼──┐
-                        │  GHOST  │
-                        │  FX→DIST→VCF│
-                        │         │
-                        └──┬──┘
-                            │
-                        ┌─▼─┐
-                        │ MIXER  │ or AUDIO OUT
-                        └────┘
-```
-
-**Controls - Everything at 12 o'clock First:**
-- **Delay TIME:** 12 o'clock
-- **Delay REPEATS:** 12 o'clock
-- **Delay DRY/WET:** 12 o'clock
-- **Reverb TAIL:** 12 o'clock
-- **Reverb DRY/WET:** 12 o'clock
-- **Distortion:** 12 o'clock
-- **Filter FREQUENCY:** 12 o'clock (neutral, no filtering)
-- **Filter RESONANCE:** 12 o'clock
-- **Compressor:** 12 o'clock
-- **Global DRY/WET:** 12 o'clock
-- **VOLUME/drive:** 12 o'clock
-
-This is your "baseline" setup. Everything is at neutral. Now explore one knob at a time:
-
-1. **Explore DISTORTION:** Turn it slowly CW to 2 o'clock, then back to 12 o'clock. Hear how it darkens? That’s distortion coloring your sequenced melody.
-2. **Explore FREQUENCY:** Turn it CCW to 10 o'clock (warm), then to 3 o'clock CW (bright). Your notes sound darker or brighter based on filter position.
-3. **Explore Delay/Reverb:** Add delay DRY/WET slowly CW to 1 o'clock. Now your notes have rhythmic echoes. Add reverb DRY/WET to 1 o'clock. Now notes have space.
-
-**Result:**
-You’ve learned the core of GHOST: Sequenced pitch variation → audio input → effects processing → output. You can hear exactly what each control does because nothing else is changing.
-
-**What You’re Learning:**
-- **Signal flow understanding:** Audio goes through GHOST in one direction. Controls shape how that happens.
-- **Parameter sensitivity:** How much change is 1 knob position? (Very little for some, dramatic for others)
-- **The relationship between parameters:** Distortion sounds different depending on delay/reverb upstream. Filter sounds different when distortion is different. Nothing exists in isolation.
-
-**Alternative Options:**
-- **Budget Approach:** SP-404 with internal sequencer and effects (teaches similar parameter interaction but fixed routing)
-- **Different Character:** Elektron Analog Rytm internal synth + effects (digital effects algorithms instead of analog)
-- **Premium Option:** Moog Moogerfooger pedals + guitar (analog effects chain but without the integrated routing flexibility)
-
-**Performance:**
-Change one parameter at a time while your sequence plays:
-- Turn Distortion knob slowly, notice when aggressive character comes in
-- Sweep Filter slowly up and down, creating tonal movement
-- Adjust Reverb/Delay DRY/WET to add/remove spatial processing
-- Adjust Global DRY/WET to hear how much processing you’re actually hearing
-
-The beauty of this patch is simplicity. One control change teaches you exactly what that control does.
-
----
-
-### **Patch 0.5: Intermediate Patch - External Modulation from Performance Controllers**
-
-Move from front-panel-only exploration to using external CV sources. This teaches how external modulation changes GHOST's character without repatching audio.
-
-**Setup:**
-```
-🔴 Audio │ 🔵 CV │ 🟡 Gate
-
-┌─SEQUENCER/SYNTH─────┐
-│    Output   ○────┬──────┐
-└──────────────────┘    │  │
-                        │  └─→ GHOST IN 🔴
-┌─DivKid Ochd─────────┐ │
-│  CV OUT A   ○───────┼─┼──→ PRE-VCA CV 🔵
-│  CV OUT B   ○───────┼─┼──→ CUTOFF CV 🔵  (alternately)
-└──────────────────────┘ │
-┌─Erica Synths Joystick2 ┐│
-│  X OUT     ○───────┬───┼──→ (PRE-VCA or CUTOFF)
-│  Y OUT     ○───────┼───┘
-└────────────────────┘
-┌─Woggle (optional)──────┐
-│  OUT        ○───────────→ (Any remaining CV input)
-└────────────────────────┘
-
-                    ┌────────────────┐
-                    │     GHOST      │
-                    │  FX→DIST→VCF   │
-                    │   (LED off)    │
-                    └────┬───────────┘
-                         │
-                    ┌────▼─────┐
-                    │  MIXER   │ or AUDIO OUT
-                    │  CH 1    │
-                    └──────────┘
-```
-
-**Controls - Start at 12 o'clock, then modulate:**
-- **Delay TIME:** 12 o'clock (neutral)
-- **Delay REPEATS:** 12 o'clock
-- **Delay DRY/WET:** 12 o'clock
-- **Reverb TAIL:** 12 o'clock
-- **Reverb DRY/WET:** 12 o'clock
-- **Distortion:** 12-1 o'clock (slightly colored, not aggressive)
-- **Filter FREQUENCY:** 12 o'clock (neutral)
-- **Filter RESONANCE:** 12 o'clock
-- **Compressor:** 12 o'clock
-- **Global DRY/WET:** 12 o'clock
-- **VOLUME/drive:** 12 o'clock
-
-**Modulation - The Learning:**
-
-This is where external modulation teaches interconnection:
-
-**Ochd → PRE-VCA CV (Input Level Modulation):**
-- Patch Ochd CV OUT A to GHOST PRE-VCA CV
-- Ochd is a complex sequencer: it generates polyrhythmic CV, random walks, algorithmic sequences
-- What you hear: Your audio input's level into GHOST breathes and evolves, creating dynamic intensity changes
-- Why it matters: PRE-VCA modulation affects how much signal enters the entire chain. Low PRE-VCA = subtle processing; high PRE-VCA = intense processing. By tying this to Ochd's algorithmic output, your processing intensity becomes *musical*—it evolves on a longer timescale than you'd manually turn the knob
-- Listen for: Moments when processing intensity swells (more signal entering distortion) vs. moments when it recedes (signal becomes subtle)
-
-**Joystick2 → CUTOFF CV (Performance Control):**
-- Patch Joystick2 X OUT to GHOST CUTOFF CV
-- Move the joystick left/right (X axis) while audio plays
-- What you hear: Filter frequency sweeps from warm (CCW) through neutral (center) to bright (CW) as you move the stick
-- Why it matters: This is *real-time* control. Unlike Ochd's algorithmic evolution, Joystick2 gives you immediate expression. You can sweep the filter in time with the music, carving character moment by moment
-- Listen for: How moving the stick changes tone in real time, and how that feels compared to manual knob turning (it's smoother, more expressive)
-
-**Joystick2 Y-axis (Optional Secondary Control):**
-- Y OUT can modulate something else: PRE-VCA CV, DISTORTION via external VCA, or Reverb DRY/WET if you have CV control
-- Move joystick up/down (Y axis) to modulate whichever parameter you chose
-- What you hear: Two-dimensional control—X axis changes tone, Y axis changes processing intensity (or whatever you patched)
-- Why it matters: XY controllers teach you to think of parameters as independent. You can modulate two aspects of the processing simultaneously, creating more complex, expressive character
-- Listen for: How moving the joystick creates 2D timbral space, not just 1D line
-
-**Woggle (Optional, if you have one):**
-- Woggle is a minimal performance interface: pressure and touch control
-- Patch to whichever CV input feels most expressive to you (maybe filter resonance if you have CV control of resonance, or compressor amount)
-- What you hear: Dynamic swells as you hold/release the Woggle
-- Why it matters: Different controller types teach different performance modes. Ochd teaches algorithmic evolution, Joystick2 teaches deliberate real-time control, Woggle teaches expressive gesture
-- Listen for: How different controller types feel different, even controlling similar parameters
-
-**Result:**
-Audio that transforms through multiple layers of modulation:
-1. **Ochd**: Sets a longer-term evolution arc (processing intensity slowly changes)
-2. **Joystick2 X**: Your real-time expression (tone carving)
-3. **Joystick2 Y**: Additional real-time dimension (intensity or whatever else)
-4. **Woggle**: Gestural expression (if included)
-
-Same GHOST settings as Patch 0, but now it feels alive and responsive.
-
-**What You're Learning:**
-- **Modulation source types:** Algorithmic (Ochd) + deliberate (Joystick) + gestural (Woggle) teach different creative approaches
-- **Parameter independence:** Each CV input modulates something different, revealing how GHOST has multiple dimensions of control
-- **Interconnection through control signals:** You're not just processing audio anymore. You're using CV to shape how GHOST processes audio. This is modular thinking: audio flows one direction, control signals shape it from outside
-- **Performance vs. automation:** Manual knob turns (Patch 0) feel different from performance control (this patch). Feeling that difference teaches why modulation matters
-
-**Alternative Setup (Simplified):**
-If you don't have all these modules, start with just one:
-- **Just Ochd:** Tie Ochd CV to PRE-VCA. Watch how algorithmic evolution changes processing intensity
-- **Just Joystick2:** Tie X to CUTOFF, Y to whatever else. This teaches 2D real-time control
-- **Any sequencer + LFO:** Sequencer to PRE-VCA (rhythmic), LFO to CUTOFF (organic evolution). Most modular systems have these
-
-**Performance:**
-Unlike Patch 0 (static exploration) and Patch 1 (hands-off evolution), this patch requires active control:
-- Let Ochd run, shaping processing intensity
-- Use Joystick2 X to sweep tones during musically interesting moments
-- Use Joystick2 Y for additional expression
-- Record what happens—you're performing with GHOST
-
-The difference between passive and active modulation becomes obvious. Patch 1 is meditative (watch the system evolve). This patch is expressive (you shape it as it evolves).
-
----
-
-### **Patch 1: Ghost Drone - Evolving Ambient Texture**
-
-**Setup:**
-```
-🔴 Audio │ 🔵 CV │ 🟡 Gate
-
-┌─OSCILLATOR/SYNTH─┐
-│    Output   ○────┼────┬──┐
-└───────────────────┘    │  │
-                         │  └─→ GHOST IN 🔴
-┌─LFO─────────────────┐  │
-│    OUTPUT   ○───────┼──┼──→ PRE-VCA CV 🔵
-└─────────────────────┘  │
-                         │
-                    ┌────▼────────┐
-                    │    GHOST    │
-                    │             │
-                    │  FX→DIST→VCF│
-                    │             │
-                    └────┬────────┘
-                         │
-                    ┌────▼─────┐
-                    │    AMP    │ or MIXER INPUT
-                    │  (0dB+)   │
-                    └──────────┘
-```
-
-**Controls - Focus on Creating Space:**
-- **Delay TIME:** 12 o'clock (medium repeats for shimmer, not rhythmic)
-- **Delay REPEATS:** CW to 2 o'clock (generous feedback for layering)
-- **Delay DRY/WET:** CW 1-2 o'clock (mostly wet, but preserve some definition)
-- **Reverb TAIL:** CW 1-2 o'clock (long decay, creates space)
-- **Reverb PRE-DELAY:** CW 11 o'clock (separates original from verb)
-- **Reverb DRY/WET:** CW 2-3 o'clock (heavy reverb character)
-- **Distortion:** 12-1 o'clock (moderate saturation, not aggressive)
-- **Filter FREQUENCY:** Sweep slowly with LFO (see Modulation)
-- **Filter RESONANCE:** 1 o'clock (adds definition without harshness)
-- **Compressor:** 12 o'clock (gentle compression to glue texture)
-- **Global DRY/WET:** CW 1 o'clock (mostly processed, slight dry reference)
-
-**Modulation - The Movement:**
-- **PRE-VCA CV:** Patch LFO slowly (very slow rate, creates breathing effect)
-- **CUTOFF CV:** Patch LFO with different rate than PRE-VCA (creates polyrhythmic modulation)
-- Result: Texture evolves unpredictably as PRE-VCA modulates input level while CUTOFF modulates filter frequency
-
-**Result:** 
-Evolving, atmospheric texture that changes constantly even without user input. The combination of delay/reverb character, subtle distortion coloring, and moving filter creates the "ghost" effect - ephemeral sounds that transform over time. Perfect for pads, ambient backgrounds, meditation/healing music, or textural foundations under other instruments.
-
-**What You're Learning:**
-- **Spatial layering through signal flow order:** When spatial effects come first, they establish atmosphere that distortion then colors rather than replaces
-- **Modulation independence creates organic variation:** Two LFOs at different rates on PRE-VCA and CUTOFF create polyrhythmic movement, demonstrating how independent modulation sources create emergent behavior
-- **Reverb character defines everything downstream:** In FX → DIST routing, reverb tail length and pre-delay are foundational choices that determine whether distortion sounds atmospheric or harsh
-
-**Alternative Options:**
-- **Budget Approach:** Mutable Instruments Clouds (granular reverb, discontinued but available used) provides different but complementary spatial texture through granulation instead of traditional delay/reverb
-- **Different Character:** Moog Mother-32 internal delay + reverb (fixed routing, but teaches how delay before reverb creates similar spacing without the signal flow flexibility)
-- **Premium Option:** Eventide Space (advanced algorithms with more morphing capabilities) provides more modulation possibilities though GHOST's routing flexibility teaches the principle more clearly
-
-**Performance:**
-Record a 30-60 second loop and let it evolve. Occasionally adjust:
-- LFO rates (change PRE-VCA or CUTOFF CV modulation speed)
-- Filter FREQUENCY manually while LFO is modulating CUTOFF (adds performance expression)
-- PRE-VCA CV depth (adjusts how much LFO breathing happens)
-
-The beauty is that even without changes, the modulation creates continuous evolution. Performance becomes subtle intervention in an already-evolving process.
-
----
-
-### **Patch 2: Rhythmic Texture - Drums Processing with Sidechain Reaction**
-
-**Setup:**
-```
-🔴 Audio │ 🔵 CV │ 🟡 Gate
-
-┌─DRUM MACHINE/DRUMS─┐
-│      Out      ○────┼────┬──┐
-└────────────────────┘    │  │
-                          │  └─→ GHOST IN 🔴
-┌─CLOCK/SEQUENCER─────┐  │
-│      OUT      ○──────┼──┼──→ SIDECHAIN TRIG IN 🟡
-└─────────────────────┘  │
-                         │
-                    ┌────▼────────┐
-                    │    GHOST    │
-                    │             │
-                    │  FX→DIST→VCF│
-                    │             │
-                    └────┬────────┘
-                         │
-                    ┌────▼─────┐
-                    │  MIXER   │ (blend with dry drums)
-                    │ CH 1-2   │
-                    └──────────┘
-```
-
-**Controls - Focus on Aggression + Punch:**
-- **Delay TIME:** 8 o'clock (short repeats for rhythmic texture, not echoes)
-- **Delay REPEATS:** 1-2 o'clock (moderate feedback for rhythmic density)
-- **Delay TONE:** CW 1 o'clock (bright repeats maintain punch)
-- **Delay DRY/WET:** 12 o'clock (balanced mix of dry and repeated signal)
-- **Reverb TAIL:** 10 o'clock (short decay, doesn't muddy timing)
-- **Reverb PRE-DELAY:** 10 o'clock (minimal pre-delay, keeps reverb tight with drums)
-- **Reverb DRY/WET:** 1 o'clock (adds spaciousness without washing out rhythm)
-- **Distortion:** 2-3 o'clock (aggressive saturation adds attitude)
-- **Gain (ROUTING + TONE/GAIN):** CW 1-2 o'clock (boosts signal into distortion)
-- **Filter FREQUENCY:** 10 o'clock area (remove extreme highs, maintain mid punch)
-- **Filter RESONANCE:** 12 o'clock (no resonance, just shaping)
-- **Compressor:** CW 2-3 o'clock (heavy compression snaps the texture)
-- **Sidechain DEPTH:** CW 2 o'clock (~70%, noticeable but not total silence)
-- **Sidechain TRIG IN:** Patched to clock/kick trigger (effect ducks with every beat)
-- **Global DRY/WET:** 1-2 o'clock (mostly effect, slight dry reference)
-
-**Modulation - The Reaction:**
-- **SIDECHAIN TRIG IN:** Patch kick drum or clock output (effect ducks on beat)
-- **SIDECHAIN knob:** Adjust release time (how quickly effect returns)
-- As set above: Effect ducks with kick hits, surfaces again before next kick
-
-**Result:**
-Drums become layered texture - the effect sits back dynamically when kicks hit, then comes forward in the space between beats. This creates incredible glue while keeping drums punchy. The distortion adds attitude and attitude to drums, the compression makes everything snap together. Perfect for trap, drill, industrial, or experimental hip-hop where drums need aggression while effects provide space.
-
-**What You're Learning:**
-- **Sidechain ducking as a mixing tool:** Using external triggers to modulate effect level teaches how audio and control signals interact in complex ways. This principle appears everywhere in professional mixing (sidechaining kicks to bass, compressors to reverb, etc.)
-- **Aggression through signal order:** Distortion coming after delay/reverb creates coloring rather than harshness because it's processing already-textured material. This teaches how FX chain order completely changes character
-- **Rhythm through processing timing:** Sidechain release time controls swing and groove independent of the source drums. Demonstrates how analog timing and control interact to create musicality
-
-**Alternative Options:**
-- **Budget Approach:** Separate delay module + reverb module + distortion pedal (teaches routing principles through manual patching, but loses integrated character)
-- **Different Character:** Elektron Analog Rytm effects (digital delay/reverb with sidechain, different algorithms but similar creative goal)
-- **Premium Option:** Universal Audio Luna suite with virtual GHOST (provides same routing philosophy with unlimited processing)
-
-**Performance:**
-This patch teaches you to mix with effects dynamically:
-- Adjust Distortion knob in real-time (adds/removes attitude during performance)
-- Adjust Sidechain DEPTH in real-time (tighter or looser effect ducking)
-- Adjust Filter FREQUENCY to carve different character (from tight mids to open highs)
-- Watch how Sidechain creates groove - the timing becomes part of the drum sound, not separate from it
-
-Try adjusting these while drums play. Notice how small movements completely change the character. That's what makes this patch powerful - the sidechain makes the effect respond to the music rather than just sit statically on top of it.
-
----
 
 ---
 
@@ -1331,11 +1012,254 @@ The routing teaches: *Define first, decorate later.* Unlike Routing 1 which teac
 
 ---
 
-## Common Mistakes with DIST → VCF → FX Routing
+### **Patch 3: The Foundation - Distorted Signal Exploration (Expert)**
+
+Start here to understand distortion-first processing without external complexity.
+
+**Setup:**
+```
+🔴 Audio │ 🔵 CV │ 🟡 Gate
+
+┌─OSCILLATOR/SYNTH─────┐
+│    Output   ○────────────────────────→ GHOST IN 🔴
+└─────────────└
+
+                                                   ┌────────────────┐
+                                                   │     GHOST      │
+                                                   │  DIST→VCF→FX   │
+                                                   │   (LED semi)   │
+                                                   └────┬──────────└
+                                                        │
+                                                   ┌────▼─────┐
+                                                   │  MIXER   │ or AUDIO OUT
+                                                   │  CH 1    │
+                                                   └──────────┘
+```
+
+**Controls - Everything at 12 o'clock First:**
+- **Distortion:** 12 o'clock (neutral, no coloring yet)
+- **Filter FREQUENCY:** 12 o'clock (neutral, no filtering)
+- **Filter RESONANCE:** 12 o'clock
+- **Delay TIME:** 12 o'clock
+- **Delay REPEATS:** 12 o'clock
+- **Delay DRY/WET:** 12 o'clock
+- **Reverb TAIL:** 12 o'clock
+- **Reverb DRY/WET:** 12 o'clock
+- **Compressor:** 12 o'clock
+- **Global DRY/WET:** 12 o'clock
+- **VOLUME/drive:** 12 o'clock
+
+This is your clean baseline. Now explore in this order:
+
+1. **Explore DISTORTION:** Turn it slowly CW to 2 o'clock. Hear how the clean tone becomes colored, rich, aggressive. Then back off to 1 o'clock (sweet spot). Notice: The distortion is upfront and clear, not soft.
+2. **Explore FREQUENCY:** With distortion at 1 o'clock, turn filter CCW to 10 o'clock (warm), then to 3 o'clock CW (bright). Hear how filter shapes the distorted character. Warm distortion vs. bright distortion.
+3. **Explore Delay/Reverb:** Add delay DRY/WET slowly to 1 o'clock. Notice the distorted tone now has echoes. Add reverb DRY/WET to 1 o'clock. Notice: Reverb spaces the distorted tone, doesn't muddy it.
+
+**Result:**
+You've heard the core of Routing 2: Distortion defines, filter shapes, spatial effects decorate. Nothing is softened. Everything is clear.
+
+**What You're Learning:**
+- **Signal flow:** Distortion first means the original tone is colored immediately, then shaped by filter, then spaced by reverb
+- **Distortion character:** Heavy distortion feels present and aggressive, not atmospheric
+- **Filter purpose:** In this routing, filter doesn't soften; it sculpts aggression
+- **Reverb role:** Reverb adds dimension, not complexity
+
+**Performance:**
+Change parameters while your tone plays:
+- Turn Distortion knob slowly, notice aggression building
+- Sweep Filter slowly up and down (try both directions)
+- Adjust Reverb/Delay DRY/WET to add/remove space
+
+Key insight: In this routing, every change is obvious because distortion-first is transparent.
+
+**Alternative Options:**
+- **Budget Approach:** Mutable Instruments Warps (spectral processor that teaches filter + distortion interaction on limited budget)
+- **Different Character:** Erica Synths Fusion-2 (analog distortion-first approach with modulation matrix)
+- **Premium Option:** Make Noise PanMix (advanced mixing and distortion options)
+
+---
+
+### **Patch 3.5: Intermediate Patch - Performance Modulation on Distorted Character (Expert)**
+
+Move from static exploration to real-time control of a distorted tone.
+
+**Setup:**
+```
+🔴 Audio │ 🔵 CV │ 🟡 Gate
+
+┌─OSCILLATOR/SYNTH───────────┐
+│    Output   ○──────────────────────→ GHOST IN 🔴
+└─────────────└
+┌─Erica Synths Joystick2────┐
+│  X OUT     ○─────────────────────────────→ FREQUENCY CV 🔵
+│  Y OUT     ○─────────────────────────────→ DISTORTION (via ext VCA)
+└───────────────────└
+┌─Woggle (optional)─────┐
+│  OUT        ○─────────────────────────────→ REVERB DRY/WET (via CV)
+└───────────────────└
+
+                                                   ┌────────────────┐
+                                                   │     GHOST      │
+                                                   │  DIST→VCF→FX   │
+                                                   │   (LED semi)   │
+                                                   └────┬──────────└
+                                                        │
+                                                   ┌────▼─────┐
+                                                   │  MIXER   │ or AUDIO OUT
+                                                   │  CH 1    │
+                                                   └──────────┘
+```
+
+**Controls - Start with moderate distortion character:**
+- **Distortion:** 1-2 o'clock (established character)
+- **Filter FREQUENCY:** 12 o'clock (neutral, ready to be modulated)
+- **Filter RESONANCE:** 12-1 o'clock (moderate, stable base)
+- **Delay DRY/WET:** 1 o'clock (adds texture)
+- **Reverb DRY/WET:** 1 o'clock (adds space)
+- **Compressor:** 12 o'clock (light)
+- **Global DRY/WET:** 12 o'clock (reference balance)
+
+**Modulation - Real-Time Performance:**
+
+**Joystick2 X → FREQUENCY CV:**
+- Move joystick left/right to sweep filter across the distorted tone
+- Left (CCW) = warm aggression, Right (CW) = bright aggression
+- What you hear: Live filter sweeping over defined distorted character
+- This is wah-like but on distortion, not clean signal
+- Listen for: How filter changes feel smooth and expressive
+
+**Joystick2 Y → DISTORTION (via external VCA):**
+- Move joystick up/down to modulate distortion intensity
+- Up = more distortion aggression, Down = cleaner tone
+- What you hear: Tone morphing between clean and heavily-distorted
+- This teaches: Distortion can be dynamic and expressive, not static
+- Listen for: The attack of distortion appearing/disappearing
+
+**Woggle → REVERB DRY/WET (optional):**
+- Pressure on woggle = more reverb
+- Release = dry tone
+- What you hear: Space appearing and disappearing with gesture
+- Teaches: Space can be a performance dimension
+
+**Result:**
+A distorted tone that transforms in three dimensions:
+1. X-axis (Joystick X) = tonal character (warm to bright)
+2. Y-axis (Joystick Y) = saturation intensity
+3. Pressure (Woggle) = spatial dimension
+
+Same baseline as Patch 3, but now it's expressive and alive.
+
+**What You're Learning:**
+- **Performance expression:** Distortion-first routing can be performative if you modulate the distortion itself
+- **2D/3D control:** Multiple modulation sources create expressive depth
+- **Real-time character transformation:** Unlike Routing 1 (algorithmic evolution), this is direct human control of character
+
+**Alternative Setup (Simplified):**
+- Just Joystick2 X to FREQUENCY (simplest wah-like effect)
+- Just LFO to FREQUENCY (automatic filter sweep on distorted tone)
+- Sequencer CV to DISTORTION for rhythmic saturation changes
+
+**Performance:**
+Unlike previous patches, this requires active playing:
+- Sweep joystick slowly to find filter sweet spots
+- Modulate Y-axis for saturation morphing during performance
+- Use woggle for spatial punctuation
+- Combine movements for complex timbral evolution
+
+Key difference from Routing 1 Intermediate Patch: This focuses on performing the distorted character directly, not creating autonomous evolution.
+
+**Alternative Options:**
+- **Budget Approach:** Befaco Hexmix~ (6-channel mixer with modulation, similar performance control philosophy)
+- **Different Character:** STG Soundlabs Soundburst (envelope-based modulation with character similar to Y-axis control)
+- **Premium Option:** Moddemix by Erica Synths (advanced mixing with modulation matrix for complex performance control)
+
+---
+
+### **Patch 4: Cutting Lead - Presence Through Aggression (Expert)**
+
+This patch showcases Routing 2's strength: creating tones that cut through a mix while remaining defined.
+
+**Setup:**
+```
+🔴 Audio │ 🔵 CV │ 🟡 Gate
+
+┌─OSCILLATOR/SYNTH───────────┐
+│    Output   ○──────────────────────→ GHOST IN 🔴
+└─────────────└
+┌─LFO─────────────┐
+│  OUTPUT   ○─────────────────────────→ FREQUENCY CV 🔵
+└─────────────└
+
+                                                   ┌────────────────┐
+                                                   │     GHOST      │
+                                                   │  DIST→VCF→FX   │
+                                                   │   (LED semi)   │
+                                                   └────┬──────────└
+                                                        │
+                                                   ┌────▼─────┐
+                                                   │  MIXER   │ or AUDIO OUT
+                                                   │  CH 1    │
+                                                   └──────────┘
+```
+
+**Controls - Build Presence:**
+- **Distortion:** 1-2 o'clock (colored, not extreme)
+- **Gain (ROUTING + TONE/GAIN):** CW 1 o'clock (boosts signal into distortion)
+- **Filter FREQUENCY:** 10 o'clock area (warm-to-mid frequencies)
+- **Filter RESONANCE:** 2 o'clock (adds presence peak)
+- **Delay TIME:** 9 o'clock (short repeats for rhythm)
+- **Delay REPEATS:** 12 o'clock (moderate feedback)
+- **Delay DRY/WET:** 12 o'clock (balanced)
+- **Reverb TAIL:** 10 o'clock (short, tight)
+- **Reverb DRY/WET:** 10 o'clock (minimal space, keeps definition)
+- **Compressor:** 1 o'clock (light-to-moderate, keeps peaks controlled)
+- **Global DRY/WET:** 12 o'clock
+
+**Modulation - Filter Evolution:**
+- **FREQUENCY CV:** Patch slow LFO
+- Filter sweeps slowly, creating evolving presence while maintaining distorted character
+- Result: Tone that's always present and cutting, but evolving
+
+**Result:**
+A distorted lead tone that:
+- Cuts through mixes (distortion + resonance presence)
+- Remains defined (minimal reverb, tight delay)
+- Evolves over time (LFO on filter)
+- Has character (warm-to-mid distortion)
+- Stays controlled (compression, moderate settings)
+
+Perfect for:
+- Lead synth lines that need to be heard
+- Bass textures that need presence
+- Rhythmic tones that need aggression
+- Performances where clarity matters
+
+**What You're Learning:**
+- **Presence as design choice:** Distortion + resonance + minimal reverb = presence through definition
+- **Compression on distortion:** How to keep aggressive tones controlled
+- **Routing trade-offs:** Space (reverb) vs. presence (definition). You can't have both at maximum; choose strategically
+
+**Performance:**
+Live adjustments while playing:
+- Manually sweep FREQUENCY (hand) to add articulation while LFO provides baseline movement
+- Adjust RESONANCE in real-time (add more presence for louder sections, reduce for softer)
+- Adjust COMPRESSOR DEPTH for tightness/looseness
+- Use Global DRY/WET to fade the effect in/out
+
+Key principle: In Routing 2, presence comes from good design, not from volume cranking.
+
+**Alternative Options:**
+- **Budget Approach:** Bastl Dude (distortion + filtering with modest modulation)
+- **Different Character:** WMD TYMP (distortion-based with frequency sculpting for presence)
+- **Premium Option:** Snazzy FX Multimix (advanced mixing with distortion stage and presence shaping)
+
+---
+
+### **Common Mistakes with DIST → VCF → FX Routing**
 
 When working with distortion-first routing, different mistakes emerge than Routing 1.
 
-### **Mistake 1: "My distorted sound is too thin/piercing, I can't warm it up"**
+#### **Mistake 1: "My distorted sound is too thin/piercing, I can't warm it up"**
 
 **What's happening:** Filter is in HIGH-PASS mode (CW), removing lows. Combined with heavy distortion, the result is thin and harsh.
 
@@ -1350,7 +1274,7 @@ When working with distortion-first routing, different mistakes emerge than Routi
 
 ---
 
-### **Mistake 2: "Reverb sounds unnatural on the distorted signal, like it doesn't belong"**
+#### **Mistake 2: "Reverb sounds unnatural on the distorted signal, like it doesn't belong"**
 
 **What's happening:** You've created heavily-distorted character with heavy resonance, then applied heavy reverb. The reverb tries to soften aggression, creating conflict.
 
@@ -1365,7 +1289,7 @@ When working with distortion-first routing, different mistakes emerge than Routi
 
 ---
 
-### **Mistake 3: "The filter isn't doing anything obvious"**
+#### **Mistake 3: "The filter isn't doing anything obvious"**
 
 **What's happening:** Filter is at 12 o'clock (neutral), so adjustments are subtle. Without distortion to anchor it, changes are hard to hear.
 
@@ -1380,7 +1304,7 @@ When working with distortion-first routing, different mistakes emerge than Routi
 
 ---
 
-### **Mistake 4: "My distorted sound lost all definition after adding reverb"**
+#### **Mistake 4: "My distorted sound lost all definition after adding reverb"**
 
 **What's happening:** Reverb DRY/WET is full CW (100% wet), so the distorted/filtered signal is completely diffused by reverb.
 
@@ -1394,7 +1318,7 @@ When working with distortion-first routing, different mistakes emerge than Routi
 
 ---
 
-### **Mistake 5: "Delay repeats don't sound clear, they sound buried"**
+#### **Mistake 5: "Delay repeats don't sound clear, they sound buried"**
 
 **What's happening:** Delay TONE is dull (ROUTING + REPEATS full CCW), so the repeats of your distorted signal become even duller.
 
@@ -1409,7 +1333,7 @@ When working with distortion-first routing, different mistakes emerge than Routi
 
 ---
 
-### **Mistake 6: "Distortion and compression together are making everything too squeezed"**
+#### **Mistake 6: "Distortion and compression together are making everything too squeezed"**
 
 **What's happening:** DISTORTION is heavy + COMPRESSOR is heavy (full CW), compressing peaks of already-saturated signal.
 
@@ -1424,7 +1348,7 @@ When working with distortion-first routing, different mistakes emerge than Routi
 
 ---
 
-### **Mistake 7: "The sidechain ducking is making my reverb disappear completely"**
+#### **Mistake 7: "The sidechain ducking is making my reverb disappear completely"**
 
 **What's happening:** SIDECHAIN DEPTH is full CW (100% ducking) + Reverb DRY/WET is high, so when the trigger fires, the reverb (which comes last in the chain) ducks completely to silence.
 
@@ -1439,7 +1363,7 @@ When working with distortion-first routing, different mistakes emerge than Routi
 
 ---
 
-### **Mistake 8: "Adding resonance makes the sound too piercing/nasal"**
+#### **Mistake 8: "Adding resonance makes the sound too piercing/nasal"**
 
 **What's happening:** RESONANCE is at full CW, adding a resonant peak to already-distorted signal. Combined with distortion, it's aggressively nasal.
 
@@ -1454,7 +1378,7 @@ When working with distortion-first routing, different mistakes emerge than Routi
 
 ---
 
-### **Mistake 9: "Everything sounds too immediate and upfront, no space"**
+#### **Mistake 9: "Everything sounds too immediate and upfront, no space"**
 
 **What's happening:** Reverb DRY/WET is too low + Delay DRY/WET is too low, so spatial effects are barely present.
 
@@ -1469,7 +1393,7 @@ When working with distortion-first routing, different mistakes emerge than Routi
 
 ---
 
-### **Mistake 10: "Distortion sounds harsh when I turn it up, can't find a sweet spot"**
+#### **Mistake 10: "Distortion sounds harsh when I turn it up, can't find a sweet spot"**
 
 **What's happening:** DISTORTION is being turned up (CW) without adjusting GAIN or other upstream controls to compensate.
 
@@ -1484,7 +1408,7 @@ When working with distortion-first routing, different mistakes emerge than Routi
 
 ---
 
-## Pattern Recognition: Routing 2 Root Causes
+### **Pattern Recognition: Routing 2 Root Causes**
 
 These ten mistakes cluster around two key issues:
 
@@ -1502,5 +1426,85 @@ These ten mistakes cluster around two key issues:
 
 ---
 
+## What This Unlocks From Your Existing Gear
+
+GHOST doesn't exist in isolation. It connects to everything already in your setup. The routing flexibility and modulation control don't just transform GHOST—they reveal possibilities in gear you already own.
+
+### **Principle 1: External Sequencers → Modulation Sources**
+
+Your external sequencer (Elektron device, Torso Studio, Arturia, etc.) isn't just for triggering notes. Its CV outputs become GHOST modulation sources.
+
+**Workflow:**
+- Patch sequencer CV OUT → GHOST PRE-VCA CV or CUTOFF CV
+- Now your sequencer doesn't just trigger rhythm—it shapes GHOST's character in sync
+- Set sequencer to random or algorithmic CV, and GHOST responds with evolving processing
+- Result: Audio processing that *grooves* because it's synced to your musical timing, not arbitrary LFO rates
+
+**Why this matters:** Most people think sequencers are for note generation. Modular thinking says sequencers are *timing sources*. Their CV outputs can modulate anything. GHOST's three CV inputs make this obvious—you're not limited to one modulation type.
+
+### **Principle 2: Stomp Box Interface → GHOST Input Control**
+
+If you're processing guitar or bass through a Stomp box (or similar), GHOST becomes a final texture layer.
+
+**Workflow:**
+- Guitar/Bass → Stomp FX → GHOST IN
+- GHOST output → Amp/PA/Interface
+- Stomp controls initial character (distortion, modulation, ambience)
+- GHOST then processes that result through your chosen routing chain
+
+**Why this matters:** Each processor adds layers, but they're stacked predictably. GHOST's routing flexibility means you're not locked into "guitar distortion then spatial effects." You can choose whether spatial effects come first (creating atmospheric heavy textures) or last (adding space to already-shaped tone). The same Stomp output becomes completely different through different GHOST routings.
+
+### **Principle 3: External Triggers → Sidechain Ducking Sync**
+
+Any external gate/trigger becomes a dynamic control for GHOST's output.
+
+**Workflow:**
+- Drum machine gate output → GHOST SIDECHAIN TRIG IN
+- GHOST effect now ducks with your drum machine timing
+- Adjust SIDECHAIN DEPTH and release time to control how tight or loose the interaction feels
+- Result: GHOST processing that reacts to your drums, not sitting statically on top
+
+**Why this matters:** Sidechain ducking is how professional mixes glue together. Hearing GHOST respond dynamically to external triggers teaches you to think of modular processing as *reactive*, not just *additive*. The effect serves the music because it responds to timing.
+
+### **Principle 4: Modulation Density Through Layered CV Patching**
+
+When you patch multiple CV sources to GHOST simultaneously:
+- Sequencer modulating PRE-VCA
+- LFO modulating CUTOFF
+- Random modulating something else
+
+...GHOST's character evolves unpredictably. That unpredictability forces creative listening.
+
+**Workflow:**
+- Use one CV for rhythmic/musical modulation (sequencer)
+- Use another for organic/evolving modulation (slow LFO)
+- Use sidechain for reactive ducking (trigger)
+- Same audio input now becomes completely different depending on CV state combinations
+
+**Why this matters:** This teaches interconnection at scale. GHOST isn't just an effects processor anymore—it becomes a modulation-responsive system where audio + control signals create emergent textures. That principle applies to all modular synthesis.
+
+### **Real Workflow Example: Stomp + Sequencer Integration**
+
+You're processing bass through a Stomp with some distortion and modulation. You want that bass to become textural at certain points, then snap back to clarity.
+
+```
+Bass → Stomp (distortion ON, mod ON) → GHOST IN
+                                        ├─ SIDECHAIN TRIG IN ← Drum Machine Gate
+                                        ├─ PRE-VCA CV ← Sequencer Random CV
+                                        └─ CUTOFF CV ← Slow LFO
+GHOST OUT → Mixer Channel 1 (50% blend with Stomp dry out for reference)
+```
+
+What happens:
+1. **Stomp processes bass:** Adds saturation and movement
+2. **GHOST receives that:** Three routing choices determine if spatial effects come first (atmospheric) or last (colored)
+3. **Sequencer modulates PRE-VCA:** Bass processing intensity evolves musically, synced to your tempo
+4. **LFO modulates CUTOFF:** Independent tonal evolution, changing character constantly
+5. **Drum gate triggers sidechain:** When drums hit, GHOST ducks, sitting back in the mix
+6. **Result:** Bass that transforms throughout the song—heavy and atmospheric during intro, reactive and groovy during beats, spacious on breaks
+
+Without GHOST's routing flexibility and CV inputs, this workflow requires multiple modules and complex patching. GHOST provides it integrated—teaching you the principle while staying practical.
+
+---
 
 [Endorphin.es GHOST Module](https://www.endorphin.es/modules/p/ghost) - Official product page
