@@ -409,19 +409,134 @@
 
 ## Beginner "Gotchas" & Pro Tips
 
-### **⚠️ Common Mistakes:**
+### **⚠️ Common Mistakes & Learning Opportunities:**
 
 **"My filter sounds too clean/boring!"**
-- Input Level might be too low - the character comes from driving the circuit
-- **Solution:** Turn Input Level to 1-3 o'clock range for authentic Polyvoks grit
+**Problem:** Input Level is too low, so the filter is operating in its linear region without character
+**Why It Happens:** The Polyvoks character comes from driving the circuit into mild saturation. When Input Level is below ~10 o'clock, the K140UD12 ICs operate in their quiet, well-behaved region. The magic isn't a knob position—it's circuit behavior.
+**Deeper Learning:** This teaches how analog circuits have "operating regions." A VCA behaves linearly at low CV levels and then introduces character at higher levels. This same principle appears in every analog circuit: distortion creates character once you exceed the linear region. The Polyvoks reveals this principle in filter design.
+**Solutions:**
+- Turn Input Level to 1-3 o'clock range for authentic Polyvoks character
+- Listen carefully around 12-2 o'clock to find where your sound character changes
+- Try drumming the filter with audio-rate signals at higher input levels to hear saturation behavior
 
 **"I can't get the filter to self-oscillate!"**
-- Resonance needs to be at maximum, and cutoff in the right range
-- **Solution:** Resonance fully clockwise, then sweep cutoff until oscillation starts
+**Problem:** Resonance and cutoff aren't in the right relationship to sustain oscillation
+**Why It Happens:** Self-oscillation happens when positive feedback equals or exceeds the signal loss in the filter circuit. This is a resonant peak at maximum, but only at specific frequencies. If your cutoff is too low (below ~100Hz), the impedance relationships prevent sustained oscillation. Too high (above ~8kHz), and feedback can't sustain in the circuit.
+**Deeper Learning:** Self-oscillation teaches how analog circuits use feedback. Every oscillator is really just a filter with enough feedback to sustain ringing. Understanding when feedback reaches critical point teaches oscillator design principles that apply to VCOs, envelope generators with feedback, and any oscillating circuit. Resonance isn't an effect—it's feedback approaching instability.
+**Solutions:**
+- Set Resonance to maximum (5 o'clock fully clockwise)
+- Start with Cutoff around 2-3 o'clock and sweep slowly until you hear it start singing
+- If nothing happens, the cutoff might be too extreme—try middle ranges first
+- Once oscillating, you can sweep cutoff across the whole range while maintaining oscillation
 
 **"The resonance doesn't sound right!"**
-- Different modes (LP/BP) have very different resonant characteristics
-- **Solution:** Try both modes - BP often gives more dramatic resonance effects
+**Problem:** Resonance character is completely different between LP and BP modes
+**Why It Happens:** LP and BP use different filter architectures. LP emphasizes frequencies below cutoff (creates a peak right at cutoff). BP emphasizes only the frequencies near cutoff and rejects everything else (sharper peak). The feedback path and pole configuration are different in each mode.
+**Deeper Learning:** This teaches why filter topology matters. A Moog ladder filter, a state-variable filter (which has LP/BP/HP simultaneously), and a Polyvoks filter all emphasize resonance differently based on their circuit design. Understanding why LP and BP sound different teaches you why different filter designs sound different—it's not magic, it's topology.
+**Solutions:**
+- Try both modes—they're completely different resonance characters
+- BP mode gives sharper, more dramatic peaks (great for aggressive leads)
+- LP mode gives smoother peaks (better for bass character)
+- Mode switching is your biggest tonal tool after cutoff
+
+**"My CV inputs aren't responding, or they're inverted!"**
+**Problem:** Attenuverter position is misunderstood; the attenuation/inversion knob is at extreme positions
+**Why It Happens:** The CV1/CV2 attenuverters aren't just volume controls. They're bipolar scalers. Center (12 o'clock) = no modulation. Clockwise = positive modulation (cutoff rises as CV rises). Counter-clockwise = inverted modulation (cutoff falls as CV rises). If you're at full counter-clockwise, everything is inverted.
+**Deeper Learning:** Attenuverters teach polarity control throughout modular synthesis. This principle appears in every CV mixer, VCA, and control module. Understanding that CVs can be inverted (polarity reversed) teaches you how to create complementary modulation: one envelope opens the filter while another closes it. This is fundamental to complex synthesis.
+**Solutions:**
+- Start with attenuverters centered (12 o'clock = no modulation)
+- Slowly turn clockwise to add positive modulation
+- If modulation is backward, flip to counter-clockwise side
+- Experiment with both positive and inverted for different musical results
+
+**"The filter sounds muddy even at high cutoff positions."**
+**Problem:** Mode is set to BP (bandpass), which rejects high frequencies
+**Why It Happens:** Bandpass only passes frequencies near the cutoff point. If you want brightness, you need LP mode because LP passes all frequencies below cutoff. BP by design removes highs, creating nasal/hollow character but not brightness.
+**Deeper Learning:** This teaches how mode fundamentally changes what the filter does. BP removing everything outside its resonant peak teaches why Bandpass filters are useful for isolating specific frequencies (great in mastering, spectral analysis). But for brightness and presence, you need LP mode. Different tools for different jobs.
+**Solutions:**
+- Switch to LP (lowpass) mode to add high-frequency presence and brightness
+- Keep BP for hollow, nasal, or aggressive solo sounds where isolation matters
+- Use mode switching as a primary sound design tool, not just an afterthought
+
+**"I'm getting unexpected resonance peaks or weird frequency response."**
+**Problem:** The filter is resonating at unexpected frequencies because cutoff and resonance interoperate in non-obvious ways
+**Why It Happens:** Resonance peak location is defined by the cutoff frequency. But with high resonance, interaction between the two controls creates complex behavior. Small cutoff changes cause large resonance changes, especially near the self-oscillation point. Input signal complex waveforms interact with the resonant peak to create unexpected tones.
+**Deeper Learning:** This teaches how multi-parameter synthesis works. A single parameter (cutoff) doesn't work in isolation—it interacts with other parameters (resonance, input level, signal content). This is why synthesis feels alive: small changes cascade through the system. Understanding this teaches you why exploring modulation of multiple parameters simultaneously creates better sounds than tweaking one knob.
+**Solutions:**
+- Reduce resonance slightly if you're getting unexpected peaks
+- Move cutoff slowly and listen carefully to resonance peak location
+- Try different input waveforms (square vs. sawtooth) to hear how signal content affects filtering
+- Use this unpredictability as a feature: it creates character and variety
+
+**"My self-oscillating filter won't stay in tune when I modulate the cutoff."**
+**Problem:** Analog oscillation naturally drifts based on temperature, component tolerance, and modulation speed
+**Why It Happens:** The Polyvoks uses analog circuits, not digital oscillators. Analog circuits drift. When you're using the filter as an oscillator and modulating its pitch, small component heating, CV voltage ripple, and inherent analog variability cause pitch changes. This is normal analog behavior, not a defect.
+**Deeper Learning:** This teaches why analog and digital synthesis feel different. VCOs drift and have character. Digital oscillators track perfectly. The Polyvoks teaches you that "inaccuracy" in analog circuits is often the source of warmth and musicality. Classic synthesizers aren't prized because they're in-tune—they're prized because their drift and nonlinearity add life.
+**Solutions:**
+- Embrace analog imperfection as character (this is why people love old synthesizers)
+- If you need perfect pitch, patch the filter output to a quantizer
+- Use slow modulation speeds for more stable pitch
+- For live performance, this variability creates evolving, never-identical sounds
+
+**"Why doesn't the filter sound like acid bass when I feed it white noise?"**
+**Problem:** Expectation mismatch—acid bass requires the right oscillator, envelope, and filter combination
+**Why It Happens:** Classic acid bass uses sawtooth oscillator (rich harmonics) → VCA envelope (sharp attack/decay) → Filter with envelope modulation (creates brightness sweep). If you're using noise (all frequencies equally strong) or wrong envelope shape, the result won't be acid bass. The filter is just one part of the chain.
+**Deeper Learning:** This teaches synthesis as system thinking. A single module (the filter) doesn't create a sound alone. It's the oscillator source, the envelope shaping the amplitude, the filter shaping the spectrum, and the modulation creating the movement. You can't get acid bass from a filter alone—you need the whole chain working together. This teaches why synthesis is about relationships between modules, not individual controls.
+**Solutions:**
+- Use sawtooth or square oscillator (not noise) for acid bass foundation
+- Use fast envelope on the filter cutoff (attack ~0ms, decay ~100ms)
+- Set resonance to 1-2 o'clock (not maximum) for musical peak
+- Let the envelope modulate CV1 with strong cutoff change (patch from envelope generator)
+
+**"The filter is clicking when I switch modes during performance!"**
+**Problem:** This is actually fixed in the V2 (you shouldn't hear clicks)
+**Why It Happens:** In the original Polyvoks, switching filter topology (LP to BP) caused brief signal discontinuities. The V2 eliminates this with buffered switching architecture.
+**Deeper Learning:** This teaches circuit design evolution. The original Polyvoks was legendary but had real limitations. The V2 keeps the character while fixing operational issues. This teaches how gear improves: you preserve what makes something special while removing the genuine problems. Not all "vintage" behavior is desirable—some is just limitation.
+**Solutions:**
+- If you're getting clicks with a V2, check your patchbay for signal routing issues
+- V2 should switch modes silently—if not, contact Erica Synths
+- You can confidently perform real-time mode switching without worrying about artifacts
+
+**"I can't get the CV inputs to track keyboard 1V/Oct perfectly."**
+**Problem:** The filter's self-oscillation pitch doesn't follow keyboard tracking perfectly because analog circuits have natural variation
+**Why It Happens:** When using the filter as an oscillator, the K140UD12 ICs create excellent tracking across most of the range, but analog circuits never track perfectly across all registers. The input impedance, temperature, and component tolerance all affect tracking accuracy. This is why synth manufacturers use trimmer potentiometers—to calibrate best-fit tracking.
+**Deeper Learning:** This teaches why calibration exists in analog synthesis. The Polyvoks teaches you that "perfect" tracking is a moving target in analog circuits. Digital synths track perfectly. Analog synths have characteristic behavior. Understanding tracking error teaches you about impedance, component tolerance, and why some vintage synths sound "warm" (they're literally not tracking perfectly, creating slight detuning).
+**Solutions:**
+- For melodic self-oscillation, patch the filter output through a Quantizer if perfect tracking is critical
+- Accept minor pitch variation as part of analog character (this is often why analog sounds musical)
+- Calibrate best tracking in your most-used octave range
+- Use self-oscillation more for bass and pads where slight tuning variation adds character
+
+### **Pattern Recognition: Root Causes of Polyvoks Problems (The 90% Rule)**
+
+Most Polyvoks frustration comes from three fundamental misunderstandings:
+
+**1. Input Level Controls Character, Not Just Volume**
+Beginner expectation: "Input Level is a volume knob."
+Reality: Input Level determines circuit operating region. Low levels = linear, clean. Higher levels = saturation, character. The filter's legendary aggression isn't a design choice—it's driven circuit behavior.
+
+**Why It Matters:** When you understand that electronics have operating regions, you understand why saturation adds character, why some oscillators sound "full" only at high amplitude, why distortion units are useful. This principle applies to every analog circuit.
+
+**Teaching Across Modules:** Input level as character control appears in drums (DFAM's Boost input), effects (drives saturation), and any module accepting audio-rate CV. Polyvoks teaches this principle in filter context.
+
+**2. Mode Isn't an Afterthought—It's Your Primary Sound Design Tool**
+Beginner expectation: "LP is the 'normal' mode, BP is special."
+Reality: LP and BP are completely different filter architectures with different resonance behavior, pole configuration, and sonic character. They're not variations of the same thing—they're different tools.
+
+**Why It Matters:** Understanding mode teaches you why other filters (Steiner-Parker, Moog ladder, Korgasmatron) sound different. It's not marketing hype—different topologies create genuinely different sounds. Filters aren't generic—they're architectural choices.
+
+**Teaching Across Modules:** Mode selection teaches filter design fundamentals. When you understand LP vs. BP in Polyvoks, you understand why you'd choose a different filter for a different context. This is advanced sound design thinking.
+
+**3. The Polyvoks Teaches Analog Imperfection as a Feature**
+Beginner expectation: "Perfect tuning, clean operation, predictable behavior."
+Reality: Analog circuits drift, interact unpredictably, and create variation. This isn't failure—it's why analog synthesizers are prized.
+
+**Why It Matters:** The Polyvoks teaches you that "inaccuracy" is where character lives. Perfect digital control removes variation. Analog circuits keep variation, and that's musically valuable. Understanding this teaches you to embrace rather than fight analog behavior.
+
+**Teaching Across Modules:** Every analog module (VCOs, envelopes, LFOs) exhibits this drift and interaction. Polyvoks teaches you to listen for it, use it, and appreciate it. This transforms "problems" into features.
+
+---
 
 ### **🎵 Pro Tips:**
 
