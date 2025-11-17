@@ -24,6 +24,14 @@
 
 **What is Ochd?** Eight analogue triangle LFOs in 4HP, deliberately NOT synced, running from fast (top) to slow (bottom). Think of it as "organic drift" - musical phasing that breathes life into static patches.
 
+**Key Specifications:** (Verified against official Instruo documentation)
+- **Ochd Main Module:** 4HP width, 32mm depth, +12V: 80mA, -12V: 80mA
+- **Ochd Expander:** 4HP width, 32mm depth, +12V: 5mA, -12V: 5mA
+- **Architecture:** 8 free-running analogue triangle LFOs + modulation processing circuits
+- **CV Range:** Bipolar ±5V (10Vpp output), Full Wave Rectifiers 0-5V unipolar, DAC outputs 0-5V stepped
+- **Frequency Range:** LFO 1 up to 160Hz (fastest), LFO 8 down to 25-minute cycle (slowest)
+- **Center Rate Position:** LFO 1 set to 3-7Hz vibrato rate
+
 ### Your First Modulation (Ochd Alone)
 1. **Turn Rate knob** to 12 o'clock (vibrato speed)
 2. **Patch LFO 1 (top output)** → your filter cutoff
@@ -101,11 +109,14 @@
 - **Result:** Patch breathes and evolves organically without rigid timing
 
 **Alternative Module Options:**
-- **Instead of basic oscillator:** Try **Make Noise STO** for clean analog tone, **Mutable Plaits** for varied synthesis models, or **2HP OSC** for budget synthesis
-- **Budget alternatives:** **Doepfer A-111-4** provides quad VCO functionality, **AI Synthesis AI002** for DIY approach
-- **Different character:** **Make Noise DPO** for complex dual oscillation, **Intellijel Dixie II+** for classic analog character
-- **For filtering:** **Mutable Ripples** for liquid analog filtering, **2HP VCF** for compact filtering, **Make Noise MMG** for lowpass gate character
-- **VCA options:** **Intellijel Quad VCA** for precision control, **2HP VCA** for budget solution, **Make Noise ModDemix** for mixing and VCA combined
+- **Budget:** **Doepfer A-111-4** (quad VCO), **Mutable Plaits** (varied synthesis)
+- **Different character:** **Make Noise DPO** (complex dual oscillation), **Intellijel Dixie II+** (classic analog)
+- **Premium:** **Make Noise STO** (clean analog tone), **AI Synthesis AI002** (DIY approach)
+
+**Filter & VCA Alternatives:**
+- **Budget:** **2HP VCF** (compact filtering), **2HP VCA** (simple VCA)
+- **Different character:** **Make Noise MMG** (lowpass gate character), **Intellijel Quad VCA** (precision control)
+- **Premium:** **Mutable Ripples** (liquid analog filtering), **Make Noise ModDemix** (mixing + VCA)
 
 ### **Patch 2: Intermediate - Unipolar Modulation Magic (With Expander)**
 ```
@@ -158,11 +169,14 @@
 - **Result:** Complex modulation that's always musical and positive-going
 
 **Alternative Module Options:**
-- **Instead of basic effects processor:** Try **Mutable Clouds** for granular processing, **FX Aid Pro** for comprehensive effects, or **2HP Verb** for budget reverb
-- **Budget alternatives:** **Doepfer A-188-1** for analog delay, **AI Synthesis AI007** for DIY effects approach
-- **Different character:** **Make Noise Erbe-Verb** for unique reverb character, **Intellijel Rainmaker** for complex delay processing
-- **For modulation processing:** **Make Noise Maths** for complex function generation, **Function Junction** for comprehensive CV processing, **2HP Mix** for simple signal combining
-- **Oscillator alternatives:** **Intellijel Rubicon** for complex waveforms, **Make Noise DPO** for dual complex oscillation
+- **Budget:** **Doepfer A-188-1** (analog delay), **2HP Verb** (budget reverb)
+- **Different character:** **Make Noise Erbe-Verb** (unique reverb), **Intellijel Rainmaker** (complex delay)
+- **Premium:** **Mutable Clouds** (granular processing), **FX Aid Pro** (comprehensive effects)
+
+**Supporting Modules:**
+- **Budget:** **AI Synthesis AI007** (DIY effects), **2HP Mix** (simple signal combining)
+- **Different character:** **Make Noise Maths** (complex function generation), **Function Junction** (CV processing)
+- **Premium:** **Intellijel Rubicon** (complex waveforms), **Make Noise DPO** (dual oscillation)
 
 ### **Patch 3: Advanced - Rhythmic Chaos with Phase 2 Cross-Modulation**
 ```
@@ -292,11 +306,14 @@
 This represents **modular synthesis evolution**: from mechanical sequencing to **organic timing (ochd) → musical chaos (Wogglebug) → artificial intelligence (Marbles) → rhythmic complexity (RCD) → adaptive processing (Function Junction)**. The system becomes a **musical collaborator** that learns your preferences and suggests new directions.
 
 **Alternative Module Options:**
-- **For chaos generation:** **Turing Machine + Expanders** for binary sequences, **Music Thing Radio Music** for sample chaos, **Nonlinearcircuits modules** for varied chaos types
-- **Budget alternatives:** **2HP Rnd + 2HP S&H** for basic randomness, **Doepfer A-149-1** for quantized random, **AI Synthesis modules** for DIY approach
-- **For intelligent processing:** **ALM Pamela's New Workout** for algorithmic patterns, **Intellijel Metropolix** for probability sequencing
-- **Advanced integration:** **Expert Sleepers Disting mk4** for multi-algorithm processing, **Mutable Frames** for complex modulation mixing
-- **System alternatives:** **Hermod+** for comprehensive sequencing with modulation, **MetaModule** for infinite algorithm possibilities
+- **Budget:** **2HP Rnd + 2HP S&H** (basic randomness), **Doepfer A-149-1** (quantized random)
+- **Different character:** **Turing Machine + Expanders** (binary sequences), **Music Thing Radio Music** (sample chaos)
+- **Premium:** **ALM Pamela's New Workout** (algorithmic patterns), **Expert Sleepers Disting mk4** (multi-algorithm)
+
+**Advanced System Integration:**
+- **Budget:** **AI Synthesis modules** (DIY approach), **Nonlinearcircuits modules** (varied chaos)
+- **Different character:** **Intellijel Metropolix** (probability sequencing), **Mutable Frames** (complex modulation)
+- **Premium:** **Hermod+** (comprehensive sequencing), **MetaModule** (infinite algorithms)
 
 ---
 
@@ -343,23 +360,104 @@ This represents **modular synthesis evolution**: from mechanical sequencing to *
 
 ---
 
-## Beginner "Gotchas" & Pro Tips
+## Common Mistakes and How to Avoid Them
 
-### **⚠️ Common Mistakes:**
+### **"My modulation doesn't sync with my sequence"**
+**Problem:** LFO drift feels chaotic instead of musical
+**Why It Happens:** Ochd's LFOs are deliberately free-running and phase-shift relative to external clocks. They're not broken - they're designed this way. Each LFO runs at its own analog rate without digital sync, creating "organic drift" that evolves over time. Most users expect click-grid synchronization from their sequencer.
+**Solution:**
+- Embrace the organic phase relationship - this is ochd's core philosophy
+- If you need strict sync, patch a clock to the Rate CV input for global tempo locking
+- Use the drift as a feature: compositions that never repeat exactly the same way twice
 
-**"Why isn't my modulation in sync with my sequence?"**
-- The LFOs are deliberately NOT synced - this is the point! They're "tuned by ear" for musical relationships
-- **Solution:** Embrace the organic drift, or use a different LFO module if you need strict sync
+### **"My filter sounds sluggish or doesn't respond"**
+**Problem:** Filter cutoff modulation feels unresponsive or slow
+**Why It Happens:** Bipolar LFOs spend half their time in the negative voltage range. When patched directly to a filter with 0-5V CV range, negative voltages do nothing - they just sit at the bottom. You're only getting half the modulation range.
+**Solution:**
+- Use the Expander's Full Wave Rectifiers for unipolar positive modulation
+- Patch an attenuator between ochd and the filter to reduce swing
+- Mix two complementary LFOs (one inverted via offset module) to always stay positive
 
-**"The modulation is too extreme!"**
-- Ochd outputs ±5V (10Vpp) which is a lot for some parameters
-- **Solution:** Use attenuators, or mix with other signals to tame the movement
+### **"The modulation is too extreme!"**
+**Problem:** Everything modulates too much - parameters swing wildly
+**Why It Happens:** Ochd outputs 10Vpp (±5V). Many parameters expect 0-5V max. Patching directly causes extreme swings that sound more like a glitch than a feature.
+**Solution:**
+- Always use attenuators on the patch cable between ochd and target modules
+- Start with attenuator turned down to 25%, then slowly increase until musical
+- Mix ochd LFOs with other CV sources (offsets, fixed voltages) to scale the movement
 
-**"I can't get unipolar modulation!"** (Without Expander)
-- Ochd outputs are bipolar (positive and negative voltages)
-- **Solution:** Use offset modules, or get the Expander for built-in Full Wave Rectifiers
+### **"I can't get unipolar modulation (without Expander)"**
+**Problem:** I need modulation that only goes up (or down), not both ways
+**Why It Happens:** Ochd's 8 LFOs are intentionally bipolar triangle waves. Without the Expander, there's no built-in rectification.
+**Solution:**
+- Get the Expander (minimal additional HP, massive functionality gain)
+- Use a full-wave rectifier module (2HP Rect, Doepfer A-177-2, etc.)
+- Create unipolar using offset + attenuverter: patch an LFO through attenuverter set to invert, then through an offset that shifts it entirely positive
 
-### **🎵 Pro Tips:**
+### **"My pitch jumps around and won't stay in tune"**
+**Problem:** Modulated oscillator pitch drifts unpredictably
+**Why It Happens:** Ochd's analog circuits have temperature drift. This isn't a bug - it's normal analog behavior. Combined with unattenuated ±5V modulation, pitch swings can be extreme. Also, most oscillators have nonlinear pitch response curves.
+**Solution:**
+- Attenuate heavily when modulating 1V/octave pitch (often need only 10-20% attenuator)
+- Use Full Wave Rectifiers for unipolar modulation (always goes up, never down)
+- Patch slowly-changing LFOs (5, 6, 7, 8) for pitch modulation, not fast ones (1, 2)
+
+### **"I don't hear the modulation at all"**
+**Problem:** Patch seems dead - modulation has no audible effect
+**Why It Happens:** Either the Rate knob is turned all the way down (LFOs running at sub-audible speeds), the attenuator is fully counterclockwise (blocking signal), or the LFO output isn't actually connected.
+**Solution:**
+- Turn Rate knob to 12 o'clock and listen for obvious movement
+- Check that LFO cables are seated firmly in jacks
+- Watch the LEDs - they should flicker indicating LFO activity
+- Test with a visual feedback patch (modulate a VCA and listen to volume changes)
+
+### **"All my LFOs move at the same speed - where's the variety?"**
+**Problem:** Instead of 8 different speeds, they all seem to change at once
+**Why It Happens:** The Rate knob affects ALL 8 LFOs' speed simultaneously - that's by design. But they drift in and out of phase independently due to analog component tolerance. If you turn the Rate knob too fast, you won't hear the individual LFO relationships settle.
+**Solution:**
+- Turn Rate knob slowly and let it stabilize for 5+ seconds
+- Listen to just two LFOs (LFO 1 and LFO 8) to hear the speed difference
+- The variety comes from independent phase relationships, not independent speeds
+- Use the Expander's DAC outputs for pseudo-random variation
+
+### **"The Expander triggers fire randomly and I can't make patterns"**
+**Problem:** Cascading triggers from the Expander seem chaotic
+**Why It Happens:** The triggers cascade through normalled connections - they're designed to create polyrhythmic relationships, not predictable drum patterns. Without patching every jack, triggers layer together unpredictably.
+**Solution:**
+- Patch each trigger output individually to different drum modules
+- Leave the cascade system unplugged until you understand the relationships
+- Use only one trigger jack for simple rhythmic control
+- Combine Expander triggers with separate clock dividers for predictable sequencing
+
+### **"The feedback waveshaping doesn't work - just sounds like noise"**
+**Problem:** Patching LFO into Rate CV creates weird artifacts instead of smooth waveshapes
+**Why It Happens:** Feedback waveshaping is extremely sensitive to attenuverter position. Too much feedback = digital-sounding chaos. Too little = no effect. The sweet spot is narrow.
+**Solution:**
+- Start with attenuverter at minimum
+- Very slowly turn clockwise, listening for smooth waveform changes
+- The effect is most musical at 10-30% attenuverter position
+- Patch fast LFOs (1-4) into the feedback for musical results
+
+---
+
+## Pattern Recognition: Root Causes of Most Ochd Issues
+
+**Three core misunderstandings cause 90% of problems:**
+
+**1. Bipolar vs. Unipolar CV - Understanding What Half Your Modulation Does**
+Ochd outputs bipolar ±5V. Many synthesizer parameters only respond to 0-5V (unipolar). When you patch bipolar into unipolar, half the modulation range (negative voltage) does nothing. Users hear "weak" or "sluggish" modulation when they're really only using 50% of the available swing. The Expander solves this completely with Full Wave Rectifiers (convert to 0-5V, double frequency). Without the Expander, attenuators and offset modules are your tools.
+
+**2. Free-Running LFOs Are Not Broken - Organic Drift Is The Point**
+Ochd's LFOs run freely at their tuned rates and drift in/out of phase naturally. This is intentional design, not a limitation. Users expecting "locked" modulation that repeats identically every cycle will feel frustrated. Understanding that organic, never-exactly-repeating modulation is ochd's philosophical foundation changes everything. It's not that ochd can't sync (Rate CV input allows clock locking) - it's that it chooses not to by default. This is why it's called "organic."
+
+**3. Analog Circuits Are Voltage-Dependent - Attenuators Are Your Friend**
+Ochd outputs 10Vpp - a large voltage swing. Most modulation destinations expect much less. Unattenuated, ochd modulation is usually extreme. Attenuators aren't "reducing quality" - they're matching impedance and voltage levels for musical results. Learning to use attenuators skillfully (not just turning them down until it's quiet) separates beginner patches from sophisticated modulation systems. Start with attenuators on every patch cable between ochd and anything else.
+
+---
+
+## Advanced Techniques & Pro Tips
+
+### **🎵 Expert Usage Patterns:**
 
 **Track & Hold Magic:**
 - Patch a gate signal to CV input, turn attenuverter fully left
@@ -379,7 +477,7 @@ This represents **modular synthesis evolution**: from mechanical sequencing to *
 - Creates organic polyrhythms
 - **Phase 2 Chain:** Cascade into Marbles for intelligent rhythm processing
 
-**Phase 2 Modulation Matrix:**
+**Ochd Mastery Patterns:**
 - **Ochd LFOs 1-4** → Fast modulation (vibrato, tremolo, filter sweeps)
 - **Ochd LFOs 5-8** → Slow modulation (evolving textures, parameter drift)
 - **Expander Full Wave** → Unipolar modulation (pitch, filter cutoff)
@@ -396,7 +494,7 @@ This represents **modular synthesis evolution**: from mechanical sequencing to *
 
 ---
 
-## Why This Module Rocks
+## Why This Instrument Excels
 
 ### **The Philosophy:**
 DivKid wanted something to "keep patches organically drifting and moving" rather than rigid, synced modulation. Richard Devine called it "the most organic little modulator ever" - that says it all!
