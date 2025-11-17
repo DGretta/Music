@@ -1685,6 +1685,90 @@ These five mistakes cluster around three fundamental issues in filter-first rout
 
 **The interconnection teaching:** Filter-first routing reveals that *processor position determines not just what gets processed, but how much processing is possible*. Early processors establish foundations that later processors elaborate. Late processors must work gracefully on material that's already transformed. Understanding this teaches you to think of your entire signal chain as interconnected, where each stage's job depends on what came before and affects what comes after. It's not five independent processors—it's five stages of a single transformation system.
 
+---
+
+#### **Mistake 6: "My sidechain is making everything collapse" / "Compression is squeezing the life out of it"**
+
+**What's happening:** COMPRESSOR is set heavy (full CW) and SIDECHAIN is active with high DEPTH. The signal entering the compressor has already been filtered, delayed, reverbed, and distorted. That material is already dynamically reduced. Heavy compression then reduces it further. When the sidechain triggers, the entire heavily-processed chain ducks, creating near-silence or extreme collapse.
+
+**Why this happens:** In earlier routings, compressor works on fresher material with more dynamic range to work with. In Routing 3, the signal entering compression is already dense and processed. Heavy compression on already-dense material removes any sense of dynamics or movement. Sidechain ducking on top of that creates extreme effect—the chain completely disappears when triggered.
+
+**How to fix it:**
+- Use *light* compression (12 o'clock area), not heavy
+- Heavy compression on already-processed material is overkill. Light compression just glues the chain
+- Reduce SIDECHAIN DEPTH to 30-50% (noticeable dip, not complete collapse)
+- Or: Adjust sidechain RELEASE time (SIDECHAIN knob alone) so the dip recovers faster, creating groove instead of silence
+- Or: Disable sidechain entirely if you just want light glue compression
+
+**The principle:** Compressor and sidechain on heavily-processed material need restraint. You're not controlling dynamics anymore—you're managing the already-tamed result. This teaches that *compression doesn't add energy; it removes peaks*. On already-peaked-controlled material (filter + effects), it just removes what little dynamic life remains. Use it as glue, not as control.
+
+---
+
+#### **Mistake 7: "Band-Pass mode made everything disappear"**
+
+**What's happening:** You switched to BPF (Band-Pass Filter) mode by pressing the BPF/COMB button. BPF lets through *only* frequencies around your FREQUENCY knob setting, removing everything else. But in a filter-first routing on already-complex material, applying a narrow band-pass at the front of the chain isolates frequencies so aggressively that delay/reverb/distortion have almost nothing to work with.
+
+**Why this happens:** Band-Pass filter is extreme—it's not subtractive like LP/HP. It's isolating. When you apply BPF early in the chain, you're saying "keep only this narrow band, remove everything else." On a harmonically-rich source, that means you've removed 80-90% of the spectrum before it even reaches spatial processing. The result feels hollow or absent.
+
+**How to fix it:**
+- Use the default LP/HP isolator mode (not BPF) unless you specifically want extreme isolation
+- If you want band-pass character, use *moderate* FREQUENCY and RESONANCE in LP/HP mode instead. It's gentler
+- Or: Use BPF intentionally, but understand you're creating a tunnel-like tone. Set FREQUENCY to where you want emphasis, not where you want isolation
+- Or: If BPF is what you want, compensate by increasing spatial wet values (delay/reverb) to elaborate on the isolated band, creating fullness from limitation
+
+**The principle:** Filter TYPE determines not just character but *philosophy*. LP/HP is subtractive; BPF is isolating; Comb is resonant. In filter-first routing, your TYPE choice affects everything downstream. Choose intentionally. Band-Pass isn't wrong—it just requires you to design the patch around isolation rather than elaboration.
+
+---
+
+#### **Mistake 8: "My modulation causes dropouts or very unintended sounds"**
+
+**What's happening:** You're modulating the CUTOFF CV (filter frequency) with an LFO or sequencer, but either: the waveform is too harsh (square wave creating abrupt silence), the voltage is too high (modulation depth swings the filter to extremes), or the LFO speed is too fast (creating audible glitches). Because the filter is foundational, modulating it causes the entire chain to glitch or collapse.
+
+**Why this happens:** The filter is what everything else is built on. Modulating it isn't like modulating a later-stage parameter. You're changing the foundation. If that modulation is abrupt (square wave), extreme (full voltage swing), or too fast (faster than the delay/reverb can elaborately track), everything downstream gets disrupted. Clean foundation + chaotic modulation = chaotic result.
+
+**How to fix it:**
+- Use *smooth* waveforms (sine, triangle, smooth ramp) instead of harsh ones (square, pulse)
+- Reduce modulation DEPTH (use the CUTOFF CV attenuverter knob at less than full CW/CCW) so the filter modulation is gradual, not extreme
+- Slow down the LFO rate (modulation should move slowly enough that delay/reverb can track it)
+- Test: Start with sine wave LFO at slow rate (like 0.3 Hz) with moderate depth. Add complexity from there
+- Or: Accept that fast/harsh modulation on the filter creates glitches, and use those glitches intentionally (they're features, not bugs)
+
+**The principle:** Modulating a foundational processor requires finesse. You can modulate later-stage parameters aggressively because they're working on already-processed material. Modulating the filter means you're modulating the ground truth. Smooth, gentle, slow modulation works better because it allows downstream processors to track the changing foundation elegantly.
+
+---
+
+#### **Mistake 9: "Stacking leads to mud, everything sounds the same, no more dynamics, what happened to my notes"**
+
+**What's happening:** Multiple controls are at extreme positions simultaneously: Filter at extreme (full CCW removing all highs), Delay REPEATS at full CW (maximum feedback), Reverb DRY/WET at full CW (100% wet), Distortion at full CW (heavy saturation), Compression heavy, Sidechain high depth. Each extreme compounds the previous one. The result is an undifferentiated mush where individual notes lose definition and everything sounds the same.
+
+**Why this happens:** Each processing stage reduces clarity/definition in some way. Filter removes frequencies, delay diffuses timing, reverb diffuses space, distortion adds harmonics, compression removes peaks. When *all* of them are at extremes simultaneously, they stack into a single, uniform, processed blob. There's no contrast, no definition, no dynamics left.
+
+**How to fix it:**
+- Reduce extremes. Keep most controls at or near 12 o'clock (neutral)
+- Choose *one* area to push hard (maybe heavy distortion for aggression), leave others moderate
+- Or: Use a reference sound. Set Global DRY/WET to 50% so you hear both processed and unprocessed. Listen for where you're over-processing
+- Or: Work with one control at a time. Set everything else neutral, then adjust one parameter and listen. This reveals what each control actually does
+- Test: Reduce COMPRESSION, sidechain DEPTH, and Distortion to moderate. Suddenly notes become audible again
+
+**The principle:** Extreme settings don't stack well. They compound into undifferentiated mush because each extreme is fighting for dominance. Professional mixing uses *restraint*—maybe one control extreme, everything else moderate. This teaches that *more isn't louder or better; it's just more*. Three moderate settings create definition. Three extreme settings create collapse.
+
+---
+
+#### **Mistake 10: "My osc went from cool to noise, or mud, or indistinct"**
+
+**What's happening:** You patched a harmonically-rich oscillator (sawtooth, complex waveform) into GHOST's filter-first routing. The filter removes frequencies, the delay repeats what remains, reverb diffuses it, distortion colors it. Each stage removes or transforms harmonic content. By the time the signal reaches the output, the original oscillator character is unrecognizable—it's become noise (if highs were removed and lows pushed hard), mud (if all processing is wet and diffuse), or indistinct (if everything was compressed and distorted together).
+
+**Why this happens:** Complex waveforms contain many harmonics. A sawtooth is harmonically rich. When you apply aggressive filtering at the start of a filter-first chain, you remove specific harmonics. Delay elaborates what remains (but doesn't add back what was removed). Reverb diffuses it. Distortion adds new harmonics but doesn't recover the original architecture. The result is a different instrument entirely—not "a processed sawtooth," but "something new that came from a sawtooth."
+
+**How to fix it:**
+- Use the filter more *carefully*. Moderate FREQUENCY (not extreme CCW/CW). The goal is shaping, not removal
+- Use spatial effects more *judiciously*. Lower wet values so the original character survives elaboration
+- Or: Reduce spatial processing and increase distortion. Let the original harmonics survive to distortion, where new harmonics are *added* rather than removed
+- Or: Accept the transformation. Maybe the "indistinct" result is the sound you actually want—just be intentional about it
+- Test: Start with everything at 12 o'clock (neutral). Increase parameters one at a time. Notice when the oscillator stops sounding like an oscillator
+
+**The principle:** Filter-first routing transforms waveforms more aggressively than other routings because the filter operates on pristine, harmonically-rich material. Early frequency removal affects everything downstream—you can't add back harmonics that the filter removed. This teaches that *harmonic content is precious in a signal chain*. If you want to preserve your oscillator character, be gentle with early-stage filtering. If you want total transformation, go extreme—just understand the cost.
+
 GHOST doesn't exist in isolation. It connects to everything already in your setup. The routing flexibility and modulation control don't just transform GHOST—they reveal possibilities in gear you already own.
 
 ### **Principle 1: External Sequencers → Modulation Sources**
