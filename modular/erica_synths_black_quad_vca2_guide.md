@@ -56,11 +56,12 @@
 - **Pro tip:** Insert dummy cable to CV input to break normalling chain
 
 ### **3. LEVEL1/LEVEL2/LEVEL3/LEVEL4 - The Manual Level Controls**
-- **What they do:** 3-position switches for manual signal level adjustment
-- **Character:** Upper (gain 1), Middle (gain 0.5), Lower (audio off)
-- **Purpose:** Manual amplitude control independent of CV input
-- **Application:** Quick muting, level balancing, performance control
-- **Pro tip:** Use middle position for half-level signals, lower for muting
+- **What they do:** Continuous potentiometers for manual signal level adjustment on each channel
+- **Range:** Full counter-clockwise (0%) = channel off / muted, mid-position (50%) = gain 0.5, full clockwise (100%) = full gain (no attenuation)
+- **Character:** Smooth, continuous control with no detents - you can set any level between off and full
+- **Purpose:** Manual amplitude control independent of CV input, working alongside CV modulation
+- **Interaction:** Works with CV input for combined manual + modulation control
+- **Pro tip:** Full gain (CW) is the starting point - turn down from there for attenuation, all the way CCW to mute the channel
 
 ### **4. LIN/LOG Switches - The Response Curve Selectors**
 - **What they do:** Select between linear and logarithmic VCA response
@@ -70,13 +71,14 @@
 - **Pro tip:** Use LOG for audio VCAs, LIN for CV processing and precise control
 
 ### **5. OUT1/OUT2/OUT3/OUT4 - The Sequential Mixed Outputs**
-- **What they do:** VCA outputs with automatic sequential mixing
-- **Sequential mixing behavior:**
-  - **OUT4 only patched:** All four VCAs mixed together
-  - **OUT2 + OUT4 patched:** VCA1+VCA2 sum, VCA3+VCA4 sum
-  - **All outputs patched:** Four independent VCAs
-- **Flexibility:** Choose between mixing and independent operation
-- **Pro tip:** Sequential mixing eliminates need for external mixer in many setups
+- **What they do:** Four independent VCA outputs with automatic sequential mixing options
+- **The VCAs:** All four channels operate as independent voltage-controlled amplifiers - they're never cascading or dependent on each other
+- **Sequential mixing (output routing only):** The outputs can be configured for different mixing arrangements:
+  - **OUT4 only patched:** All four VCAs summed together to OUT4
+  - **OUT2 + OUT4 patched:** VCA1+VCA2 summed to OUT2, VCA3+VCA4 summed to OUT4
+  - **All four outputs patched:** Each VCA appears at its own output (no mixing)
+- **Important:** This sequential mixing is an output convenience feature - it doesn't affect how the VCAs work internally, they're always independent
+- **Pro tip:** Choose your patching strategy based on what mixing you need - use OUT4 alone for a mixed output, or patch all four for maximum control
 
 ### **6. Signal Level LEDs - The Visual Feedback**
 - **What they do:** Indicate signal activity on each VCA channel
