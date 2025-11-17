@@ -1889,6 +1889,90 @@ Key insight: In filter-first routing, the order is absolute. Filter comes first.
 
 ---
 
+### **Patch 4: Rhythmic Processing - Filter-First with Sidechain and Modulation (Advanced)**
+
+Build on Patch 3's foundational understanding. Add rhythmic control through sidechain ducking and evolving filter character through external modulation.
+
+**Setup:**
+```
+🔴 Audio │ 🔵 CV │ 🟡 Gate
+
+┌─AUDIO SOURCE─────────┐
+│    Output   ○────────┼──────────┐
+└──────────────────────┘          │
+┌─CLOCK/GATE─────────┐            │
+│    OUT      ○──────┼────────────┼──→ SIDECHAIN TRIG IN 🟡
+└─────────────────────┘            │
+┌─LFO/RANDOM─────────┐            │
+│    OUT      ○──────┼────────────┼──→ FREQUENCY CV 🔵
+└─────────────────────┘            │
+                              ┌────▼──┐
+                              │ GHOST │
+                              │VCF→FX→DIST│
+                              │(LED full) │
+                              └────┬──┘
+                                  │
+                              ┌────▼─────┐
+                              │ MIXER   │ or AUDIO OUT
+                              │ CH 1    │
+                              └─────────┘
+```
+
+**Routing:** VCF → FX → DIST (LED fully lit)
+
+**Controls - Aggressive Baseline:**
+- **Filter FREQUENCY:** 10 o'clock (warm-to-mid, establish dark foundation)
+- **Filter RESONANCE:** 12 o'clock (neutral, no peak)
+- **Delay TIME:** 9 o'clock (short repeats for rhythmic texture)
+- **Delay REPEATS:** 1 o'clock (moderate feedback)
+- **Delay DRY/WET:** 12 o'clock (balanced mix)
+- **Reverb TAIL:** 10 o'clock (short decay, keep it tight)
+- **Reverb DRY/WET:** 10 o'clock (minimal space, maintain punch)
+- **Distortion:** 1-2 o'clock (moderate aggression)
+- **Compressor:** 1 o'clock (light-to-moderate, maintain dynamics)
+- **Global DRY/WET:** 12 o'clock
+- **VOLUME/drive:** 12 o'clock
+
+**Sidechain Setup:**
+- **SIDECHAIN TRIG IN:** Patch external clock or gate output (kick drum, sequencer clock, etc.)
+- **SIDECHAIN knob (release time):** 12 o'clock (moderate recovery)
+- **SIDECHAIN DEPTH (ROUTING + SIDECHAIN knob):** 1-2 o'clock (30-50% depth—effect ducks noticeably but doesn't collapse)
+
+When the gate fires, the heavily-processed signal ducks, creating rhythmic space. The recovery time controls whether it feels tight or loose.
+
+**Modulation - Filter Evolution:**
+- **FREQUENCY CV:** Patch LFO or random modulation source
+  - **Pams New Workout:** Set to slow rate (~0.5-2 Hz), sine wave output
+  - **Ochd:** Use algorithmic or random walk output for unpredictable foundation shifts
+  - **Wogglebug:** Tap tempo or internal LFO for tempo-synced modulation
+
+The filter modulation changes the foundation in real time. As it moves, the sidechain ducking affects different filter positions, creating evolving rhythmic character.
+
+**Result:**
+Audio that transforms rhythmically: The sidechain ducks to the gate timing while the modulated filter constantly shifts the foundation. Distortion integrates the complete result, creating aggressive texture that breathes with the rhythm.
+
+**What You're Learning:**
+- **Sidechain on complex material:** Late-chain sidechain ducking affects the entire processed signal as a unit. The effect feels rhythmic, not just level-reducing
+- **Filter modulation on foundation:** Changing the foundation in real time creates unpredictable character. Each modulation source (algorithmic, random, tempo-synced) teaches different creative approaches
+- **Modulation + sidechain interaction:** Combining them creates multi-dimensional rhythmic evolution—the sidechain provides timing structure, the filter modulation provides timbral change
+
+**Alternative Options:**
+- **Budget Approach:** Single LFO + external gate (loses modulation source variety but teaches core principles)
+- **Different Character:** Elektron Analog Rytm with internal effects (digital algorithms and built-in modulation but fixed routing)
+- **Premium Option:** Expert Sleepers Disting or other multifunction module (more modulation options but loses GHOST's integrated simplicity)
+
+**Performance:**
+This patch requires active listening and real-time decision-making:
+- Let the gate trigger run; adjust SIDECHAIN DEPTH to find the right dip intensity
+- Adjust SIDECHAIN knob (release time) to control whether the recovery feels snappy or smooth
+- Watch how the filter modulation changes character—slow modulation for evolving tones, faster modulation for rhythmic texture
+- Manually sweep FREQUENCY while modulation and sidechain are running to add performance control
+- Adjust Distortion in real time to add/remove aggression as the sidechain ducks
+
+Key insight: Rhythmic processing in filter-first routing means modulating the foundation and managing the complete result dynamically. The sidechain controls timing; the filter modulation controls timbral evolution.
+
+---
+
 GHOST doesn't exist in isolation. It connects to everything already in your setup. The routing flexibility and modulation control don't just transform GHOST—they reveal possibilities in gear you already own.
 
 ### **Principle 1: External Sequencers → Modulation Sources**
