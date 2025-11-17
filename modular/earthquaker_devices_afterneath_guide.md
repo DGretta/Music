@@ -14,6 +14,22 @@
 
 ---
 
+## Quick Start: Get Your First Otherworldly Reverb Working in 5 Minutes
+
+![EarthQuaker Devices Afterneath](https://github.com/DGretta/Music/raw/main/modular/images/earthquaker_devices/afterneath/front_panel.jpg)  
+*EarthQuaker Devices Afterneath - Front panel showing signature Drag control, 9 modes, and extensive CV inputs*
+
+**What is Afterneath?** A 16HP digital reverb module that sounds like "a wizard in a cave" - featuring the unique **Drag** parameter that separates delay lines for stuttering, warped effects, plus 9 operational modes, extensive CV control, and self-oscillation capabilities.
+
+### Your First Wizard Spell
+1. **Connect audio input** - Patch audio source to Input jack, adjust Input knob for proper level
+2. **Set basic reverb** - Start with Reflect at 12 o'clock, Length at 2 o'clock, Mix at 1 o'clock
+3. **Engage the magic** - Slowly turn Drag knob while audio plays - witness the otherworldly warping
+4. **Select curve type** - Toggle between Linear (LIN) and Exponential (XPO) - XPO sounds more natural
+5. **Choose your realm** - Set Mode to position 1 (Unquantized) for smooth response
+
+---
+
 ## Why This Instrument Excels
 
 ### **The Philosophy:**
@@ -45,22 +61,6 @@ Afterneath proves that **effects can be instruments.** The Drag parameter isn't 
 
 ### **Historical Significance:**
 The Afterneath module represents a successful pedal-to-Eurorack translation that doesn't just reproduce the original—it expands the concept. It demonstrated that guitar effects companies understood modular synthesis deeply enough to create tools that teach synthesis principles, not just copy pedal functions.
-
----
-
-## Quick Start: Get Your First Otherworldly Reverb Working in 5 Minutes
-
-![EarthQuaker Devices Afterneath](https://github.com/DGretta/Music/raw/main/modular/images/earthquaker_devices/afterneath/front_panel.jpg)  
-*EarthQuaker Devices Afterneath - Front panel showing signature Drag control, 9 modes, and extensive CV inputs*
-
-**What is Afterneath?** A 16HP digital reverb module that sounds like "a wizard in a cave" - featuring the unique **Drag** parameter that separates delay lines for stuttering, warped effects, plus 9 operational modes, extensive CV control, and self-oscillation capabilities.
-
-### Your First Wizard Spell
-1. **Connect audio input** - Patch audio source to Input jack, adjust Input knob for proper level
-2. **Set basic reverb** - Start with Reflect at 12 o'clock, Length at 2 o'clock, Mix at 1 o'clock
-3. **Engage the magic** - Slowly turn Drag knob while audio plays - witness the otherworldly warping
-4. **Select curve type** - Toggle between Linear (LIN) and Exponential (XPO) - XPO sounds more natural
-5. **Choose your realm** - Set Mode to position 1 (Unquantized) for smooth response
 
 ---
 
