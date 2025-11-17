@@ -1769,6 +1769,126 @@ These five mistakes cluster around three fundamental issues in filter-first rout
 
 **The principle:** Filter-first routing transforms waveforms more aggressively than other routings because the filter operates on pristine, harmonically-rich material. Early frequency removal affects everything downstream—you can't add back harmonics that the filter removed. This teaches that *harmonic content is precious in a signal chain*. If you want to preserve your oscillator character, be gentle with early-stage filtering. If you want total transformation, go extreme—just understand the cost.
 
+---
+
+## Common Patch Approaches with This Routing
+
+**Approach 1: Filtered Evolution**
+- Filter shaped at mid-frequencies (establish foundation)
+- Delay + Reverb moderate-to-wet (elaborate the foundation)
+- Light distortion (add final character)
+- Slow LFO on filter (foundation evolves gradually)
+- Result: Tones that evolve as the filter moves, with distortion providing final integration
+
+**Approach 2: Maximum Density**
+- Filter in comb mode with resonance (create harmonic emphasis)
+- Delay high feedback, reverb heavy (maximum elaboration)
+- Heavy distortion (final saturation of dense material)
+- Sidechain from clock (complete chain reacts to tempo)
+- Result: Thick, complex tones that feel integrated rather than layered
+
+**Approach 3: Evolving Aggression**
+- Filter moving via LFO (foundation constantly changes)
+- Delay/Reverb creating texture on moving foundation
+- Distortion adding aggression to the evolution
+- Multiple modulation sources creating unpredictable character
+- Result: Sounds that transform continually, with distortion making the transformation aggressive
+
+---
+
+### **Patch 3: The Foundation - Filter-First Exploration (Basic)**
+
+Start here to understand filter-first routing without external modulation or hidden complexity.
+
+**Setup:**
+```
+🔴 Audio │ 🔵 CV │ 🟡 Gate
+
+┌─AUDIO SOURCE─────────┐
+│    Output   ○────────┼─────────┐
+└──────────────────────┘         │
+                                  │
+                              ┌───▼──┐
+                              │ GHOST │
+                              │VCF→FX→DIST│
+                              │(LED full) │
+                              └───┬──┘
+                                  │
+                              ┌───▼─────┐
+                              │ MIXER   │ or AUDIO OUT
+                              │ CH 1    │
+                              └─────────┘
+```
+
+**Routing:** VCF → FX → DIST (LED fully lit)
+
+**Controls - Everything at 12 o'clock First:**
+- **Filter FREQUENCY:** 12 o'clock (neutral, no filtering)
+- **Filter RESONANCE:** 12 o'clock
+- **Delay TIME:** 12 o'clock
+- **Delay REPEATS:** 12 o'clock
+- **Delay DRY/WET:** 12 o'clock
+- **Reverb TAIL:** 12 o'clock
+- **Reverb DRY/WET:** 12 o'clock
+- **Distortion:** 12 o'clock
+- **Compressor:** 12 o'clock
+- **Global DRY/WET:** 12 o'clock
+- **VOLUME/drive:** 12 o'clock
+
+This is your baseline. Everything neutral. Now explore in this order:
+
+**Step 1: Explore FREQUENCY (The Foundation)**
+- Turn FREQUENCY slowly CCW to 10 o'clock (warm, dark)
+- Listen to how your audio darkens
+- Turn back to 12 o'clock (neutral)
+- Turn CW to 3 o'clock (bright, thin)
+- Listen to how your audio brightens
+- Return to 12 o'clock
+
+What you learn: The filter at the START of the chain defines everything else. When you darken the filter, everything downstream works with dark material. When you brighten it, everything works with bright material. The filter is the foundation.
+
+**Step 2: Explore Spatial Effects (The Elaboration)**
+- With FREQUENCY at 12 o'clock, turn Delay DRY/WET slowly CW to 1 o'clock
+- Listen for delay repeats layering under your audio
+- Turn it back to 12 o'clock
+- Now turn Reverb DRY/WET slowly CW to 1 o'clock
+- Listen for reverb space around your audio
+- Return both to 12 o'clock
+
+What you learn: Delay and reverb take what the filter created and elaborate on it. They don't replace it—they build on it. The effect sits between the filter foundation and everything downstream.
+
+**Step 3: Explore DISTORTION (The Final Layer)**
+- With FREQUENCY and spatial effects at 12 o'clock, turn Distortion slowly CW to 1-2 o'clock
+- Listen to how the signal adds saturation
+- The distortion is processing a signal that's been filtered and spaced
+- Even moderate distortion feels integrated, not harsh
+- Return to 12 o'clock
+
+What you learn: Distortion here is the final layer. It's not stark because it's working on material that's already been shaped by filter and spatial processing. This is why filter-first routing creates "heavy" tones—everything compounds.
+
+**Result:**
+You've heard the core principle of Routing 3: Filter defines foundation → Spatial effects elaborate on it → Distortion integrates the complete result.
+
+**What You're Learning:**
+- **Filter as foundation, not decoration:** Early filter choices compound through everything downstream. You can't recover brightness you filtered out
+- **Spatial effects as elaboration:** Delay and reverb aren't generating new character—they're multiplying what the filter established
+- **Distortion as integration:** Late-chain distortion on already-processed material feels heavy and integrated, not aggressive and stark
+
+**Alternative Options:**
+- **Budget Approach:** Single delay module + reverb (teaches spatial layering but loses routing flexibility)
+- **Different Character:** Moog Mother-32 internal routing (fixed order, teaches similar principles with different algorithms)
+- **Premium Option:** Eventide Space (more advanced reverb algorithms, but GHOST's simplicity teaches the principle more clearly)
+
+**Performance:**
+Change one parameter at a time while your audio plays:
+- Sweep FREQUENCY slowly up and down to hear filter character
+- Adjust Delay/Reverb DRY/WET to hear elaboration layer
+- Turn Distortion up slowly to hear final integration
+
+Key insight: In filter-first routing, the order is absolute. Filter comes first. Everything else reacts to that choice.
+
+---
+
 GHOST doesn't exist in isolation. It connects to everything already in your setup. The routing flexibility and modulation control don't just transform GHOST—they reveal possibilities in gear you already own.
 
 ### **Principle 1: External Sequencers → Modulation Sources**
