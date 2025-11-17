@@ -21,6 +21,15 @@
 
 **What is Wasp SE?** A recreation of the legendary Wasp filter from the Electronic Dream Plant Wasp synthesizer - famous for its aggressive, biting character and wild self-oscillation. Unlike gentle filters, the Wasp SE is designed to bite, scream, and add serious attitude to your sounds.
 
+**Key Specifications:**
+- **Width:** 8HP
+- **Depth:** 30mm
+- **Power:** +12V: 30mA, -12V: 10mA, +5V: 0mA
+- **Architecture:** Aggressive ladder filter circuit with self-oscillation capability
+- **Cutoff Range:** 20Hz to 20kHz (full audio spectrum)
+- **Output:** Bipolar ±5V, tracks 1V/octave for self-oscillation
+- **Character:** Deliberately aggressive, emphasizing bite and character over transparency
+
 ### Your First Wasp Bite
 1. **Connect Audio Input** → patch an oscillator or audio source to the Wasp SE audio input
 2. **Connect Audio Output** → patch Wasp SE output to your VCA or mixer
@@ -114,11 +123,11 @@ The Wasp SE brings the character of classic British synth design into the modula
                    └──────────────┘
 ```
 
-| Connection | Cable Type | Notes |
-|------------|------------|-------|
-| Oscillator → Wasp Audio In | Audio (Red) | Rich sawtooth for filtering |
-| Envelope → Wasp Cutoff CV | CV (Blue) | Classic filter envelope |
-| Wasp Out → VCA Audio In | Audio (Red) | Filtered aggressive bass |
+| Connection | Cable Type | Purpose | Learning Objective |
+|------------|------------|---------|-------------------|
+| Oscillator → Wasp Audio In | Audio (Red) | **Rich harmonics for aggressive filtering** | **Experience ladder filter aggression** |
+| Envelope → Wasp Cutoff CV | CV (Blue) | **Classic filter modulation** | **Learn filter sweep dynamics** |
+| Wasp Out → VCA Audio In | Audio (Red) | **Filtered aggressive bass output** | **Understand Wasp character impact** |
 
 **Module Settings:**
 - **Oscillator:** Sawtooth wave for rich harmonics
@@ -126,6 +135,11 @@ The Wasp SE brings the character of classic British synth design into the modula
 - **Wasp Resonance:** 1 o'clock for moderate aggression
 - **Envelope:** Fast attack, medium decay, sustain, medium release
 - **Result:** Classic aggressive bass with Wasp bite
+
+**Alternative Module Options:**
+- **Budget:** **Doepfer A-121 VCF** (classic 2-pole), **2HP VCF** (compact)
+- **Different character:** **Make Noise Moogladder** (Moog filter), **Intellijel Morgasmatron** (stereo filter)
+- **Premium:** **Mordax Beads** (spectral filtering), **Expert Sleepers Disting mk4** (multi-algorithm)
 
 ### **Patch 2: Self-Oscillating Filter Lead**
 ```
@@ -143,11 +157,11 @@ The Wasp SE brings the character of classic British synth design into the modula
                    └──────────────┘
 ```
 
-| Connection | Cable Type | Notes |
-|------------|------------|-------|
-| Sequencer → Wasp Cutoff CV | CV (Blue) | Melodic control of self-oscillation |
-| LFO → Wasp Resonance CV | CV (Blue) | Dynamic resonance modulation |
-| Wasp Out → Effects | Audio (Red) | Pure sine wave self-oscillation |
+| Connection | Cable Type | Purpose | Learning Objective |
+|------------|------------|---------|-------------------|
+| Sequencer → Wasp Cutoff CV | CV (Blue) | **Melodic self-oscillation control** | **Experience filter as oscillator** |
+| LFO → Wasp Resonance CV | CV (Blue) | **Dynamic aggression modulation** | **Learn resonance sweep dynamics** |
+| Wasp Out → Effects | Audio (Red) | **Pure sine wave self-oscillation** | **Understand self-oscillation musicality** |
 
 **Module Settings:**
 - **Wasp Resonance:** 4 o'clock for strong self-oscillation
@@ -155,6 +169,11 @@ The Wasp SE brings the character of classic British synth design into the modula
 - **Sequencer:** Melodic CV sequence for filter "melody"
 - **LFO:** Slow rate for resonance sweeps
 - **Result:** Melodic sine wave lead with dynamic aggression
+
+**Alternative Module Options:**
+- **Budget:** **Doepfer A-111-2 VCO** (basic VCO), **2HP OSC** (compact oscillation)
+- **Different character:** **Make Noise STO** (complex analog), **Intellijel Rubicon** (complex waveforms)
+- **Premium:** **Mutable Plaits** (varied synthesis), **Expert Sleepers Disting mk4** (multi-algorithm)
 
 ### **Patch 3: Aggressive Drum Processing**
 ```
@@ -174,17 +193,22 @@ The Wasp SE brings the character of classic British synth design into the modula
                    └──────────────┘
 ```
 
-| Connection | Cable Type | Notes |
-|------------|------------|-------|
-| Drum Source → Wasp Audio In | Audio (Red) | Drum signal for processing |
-| Trigger → Wasp Cutoff CV | Gate (Yellow) | Trigger opens filter with drum hits |
-| Wasp Out → Drum Output | Audio (Red) | Aggressive, punchy drums |
+| Connection | Cable Type | Purpose | Learning Objective |
+|------------|------------|---------|-------------------|
+| Drum Source → Wasp Audio In | Audio (Red) | **Drum signal processing** | **Experience aggressive filter character** |
+| Trigger → Wasp Cutoff CV | Gate (Yellow) | **Gate-controlled filter sweep** | **Learn trigger-based modulation** |
+| Wasp Out → Drum Output | Audio (Red) | **Aggressive processed drums** | **Understand filter aggression impact** |
 
 **Module Settings:**
 - **Wasp Cutoff:** 2 o'clock for bright starting point
 - **Wasp Resonance:** 2 o'clock for aggressive character
 - **Drive:** High for saturation and punch
 - **Result:** Drums with serious bite, snap, and aggression
+
+**Alternative Module Options:**
+- **Budget:** **Doepfer A-121 VCF** (classic filter), **2HP VCF** (compact filtering)
+- **Different character:** **Make Noise Moogladder** (Moog character), **Intellijel Morgasmatron** (stereo filtering)
+- **Premium:** **Mordax Beads** (spectral processing), **Expert Sleepers Disting mk4** (multi-algorithm)
 
 ### **Patch 4: Data-Driven Filter Analysis**
 ```
@@ -518,7 +542,7 @@ This represents **complete aggressive filter mastery** - where probability-based
 
 ---
 
-## Why This Module Rocks
+## Why This Instrument Excels
 
 ### **The Philosophy:**
 **Aggressive character over polite filtering.** The Wasp SE doesn't try to be transparent or gentle - it celebrates the **bite, aggression, and character** that made the original Wasp filter legendary in aggressive electronic music.
