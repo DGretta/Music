@@ -20,6 +20,14 @@
 
 **What is the Black Polyvoks VCF?** An authentic emulation of the famous Russian Formanta Polivoks synthesizer filter, using original K140UD12 ICs. This is THE filter that defined the sound of acid house and techno - known for its crazy resonance sweeps, deep bass, and ability to self-oscillate into screaming leads.
 
+**Key Specifications:**
+- **Width:** 12 HP
+- **Depth:** 25 mm
+- **Power:** 11 mA @ +12V / 11 mA @ -12V
+- **Filter Architecture:** Dual filter modes (Lowpass 12dB/oct + Bandpass 6dB/oct) with original K140UD12 Russian ICs
+- **CV Inputs:** Dual attenuverters with ±10V range, independent cutoff modulation
+- **Key Feature:** Self-oscillation to sine wave oscillator, mode switching without clicks
+
 ### Your First Acid Sweep
 1. **Patch your oscillator** → **Audio In** (sawtooth wave works great)
 2. **Turn Input Level** to around 12 o'clock
