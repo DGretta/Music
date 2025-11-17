@@ -1426,6 +1426,157 @@ These ten mistakes cluster around two key issues:
 
 ---
 
+## Deep-Dive: VCF → FX → DIST (Routing 3)
+
+**This routing chain excels for:**
+- Creating the "heaviest distorted tones" (per manual)
+- Taking filtered signals and applying aggressive character at the end
+- Situations where you want the filter to define the foundation that distortion then colors
+- Building tones with maximum filtered aggression
+- Creating dense, complex character that feels heavy throughout
+- Sound design where filter clarity matters before distortion adds saturation
+
+**Signal flow:** Audio → Filter → Delay → Reverb → Distortion → Compressor/Sidechain → Output
+
+**Why this routing creates the "heaviest" sound:**
+
+This is counterintuitive at first. You'd think distortion first would create the heaviest tones. But filter-first creates heaviness *at scale*—the filter shapes your source into a specific character, then everything downstream processes that shaped material, then distortion colors the complete result. Unlike Routing 1 where distortion colors complexity, or Routing 2 where distortion comes early and clean, Routing 3 applies distortion to a signal that's already been extensively processed. The combination of filtered character + spatial processing + final distortion creates density and weight that the other routings don't achieve.
+
+The manual notes Routing 3 "will generally have the heaviest distorted tones." This isn't about the distortion amount—it's about what the distortion is processing. By the time your signal reaches the distortion stage in this routing, it's already shaped by filter, already modulated by delay/reverb. The distortion doesn't start fresh. It works on material that's already dense. That's what creates heaviness.
+
+What makes this chain powerful:
+
+### **Stage 1: Filtering (The Frequency Foundation)**
+
+Your signal enters here—the filter processes the clean, original material *first*. This means the filter establishes the fundamental frequency character before anything else touches the sound.
+
+**FREQUENCY knob:**
+- **Full CCW:** Silence (low-pass filter fully closed)
+- **12 o'clock:** Full high-pass (clean signal, no low-pass effect)
+- **Full CW:** Silence (high-pass filter fully closed)
+- **This control is bipolar:** Counterclockwise removes highs (warm, dark), clockwise removes lows (thin, bright), center is flat
+- **Unique to this routing:** The filter operates on pristine, unprocessed audio. Your filter choice fundamentally shapes what everything downstream processes. There's no prior stage softening or diffusing your signal.
+- **Result:** The filter's character is absolute—it defines the ground truth of what you're working with
+
+**RESONANCE knob:**
+- **12 o'clock (OFF):** Normal filtering
+- **CCW/CW:** Adds emphasis at filter frequency, creating resonant peak
+- **Full CW/CCW:** Self-oscillates at the filter frequency (becomes a tone generator)
+- **WHY matter here:** On clean material, resonance is stark and obvious. A resonant peak on unprocessed audio is very present. When this gets processed by delay/reverb/distortion downstream, that resonance compounds through the chain.
+- **Result:** Resonance in this position creates maximum presence that everything else amplifies
+
+**FILTER TYPE (BPF/COMB button):**
+- **Default LP/HP:** Isolator behavior, removes frequencies at extremes
+- **Band-Pass (BPF):** Lets through only frequencies around FREQUENCY knob setting, removes everything else
+- **Comb (ROUTING + BPF/COMB):** Resonator that emphasizes harmonics
+- **WHY choices matter:** Different filter types fundamentally shape what enters the rest of the chain. LP/HP is subtractive and general-purpose; BPF is isolating and creates tunnel-like tone; Comb is resonant and creates harmonic emphasis that everything downstream amplifies
+
+**VCF CV (with attenuverter CUTOFF CV knob):**
+- **Full CCW:** CV has no effect
+- **12 o'clock:** CV adds to FREQUENCY knob setting
+- **Full CW:** CV inverts (adds in opposite direction)
+- **WHY:** Lets external modulation reshape the filtered foundation in real time. LFO modulation of filter frequency on clean audio creates moving, evolving baseline that everything else processes
+
+**The interconnection insight:** The filter here is the architect of the entire signal character. Unlike Routing 1 & 2 where the filter is a later-stage sculptor, here the filter is the foundation. Everything that happens afterward—delay, reverb, distortion—is processing something the filter has already defined. This teaches a fundamental principle: the earlier a processor sits in the chain, the more foundational its role.
+
+### **Stage 2: Spatial Effects (FX - Processing Filtered Signal)**
+
+After the filter establishes the frequency foundation, spatial effects process what the filter created.
+
+**DELAY SECTION:**
+- **TIME/DIV knob:** Sets delay time from short audio-rate repeats (CCW) to longer echoes (CW)
+- **REPEATS/Feedback:** Controls how many times the signal repeats. More feedback = thicker delay texture built on filtered foundation
+- **DRY/WET:** How much delayed signal vs. clean signal. High values mean the filtered character gets extensively repeated
+- **TONE (ROUTING + REPEATS):** Adjusts brightness of the delayed repeats (working on filtered material)
+- **WHY here:** The filter has already defined frequency character. Delay now takes that filtered foundation and multiplies it, creating rhythmic density. The delay isn't establishing anything—it's elaborating on what the filter created
+- **Result:** Rhythmic texture built on a solid filtered foundation
+
+**REVERB SECTION:**
+- **DRY/WET:** How much reverb vs. clean. Full wet means the filtered signal gets extensively spaced
+- **TAIL:** Decay time. Longer tail = more diffusion of the filtered character
+- **PRE-DELAY (ROUTING + TAIL):** Separates the filtered original from the reverb wash
+- **WHY here:** Reverb takes the delay-processed, filtered foundation and adds spatial dimension. The reverb is working on something already complex (filtered + delayed)
+- **Result:** Spatial layering built on filtered + delayed material
+
+**The interconnection insight:** By placing spatial effects in the middle of the chain (after filter, before distortion), they process the filtered foundation but that processing itself becomes the input to the final stage. This teaches how middle-stage processors compound: they take what came before and transform it for what comes after. They're not isolated—they're links in a chain where each output becomes the next input.
+
+### **Stage 3: Distortion (The Final Colorer)**
+
+After filter and spatial effects have established and elaborated the character, distortion applies saturation to the complete result.
+
+**DISTORTION knob:**
+- **Full CCW:** No distortion, filtered/delayed/reverbed signal passes through clean
+- **12 o'clock:** Moderate saturation, musical coloring
+- **Full CW:** Heavy distortion, aggressive saturation
+- **The key:** The distortion is processing material that's already been filtered, delayed, and reverbed. It's not coloring clean audio (like Routing 2) and it's not coloring just reverbed material (like Routing 1). It's applying saturation to the complete processed result
+- **Result:** Dense, heavy saturation that feels integrated rather than imposed
+
+**GAIN (ROUTING + TONE/GAIN):**
+- **Full CCW:** Signal at original level
+- **CW:** Boosts signal into distortion, creating more aggressive saturation
+- **WHY separate:** Lets you control how much of the processed material enters the distortion stage. This is powerful here because the "material" entering distortion is already complex
+
+**BITRATE REDUCER (ROUTING + DISTORTION knob, FW V3.0):**
+- **Full CCW:** 24-bit clean
+- **CW:** Reduces bit depth, creating lo-fi character applied to the filtered/delayed/reverbed signal
+- **WHY this routing:** Lo-fi effects on extensively processed material create interesting degradation that feels integrated rather than raw
+
+**The interconnection insight:** Distortion in this position is the final integration stage. Everything that came before—filter, delay, reverb—is now colored by saturation. This teaches that *the last processor has the final word on character*. In Routing 1, distortion is mid-chain and colors spatial processing. In Routing 2, distortion is early and gets shaped downstream. Here, distortion is final and its saturation is the ultimate layer, creating maximum integration.
+
+### **Stage 4: Dynamics Control (Compressor + Sidechain)**
+
+After all processing—filtering, spatial effects, distortion—dynamics tools manage the final output.
+
+**COMPRESSOR knob:**
+- **Full CCW:** No compression, signal passes through
+- **12 o'clock:** Light compression
+- **Full CW:** Heavy compression
+- **WHY here:** The compressor catches peaks from the complete chain. In this routing, you're managing the dynamics of something that's already been filtered, delayed, reverbed, *and* distorted. The compressor is the final glue
+
+**SIDECHAIN DUCKING:**
+- **SIDECHAIN TRIG IN jack:** External trigger source
+- **HOW IT WORKS:** When trigger fires, signal volume ducks, then returns over release time
+- **Unique to this routing:** Sidechain ducking affects the final, completely-processed signal. In Routing 1, it affects spatial effects. In Routing 2, it affects spatial effects. Here it affects distorted signal, creating heavy dynamics
+- **Result:** Complete processing chain ducks as a unit, creating rhythmic density control
+
+**The interconnection insight:** The compressor and sidechain sit outside the main processing chain. They're management tools. In all three routings, they serve this role, but what they're managing is different. Here they're managing the result of complete processing.
+
+### **How This Chain Works Together**
+
+The beauty of VCF → FX → DIST routing:
+
+1. **Filter layer** establishes frequency foundation (defines what gets processed)
+2. **Spatial layer** elaborates on that foundation (delay/reverb create density)
+3. **Distortion layer** applies final character (saturation to complete result)
+4. **Dynamics layer** manages the output (compression, sidechain ducking)
+
+Each stage receives what the previous stage creates and transforms it. By the time you reach distortion, the signal has been through three processing stages. The distortion isn't stark—it's the final layer on an already-rich signal.
+
+### **Common Patch Approaches with This Routing**
+
+**Approach 1: Filtered Evolution**
+- Filter shaped at mid-frequencies (establish foundation)
+- Delay + Reverb moderate-to-wet (elaborate the foundation)
+- Light distortion (add final character)
+- Slow LFO on filter (foundation evolves gradually)
+- Result: Tones that evolve as the filter moves, with distortion providing final integration
+
+**Approach 2: Maximum Density**
+- Filter in comb mode with resonance (create harmonic emphasis)
+- Delay high feedback, reverb heavy (maximum elaboration)
+- Heavy distortion (final saturation of dense material)
+- Sidechain from clock (complete chain reacts to tempo)
+- Result: Thick, complex tones that feel integrated rather than layered
+
+**Approach 3: Evolving Aggression**
+- Filter moving via LFO (foundation constantly changes)
+- Delay/Reverb creating texture on moving foundation
+- Distortion adding aggression to the evolution
+- Multiple modulation sources creating unpredictable character
+- Result: Sounds that transform continually, with distortion making the transformation aggressive
+
+---
+
 ## What This Unlocks From Your Existing Gear
 
 GHOST doesn't exist in isolation. It connects to everything already in your setup. The routing flexibility and modulation control don't just transform GHOST—they reveal possibilities in gear you already own.
