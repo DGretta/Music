@@ -251,8 +251,7 @@ The Wasp SE brings the character of classic British synth design into the modula
 
 **Data-Driven Filter Analysis Integration:**
 
-| Module Integration | Signal Flow | Purpose | Phase 2 Synergy |
-|-------------------|-------------|---------|------------------|
+| Module Integration | Signal Flow | Purpose | Advanced Synergy |
 | **Oscillator → Data Input A** | Complex audio | **Real-time analysis** | **Data provides visual feedback of audio content before filtering** |
 | **Data RMS → Wasp Cutoff** | Analysis CV | **Content-responsive filtering** | **RMS level automatically adjusts filter cutoff based on audio intensity** |
 | **Data Peak → Wasp Resonance** | Peak detection | **Dynamic aggression** | **Peak detection drives filter aggression based on audio transients** |
@@ -312,8 +311,7 @@ The Wasp SE brings the character of classic British synth design into the modula
 
 **Probabilistic Filter Evolution Integration:**
 
-| Module Integration | Signal Flow | Purpose | Phase 2 Synergy |
-|-------------------|-------------|---------|------------------|
+| Module Integration | Signal Flow | Purpose | Advanced Synergy |
 | **Marbles X1 → Wasp Cutoff** | Probability CV | **Evolving filter frequency** | **Probability patterns create naturally evolving filter cutoff changes** |
 | **Marbles X2 → Wasp Resonance** | Probability CV | **Dynamic aggression** | **Correlated probability controls filter aggression with musical relationships** |
 | **Marbles X3 → Wasp Drive** | Probability CV | **Evolving saturation** | **Probability-based drive changes create dynamic filter character evolution** |
@@ -462,7 +460,7 @@ This represents **complete aggressive filter mastery** - where probability-based
 - **Cre8audio Function Junction:** Logic operations provide complex filter parameter relationships and decision making for multi-parameter control
 - **Make Noise Wogglebug:** Chaotic modulation creates unpredictable filter evolution with controlled chaos enhancing aggressive character
 - **Squarp Hermod+:** Multi-track sequencing provides musical framework for sophisticated filter sequence control
-- **Cross-Phase 2 Integration:** Combine analytical, probabilistic, and chaotic approaches for sophisticated aggressive filter ecosystems
+- **Cross-Advanced Integration:** Combine analytical, probabilistic, and chaotic approaches for sophisticated aggressive filter ecosystems
 
 ### **Perfect Partners for Beginners:**
 - **Oscillators:** Rich harmonic sources (sawtooth, square) that benefit from aggressive filtering
@@ -618,7 +616,7 @@ This module preserves the sound of the legendary **Electronic Dream Plant Wasp s
 
 ---
 
-**Bottom Line:** Wasp SE isn't just a filter - it's an **aggressive character processor** that transforms polite sounds into biting, screaming, characterful audio through classic ladder filter algorithms and wild self-oscillation. Every patch teaches you something new about how aggressive filtering really works. As the **aggressive character brain of Phase 2 ecosystems**, it transforms probabilistic patterns, analytical control, and logic processing into unified aggressive filter evolution.
+**Bottom Line:** Wasp SE isn't just a filter - it's an **aggressive character processor** that transforms polite sounds into biting, screaming, characterful audio through classic ladder filter algorithms and wild self-oscillation. Every patch teaches you something new about how aggressive filtering really works. As the **aggressive character brain of advanced ecosystems**, it transforms probabilistic patterns, analytical control, and logic processing into unified aggressive filter evolution.
 
 ---
 
