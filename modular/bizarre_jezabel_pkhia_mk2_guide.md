@@ -721,42 +721,135 @@ When you master pre-filter VCA architecture, stereo width creation through proce
 ## Pairs Well With
 
 ### **Multi-Function Module Synergies (Expressive Filter Systems):**
-- **Cre8audio Cellz:** Touch sequencer + performance interface → Pkhia for expressive stereo filter control with human touch
-- **Squarp Hermod+:** Multi-track sequencer + quantizer → Pkhia for musical stereo filter sequences with precise timing
-- **Make Noise Maths:** Function generation + mathematical processing → Pkhia for enhanced expressive filter relationships
-- **16n Faderbank:** Multi-channel CV control → Pkhia for multi-parameter stereo filter performance control
-- **Tetrapad:** Pressure-sensitive control → Pkhia for pressure-responsive expressive stereo filtering
-- **Cross-Multi-Function Integration:** Pkhia serves as boutique analog filter core for complete expressive performance systems
+- **Cre8audio Cellz:** Touch sequencer + performance interface for expressive stereo filter control
+  - **Alternative (Budget):** Tetrapad (pressure-sensitive), QuNexus keyboard (expressive input)
+  - **Alternative (Different character):** 16n Faderbank (multi-slider), Joystick (XY control)
+  - **Alternative (Premium):** Monome Arc (rotary encoders), Linnstrument (expressive grid)
+
+- **Squarp Hermod+:** Multi-track sequencer + quantizer for musical stereo filter sequences
+  - **Alternative (Budget):** Beatstep Pro (sequencer), Cre8audio Grids (rhythm)
+  - **Alternative (Different character):** Bloom (fractal sequencer), OP-Z (mobile sequencer)
+  - **Alternative (Premium):** Elektron Analog Rytm (complete sequencer), Metronome (advanced sequencing)
+
+- **Make Noise Maths:** Function generation + mathematical processing for enhanced expressive filter relationships
+  - **Alternative (Budget):** Befaco Rampage (dual slope), Frap Tools 321 (three-stage)
+  - **Alternative (Different character):** Mutable Stages (envelope sequencing), Expert Sleepers Disting (multi-function)
+  - **Alternative (Premium):** Joranalogue Contour 1 (advanced single), Erica Synths Black Quad EG (four-channel)
+
+- **16n Faderbank:** Multi-channel CV control for multi-parameter stereo filter performance
+  - **Alternative (Budget):** Manual pot panel (simple), Doepfer A-149 (manual CV)
+  - **Alternative (Different character):** Tetrapad (pressure), Joystick (XY)
+  - **Alternative (Premium):** Monome Arc (rotary), Expert Sleepers Disting (multi-control)
+
+- **Tetrapad:** Pressure-sensitive control for pressure-responsive expressive stereo filtering
+  - **Alternative (Budget):** Tastiera (keyboard control), QuNexus (simplified)
+  - **Alternative (Different character):** 16n Faderbank (slider-based), Joystick (XY joystick)
+  - **Alternative (Premium):** Linnstrument (expressive grid), Monome Arc (rotary encoders)
 
 ### **Perfect Partners for Beginners:**
 - **LFOs (Batumi, Ochd):** Essential for creating filter movement and stereo sweeps
+  - **Budget:** 2HP LFO, Erica Synths Pico LFO
+  - **Different character:** Xaoc Devices Batumi (complex), DivKid Ochd (advanced)
+  - **Premium:** Make Noise Wogglebug (chaotic), Mutable Instruments Tides (complex modulation)
+
 - **Envelope Generators (Maths, Function):** Dynamic stereo filter control for synthesis voices
+  - **Budget:** 2HP ADSR, Erica Synths Pico ADR
+  - **Different character:** Befaco Rampage (dual function), Frap Tools 321 (three-stage)
+  - **Premium:** Intellijel Quadrax (four-channel), Joranalogue Contour 1 (advanced)
+
 - **VCAs (Veils, 2HP VCA):** Control dynamics before or after stereo filtering
+  - **Budget:** 2HP VCA, Erica Synths Pico VCA
+  - **Different character:** Expert Sleepers Veils (quad), Intellijel uVCA (compact)
+  - **Premium:** Mutable Instruments Veils, Make Noise QPAS (resonant VCA)
+
 - **Mixers:** Blend different filter outputs (LP, BP, HP) for complex frequency shaping
+  - **Budget:** Doepfer A-138, 2HP Mixup
+  - **Different character:** Performance Mixer (summing), Intellijel Mixup (compact)
+  - **Premium:** Mutable Instruments Veils (with VCA), Expert Sleepers Disting (multi-function)
 
 ### **Next-Level Combinations:**
 - **Oscillators (any analog VCO):** Classic subtractive synthesis with boutique analog stereo filtering
+  - **Budget:** Doepfer A-110-1, Erica Synths Pico OSC
+  - **Different character:** Make Noise Richter Wogglebug, Mutable Instruments Braids (complex)
+  - **Premium:** Intellijel Dixie II+, Noise Engineering Loquelic Iteritas Percido
+
 - **Attenuverters:** Fine-control the CV amounts for subtle stereo modulation
+  - **Budget:** 2HP Atten, Doepfer A-183-2
+  - **Different character:** Cre8audio Offset+, Intellijel Triatt
+  - **Premium:** Expert Sleepers Disting (multi-function), Joranalogue Compare 2
+
 - **Sample & Hold:** Create stepped filter sweeps and randomized stereo cutoffs
+  - **Budget:** 2HP Rnd, Doepfer A-148
+  - **Different character:** Mutable Instruments Kinks (logic), Noise Engineering Loquelic Iteritas (sample)
+  - **Premium:** Make Noise Maths (with S&H), Intellijel Metropolix (sequencer with S&H)
+
 - **Multiple/Splitters:** Route single sources to both channels for parallel stereo processing
+  - **Budget:** Doepfer A-180, 2HP Mult
+  - **Different character:** Cre8audio Branches, Intellijel Triatt (with mult)
+  - **Premium:** Expert Sleepers Disting (multi-function), Make Noise Maths (buffered mult)
 
 ### **Advanced Stereo Integration:**
 - **Sequencers:** Automate stereo cutoff frequencies for rhythmic filter patterns
+  - **Budget:** Beatstep, Cre8audio Grids
+  - **Different character:** Bloom (fractal), Cre8audio Cellz (touch)
+  - **Premium:** Squarp Hermod+ (multi-track), Elektron Analog Rytm (complete)
+
 - **Complex modulation (Marbles):** Random and correlated stereo filter movements
+  - **Budget:** Mutable Instruments Marbles, 2HP Rnd
+  - **Different character:** Turing Machine (sequencer), Wogglebug (chaotic)
+  - **Premium:** Make Noise Marbles (original), Expert Sleepers Disting (multi-function)
+
 - **Other filters:** Chain multiple filters for steep roll-offs or complex stereo responses
+  - **Budget:** Doepfer A-121-2, Erica Synths Pico Lowgate
+  - **Different character:** Intellijel Polaris (digital), Mutable Stages (multi-mode)
+  - **Premium:** Erica Synths Black Polivoks, Make Noise QMMG (4-pole)
+
 - **Effects processors:** Filter before reverb/delay for different spatial treatments
+  - **Budget:** 2HP Reverb, Erica Synths Pico FX
+  - **Different character:** Mutable Rings (resonator), Make Noise Erbe-Verb
+  - **Premium:** Expert Sleepers Disting (multi-effect), Meris Ottostat
 
 ### **Essential Performance Partners:**
 - **Touch interfaces (Cellz, Tetrapad):** Real-time expressive control of stereo filter parameters
+  - **Budget:** QuNexus (keyboard), Tastiera (simple touch)
+  - **Different character:** 16n Faderbank (sliders), Joystick (XY)
+  - **Premium:** Linnstrument (expressive grid), Monome Arc (rotary)
+
 - **Performance controllers (16n, QuNexus):** Multi-parameter control for live stereo filter performance
+  - **Budget:** Manual pot panel, Doepfer A-149 (manual)
+  - **Different character:** Expression pedal (foot), Breath controller (expressive)
+  - **Premium:** Tetrapad (pressure), Monome Arc (multi-parameter)
+
 - **Expression pedals:** Foot control for hands-free stereo filter expression during performance
+  - **Budget:** Boss FV-500L (simple pedal), DIY expression pedal
+  - **Different character:** Sustainpedal, Ribbon controller (continuous)
+  - **Premium:** Moog CP-251 (complete control), Elektron Analog Four (integrated)
+
 - **MIDI controllers:** External control from DAW or hardware for integrated stereo filter automation
+  - **Budget:** nanoKEY, Keystep
+  - **Different character:** AKAI MPK, Native Instruments Maschine
+  - **Premium:** Elektron Analog Rytm (master), Squarp Hermod+ (MIDI in)
 
 ### **Advanced System Integration:**
 - **Complete expressive workstations:** Pkhia + multi-function modules create complete performance filter systems
+  - **Budget approach:** Hermod+ + Cellz + Pkhia (entry-level expressive system)
+  - **Different character:** Bloom + Tetrapad + Pkhia (fractal + pressure control)
+  - **Premium approach:** Complete expressive ecosystem (see Patch 7: Expert)
+
 - **Boutique analog chains:** European analog modules create warm, musical stereo processing chains
+  - **Budget:** Pkhia + Doepfer filters (European character at lower cost)
+  - **Different character:** Pkhia + Intellijel (digital + analog hybrid)
+  - **Premium:** Pkhia + Erica Synths Black series (premium European chain)
+
 - **Hybrid digital/analog systems:** Digital control with analog warmth for best of both worlds
+  - **Budget:** Squarp Hermod+ (digital sequencer) + Pkhia (analog filter)
+  - **Different character:** Elektron Analog Rytm (digital engine) + Pkhia (analog stereo)
+  - **Premium:** Complete DAW control + Pkhia boutique analog character
+
 - **Cross-system integration:** Pkhia integrates with other synthesis systems while maintaining boutique character
+  - **Budget:** Basic modular system + Pkhia as stereo filter core
+  - **Different character:** Eurorack + Pkhia + external effects (hybrid approach)
+  - **Premium:** Integrated studio system with Pkhia as creative centerpiece
 
 ---
 
