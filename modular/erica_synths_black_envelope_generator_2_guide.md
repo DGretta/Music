@@ -30,6 +30,34 @@
 
 ---
 
+## Why This Instrument Excels
+
+### **The Practical Problem It Solves:**
+Most trigger-only sequencers can't generate full ADSR envelopes - they only output triggers (short pulses). The Black EG2 solves this by converting triggers into gates of adjustable length, enabling full ADSR envelope generation from any trigger source.
+
+### **The Innovation:**
+- **Internal gate generator:** Converts trigger inputs into gate signals (0-3.7 seconds adjustable)
+- **Retriggering capability:** Envelope can restart during active gate for complex rhythmic patterns
+- **LOOP mode:** Continuously cycles full ADSR rather than just Attack-Decay
+- **Flexible timing:** Gate length modulation via CV for dynamic envelope control
+- **Simple operation:** Works with any trigger source without requiring gate sequencers
+
+### **The Practical Benefits:**
+- **Trigger compatibility:** Transforms trigger-only sequencers into full ADSR sources
+- **Flexible timing control:** Gate length adjustable from milliseconds to seconds
+- **Sophisticated patterns:** Retriggering enables complex rhythmic envelope behaviors
+- **System efficiency:** One module solves the trigger-to-ADSR problem across systems
+- **CV automation:** Gate length responds to external modulation for dynamic timing
+
+### **Perfect For:**
+- **Trigger-based systems:** Converting simple trigger patterns to envelope control
+- **Complex timing patterns:** Retriggering and variable gate length for rhythmic envelopes
+- **Modular sequencers:** Any sequencer lacking native gate generation capabilities
+- **Performance systems:** Real-time gate length adjustment during playback
+- **Integration:** System coordination where envelope timing needs to evolve
+
+---
+
 ## Essential Parameters (The Envelope Controls)
 
 ### **1. A/D/S/R Knobs - The Envelope Shape**
@@ -263,9 +291,65 @@
 
 ---
 
-## Pairs Well With
+## Common Mistakes & Pro Tips
 
-### **Advanced Module Integration (Modulation & CV Sources):**
+### **⚠️ Common Mistakes:**
+
+**"The internal gate generator isn't doing anything - I'm not getting ADSR!"**
+- **Why:** The GATE ON switch must be enabled. Without it switched ON, the internal gate generator is disabled and the module only responds to external GATE input
+- **Solution:** (1) Check GATE ON switch position - must be in ON position, (2) verify trigger is reaching the TRIGGER input, (3) adjust G. LENGTH knob to a moderate position (12 o'clock) to confirm gate is being generated
+- **Key understanding:** Internal gate generator is optional - enable it deliberately when you want trigger-to-ADSR conversion
+
+**"I have both TRIGGER and GATE inputs patched but nothing works correctly!"**
+- **Why:** TRIGGER and GATE inputs can conflict. When internal gate is ON, triggers control gate timing. When external GATE is also patched, they interact unpredictably. The module expects one or the other, not both simultaneously
+- **Solution:** (1) Use either TRIGGER (with internal gate ON) OR external GATE input, not both, (2) if you need both, use a gate sequencer instead of the internal gate, or (3) understand the interaction: external GATE overrides internal gate timing when both are present
+- **Key understanding:** Choose your gate source - internal or external, not both
+
+**"My envelope is only attack-decay, not full ADSR!"**
+- **Why:** Sustain level (S knob) might be at zero. Also, Release stage only occurs when gate ends - if gate is too short, you won't hear release. Finally, if LOOP mode is OFF and gate ends during Decay, you skip Sustain and Release entirely
+- **Solution:** (1) Turn S knob clockwise to audible level (try 3 o'clock), (2) increase G. LENGTH to longer gate (try 2 o'clock) to allow Sustain and Release to be heard, (3) verify LOOP/SINGLE switch is in appropriate position for your needs
+- **Key understanding:** ADSR requires timing - sustain needs a gate, release needs gate to end
+
+**"Gate length CV modulation isn't working - the LENGTH CV input seems inactive!"**
+- **Why:** LENGTH CV works by ADDING to the G. LENGTH knob position. If the knob is already at maximum, additional CV can't increase the gate further. Additionally, some CV sources may have very small voltage ranges that don't move the gate length noticeably
+- **Solution:** (1) Set G. LENGTH knob to midrange position (12 o'clock) rather than minimum or maximum, (2) verify CV source is outputting voltage in the 0-5V range, (3) use a slow LFO first (easier to hear changes than fast modulation), (4) patch a known-good CV source (like a sequencer CV output) to verify the input is working
+- **Key understanding:** CV adds to knob position - start from the middle, not the extremes
+
+**"I don't hear any difference between LOOP and SINGLE modes!"**
+- **Why:** The difference is subtle when using short gate lengths. In SINGLE mode, one trigger produces one envelope. In LOOP mode, the full ADSR cycles repeatedly while gate is high. You need moderately long gates to hear the difference - short triggers make both modes sound similar
+- **Solution:** (1) Set G. LENGTH to 2 o'clock (moderate/long gate), (2) trigger once and listen to the complete envelope cycle, (3) switch between LOOP and SINGLE while trigger is held - you'll hear LOOP continue cycling ADSR while SINGLE stops after one cycle, (4) use a keyboard or long gate source to really hear the difference
+- **Key understanding:** LOOP mode creates continuous ADSR cycling - you need time to hear multiple cycles
+
+**"I'm using retriggering but the envelope isn't restarting on new triggers!"**
+- **Why:** Retriggering only works if a gate is already active - you can't retrigger during the Release stage of a completed envelope. If your gate length is too short, the envelope completes before the next trigger arrives, preventing retriggering
+- **Solution:** (1) Increase G. LENGTH to overlap triggers (try 1.5-2 o'clock), (2) send faster triggers that arrive during the active envelope, (3) use external GATE input for long sustained gates that can be retriggered, (4) test with a steady clock source first before complex trigger patterns
+- **Key understanding:** Retriggering requires an active gate - the new trigger must arrive while the previous envelope is still playing
+
+**"Output level seems weak compared to other envelope generators!"**
+- **Why:** The EG2 outputs 0-10V like all standard envelopes, but perception depends on what you're patching it into. If your destination module expects hotter signals or has attenuation on its CV inputs, the envelope will seem weak. Additionally, sustain level setting affects the maximum output voltage
+- **Solution:** (1) Verify S knob is set high enough (try 3-4 o'clock for full output), (2) check destination module's CV input level expectations, (3) use a multimeter to verify the actual output voltage (should be 0-10V), (4) compare to a known envelope generator at the same settings to verify behavior
+- **Key understanding:** EG2 outputs standard 0-10V envelope - perception of "weak" usually indicates sustain setting or destination expectations
+
+### **🎵 Pro Tips:**
+
+**Gate Length Starting Point:**
+Begin with G. LENGTH at 12 o'clock (moderate) as your baseline. Adjust up for longer sustain time, down for percussive quick envelopes.
+
+**Retriggering Patterns:**
+Fast clock divisions into TRIGGER input create complex rhythmic envelope patterns. Try 16th note divisions first before experimenting with syncopated trigger patterns.
+
+**Sustain Expectations:**
+Remember that Sustain is a level, not a time - it holds at that voltage until the gate ends. Set S knob to your desired hold level, not expecting it to control duration.
+
+**External Gate for Long Control:**
+When you need precise, long gates (like from a pad synthesizer), use the external GATE input rather than relying on internal gate length.
+
+**Testing Gate Length Changes:**
+Always set G. LENGTH first, then patch the module, then test. If you change G. LENGTH while a trigger is incoming, you might not see the effect clearly.
+
+---
+
+## Pairs Well With
 • **DivKid Ochd & Expander:** Natural gate length automation creates organic envelope timing - multiple LFO outputs enable complex multi-parameter envelope modulation
 • **Make Noise Wogglebug:** Chaotic gate length control creates unpredictable but musical envelope timing variations
 • **Mutable Marbles:** Adaptive trigger generation provides evolving retrigger patterns that respond to musical context
