@@ -1577,7 +1577,113 @@ Each stage receives what the previous stage creates and transforms it. By the ti
 
 ---
 
-## What This Unlocks From Your Existing Gear
+### **Common Mistakes with VCF → FX → DIST Routing**
+
+When working with filter-first routing, specific patterns emerge. Filter-first changes how everything else behaves downstream. Understanding why these happen transforms them from frustrations into teachable moments about how processor position affects the entire chain.
+
+#### **Mistake 1: "Everything is too filtered/dark, I can't get brightness"**
+
+**What's happening:** The FREQUENCY knob is set to low-pass (CCW, removing highs). Because the filter comes *first* in this routing, it removes brightness before delay, reverb, or distortion ever touch the signal. Everything downstream processes a dark, warm signal. There's no way to recover brightness later in the chain.
+
+**Why this happens:** In Routing 1 or 2, you could apply the filter later and compensate earlier. In filter-first routing, your filter choice is *the foundation*. An overly warm foundation makes everything downstream warm. No amount of distortion or reverb can undo a foundational frequency choice.
+
+**How to fix it:**
+- Move FREQUENCY toward center (12 o'clock) or CW (high-pass mode) to preserve/brighten highs before everything else processes the signal
+- Use RESONANCE sparingly—resonance on a warm foundation creates even more darkness before elaboration happens
+- Or: Accept the warm character and design the patch around it (use it intentionally as a foundation choice, not accidentally)
+- Try delay/reverb with brighter TONE (ROUTING + REPEATS CW) to add some shimmer—but remember, the filter's darkness is still the base
+
+**The principle:** Filter-first routing teaches that *early choices compound*. Your filter doesn't just shape tone—it defines the foundation that every downstream processor elaborates on. Change it early, or accept it throughout. There's no recovering from a foundational choice with later processing.
+
+---
+
+#### **Mistake 2: "The reverb/delay doesn't seem to do much"**
+
+**What's happening:** Delay DRY/WET and Reverb DRY/WET are too low (mostly dry). But because the filter has already defined a specific character, adding subtle spatial effects doesn't feel significant—you're elaborating on a strong foundation, not adding to empty space.
+
+**Why this happens:** In Routing 1, spatial effects are the first thing, so their presence is obvious. In this routing, they come after the filter has established character. Subtle spatial effects feel invisible because they're working on something already defined. You need more wet signal to notice the elaboration.
+
+**How to fix it:**
+- Increase Delay DRY/WET to 40-60% (spatial elaboration becomes audible)
+- Increase Reverb DRY/WET to 40-50% (adds noticeable space)
+- Or: Make dramatic changes to delay TIME or reverb TAIL to feel the difference
+- Test: Set one to full dry (0%) and one to full wet (100%), listen to the difference. Then dial back from wet to find the sweet spot
+
+**The principle:** Spatial effects in filter-first routing are *elaboration on foundation*, not generation of space. They need higher wet values to feel present because they're working on material already shaped by the filter. This teaches that *processor position determines how much presence you need*—the same effect amount feels different depending on what it's processing.
+
+---
+
+#### **Mistake 3: "Adding distortion just makes everything muddy"**
+
+**What's happening:** DISTORTION is set to full CW (heavy saturation), but the signal entering distortion has already been filtered, delayed, and reverbed. That's complex, diffuse material. Heavy distortion on complex material doesn't create aggression—it muddies and thickens.
+
+**Why this happens:** In Routing 2, distortion comes early and is stark/clear. Here, distortion is the *final layer* on material that's already been heavily processed. A lot of saturation on already-soft material just makes mud. You need restraint.
+
+**How to fix it:**
+- Use *moderate* distortion (12-1 o'clock), not heavy (full CW)
+- Think of distortion here as integration, not aggression. Light saturation glues the filter+FX character together
+- Or: Reduce spatial effects wet values so distortion has cleaner material to work on
+- Or: Use light distortion with high GAIN (ROUTING + TONE/GAIN CW) instead of heavy distortion with low gain—you get character without muddiness
+
+**The principle:** Late-chain distortion on complex material requires finesse. Distortion-first feels aggressive. Distortion-last must integrate. This teaches that *the same processor behaves completely differently depending on what it's processing*. Distortion on clean material is stark. Distortion on filtered+spatial material must be gentle.
+
+---
+
+#### **Mistake 4: "The filter resonance is too extreme/piercing"**
+
+**What's happening:** RESONANCE is at full CW, creating a strong resonant peak in the filter. But because this resonance is *at the start of the chain*, it gets elaborated by delay, reverb, and distortion. The peak compounds through three stages of processing. What feels like a 50% resonance boost becomes extreme after delay repeats it, reverb spaces it, and distortion colors it.
+
+**Why this happens:** Resonance at the start of the chain isn't just a tonal choice—it's a foundational emphasis. Every downstream processor elaborates that emphasized frequency. Three stages of elaboration = resonance that feels piercing instead of present.
+
+**How to fix it:**
+- Use *moderate* resonance (12-1 o'clock), not extreme
+- Remember: Your resonance gets elaborated by downstream processors. What feels right at the source feels extreme at the output
+- Test: Set resonance to extreme, then reduce it by 50% (to about 12 o'clock). Listen how much presence remains even at lower resonance
+- Or: Keep high resonance but reduce spatial effect wet values (less elaboration = less exaggerated resonance)
+
+**The principle:** Filter-first routing teaches that *early processing compounds through the chain*. A moderate choice upstream becomes extreme downstream. This is why the manual describes filter-first as creating the "heaviest tones"—not because of heavy processing, but because every moderate choice elaborates into something dense through three downstream stages.
+
+---
+
+#### **Mistake 5: "I can't get punchy tones, everything sounds diffuse"**
+
+**What's happening:** Delay and Reverb are set to high wet values (you wanted elaboration), so every sound through the chain is diffused by spatial processing *before* it reaches distortion. Distortion then adds saturation to already-diffuse material. Result: punchy becomes soft, defined becomes blurry, attack becomes washed out.
+
+**Why this happens:** In Routing 2, you could have distortion create punch. In Routing 3, spatial effects come before distortion. High spatial wet + any distortion = softness, not punch. The spatial processing removes the transient clarity that distortion could have shaped into punch.
+
+**How to fix it:**
+- Reduce spatial effect wet values (especially delay/reverb DRY/WET) to 20-40% so transients pass through relatively clean to distortion
+- Increase DISTORTION to compensate for softer spatial effects—use distortion to create punch where spatial effects removed it
+- Or: Use shorter delay TIME and shorter reverb TAIL (less spatial diffusion, more transient preservation)
+- Or: Accept diffuse character and design patches around it (ambient/textural, not punchy/rhythmic)
+
+**The principle:** Spatial effects in the middle of the chain soften transients before later processing. If you want punch in filter-first routing, you must either reduce spatial wet values to preserve transients, or use distortion deliberately to create punch on the diffuse material. This teaches that *processor position determines what character you can achieve*. Some routings naturally punch; some naturally diffuse. You work with the routing's strengths, not against them.
+
+---
+
+### **Pattern Recognition: Routing 3 Root Causes**
+
+These five mistakes cluster around three fundamental issues in filter-first routing:
+
+**1. Filter as Foundation, Not Optional** (Mistakes 1, 4)
+- Filter comes first. Its choices compound through everything downstream
+- An overly dark filter creates darkness throughout (Mistake 1)
+- A resonant filter creates emphasis that elaborates to extremes (Mistake 4)
+- Solution: Treat filter as architectural choice, not parameter adjustment. Moderate choices work better because they elaborate well
+
+**2. Spatial Effects as Elaboration, Not Generation** (Mistakes 2, 5)
+- Delay and reverb in the middle of the chain elaborate on what the filter created
+- Subtle elaboration feels invisible (Mistake 2)
+- Heavy elaboration before distortion removes punch (Mistake 5)
+- Solution: Match spatial wet values to your goal. Want elaboration? High wet. Want punch? Low wet
+
+**3. Late-Chain Distortion Requires Finesse on Complex Material** (Mistake 3)
+- By the time signal reaches distortion, it's been filtered, delayed, reverbed
+- That material is already complex and diffuse
+- Heavy distortion on complexity creates mud, not aggression (Mistake 3)
+- Solution: Use distortion for integration and glue, not aggression. Light saturation works better
+
+**The interconnection teaching:** Filter-first routing reveals that *processor position determines not just what gets processed, but how much processing is possible*. Early processors establish foundations that later processors elaborate. Late processors must work gracefully on material that's already transformed. Understanding this teaches you to think of your entire signal chain as interconnected, where each stage's job depends on what came before and affects what comes after. It's not five independent processors—it's five stages of a single transformation system.
 
 GHOST doesn't exist in isolation. It connects to everything already in your setup. The routing flexibility and modulation control don't just transform GHOST—they reveal possibilities in gear you already own.
 
