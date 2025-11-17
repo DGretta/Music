@@ -52,17 +52,20 @@
 - **What it does:** Controls speed of ALL 8 LFOs simultaneously
 - **Musical result:** From 160Hz (audio rate) down to 25-minute cycles
 - **Sweet spot:** 12 o'clock = vibrato/tremolo speeds (3-7Hz)
+- **Interconnection Teaching:** The Rate knob demonstrates a fundamental principle that appears everywhere in analog synthesis - the relationship between timing and frequency. When you understand how ochd's Rate knob controls eight parallel oscillators at fixed ratios, you understand how envelope generators work (ADSR shares one clock), how clock dividers create polyrhythms, and why LFO relationships matter across modules. This is RC time constant behavior - resistor-capacitor networks that appear in filters (frequency selection), envelopes (timing control), and oscillators (pitch generation). Ochd's Rate knob teaches the same physics underlying all analog timing in synthesis.
 
 ### **2. CV Input + Attenuverter (Ochd)**
 - **What it does:** External control over Rate, can also create waveshaping
 - **Musical result:** Positive CV = faster LFOs, Negative CV = stalls/holds LFOs
 - **Pro tip:** Patch an LFO output back into CV input for feedback waveshaping!
+- **Interconnection Teaching:** The attenuverter teaches voltage control fundamentals that define modular synthesis - controlling both amplitude (how much signal) and polarity (signal direction). This principle appears in every CV utility: mixers scale voltages, offsets shift them, attenuators reduce them. The feedback waveshaping capability reveals how analog circuits transform signals through interaction - the same principle powers waveshapers, distortion circuits, and all nonlinear processing. Understanding ochd's feedback teaches why Maths creates complex envelopes, why oscillators interact musically, and how signal interaction creates relationships rather than simple addition.
 
 ### **3. Expander Sections (If you have the Expander)**
 - **Section 1:** Full Wave Rectifiers - unipolar, double-speed versions of LFOs 1,3,5,7
 - **Section 2:** Min/Max Logic - combines LFOs 2+3 and 6+7 for complex shapes
 - **Section 3:** Cascading Triggers - rhythmic triggers from the left-side LFOs
 - **Section 4:** 4-Bit DACs - stepped random voltages ("slow noise")
+- **Interconnection Teaching:** The Expander transforms simple signals through mathematical operations. Full Wave Rectification appears in precision rectifier modules and audio interfaces. Min/Max logic is Boolean operations - the same circuits power logic modules and sequencers. DACs are the inverse of ADCs found in samplers and audio interfaces. Understanding these operations teaches how ALL signal processing works: take simple signals, apply mathematical transformations, create complexity. Every sophisticated synthesis system follows this pattern: minimize source count, maximize processing sophistication.
 
 ---
 
@@ -98,9 +101,10 @@
 - **Oscillator:** Basic waveform, FM amount around 10 o'clock
 
 **Learning Objectives:**
-- Experience the 8 different speeds of Ochd's LFOs
-- Understand how organic drift creates musical movement
-- Learn the relationship between LFO position and speed
+- Experience the 8 different speeds of Ochd's LFOs and understand RC time constant behavior that appears in all analog circuits
+- Learn how organic drift (phase shifting without sync) creates musical relationships - understand this principle applies to polyrhythms, sequencer timing, and all oscillator interactions
+- Understand the relationship between LFO position and speed - this principle appears in clock dividers, rhythm generators, and every hierarchical modulation system
+- Connect analog oscillator behavior to broader synthesis: phase relationships appear in filters (frequency selection), envelopes (timing control), and oscillators (pitch generation)
 
 **Visual Feedback:**
 - **LFO 1:** Rapid oscillation, visible as fast LED flicker
@@ -151,16 +155,13 @@
 - **Effects:** Start with short delay, moderate filter cutoff
 
 **Learning Objectives:**
-- Master the difference between bipolar (±5V) and unipolar (0-5V) modulation
-- Understand Full Wave Rectification as a modulation tool
-- Experience stepped random voltages from DACs
-- Learn Min/Max logic operations on LFOs
+- Master bipolar vs. unipolar CV distinction - this is fundamental across all synthesis from audio interfaces to precision rectifiers
+- Understand Full Wave Rectification as mathematical signal transformation - this principle appears in audio interfaces, precision rectifiers, and any system needing one-directional signals
+- Experience stepped random voltages from DACs and understand how digital-to-analog conversion principles work - the inverse appears in ADCs in samplers and audio interfaces
+- Learn Min/Max logic as Boolean operations - these same circuits power logic modules, probability-based sequencers, and decision-making systems throughout modular synthesis
+- Understand why unipolar modulation is musically superior for certain parameters: pitch always goes up, filters always open, creating predictable behavior that transfers to any CV destination
 
-**Advanced Techniques:**
-- **Unipolar advantages:** Pitch modulation that always goes "up," filters that only "open"
-- **DAC "slow noise":** Stepped random perfect for non-musical parameters
-- **Logic operations:** Min/Max create musical relationships between LFOs
-- **Cascading triggers:** Use for organic rhythmic elements
+**Interconnection:** The Expander teaches signal transformation - processing simple triangle waves through mathematical operations to create complexity. This is the CORE PRINCIPLE of ALL synthesis: start with simple sources, apply mathematical transformations, create musicality. Every effects module, logic circuit, and sophisticated modulation system works on this principle. Understanding the Expander here teaches you systematic patch design anywhere - whether you're building ambient textures (slow LFOs→filters→effects) or complex rhythms (triggers→logic→sequencers).
 
 **Visual Feedback:**
 - **Full Wave Rectifiers:** Watch for doubled frequency, always-positive voltages
@@ -223,16 +224,12 @@
 - **Percussion modules:** Set for complementary drum sounds
 
 **Learning Objectives:**
-- **Phase 2 module integration:** Use multiple Phase 2 modules together
-- **Signal transformation:** Organic timing → Musical chaos → Rhythmic patterns
-- **Cross-module modulation:** Each module enhances the others' capabilities
-- **System thinking:** Design patches as interconnected ecosystems
+- **Phase 2 module integration:** Understand how individual modules communicate through standardized CV voltages - this teaches holistic thinking about systems
+- **Signal transformation:** Learn that modulation is hierarchical - LFOs modulate synthesis parameters, which themselves might modulate other parameters, creating emergent complexity
+- **Cross-module synthesis principles:** Chaos processing (Wogglebug) applied to organic timing (ochd) teaches you how modules enhance each other's capabilities. This principle works anywhere: random sources + logic = polyrhythms, LFOs + VCAs = tremolo, envelopes + oscillators = dynamics
+- **System thinking:** Design patches as interconnected ecosystems where each module amplifies others' musicality - this thinking scales from two-module combinations to entire complex rigs
 
-**Advanced Phase 2 Concepts:**
-- **Ochd as timing source:** Provides organic pulse for chaos generation
-- **Wogglebug as translator:** Converts organic timing into musical uncertainty
-- **Cascading triggers:** Natural rhythm relationships without rigid programming
-- **DAC modulation:** Slow parameter changes that evolve over long time periods
+**Interconnection:** This patch sequence teaches modular synthesis philosophy: start with organic timing, add musical chaos, create intelligent processing. You can apply this thinking to any module combination - organic source + processing + intelligent control = sophisticated musicality. This principle appears in ambient synths (LFO sources + filters + reverb), drum synthesis (noise + envelopes + effects), and every sophisticated patch.
 
 **Visual Feedback:**
 - **Ochd LEDs:** Watch organic trigger timing, never perfectly regular
@@ -291,19 +288,24 @@
 - **Emergent behavior:** Complex musicality from simple organic interactions
 
 **Learning Objectives:**
-- **System architecture:** Design intelligent, self-improving musical ecosystems
-- **Cross-module synthesis:** Understand how Phase 2 modules enhance each other
-- **AI-assisted composition:** Use machine learning for musical evolution
-- **Adaptive performance:** Build systems that become more musical with use
+- **System architecture:** Understand how intelligent modules learn from organic sources - this principle applies anywhere: let Marbles learn from Wogglebug chaos, let sequencers respond to random sources, let systems evolve based on input patterns
+- **Cross-module synthesis:** Learn why Phase 2 modules are powerful together - they demonstrate that great synthesis emerges from combining many simple principles, not from finding one complex module
+- **AI-assisted composition:** Understand machine learning as pattern recognition applied to music - Marbles learns rhythmic relationships from Wogglebug's chaos, RCD multiplies those patterns, systems become increasingly musical over time
+- **Adaptive performance:** Build systems that improve with use - realize that synthesis systems develop character through playing, just like acoustic instruments
+- **Broader synthesis principle:** Complex musicality emerges from simple interactions. Every sophisticated modulation system (whether Phase 2 ecosystem or elsewhere) works on this principle: combine simple sources through intelligent processing to create emergent musical behavior
 
 **Performance Evolution:**
-1. **Organic exploration** (0-5 min): Ochd provides foundation timing
-2. **Chaos processing** (5-15 min): Wogglebug adds musical uncertainty
-3. **Intelligence emergence** (15-45 min): Marbles learns patterns, RCD develops rhythms
-4. **System mastery** (45+ min): Complete ecosystem reflects your musical preferences
+1. **Organic exploration** (0-5 min): Ochd provides foundation timing - learn that unpredictable timing can be musical
+2. **Chaos processing** (5-15 min): Wogglebug adds musical uncertainty - discover that randomness + structure = creativity
+3. **Intelligence emergence** (15-45 min): Marbles learns patterns, RCD develops rhythms - understand that observation of patterns creates musicality
+4. **System mastery** (45+ min): Complete ecosystem reflects your musical preferences - realize you've built a collaborative instrument
+
+**What You're Learning About Synthesis:** The progression from organic → chaotic → intelligent → mathematical → shaped demonstrates that every great patch starts with sources, adds processing, shapes the result, then presents it musically. Whether you're building ambient pads (slow LFOs through filters through effects) or drum patterns (triggers through logic through sequencers), you're following this same architecture throughout synthesis.
 
 **Advanced Philosophy:**
 This represents **modular synthesis evolution**: from mechanical sequencing to **organic timing (ochd) → musical chaos (Wogglebug) → artificial intelligence (Marbles) → rhythmic complexity (RCD) → adaptive processing (Function Junction)**. The system becomes a **musical collaborator** that learns your preferences and suggests new directions.
+
+**The Broader Lesson:** This progression teaches you how ALL sophisticated synthesis works. Start with simple sources (oscillators, LFOs, random). Add processing that combines or transforms them (filters, logic, effects). Layer intelligent processing that learns or responds to patterns. Finally, shape the output into musical results. Whether you're working with Phase 2 modules, classic Make Noise, Mutable Instruments, or any other system, this architecture repeats everywhere: sources → transformation → intelligence → musicality. Understanding ochd's role in this ecosystem teaches you to think systematically about ANY patch you build.
 
 **Alternative Module Options:**
 - **Budget:** **2HP Rnd + 2HP S&H** (basic randomness), **Doepfer A-149-1** (quantized random)
@@ -442,16 +444,22 @@ This represents **modular synthesis evolution**: from mechanical sequencing to *
 
 ## Pattern Recognition: Root Causes of Most Ochd Issues
 
-**Three core misunderstandings cause 90% of problems:**
+**Five core misunderstandings cause 95% of problems:**
 
 **1. Bipolar vs. Unipolar CV - Understanding What Half Your Modulation Does**
-Ochd outputs bipolar ±5V. Many synthesizer parameters only respond to 0-5V (unipolar). When you patch bipolar into unipolar, half the modulation range (negative voltage) does nothing. Users hear "weak" or "sluggish" modulation when they're really only using 50% of the available swing. The Expander solves this completely with Full Wave Rectifiers (convert to 0-5V, double frequency). Without the Expander, attenuators and offset modules are your tools.
+Ochd outputs bipolar ±5V. Many synthesizer parameters only respond to 0-5V (unipolar). When you patch bipolar into unipolar, half the modulation range (negative voltage) does nothing. Users hear "weak" or "sluggish" modulation when they're really only using 50% of the available swing. The Expander solves this completely with Full Wave Rectifiers (convert to 0-5V, double frequency). Without the Expander, attenuators and offset modules are your tools. **Teaching Value:** This reveals gaps in understanding how analog circuits work. Every utility module, every effects processor, and every filter operates on voltage scaling principles. Mastering bipolar/unipolar understanding teaches you systematic CV design anywhere.
 
 **2. Free-Running LFOs Are Not Broken - Organic Drift Is The Point**
-Ochd's LFOs run freely at their tuned rates and drift in/out of phase naturally. This is intentional design, not a limitation. Users expecting "locked" modulation that repeats identically every cycle will feel frustrated. Understanding that organic, never-exactly-repeating modulation is ochd's philosophical foundation changes everything. It's not that ochd can't sync (Rate CV input allows clock locking) - it's that it chooses not to by default. This is why it's called "organic."
+Ochd's LFOs run freely at their tuned rates and drift in/out of phase naturally. This is intentional design, not a limitation. Users expecting "locked" modulation that repeats identically every cycle will feel frustrated. Understanding that organic, never-exactly-repeating modulation is ochd's philosophical foundation changes everything. It's not that ochd can't sync (Rate CV input allows clock locking) - it's that it chooses not to by default. This is why it's called "organic." **Teaching Value:** This reveals misunderstanding of analog vs. digital thinking. Embracing analog imprecision as a feature (rather than fighting it) is a mindset shift. This principle appears everywhere: analog filters have resonance peaks, oscillators drift slightly, envelopes have analog curves - these "imperfections" are what make analog synthesis musical.
 
 **3. Analog Circuits Are Voltage-Dependent - Attenuators Are Your Friend**
-Ochd outputs 10Vpp - a large voltage swing. Most modulation destinations expect much less. Unattenuated, ochd modulation is usually extreme. Attenuators aren't "reducing quality" - they're matching impedance and voltage levels for musical results. Learning to use attenuators skillfully (not just turning them down until it's quiet) separates beginner patches from sophisticated modulation systems. Start with attenuators on every patch cable between ochd and anything else.
+Ochd outputs 10Vpp - a large voltage swing. Most modulation destinations expect much less. Unattenuated, ochd modulation is usually extreme. Attenuators aren't "reducing quality" - they're matching impedance and voltage levels for musical results. Learning to use attenuators skillfully (not just turning them down until it's quiet) separates beginner patches from sophisticated modulation systems. Start with attenuators on every patch cable between ochd and anything else. **Teaching Value:** This reveals the importance of impedance matching in analog systems. Every cable carries not just signal, but voltage level and impedance. Understanding signal conditioning here teaches you why precision rectifiers exist, why mixers matter, and why "scaling" signals is a core synthesis skill.
+
+**4. Timing Relationships Create Musical Coherence - Speed Ratios Matter**
+Beginners often assume all LFO speeds are equal because the Rate knob treats them equally. But ochd's 8 LFOs have inherently different frequency relationships - LFO 2 oscillates twice as fast as LFO 1, LFO 3 oscillates differently, and so on. These ratios create the musical relationships. Recognizing "the fast one feels twice as fast" or "this one has a different character" reveals that you're hearing ratio-based relationships. **Teaching Value:** This teaches polyrhythmic thinking. Clock dividers work on the same principle (divide by 2, 3, 4). Sequencers with multiple tracks work on this principle. Learning to hear and use speed ratios makes you understand rhythm at a fundamental level - why certain combinations sound musical, others chaotic.
+
+**5. CV Sources Stack and Combine - Mixing Creates New Relationships**
+Users often think patches are linear (A → B → C). But modulation sources can be mixed, attenuated, offset, and combined. Patching multiple LFOs to the same destination, using Min/Max logic, or mixing sources through attenuators creates emergent behavior. Single sources feel predictable. Combined sources feel alive. **Teaching Value:** This reveals the power of mixing CV sources - the same principle that makes audio mixing interesting (combining sources creates richness) applies to modulation. Every sophisticated patch uses this principle: don't use single modulation sources, combine them. This thinking applies everywhere from drum synthesis (noise + envelopes combined) to filter design (multiple envelope sources controlling different parameters).
 
 ---
 
@@ -498,6 +506,17 @@ Ochd outputs 10Vpp - a large voltage swing. Most modulation destinations expect 
 
 ### **The Philosophy:**
 DivKid wanted something to "keep patches organically drifting and moving" rather than rigid, synced modulation. Richard Devine called it "the most organic little modulator ever" - that says it all!
+
+### **The Innovation: How Ochd's Design Differs From Other Approaches**
+
+**The Sync Dilemma in Synthesis:**
+Most LFO modules work hard to achieve perfect synchronization. They use digital processors, sample-accurate timing, and precise phase locking. This sounds logical - synchronized modulation should be more musical. But ochd's designer Ben Wilson discovered something counterintuitive: **perfect sync creates predictable phasing relationships that repeat exactly every cycle. Humans notice repetition and lose interest. But slightly imperfect analog drift, where each LFO gradually moves in and out of phase with the others, creates perpetual freshness.** Each cycle is slightly different. Nothing exactly repeats. This teaches you about modular philosophy: sometimes accepting analog imprecision creates better musical results than demanding perfection.
+
+**Why Eight LFOs in 4HP?**
+Ochd could have been 2-3 LFOs with more features. Instead it chose breadth over depth - eight independent oscillators arranged specifically from fastest to slowest. This teaches you that modulation power comes from variety (different speeds available simultaneously) rather than complexity (many parameters on each LFO). When you want modulation, you often want several simultaneous speeds working together. Ochd acknowledges this by giving you exactly that.
+
+**The Expander's Elegance:**
+The Expander adds 16 outputs (Full Wave Rectifiers, Logic Pairs, Cascading Triggers, DACs) but uses only 5mA power on each rail. How? Because it's not generating new signals - it's mathematically transforming ochd's existing 8 LFOs. This teaches you that signal processing is more efficient than signal generation. Raw output power (LFOs in ochd) is expensive. Processing that output (Expander circuits) is inexpensive. Most sophisticated synthesis systems follow this pattern: minimal number of sources, extensive processing of those sources.
 
 ### **The Practical Benefits:**
 - **Small footprint, huge impact:** 8HP total for 24 modulation sources
