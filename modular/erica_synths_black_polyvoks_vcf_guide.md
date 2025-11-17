@@ -112,6 +112,17 @@
 - **Input Level:** 1 o'clock, Resonance: 2 o'clock
 - **Result:** The quintessential acid bassline sound
 
+**What you're learning:** How envelopes shape filter dynamics, why sawtooth oscillators work best for acid bass (rich harmonics), how resonance and cutoff interact to create the classic acid sweep, why Input Level controls character in analog circuits.
+
+**Main Example:** Erica Synths Black Polyvoks VCF with envelope modulation (authentic Russian character)
+
+**Alternative Acid Bassline Filters:**
+- **Budget:** Doepfer A-124 (Steiner-Parker topology, 12dB ladder slope, aggressive character similar to Polyvoks, ~$200)
+- **Different character:** Mutable Instruments Ripples (state-variable with simultaneous LP/BP/HP outputs, smoother resonance behavior, free DIY or used market)
+- **Premium:** Verbos Electronics ECO Filter (multi-mode with sub-octave and frequency shifter, expanded modulation possibilities, ~$700)
+
+
+
 ### **Patch 2: Screaming Lead Synth**
 - **Square/Saw oscillator** → Audio In
 - **Mode:** BP (bandpass) for hollow character
@@ -119,6 +130,15 @@
 - **Keyboard/Sequencer** → CV2 Input (filter tracks pitch)
 - **High Input Level + High Resonance** for aggressive character
 - **Result:** Cutting lead sounds that slice through the mix
+
+**What you're learning:** How bandpass mode creates hollow/nasal character by rejecting extremes, why simultaneous CV control on two inputs creates complex movement, how aggressive Input Level drives resonance into screaming territory, why lead synthesis requires different approach than bass.
+
+**Main Example:** Erica Synths Black Polyvoks VCF in BP mode with dual CV modulation (Russian aggressive character)
+
+**Alternative Screaming Lead Filters:**
+- **Budget:** Doepfer A-121-3 (basic lowpass/highpass, different character but more affordable foundation, ~$150)
+- **Different character:** Intellijel Polaris (ladder filter with built-in VCA, smoother resonance arc, more "western" character)
+- **Premium:** Synthesis Technology E-Series filter (extensive CV options, multiple slopes, expanded modulation capability, ~$650)
 
 ### **Patch 3: Filter as Oscillator**
 - **Resonance:** Maximum (self-oscillation)
@@ -128,7 +148,25 @@
 - **Mode switching** for different oscillator characters
 - **Result:** Pure sine wave bass and lead sounds
 
+**What you're learning:** How self-oscillation transforms a filter into an oscillator (feedback at critical point), why CV tracking determines pitch accuracy, how mode switching changes oscillator character without changing pitch, why analog oscillators like this drift and have warmth.
+
+**Main Example:** Erica Synths Black Polyvoks VCF in self-oscillation mode (pure sine wave synthesis from feedback)
+
+**Alternative Self-Oscillating Filters:**
+- **Budget:** Befaco Sweeper (morphing filter with self-oscillation, compact and affordable at ~$250, different character)
+- **Different character:** Make Noise Maths channel used as oscillator (envelope that self-oscillates, very different approach to pitch control)
+- **Premium:** Verbos Electronics Multimix tap (feedback-based synthesis, rich oscillation character, ~$500)
+
 ### **Patch 4: Intermediate - Generative Filter Processing**
+
+**What you're learning:** How probability-based generative control creates evolving filter behavior (never-identical patterns), why multiple simultaneous CV sources create complex modulation, how system-level thinking integrates disparate modules, why generative synthesis teaches you to listen rather than control.
+
+**Main Example:** Qubit Bloom generating probability patterns → Erica Synths Black Polyvoks VCF (generative probability control of legendary Russian acid character)
+
+**Alternative Generative Filter Processing Patches:**
+- **Budget:** 2HP Turing + 2HP Burst → Any VCF (minimal generative CV source for tight budgets)
+- **Different character:** Benjolin feedback loop → Polyvoks (chaotic generative control vs probability-based evolution)
+- **Premium:** Instruo Arbhar + Erica Synths Polyvoks (advanced granular generative processing feeding filter, maximalist approach)
 ```
    ┌─────────────────────┐      ┌─────────────────────────┐
    │   Qubit Bloom       │      │    Erica Synths        │
@@ -191,6 +229,15 @@
 - **Different character:** **Radio Music** gives sample-based generative control vs Bloom's mathematical probability
 
 ### **Patch 5: Advanced - Mathematical Filter Mathematics**
+
+**What you're learning:** How algorithm selection fundamentally changes filter modulation behavior (Quantizer vs LFO vs S&H), why mathematical precision and analog warmth can coexist, how to bridge digital control with analog character, why algorithm switching during performance is a dramatic performance tool.
+
+**Main Example:** Disting mk4 algorithms → Erica Synths Black Polyvoks VCF (switchable algorithmic brain controlling legendary Russian filter)
+
+**Alternative Mathematical Filter Control Patches:**
+- **Budget:** Prescient Artefacts Oxi One CV sequencer → Polyvoks (less complex but musical CV generation with hardware sequencer feel)
+- **Different character:** Make Noise Maths as generative modulation source → Polyvoks (analog function generation vs digital algorithms)
+- **Premium:** Synthrotek Polyrhythmic Clock + Disting mk4 (maximum timing precision and algorithm options)
 ```
    ┌─────────────────────┐      ┌─────────────────────────┐
    │   Disting mk4       │      │    Erica Synths        │
@@ -248,6 +295,15 @@
 - **Hybrid processing:** Bridge digital algorithm precision with analog Russian filter character
 
 ### **Patch 6: Expert - Complete Acid Synthesis Ecosystem**
+
+**What you're learning:** How to think systemically (no single module creates sound alone), why complete ecosystems are greater than their parts, how mathematical precision, generative evolution, and algorithmic control serve a single legendary filter core, why mastery means understanding relationships rather than isolated features.
+
+**Main Example:** Function Junction + Qubit Bloom + Disting mk4 → Erica Synths Black Polyvoks VCF (complete acid synthesis ecosystem integrating mathematical processing, generative control, and algorithmic brain with legendary Russian filter core)
+
+**Alternative Complete Acid Synthesis Ecosystems:**
+- **Budget Ecosystem:** Turing Machine Expander + Cheap Analog Oscillator + Doepfer A-124 Filter + VCA (minimal but functional acid synthesis system, ~$800 total)
+- **Different Approach:** Mutable Instruments modular clones (Plaits → Ripples → Clouds) for digital/hybrid approach vs all-analog pure Russian character
+- **Maximalist:** Whole Systems approach with Buchla-inspired architecture + Polyvoks for voltage-controlled sound design at highest expression
 ```
 ┌─────────────┐ ┌─────────────┐ ┌─────────────┐ ┌─────────────────┐
 │ Cre8audio   │ │    Qubit    │ │   Disting   │ │ Erica Synths    │
