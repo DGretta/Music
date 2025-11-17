@@ -495,20 +495,64 @@ This represents **complete aggressive filter mastery** - where probability-based
 ### **⚠️ Common Mistakes:**
 
 **"My Wasp SE sounds too harsh/aggressive!"**
-- The Wasp is designed to be aggressive - this is its character, not a problem
-- **Solution:** Lower the resonance and drive, or embrace the aggression for what it is
+- **Why:** The Wasp is designed to be aggressive—this is its architectural purpose, not a malfunction. Even moderate settings add intentional bite and character. The design philosophy prioritizes personality over transparency, so aggression is baked in from the circuit level.
+- **Solution:** Rather than fighting the character, either (1) lower resonance to 9-11 o'clock for less self-oscillation emphasis, (2) reduce drive from high settings, or (3) embrace the aggression as the intended sound—it's meant to cut through mixes this way.
+- **Teaching:** Wasp philosophy is "character over politeness." This isn't a limitation; it's the feature.
 
 **"I can't get the filter to self-oscillate!"**
-- Input level affects self-oscillation threshold
-- **Solution:** Try with no input signal, or attenuate the input and increase resonance
+- **Why:** Self-oscillation threshold depends on input level, resonance setting, and the filter's sensitivity curve. A weak input signal may never reach oscillation even at high resonance. This is normal—the Wasp doesn't force oscillation artificially.
+- **Solution:** (1) Start with NO audio input and turn resonance clockwise until you hear a pure sine tone appear around 3-4 o'clock, (2) if you want self-oscillation with audio input, attenuate the input signal first, then increase resonance, or (3) use an envelope with a fast attack to trigger self-oscillation from silence.
+- **Teaching:** Self-oscillation is about reaching a threshold, not a toggle. Understanding this threshold is key to using the Wasp as both filter and oscillator.
 
 **"The filter tracking seems off when self-oscillating!"**
-- Wasp SE tracks 1V/octave accurately when properly calibrated
-- **Solution:** Check your CV source calibration and ensure clean CV signals
+- **Why:** Wasp SE tracks 1V/octave accurately when using clean CV signals and proper calibration. Tracking errors usually indicate (1) dirty/noisy CV source, (2) multiple CV sources summing at the input without proper mixing, (3) uncalibrated sequencer output, or (4) CV cables with poor connections.
+- **Solution:** Verify your CV source directly with a calibrated multimeter, use a dedicated 1V/octave sequencer for accurate tracking, ensure CV cables have solid connections, or test with a simple LFO to see if the problem is your CV source or the Wasp.
+- **Teaching:** Filter tracking accuracy is only as good as the CV signal feeding it. Dirty CV creates dirty tracking—always verify the source.
 
 **"The filter sounds different with different input levels!"**
-- This is intentional - the Wasp responds dynamically to input level
-- **Solution:** Use consistent input levels or embrace the dynamic response as part of the character
+- **Why:** This is intentional design—the Wasp responds dynamically to input level. Higher input levels drive the filter harder, increasing saturation and aggression. This isn't a bug; it's the filter "responding" to how hard you're pushing it. The drive setting amplifies this effect further.
+- **Solution:** Use consistent input levels if you want stable character, or embrace the dynamic response as a performance feature—patch a VCA before the Wasp input to control dynamics intentionally.
+- **Teaching:** The Wasp's input-level sensitivity is a feature, not a flaw. It teaches that filters aren't passive—they respond to what you feed them.
+
+**"I keep turning up resonance and it just sounds worse, not better!"**
+- **Why:** Resonance has a musical sweet spot around 1-2 o'clock for most applications. Beyond that (3+ o'clock), the filter begins aggressive self-oscillation that can overwhelm the input signal entirely, especially if the input is weak or the resonance CV is high. You reach a point where more resonance doesn't add character—it just silences everything else.
+- **Solution:** Explore resonance in zones: (1) 9 o'clock = barely noticeable emphasis, (2) 11 o'clock = musical character, (3) 1 o'clock = classic Wasp bite without full self-oscillation, (4) 3+ o'clock = self-oscillation dominates. Find YOUR sweet spot; it's rarely "maximum."
+- **Teaching:** More isn't always better in filter design. Understanding resonance zones teaches you to listen rather than assume.
+
+**"I cranked drive and lost the filter character entirely!"**
+- **Why:** Drive controls saturation and the filter's responsiveness to input level. Too much drive can compress the filter response into a flat saturation plateau—the filter stops tracking changes and just sounds distorted. This is especially problematic if your input signal is already hot (loud).
+- **Solution:** Start drive at 2 o'clock as a baseline, use moderate drive (2-3 o'clock) for warmth and character without saturation collapse. If you need aggression, increase resonance instead of drive. If you need distortion, use a dedicated distortion module after the Wasp rather than pushing drive into oblivion.
+- **Teaching:** Drive isn't an aggression knob—it's a saturation control. Using it correctly preserves filter character while adding color.
+
+**"Why does fast LFO modulation just make it sound like chaos?"**
+- **Why:** The Wasp's aggressive character means fast modulation can create aliasing, zipper noise, and unpredictable resonance artifacts. Fast LFO on resonance (especially at high resonance settings) can make the filter "glitch" musically. Fast LFO on cutoff creates timbral chaos rather than melodic movement.
+- **Solution:** Use slow LFO rates (0.2-2 Hz) for musical filter sweeps. Reserve fast rates for deliberate sound-design effects. If you want fast modulation, use audio-rate oscillators or sequencers with precise CV timing rather than LFOs. For rhythmic movement, sync your LFO to tempo using a clock divider.
+- **Teaching:** Modulation speed matters on aggressive filters. The Wasp's character means you need to respect timing more than you would on gentle filters.
+
+**"It worked perfectly in my mental patch, but it sounds thin on the actual cables!"**
+- **Why:** Signal flow assumptions don't always survive contact with reality. Common issues: (1) weak oscillator output before the Wasp starves the filter, (2) unintended impedance mismatches, (3) patch cables creating unintended ground loops causing noise, (4) output level from the Wasp not matched to your mixer's input sensitivity, or (5) missing intermediate gain stages between modules.
+- **Solution:** Patch iteratively and listen at each stage. Verify oscillator output level before it reaches the Wasp. Use a VCA before the Wasp filter for input level control. Add a dedicated mixer for clean gain staging. Test your patch cable routing for unintended connections (are you accidentally patching something to ground?).
+- **Teaching:** Mental patches are theory. Real patches are practice. Patch discipline—understanding signal flow and gain staging—is essential for aggressive filters.
+
+**"My sequencer CV isn't moving the cutoff enough, but the LFO moves it fine!"**
+- **Why:** CV scaling differences between sources. Sequencers output full 0-10V or ±5V ranges depending on design. LFOs often attenuate their output. The Wasp expects around 1V/octave for tracking, but different CV sources have different voltage swing. Your sequencer might be outputting at a different scale than your LFO.
+- **Solution:** Verify your sequencer's output voltage range (often listed as "1V/octave" or "0-10V tracking"). Use a dedicated 1V/octave sequencer for consistent tracking. If you need to attenuate sequencer output, patch through a CV mixer or attenuator. Test with a multimeter to confirm voltage levels.
+- **Teaching:** CV is not universal. Different modules use different standards. Understanding voltage standards teaches you to think about signal characteristics, not just connections.
+
+**"Why can't I play melodic lines with self-oscillation if I patch audio into the filter?"**
+- **Why:** With audio input, the input signal fights the self-oscillation. The filter is trying to do two things: process the input audio AND self-oscillate. At high audio input levels, the input dominates and self-oscillation disappears. This is correct behavior—it's not a bug.
+- **Solution:** For melodic self-oscillation, disconnect audio input and feed only 1V/octave CV to the cutoff. The filter becomes a sine wave oscillator. For "hybrid" effects, use a very weak audio input (attenuate heavily) while driving self-oscillation with CV—this blends the two sources.
+- **Teaching:** Self-oscillation and audio input are competing phenomena. Understanding when to use each teaches you about filter architecture.
+
+**"Should I patch multiple modulation sources to the same CV input?"**
+- **Why:** Multiple CV sources at one input can sum (add) or fight depending on the module's internal design. For the Wasp, multiple sources at the cutoff CV input will sum their voltages, which might create unintended pitch modulation or chaotic cutoff movement. The philosophy is important: do you want them to ADD to each other or CHOOSE one?
+- **Solution:** If you want multiple modulation sources to coexist, use a dedicated CV mixer module that lets you control the blend and amount of each source. If you want to switch between sources, use a CV switch or manual patchbay. If you want them to add, understand the voltage ranges and use scaling/attenuation to prevent unexpected extremes.
+- **Teaching:** CV architecture matters. Summing, switching, and blending are different operations that require different approaches. This teaches you to think about modulation architecture, not just connection points.
+
+**"My resonance sweeps sound chaotic instead of musical—what's wrong?"**
+- **Why:** Resonance modulation is sensitive to modulation speed and amplitude. Fast resonance sweeps combined with high starting resonance values can create aliasing and filter artifacts. Additionally, if your resonance CV source has a wide swing (0-10V), the filter might leap between barely-present and self-oscillating chaos rather than smoothly evolving.
+- **Solution:** Start resonance sweeps at moderate base resonance (1-2 o'clock), use slow LFO modulation (0.3-1 Hz) for smooth resonance evolution, attenuate your resonance CV source to a smaller swing (maybe 3V instead of full 10V), or use an envelope with moderate time constants instead of fast LFOs for smoother resonance movement. Musical resonance sweeps are slow and gentle—aggression comes from starting values, not modulation speed.
+- **Teaching:** Resonance modulation requires finesse. The Wasp's aggressive nature means gentle modulation often sounds better than dramatic sweeps. This teaches you to listen for musicality rather than assuming "more modulation = more interest."
 
 ### **🎵 Pro Tips:**
 
