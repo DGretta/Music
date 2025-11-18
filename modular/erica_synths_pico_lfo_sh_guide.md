@@ -11,6 +11,12 @@
 
 **What is Pico LFO/S&H?** A fully analog dual utility module combining a low frequency oscillator with simultaneous triangle and square outputs, plus a sample & hold circuit. It's the fundamental modulation source that every rack needs, condensed into just 3HP.
 
+**Key Specifications:**
+- **Width:** 3 HP
+- **Depth:** 35 mm
+- **Power:** 13 mA @ +12V / 10 mA @ -12V / 0 mA @ +5V
+- **Architecture:** Fully analog dual utility (LFO + Sample & Hold)
+
 ### Your First LFO Modulation
 1. **Turn Rate knob** to 12 o'clock position
 2. **Watch the LED** blink - this shows your LFO speed
@@ -218,9 +224,9 @@ Mixer (Mixup, Performance Mixer) → Combined modulation output
 
 ---
 
-## Beginner "Gotchas" & Pro Tips
+## Common Mistakes
 
-### **⚠️ Common Mistakes:**
+### **🎵 Common Mistake Patterns:**
 
 **"My S&H isn't changing!"**
 - Need a clock signal to trigger sampling
@@ -258,7 +264,7 @@ Mixer (Mixup, Performance Mixer) → Combined modulation output
 
 ---
 
-## Why This Module Rocks
+## Why This Instrument Excels
 
 ### **The Philosophy:**
 LFO and Sample & Hold are the most fundamental modulation sources in synthesis. Pico LFO/S&H provides both in pure analog form with the space efficiency that makes it accessible to every rack size.
