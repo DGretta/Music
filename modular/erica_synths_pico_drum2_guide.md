@@ -11,6 +11,11 @@
 
 **What is Pico DRUM2?** A compact yet versatile percussion synthesizer featuring 8 distinct drum synthesis algorithms, each with 3 CV-controllable parameters, algorithm switching, and 1V/oct tuning capability - all in just 3HP.
 
+**Key Specifications:**
+- **Width:** 3 HP
+- **Depth:** 35 mm
+- **Power:** 28 mA @ +12V / 5 mA @ -12V / 0 mA @ +5V
+
 ### Your First Drum Beat
 1. **Connect trigger source** - Patch a clock or sequencer to TRIGG input
 2. **Select algorithm** - Press MODE button to cycle through algorithms (LED color indicates selection)
