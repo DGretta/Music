@@ -9,7 +9,131 @@
 
 ---
 
-## Progressive Patch Examples
+## Quick Start: Get Your First Granular Sound in 5 Minutes
+
+**What is Arbhar?** Think of it as a magical audio processor that chops your sounds into tiny "grains" (like cutting up rice), then plays them back in countless creative ways - freezing time, reversing it, scattering it, or turning it into shimmering textures. It's a complete time manipulation laboratory where temporal control becomes as expressive as traditional frequency control.
+
+**Key Specifications:**
+- **Width:** 18 HP
+- **Depth:** 42 mm
+- **Power:** 250 mA @ +12V / 30 mA @ -12V / 0 mA @ +5V
+- **Architecture:** Digital granular processor with 6-layer memory system, analog I/O, built-in microphone
+- **Expanders Available:** USB Expander (2HP, 25mm deep, no power draw) + Expander (2HP, 20mm deep)
+
+### Your First Frozen Moment
+1. **Connect audio source** → **IN** input (or just use the built-in microphone!)
+2. **Turn Input Level** to 12 o'clock position
+3. **Turn Output Level** fully clockwise  
+4. **Press CAPTURE button** → LED lights up amber while recording
+5. **Play with the big knobs** - especially **SCAN**, **INTENSITY**, and **LENGTH**
+
+**Congratulations!** You've just captured and granulated audio. You're now controlling time itself!
+
+---
+
+## Essential Parameters (The Big 6)
+
+### **1. Capture Button** 
+- **What it does:** Records 10 seconds of audio into current memory slot
+- **Musical result:** Your raw material for granular magic
+- **LED feedback:** Amber = recording, off = ready to record
+
+### **2. Intensity Knob (Center Position Best)**
+- **What it does:** Controls how many grains play at once
+- **Musical result:** Center = maximum grains (lush textures), edges = fewer grains (sparse)
+- **Sweet spot:** 12 o'clock for rich, full textures
+
+### **3. Scan Knob**
+- **What it does:** Chooses which part of your recording to play back
+- **Musical result:** Scrub through your captured audio like a DJ with a record
+- **Try this:** Record yourself saying "hello" then scan through it slowly
+
+### **4. Length Knob** 
+- **What it does:** Sets how long each grain lasts (4ms to 3 seconds)
+- **Musical result:** Short = stuttery/choppy, Long = smooth/stretched
+- **Magic zone:** Around 10-11 o'clock for musical textures
+
+### **5. Spray Knob**
+- **What it does:** Adds randomness to grain position
+- **Musical result:** No spray = focused, more spray = scattered/ambient clouds
+- **Pro tip:** A little spray (9-10 o'clock) makes everything more organic
+
+### **6. Pitch Knob & 1V/OCT Input**
+- **What it does:** Changes the pitch of grains without changing speed
+- **Musical result:** Transpose your captured audio up/down while keeping timing
+- **Tracking:** Responds to keyboard/sequencer for melodic granular playing
+
+---
+
+## Historical Context: Understanding Granular Synthesis
+
+Granular synthesis emerged in the 1950s through experiments at Bell Labs and IRCAM, but remained mostly in academic computer music until modular synthesis brought it to live performers. The technique is rooted in understanding sound as discrete micro-events rather than continuous waveforms.
+
+**Why This Matters for Time Manipulation:**
+When you work at the granular level (4ms to 3-second grains), you're directly engaging with how humans perceive sound and time. Below 20ms, grains merge into continuous tone. At 20-100ms, grains create texture. Above 100ms, individual events become perceptible. Arbhar places granular processing exactly where it bridges all these perceptual zones - you can work with individual percussive events, create complex textures, or freeze moments into ambient wash.
+
+**The Modular Connection:**
+Arbhar inherits from academic granular traditions but applies the modular philosophy: **CV control over every parameter means every aspect of time manipulation responds to your creative direction.** This is why Arbhar pairs so powerfully with modulation sources - you're not just playing back time, you're sculpting it in real time.
+
+**Cultural Significance:**
+Granular processing became essential in genres exploring temporal manipulation (ambient, glitch, experimental electronic music). Arbhar brought this capability into the modular domain with a design philosophy that honors both academic granular traditions and modular expressiveness.
+
+---
+
+## Why This Instrument Excels
+
+### **The Philosophy: Temporal Expressiveness**
+
+Arbhar represents a fundamental principle: **time itself should be expressive and performable.** Most synthesizers let you sculpt frequency and amplitude. Arbhar lets you sculpt the temporal dimension - the rate at which events unfold, how moments freeze, how past and present collapse into new textures. This is why it's called the "Granular Time Machine."
+
+### **The Innovation**
+
+**1. Six Independent Memory Layers (α,β,γ,δ,ε,ζ)**
+- **Traditional approach:** One buffer, one moment captured
+- **Arbhar's approach:** Six independent memory slots means you can capture six different moments - six different audio snapshots, each with independent granular processing
+- **Musical result:** Build complex temporal collages where different captured moments evolve independently, then combine them
+- **Why it matters:** This transforms Arbhar from an effect into a true compositional instrument for time-based music
+
+**2. Full CV Control Over Time Parameters**
+- **Traditional approach:** Limited CV inputs, manual knob control of grain parameters
+- **Arbhar's approach:** Every parameter responds to external modulation - Scan, Intensity, Length, Spray, Pitch, Strike all accept CV
+- **Musical result:** Time itself becomes modulated and sculpted by your other modulation sources
+- **Why it matters:** Time manipulation becomes as expressive as frequency or amplitude modulation in traditional synthesis
+
+**3. Strike Engine + Continuous Engine Dual Architecture**
+- **Traditional approach:** One granular voice, one operational mode
+- **Arbhar's approach:** Two simultaneous engines - continuous grains flowing + manual strike triggers for percussive granular events
+- **Musical result:** You can have ambient granular wash responding to CV while simultaneously triggering percussive micro-grains with gate inputs
+- **Why it matters:** Combines ambient texture generation with percussive time manipulation in one instrument
+
+**4. Built-In Microphone**
+- **Traditional approach:** External audio required
+- **Arbhar's approach:** Capture environmental sound immediately, anywhere, without patching
+- **Musical result:** Live environmental capture transforms into granular textures in real time
+- **Why it matters:** Closes the feedback loop between the physical world and temporal processing
+
+### **The Practical Benefits**
+
+- **Time Architecture:** Most synthesizer modules work horizontally (left-to-right signal flow). Arbhar works temporally - past/present/future captured and recombined
+- **Texture Depth:** Where reverb creates spatial space, granular processing creates temporal depth - multiple time layers happening simultaneously
+- **Performance Control:** Every parameter responds to CV, making temporal manipulation a real-time performance instrument
+- **Integration Philosophy:** Designed specifically to pair with Phase 1 and Advanced modulation systems for sophisticated time control
+
+### **Perfect For**
+
+- **Time-Based Ambient Composition:** Capture moments, watch them evolve through granular reprocessing, layer multiple temporal layers
+- **Live Looping & Texture Generation:** Capture loops, granularly process them while recording, create self-evolving textures
+- **Sound Design:** Transform any audio source (field recordings, synthesizer output, found sounds) into new sonic territories
+- **Polyrhythmic Sequencing:** Strike engine responds to different clock divisions for polyrhythmic granular triggering
+- **Generative Systems:** CV modulation creates self-evolving temporal compositions that unfold over time
+
+### **The Magic**
+
+Arbhar isn't just a processor - it's a philosophical statement about what synthesis can be. When you understand that time is as sculptable as frequency, that moments can be captured and recombined, that the past can be granulated into new futures - you've crossed into a completely different way of making music. Arbhar makes this tangible. It turns temporal abstraction into immediate creative practice.
+
+---
+
+## Progressive Patch Examples (Starter Patches)
 
 ### **Patch 1: First Steps - Basic Granular Capture**
 ```
@@ -69,11 +193,11 @@
 - **Different character:** Try acoustic instruments for organic textures, or synthesized sounds for electronic granular processing
 - **Premium alternatives:** High-quality field recorders or studio microphones capture more detailed source material for granular processing
 
-### **Patch 2: Intermediate - Phase 2 Organic Granular Evolution**
+### **Patch 2: Intermediate - Advanced Organic Granular Evolution**
 ```
    ┌─────────────────────┐      ┌─────────────────────┐
    │   DivKid Ochd      │      │   Instruo Arbhar    │
-   │    (Phase 2)       │      │                     │
+   │    (Advanced)      │      │                     │
    │                    │      │ Audio IN        ◀───┼─── [Audio Source]
    │ LFO 2 ○────────────┼──────┼─▶ Scan CV          │
    │       ║            │      │                     │
@@ -102,8 +226,8 @@
                                                               Experience
 ```
 
-| Module Integration | Signal Flow | Purpose | Phase 2 Synergy |
-|-------------------|-------------|---------|------------------|
+| Module Integration | Signal Flow | Purpose | Advanced Synergy |
+|-------------------|-------------|---------|------------------
 | **Ochd LFO 2 → Arbhar Scan** | Organic buffer position | **Breathing grain selection** | **Natural time scrubbing** |
 | **Ochd LFO 4 → Arbhar Intensity** | Organic grain density | **Breathing texture density** | **Natural granular evolution** |
 | **Ochd LFO 6 → Arbhar Length** | Organic grain size | **Breathing grain character** | **Natural texture morphing** |
@@ -119,7 +243,7 @@
 - **Organic granular processing:** Natural breathing applied to time manipulation
 - **Multi-parameter modulation:** Multiple organic sources controlling different aspects
 - **Spatial granular textures:** Stereo granular processing with organic evolution
-- **Phase 2 + synthesis integration:** Modulation ecosystem controlling audio processing
+- **Advanced synthesis integration:** Modulation ecosystem controlling audio processing
 
 **Alternative Module Options:**
 - **Instead of DivKid Ochd:** Try Batumi for geometric organic movement, or Make Noise Maths for mathematical organic relationships
@@ -127,11 +251,11 @@
 - **Different character:** Intellijel Quadrax for discrete organic envelope steps, or Befaco Rampage for dual organic function generation
 - **Premium alternatives:** Joranalogue Orbit 3 for three-dimensional organic modulation, or Klavis Twin Waves for morphing organic waveforms
 
-### **Patch 3: Advanced - Phase 2 Algorithmic Granular Intelligence**
+### **Patch 3: Advanced - Algorithmic Granular Intelligence**
 ```
 ┌─────────────────────┐    ┌─────────────────────┐
 │   Mutable Marbles   │    │ Cre8audio Function  │
-│     (Phase 2)       │    │ Junction (Phase 2)  │
+│    (Advanced)       │    │ Junction (Advanced) │
 │                     │    │                     │
 │ X1 Out ○────────────┼────┼─▶ Ch1 Input           │
 │                     │    │                     │
@@ -193,60 +317,11 @@
 - **Different character:** Euclidean Circles for mathematical pattern relationships, or Malekko Varigate series for pattern mutation
 - **Premium alternatives:** Orthogonal Devices ER-301 for programmable pattern processing, or Winter Modular Eloquencer for complex pattern sequencing
 
-## Quick Start: Get Your First Granular Sound in 5 Minutes
-
-**What is Arbhar?** Think of it as a magical audio processor that chops your sounds into tiny "grains" (like cutting up rice), then plays them back in countless creative ways - freezing time, reversing it, scattering it, or turning it into shimmering textures.
-
-### Your First Frozen Moment
-1. **Connect audio source** → **IN** input (or just use the built-in microphone!)
-2. **Turn Input Level** to 12 o'clock position
-3. **Turn Output Level** fully clockwise  
-4. **Press CAPTURE button** → LED lights up amber while recording
-5. **Play with the big knobs** - especially **SCAN**, **INTENSITY**, and **LENGTH**
-
-**Congratulations!** You've just captured and granulated audio. You're now controlling time itself!
-
----
-
-## Essential Parameters (The Big 6)
-
-### **1. Capture Button** 
-- **What it does:** Records 10 seconds of audio into current memory slot
-- **Musical result:** Your raw material for granular magic
-- **LED feedback:** Amber = recording, off = ready to record
-
-### **2. Intensity Knob (Center Position Best)**
-- **What it does:** Controls how many grains play at once
-- **Musical result:** Center = maximum grains (lush textures), edges = fewer grains (sparse)
-- **Sweet spot:** 12 o'clock for rich, full textures
-
-### **3. Scan Knob**
-- **What it does:** Chooses which part of your recording to play back
-- **Musical result:** Scrub through your captured audio like a DJ with a record
-- **Try this:** Record yourself saying "hello" then scan through it slowly
-
-### **4. Length Knob** 
-- **What it does:** Sets how long each grain lasts (4ms to 3 seconds)
-- **Musical result:** Short = stuttery/choppy, Long = smooth/stretched
-- **Magic zone:** Around 10-11 o'clock for musical textures
-
-### **5. Spray Knob**
-- **What it does:** Adds randomness to grain position
-- **Musical result:** No spray = focused, more spray = scattered/ambient clouds
-- **Pro tip:** A little spray (9-10 o'clock) makes everything more organic
-
-### **6. Pitch Knob & 1V/OCT Input**
-- **What it does:** Changes the pitch of grains without changing speed
-- **Musical result:** Transpose your captured audio up/down while keeping timing
-- **Tracking:** Responds to keyboard/sequencer for melodic granular playing
-
----
-
-### **Patch 4: Expert - Complete Phase 2 Granular Ecosystem**
+### **Patch 4: Expert - Complete Advanced Granular Ecosystem**
 ```
 ┌─────────────┐ ┌─────────────┐ ┌─────────────┐ ┌─────────────┐
 │   DivKid    │ │ Make Noise  │ │ 4ms RCD v2  │ │ Mutable     │
-│    Ochd     │ │ Wogglebug   │ │ (Phase 2)   │ │ Marbles     │
+│    Ochd     │ │ Wogglebug   │ │ (Advanced)  │ │ Marbles     │
 │ (Organic)   │ │ (Chaos)     │ │             │ │ (Algorithms)│
 │             │ │             │ │ Out 2 ○─────┼─┼─t1 Clock   │
 │ LFO 3 ○─────┼─┼─Stepped ○   │ │             │ │             │
@@ -267,11 +342,11 @@
 │ Pitch CV      ◀─ Polyrhythmic Granular Transposition       │
 │ Strike        ◀─ Algorithmic Granular Trigger Network     │
 │                                                            │
-│ All Phase 2 Intelligence Types Control Granular:          │
+│ All Advanced Intelligence Types Control Granular:         │
 │ Organic + Chaos + Mathematical + Algorithmic              │
 │                                                            │
 │ OUT 1,2 ○──────────────────────────────────────────────────┼─── Complete
-└────────────────────────────────────────────────────────────┘   Phase 2
+└────────────────────────────────────────────────────────────┘   Advanced
                               ║                                 Granular
                          Dual Audio                           Intelligence
                          (Red)║
@@ -289,7 +364,7 @@
                     └─────────────────────┘       Intelligence
 ```
 
-**Complete Phase 2 Granular Integration:**
+**Complete Advanced Granular Integration:**
 
 | Intelligence Layer | Function | Arbhar Control | Musical Evolution |
 |-------------------|----------|----------------|-------------------|
@@ -300,7 +375,7 @@
 | **Granular (Arbhar)** | Time manipulation | **All parameters controlled** | **Complete time-based expression** |
 
 **Expert System Design:**
-- **Arbhar as granular brain:** All Phase 2 intelligence types control every granular aspect
+- **Arbhar as granular brain:** All Advanced intelligence types control every granular aspect
 - **Multi-layer time control:** 4 different intelligence types manipulating time simultaneously
 - **User-guided time manipulation:** You direct sophisticated systems toward granular musical goals
 - **Emergent temporal complexity:** Simple modular interactions create sophisticated time-based music
@@ -327,7 +402,7 @@ This represents the **ultimate time manipulation ecosystem** - where organic bre
 
 ---
 
-## Common Use Cases
+## Common Use Cases (Real-World Applications)
 
 **🎸 **Live Looping:** Capture musical phrases and play them back granularly**
 **🌊 **Ambient Textures:** Create evolving soundscapes from simple sources**  
@@ -338,33 +413,68 @@ This represents the **ultimate time manipulation ecosystem** - where organic bre
 
 ---
 
-## Beginner "Gotchas" 
+## Common Mistakes and How to Avoid Them
 
-### **Six Layers System**
-- **Arbhar has 6 memory slots** (α,β,γ,δ,ε,ζ) - like having 6 different tape loops
-- **Layer knob selects** which slot you're recording into/playing from  
-- **Different colored LEDs** show which layer is active
-- **Omega position** (fully clockwise) links all layers together
+### **"I recorded audio but it sounds like noise when I play it back"**
+**Problem:** Playback sounds grainy, disconnected, or textured rather than like recognizable pitched audio.
 
-### **Two Granular Engines**
-- **Intensity knob controls** the "Continuous Engine" (always playing grains)
-- **Strike button/input** controls the "Strike Engine" (manual grain triggering)
-- **Both work together** - you can have continuous grains + manual triggers
+**Why It Happens:** You've successfully captured granular audio - that's working perfectly. The confusion is misunderstanding what granular synthesis *is*. When you reduce audio to grains smaller than 100ms, your brain no longer perceives it as pitched sound - it perceives texture. This is the instrument's *design*, not a malfunction.
 
-### **Scan vs Follow Modes**
-- **Scan Mode (default):** You manually control position with SCAN knob
-- **Follow Mode:** Playback moves automatically, SCAN knob controls speed
-- **Switch between modes:** Hold SHIFT+CAPTURE, turn SCAN knob
+**Solution:**
+- Start with longer LENGTH settings (11-12 o'clock) to hear grains closer to 200ms - recognizable pitch emerges
+- Use INTENSITY at lower settings (9-10 o'clock) for sparser grain distribution - cleaner texture
+- Record pure sine tones or simple pitched audio first - easier to hear what's happening
+- Understand that this *is* the magic - turn your recordings into textural clouds
 
-### **The Microphone is Always Listening**
-- **Built-in condenser mic** is always active unless you patch something into IN
-- **Ambient room sound** will be captured if you press CAPTURE with nothing patched
-- **This is a feature!** Great for capturing environmental sounds on the fly
+### **"I want to layer multiple recordings but they keep interfering"**
+**Problem:** When using different Layer slots, audio from previously recorded layers bleeds through or interferes with new recordings.
 
-### **It's Not Broken, It's Granular**
-- **Granular synthesis sounds different** from normal audio playback
-- **Grains create texture** - this is intentional, not a malfunction
-- **Start with familiar sounds** (your own voice) to understand what's happening
+**Why It Happens:** The six layer system (α,β,γ,δ,ε,ζ) stores six independent buffers, but the INTENSITY and other parameters affect which layers are audible. You may have unintentionally left earlier layers playing while recording new material. Additionally, Scan might be playing through all layers if you haven't isolated properly.
+
+**Solution:**
+- Use the LAYER knob to clearly switch between slots before recording new material
+- Check the layer indicator LEDs to confirm which layer is active
+- Mute other layers by switching to unrecorded slots, or use Intensity to reduce grain density
+- Use the Omega (fully clockwise) position only when you intentionally want to combine all layers
+- Think of layers like separate tape loops - select which one is active before recording
+
+### **"I can't get clean melodic material - everything sounds ambient or atmospheric"**
+**Problem:** Trying to use Arbhar like a sampler or transposer for playable melodies, but results are always textural or atmospheric.
+
+**Why It Happens:** This is actually working as designed. Arbhar's strength is temporal texture and time manipulation, not melodic playback. The Strike Engine can trigger individual grains for rhythmic purposes, but the continuous engine is fundamentally about creating shifting textures. If you want pitched material, you need longer grains or you're working against the instrument's core design philosophy.
+
+**Solution:**
+- Use FOLLOW mode with long LENGTH settings to approximate time-stretching (musical temporal manipulation)
+- Route the 1V/OCT pitch input but understand you're transposing the *granular field*, not creating linear pitch
+- Use Strike Engine for percussive grain triggering, not melodic sequencing
+- Pair Arbhar with pitched sources (oscillators, Plaits) and process their output through Arbhar's temporal lens
+- Accept that this instrument specializes in time-based textures, not melodies - that's where its genius lives
+
+### **"The microphone picked up background noise I didn't want"**
+**Problem:** When using the built-in mic (nothing patched into IN), ambient room sound was captured along with your intended source.
+
+**Why It Happens:** The condenser microphone is always active by default. If nothing is patched into the IN jack, Arbhar listens to the room. This is intentional design - spontaneous environmental capture is a feature, but it means you need to manage what's in the sonic environment during recording.
+
+**Solution:**
+- Patch an external audio source into IN to disable the microphone
+- Record in quieter environments, or accept environmental texture as part of the composition
+- Use the microphone intentionally - ambient capture is actually a creative feature, not a bug
+- Keep room quiet during recording, or lean into the environmental sonics as musical material
+
+### **Pattern Recognition: Root Causes of Most Arbhar Issues**
+
+**Four core misunderstandings cause 90% of beginner confusion:**
+
+1. **Expecting playback that sounds like the source material, not granular texture** - Arbhar's core function is transforming audio into temporal grains. Short grains = texture clouds. If you want recognizable source material, use longer grain lengths or don't use an instrument designed for granular transformation. The solution isn't to fight the design - it's to understand what granular synthesis actually is.
+
+2. **Misunderstanding the six-layer system as simultaneous recording** - The Layer system is sequential, not parallel. You select which of six tape-loop-like slots you're working with. Understanding this distinction prevents confusion about interference and unwanted layering.
+
+3. **Treating Arbhar as a melodic sequencer or traditional sampler** - It's neither. It's a temporal texture instrument. The moment you stop expecting linear pitch and start expecting time-based evolution, the instrument transforms from frustrating to revelatory. This is the philosophical shift that separates "it doesn't work" from "oh, I understand what this is designed for."
+
+4. **Overlooking the built-in mic as an intentional feature** - Many beginners treat the microphone like a bug ("why is it picking up room noise?") when it's actually a philosophical design choice. Embracing spontaneous environmental capture opens the instrument to completely different creative workflows - field recording, live situational processing, real-time environmental transformation.
+
+**The Deeper Understanding:**
+Arbhar teaches that granular synthesis isn't about preserving source material - it's about *dissolving* time. When you understand that the instrument's "limitations" are actually design statements about temporal philosophy, frustration transforms into creative possibility. The grains aren't bugs - they're the entire point.
 
 ---
 
@@ -382,13 +492,13 @@ This represents the **ultimate time manipulation ecosystem** - where organic bre
 
 ## Pairs Well With
 
-### **Phase 2 Module Synergies (Modulation & CV Sources):**
+### **Advanced Module Synergies (Modulation & CV Sources):**
 - **DivKid Ochd & Expander:** Ochd LFOs → Arbhar granular parameters for organic time manipulation
 - **Make Noise Wogglebug:** Wogglebug chaos CVs → Arbhar for controlled uncertainty in granular textures
 - **Mutable Marbles:** Marbles X/t outputs → Arbhar for sophisticated algorithmic granular control
 - **4ms RCD v2:** RCD divisions → Arbhar Strike for polyrhythmic granular triggering
 - **Cre8audio Function Junction:** Function Junction outputs → Arbhar for processed granular modulation
-- **Cross-Phase 2 Integration:** All Phase 2 modules can control every aspect of granular processing
+- **Cross-Advanced Integration:** All Advanced modules can control every aspect of granular processing
 
 ### **Phase 1 Module Integration (Core Synthesis):**
 - **Make Noise Maths:** Maths envelopes perfect for Arbhar granular parameter control
@@ -411,7 +521,7 @@ This represents the **ultimate time manipulation ecosystem** - where organic bre
 
 ---
 
-## Phase 2 Learning Path
+## Advanced Learning Path
 
 ### **Recommended Study Progression:**
 1. **Start with Arbhar fundamentals:** Master granular capture, playback, and basic parameter control
@@ -426,12 +536,12 @@ This represents the **ultimate time manipulation ecosystem** - where organic bre
 - **Arbhar + Wogglebug:** Master chaotic granular textures with controlled uncertainty
 - **Arbhar + Marbles:** Understand sophisticated algorithmic control of granular processing
 - **Arbhar + RCD:** Explore polyrhythmic granular triggering with mathematical precision
-- **All Phase 2 + Arbhar:** Build complete time manipulation ecosystems under your guidance
+- **All Advanced + Arbhar:** Build complete time manipulation ecosystems under your guidance
 
 ### **Skill Development Milestones:**
 - **Beginner:** Master basic granular capture and parameter control
 - **Intermediate:** Understand multi-layer granular systems and CV modulation
-- **Advanced:** Create Phase 2 integration patches with sophisticated granular processing
+- **Advanced:** Create Advanced integration patches with sophisticated granular processing
 - **Expert:** Design time manipulation ecosystems where you guide intelligent granular systems
 
 ### **Advanced Granular Concepts:**
@@ -448,7 +558,7 @@ This represents the **ultimate time manipulation ecosystem** - where organic bre
 
 ---
 
-**Bottom Line:** Arbhar isn't just a granular processor - it's a **complete time manipulation laboratory** that transforms any audio into shimmering temporal textures. As the **central time processor of Phase 2 ecosystems**, it transforms organic breathing, controlled chaos, sophisticated algorithms, and mathematical processing into unified temporal musical expression under your creative direction.
+**Bottom Line:** Arbhar isn't just a granular processor - it's a **complete time manipulation laboratory** that transforms any audio into shimmering temporal textures. As the **central time processor of Advanced ecosystems**, it transforms organic breathing, controlled chaos, sophisticated algorithms, and mathematical processing into unified temporal musical expression under your creative direction.
 
 ---
 
