@@ -11,6 +11,11 @@
 
 **What is Pico DSP?** A complete stereo effects processor with 8 custom DSP algorithms in just 3HP. It's like having a professional effects rack that takes any mono signal and creates wide, spacious stereo textures with everything from delays to reverbs to granular processing.
 
+**Key Specifications:**
+- **Width:** 3 HP
+- **Depth:** 35 mm
+- **Power:** 82 mA @ +12V / 20 mA @ -12V / 0 mA @ +5V
+
 ### Your First Stereo Effect (Stereo Delay)
 1. **Power up** - LED will show the current effect color
 2. **Press button** until LED shows **BLUE** (Stereo Delay)
