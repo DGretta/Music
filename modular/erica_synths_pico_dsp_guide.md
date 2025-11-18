@@ -127,7 +127,34 @@ The Pico series, particularly the DSP, introduced the concept that effects shoul
 
 ---
 
-## Beginner Patch Ideas
+## Why This Module Rocks
+
+### **The Philosophy:**
+Professional studio effects shouldn't require rack-mount units and multiple cables. Pico DSP proves that high-quality DSP processing can fit in 3HP while maintaining the flexibility and creativity of modular synthesis.
+
+### **The Engineering:**
+- **8 custom DSP algorithms** designed specifically for Eurorack
+- **True stereo processing** with intelligent mono-to-stereo conversion
+- **Professional signal handling** with clipping protection
+- **CV integration** brings effects into the modular workflow
+
+### **The Practical Benefits:**
+- **Space efficient:** Complete effects studio in 3HP
+- **Immediate results:** No programming or complex setup
+- **Performance ready:** Real-time control and effect switching
+- **Studio quality:** Professional algorithms in modular format
+- **Creative potential:** Effects become part of the patch, not just post-processing
+
+### **Perfect For:**
+- **Every rack:** Essential processing for any modular system
+- **Small cases:** Professional effects without space sacrifice
+- **Performers:** Reliable, hands-on effects control
+- **Producers:** Studio-quality processing in modular workflow
+- **Sound designers:** Creative processing and texture generation
+
+---
+
+## Patch Examples
 
 ### **Patch 1: Ambient Pad Creation**
 ```
@@ -144,7 +171,6 @@ Granular Delay (Blue) → L & R outputs (stereo ambient processing)
 - **Budget:** 2HP OSC for basic waveforms, Doepfer A-110-1 for classic analog oscillation
 - **Different character:** Make Noise STO for triangle core harmonics, Intellijel Dixie for West Coast synthesis
 - **Premium:** Mutable Instruments Plaits for complex synthesis algorithms, Expert Sleepers Disting for algorithmic generation
-- **Sample-based:** Radio Music for chaotic sample playback, Morphagene for granular sample manipulation
 
 ### **Patch 2: Rhythmic Stereo Delays**
 ```
@@ -162,7 +188,6 @@ LFO (Batumi, Ochd, Pamela's NEW) → CV input (delay time modulation)
 - **Budget:** 2HP Clk for basic clock generation, Doepfer A-118-2 for simple noise/random
 - **Different character:** Make Noise Wogglebug for chaotic modulation, Maths for complex envelope shapes
 - **Premium:** Intellijel Quadrax for sophisticated envelope generation, Expert Sleepers Disting for algorithmic modulation
-- **Sample-based:** Squarp Rample for professional sample playback, 1010music Bitbox for advanced sampling
 
 ### **Patch 3: Vintage Organ Simulation**
 ```
@@ -180,285 +205,22 @@ Expression (CV, Manual Control, Pedal) → CV input (rotation speed control)
 - **Budget:** 2HP TM for basic chord generation, Doepfer A-105 for simple filtering
 - **Different character:** Make Noise DPO for complex harmonic content, Maths for envelope-based expression
 - **Premium:** Mannequins Just Friends for sophisticated chord generation, Intellijel Metropolix for sequence-based harmony
-- **Vintage-focused:** Pittsburgh Modular Primary Oscillator for classic waveforms, Erica Synths Acidbox for vintage acid sounds
 
-### **Patch 4: Intermediate - Natural Effects Processing**
+### **Patch 4: Natural Effects Processing**
 ```
-   ┌─────────────────────┐      ┌─────────────────────────┐
-   │   DivKid Ochd      │      │    Erica Synths        │
-   │  (Natural LFOs)    │      │    Pico DSP            │
-   │                    │      │  (Effects Processing)  │
-   │                    │      │                         │
-   │ LFO 1 ○────────────┼──────┼─▶ CV Input (PAR1)      │
-   │       ║            │      │                         │
-   │ LFO 3 ○────────────┼──────┼─▶ Effect Button        │
-   │       ║            │      │                         │
-   │ LFO 5 ○────────────┼──────┼─▶ DRY/WET Control      │
-   │       ║            │      │                         │
-   │ LFO 7 ○────────────┼──────┼─▶ PAR2 Control         │
-   │       ║            │      │                         │
-   └───────║────────────┘      │ L & R Out ○───────────┼─── Audio (Red)
-           ║                   │ (Natural Effects)      │
-   CV (Blue)║                  └─────────────────────────┘
-           ║                           ║
-           ▼                    Audio ║
-   ┌─────────────┐               (Red)║
-   │ Audio       │                    ║
-   │ Sources     │────────────────────▼
-   │             │           ┌──────────────────────────────┐
-   └─────────────┘           │   Natural Effects            │
-                             │     Processing               │
-                             │                              │
-                             │ LFO 1: Natural Parameter Flow│
-                             │ LFO 3: Effect Evolution      │
-                             │ LFO 5: Natural Mix Changes   │
-                             │ LFO 7: Character Development │
-                             │                              │
-                             │ Living Effects ○─────────┼─── Natural Stereo Processing
-                             └──────────────────────────────┘
+DivKid Ochd (Natural LFOs) → Erica Synths Pico DSP (Effects Processing)
+Multiple LFOs modulating PAR1, PAR2, DRY/WET simultaneously for flowing effects
 ```
+**Setup:** Multiple algorithm cycling with natural LFO modulation
+**Controls:** Ochd Rate at 12 o'clock for musical timing, Pico DSP effects rotating through algorithms
+**Result:** Effects processing that develops naturally with flowing parameter evolution
+**Performance:** Real-time algorithm cycling and natural parameter modulation for organic effects
+**Learning Objective:** Effects processing as a composable element, natural modulation applied to professional processing
 
-| Module Integration | Signal Flow | Purpose | Natural Synergy |
-|-------------------|-------------|---------|------------------|
-| **Ochd LFO 1 → PAR1 CV** | Natural parameter modulation | **Flowing effect character** | **Natural effects evolution** |
-| **Ochd LFO 3 → Effect Button** | Natural algorithm progression | **Smooth effect transitions** | **Natural effects development** |
-| **Ochd LFO 5 → DRY/WET** | Natural mix evolution | **Flowing wetness changes** | **Dynamic effects response** |
-| **Ochd LFO 7 → PAR2** | Natural secondary control | **Flowing character changes** | **Natural effects movement** |
-
-**Module Settings:**
-- **Ochd Rate:** 12 o'clock for musical natural development timing
-- **Pico DSP:** Natural cycling through effects with flowing parameter modulation
-- **Parameter coordination:** Natural flow creates complex effects development
-- **Result:** Effects processing that develops naturally with flowing parameter evolution
-
-**Learning Objectives:**
-- **Natural + Effects integration:** Natural circuit development applied to professional effects processing
-- **Flowing effects:** Effects algorithms that develop with natural parameter evolution
-- **Dynamic processing:** Simple natural modulation creates complex effects development
-- **System coordination:** Entire effects system develops as unified natural processing
-
-**Alternative Modulation Sources:**
-- **Instead of Ochd:** Try **Batumi** for more geometric effects development, or **Maths** for mathematical effects relationships
-- **Instead of effect switching:** Try **parameter focus** for simpler natural effects processing
-- **Budget alternatives:** **2HP LFO + 2HP Rnd** provides similar natural + variation functionality
-- **Different character:** **Quadrax** gives more discrete effects steps vs Ochd's continuous development
-
-### **Patch 5: Advanced - Multi-Function Effects Engine**
-```
-   ┌─────────────────────┐      ┌─────────────────────────┐
-   │   Make Noise       │      │    Erica Synths        │
-   │   Wogglebug        │      │    Pico DSP            │
-   │  (Chaos Source)    │      │  (Effects Processing)  │
-   │                    │      │                         │
-   │ Stepped CV ○───────┼──────┼─▶ Effect Selection      │
-   │       ║            │      │                         │
-   │ Smooth CV ○────────┼──────┼─▶ CV Input (PAR1)      │
-   │       ║            │      │                         │
-   │ Woggle CV ○────────┼──────┼─▶ DRY/WET Control      │
-   │       ║            │      │                         │
-   │ Burst CV ○─────────┼──────┼─▶ PAR2 Modulation      │
-   │       ║            │      │                         │
-   └───────║────────────┘      │ L & R Out ○───────────┼─── Audio (Red)
-           ║                   │ (Chaotic Effects)      │
-   CV (Blue)║                  └─────────────────────────┘
-           ║                           ║
-           ▼                    Audio ║
-   ┌─────────────┐               (Red)║
-   │ Audio       │                    ║
-   │ Sources     │────────────────────▼
-   │             │           ┌───────────────────────────────┐
-   └─────────────┘           │   Chaotic Effects             │
-                             │     Processing                │
-                             │                               │
-                             │ Stepped: Effects Jumps        │
-                             │ Smooth: Parameter Flow        │
-                             │ Woggle: Unpredictable Mix     │
-                             │ Burst: Character Explosions   │
-                             │                               │
-                             │ Controlled Chaos ○────────┼─── Complex Effects Output
-                             └───────────────────────────────┘
-```
-
-| Chaos + Effects Chain | Function | Purpose | Advanced Integration |
-|-----------------------|----------|---------|---------------------|
-| **Wogglebug Stepped → Effect Selection** | Quantized chaos switching | **Chaotic effect jumps** | **Chaos circuit controls processing types** |
-| **Wogglebug Smooth → PAR1 CV** | Analog chaos parameters | **Smooth chaos character** | **Chaotic effects variation** |
-| **Wogglebug Woggle → DRY/WET** | Pure chaos mix control | **Unpredictable wetness** | **Chaos-driven effects balance** |
-| **Wogglebug Burst → PAR2** | Chaos character control | **Explosive parameter changes** | **Complex effects circuit changes** |
-
-**Module Settings:**
-- **Wogglebug:** All outputs active, Rate for musical chaos timing based on circuit design
-- **Pico DSP:** Effect switching responds to chaos for dramatic processing changes
-- **Parameter chaos:** Create unpredictable but musical effects variations through circuit interaction
-- **Result:** Effects processing with controlled but unpredictable chaos variations
-
-**Learning Objectives:**
-- **Chaos + Effects fusion:** Controlled unpredictability in professional effects systems through circuit design
-- **Chaos circuit theory:** Understanding how chaos circuits affect effects processing
-- **Unpredictable yet musical:** Chaos keeps effects processing from becoming static through natural variation
-- **Controlled randomness:** Effects processing keeps chaos musical and structured through analog circuits
-
-### **Patch 6: Expert - Professional Multi-Function DSP Workstation**
-```
-┌─────────────┐ ┌─────────────┐ ┌─────────────┐ ┌─────────────────┐
-│   Squarp    │ │ Winterbloom │ │   Mordax    │ │ Erica Synths    │
-│  Hermod+    │ │ MetaModule  │ │   Data      │ │  Pico DSP       │
-│(Sequencer)  │ │(Plugin Host)│ │(Analyzer)   │ │ (DSP Core)      │
-│             │ │             │ │             │ │                 │
-│ CV Track 1  │ │ Fundamental │ │ Scope       │ │ Effect          │
-│ ○───────────┼─┼─VCO (LFO)   │ │ Analysis    │ │ Selection       │
-│       ║     │ │       ║     │ │       ║     │ │       ║         │
-│ CV Track 2  │ │ AS ADSR     │ │ FFT         │ │ CV (PAR1)      │
-│ ○───────────┼─┼─○───────────┼─┼─Display     │ │ ○─────────┼─── │
-│       ║     │ │       ║     │ │       ║     │ │       ║         │
-│ CV Track 3  │ │ Plugin      │ │ Level       │ │ DRY/WET        │
-│ ○───────────┼─┼─Processing  │ │ Meters      │ │ Control         │
-│       ║     │ │       ║     │ │       ║     │ │       ║         │
-│ Live Record │ │ CV Out      │ │ Trigger     │ │ L & R Out      │
-│ ○───────────┼─┼─○───────────┼─┼─Analysis    │ │ ○─────────┼─Audio
-│       ║     │ │       ║     │ │       ║     │ │               │
-└───────║─────┘ └─────────────┘ │ Audio In    │ └─────────────────┘
-        ║                       │ ◀───────────┼─── Analysis Loop
-        ▼                       └─────────────┘         ║
-┌──────────────────────────────────────────────────────────────────┐
-│                Professional DSP Analysis Workstation                │
-│                                                                     │
-│ Advanced Sequencing + Plugin Processing + Real-Time Analysis       │
-│                                                                     │
-│ Hermod+     → Multi-track CV sequencing with live recording        │
-│ MetaModule  → Fundamental VCO (LFO mode) + AS ADSR envelope        │
-│ Data        → Real-time FFT analysis and level monitoring          │
-│ Pico DSP    → Professional effects processing with analysis        │
-│                                                                     │
-│ Complete Professional Studio Integration                            │
-│                                                                     │
-│ Professional Effects System ○──────────────────────────┼─── Analyzed Output
-└──────────────────────────────────────────────────────────────────┘
-```
-
-**Professional Multi-Function Integration:**
-
-| Module | Primary Function | Secondary Functions | Pico DSP Role |
-|--------|------------------|--------------------|---------------|
-| **Hermod+ (26HP)** | Advanced sequencer | **Built-in quantizer + live recording + multi-track CV** | **Professional sequencing control** |
-| **MetaModule (26HP)** | Plugin host | **Fundamental VCO (LFO mode) + AS ADSR envelope** | **Plugin-processed parameter control** |
-| **Data (16HP)** | Signal analyzer | **FFT analysis + level meters + trigger analysis** | **Real-time effects monitoring** |
-| **Pico DSP (3HP)** | 8-algorithm effects | **Professional DSP processing core** | **Complete effects engine** |
-
-**Professional System Design:**
-- **Hermod+ as sequencing brain:** Multi-track CV sequences with live recording for complex effects automation
-- **MetaModule as plugin engine:** Fundamental VCO plugin in LFO mode + AS ADSR for sophisticated parameter control
-- **Data as analysis engine:** Real-time FFT and level analysis provides visual feedback of effects processing
-- **Pico DSP as effects core:** Professional algorithms controlled by multi-function ecosystem with analysis feedback
-- **Total system:** 71HP for complete professional effects workstation with analysis
-
-**Performance Applications:**
-1. **Multi-track effects automation:** Hermod+ provides complex CV sequences across multiple parameters simultaneously
-2. **Plugin-based modulation:** MetaModule VCO plugin generates sophisticated LFO shapes for parameter animation
-3. **Envelope-shaped dynamics:** MetaModule ADSR plugin provides dynamic effects parameter control
-4. **Real-time analysis:** Data provides visual feedback of effects processing results
-5. **Live recording integration:** Record parameter automation in real-time for repeatable effects sequences
-
-**Why This Professional Ecosystem Works:**
-- **Leverages professional capabilities:** Uses modules for high-end studio applications
-- **Analysis integration:** Visual feedback improves effects processing decisions
-- **Plugin flexibility:** MetaModule adapts to any parameter control needs
-- **Scalable complexity:** Simple sequences to complex multi-track automation
-- **Studio integration:** Professional workflow with analysis and live recording
-
-**Expert System Performance:**
-1. **Initialization:** Hermod+ loads sequences, MetaModule loads plugins, Data begins analysis
-2. **Processing chain:** Hermod+ CV → MetaModule plugins → Pico DSP effects → Data analysis
-3. **Visual feedback:** Data provides real-time analysis of effects processing results
-4. **Live automation:** Record parameter changes in real-time via Hermod+ live recording
-5. **Professional evolution:** Complete effects workstation with studio-grade capabilities
-
-**Philosophical Achievement:**
-This represents **professional effects mastery** - where advanced sequencing, plugin processing, and real-time analysis all serve the effects engine, creating a complete studio workstation that provides both creative processing and analytical feedback for professional results.
-
----
-
-## Advanced Techniques
-
-### **CV Modulation Strategies:**
-- **LFO → CV Input:** Animated parameter sweeps
-- **Envelope → CV Input:** Dynamic effect changes
-- **Sequencer → CV Input:** Rhythmic parameter changes
-- **Random → CV Input:** Unpredictable effect variations
-
-### **Freeze Mode (Granular Delay):**
-- **PAR1 full clockwise** creates infinite feedback loop
-- **Captures current audio** and loops it indefinitely
-- **PAR2 controls loop length** when frozen
-- **Performance technique:** Freeze interesting moments, then manipulate
-
-### **Signal Chain Strategies:**
-- **Early in chain:** Process oscillators before filters
-- **Late in chain:** Process final mix for polish
-- **Parallel processing:** Mix dry signal separately for blend control
-- **Feedback loops:** Route outputs back through other modules
-
----
-
-## Input/Output Management
-
-### **Input Specifications:**
-- **10Vpp maximum** before clipping (watch the LED!)
-- **Mono to stereo conversion** - single input becomes stereo processing
-- **High impedance input** - works with all Eurorack signal levels
-- **Clipping protection** - LED warns before distortion
-
-### **Output Characteristics:**
-- **True stereo outputs** - L and R are processed independently
-- **Eurorack levels** - compatible with all mixers and interfaces
-- **Use both outputs** - effects are designed for stereo operation
-- **Balanced mix bus** - safe to mix L and R if needed (but you lose stereo!)
-
----
-
-## Common Use Cases
-
-### **Studio Production:**
-- **Mix bus processing:** Final polish on submixes
-- **Send effects:** Dedicated effect returns in mixing console
-- **Creative processing:** Transform simple sounds into complex textures
-- **Space creation:** Add depth and width to mono sources
-
-### **Live Performance:**
-- **3HP effects rack:** Professional processing in minimal space
-- **Real-time control:** CV and manual parameter automation
-- **No latency:** Real-time processing for live input
-- **Reliable operation:** Professional DSP algorithms
-
-### **Sound Design:**
-- **Texture creation:** Granular and pitch effects for unique sounds
-- **Vintage emulation:** Leslie and saturated reverb for classic tones
-- **Experimental processing:** Freeze modes and extreme settings
-- **Stereo imaging:** Create wide, immersive soundscapes
-
----
-
-## Pairs Well With
-
-### **Multi-Function Module Synergies (Professional Effects Systems):**
-- **DivKid Ochd & Expander:** Natural LFO modulation → Pico DSP for flowing effects parameter development
-- **Make Noise Wogglebug:** Chaos CV generation → Pico DSP for controlled unpredictable effects processing
-- **Squarp Hermod+:** Advanced sequencing + built-in quantization + live recording → Pico DSP for professional effects automation
-- **Winterbloom MetaModule:** Plugin-based processing (Fundamental VCO + AS ADSR) → Pico DSP for sophisticated parameter control
-- **Mordax Data:** Real-time FFT analysis + level monitoring → Pico DSP for visual effects processing feedback
-- **Cross-Multi-Function Integration:** Pico DSP serves as effects processor for complete multi-function studio workstations
-
-### **Essential Partners:**
-- **Stereo Mixers:** Essential for hearing the full stereo processing
-- **VCAs:** Control send levels to the effect
-- **LFOs:** Animate effect parameters via CV input
-- **Envelope Generators:** Dynamic effect parameter control
-
-### **Advanced Combinations:**
-- **Multiple Pico DSPs:** Chain different effects together
-- **Quantizers:** Make CV modulation musical (for pitch shift delay)
-- **Clock Dividers:** Sync delay times to musical subdivisions
-- **Attenuverters:** Scale CV input for precise parameter control
+**Alternative Module Options:**
+- **Budget:** 2HP LFO + 2HP Rnd provides similar natural + variation functionality
+- **Different character:** Batumi for more geometric effects development, Maths for mathematical effects relationships
+- **Premium:** Quadrax for more discrete effects steps, Ochd for continuous development
 
 ---
 
@@ -504,34 +266,87 @@ This represents **professional effects mastery** - where advanced sequencing, pl
 
 ---
 
-## Why This Module Rocks
+## Input/Output Management
 
-### **The Philosophy:**
-Professional studio effects shouldn't require rack-mount units and multiple cables. Pico DSP proves that high-quality DSP processing can fit in 3HP while maintaining the flexibility and creativity of modular synthesis.
+### **Input Specifications:**
+- **10Vpp maximum** before clipping (watch the LED!)
+- **Mono to stereo conversion** - single input becomes stereo processing
+- **High impedance input** - works with all Eurorack signal levels
+- **Clipping protection** - LED warns before distortion
 
-### **The Engineering:**
-- **8 custom DSP algorithms** designed specifically for Eurorack
-- **True stereo processing** with intelligent mono-to-stereo conversion
-- **Professional signal handling** with clipping protection
-- **CV integration** brings effects into the modular workflow
-
-### **The Practical Benefits:**
-- **Space efficient:** Complete effects studio in 3HP
-- **Immediate results:** No programming or complex setup
-- **Performance ready:** Real-time control and effect switching
-- **Studio quality:** Professional algorithms in modular format
-- **Creative potential:** Effects become part of the patch, not just post-processing
-
-### **Perfect For:**
-- **Every rack:** Essential processing for any modular system
-- **Small cases:** Professional effects without space sacrifice
-- **Performers:** Reliable, hands-on effects control
-- **Producers:** Studio-quality processing in modular workflow
-- **Sound designers:** Creative processing and texture generation
+### **Output Characteristics:**
+- **True stereo outputs** - L and R are processed independently
+- **Eurorack levels** - compatible with all mixers and interfaces
+- **Use both outputs** - effects are designed for stereo operation
+- **Balanced mix bus** - safe to mix L and R if needed (but you lose stereo!)
 
 ---
 
-**Bottom Line:** Pico DSP brings professional effects processing into the modular world without compromise. 8 high-quality effects, stereo processing, and CV integration in 3HP - it's like having a complete effects studio that thinks like a modular synthesizer.
+## Common Use Cases
+
+### **Studio Production:**
+- **Mix bus processing:** Final polish on submixes
+- **Send effects:** Dedicated effect returns in mixing console
+- **Creative processing:** Transform simple sounds into complex textures
+- **Space creation:** Add depth and width to mono sources
+
+### **Live Performance:**
+- **3HP effects rack:** Professional processing in minimal space
+- **Real-time control:** CV and manual parameter automation
+- **No latency:** Real-time processing for live input
+- **Reliable operation:** Professional DSP algorithms
+
+### **Sound Design:**
+- **Texture creation:** Granular and pitch effects for unique sounds
+- **Vintage emulation:** Leslie and saturated reverb for classic tones
+- **Experimental processing:** Freeze modes and extreme settings
+- **Stereo imaging:** Create wide, immersive soundscapes
+
+---
+
+## Advanced Techniques
+
+### **CV Modulation Strategies:**
+- **LFO → CV Input:** Animated parameter sweeps
+- **Envelope → CV Input:** Dynamic effect changes
+- **Sequencer → CV Input:** Rhythmic parameter changes
+- **Random → CV Input:** Unpredictable effect variations
+
+### **Freeze Mode (Granular Delay):**
+- **PAR1 full clockwise** creates infinite feedback loop
+- **Captures current audio** and loops it indefinitely
+- **PAR2 controls loop length** when frozen
+- **Performance technique:** Freeze interesting moments, then manipulate
+
+### **Signal Chain Strategies:**
+- **Early in chain:** Process oscillators before filters
+- **Late in chain:** Process final mix for polish
+- **Parallel processing:** Mix dry signal separately for blend control
+- **Feedback loops:** Route outputs back through other modules
+
+---
+
+## Pairs Well With
+
+### **Multi-Function Module Synergies (Professional Effects Systems):**
+- **DivKid Ochd & Expander:** Natural LFO modulation → Pico DSP for flowing effects parameter development
+- **Make Noise Wogglebug:** Chaos CV generation → Pico DSP for controlled unpredictable effects processing
+- **Squarp Hermod+:** Advanced sequencing + built-in quantization + live recording → Pico DSP for professional effects automation
+- **Winterbloom MetaModule:** Plugin-based processing (Fundamental VCO + AS ADSR) → Pico DSP for sophisticated parameter control
+- **Mordax Data:** Real-time FFT analysis + level monitoring → Pico DSP for visual effects processing feedback
+- **Cross-Multi-Function Integration:** Pico DSP serves as effects processor for complete multi-function studio workstations
+
+### **Essential Partners:**
+- **Stereo Mixers:** Essential for hearing the full stereo processing
+- **VCAs:** Control send levels to the effect
+- **LFOs:** Animate effect parameters via CV input
+- **Envelope Generators:** Dynamic effect parameter control
+
+### **Advanced Combinations:**
+- **Multiple Pico DSPs:** Chain different effects together
+- **Quantizers:** Make CV modulation musical (for pitch shift delay)
+- **Clock Dividers:** Sync delay times to musical subdivisions
+- **Attenuverters:** Scale CV input for precise parameter control
 
 ---
 
