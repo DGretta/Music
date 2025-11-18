@@ -157,6 +157,37 @@ This framework implements the interconnectedness principle from `project_philoso
 6. **Pairs Well With** - Integration suggestions with alternatives
 7. **What This Unlocks From Your Existing Gear** (Optional but Strongly Encouraged) - Include when module creates genuine new possibilities with commonly-owned equipment
 
+### **Official Section Ordering (Updated 2025-11-18)**
+
+**Authoritative sequence for all guides:**
+
+1. **Quick Start** - First sound in 5 minutes, builds confidence immediately
+2. **Essential Parameters** - Learn the controls before understanding philosophy
+3. **Historical Context** - Ground understanding in module's place in synthesis/music history (when educationally valuable)
+4. **Algorithm Reference / Key Specifications** - Provide reference material for the sections that follow (where applicable)
+5. **Why This Instrument Excels** - Set philosophical and architectural context before practical application
+6. **Patch Examples** - Apply learning through hands-on patches; guides encounter common mistakes here
+7. **Common Mistakes & Pattern Recognition** - Supportive troubleshooting after practice; reveals synthesis principles through problems encountered
+8. **Pairs Well With** - Show integration possibilities after user has hands-on experience
+9. **Advanced Learning Path** - Growth trajectory after mastery of basics
+
+**Rationale for this ordering:**
+
+- **Sections 1-4 (Foundation):** Build technical competency and historical context before abstract philosophy
+- **Section 5 (Philosophy):** Inspire with design understanding after establishing foundation
+- **Sections 6-7 (Application & Learning):** Patches come first so users encounter mistakes naturally; troubleshooting becomes supportive, not cautionary
+- **Sections 8-9 (Integration & Growth):** Advanced content after core mastery
+
+**Why this sequence matters:**
+- Quick Start builds immediate success (user confidence)
+- Essential Parameters + Historical Context establish competency (user understanding)
+- Why This Excels sets vision (user inspiration) AFTER understanding controls
+- Patches let user discover real-world problems (user experience)
+- Common Mistakes provides supportive guidance AFTER user has tried (user learning)
+- Advanced content comes last (user growth trajectory)
+
+**Pattern Discovery Note:** This ordering emerged from Erica Synths Pico DRUM2 enhancement (November 2025), where placing Common Mistakes before Patch Examples created tonal dissonance (excitement → caution), while moving it after patches created natural flow (vision → practice → learning from experience → growth). This sequence now applies to all guides.
+
 ### **"Existing Gear Integration" Section Guidelines:**
 **Include this section when:**
 - Module genuinely opens up integration possibilities with common existing gear
@@ -340,6 +371,46 @@ This framework implements the interconnectedness principle from `project_philoso
 - **Efficiency targets missed:** Document actual performance, analyze causes
 - **Quality issues:** Address using quality system protocols
 - **Framework compliance gaps:** Use systematic testing criteria to identify and resolve
+
+---
+
+## **Pattern Refinement Notes (November 2025)**
+
+### **Discovery: 4-5 Core Common Mistakes Standard**
+
+**Session:** Erica Synths Pico DRUM2 enhancement
+
+**Finding:** The original framework requirement of "8-12 common mistakes" was too rigid. Testing revealed:
+- **Utility modules** rarely have 8-12 legitimate beginner issues (forcing to count requires edge cases)
+- **Creative modules** better served by 4-5 core mistakes that teach foundational principles
+- **Quality principle:** Four deeply explained mistakes teaching synthesis principles beats twelve padded issues
+- **Teaching obligation:** Stretching to hit numbers dishonors the interconnection principle
+
+**Decision:** Minimum 4-5 core common mistakes (not 8-12). Additional issues only if they genuinely exist and teach something new.
+
+**Application:** This standard now applies to all guide enhancements going forward. Pico DRUM2 serves as reference implementation with 4 core mistakes that explain 90% of beginner problems.
+
+### **Discovery: Official Section Ordering**
+
+**Session:** Erica Synths Pico DRUM2 enhancement
+
+**Finding:** Without prescribed section order, guides varied structurally, and content placement affected pedagogical flow. Specific problem:
+- Placing "Common Mistakes" immediately after "Why This Excels" created tonal dissonance (excitement → caution)
+- Moving "Common Mistakes" after "Patch Examples" created natural pedagogical flow (inspire → practice → learn from experience)
+
+**Decision:** Adopted authoritative section ordering (documented above) that sequences content by learning stage: foundation → philosophy → application → learning → integration → growth.
+
+**Impact:** This ordering aligns with user experience lifecycle and teaching obligation principle (guides become pedagogically sound, not just reference materials).
+
+**Application:** All new guides and significant enhancements must follow this section ordering. Existing guides should be updated when feasible.
+
+### **Cross-Documen Implications**
+
+These refinements affect:
+- `guide_creation_workflow.md` - Update section ordering references
+- `guide_enhancement_pattern.md` - Update mistake count expectations
+- `accountability_tracking.md` - New pattern baseline for framework compliance
+- All future guide enhancements - Follow 4-5 mistake standard and prescribed section ordering
 
 ---
 
