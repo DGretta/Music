@@ -3,22 +3,18 @@
 
 ---
 
-## Historical Context
-
-**The Algorithm Revolution:** The Expert Sleepers Disting mk4 represents a pivotal innovation in modular synthesis - the first module to successfully implement dozens of classic synthesis functions in a single 4HP package. Released when modular systems required separate modules for every function, Disting proved that sophisticated algorithm implementation could replace hardware specialization.
-
-**Technical Innovation:** With 80+ algorithms covering every fundamental synthesis category, Disting mk4 democratized modular synthesis by making advanced functions accessible without requiring extensive module collections. Its SD card integration and continuous firmware updates established the template for software-enhanced hardware that many manufacturers now follow.
-
-**Educational Impact:** Disting became the "modular synthesis textbook" - allowing users to explore quantizers, delays, filters, LFOs, and complex processing without investing in dozens of specialized modules. This educational accessibility helped grow the modular synthesis community significantly.
-
----
-
 ## Quick Start: Get Your First Sound in 5 Minutes
 
 ![Expert Sleepers Disting mk4](https://github.com/DGretta/Music/raw/main/modular/images/expert_sleepers/disting_mk4/front_panel.jpg)
 *Expert Sleepers Disting mk4 - Front panel showing algorithm display, dual inputs/outputs, and parameter controls*
 
 **What is Disting mk4?** A **multi-algorithm utility module** that can function as 80+ different modules in one tiny 4HP package. Think of it as having an entire modular system that you can switch between instantly - oscillators, filters, delays, quantizers, LFOs, envelopes, and much more.
+
+**Key Specifications:**
+- **Width:** 4 HP
+- **Depth:** 42 mm
+- **Power:** 51 mA @ +12V / 19 mA @ -12V / 0 mA @ +5V
+- **Architecture:** 80+ algorithm multi-function utility with SD card integration
 
 ### Your First Algorithm - Precision Adder
 1. **Power up** - watch the startup LED sequence (columns then rows)
@@ -73,6 +69,16 @@
 
 ---
 
+## Historical Context
+
+**The Algorithm Revolution:** The Expert Sleepers Disting mk4 represents a pivotal innovation in modular synthesis - the first module to successfully implement dozens of classic synthesis functions in a single 4HP package. Released when modular systems required separate modules for every function, Disting proved that sophisticated algorithm implementation could replace hardware specialization.
+
+**Technical Innovation:** With 80+ algorithms covering every fundamental synthesis category, Disting mk4 democratized modular synthesis by making advanced functions accessible without requiring extensive module collections. Its SD card integration and continuous firmware updates established the template for software-enhanced hardware that many manufacturers now follow.
+
+**Educational Impact:** Disting became the "modular synthesis textbook" - allowing users to explore quantizers, delays, filters, LFOs, and complex processing without investing in dozens of specialized modules. This educational accessibility helped grow the modular synthesis community significantly.
+
+---
+
 ## Understanding the Algorithm Structure
 
 ### **The Philosophy:**
@@ -104,7 +110,7 @@ Instead of buying dozens of modules, Disting mk4 gives you **one module that can
 
 ---
 
-## Progressive Patch Examples
+## Multi-Function Patch Applications
 
 ### **Patch 1: First Steps - Musical CV Quantizer**
 ```
@@ -485,7 +491,7 @@ Instead of buying dozens of modules, Disting mk4 gives you **one module that can
 
 ---
 
-## Beginner "Gotchas" & Pro Tips
+## Common Mistakes
 
 ### **⚠️ Common Mistakes:**
 
@@ -535,7 +541,7 @@ Instead of buying dozens of modules, Disting mk4 gives you **one module that can
 
 ---
 
-## Why This Module Rocks
+## Why This Instrument Excels
 
 ### **The Philosophy:**
 Disting mk4 proves that **one excellent module** can be more valuable than dozens of mediocre ones. Instead of buying a separate quantizer, delay, LFO, filter, and sample player, you get all of them in 4HP - and they're all excellent implementations.
@@ -564,7 +570,7 @@ Disting mk4 **democratizes modular synthesis** by making every function accessib
 
 ---
 
-## Learning Path
+## Multi-Function Learning Path
 
 ### **Recommended Study Progression:**
 1. **Start with Disting fundamentals:** Master algorithm navigation and basic CV/audio processing
