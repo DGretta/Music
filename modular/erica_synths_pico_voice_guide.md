@@ -11,6 +11,12 @@
 
 **What is Pico Voice?** A complete voice module packed into just 3HP with 8 different synthesis algorithms ranging from Karplus Strong string synthesis to TB-303 bassline emulation. It's like having 8 different synthesizers in the space of a single knob!
 
+**Key Specifications:**
+- **Width:** 3 HP
+- **Depth:** 35 mm
+- **Power:** 30 mA @ +12V / 20 mA @ -12V / 0 mA @ +5V
+- **Architecture:** 8-algorithm synthesis voice with CV-assignable modulation
+
 ### Your First Voice (Chord Algorithm)
 1. **Power up** - LED will show the current algorithm color
 2. **Turn Tune knob** to around 12 o'clock (C4 range)
@@ -52,6 +58,19 @@
 - **Assignment:** Set in configuration mode (RED=Tune, GREEN=PAR1, BLUE=PAR2)
 - **Range:** -5V to +5V for full parameter sweep
 - **Power move:** Change assignments per algorithm for complex modulation
+
+---
+
+## Historical Context
+
+### **Synthesis Algorithms in Modular History**
+The 8 algorithms in Pico Voice represent landmark moments in synthesis development. Karplus-Strong emerged from physical modeling research in the 1980s, creating organic plucked string sounds from digital algorithms. TB-303 emulation references the legendary acid house synthesizer that shaped electronic music culture. Wavetable morphing descends from classic Fairlight and Emulator synthesis. These algorithms, once requiring dedicated hardware or complex programming, now coexist in a 3HP module—a testament to efficient algorithm design and modern chip capabilities.
+
+### **Algorithm Diversity in Compact Space**
+Historically, choosing a synthesis approach meant choosing a module: one for wavetable work, another for FM, another for subtractive. Pico Voice collapses this decision, offering multiple complementary synthesis methods with a single button press. This reflects both the maturity of synthesis algorithms and the philosophy that essential creative tools shouldn't require dedicated rack space.
+
+### **Assignable CV: Control Without Menus**
+The ability to assign CV control to any parameter without menu diving represents decades of hardware synthesis philosophy: hands-on control, immediate feedback, no digital intermediaries. This approach keeps Pico Voice performable and expressive despite packing 8 complete algorithms into 3HP.
 
 ---
 
@@ -107,7 +126,7 @@
 
 ---
 
-## Beginner Patch Ideas
+## Creative Patch Applications
 
 ### **Patch 1: Chord Progression Player**
 - **Algorithm:** Chords (Yellow)
@@ -117,6 +136,11 @@
 - **Gate timing controlled by:** Note changes and PAR2 (release time) - no dedicated gate input needed
 - **Result:** Automatic chord progressions with evolving harmony
 
+**Alternative Modulation Sources:**
+- **Budget:** Any simple LFO (2HP LFO, Doepfer A-145) provides basic chord variation control
+- **Different Character:** Make Noise Maths for mathematical chord evolution, DivKid Ochd for organic chord transitions
+- **Premium:** Intellijel Quadrax for complex chord modulation with multiple simultaneous processes
+
 ### **Patch 2: Acid Bassline**
 - **Algorithm:** Bassline (Blue)
 - **Bass sequence** → 1V/Oct input
@@ -125,12 +149,22 @@
 - **Note:** Bassline algorithm auto-triggers on note changes - no external gate needed
 - **Result:** Classic TB-303 style acid sequences
 
+**Alternative Modulation Sources:**
+- **Budget:** Simple envelope generator (Blue Lantern ADSR, Doepfer A-140) for filter modulation
+- **Different Character:** Make Noise Maths for complex filter sweeps, DivKid Ochd for organic filter evolution
+- **Premium:** Intellijel Quadrax with envelope shaping for sophisticated acid processing
+
 ### **Patch 3: Evolving Pad**
 - **Algorithm:** Wavetable (Green)
 - **Slow chord sequence** → 1V/Oct input
 - **PAR2 fully clockwise** (sustained without gates)
 - **Slow LFO** → CV Input (assigned to PAR1 for wave surfing)
 - **Result:** Constantly evolving ambient pad textures
+
+**Alternative Modulation Sources:**
+- **Budget:** Very slow LFO (Doepfer A-143-1 VC LFO, 2HP LFO set to slow) for gradual pad evolution
+- **Different Character:** DivKid Ochd for organic pad development, Batumi for geometric wavetable morphing
+- **Premium:** Make Noise Maths for complex wavetable animation with mathematical relationships
 
 ### **Patch 4: Intermediate - Advanced Organic Voice Development**
 ```
@@ -394,23 +428,47 @@
 
 ---
 
-## Beginner "Gotchas" & Pro Tips
+## Advanced Techniques
 
-### **⚠️ Common Mistakes:**
+### **Algorithm Switching for Texture Changes**
+Don't think of algorithms as mutually exclusive sounds. Use CV to switch between complementary algorithms for evolving patches: start with Wavetable for ambient pads, switch to Wavefold for textural density, then Harmonic for tonal warmth. Each transition creates a unique moment without repatching.
+
+### **CV Assignment as Performance Control**
+Beyond assigning CV to parameters, change assignments mid-performance. Assign to Tune for vibrato, then reassign to PAR1 for filter modulation, then PAR2 for release time control. This transforms a single CV input into a multi-purpose expression tool.
+
+### **Configuration Mode as Sound Design Tool**
+Configuration mode isn't just setup—it's creative sound design. Different waveforms, note modes, and algorithm-specific settings create timbral variations that coexist with PAR1/PAR2 knob control. Explore all settings per algorithm before declaring the sound "done."
+
+### **Combining Algorithms for Hybrid Synthesis**
+Use two Pico Voice modules: one on Wavetable, another on Harmonic. Blend them through a mixer, then assign different CV sources to each for hybrid synthesis that combines digital morphing with additive harmonic building. One sequencer feeds both modules at different transpositions for complex polyphonic textures.
+
+---
+
+## Common Mistakes
+
+### **🎵 Common Mistake Patterns:**
 
 **"My Karplus Strong doesn't make sound!"**
 - Karplus Strong REQUIRES gate/trigger input to initiate the string
-- **Solution:** Patch a gate/trigger signal to the TRIGG input
+- **Solution:** Patch a gate/trigger signal to the TRIGG input, or use rapid note changes on the sequencer
 
 **"The pitch tracking seems off in the low end!"**
-- Pico Voice tracks C1-C8, below 1V it doesn't track properly
-- **Solution:** Stay within the C1-C8 range (1V-8V)
+- Pico Voice tracks C1-C8; below 1V or above 8V the tracking becomes unreliable
+- **Solution:** Stay within the C1-C8 range (1V-8V input to 1V/Oct input)
 
 **"I can't get sustained sounds!"**
-- Some algorithms depend on gate length for sustain
-- **Solution:** Turn PAR2 fully clockwise for sustained operation without gates
+- Some algorithms like Karplus Strong depend entirely on gate length for sound generation
+- **Solution:** Turn PAR2 fully clockwise for sustained operation without external gates. Experiment per algorithm—behavior varies significantly
 
-### **🎵 Pro Tips:**
+**"CV assignment isn't working as expected"**
+- CV assignment affects only the modulation behavior, not fundamental algorithm character. Different algorithms respond differently to the same CV range
+- **Solution:** Understand that CV ranges vary by algorithm. Test all three CV assignments (Tune/PAR1/PAR2) and attenuate as needed per algorithm
+
+**"Configuration mode changes disappeared when I switched algorithms"**
+- Each algorithm has independent configuration settings (waveforms, note modes, etc.). Switching algorithms returns those saved settings, but you must be in config mode to verify/change them
+- **Solution:** Always check configuration settings when switching algorithms—what worked on Bassline might not be optimal for Wavetable
+
+### **🎵 Pro Tips:
 
 **Algorithm Workflow:**
 - **Learn the LED colors** - much faster than counting button presses
@@ -437,7 +495,7 @@
 
 ---
 
-## Why This Module Rocks
+## Why This Instrument Excels
 
 ### **The Philosophy:**
 Erica Synths challenged themselves: "Can we make ANY superior functionality synth module 3HP wide and affordable?" The answer is yes, and Pico Voice proves it.
@@ -465,7 +523,7 @@ Erica Synths challenged themselves: "Can we make ANY superior functionality synt
 
 ---
 
-## **Advanced Learning Path**
+## Creative Learning Path
 
 ### **Recommended Study Progression:**
 1. **Start with Pico Voice fundamentals:** Master 8-algorithm operation, CV assignment, and voice synthesis concepts
