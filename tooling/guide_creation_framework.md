@@ -188,7 +188,50 @@ This framework implements the interconnectedness principle from `project_philoso
 
 **Pattern Discovery Note:** This ordering emerged from Erica Synths Pico DRUM2 enhancement (November 2025), where placing Common Mistakes before Patch Examples created tonal dissonance (excitement → caution), while moving it after patches created natural flow (vision → practice → learning from experience → growth). This sequence now applies to all guides.
 
-### **"Existing Gear Integration" Section Guidelines:**
+### **Key Specifications Placement (Critical for Evaluation)**
+
+**Location:** Within Quick Start section, immediately after "What is [Module]?" description, before "Your First [Experience]"
+
+**Mandatory Format:**
+```
+**Key Specifications:**
+- **Width:** [X] HP
+- **Depth:** [X] mm
+- **Power:** [X] mA @ +12V / [X] mA @ -12V / [X] mA @ +5V
+```
+
+**Why This Placement:**
+- Users read: Concept → Evaluate if fits system → Try it
+- Specs are decision-making information, not learning material
+- Before "Your First [Experience]" because users need to know fit before investing time
+- Natural evaluation flow: "Is this for me?" (specs) → "Can I use it?" (first patch)
+
+**Mandatory for all module guides:** No exceptions. Hardware constraints are deal-breakers.
+
+**Format Rules:**
+- **Width:** Always in HP (eurorack standard)
+- **Depth:** Always in mm (case compatibility check)
+- **Power:** Always show all three rails (+12V, -12V, +5V) even if one is 0 mA
+- **Accuracy:** Verify against official documentation or Modular Grid
+
+**Additional Module-Specific Details (Optional):**
+If applicable, add module-specific technical specs:
+- **Oscillators:** Frequency range, waveforms, modulation types
+- **Filters:** Filter type, slope, frequency range
+- **Sequencers:** Steps, tracks, clock options
+- **Effects:** Sample rate, algorithm count, I/O types
+
+**Example (Pico DRUM2):**
+```
+**Key Specifications:**
+- **Width:** 3 HP
+- **Depth:** 35 mm
+- **Power:** 28 mA @ +12V / 5 mA @ -12V / 0 mA @ +5V
+```
+
+**Compliance Requirement:** Every guide must include Key Specifications in Quick Start. This is non-negotiable—users cannot evaluate module fit without this information.
+
+### **"Existing Gear Integration" Section Guidelines:
 **Include this section when:**
 - Module genuinely opens up integration possibilities with common existing gear
 - There are specific, practical examples that would excite users about new workflows
