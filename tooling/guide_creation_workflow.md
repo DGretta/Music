@@ -37,7 +37,7 @@ Guides teach **understanding and interconnection**, not procedures. This is not 
 
 1. **Teach interconnection, not procedures** - Every significant feature shows how it connects to broader synthesis principles
 2. **Verify or flag technical claims** - Specific numbers (voltage ranges, timing specs, firmware versions) must be verified or marked with ⚠️
-3. **Include Common Mistakes section** - 8-12 issues with first-person frustrated quotes as headings, WHY explanations for each
+3. **Include Common Mistakes section** - 3-5 issues with first-person frustrated quotes as headings, WHY explanations for each
 4. **Use "Advanced," not "Phase 2"** - Consistent terminology throughout framework
 5. **Enhanced format alternatives in all patches** - Budget/Premium/Different character options for every patch
 6. **GitHub image integration** - Proper nested directory structure, descriptive captions
@@ -128,7 +128,7 @@ For every significant feature or section, explain:
 
 Check your guide has:
 - [ ] **Why This Instrument Excels** - Philosophy + practical benefits + magic (emotional essence)
-- [ ] **Common Mistakes** - 8-12 issues with first-person frustrated quotes as headings, WHY explanations
+- [ ] **Common Mistakes** - 3-5 issues with first-person frustrated quotes as headings, WHY explanations
 - [ ] **Pattern Recognition** - Root causes that explain 90% of issues
 - [ ] **Enhanced Format Alternatives** - Budget/Premium/Different character for ALL patches
 - [ ] **Learning Objectives** - Each patch states what transferable principles are taught
@@ -162,7 +162,7 @@ Safe to include without verification:
 
 #### **Content Requirements**
 - [ ] Every significant feature has WHY explanation (not just WHAT)
-- [ ] "Common Mistakes" section with 8-12 issues
+- [ ] "Common Mistakes" section with 3-5 issues
 - [ ] Each mistake includes WHY it happens
 - [ ] "Pattern Recognition" identifies root causes
 - [ ] "Why This Instrument Excels" section exists
@@ -275,7 +275,7 @@ Record in `accountability_tracking.md`:
 
 **Content:**
 - [ ] WHY explanations throughout (not just WHAT)
-- [ ] Common Mistakes with 8-12 issues
+- [ ] Common Mistakes with 3-5 issues
 - [ ] Pattern Recognition section identifies root causes
 - [ ] Why This Instrument Excels section present
 
@@ -312,7 +312,7 @@ Does it need more than one sentence to explain WHY it exists?
 **Should I create a "Common Mistakes" section?**
 ```
 Do users ask questions about this module?
-├─ Yes (or: is it a creative/complex module?) → Comprehensive section with 8-12 issues
+├─ Yes (or: is it a creative/complex module?) → Comprehensive section with 3-5 issues
 └─ No (utility module with single function?) → Minimal troubleshooting
 ```
 
