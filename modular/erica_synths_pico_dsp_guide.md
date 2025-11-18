@@ -224,23 +224,92 @@ Multiple LFOs modulating PAR1, PAR2, DRY/WET simultaneously for flowing effects
 
 ---
 
-## Beginner "Gotchas" & Pro Tips
+## Common Mistakes and How to Avoid Them
 
-### **⚠️ Common Mistakes:**
+### **"I don't hear any stereo effect!"**
+**Problem:** Output signal is mono or half the stereo field is silent
 
-**"I don't hear any stereo effect!"**
-- Must use both L and R outputs to hear stereo processing
-- **Solution:** Connect both outputs to a stereo mixer or interface
+**Why It Happens:** Pico DSP is a stereo processor—you must use both L and R outputs to hear the full effect. Patching to only one output gives you half the processing (usually just the left channel).
 
-**"My signal is distorting!"**
-- Input signal too hot, clipping LED is lighting up
-- **Solution:** Reduce input level or use attenuator before Pico DSP
+**Solution:**
+- Connect both L and R outputs to a stereo mixer or audio interface
+- If using a mono mixer, connect both L and R to separate channels and pan them left/right
+- Test by switching between L-only and L+R — you'll hear the difference immediately
+- The stereo field is where the magic happens; always use both outputs
 
-**"The effect doesn't sound right!"**
-- Some effects need specific DRY/WET settings to sound their best
-- **Solution:** Experiment with DRY/WET balance, many effects sound best with more wet signal
+**What You're Learning:** Stereo effects aren't just louder versions of mono effects—they're fundamentally different. The spatial separation between left and right channels creates width and movement that mono processing can't achieve. Understanding stereo processing teaches you how modular effects differ from simple mixing.
 
-### **🎵 Pro Tips:**
+### **"My signal is distorting!"**
+**Problem:** Clipping LED is on, audio sounds harsh and broken
+
+**Why It Happens:** Input signal is too hot (too loud) for the Pico DSP's input stage. The DSP clips the signal before processing, destroying the audio quality. The clipping LED warns you this is happening.
+
+**Solution:**
+- Reduce the source signal level before Pico DSP (lower oscillator volume, reduce mixer output)
+- Use an attenuator module between your signal source and Pico DSP input
+- Watch the clipping LED—it should never be on during normal operation
+- If you can't reduce source level, check your patch for accidental amplification (VCA turned up, mixer output hot)
+
+**What You're Learning:** Professional effects processors have input headroom specifications. Understanding signal levels teaches you why modular systems need careful gain staging—too hot breaks everything. This principle applies to every module with audio inputs.
+
+### **"The effect doesn't sound right!"**
+**Problem:** Effect sounds thin, weak, or nothing like what you expected
+
+**Why It Happens:** DRY/WET balance is at an inappropriate setting for the effect. Some effects need mostly wet signal to sound good, others need more dry/wet blend. Different algorithms have different sweet spots, and you might be listening to the wrong balance.
+
+**Solution:**
+- Try moving DRY/WET through its full range while playing your source
+- Different effects sound best at different balances: delays usually 30-70% wet, reverbs 40-80% wet, distortion 50-100% wet
+- Some effects require 100% wet to reveal their character
+- Experiment with extreme settings (full wet, full dry, 50/50) to understand the range
+- Listen carefully to when it "clicks" — that's the sweet spot
+
+**What You're Learning:** Effects aren't "apply and forget"—they're tools that require parameter tuning to sound musical. The DRY/WET balance is how you integrate the effect into your mix, not just an intensity control. This teaches why professional mixing uses send/return effects instead of inserting them directly.
+
+### **"CV modulation isn't doing anything"**
+**Problem:** Patching a CV source to the CV input has no effect on the sound
+
+**Why It Happens:** CV input requires sufficient voltage to create audible change. Pico DSP expects -5V to +5V for full parameter sweep, but some CV sources produce smaller ranges (0-5V, 0-3V, -2V to +2V). Additionally, some parameters require more drastic CV changes to be obvious—you might be modulating something subtle.
+
+**Solution:**
+- Check your CV source voltage range—verify it's actually outputting voltage (use a scope or multimeter if possible)
+- Try an extreme CV source first (full range LFO) to confirm the input works
+- Use an attenuverter to amplify small CV signals for more dramatic effect
+- Remember: different effects respond to PAR1 differently—delay time changes are obvious, tone/character changes are subtle
+- Try modulating different parameters (PAR1 vs PAR2) to find the most dramatic one
+
+**What You're Learning:** CV isn't binary—it's about voltage ranges and scaling. Understanding how CV works teaches you that modulation requires careful attention to signal levels. This principle extends to every CV-controlled module in your system.
+
+### **"My signal got frozen and won't change"**
+**Problem:** Granular Delay (Blue) is stuck repeating the same audio forever, and adjusting parameters does nothing
+
+**Why It Happens:** You've activated freeze mode by turning PAR1 (feedback) all the way clockwise. In freeze mode, the DSP captures current audio and loops it infinitely. Most users don't realize this is a feature, they think the module is broken. PAR1 full CW = infinite feedback = frozen moment.
+
+**Solution:**
+- Turn PAR1 (feedback) counter-clockwise to less than full clockwise (11 o'clock or lower)
+- The audio should immediately unfreeze and return to normal delay operation
+- Understand that full clockwise isn't "maximum feedback"—it's "infinite feedback/freeze mode"
+- Once you know this, you can use freeze intentionally: capture a moment, manipulate PAR2 (loop length), create ambient textures
+
+**What You're Learning:** Some parameters have non-linear ranges—full rotation isn't always more of the same effect. Freeze mode is a feature, not a bug, but requires understanding the parameter's full range. This teaches why you need to explore every control's extreme settings to understand what it actually does.
+
+### **Pattern Recognition: Root Causes of Most Pico DSP Issues**
+
+Most Pico DSP beginner frustrations come from misunderstanding **three core concepts**:
+
+**1. Stereo Processing Requires Both Outputs:** DSP is fundamentally stereo. Using only one output is like having a stereo effect playing in mono—you lose 90% of what makes it special. The module isn't the problem; you're not hearing it.
+
+**2. Signal Levels and Headroom Matter:** Professional effects processors have input specifications. Too-hot signals clip, too-cold signals don't modulate well. Understanding signal flow teaches you why modular systems require careful gain staging—it's not just about volume, it's about giving modules enough headroom to do their job.
+
+**3. Parameters Have Non-Linear Ranges:** A knob's position doesn't always mean what it seems. Full clockwise on PAR1 (feedback) isn't "maximum feedback," it's "freeze mode." Some effects sound best at specific DRY/WET settings, not necessarily at "full wet." Understanding that controls have sweet spots (not just linear ranges) teaches you to explore every control's full range, not assume maximum = best.
+
+**Understanding these patterns solves 90% of Pico DSP issues** because they're not bugs—they're design features that require understanding how professional effects actually work. The module is doing exactly what it's designed to do; you just needed to understand its philosophy.
+
+---
+
+## Beginner Pro Tips
+
+### **🎵 General Strategy Tips:**
 
 **Effect Selection Strategy:**
 - **Learn the LED colors** - much faster than button counting
