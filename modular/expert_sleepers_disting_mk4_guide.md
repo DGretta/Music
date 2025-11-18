@@ -110,6 +110,35 @@ Instead of buying dozens of modules, Disting mk4 gives you **one module that can
 
 ---
 
+## Why This Instrument Excels
+
+### **The Philosophy:**
+Disting mk4 proves that **one excellent module** can be more valuable than dozens of mediocre ones. Instead of buying a separate quantizer, delay, LFO, filter, and sample player, you get all of them in 4HP - and they're all excellent implementations.
+
+### **The Innovation:**
+- **80+ algorithms** covering every fundamental modular synthesis function
+- **Consistent interface** means learning one algorithm helps with all others
+- **SD card integration** extends functionality far beyond typical hardware limitations
+- **Continuous development** with regular firmware updates adding new algorithms
+
+### **The Practical Benefits:**
+- **Space efficiency:** Entire studio functionality in 4HP
+- **Cost effectiveness:** One module replaces dozens of specialized modules
+- **Learning tool:** Explore modular synthesis concepts without buying everything
+- **Problem solver:** Always have the right tool for any synthesis challenge
+
+### **Perfect For:**
+- **Beginners:** Learn modular synthesis without breaking the bank
+- **Small system builders:** Maximum functionality in minimal space
+- **Experimenters:** Try every type of synthesis and processing
+- **Professionals:** Reliable, high-quality implementations of essential functions
+- **Anyone needing:** That one specific function they don't have a module for
+
+### **The Magic:**
+Disting mk4 **democratizes modular synthesis** by making every function accessible to everyone. Whether you need a simple mixer or complex granular processing, it's all there, waiting to be discovered.
+
+---
+
 ## Multi-Function Patch Applications
 
 ### **Patch 1: First Steps - Musical CV Quantizer**
@@ -412,6 +441,56 @@ Instead of buying dozens of modules, Disting mk4 gives you **one module that can
 
 ---
 
+## Common Mistakes
+
+### **⚠️ Common Mistakes:**
+
+**"I can't hear any difference when I turn the Z knob!"**
+- Check that you're using the right algorithm for your signal type
+- **Solution:** A-6 Quantizer needs pitch CV input, B-4 Delay needs audio input
+
+**"The algorithm menu is confusing!"**
+- 80+ algorithms can be overwhelming at first
+- **Solution:** Start with A1-A8 and B1-B8, learn a few well before exploring
+
+**"My samples won't play!"**
+- SD card must be FAT32 formatted, 16-bit WAV files only
+- **Solution:** Use SD Association formatting tool, convert files to 16-bit WAV
+
+**"Settings keep reverting when I power cycle!"**
+- Preset 0 loads at startup and auto-saves when switching algorithms
+- **Solution:** Save your settings to Preset 0 if you want them at startup
+
+### **🎵 Pro Tips:**
+
+**Algorithm Learning Strategy:**
+- **Master one series first** - try all A-series (CV utilities) before moving on
+- **Learn the classics:** A-1 (adder), A-6 (quantizer), B-5 (LFO), B-4 (delay)
+- **Use favorites system** to create your personal "greatest hits" menu
+
+**Z Knob Mastery:**
+- **Different per algorithm** - Z might be frequency, feedback, scale, or resonance
+- **Watch the display** when changing Z - it shows the current value
+- **CV input adds to knob** - set knob to center for bipolar CV control
+
+**Parameter Navigation:**
+- **Press Z to cycle** through parameters instead of holding S + turn
+- **Parameter names displayed** briefly when you switch
+- **Parameter values shown** when you change them with S knob
+
+**SD Card Organization:**
+- **Separate folders** for different sample sets (drums, melodies, textures)
+- **Use playlists** to control file order and loop settings
+- **Keep it simple** - don't put 1000s of files on card (slows down loading)
+
+**Performance Techniques:**
+- **Save complex setups** to numbered presets for instant recall
+- **Use knob recorder** for repeated complex movements
+- **Learn algorithm numbers** for quick navigation (A1, B5, etc.)
+- **Chain algorithms** by saving partial setups and switching between them
+
+---
+
 ## Advanced Techniques
 
 ### **Favorites System:**
@@ -488,85 +567,6 @@ Instead of buying dozens of modules, Disting mk4 gives you **one module that can
 - **Large Systems:** Fill gaps and provide specialized utility functions not available elsewhere
 - **Performance Rigs:** Quick algorithm changes for live flexibility and real-time function switching
 - **Studio Systems:** Recall-able setups via comprehensive preset system
-
----
-
-## Common Mistakes
-
-### **⚠️ Common Mistakes:**
-
-**"I can't hear any difference when I turn the Z knob!"**
-- Check that you're using the right algorithm for your signal type
-- **Solution:** A-6 Quantizer needs pitch CV input, B-4 Delay needs audio input
-
-**"The algorithm menu is confusing!"**
-- 80+ algorithms can be overwhelming at first
-- **Solution:** Start with A1-A8 and B1-B8, learn a few well before exploring
-
-**"My samples won't play!"**
-- SD card must be FAT32 formatted, 16-bit WAV files only
-- **Solution:** Use SD Association formatting tool, convert files to 16-bit WAV
-
-**"Settings keep reverting when I power cycle!"**
-- Preset 0 loads at startup and auto-saves when switching algorithms
-- **Solution:** Save your settings to Preset 0 if you want them at startup
-
-### **🎵 Pro Tips:**
-
-**Algorithm Learning Strategy:**
-- **Master one series first** - try all A-series (CV utilities) before moving on
-- **Learn the classics:** A-1 (adder), A-6 (quantizer), B-5 (LFO), B-4 (delay)
-- **Use favorites system** to create your personal "greatest hits" menu
-
-**Z Knob Mastery:**
-- **Different per algorithm** - Z might be frequency, feedback, scale, or resonance
-- **Watch the display** when changing Z - it shows the current value
-- **CV input adds to knob** - set knob to center for bipolar CV control
-
-**Parameter Navigation:**
-- **Press Z to cycle** through parameters instead of holding S + turn
-- **Parameter names displayed** briefly when you switch
-- **Parameter values shown** when you change them with S knob
-
-**SD Card Organization:**
-- **Separate folders** for different sample sets (drums, melodies, textures)
-- **Use playlists** to control file order and loop settings
-- **Keep it simple** - don't put 1000s of files on card (slows down loading)
-
-**Performance Techniques:**
-- **Save complex setups** to numbered presets for instant recall
-- **Use knob recorder** for repeated complex movements
-- **Learn algorithm numbers** for quick navigation (A1, B5, etc.)
-- **Chain algorithms** by saving partial setups and switching between them
-
----
-
-## Why This Instrument Excels
-
-### **The Philosophy:**
-Disting mk4 proves that **one excellent module** can be more valuable than dozens of mediocre ones. Instead of buying a separate quantizer, delay, LFO, filter, and sample player, you get all of them in 4HP - and they're all excellent implementations.
-
-### **The Innovation:**
-- **80+ algorithms** covering every fundamental modular synthesis function
-- **Consistent interface** means learning one algorithm helps with all others
-- **SD card integration** extends functionality far beyond typical hardware limitations
-- **Continuous development** with regular firmware updates adding new algorithms
-
-### **The Practical Benefits:**
-- **Space efficiency:** Entire studio functionality in 4HP
-- **Cost effectiveness:** One module replaces dozens of specialized modules
-- **Learning tool:** Explore modular synthesis concepts without buying everything
-- **Problem solver:** Always have the right tool for any synthesis challenge
-
-### **Perfect For:**
-- **Beginners:** Learn modular synthesis without breaking the bank
-- **Small system builders:** Maximum functionality in minimal space
-- **Experimenters:** Try every type of synthesis and processing
-- **Professionals:** Reliable, high-quality implementations of essential functions
-- **Anyone needing:** That one specific function they don't have a module for
-
-### **The Magic:**
-Disting mk4 **democratizes modular synthesis** by making every function accessible to everyone. Whether you need a simple mixer or complex granular processing, it's all there, waiting to be discovered.
 
 ---
 
