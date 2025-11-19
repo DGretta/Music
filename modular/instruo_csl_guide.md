@@ -251,7 +251,7 @@ Cs-L teaches you something profound: synthesis isn't about pressing buttons on f
    ┌─────────────────────┐      ┌─────────────────────┐
    │   Make Noise       │      │   Instruo Cs-L      │
    │   Wogglebug        │      │ (West Coast Math)   │
-   │    (Phase 2)       │      │                     │
+   │    (Chaos)         │      │                     │
    │                    │      │                     │
    │ Stepped CV ○───────┼──────┼─▶ OSC A 1V/Oct      │
    │       ║            │      │                     │
