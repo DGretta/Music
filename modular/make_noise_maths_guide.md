@@ -280,7 +280,233 @@ But small enough that:
 
 ## Beginner Patch Ideas
 
-### **Patch 1: Classic Envelope Generator**
+**These four patches teach progression: Basic → Intermediate → Advanced → Expert. Each teaches core principles that build on the previous.**
+
+### **Patch 1: Basic - Classic Envelope Generator**
+
+**What it teaches:** Envelopes are triggered events with their own timing (Rise/Fall), independent of gate length.
+
+**Mermaid Diagram:**
+```mermaid
+graph LR
+    SEQ[Sequencer<br/>Gate Out] -->|Gate 🟡| MATHS[Maths<br/>Ch1 Trig In]
+    MATHS -->|CV 🔵| VCA[VCA<br/>CV Input]
+    VCA -->|Audio 🔴| OUT[Audio Out]
+    
+    style MATHS fill:#e1f5fe
+    style SEQ fill:#f3e5f5
+    style VCA fill:#e8f5e8
+```
+
+**ASCII Alternative:**
+```
+🔴 Audio │ 🔵 CV │ 🟡 Gate
+
+┌─Sequencer─┐    ┌─────Maths─────┐    ┌─VCA──┐    ┌─Output─┐
+│ Gate ○────┼────┼─▶ Ch1 Trig    │    │      │    │       │
+│           │    │               │    │      │    │       │
+│           │    │ Ch1 Unity ○───┼────┼─▶CV  │    │       │
+│           │    │               │    │   ║  │    │       │
+└───────────┘    └───────────────┘    │ Audio◀────┼───────│ 🔴
+                                       │   ║  │    │       │
+                                       │ Out ○─────┼─▶ Out │
+                                       │     ║     │       │
+                                       └─────║─────┘       │
+                                             ║             │
+                                      CV (Blue)            │
+                                                           🔴
+```
+
+| Connection | Cable Type | Notes |
+|------------|------------|-------|
+| Sequencer Gate → Maths Ch1 TRIG | Gate (Yellow) | Triggers envelope on each step |
+| Maths Ch1 UNITY → VCA CV In | CV (Blue) | Controls amplitude |
+
+**Module Settings:**
+- **Maths:** Rise knob at 12 o'clock, Fall knob at 12 o'clock
+- **Cycle button:** OFF (unpressed)
+- **Ch1 Attenuverter:** 12 o'clock (unity gain)
+
+**Result:** Classic attack/decay envelope - adjust Rise for punch, Fall for tail
+
+**Main Example:** Make Noise Maths Ch1 → VCA CV (ADSR-style envelope)
+**Alternative Options:**
+- **Budget:** Doepfer A-140-2, Erica Synths Pico EG
+- **Different character:** Intellijel Quadrax complex functions, Joranalogue Contour 1 west coast
+- **Premium:** Serge DUSG, Buchla 281t quad function generator
+
+---
+
+### **Patch 2: Intermediate - Organic Mathematical Processing**
+
+**What it teaches:** Maths processes other CV sources (not just triggers). Each channel can shape and transform modulation.
+
+**Mermaid Diagram:**
+```mermaid
+graph TB
+    subgraph "Modulation Source"
+        OCHD[DivKid Ochd<br/>Variable LFOs]
+    end
+    
+    subgraph "Mathematical Processing"
+        MATHS[Make Noise Maths<br/>Four Channels]
+    end
+    
+    subgraph "Musical Destinations"
+        FILT[Filter Cutoff]
+        OSC[Oscillator]
+        VCA[VCA Control]
+    end
+    
+    OCHD -->|LFO1, LFO3, LFO7 🔵| MATHS
+    MATHS -->|Processed CV 🔵| FILT
+    MATHS -->|Processed CV 🔵| OSC
+    MATHS -->|Processed CV 🔵| VCA
+    
+    style OCHD fill:#c8e6c9
+    style MATHS fill:#e1f5fe
+    style FILT fill:#f3e5f5
+    style OSC fill:#fff3e0
+    style VCA fill:#e8f5e8
+```
+
+| Module Integration | Signal Flow | What You Learn |
+|-------------------|-------------|----------------|
+| **Ochd LFO 1 → Maths Ch1** | Organic CV input | Envelopes follow CV, not just triggers |
+| **Ochd LFO 3 → Maths Ch4** | Different timing | Multiple channels process independent sources |
+| **Ochd LFO 7 → Maths SUM** | Combined influence | Attenuverters create mathematical relationships |
+| **Maths outputs → destinations** | Processed modulation | One source becomes multiple controlled effects |
+
+**Module Settings:**
+- **Ochd:** Three LFOs at different rates (12 o'clock, 1 o'clock, 2 o'clock)
+- **Maths Ch1:** Rise/Fall set to smooth out fast LFO transitions
+- **Maths Ch4:** Slower Rise/Fall for deeper modulation
+- **Attenuverters:** Start at 12 o'clock (off), then explore turning them clockwise for positive effect
+
+**Result:** Ochd's organic breathing becomes mathematically processed → smooth, complex modulation of multiple parameters
+
+**Main Example:** DivKid Ochd LFOs → Make Noise Maths → Multiple destinations
+**Alternative Options:**
+- **Budget:** Make Noise Maths + 2hp LFO
+- **Different character:** Batumi geometric patterns, Pamela's New Workout
+- **Premium:** Verbos Harmonic Oscillator, Serge slopes
+
+---
+
+### **Patch 3: Advanced - Macro Control Hub for Production**
+
+**What it teaches:** Mathematical relationships between controls. Inverse scaling (one parameter up while another goes down). Production-focused thinking.
+
+**ASCII Diagram:**
+```
+🔴 Audio │ 🔵 CV │ 🟡 Gate
+
+    One Control (Sequencer/Expression)
+              │
+              ▼
+    ┌──────────────────┐
+    │   Maths Macro    │
+    │ (Four Independent │    Filter Cutoff:   +80%  (gets brighter)
+    │  Attenuverters)  │    Filter Resonance: -60% (gets tamer)
+    │                  │    Oscillator FM:    +40% (adds harmonics)
+    │  Ch1, Ch2,       │    Reverb Send:      +90% (more space)
+    │  Ch3, Ch4        │
+    │  Variables       │
+    └──────────────────┘
+              │
+         Four Separate
+      Mathematical Outputs
+```
+
+**Key Teaching:** Inverse relationships. When one macro control moves, different parameters respond differently—some amplify, some invert.
+
+| Parameter | Attenuverter | Effect | Why It Matters |
+|-----------|-------------|--------|----------------|
+| Filter Cutoff | +80% | Opens up | Brightens with intensity |
+| Filter Resonance | -60% | Closes down | Prevents harshness |
+| Oscillator FM | +40% | Moderate increase | Adds complexity gradually |
+| Reverb Send | +90% | Strong increase | Creates dramatic space |
+
+**Module Settings:**
+- **All Signal inputs:** Connected to same CV source (sequencer or expression pedal via mult)
+- **Each attenuverter:** Set to specified value
+- **Attenuverter math:** Positive amplifies the signal, negative inverts it (12 o'clock = off)
+
+**Result:** One control shapes four different parameters in mathematically related ways. SUM output shows combined effect.
+
+**Main Example:** Single CV source → Maths (four channels with mathematical relationships) → Four sonic parameters
+**Alternative Options:**
+- **Budget:** Doepfer A-143-3 + mixer
+- **Different character:** Intellijel Scales, 4ms RCD
+- **Premium:** Buchla 257e voltage processor
+
+---
+
+### **Patch 4: Expert - Complete Mathematical Ecosystem**
+
+**What it teaches:** Maths as a central computational hub. Multiple intelligence types (organic, chaotic, algorithmic, synthesis) combined through mathematical processing. Emergent behavior from combination.
+
+**System Overview:**
+```mermaid
+graph TB
+    subgraph "Multiple Intelligence Types"
+        OCHD[DivKid Ochd<br/>Organic Breathing]
+        WOG[Make Noise Wogglebug<br/>Random Chaos]
+        MARBLES[Mutable Marbles<br/>Algorithmic]
+        PLAITS[Mutable Plaits<br/>Sound Source]
+    end
+    
+    subgraph "Mathematical Processing"
+        MATHS[Make Noise Maths<br/>Central Brain]
+    end
+    
+    subgraph "Musical System"
+        RESULT[Complete Musical System<br/>Emergent Behavior]
+    end
+    
+    OCHD -->|CV| MATHS
+    WOG -->|CV| MATHS
+    MARBLES -->|CV| MATHS
+    PLAITS -->|CV| MATHS
+    
+    MATHS -->|Processed CV| RESULT
+    
+    style OCHD fill:#c8e6c9
+    style WOG fill:#ffecb3
+    style MARBLES fill:#e1bee7
+    style PLAITS fill:#bbdefb
+    style MATHS fill:#e1f5fe
+    style RESULT fill:#f3e5f5
+```
+
+**What Happens:**
+- Each module type (organic, chaos, algorithmic, synthesis) produces its own "intelligence"
+- Maths receives all four simultaneously
+- Each channel processes one type of intelligence
+- SUM output combines them all
+- Result: Emergent musical behavior that none of the modules could produce alone
+
+**Learning Objectives:**
+1. **Maths as system architect** - It doesn't just process; it combines different types of thinking
+2. **Mathematical emergence** - Four separate things combine into something new
+3. **Interconnection principle** - Everything relates to everything else through voltage math
+4. **System consciousness** - Patch becomes "alive" with layered intelligence types
+
+**Expert Technique:**
+- Each Maths channel handles one intelligence type
+- Attenuverters scaled to complement (not overwhelm) each type
+- Feedback loops optional (advanced performance)
+- Entire ecosystem "breathes" together
+
+**Main Example:** Ochd + Wogglebug + Marbles + Plaits → Maths processing → Unified musical system
+**Alternative Options:**
+- **Budget:** Subsets of this (Ochd + Marbles + Maths)
+- **Different character:** Wogglebug + Marbles (chaos + algorithm)
+- **Premium:** Verbos collection, Buchla ecosystem
+
+---
+
+## Advanced Techniques
 
 **Mermaid Diagram:**
 ```mermaid
