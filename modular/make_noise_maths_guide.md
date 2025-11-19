@@ -182,6 +182,102 @@ Twenty years of consistency, countless documentation efforts, and the fact that 
 
 ---
 
+## Design Reasoning: Why Each Feature Exists
+
+Every choice Make Noise made for Maths serves a teaching purpose. Understanding the *why* reveals how intentional this design is.
+
+### **Dual Trigger Types (Signal vs. Trigger Inputs)**
+
+Most modules have one envelope input. Maths has two different ones:
+- **Trigger Input** - Always completes its full Rise/Fall cycle, regardless of gate length
+- **Signal Input** - Envelope follows the gate length, sustaining while the gate is high
+
+Make Noise included both because they teach different things.
+
+**Trigger Input teaches:** Envelopes have their own timing independent of the gate. You *trigger* a process that unfolds according to its own Rise/Fall settings. This reveals that an envelope is fundamentally a **time-based computation**—it needs a start point and then does its own thing.
+
+**Signal Input teaches:** Envelopes can also follow external control. The gate becomes the modulation source itself—the envelope *tracks* the input. This reveals that Maths channels are flexible: they can be driven by timing or by direct control.
+
+Most musicians will use Trigger Input for drums and percussion (fixed timing) and Signal Input for modulation processing (responsive to external control). This single design choice teaches the entire concept of gate-driven vs. signal-driven modulation.
+
+### **Normalization (Channels 2 & 3 Generate +10V)**
+
+When you don't patch anything into a Maths channel, most modules would just sit idle. Channels 2 and 3 do something different: they generate +10V internally.
+
+Why not make it the user's responsibility to patch a constant voltage source?
+
+Because **normals teach that absence can be a feature, not a missing cable.** Make Noise is saying: "When you don't patch anything, we automatically provide a useful reference voltage. You can then scale it with the attenuverter."
+
+This single design choice reveals several synthesis principles:
+- Voltage references are fundamental to how modular works
+- 1V/octave is the universal pitch standard (so +10V is meaningful)
+- Attenuverters can create complex relationships from simple internal references
+- You don't need external sources to perform mathematics
+
+Every musician who learns Maths by not patching a Signal input and using the internal +10V learns something crucial: **modular systems contain infinite possibilities when you understand the voltage math built into them.**
+
+### **Attenuverter Design (12 O'Clock = OFF, Not Maximum)**
+
+Most knobs work this way: minimum at 7 o'clock, maximum at 5 o'clock, with the midpoint somewhere in between. Maths attenuverters work differently:
+- **12 o'clock = 0% (off, no effect)**
+- **Clockwise = positive scaling (0% to +100%)**
+- **Counter-clockwise = negative scaling (0% to -100%)**
+
+This is unconventional. Why?
+
+Because it teaches **inversion as a core synthesis concept.** By making "off" the center point, Make Noise forces you to think about direction. When you turn an attenuverter clockwise, you're explicitly choosing to amplify positively. When you turn it counter-clockwise, you're explicitly choosing to invert.
+
+This is not just a UI preference. It teaches that modular synthesis is fundamentally about **polarity and direction of control**, not just quantity. A negative scaling of your LFO creates entirely different musical behavior than positive scaling—not just different amounts, but different *directions*.
+
+Every patch where you've used an attenuverter teaches you to think about the mathematical sign of your modulation, not just its magnitude.
+
+### **Automatic Summing (SUM Output)**
+
+Maths Variable outputs automatically combine at the SUM output without patching. This seems like a small convenience feature, but it's actually teaching **how analog circuits naturally work.**
+
+In real analog circuitry, when two voltage sources meet at a node, they naturally add together. Make Noise exposed this fundamental principle as a feature instead of hiding it in circuit internals.
+
+**Teaching moment:** The first time you hear Ch1 + Ch2 + Ch3 combining at SUM and creating something none of them produced alone, you've learned that **modular synthesis creates new possibilities through combination.** This is the interconnection principle made tangible. You're not just patching modules; you're creating mathematical relationships that didn't exist before.
+
+### **Cycle Button (Instant Envelope-to-LFO Transformation)**
+
+The Cycle button does something simple: makes the envelope repeat automatically. But why expose this as a single physical button?
+
+Because it teaches that **envelopes and LFOs are the same thing**, just running at different speeds and with different repeat behavior.
+
+Most musicians learn this eventually through reading and theory. With Maths, you learn it by pressing a button and hearing your envelope become a wobble. Rise and Fall suddenly change meaning—they become speed controls instead of timing controls. The same knobs do completely different things depending on whether you press Cycle.
+
+**Teaching moment:** This single button reveals that in synthesis, categories like "envelope" and "LFO" are not fixed types—they're just different applications of the same voltage generation principle.
+
+### **Four Channels (Optimal Complexity)**
+
+Why four channels? Why not three? Why not five?
+
+Four is the sweet spot where:
+- You can handle most real-world patching situations (4 envelopes, 4 modulation sources, mixing operations)
+- Complexity remains manageable for learning (unlike 8+ channel modules)
+- The SUM output becomes genuinely useful (combining 4 independent things creates meaningful new possibilities)
+- You can still understand the whole circuit architecture
+
+Make Noise could have made Maths bigger. Instead, they designed it to be **completely understandable**. When you grasp all four channels, you're not just using a tool—you've learned the foundational principles of analog computation as applied to music.
+
+### **20HP Size (Exactly Right)**
+
+Twenty Eurorack units is large enough for:
+- Four independent channels with clear panel layout
+- Readable labels and reasonable knob spacing
+- Easy-to-see LEDs and connections
+- Room for internal circuitry that does real work
+
+But small enough that:
+- It fits in small systems without dominating
+- The entire circuit architecture is graspable (not hidden behind overwhelming complexity)
+- It becomes a standard building block, not a rare specialist tool
+
+**Teaching moment:** The physical size encodes a teaching principle. Maths is big enough to be powerful but small enough to be understood. It occupies exactly the design space needed to teach synthesis without overwhelming.
+
+---
+
 ## Beginner Patch Ideas
 
 ### **Patch 1: Classic Envelope Generator**
