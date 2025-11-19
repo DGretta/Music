@@ -52,6 +52,11 @@
 
 **What is Maths?** Think of it as four powerful tools in one module: two envelope generators, two offset generators, and a mixer that can combine them all.
 
+**Key Specifications:**
+- **Width:** 20 HP
+- **Depth:** 38 mm
+- **Power:** 90 mA @ +12V / 90 mA @ -12V / 0 mA @ +5V
+
 ### Your First Envelope (Channel 1)
 1. **Patch a trigger/gate** → Channel 1 **TRIG** input (top left)
 2. **Turn Rise and Fall knobs** to 12 o'clock position  
@@ -140,7 +145,7 @@ graph LR
 - **Different character:** Intellijel Quadrax complex functions, Joranalogue Contour 1 west coast
 - **Premium:** Serge DUSG, Buchla 281t quad function generator
 
-### **Patch 2: Intermediate - Organic Mathematical Processing**
+### **Patch 2: Intermediate - Advanced Organic Mathematical Processing**
 
 **Mermaid Diagram:**
 ```mermaid
@@ -183,7 +188,7 @@ graph TB
 
    ┌─────────────────────┐      ┌─────────────────────┐
    │   DivKid Ochd      │      │   Make Noise Maths  │
-   │    (Phase 2)       │      │    (Phase 1)        │
+   │   (Advanced)       │      │   (Foundation)      │
    │                    │      │                     │
    │ LFO 1 ○────────────┼──────┼─▶ Ch1 Signal Input  │
    │       ║            │      │                     │
@@ -212,7 +217,7 @@ graph TB
                              └──────────────────────────┘
 ```
 
-| Module Integration | Signal Flow | Purpose | Phase 2 Synergy |
+| Module Integration | Signal Flow | Purpose | Advanced Synergy |
 |-------------------|-------------|---------|------------------|
 | **Ochd LFO 1 → Maths Ch1** | Organic modulation | **Breathing envelope control** | **Organic timing processing** |
 | **Ochd LFO 3 → Maths Ch4** | Mid-speed organic CV | **Parameter drift control** | **Natural parameter evolution** |
@@ -226,7 +231,7 @@ graph TB
 - **SUM:** Combines all organic + mathematical relationships
 
 **Learning Objectives:**
-- **Advanced + Mathematical integration:** Mathematical processing of organic modulation
+- **Foundation + Advanced integration:** Mathematical processing of organic modulation
 - **Hybrid modulation:** Combine organic breathing with precise mathematical control
 - **System breathing:** Entire patch breathes with organic life
 - **Advanced modulation routing:** Complex relationships between modules
@@ -272,11 +277,11 @@ graph TB
 - **Different character:** Batumi quadrature LFO, Tides LFO mode with different waveforms
 - **Premium:** Verbos Harmonic Oscillator LFO, Serge NTO complex waveforms
 
-### **Patch 3: Advanced - AI Integration with Phase 2 Marbles**
+### **Patch 3: Expert - AI Integration with Advanced Marbles**
 ```
    ┌─────────────────────┐      ┌─────────────────────┐
    │   Mutable Marbles   │      │   Make Noise Maths  │
-   │     (Phase 2)       │      │    (Phase 1)        │
+   │    (Advanced)       │      │   (Foundation)      │
    │                     │      │                     │
    │ X1 Out ○────────────┼──────┼─▶ Ch1 Signal Input  │
    │                     │      │                     │
@@ -569,7 +574,7 @@ This represents **mathematical consciousness in music** - where organic breathin
 - **SUM:** Combines all organic + mathematical relationships
 
 **Learning Objectives:**
-- **Phase 1 + Phase 2 integration:** Mathematical processing of organic modulation
+- **Foundation + Advanced integration:** Mathematical processing of organic modulation
 - **Hybrid modulation:** Combine organic breathing with precise mathematical control
 - **System breathing:** Entire patch breathes with organic life
 - **Advanced modulation routing:** Complex relationships between modules
@@ -707,9 +712,9 @@ This represents **mathematical consciousness in music** - where organic breathin
 
 ---
 
-## Beginner "Gotchas" & Pro Tips
+## Common Mistakes & Pattern Recognition
 
-### **⚠️ Common Mistakes:**
+### **⚠️ Core Synthesis Teaching Issues:**
 
 **"Signal Input vs Trigger Input confusion"**
 - **Signal Input:** Envelope follows gate length (sustains while high)  
@@ -780,7 +785,7 @@ Maths **thinks in musical time** - from microseconds to half-hours. It's not jus
 
 ---
 
-## Phase 2 Learning Path
+## Advanced Learning Path
 
 ### **Recommended Study Progression:**
 1. **Start with Maths fundamentals:** Master envelope generation, LFO cycling, and mathematical mixing
@@ -795,12 +800,12 @@ Maths **thinks in musical time** - from microseconds to half-hours. It's not jus
 - **Maths + Wogglebug:** Master chaos processing via analog mathematical computation
 - **Maths + Marbles:** Understand AI + mathematical hybrid intelligence systems
 - **Maths + RCD:** Explore polyrhythmic mathematical timing relationships
-- **All Phase 2 + Maths:** Build complete mathematical ecosystems with multiple intelligence types
+- **All Advanced + Maths:** Build complete mathematical ecosystems with multiple intelligence types
 
 ### **Skill Development Milestones:**
 - **Beginner:** Use individual channels for basic envelope and LFO functions
 - **Intermediate:** Master SUM mixing and attenuverter control for complex mathematical relationships
-- **Advanced:** Create Phase 2 integration patches with mathematical processing of organic/chaos/AI sources
+- **Advanced:** Create advanced integration patches with mathematical processing of organic/chaos/AI sources
 - **Expert:** Design mathematical ecosystems where Maths serves as central computational brain
 
 ### **Advanced Mathematical Concepts:**
@@ -817,7 +822,7 @@ Maths **thinks in musical time** - from microseconds to half-hours. It's not jus
 
 ---
 
-**Bottom Line:** Maths isn't just a module - it's a **musical computer** that teaches you to think in voltage and time. Every patch teaches you something new about how modular synthesis really works. As the **mathematical brain of Phase 2 ecosystems**, it transforms organic breathing, controlled chaos, and artificial intelligence into unified musical mathematics.
+**Bottom Line:** Maths isn't just a module - it's a **musical computer** that teaches you to think in voltage and time. Every patch teaches you something new about how modular synthesis really works. As the **mathematical brain of advanced ecosystems**, it transforms organic breathing, controlled chaos, and artificial intelligence into unified musical mathematics.
 
 ---
 
