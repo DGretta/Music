@@ -387,35 +387,82 @@ This represents **advanced West Coast consciousness** - where organic breathing,
 
 ---
 
-## Beginner "Gotchas" 
+## Common Mistakes and How to Avoid Them
 
-### **Two Different Oscillator Cores**
-- **OSC A (Top) = Sawtooth Core** - great for sync, FM, and classic waveforms
-- **OSC B (Bottom) = Triangle Core** - smoother, different harmonic character
-- **They sound different** even at the same settings - this is intentional!
-- **Different frequency ranges** - matching knob positions ≠ matching pitches
+### **"Why do the two oscillators sound so different even when I set them the same?"
+**
+Problem:** OSC A and OSC B produce different results at identical knob positions.
 
-### **The Index System is Confusing at First**
-- **INDEX knob** controls overall modulation depth globally
-- **INDEX button acts like "Shift"** - hold it and press other buttons  
-- **Each button assigns a different modulation route** when INDEX is held
-- **Multiple routings can be active** simultaneously for complex modulation
+**Why It Happens:** They're fundamentally different oscillators with different core waveforms. OSC A uses a sawtooth core while OSC B uses a triangle core. Sawtooth and triangle waves have completely different harmonic content - sawtooth is much brighter with all harmonics present, triangle is much duller with odd harmonics only. When you set the same frequency knob position on both, you're often tuning them to different actual pitches because their frequency ranges differ. This isn't a bug - it's intentional design for musical complexity.
 
-### **Normalled Connections (Invisible Cables)**
-- **FM inputs are pre-connected** - OSC A sine → OSC B FM, and vice versa
-- **Multiply inputs are pre-connected** to both sine waves
-- **Patching a cable breaks the connection** - the module "forgets" the internal wire
+**Solution:**
+- Understand that different cores = different harmonic character (this is the entire point of having two different cores)
+- Use the FINE knob to precisely match pitches when you want both oscillators in tune
+- Accept that sometimes "same knob position" means "different pitch" - that's where the musical magic happens
+- Remember: the differences are why Cs-L creates such rich, complex sounds
 
-### **Button States Matter**
-- **Unlit = Off**, **White = One Direction**, **Amber = Other Direction**
-- **SYNC button:** Off/A→B(amber)/B→A(white)
-- **Multiple button:** Ring(off)/Half-wave(white)/Full-wave(amber)
-- **SUB button:** Fundamental(off)/Sub-octave(white)/Two-octaves-down(amber)
+### **"The INDEX system doesn't make sense - I press buttons and nothing changes"
+**
+Problem:** Pressing INDEX buttons and holding the INDEX knob doesn't seem to do anything obvious.
 
-### **It's Not Broken, It's Complex**
-- **Complex oscillators sound different** from simple ones - expect rich, evolving timbres
-- **Some sweet spots are very narrow** - tiny knob movements make big changes
-- **Self-patching is encouraged** - patch outputs back to inputs for extra complexity
+**Why It Happens:** The INDEX system works differently than most synthesizer controls. You must HOLD the INDEX button while pressing OTHER buttons to assign modulation routes. If you just press INDEX alone and turn the INDEX knob, you're setting global depth - but you won't hear anything change without having activated a routing first. Many users try to use it like a normal button, not understanding it's a "shift key" modifier.
+
+**Solution:**
+- Always HOLD INDEX button, then press other buttons to activate different cross-modulation routings
+- Start with one routing activated, then turn the INDEX knob to hear the effect
+- Learn which button combinations do what (this is where the manual matters)
+- Understand that INDEX is about oscillator-to-oscillator modulation depth, not a standalone effect
+
+### **"I patched a cable into an input and now the internal sounds stopped"
+**
+Problem:** Patching external audio/CV into certain inputs breaks what was working internally.
+
+**Why It Happens:** Many Cs-L inputs are "normalled" - they have internal connections that work until you plug something in. When you patch a cable into the FM input, you disconnect the internal FM routing. When you patch into the Multiply input, you override the internal sine wave patching. This is actually a feature, not a bug - it lets you replace the internal signal with an external one. But many beginners don't realize the internal connection exists.
+
+**Solution:**
+- Understand that normalled connections are always there unless you patch over them
+- If you want both internal routing AND external control, you might need external modules to mix/blend
+- Check the manual to see which inputs are normalled (most are)
+- Use the internal connections when available - they're carefully designed
+
+### **"The button lights aren't doing what I expect - I can't tell what mode I'm in"
+**
+Problem:** Button states seem random or confusing - unlit buttons sometimes seem to be "on" and lit buttons sometimes don't change sound.
+
+**Why It Happens:** Cs-L uses a three-state button system: OFF (unlit), Direction A (white light), Direction B (amber light). Different buttons control different things - SYNC button controls which oscillator syncs to which, MULTIPLY button controls ring mod vs AM vs rectify. The light states aren't intuitive because there are multiple behaviors encoded. You need to learn the mapping for each button.
+
+**Solution:**
+- Study the manual's button state legend
+- Learn one button at a time (master SYNC states, then MULTIPLY states, etc.)
+- Remember that buttons are momentary toggles - you click to step through the states
+- Write down the state meanings if it helps you remember
+
+### **"The module sounds weird and broken - just noise and chaos"
+**
+Problem:** Instead of musical tones, you're getting strange, unmusical results.
+
+**Why It Happens:** Complex oscillators with wavefolding, FM, and cross-modulation can produce extremely unpredictable sounds - especially if you've accidentally activated multiple simultaneous cross-modulations through the INDEX system. You might have high FM amounts combining with wavefolding, or multiple sync modes active at once. The module isn't broken - you've just discovered the chaotic end of West Coast synthesis territory.
+
+**Solution:**
+- Start from a clean slate: reset all controls to neutral positions
+- Activate ONE thing at a time (just wavefolding, or just FM, not both)
+- Learn the module by varying one parameter while everything else is simple
+- Accept that some "noise" is actually fascinating West Coast texture - try it through a filter to find musical material
+
+### **Pattern Recognition: Root Causes of Most Cs-L Confusion**
+
+**Four core misunderstandings cause 90% of beginner frustration:**
+
+1. **Expecting the two oscillators to be identical** - They're not. Different cores, different frequency ranges, different harmonic characters. The moment you stop expecting them to match and start exploring their differences, the module transforms from frustrating to revelatory.
+
+2. **Treating INDEX like a normal button instead of a shift modifier** - It's a "shift key," not a regular control. Hold it, press other buttons. This is fundamentally different from how most synthesizer buttons work, which is why so many users miss it completely.
+
+3. **Not realizing that patching a cable breaks internal normalled connections** - Many users don't even know the internal connections exist. Understanding normalled patching is crucial to mastering Cs-L's flexibility.
+
+4. **Misunderstanding button states and what they control** - The three-state buttons aren't intuitive. You need to learn the manual or spend serious time experimenting. There's no way around this - it's a learning curve, not a design flaw.
+
+**The Deeper Understanding:**
+Cs-L is a complex oscillator in the truest sense - it performs mathematical operations that create complex results. When you embrace the complexity instead of fighting against it, the module becomes an instrument for exploring harmonic relationships at a depth that simple oscillators cannot reach. The confusion is actually a sign you're learning something real about synthesis.
 
 ---
 
