@@ -166,6 +166,22 @@ This is why Maths is educational beyond "how to use it." Every patch teaches you
 
 ---
 
+## Historical Context: Why Everyone Has One
+
+Maths arrived at a crucial moment in modular synthesis: when DIY culture and Eurorack were expanding beyond specialists and into the hands of musicians who needed to *understand* what was happening, not just use it.
+
+Before Maths, you needed separate modules for envelopes, LFOs, mixers, and slew limiters. Maths unified them into one design that revealed *how they were all the same thing*—different applications of the same analog mathematical principle: voltage integration. This wasn't just space-efficient; it was philosophically revolutionary. It taught that synthesis is fundamentally about voltage relationships, not isolated features.
+
+The module became a standard—arguably *the* standard teaching tool for analog synthesis. If you wanted to learn modular, you learned Maths. If you built a small system, Maths was non-negotiable. Within the Eurorack community, owning Maths became as foundational as owning a VCA or a filter. It's difficult to find an intermediate or advanced modular synthesizer that doesn't include one.
+
+Why? Because Maths does something almost no other module does: **it teaches you that everything in modular synthesis is fundamentally the same thing**—voltage, time, and mathematical relationships. Once you understand Maths, you understand the entire language of modular synthesis. Every other module becomes a different application of the same principles.
+
+This design philosophy connects directly to the interconnection principle: Maths doesn't exist in isolation. It's the hub through which all other modules speak to each other in the universal language of voltage mathematics. You can't build a sophisticated modular system without understanding how to think like Maths does.
+
+Twenty years of consistency, countless documentation efforts, and the fact that it *still* doesn't have a serious competitor speaks to something rare: a design so fundamentally correct that it becomes transparent. Musicians don't think about whether to use Maths—they think about how. It's the language through which synthesis literacy is transmitted across generations.
+
+---
+
 ## Beginner Patch Ideas
 
 ### **Patch 1: Classic Envelope Generator**
