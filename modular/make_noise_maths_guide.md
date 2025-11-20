@@ -781,14 +781,14 @@ Attenuverters multiply the input signal, they don't amplify to a fixed output. I
 1. **Start with Maths fundamentals:** Master envelope generation, LFO cycling, and mathematical mixing
 2. **Add organic processing:** Integrate DivKid Ochd for breathing mathematical relationships (see Ochd guide)
 3. **Include chaos processing:** Use Make Noise Wogglebug for mathematical chaos processing (see Wogglebug guide)
-4. **Add algorithmic sequencing:** Apply Mutable Marbles for probabilistic CV relationships (see Marbles guide)
+4. **Add probabilistic sequencing:** Apply Mutable Marbles for probabilistic CV relationships (see Marbles guide)
 5. **Include rhythmic math:** Use 4ms RCD v2 for polyrhythmic mathematical timing (see RCD guide)
 6. **Complete the ecosystem:** Add Cre8audio Function Junction for comprehensive modulation processing (see Function Junction guide)
 
 ### **Cross-Module Learning Opportunities:**
 - **Maths + Ochd:** Learn organic modulation processing through mathematical relationships
 - **Maths + Wogglebug:** Master chaos processing via analog mathematical computation
-- **Maths + Marbles:** Understand algorithmic + mathematical hybrid systems
+- **Maths + Marbles:** Understand probabilistic + mathematical hybrid systems
 - **Maths + RCD:** Explore polyrhythmic mathematical timing relationships
 - **All Advanced + Maths:** Build complete mathematical ecosystems with multiple modulation sources
 
@@ -833,7 +833,7 @@ Your studio contains infinitely more possibilities than you might realize. Maths
 
 ---
 
-**Bottom Line:** Maths isn't just a module - it's a **musical computer** that teaches you to think in voltage and time. Every patch teaches you something new about how modular synthesis really works. As the **mathematical brain of advanced ecosystems**, it transforms organic breathing, controlled chaos, and artificial intelligence into unified musical mathematics.
+**Bottom Line:** Maths isn't just a module - it's a **musical computer** that teaches you to think in voltage and time. Every patch teaches you something new about how modular synthesis really works. As the **mathematical brain of advanced ecosystems**, it transforms organic breathing, controlled chaos, and probabilistic systems into unified musical mathematics.
 
 ---
 
