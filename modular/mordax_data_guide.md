@@ -217,37 +217,31 @@ Alone, Ochd breathes, Wogglebug chaoses, Marbles patterns. But *together* they c
 
 ---
 
-## Beginner "Gotchas" 
+## Beginner "Gotchas"
 
-### **Screen Navigation**
-- **Encoder = Main control** - turn to navigate, press to select
-- **Softkeys = Context menus** - four buttons below screen change function based on program
-- **Programs are separate apps** - each does one main thing very well
-- **Menu diving is minimal** - most controls are direct softkey access
+### **"Data shows me something, but I don't know what to do about it"**
+- **The misunderstanding:** Data *reveals* problems, it doesn't fix them. Users expect analysis to automatically solve issues.
+- **Why this happens:** Data is so clear about showing problems that it feels like it should also tell you how to fix them. But that's not its role.
+- **What actually happens:** Data shows you a wobbly envelope, a frequency peak you didn't expect, a timing relationship that's off. Now you *know*. Fixing it is patch architecture or module choice—separate from analysis.
+- **Learning moment:** Understanding the difference between seeing a problem and solving it teaches you systems thinking. Data teaches you to diagnose. Your patch design teaches you to prescribe.
 
-### **Input/Output Routing**
-- **THRU jacks are buffered** - signals pass through even when Data is doing something else
-- **Each input can monitor different things** simultaneously in most programs
-- **Outputs change function** depending on program - SCOPE uses them as DC voltages
-- **AC/DC coupling matters** - DC shows full signal, AC filters out slow changes
+### **"All six programs seem to work the same way"**
+- **The misunderstanding:** Each program is structurally different. SCOPE watches signals, TUNE measures frequencies, CLOCK divides/multiplies time—they don't all work the same.
+- **Why this happens:** The interface feels consistent (encoder, softkeys, screen), so users expect the logic to be identical. It's not.
+- **What actually happens:** Learning each program reveals different relationships in your system. SCOPE teaches waveform behavior. TUNE teaches pitch relationships. CLOCK teaches timing structure. Each is a different lens.
+- **Learning moment:** Understanding that utility modules have *multiple tools* instead of *one function* teaches you to think about analysis modes, not just module types.
 
-### **Voltage Ranges and Scaling**
-- **Eurorack standard is ±5V audio, 0-10V CV** - Data handles both
-- **Scope voltage scale affects zoom** - 1V/div, 2V/div, 5V/div settings
-- **Output range is +10V to -5V** - slightly asymmetrical but covers all Eurorack needs
-- **Time scales are very flexible** - from microseconds to full minutes on screen
+### **"Data generates cool stuff, so it's part of my sound design"**
+- **The misunderstanding:** Data's WAVE program creates signals, so users sometimes treat it as a sound source. It's not.
+- **Why this happens:** Most modules either generate sound or process it. Data does analysis + limited generation, which is confusing.
+- **What actually happens:** WAVE is a *test signal generator* and precision LFO tool, not a voice. Using it for sound is possible but misses the point. Data's real power is showing you what your actual modules do.
+- **Learning moment:** Understanding that utility modules serve *your understanding* instead of *your patches* teaches you the difference between creative modules and analytical tools.
 
-### **Program-Specific Behavior**
-- **Each program uses inputs/outputs differently** - read the display carefully
-- **Some programs multi-task** - SCOPE can also output DC voltages simultaneously
-- **Memory slots save settings** - 8 slots per program for different configurations
-- **Updates add features** - firmware updates via microSD add new capabilities
-
-### **It's Not Making Sound (Usually)**
-- **Data is mostly for measurement** - it shows you what's happening, doesn't make music directly
-- **WAVE program is the exception** - it generates audio/CV signals
-- **THRU jacks maintain signal flow** - your audio path continues through Data
-- **Think "oscilloscope with benefits"** rather than "sound module"
+### **"This screen/encoder/menu system is too complicated"**
+- **The misunderstanding:** Data is a micro-computer running six applications. It's complex because it does six different things, not because it's poorly designed.
+- **Why this happens:** Analog modules have knobs you turn. Digital modules have screens. Users expect learning the screen to be fast. It's not—because there are six programs to learn.
+- **What actually happens:** Spend 2-3 sessions with each program individually. Don't try to master all six at once. Each has its own workflow, and that's intentional.
+- **Learning moment:** Understanding that complexity comes from functionality (not poor design) teaches you to respect tools that do many things. Master one thing at a time.
 
 ---
 
