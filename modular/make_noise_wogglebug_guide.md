@@ -7,6 +7,18 @@
 
 ---
 
+## Key Specifications
+
+| Specification | Value |
+|---|---|
+| **Module Width** | 10 HP |
+| **Depth** | 24 mm |
+| **Current Draw (+12V)** | 50 mA |
+| **Current Draw (-12V)** | 40 mA |
+| **Current Draw (5V)** | 0 mA |
+
+---
+
 ## Quick Start: Get Your First Sound in 5 Minutes
 
 **What is Wogglebug?** A "Source of Uncertainty" that generates stepped and smooth random voltages, giving your system controlled unpredictability. Based on the legendary Buchla 265, it's **controlled chaos** that makes static sequences come alive with unpredictable, musical movement. Think of it as your synthesizer's "ID" - the unconscious element that adds life to electronic music.
@@ -152,7 +164,7 @@ Understanding this reveals why the Interconnection Principle matters: nothing ex
 
 ### **Input Philosophy:**
 - **Ego Input:** "Direct injection to the uncertain, beating heart" - biases all randomness
-- **Influence Input:** Modulates VCO frequencies, feeds Ring-Mod, shifts Woggle CV
+- **Influence Input:** CV or audio signal input that modulates frequency of both Smooth and Woggle VCOs, inputs to the Ring-Mod circuit, and level shifts the Woggle CV signal (responds 0V to 10V)
 - **External Clock:** Overrides internal clock while keeping other functions independent
 - **Speed/Chaos CV:** Normalled to +8V, extends range to ~200Hz when patched
 
