@@ -3,13 +3,13 @@
 ![Make Noise Wogglebug](https://github.com/DGretta/Music/raw/main/modular/images/make_noise/wogglebug/front_panel.jpg)
 *Source of musical uncertainty with Speed/Chaos control, Ego/Id balance, Woggle control, and Disturb button - generates stepped/smooth random CVs plus three chaos audio oscillators*
 
-*Your Synthesizer's ID Monster - Source of Musical Uncertainty*
+*Controlled Chaos Generator - Source of Musical Uncertainty*
 
 ---
 
 ## Quick Start: Get Your First Sound in 5 Minutes
 
-**What is Wogglebug?** A "Source of Uncertainty" that generates stepped and smooth random voltages, giving your synthesizer a mind of its own. Based on the legendary Buchla 265, it's **controlled chaos** that makes static sequences come alive with unpredictable, musical movement. Think of it as your synthesizer's "ID" - the unconscious element that adds life to electronic music.
+**What is Wogglebug?** A "Source of Uncertainty" that generates stepped and smooth random voltages, giving your system controlled unpredictability. Based on the legendary Buchla 265, it's **controlled chaos** that makes static sequences come alive with unpredictable, musical movement. Think of it as your synthesizer's "ID" - the unconscious element that adds life to electronic music.
 
 ### Your First Taste of Chaos (Basic Random CV)
 1. **Turn Speed/Chaos knob** to 12 o'clock position
@@ -25,6 +25,23 @@
 3. **Turn up the volume** - you're hearing the Wogglebug's "uncertain beating heart"
 4. **Adjust Speed/Chaos** - watch how the audio changes character completely
 5. **This is additive synthesis** controlled by chaos circuits - unlike anything else!
+
+---
+
+## Why This Module Rocks
+
+### **The Philosophy:**
+Wogglebug represents **controlled chaos as a musical instrument** - not random noise, but sophisticated unpredictability that responds to musical context. Based on the legendary Buchla 265, it brings the West Coast philosophy of "controlled voltage, controlled chaos" to Eurorack. **In advanced ecosystems, it becomes the uncertainty engine that adds life and unpredictability to sophisticated musical systems.**
+
+### **Perfect For:**
+- **Experimental musicians** seeking controlled unpredictability in their music
+- **Electronic producers** wanting to break out of rigid, mechanical sequences
+- **Sound designers** needing sophisticated random voltage generation
+- **Performance artists** requiring real-time chaos control and intervention
+- **Advanced system builders** creating sophisticated controlled chaos ecosystems
+
+### **The Controlled Chaos Experience:**
+Using Wogglebug teaches you about **uncertainty as a musical parameter** rather than just randomness. The Ego/Id balance shows how consciousness and unconscious elements interact in music, while the advanced integration reveals how chaos can be guided by intelligence without losing its essential unpredictability. **You learn to conduct chaos rather than just create it.**
 
 ---
 
@@ -127,14 +144,14 @@
 │ System  ────┼───▶│ Clock Out ───┼───▶│ CV Input    │
 │ Learning    │    │ Stepped  ────┼───▶│             │
 │             │    │ Smooth   ────┼───▶│ Musical     │
-│ Feedback◀───┼────┼─ Woggle   ───┼───▶│ Output  ────┼─── AI-Processed
+│ Feedback◀───┼────┼─ Woggle   ───┼───▶│ Output  ────┼─── Processed
 └─────────────┘    └──────────────┘    └─────────────┘   Chaos
 ```
 
-**Phase 2 Integration:** Ochd provides organic timing → Wogglebug adds chaos → Marbles learns patterns
+**Advanced Integration:** Ochd provides organic timing → Wogglebug adds chaos → Marbles learns patterns
 **Result:** Organic timing becomes musical chaos becomes intelligent patterns
 
-### **Patch 3: Advanced - Phase 2 Chaos Audio Synthesis**
+### **Patch 3: Advanced - Chaos Audio Synthesis**
 ```
 ┌─────────────┐    ┌──────────────┐    ┌─────────────┐
 │ Make Noise  │───▶│ Audio Mixer  │───▶│ Cre8audio   │
@@ -170,7 +187,7 @@
 - **Chaos as audio source:** Wogglebug generates complete audio synthesis
 - **Multi-source chaos:** Three different chaos voices create complex timbres
 - **Chaos processing:** Function Junction shapes chaos into musical expression
-- **Phase 2 audio synthesis:** Controlled uncertainty becomes musical audio
+- **Advanced audio synthesis:** Controlled uncertainty becomes musical audio
 
 **Advanced Techniques:**
 - **Chaos audio mixing:** Three different chaos characters blended
@@ -184,7 +201,7 @@
 - **Chaos character:** Speed/Chaos knob dramatically changes all audio sources
 - **Result:** Complete synthesizer voice powered entirely by controlled chaos
 
-### **Patch 4: Expert - Complete Phase 2 Chaos Ecosystem**
+### **Patch 4: Expert - Complete Advanced Chaos Ecosystem**
 ```
 ┌─────────────┐ ┌─────────────┐ ┌─────────────┐ ┌─────────────┐
 │   DivKid    │ │ Make Noise  │ │ 4ms RCD v2  │ │ Mutable     │
@@ -232,7 +249,7 @@
                     └─────────────────────┘       Intelligence
 ```
 
-**Complete Phase 2 Chaos Integration:**
+**Complete Advanced Chaos Integration:**
 
 | Intelligence Layer | Function | Wogglebug Control | Musical Evolution |
 |-------------------|----------|-------------------|-------------------|
@@ -330,12 +347,12 @@ This represents the **ultimate controlled chaos ecosystem** - where organic brea
 
 ## Pairs Well With
 
-### **Phase 2 Module Synergies (Modulation & CV Sources):**
+### **Advanced Module Synergies (Modulation & CV Sources):**
 - **DivKid Ochd & Expander:** Ochd LFOs → Wogglebug Ego/Speed for organic chaos character evolution
 - **Mutable Marbles:** Marbles X/Y outputs → Wogglebug parameters for intelligent chaos control
 - **4ms RCD v2:** RCD divisions → Wogglebug Clock for mathematical chaos timing structure
 - **Cre8audio Function Junction:** Wogglebug outputs → Function Junction for chaos envelope processing
-- **Cross-Phase 2 Integration:** All Phase 2 modules can control and be controlled by chaos generation
+- **Cross-Advanced Integration:** All advanced modules can control and be controlled by chaos generation
 
 ### **Phase 1 Module Integration (Core Synthesis):**
 - **Make Noise Maths:** Wogglebug chaos → Maths for complex envelope and function processing
@@ -358,27 +375,27 @@ This represents the **ultimate controlled chaos ecosystem** - where organic brea
 
 ---
 
-## Phase 2 Learning Path
+## Advanced Learning Path
 
 ### **Recommended Study Progression:**
 1. **Start with Wogglebug fundamentals:** Master chaos generation, audio outputs, and basic uncertainty control
 2. **Add organic guidance:** Integrate DivKid Ochd for natural chaos character evolution (see Ochd guide)
-3. **Include algorithmic intelligence:** Use Mutable Marbles for sophisticated chaos control (see Marbles guide)
+3. **Include probabilistic intelligence: Use Mutable Marbles for sophisticated chaos control (see Marbles guide)**
 4. **Add mathematical structure:** Apply 4ms RCD v2 for precise chaos timing framework (see RCD guide)
 5. **Include modulation processing:** Use Cre8audio Function Junction for chaos envelope shaping (see Function Junction guide)
-6. **Complete the ecosystem:** Integrate all Phase 2 modules for unified controlled chaos systems
+6. **Complete the ecosystem:** Integrate all advanced modules for unified controlled chaos systems
 
 ### **Cross-Module Learning Opportunities:**
 - **Wogglebug + Ochd:** Learn organic chaos character control through breathing modulation
-- **Wogglebug + Marbles:** Master intelligent chaos control with AI-driven parameter manipulation
+- **Wogglebug + Marbles:** Master sophisticated chaos control with probabilistic parameter manipulation
 - **Wogglebug + RCD:** Understand mathematical chaos timing and polyrhythmic uncertainty
 - **Wogglebug + Function Junction:** Explore chaos envelope processing and modulation shaping
-- **All Phase 2 + Wogglebug:** Build complete controlled chaos ecosystems with musical intelligence
+- **All Advanced + Wogglebug:** Build complete controlled chaos ecosystems with musical intelligence
 
 ### **Skill Development Milestones:**
 - **Beginner:** Master basic chaos generation and understand controlled uncertainty
 - **Intermediate:** Learn chaos character control and audio synthesis capabilities
-- **Advanced:** Create Phase 2 integration patches with sophisticated chaos processing
+- **Advanced:** Create advanced integration patches with sophisticated chaos processing
 - **Expert:** Design controlled chaos ecosystems that maintain musical intelligence
 
 ### **Advanced Integration Concepts:**
@@ -395,25 +412,9 @@ This represents the **ultimate controlled chaos ecosystem** - where organic brea
 
 ---
 
-## Why This Module Rocks
-
-### **The Philosophy:**
-Wogglebug represents **controlled chaos as a musical instrument** - not random noise, but intelligent uncertainty that responds to musical context. Based on the legendary Buchla 265, it brings the West Coast philosophy of "controlled voltage, controlled chaos" to Eurorack. **In Phase 2 ecosystems, it becomes the uncertainty engine that adds life and unpredictability to intelligent musical systems.**
-
-### **Perfect For:**
-- **Experimental musicians** seeking controlled unpredictability in their music
-- **Electronic producers** wanting to break out of rigid, mechanical sequences
-- **Sound designers** needing sophisticated random voltage generation
-- **Performance artists** requiring real-time chaos control and intervention
-- **Phase 2 system builders** creating intelligent controlled chaos ecosystems
-
-### **The Controlled Chaos Experience:**
-Using Wogglebug teaches you about **uncertainty as a musical parameter** rather than just randomness. The Ego/Id balance shows how consciousness and unconscious elements interact in music, while the Phase 2 integration reveals how chaos can be guided by intelligence without losing its essential unpredictability. **You learn to conduct chaos rather than just create it.**
-
----
-
-**Bottom Line:** Wogglebug isn't just a random voltage generator - it's a **sophisticated uncertainty engine** that brings controlled chaos to any musical system. From basic sample & hold duties to complex audio synthesis, it provides the unpredictability that makes electronic music feel alive. **As the chaos processor in Phase 2 networks, it transforms rigid intelligence into expressive musical uncertainty.**
+**Bottom Line:** Wogglebug isn't just a random voltage generator - it's a **sophisticated uncertainty engine** that brings controlled chaos to any musical system. From basic sample & hold duties to complex audio synthesis, it provides the unpredictability that makes electronic music feel alive. **As the chaos processor in advanced networks, it transforms rigid intelligence into expressive musical uncertainty.**
 
 ---
 
 *Visit [Make Noise](https://www.makenoisemusic.com/modules/wogglebug) for complete documentation and historical background. Special thanks to Grant Richter for the original Wiard Wogglebug design that inspired this legendary module.*
+
