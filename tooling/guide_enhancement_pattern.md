@@ -262,17 +262,17 @@ Every guide should have a comprehensive troubleshooting section with this struct
 Most [INSTRUMENT] problems come from:
 1. **[Root cause #1]** (description)
 2. **[Root cause #2]** (description)
-3. **[Root cause #3]** (description)
-4. **[Root cause #4]** (description)
+3. **[Root cause #3]** (description) [Optional: only if needed]
 
 Understanding these patterns prevents 90% of beginner frustration.
 ```
 
 **Key Requirements:**
+- Include **3-5 mistakes total** (not more - quality over quantity)
 - Use **first-person frustrated quotes** as headings (relatable, searchable)
 - Always include **WHY** the problem happens (not just how to fix) - this is where interconnection teaching happens through troubleshooting
 - Provide **multiple solutions** when possible
-- End with **Pattern Recognition** section identifying root causes - this should reveal underlying synthesis principles, not just troubleshooting tips
+- End with **Pattern Recognition** section identifying root causes (3-5 root causes) - this should reveal underlying synthesis principles, not just troubleshooting tips
 
 **Pattern Recognition Requirements:**
 - Identify 3-5 root causes that explain 90% of issues
@@ -449,7 +449,7 @@ Before considering a guide "enhanced," verify:
 
 ### **Content Requirements:**
 - [ ] Every significant feature has WHY explanation (not just WHAT)
-- [ ] "Common Mistakes" section with 8-12 issues
+- [ ] "Common Mistakes" section with 3-5 issues
 - [ ] Each mistake includes WHY it happens
 - [ ] "Pattern Recognition" identifies root causes
 - [ ] "Why This Instrument Excels" section exists

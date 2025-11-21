@@ -111,7 +111,7 @@ See `workflow_checklist.md` for the full checklist.
 ### Guide Structure
 Every enhanced guide should have:
 - **Why This Instrument Excels** - philosophy + practical benefits + the magic (emotional essence)
-- **Common Mistakes** - 8-12 issues with WHY explanations (frustrated first-person quotes as headings)
+- **Common Mistakes** - 3-5 issues with WHY explanations (frustrated first-person quotes as headings)
 - **Technical Accuracy** - flag uncertain specs with ⚠️, verify others
 - **Advanced Learning Path** - progression framework (not just "Phase 2")
 
