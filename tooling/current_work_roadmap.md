@@ -8,32 +8,31 @@
 
 ## Phase 1: Tooling Cleanup & Clarification
 
-**Priority:** High | **Timeline:** Next 2-4 weeks
+**Priority:** High | **Timeline:** Next 2-4 weeks | **Status:** IN PROGRESS
 
 ### Core Framework (Keep - In Active Use)
-- [ ] `guide_creation_framework.md` - Retain, up to date
-- [ ] `guide_enhancement_pattern.md` - Retain, proven through Mordax Data
-- [ ] `workflow_checklist.md` - Retain, essential operational discipline
-- [ ] `onboarding.md` - Retain, user-facing for Future Claude
-- [ ] `project_philosophy.md` - Retain, explains the WHY behind everything
+- [x] `guide_creation_framework.md` - Retain, up to date
+- [x] `guide_enhancement_pattern.md` - Retain, proven through Mordax Data
+- [x] `workflow_checklist.md` - Retain, essential operational discipline
+- [x] `onboarding.md` - Retain, user-facing for Future Claude
+- [x] `project_philosophy.md` - Retain, explains the WHY behind everything
+- [x] `session_continuity_guide.md` - Retain, important for cross-session understanding
+- [x] `verification_strategy.md` - Retain, useful in waves for major updates (SCHEDULED FOR REWRITE)
 
-### Historical/Maintenance (Archive)
-- [ ] `accountability_tracking.md` - Move to archive (was effective during process refinement, no longer needed)
-- [ ] `failure_patterns.md` - Move to archive (learnings should be baked into guides, not separated)
-- [ ] `efficiency_tracker.md` - Evaluate: duplicate of accountability_tracking? Archive or keep?
+### Historical/Maintenance (Archived)
+- [x] `accountability_tracking.md` - Archived (was effective during process refinement, no longer needed)
+- [x] `failure_patterns.md` - Archived (learnings should be baked into guides, not separated)
+- [x] `efficiency_tracker.md` - Archived (token tracking, specific to session management)
+- [x] `quality_system.md` - Archived (internalized by creator, uncertain Future Claude need)
+- [x] All `myths_*.md` files (8 files) - Archived (gear myths, can revisit post-Perfect Circuit feedback)
+- [x] `ms20_common_mistakes_section.md` - Archived (MS-20 guide is fine where it is in update cycle)
+- [x] `ms20_mini_completion_checklist.md` - Archived (MS-20 guide is fine where it is in update cycle)
+- [x] `music_theory_framework.md` - Archived (stays available, not deleted)
 
-### Reorganize (Wrong Directory)
-- [ ] Theory docs - Move from `/tooling/` to `/theory/` formally
-- [ ] MS-20 docs - Move from `/tooling/` to `/synthesizers/`
-- [ ] Gear myths doc - **Decision point:** Keep in `/guides/analysis/` or `/guides/` OR delete if not serving educational mission
+### Action Items (Consolidation & Improvement)
+- [ ] `visual_communication_standards.md` - CONSOLIDATE into `guide_creation_framework.md` or `guide_enhancement_pattern.md` (verify which is proper home) - file stays active for now, consolidation is future task
 
-### Evaluate (Lower Priority)
-- [ ] `verification_strategy.md` - Still actively used in guide work?
-- [ ] `quality_system.md` - Still referenced in enhancement work?
-- [ ] `visual_communication_standards.md` - Still enforced across guides?
-- [ ] `session_continuity_guide.md` - Fold into onboarding or keep separate?
-
-**Outcome:** Tooling reduced from 36 files to ~10 core active files + archive folder
+**Outcome:** Archive directory created. 12 files moved to archive with full git history preserved. Core framework remains clean and focused. Consolidation actions flagged for future phases.
 
 ---
 
