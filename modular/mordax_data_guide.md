@@ -125,11 +125,11 @@
 
 ---
 
-### **Patch 3: Phase 2 Ecosystem Analysis**
+### **Patch 3: Advanced Ecosystem Analysis**
 ```
 ┌─────────────┐ ┌─────────────┐ ┌─────────────┐ ┌─────────────┐
 │   DivKid    │ │ Make Noise  │ │ Mutable     │ │ 4ms RCD v2  │
-│    Ochd     │ │ Wogglebug   │ │  Marbles    │ │ (Phase 2)   │
+│    Ochd     │ │ Wogglebug   │ │  Marbles    │ │ (Advanced)  │
 │ (Organic)   │ │ (Chaos)     │ │ (Patterns)  │ │             │
 │             │ │             │ │             │ │ All Outputs │
 │ All 8 LFOs  │ │ All Outputs │ │ All Outputs │ │ monitored   │
@@ -138,12 +138,12 @@
         ▼                ▼              ▼              ▼
 ┌──────────────────────────────────────────────────────────────────────────────┐
 │                              Mordax Data                               │
-│                        (Phase 2 Analysis Hub)                        │
+│                        (Advanced Analysis Hub)                       │
 │                                                                        │
-│ Complete Phase 2 Ecosystem Analysis via Program Switching:            │
+│ Complete Advanced Ecosystem Analysis via Program Switching:            │
 │                                                                        │
 │ SCOPE Program: Real-time Waveform Analysis                            │
-│ • Input 1-4: Monitor all Phase 2 source waveforms simultaneously       │
+│ • Input 1-4: Monitor all Advanced source waveforms simultaneously       │
 │ • Visual comparison of organic vs chaos vs pattern characteristics      │
 │ • Time relationships and phase analysis between sources                  │
 │                                                                        │
@@ -153,12 +153,12 @@
 │ • Confirm harmonic relationships in organic modulation                  │
 │                                                                        │
 │ SPEC Program: Harmonic Content Analysis                                │
-│ • See how Phase 2 modulation affects final audio spectrum               │
+│ • See how Advanced modulation affects final audio spectrum              │
 │ • Analyze complex harmonic interactions in complete systems             │
 │ • Understand frequency domain behavior of ecosystem outputs             │
 │                                                                        │
 │ VOLT Program: Precision CV Measurement                                 │
-│ • Exact voltage readings of all Phase 2 CV sources                     │
+│ • Exact voltage readings of all Advanced CV sources                    │
 │ • Calibration verification for musical accuracy                        │
 │ • DC bias and scaling analysis                                          │
 │                                                                        │
@@ -169,16 +169,21 @@
 │                                                                        │
 │ WAVE Program: Reference Signal Generation                              │
 │ • Perfect test signals for system calibration                          │
-│ • Reference LFOs for comparison with Phase 2 sources                   │
+│ • Reference LFOs for comparison with Advanced sources                  │
 │ • Precision oscillators for testing system response                    │
 │                                                                        │
 │ THRU Outputs 1-4 ○─────────────────────────────────────┼─── Complete
 │ (Pass-through for normal patching)                                     │
 │                                                                        │
-│ OUTPUT 1-4 ○─────────────────────────────────────────┼─── Phase 2
+│ OUTPUT 1-4 ○─────────────────────────────────────────┼─── Advanced
 │ (Function varies by program)                                           │ Analysis
 └──────────────────────────────────────────────────────────────────────────────┘
 ```
+
+**Alternative Approaches (You Probably Have):**
+- **Budget Approach:** Use individual utility modules (Doepfer A-160-2 clock divider, Fronious Mult for distribution) + software oscilloscope for analysis. Costs less but requires multiple modules and computer connectivity.
+- **Different Character:** Disting mk4 includes oscilloscope, spectrum, and tuner algorithms. Provides similar analysis functions in a smaller package (4 HP), though without dedicated waveform generation or integrated clock division.
+- **Premium Integration:** Multiple Mordax Data modules in same system for distributed analysis—monitoring different subsystems simultaneously with dedicated analysis at each stage.
 
 **Purpose:** Advanced Integration - Data as the analysis engine for sophisticated systems
 
@@ -188,16 +193,16 @@
 | **Chaos (Wogglebug)** | Controlled uncertainty | **Real-time chaos visualization** | **Understand chaos generation patterns** |
 | **Pattern (Marbles)** | Sophisticated sequences | **TUNE musical analysis** | **Verify pattern musical relationships** |
 | **Mathematical (RCD)** | Polyrhythmic timing | **CLOCK timing analysis** | **Analyze polyrhythmic precision** |
-| **Complete System** | Final audio result | **SPEC harmonic analysis** | **See Phase 2 ecosystem results** |
+| **Complete System** | Final audio result | **SPEC harmonic analysis** | **See Advanced ecosystem results** |
 
 **Expert System Design:**
-- **Data as analysis brain:** Complete visual understanding of Phase 2 ecosystem behavior
+- **Data as analysis brain:** Complete visual understanding of Advanced ecosystem behavior
 - **Program switching analysis:** Different analysis tools for different aspects of system behavior
 - **Real-time system monitoring:** See exactly how sophisticated pattern generation actually works
-- **Educational analysis:** Learn Phase 2 concepts through visual feedback
+- **Educational analysis:** Learn Advanced concepts through visual feedback
 - **Troubleshooting mastery:** Spot problems and optimize system performance through analysis
 
-**Why Phase 2 integration matters:**
+**Why Advanced integration matters:**
 Alone, Ochd breathes, Wogglebug chaoses, Marbles patterns. But *together* they create sophisticated musical systems. Data reveals what's actually happening—how the breathing affects the chaos, how the patterns guide the uncertainty, how it all combines into audio. This is interconnection made visible.
 
 
@@ -213,7 +218,7 @@ Alone, Ochd breathes, Wogglebug chaoses, Marbles patterns. But *together* they c
 5. **🎛️ Precision CV:** Generate exact voltages for calibration and control
 6. **📈 Learning Tool:** Understand how different modules affect your signals
 7. **🧪 Experimentation:** Test ideas and see results immediately
-8. **🔬 Phase 2 Analysis:** Visualize and understand organic, chaos, and pattern generation in real-time
+8. **🔬 Advanced Analysis:** Visualize and understand organic, chaos, and pattern generation in real-time
 
 ---
 
@@ -243,6 +248,24 @@ Alone, Ochd breathes, Wogglebug chaoses, Marbles patterns. But *together* they c
 - **What actually happens:** Spend 2-3 sessions with each program individually. Don't try to master all six at once. Each has its own workflow, and that's intentional.
 - **Learning moment:** Understanding that complexity comes from functionality (not poor design) teaches you to respect tools that do many things. Master one thing at a time.
 
+### **Pattern Recognition: Root Causes of Most Data Confusion**
+
+**Four core misunderstandings account for 90% of beginner frustration:**
+
+**1. Confusing Analysis with Problem-Solving**
+Data reveals problems visually, but fixing them requires patch design knowledge. Beginners expect the visualization itself to suggest solutions. Understanding the difference between diagnosis (Data's role) and prescription (your patch design) teaches you systems thinking and teaches you to separate concerns—a principle that applies across all complex synthesis.
+
+**2. Expecting Unified Interface Logic Across Six Different Functions**
+The encoder/screen interface is consistent, but each of the six programs operates differently because they solve different problems. SCOPE watches signals, TUNE measures frequencies, CLOCK manages timing. Understanding that utility modules contain multiple tools (not one function) teaches you modular thinking—modules are problem-solvers, not just features. This principle applies everywhere: a good utility module specializes in solving a specific category of problems through multiple approaches.
+
+**3. Treating WAVE Output as a Creative Voice**
+Data's WAVE program generates signals, which feels creative. But it's a test/reference tool. This confusion reveals a fundamental misunderstanding: utility modules serve your understanding and measurement, not your patches directly. Creative modules generate sound you perform with; utility modules give you information you perform with. Learning this distinction teaches you the structure of modular design—creative layers need analysis layers for mastery.
+
+**4. Underestimating the Learning Curve**
+Data is complex because it does six complete things, not because it's poorly designed. Trying to master all six at once creates overwhelm. Understanding that professional tools require sequential, focused learning teaches you patience with complex synthesis—a principle that transfers to mastering any advanced module or system.
+
+**The Interconnection:** Data teaches you that understanding requires multiple perspectives. SCOPE reveals waveform behavior, TUNE reveals pitch relationships, CLOCK reveals timing structure. No single view tells the whole story. This principle applies everywhere in synthesis—complex systems require multiple analytical approaches. Master one lens at a time, then combine them.
+
 ---
 
 ## Next Steps
@@ -259,13 +282,13 @@ Alone, Ochd breathes, Wogglebug chaoses, Marbles patterns. But *together* they c
 
 ## Pairs Well With
 
-### **Phase 2 Module Synergies (Analysis & Monitoring):**
+### **Advanced Module Synergies (Analysis & Monitoring):**
 - **DivKid Ochd & Expander:** Data SCOPE reveals organic LFO characteristics and timing relationships
 - **Make Noise Wogglebug:** Data VOLT/SCOPE shows exact chaos generation patterns and voltage behavior
 - **Mutable Marbles:** Data TUNE/SPEC analyzes pattern generation musical relationships and harmonic content
 - **4ms RCD v2:** Data CLOCK analyzes polyrhythmic timing precision and mathematical relationships
 - **Cre8audio Function Junction:** Data monitors processed modulation and envelope characteristics
-- **Cross-Phase 2 Analysis:** Data serves as analysis hub revealing behavior of complete Phase 2 ecosystems
+- **Cross-Advanced Analysis:** Data serves as analysis hub revealing behavior of complete Advanced ecosystems
 
 ### **Phase 1 Module Integration (Core Analysis):**
 - **Make Noise Maths:** Data visualizes complex envelope shapes and mathematical relationships
@@ -312,17 +335,17 @@ Mordax Data represents **visual understanding of electronic music** - transformi
 - **Sound designers:** Analyze complex harmonic interactions and spectral content
 - **System builders:** Troubleshoot and optimize system performance
 - **Educators:** Teach synthesis concepts through immediate visual demonstration
-- **Phase 2 enthusiasts:** Understand how organic, chaos, and pattern generation actually work
+- **Advanced module enthusiasts:** Understand how organic, chaos, and pattern generation actually work
 
 ### **The Magic:**
 Data **democratizes professional analysis** - giving everyone access to studio-grade measurement and visualization tools. Whether you're learning your first patch or designing complex systems, Data reveals the invisible world of electronic music.
 
-### **Phase 2 Integration Power:**
-As the **analysis engine of Phase 2 ecosystems**, Data reveals the true behavior of organic breathing, controlled chaos, sophisticated pattern generation, and mathematical processing. **You see exactly how electronic intelligence actually works.**
+### **Advanced Integration Power:**
+As the **analysis engine of Advanced ecosystems**, Data reveals the true behavior of organic breathing, controlled chaos, sophisticated pattern generation, and mathematical processing. **You see exactly how electronic intelligence actually works.**
 
 ---
 
-## Phase 2 Learning Path
+## Advanced Learning Path
 
 ### **Recommended Study Progression:**
 1. **Start with Data fundamentals:** Master all six programs and understand visual signal analysis
@@ -337,29 +360,29 @@ As the **analysis engine of Phase 2 ecosystems**, Data reveals the true behavior
 - **Data + Wogglebug:** Master chaos analysis through real-time waveform and voltage monitoring
 - **Data + Marbles:** Understand pattern generation through musical interval and harmonic analysis
 - **Data + RCD:** Explore polyrhythmic precision through timing and phase relationship analysis
-- **All Phase 2 + Data:** Build complete analysis systems where Data reveals behavior of entire ecosystems
+- **All Advanced + Data:** Build complete analysis systems where Data reveals behavior of entire ecosystems
 
 ### **Skill Development Milestones:**
 - **Beginner:** Master individual programs and basic signal analysis
 - **Intermediate:** Understand complex analysis and comparative monitoring
-- **Advanced:** Create Phase 2 analysis patches revealing sophisticated pattern generation behavior
+- **Advanced:** Create Advanced analysis patches revealing sophisticated pattern generation behavior
 - **Expert:** Design analysis systems where Data serves as central intelligence for understanding complete ecosystems
 
 ### **Advanced Analysis Concepts:**
 - **Multi-Modal Analysis:** Use different programs to analyze same signals from multiple perspectives
-- **Phase 2 Intelligence Analysis:** Understand how sophisticated pattern generation actually works through visual feedback
+- **Advanced Ecosystem Intelligence:** Understand how sophisticated pattern generation actually works through visual feedback
 - **System Understanding:** Use Data to reveal timing, harmonic, and voltage relationships in complex systems
 - **Educational Analysis:** Learn synthesis concepts through direct visual demonstration
 
 ### **Performance Applications:**
 - **Live Analysis:** Real-time visual feedback for performance optimization
 - **Generative Analysis:** Foundation for understanding self-evolving systems
-- **Educational Tool:** Visual demonstration of synthesis concepts and Phase 2 intelligence
+- **Educational Tool:** Visual demonstration of synthesis concepts and Advanced ecosystem intelligence
 - **Professional Measurement:** Studio-grade analysis and calibration capabilities
 
 ---
 
-**Bottom Line:** Mordax Data isn't just an analysis module - it's a **window into the invisible world of electronic music**. Every patch teaches you something new about synthesis, and Phase 2 integration reveals how sophisticated pattern generation actually works. As the **analysis engine of Phase 2 ecosystems**, it transforms invisible electronic intelligence into visual understanding under your creative direction.
+**Bottom Line:** Mordax Data isn't just an analysis module - it's a **window into the invisible world of electronic music**. Every patch teaches you something new about synthesis, and Advanced ecosystem integration reveals how sophisticated pattern generation actually works. As the **analysis engine of Advanced ecosystems**, it transforms invisible electronic intelligence into visual understanding under your creative direction.
 
 ---
 
