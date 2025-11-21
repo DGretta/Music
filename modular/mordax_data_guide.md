@@ -76,156 +76,56 @@
 
 ## Beginner Patch Ideas
 
-### **Patch 1: Signal Detective**
+### **Patch 1: First Oscilloscope View**
 ```
 [Any Oscillator] ──→ [Data INPUT 1]
 [Data THRU 1] ──→ [Your usual audio path continues...]
 ```
 **Mode:** SCOPE program
-**Visual:** Watch your waveforms in real-time - see how filters change wave shape
+**Purpose:** Operational Mastery - Learn to see signals visually
+**Visual:** Watch your waveforms in real-time - see how filters change wave shape, understand what your oscillators actually output
 **Controls:** Adjust time scale to zoom in/out, voltage scale for amplitude
-**Learning:** See what different waveforms actually look like, understand signal flow
+**Learning:** Visualization teaches understanding. See what different waveforms actually look like, recognize problems immediately.
 
-**Alternative Options:**
-- **Instead of Data:** Try **2HP Scope** for basic oscilloscope functionality, or **Expert Sleepers Disting mk4** with oscilloscope algorithm
-- **Different analysis:** **Make Noise Function** for envelope analysis, or **Maths** for complex function visualization
-- **Budget approach:** Use **computer interface + software** for signal analysis
+**Practical Alternatives (You Probably Have):**
+- **Don't have Data?** Use your **computer audio interface + free oscilloscope software** (Audacity, or browser-based tools)
+- **Different approach:** Use **beat frequency method** - patch two oscillators together, listen to the beating to tune precisely
+- **If you have Disting mk4:** Its oscilloscope algorithm works similarly, though Data is more polished
 
-**Enhanced Alternative Options:**
-- **Budget:** 2HP Scope + basic test oscillators for simple visual signal monitoring
-- **Different character:** Expert Sleepers Disting mk4 oscilloscope + various synthesis modules for alternative analysis
-- **Premium:** Multiple Mordax Data modules + comprehensive modular analysis ecosystem
+---
 
-### **Patch 2: Perfect Tuner** 
+### **Patch 2: Tuning & Calibration**
 ```
-[Oscillator] ──→ [Data INPUT 1]
+[Oscillator] ──→ [Data INPUT 1] [Data TUNE program]
+
+[Data OUTPUT 1] ──→ [Sequencer Clock]
+[Data OUTPUT 2] ──→ [Drum Trigger] (/2 division)
+[Data OUTPUT 3] ──→ [Hi-hat Trigger] (x4 multiplication)  
+[Data OUTPUT 4] ──→ [Other Sequencer] (/3 division)
 ```
-**Mode:** TUNE program
-**Visual:** Frequency display + graphical pitch deviation
-**Use:** Tune multiple oscillators to perfect intervals, calibrate V/Oct tracking
-**Pro tip:** Tune one osc, then use Data's display to tune others to exact ratios
+**Mode:** TUNE program (for calibration), then CLOCK program (for timing)
+**Purpose:** Operational Mastery - Achieve precision through measurement
 
-**Alternative Options:**
-- **Instead of Data:** Try **Peterson Stroboscopic Tuner** for precise tuning, or **TC Electronic G-Major** for digital tuning
-- **Different approach:** **Musical ear training** for relative pitch accuracy, or **Oscilloscope + frequency counter**
-- **Budget tuning:** **Guitar tuner apps** for basic frequency reference
+**Part A: Perfect Tuning**
+- **Visual:** Frequency display + graphical pitch deviation (cents sharp/flat)
+- **Use:** Tune multiple oscillators to perfect intervals, calibrate V/Oct tracking
+- **Pro tip:** Tune one osc, then use Data's display to tune others to exact ratios
+- **Why it matters:** Perfect tuning is foundation for all other work
 
-**Enhanced Alternative Options:**
-- **Budget:** Guitar tuner pedal + basic oscillator for simple pitch reference
-- **Different character:** Peterson StroboPlus HD + comprehensive oscillator collection for precision tuning
-- **Premium:** Multiple Mordax Data + complete modular tuning and calibration ecosystem
+**Part B: Precision Timing**
+- **Setup:** Set internal clock to comfortable BPM, different divisions per output
+- **Result:** Complex polyrhythmic patterns from one master tempo
+- **Visual:** See all four clocks running at their different divisions
+- **Why it matters:** Timing accuracy is invisible until it's wrong
 
-### **Patch 3: Dual Precision LFO**
-```
-[Data OUTPUT 1] ──→ [Filter Cutoff CV]
-[Data OUTPUT 2] ──→ [VCA CV] 
-[Some CV] ──→ [Data INPUT 3] (to modulate LFO speed)
-```
-**Mode:** WAVE program  
-**Setup:** Set Output 1 to slow sine wave, Output 2 to faster triangle
-**Controls:** Precise frequency control, CV modulation of speed/amplitude
-**Sound:** Perfect, stable modulation with visual feedback of the waveforms
+**Practical Alternatives (You Probably Have):**
+- **For tuning:** **Guitar tuner app** on your phone for basic pitch reference
+- **For timing:** **Basic clock divider** (Doepfer A-160-2) + any clock source for simple rhythm generation
+- **If you have RCD v2:** It does sophisticated polyrhythmic timing, though Data integrates tuning + timing in one
 
-**Alternative Options:**
-- **Instead of Data:** Try **Make Noise Function** for dual precision functions, or **Maths** for complex mathematical relationships
-- **Different character:** **DivKid Ochd** for organic LFO modulation, or **Intellijel Quadrax** for discrete precision envelopes
-- **Budget LFOs:** **2HP LFO** x2 for basic dual modulation sources
+---
 
-**Enhanced Alternative Options:**
-- **Budget:** 2HP LFO x2 + Doepfer A-138c Mixer for basic dual precision modulation
-- **Different character:** Make Noise Maths + Intellijel Quadrax for mathematical function generation
-- **Premium:** Multiple Mordax Data + comprehensive precision modulation ecosystem
-
-### **Patch 4: Advanced - Phase 2 Ecosystem Analysis**
-```
-   ┌─────────────────────┐      ┌─────────────────────┐
-   │   DivKid Ochd      │      │   Mordax Data       │
-   │    (Phase 2)       │      │  (Analysis Hub)     │
-   │                    │      │                     │
-   │ LFO 1 ○───────────┼──────┼─▶ INPUT 1 (Organic)   │
-   │       ║            │      │                     │
-   │ LFO 3 ○───────────┼──────┼─▶ INPUT 2 (Organic)   │
-   │       ║            │      │                     │
-   └───────║───────────┘      │ Program: SCOPE      │
-          CV║                     │ (4-channel analysis)│
-         (Blue)                   │                     │
-           ▼                     │ THRU 1 ○────────┼─── CV (Blue)
-   ┌─────────────────────┐      │                     │
-   │ Make Noise        │      │ THRU 2 ○────────┼─── CV (Blue)
-   │ Wogglebug         │      └─────────────────────┘
-   │ (Chaos)           │               ║       ║
-   │                   │          CV   ║  CV   ║
-   │ Stepped CV ○──────┼──────────(Blue)║(Blue)║
-   │            ║      │               ▼       ▼
-   │ Smooth CV  ○──────┼─────────── INPUT 3  INPUT 4
-   │            ║      │                 (Chaos)  (Chaos)
-   └───────────║──────┘                     │
-          CV       ║                           │
-         (Blue)    ║                           │
-                   ▼                           │
-   ┌─────────────────────┐               │
-   │ Mutable Marbles     │               │
-   │ (Patterns)          │               │
-   │                     │               │
-   │ X1 Out ○──────────┼─────────────────────────┐
-   │                     │                               │
-   │ X2 Out ○──────────┼─────────────────────────┘
-   │                     │                               │
-   └─────────────────────┘                               │
-                CV (Blue)                       │
-                     ▼                        │
-            ┌─────────────────┐                │
-            │ Synthesis Network │                │
-            │                   │                │
-            │ All Phase 2 CVs   │                │
-            │ analyzed in       │                │
-            │ real-time         │                │
-            │                   │                │
-            │ Audio Out ○─────┼─────────────────────┼─── Complete
-            └─────────────────┘                │ Phase 2
-                         Audio                │ Analysis
-                         (Red)                │
-                           ▼                  │
-                  ┌──────────────────┐  │
-                  │   Audio Analysis   │  │
-                  │                    │  │
-                  │ Real-time visual   │  │
-                  │ analysis of:       │  │
-                  │ • Organic breathing  │  │
-                  │ • Controlled chaos   │  │
-                  │ • Pattern evolution  │  │
-                  │ • Final audio result │  │
-                  │                    │  │
-                  │ Understanding ○───┼───┘
-                  └──────────────────┘
-```
-
-| Phase 2 Analysis | Data Program | Purpose | Visual Understanding |
-|------------------|--------------|---------|----------------------|
-| **Ochd Organic → SCOPE Inputs 1,2** | 4-channel oscilloscope | **See organic breathing patterns** | **Visual LFO character and timing** |
-| **Wogglebug Chaos → SCOPE Inputs 3,4** | Real-time waveforms | **Visualize chaos generation** | **Understand stepped vs smooth chaos** |
-| **Marbles Patterns → TUNE program** | Frequency analysis | **Analyze pattern generation** | **Musical relationships in patterns** |
-| **Final Audio → SPEC program** | Spectrum analyzer | **See Phase 2 harmonic results** | **Complete system harmonic analysis** |
-
-**Module Settings:**
-- **Data SCOPE Program:** 4-channel analysis showing all Phase 2 sources simultaneously
-- **Real-time switching:** Use program switching to analyze different aspects
-- **THRU outputs:** Signals pass through for normal patching while being analyzed
-- **Visual learning:** See exactly how Phase 2 modules actually behave
-
-**Learning Objectives:**
-- **Phase 2 analysis mastery:** Understand how organic, chaos, and pattern generation actually work
-- **Real-time visualization:** See the difference between organic breathing and controlled chaos
-- **System understanding:** Analyze complete Phase 2 ecosystems in operation
-- **Troubleshooting skills:** Spot problems and understand system behavior visually
-
-**Advanced Analysis Techniques:**
-- **Comparative analysis:** Switch between inputs to compare different Phase 2 sources
-- **Harmonic analysis:** Use SPEC program to see how Phase 2 modulation affects final audio
-- **Timing analysis:** SCOPE reveals exact timing relationships between modules
-- **Tuning verification:** TUNE program ensures musical relationships in pattern generation
-
-### **Patch 5: Expert - Complete Phase 2 Ecosystem Analysis Hub**
+### **Patch 3: Phase 2 Ecosystem Analysis**
 ```
 ┌─────────────┐ ┌─────────────┐ ┌─────────────┐ ┌─────────────┐
 │   DivKid    │ │ Make Noise  │ │ Mutable     │ │ 4ms RCD v2  │
@@ -278,26 +178,9 @@
 │ OUTPUT 1-4 ○─────────────────────────────────────────┼─── Phase 2
 │ (Function varies by program)                                           │ Analysis
 └──────────────────────────────────────────────────────────────────────────────┘
-                              ║                                 Ecosystem
-                         Analysis║
-                      Intelligence║
-                              ▼
-                    ┌─────────────────────┐
-                    │   Complete System   │
-                    │     Understanding   │
-                    │                     │
-                    │ Visual analysis of: │
-                    │ • Organic breathing   │
-                    │ • Controlled chaos    │
-                    │ • Pattern generation  │
-                    │ • Mathematical timing │
-                    │ • Final audio result  │
-                    │                     │
-                    │ System Mastery ○───┼─── Perfect Understanding
-                    └─────────────────────┘       of Phase 2 Systems
 ```
 
-**Complete Phase 2 Analysis Integration:**
+**Purpose:** Advanced Integration - Data as the analysis engine for sophisticated systems
 
 | Analysis Layer | Function | Data Capability | Understanding Result |
 |----------------|----------|-----------------|----------------------|
@@ -307,44 +190,17 @@
 | **Mathematical (RCD)** | Polyrhythmic timing | **CLOCK timing analysis** | **Analyze polyrhythmic precision** |
 | **Complete System** | Final audio result | **SPEC harmonic analysis** | **See Phase 2 ecosystem results** |
 
-**Expert Analysis Design:**
+**Expert System Design:**
 - **Data as analysis brain:** Complete visual understanding of Phase 2 ecosystem behavior
 - **Program switching analysis:** Different analysis tools for different aspects of system behavior
 - **Real-time system monitoring:** See exactly how sophisticated pattern generation actually works
 - **Educational analysis:** Learn Phase 2 concepts through visual feedback
 - **Troubleshooting mastery:** Spot problems and optimize system performance through analysis
 
-**Advanced Performance:**
-1. **System initialization:** All Phase 2 modules establish their character
-2. **Comprehensive analysis:** Data reveals the actual behavior of each intelligence type
-3. **Real-time monitoring:** Visual feedback shows system evolution and performance
-4. **Educational insight:** Learn how organic, chaos, pattern, and mathematical processing actually work
-5. **Analysis transcendence:** Perfect understanding of sophisticated musical systems
+**Why Phase 2 integration matters:**
+Alone, Ochd breathes, Wogglebug chaoses, Marbles patterns. But *together* they create sophisticated musical systems. Data reveals what's actually happening—how the breathing affects the chaos, how the patterns guide the uncertainty, how it all combines into audio. This is interconnection made visible.
 
-**Philosophical Achievement:**
-This represents the **ultimate analysis environment** - where organic breathing, controlled chaos, sophisticated pattern generation, and mathematical precision are all revealed through comprehensive visual analysis, creating perfect understanding of sophisticated musical systems under your creative direction.
 
-### **Patch 4: Rhythm Generator**
-```
-[Data OUTPUT 1] ──→ [Sequencer Clock]
-[Data OUTPUT 2] ──→ [Drum Trigger] (/2 division)
-[Data OUTPUT 3] ──→ [Hi-hat Trigger] (x4 multiplication)  
-[Data OUTPUT 4] ──→ [Other Sequencer] (/3 division)
-```
-**Mode:** CLOCK program
-**Setup:** Set internal clock to comfortable BPM, different divisions per output
-**Result:** Complex polyrhythmic patterns from one master tempo
-**Visual:** See all four clocks running at their different divisions
-
-**Alternative Options:**
-- **Instead of Data:** Try **4ms RCD v2** for comprehensive polyrhythmic clock division, or **Pamela's NEW Workout** for complex clock generation
-- **Different timing:** **Make Noise Tempi** for organic clock manipulation, or **Expert Sleepers Disting mk4** clock algorithms
-- **Budget approach:** **Doepfer A-160-2** Clock Divider for basic rhythm generation
-
-**Enhanced Alternative Options:**
-- **Budget:** Doepfer A-160-2 Clock Divider + basic clock source for simple polyrhythmic patterns
-- **Different character:** 4ms RCD v2 + Pamela's NEW Workout for comprehensive polyrhythmic ecosystem
-- **Premium:** Multiple Mordax Data + complete modular timing and analysis workstation
 
 ---
 
