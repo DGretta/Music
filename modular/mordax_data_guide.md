@@ -17,6 +17,9 @@
 | **Current Draw (-12V)** | 60 mA |
 | **Current Draw (5V)** | 0 mA |
 
+**A Quick Note on Navigation:**
+Data uses a screen-based digital interface (rotary encoder + softkeys), which is different from analog modules with dedicated knobs. Everything routes through the encoder and screen. You'll navigate intuitively once you understand what each program does—the manual covers specific button sequences.
+
 ---
 
 ## Quick Start: See Your First Signal in 5 Minutes
