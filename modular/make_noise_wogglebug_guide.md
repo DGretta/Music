@@ -308,6 +308,46 @@ This represents the **ultimate controlled chaos ecosystem** - where organic brea
 - **Solution:** Use attenuators or mixer gain staging to control levels
 - **Pro tip:** Excellent for overdriving filters and effects
 
+**"My Woggle CV doesn't seem different than Smooth output"**
+- Woggle CV appears to behave identically to Smooth output in many patches
+- **Why:** Woggle's unique feature is **sinusoidal decay between steps** - smooth curves between discrete values. But at very fast clock speeds or when listening to pitch changes, the sinusoidal character is hard to hear. Users expect it to sound "different" dramatically, but the difference is subtle until you understand what to listen for.
+- **Solutions:**
+  - Use Woggle CV for **pitch modulation** where the smooth stepping is obvious - you hear stepped pitch with smooth glides between steps
+  - Patch Woggle CV to **filter cutoff** (slow), where smooth exponential curves create organic sweeps
+  - Compare side-by-side: patch Stepped → oscillator pitch and Woggle → filter cutoff simultaneously, then you hear the difference
+  - Slow down Speed/Chaos knob (9-10 o'clock) so steps take longer, making sinusoidal decay audible
+- **Teaching Point:** This reveals that Wogglebug's innovation isn't just "another output" - it's teaching about **curve types in CV modulation**. Linear, exponential, sinusoidal - these are fundamentally different musical behaviors. Understanding Woggle teaches you that how voltage changes is just as important as what voltage value you're using.
+
+**"When I patch the Ego Input, almost nothing changes"**
+- Patching a control voltage to Ego Input produces minimal audible effect
+- **Why:** Ego Input requires **significant attenuation** to sculpt the chaos character effectively. Users expect the knob position (12 o'clock = neutral) to work like other modules, but Ego Input is subtle - it shifts the *probability distribution* of random values, not the obvious speed/range. A slow LFO at full volume often overwhelms rather than sculpts. You need careful scaling and attenuation.
+- **Solutions:**
+  - Use an **attenuverter** (Maths, Dual Attenuation, etc.) to reduce the Ego Input signal to 10-25% of its original strength
+  - Start with slow modulation (LFO at 0.1-0.5Hz) rather than audio-rate signals
+  - Use **smaller voltage ranges** (±2V instead of ±5V) when patching to Ego Input
+  - Try with Stepped output into a quantizer to hear the character change as distribution shifts
+- **Teaching Point:** This teaches about **signal scaling and integration** - how subtle CV control works differently than "more signal = more effect." Understanding attenuation and careful voltage management is fundamental to modular thinking. The Ego Input reveals that not all CV inputs want full-strength signals.
+
+### **Pattern Recognition: Root Causes of Most Wogglebug Frustration**
+
+Most Wogglebug frustrations come from **4 core misunderstandings**:
+
+**1. Confusing "chaos character" with speed or quantity**
+- Wogglebug teaches that randomness has personality, not just magnitude. Speed/Chaos and Ego/Id don't just change "more" or "less" random - they fundamentally change the *personality* of the randomness. Slow + full Ego/Id = smooth wandering through voltage space. Fast + low Ego/Id = jittery, clustered patterns. The same Wogglebug can sound completely different based on character, not just amount.
+- **Learning Moment:** Understanding this teaches you that all modulation sources have character, not just quantity. This principle applies across all synthesis.
+
+**2. Forgetting that output types teach CV design itself**
+- Stepped, Smooth, and Woggle aren't just "three ways to get random." They're three different mathematical approaches to representing change in voltage. Stepped = raw discrete values. Smooth = simple lagging (first-order lowpass). Woggle = sinusoidal decay between values. Learning when to use each one teaches you fundamental CV design principles that apply to filters, envelopes, and all voltage shaping.
+- **Learning Moment:** Understanding the three outputs reveals that "curve types" matter in synthesis. How a voltage transitions from point A to point B is as important as the actual voltage values.
+
+**3. Treating Wogglebug as a voltage source rather than a timing device**
+- Wogglebug's power emerges when you understand it controls *when things happen*, not just *what* values happen. Clock Output, Burst output, and Disturb button all teach that uncertainty can be applied to timing. Random gates trigger random envelopes. Random timing disrupts mechanical sequences. The module becomes a timing controller for the entire patch.
+- **Learning Moment:** This teaches that chaos doesn't just modify parameters - it can disrupt structure itself. Timing uncertainty is as musically powerful as voltage uncertainty.
+
+**4. Using Wogglebug in isolation instead of as a patch component**
+- Wogglebug alone is just random values. With other modules (quantizers turning stepped chaos into melody, envelope generators shaping burst gates, Marbles learning from its patterns), it becomes part of a system where controlled chaos generates actual music. The module is designed to be integrated, not standalone.
+- **Learning Moment:** This teaches the interconnection principle - Wogglebug's real power emerges in patches where uncertainty propagates through multiple modules. Understanding this changes how you think about all modules - they're patch components, not isolated effects.
+
 ### **🎵 Pro Tips:**
 
 **Ego Input Magic:**
