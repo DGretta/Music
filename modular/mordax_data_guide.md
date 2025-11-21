@@ -7,6 +7,18 @@
 
 ---
 
+## Key Specifications
+
+| Specification | Value |
+|---|---|
+| **Module Width** | 16 HP |
+| **Depth** | 35 mm |
+| **Current Draw (+12V)** | 250 mA |
+| **Current Draw (-12V)** | 60 mA |
+| **Current Draw (5V)** | 0 mA |
+
+---
+
 ## Quick Start: See Your First Signal in 5 Minutes
 
 **What is Data?** Think of it as a high-tech microscope for electricity - it lets you see what your CV and audio signals actually look like, plus it generates perfect signals when you need them. It's like having a whole electronics lab in one module.
