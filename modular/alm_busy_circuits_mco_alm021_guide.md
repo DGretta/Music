@@ -207,6 +207,55 @@
 
 ---
 
+## Why This Module Excels
+
+### **The Philosophy:**
+Most digital oscillators try to emulate analog character. MCO celebrates authentic early 90s digital character instead—harmonic precision, intentional aliasing, mathematical purity—making a virtue of what analog apologizes for.
+
+### **The Core Innovation:**
+
+**Wavetable Morphing as Teaching Tool:** MCO's 10-waveform architecture teaches something crucial about oscillators: they're all collections of harmonics at different amplitudes. The journey through MCO's waveforms (noise → tri → saw → sine → bell → organ → '4 oct' → organ → voice → pulse) is a journey through harmonic complexity. You're not just selecting different sounds; you're exploring how oscillators work:
+- **Noise:** All frequencies at equal amplitude (no harmonic structure)
+- **Triangle → Sine:** Fundamental frequency with minimal harmonics (pure tone)
+- **Sawtooth:** Fundamental + all integer harmonics (richest harmonic content)
+- **Bell/Organ/Voice:** Selective harmonics creating timbral character
+
+When you understand MCO's waveforms through morphing, you understand harmonic content—a concept that transfers directly to filter design (filters select which harmonics survive), oscillator frequency relationships (ratios between oscillators are ratios between harmonics), and synthesis design everywhere.
+
+**Output Architecture as System Design:** MCO deliberately separates outputs (Main, Pulse, Sub) instead of processing the same signal. This teaches architectural thinking: different musical uses need different tools. Main Output gives you pure waveforms for filtering and effects. Pulse Output adds PWM character. Sub adds foundation. Understanding this separation teaches you why modular systems should specialize—different tools for different jobs, working together as a system.
+
+**Digital Character as Intentional Philosophy:** By refusing to hide digital nature, MCO teaches that synthesis is about *choice*, not apology. Early 90s synthesizers didn't try to be analog—they celebrated their digital precision, aliasing, and mathematical exactness. Using MCO means understanding that character choices are design decisions. This perspective transfers to all synthesis: understanding *why* a module sounds the way it does is more valuable than wishing it sounded different.
+
+**Hard Sync as Phase Principle:** MCO's sync input teaches fundamental phase relationships. Every oscillator has phase—a starting point in its cycle. Sync resets that phase, creating harmonic generation when combined with another oscillator's frequency. Understanding phase through sync teaches principles that appear in:
+- **LFO modulation:** All modulation is essentially phase offset between sources
+- **Filter resonance:** Peaks occur at phase relationships between feedback and input
+- **Interference patterns:** Beating and chorus effects come from phase misalignment
+
+### **The Practical Benefits:**
+- **Authentic digital character:** Early 90s sound that defined a generation of music
+- **Compact (6HP):** Wavetable synthesis without taking half your rack
+- **Multi-output architecture:** Three independently useful outputs (Main/Pulse/Sub)
+- **CV control over everything:** Wave morphing, PWM, pulse segments, hard sync
+- **System-friendly:** 16-bit/48kHz digital quality that works well with analog modules
+- **Teaching instrument:** Every feature reveals synthesis principles that transfer across instruments
+
+### **Perfect For:**
+- **Digital character specialists:** Producers who want authentic early 90s sound for specific contexts
+- **Hybrid system designers:** Understanding how to blend digital precision with analog warmth
+- **Oscillator students:** Learning wavetable morphing, PWM architecture, and hard sync through hands-on exploration
+- **Specialist composers:** Using digital character as intentional texture, not settling for it when analog is unavailable
+- **System thinkers:** Understanding modular architecture through MCO's deliberate output separation
+
+### **The Interconnection:**
+
+MCO teaches oscillator fundamentals through wavetable morphing. When you understand that every waveform is a collection of harmonics at different amplitudes, you understand filters (which select those harmonics), oscillator ratios (which create harmonic relationships), and timbre itself (which is harmonic distribution).
+
+Moreover, MCO's intentional aliasing teaches you digital audio theory at a practical level. Understanding the Nyquist limit and why high frequencies alias badly in digital systems transfers directly to sampling (why you need anti-aliasing filters when recording), modulation sources (why fast LFOs can alias), and digital audio work generally.
+
+The hard sync capability teaches phase relationships—the most fundamental concept in all oscillators and modulation sources. When you master MCO's sync effects, you understand principles that appear in every synthesis context, from filter feedback to LFO interference patterns.
+
+---
+
 ## Beginner Patch Ideas
 
 ### **Patch 1: Basic - Wavetable Exploration and Digital Character Discovery**
@@ -459,55 +508,6 @@ Waveform Exploration Guide:
 - **Instead of Marbles:** Try **Wogglebug** + **Maths** for chaotic but coordinated parameter control
 - **Different filtering character:** **Rings** (resonator) for harmonic enhancement vs **Polivoks** for analog warmth
 - **Simplified expert approach:** **Bloom** (fractal sequencer) + **Function Junction** (coordinated CV) for generative digital synthesis
-
----
-
-## Why This Module Excels
-
-### **The Philosophy:**
-Most digital oscillators try to emulate analog character. MCO celebrates authentic early 90s digital character instead—harmonic precision, intentional aliasing, mathematical purity—making a virtue of what analog apologizes for.
-
-### **The Core Innovation:**
-
-**Wavetable Morphing as Teaching Tool:** MCO's 10-waveform architecture teaches something crucial about oscillators: they're all collections of harmonics at different amplitudes. The journey through MCO's waveforms (noise → tri → saw → sine → bell → organ → '4 oct' → organ → voice → pulse) is a journey through harmonic complexity. You're not just selecting different sounds; you're exploring how oscillators work:
-- **Noise:** All frequencies at equal amplitude (no harmonic structure)
-- **Triangle → Sine:** Fundamental frequency with minimal harmonics (pure tone)
-- **Sawtooth:** Fundamental + all integer harmonics (richest harmonic content)
-- **Bell/Organ/Voice:** Selective harmonics creating timbral character
-
-When you understand MCO's waveforms through morphing, you understand harmonic content—a concept that transfers directly to filter design (filters select which harmonics survive), oscillator frequency relationships (ratios between oscillators are ratios between harmonics), and synthesis design everywhere.
-
-**Output Architecture as System Design:** MCO deliberately separates outputs (Main, Pulse, Sub) instead of processing the same signal. This teaches architectural thinking: different musical uses need different tools. Main Output gives you pure waveforms for filtering and effects. Pulse Output adds PWM character. Sub adds foundation. Understanding this separation teaches you why modular systems should specialize—different tools for different jobs, working together as a system.
-
-**Digital Character as Intentional Philosophy:** By refusing to hide digital nature, MCO teaches that synthesis is about *choice*, not apology. Early 90s synthesizers didn't try to be analog—they celebrated their digital precision, aliasing, and mathematical exactness. Using MCO means understanding that character choices are design decisions. This perspective transfers to all synthesis: understanding *why* a module sounds the way it does is more valuable than wishing it sounded different.
-
-**Hard Sync as Phase Principle:** MCO's sync input teaches fundamental phase relationships. Every oscillator has phase—a starting point in its cycle. Sync resets that phase, creating harmonic generation when combined with another oscillator's frequency. Understanding phase through sync teaches principles that appear in:
-- **LFO modulation:** All modulation is essentially phase offset between sources
-- **Filter resonance:** Peaks occur at phase relationships between feedback and input
-- **Interference patterns:** Beating and chorus effects come from phase misalignment
-
-### **The Practical Benefits:**
-- **Authentic digital character:** Early 90s sound that defined a generation of music
-- **Compact (6HP):** Wavetable synthesis without taking half your rack
-- **Multi-output architecture:** Three independently useful outputs (Main/Pulse/Sub)
-- **CV control over everything:** Wave morphing, PWM, pulse segments, hard sync
-- **System-friendly:** 16-bit/48kHz digital quality that works well with analog modules
-- **Teaching instrument:** Every feature reveals synthesis principles that transfer across instruments
-
-### **Perfect For:**
-- **Digital character specialists:** Producers who want authentic early 90s sound for specific contexts
-- **Hybrid system designers:** Understanding how to blend digital precision with analog warmth
-- **Oscillator students:** Learning wavetable morphing, PWM architecture, and hard sync through hands-on exploration
-- **Specialist composers:** Using digital character as intentional texture, not settling for it when analog is unavailable
-- **System thinkers:** Understanding modular architecture through MCO's deliberate output separation
-
-### **The Interconnection:**
-
-MCO teaches oscillator fundamentals through wavetable morphing. When you understand that every waveform is a collection of harmonics at different amplitudes, you understand filters (which select those harmonics), oscillator ratios (which create harmonic relationships), and timbre itself (which is harmonic distribution).
-
-Moreover, MCO's intentional aliasing teaches you digital audio theory at a practical level. Understanding the Nyquist limit and why high frequencies alias badly in digital systems transfers directly to sampling (why you need anti-aliasing filters when recording), modulation sources (why fast LFOs can alias), and digital audio work generally.
-
-The hard sync capability teaches phase relationships—the most fundamental concept in all oscillators and modulation sources. When you master MCO's sync effects, you understand principles that appear in every synthesis context, from filter feedback to LFO interference patterns.
 
 ---
 
