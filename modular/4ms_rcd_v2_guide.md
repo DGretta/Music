@@ -11,6 +11,44 @@
 
 ---
 
+## Quick Start: Get Your First Sound in 5 Minutes
+1. **Patch your sequencer/clock** → RCD V2 **Clock In**
+2. **Leave Rotate CV unplugged** (starting position)
+3. **Patch Output 1** → kick drum (divide by 1 = same speed)
+4. **Patch Output 2** → snare (divide by 2 = half speed)
+5. **Patch Output 4** → hi-hat (divide by 4 = quarter speed)
+6. **Start your sequence** - you should hear a basic drum pattern
+
+**Add the Magic Rotation:**
+1. **Patch slow LFO** → **Rotate CV input**
+2. **Watch/listen** as the divisions shift between outputs
+3. **Output 1 becomes divide by 2, Output 2 becomes divide by 3**, etc.
+4. **Congratulations!** You're now creating evolving polyrhythmic patterns
+
+---
+
+## Essential Parameters (The Big 3)
+
+### **1. Rotate CV Input**
+- **What it does:** Shifts the division number at each output jack
+- **Musical result:** /1 becomes /2, /2 becomes /3, /4 becomes /5, etc.
+- **Range:** 0V to +5V (higher voltage = more rotation)
+- **Pro tip:** Use stepped voltage for rhythmic "gear changes"
+
+### **2. Reset Input**
+- **What it does:** Syncs all divisions back to beat 1 simultaneously  
+- **Musical result:** Keeps complex polyrhythms aligned with song structure
+- **Use cases:** Downbeats, measure boundaries, keeping chaos organized
+- **Trigger:** 5V to 15V trigger signal
+
+### **3. Internal Jumper Settings** (Advanced)
+- **Division Range:** /1 to /8 (default) or /1 to /64 (with jumpers)
+- **Spread Mode:** Even distribution vs. clustered around max division
+- **Gate/Trigger Mode:** Long gates vs. short trigger pulses
+- **Auto-Reset:** Automatic reset every 16/24/32 clocks for "danceable" odd divisions
+
+---
+
 ## Why This Instrument Excels
 
 ### **The Philosophy: Mathematics Is Music, Music Is Mathematics**
@@ -99,44 +137,6 @@ Understanding this principle - that musical interest emerges from relationships,
 The rotation feature, the access to odd divisions, the reset function - these aren't just features. They're recognition that **music is mathematics experienced through time**, and that making mathematics playable through voltage control gives you access to rhythmic possibilities that step sequencers and drum machines can't reach. Not better, not worse - different. The difference between programming "play this specific pattern" and performing "explore these mathematical relationships."
 
 That's the magic: your sense of rhythm becomes mathematical thinking, and mathematical relationships become musical instinct, and the boundary between the two dissolves completely.
-
----
-
-## Quick Start: Get Your First Sound in 5 Minutes
-1. **Patch your sequencer/clock** → RCD V2 **Clock In**
-2. **Leave Rotate CV unplugged** (starting position)
-3. **Patch Output 1** → kick drum (divide by 1 = same speed)
-4. **Patch Output 2** → snare (divide by 2 = half speed)
-5. **Patch Output 4** → hi-hat (divide by 4 = quarter speed)
-6. **Start your sequence** - you should hear a basic drum pattern
-
-**Add the Magic Rotation:**
-1. **Patch slow LFO** → **Rotate CV input**
-2. **Watch/listen** as the divisions shift between outputs
-3. **Output 1 becomes divide by 2, Output 2 becomes divide by 3**, etc.
-4. **Congratulations!** You're now creating evolving polyrhythmic patterns
-
----
-
-## Essential Parameters (The Big 3)
-
-### **1. Rotate CV Input**
-- **What it does:** Shifts the division number at each output jack
-- **Musical result:** /1 becomes /2, /2 becomes /3, /4 becomes /5, etc.
-- **Range:** 0V to +5V (higher voltage = more rotation)
-- **Pro tip:** Use stepped voltage for rhythmic "gear changes"
-
-### **2. Reset Input**
-- **What it does:** Syncs all divisions back to beat 1 simultaneously  
-- **Musical result:** Keeps complex polyrhythms aligned with song structure
-- **Use cases:** Downbeats, measure boundaries, keeping chaos organized
-- **Trigger:** 5V to 15V trigger signal
-
-### **3. Internal Jumper Settings** (Advanced)
-- **Division Range:** /1 to /8 (default) or /1 to /64 (with jumpers)
-- **Spread Mode:** Even distribution vs. clustered around max division
-- **Gate/Trigger Mode:** Long gates vs. short trigger pulses
-- **Auto-Reset:** Automatic reset every 16/24/32 clocks for "danceable" odd divisions
 
 ---
 
