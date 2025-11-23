@@ -159,6 +159,8 @@
 
 **The Deeper Pattern:** SCM Plus teaches you how digital timing works by revealing the quality of your clock sources and your understanding of timing hierarchy. Issues with SCM Plus often indicate gaps in understanding timing architecture, which is exactly what makes it valuable—it's a precision instrument that forces precision thinking.
 
+
+
 ---
 
 ## Beginner Patch Ideas
