@@ -226,7 +226,7 @@ When you set drum kick to 16 steps and hi-hat to 7 steps, you're not fighting a 
 
 **Randomization as creative tool**
 
-Firmware V.3 introduced three distinct random pattern generators: euclidean (regular distribution, afro-style rhythms), wide random (maximum freedom), and narrow random (conservative, bassline-focused). Crucially, these aren't gimmicks. They're *intelligent generation*.
+Firmware V.3 introduced three distinct random pattern generators: euclidean (notes distributed evenly across steps, creating layered polyrhythmic density), wide random (maximum freedom), and narrow random (conservative, bassline-focused). Crucially, these aren't gimmicks. They're *sophisticated generation*.
 
 Record a 16-step melodic pattern. Press **TEMPO + 1/16** (wide random) and the sequencer generates entirely new melodies in your selected scale, maintaining key and playability. Press **TEMPO + 1/4** (random variation) and the sequencer takes your existing pattern and adds ratchets, slides, probability, octave shifts—subtle variations that preserve identity while creating fresh character. This is the opposite of chaos randomness. It's generative variation that respects musical constraints.
 
