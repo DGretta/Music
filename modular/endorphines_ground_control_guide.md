@@ -160,6 +160,62 @@ Press **⯇PATTERN + PATTERN⯈** simultaneously to lock all 4 tracks to the sam
 
 ---
 
+## Foundation: Basic Groove Patterns
+
+Before exploring polymetric sophistication, it's worth understanding Ground Control as a *straightforward drum sequencer*. Most electronic music (house, techno, industrial) builds from locked 4/4 grids—all tracks same length, all tracks same time division. Ground Control handles this elegantly, adding intuitive shuffle and performance controls that make it viable for traditional groove creation.
+
+**Locked-Grid Architecture:**
+
+By default, all tracks operate in a locked grid:
+- All tracks: 16 steps (default pattern length)
+- All tracks: 1/16 time division (sixteenth-note grid)
+- All patterns start and end together
+
+This is your starting point. No polymetry. No complex time signatures. Just kick, snare, hi-hat synced to a shared clock.
+
+**Basic 4-on-the-Floor House Pattern (5 minutes):**
+
+1. **Select drum track:** Press TRACK D
+2. **Record kick pattern:** Press RECORD (short), then press P/1 (kick trigger) on steps 1, 5, 9, 13 (every four sixteenth notes = on the beat). Fill remaining steps with REST (TEMPO button). This creates a kick on every quarter note.
+3. **Record snare:** Switch to drum trigger S/4. Press RECORD, then press S/4 on steps 4, 12 (classic 2/4 snare placement). Rest elsewhere.
+4. **Record hi-hat:** Switch to drum trigger Q/2. Press RECORD, then press Q/2 on *every step* (all 16 positions). This creates a closed hi-hat on every sixteenth note.
+5. **Add shuffle:** Press TEMPO → G (SHUFFLE). Use VALUE -/+ to set to 54% (the classic "loose but tight" electronic music shuffle). Listen as the hi-hat becomes less metronomic—more human.
+6. **Save:** Press 🞸 → RECORD → RECORD. Pattern saved.
+7. **Listen:** Press PLAY. You've created a foundational house/techno groove with minimal setup.
+
+**Why locked grids matter:**
+
+Locked grids are constraints that enable focus. You're not managing independent track timing—you're composing within a shared rhythmic framework. This is where 99% of house and techno tracks live. Ground Control doesn't force complexity; it supports it when needed.
+
+**Key Parameters for Basic Grooves:**
+
+- **Shuffle (TEMPO → G):** The swing feel. 50% = no swing. 54% = typical electronic music groove. 66% = perfect triplet swing. Range: 0-99%.
+- **Gate Length (TEMPO → L):** How long triggers fire (1-99% of step duration). Lower = clicky/tight. Higher = longer tail. Default 50% works for most drums.
+- **Probability (TEMPO → H):** Chance a note plays (0-100%). 100% = always plays. 80% = occasionally skips (humanization).
+- **Time Division (TRACK D + 1/32...1/4):** Grid resolution. 1/16 is standard. 1/8 creates longer notes. 1/32 creates denser patterns.
+
+**Recording Workflow for Locked Grids:**
+
+1. Select track (TRACK D)
+2. Select drum trigger (P/1...Y/8) or melodic track (TRACK 1/2/3)
+3. Press RECORD (short = step record, long = editor)
+4. Play notes/triggers, use TEMPO as REST
+5. Press PLAY to audition
+6. Press 🞸 → RECORD → RECORD to save
+
+Repeat for each track. No menus. No complexity. Straight recording.
+
+**When to unlock the grid:**
+
+Once you're comfortable with locked 4/4, experiment:
+- Set TRACK 2 (hi-hat) to 11 steps while TRACK 1 (kick) stays 16 steps → Polymetric hi-hat movement
+- Set TRACK 1 to 1/8 (eighth-note grid) while TRACK D stays 1/16 → Bass line at different subdivision
+- Set multiple tracks to different shuffle amounts → Each track has its own swing character
+
+But first, lock the grid. Master that simplicity. *Then* introduce variation.
+
+---
+
 ## Why This Instrument Excels
 
 **Polymetric thinking as a performance tool**
