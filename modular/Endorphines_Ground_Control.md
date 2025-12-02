@@ -2,6 +2,9 @@
 
 **42 HP polymetric/polyrhythmic performance sequencer with CV/MIDI/USB integration, pattern randomization, and CV modulation matrix.**
 
+![Endorphin.es Ground Control Front Panel](https://github.com/DGretta/Music/raw/main/modular/images/endorphines/ground_control/front_panel.jpg)
+*Front panel: 24 monophonic piano keys, 4-track architecture (drum + 3 melodic), transport controls (play/stop/record), mute/solo bus with activity LEDs, pattern/page navigation, tempo control, 🞸 (project) and menu access. Full modular connectivity: clock I/O, MIDI, USB-MIDI, 4x CV inputs, modulation CV out, drum triggers (0-10V), melodic pitch CV (-5V to +5V), and track-level reset inputs.*
+
 ---
 
 ## Quick Start
