@@ -2,7 +2,7 @@
 
 **32-bit stereo time-domain effects processor with 6 synchronized CV outputs, 4 effect modes, and 16+ LFO variants. Audio in, complex modulated sound out.**
 
-![dsp.coffee Kali Front Panel](https://github.com/DGretta/Music/raw/main/modular/images/dspcoffee/kali/front_panel.jpg)
+![dsp.coffee Kali Front Panel](https://github.com/DGretta/Music/raw/main/modular/images/dsp_coffee/kali/front_panel.jpg)  
 *Front panel: Left and right delay time controls, feedback and wet/dry balance, cutoff/tone shaping, and reverb amount. Central display shows mode, parameter, and value. Right side: Meta 1 and Meta 2 mode-specific controls. Left encoder for navigation/LFO edit, right encoder for parameter adjustment. Upper section: LFO Rate knob (controls all 6 synchronized LFOs), Mode selector (Basic/Parvati/Kali/External Feedback), and Resynch button. Lower section: 3x CV outputs per side (1L-3L, 1R-3R), 2 clock outputs, and audio input/output jacks.*
 
 ## Quick Start
