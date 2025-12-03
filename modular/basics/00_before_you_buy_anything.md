@@ -43,19 +43,19 @@ Before you buy a single module, you need infrastructure to power, house, and con
 Modules draw DC power (+12V, -12V, and sometimes +5V). They connect to power via ribbon cables on the back. Cases provide both physical housing and the power distribution system (called a "bus board" or "flying bus").
 
 **Budget options:**
-- **Doepfer A-100 cases** - reliable, utilitarian German engineering (~$300-600 depending on size)
-- **Tiptop Audio Happy Ending Kit** - 84HP powered skiff, compact starter (~$150-200)
-- **4ms Pod** series - portable powered cases, well-regarded (starting ~$200)
+- **Doepfer A-100 cases** - reliable, utilitarian German engineering (around $300-600 depending on size)
+- **Tiptop Audio Happy Ending Kit** - 84HP powered skiff, compact starter (around $150-200)
+- **4ms Pod** series - portable powered cases, well-regarded (starting around $200)
 
 **Mid-range options:**
-- **Intellijel Palette/Performance cases** - excellent build quality, integrated utilities (~$400-800)
-- **Make Noise CV Bus Case** - 104HP with power, designed for their ecosystem (~$400)
+- **Intellijel Palette/Performance cases** - excellent build quality, integrated utilities (around $400-800)
+- **Make Noise CV Bus Case** - 104HP with power, designed for their ecosystem (around $400)
 
 **Higher-end options:**
-- **TipTop Mantis** - 208HP, excellent power, great value at its price (~$335)
-- **Intellijel 7U Performance Case** - 104HP plus 1U row, professional build (~$700-900)
+- **TipTop Mantis** - 208HP, excellent power, great value at its price (around $335)
+- **Intellijel 7U Performance Case** - 104HP plus 1U row, professional build (around $700-900)
 
-**DIY option:** Build your own case and add a power supply like 4ms Row Power ($100-150) or Befaco Excalibus ($140). Requires woodworking skills and comfort with power distribution.
+**DIY option:** Build your own case (wood, metal, or 3D printed) and add a power supply like 4ms Row Power (around $100-150) or Befaco Excalibus (around $140). Requires appropriate fabrication skills and comfort with power distribution.
 
 **Critical specs to check:**
 - **HP (horizontal pitch):** Module width measurement. 3HP = about 15mm wide. A "104HP case" holds 104HP worth of modules.
@@ -76,7 +76,7 @@ Modules draw DC power (+12V, -12V, and sometimes +5V). They connect to power via
 **Options:**
 
 **Direct to mixer/interface with attenuation:**
-- Use an attenuating output module like **Intellijel Outs** (~$80), **ALM Busy Circuits S.B.G.** (~$50), or **Erica Synths Black Output** (~$100)
+- Use an attenuating output module like **Intellijel Outs** (around $80), **ALM Busy Circuits S.B.G.** (around $50), or **Erica Synths Black Output** (around $100)
 - These bring modular signals down to line level safely
 
 **Dedicated modular output module:**
@@ -92,7 +92,7 @@ Modules draw DC power (+12V, -12V, and sometimes +5V). They connect to power via
 
 **Multimeter:** A basic digital multimeter ($20-40) helps troubleshoot power issues, check cable continuity, and verify CV voltages. Not mandatory day one, but you'll want one eventually.
 
-**CV/Signal visualization:** Modules like **Mordax Data** (~$300) or **Joranalogue Select 2** (~$300) let you see waveforms and voltages. This accelerates learning dramatically—seeing what modulation is doing helps understanding click much faster. Not essential for beginners, but transformative if budget allows.
+**CV/Signal visualization:** Modules like **Mordax Data** (around $300) or **Joranalogue Select 2** (around $300) let you see waveforms and voltages. This accelerates learning dramatically—seeing what modulation is doing helps understanding click much faster. Not essential for beginners, but transformative if budget allows.
 
 **Notebook and camera:** Document patches. Take photos of interesting patches before tearing them down. Keep a notebook of ideas, problems solved, things to try. Low-tech but invaluable.
 
@@ -106,7 +106,7 @@ Eurorack is a **modular synthesizer format standard** developed by Doepfer in th
 
 **3U height:** Modules are 3 rack units tall (about 5.25 inches / 133.4mm). Some manufacturers make 1U rows (Intellijel, Pulp Logic) for utilities, but 3U is the dominant standard.
 
-**HP width:** Modules are measured in "horizontal pitch" units. 1HP = 0.2 inches / 5.08mm. An 8HP module is about 1.6 inches wide. Cases are commonly 84HP, 104HP, or 208HP wide.
+**HP width:** Modules are measured in "horizontal pitch" units. 1HP = 0.2 inches / 5.08mm. An 8HP module is about 1.6 inches wide. Cases are commonly 84HP, 104HP, 140HP, and 168HP for single rows, or 208HP and 280HP configured as dual rows.
 
 **Depth:** No standard—check your case depth against module depth specs. Some modules are shallow (25mm), others deep (65mm+). Ribbon cables on the back add depth. Doepfer cases are typically 150mm internal depth, which fits almost everything.
 
@@ -135,9 +135,9 @@ Before buying specific modules, understand what **functions** a musical system r
 **What they do:** Generate the raw audio signal. Voltage-controlled oscillators (VCOs) produce waveforms—sine, triangle, sawtooth, square, etc. Noise generators create white/pink noise. Sample players trigger audio files.
 
 **Examples:**
-- Budget: **Doepfer A-110-1 Basic VCO** (~$120)
-- Mid: **Mutable Instruments Plaits** (~$230) - 16 synthesis methods in one module
-- Fancy: **Make Noise DPO** (~$650) - complex analog dual oscillator
+- Budget: **Doepfer A-110-1 Basic VCO** (around $120)
+- Mid: **Mutable Instruments Plaits** (around $230) - 16 synthesis methods in one module
+- Fancy: **Make Noise DPO** (around $650) - complex analog dual oscillator
 
 **You need at least one source** to make sound. Most systems have 2-4 oscillators for variety and polyphony.
 
@@ -146,9 +146,9 @@ Before buying specific modules, understand what **functions** a musical system r
 **What they do:** Change the timbre of sources. Voltage-controlled filters (VCFs) remove frequencies—lowpass, highpass, bandpass, etc. Waveshapers add harmonics. Effects modules add reverb, delay, distortion.
 
 **Examples:**
-- Budget: **Doepfer A-120 Moog Ladder Filter** (~$130)
-- Mid: **Erica Synths Black Polivoks VCF** (~$240) - aggressive Russian filter design
-- Fancy: **Rossum Electro-Music Evolution** (~$500) - stereo programmable filter
+- Budget: **Doepfer A-120 Moog Ladder Filter** (around $130)
+- Mid: **Erica Synths Black Polivoks VCF** (around $240) - aggressive Russian filter design
+- Fancy: **Rossum Electro-Music Evolution** (around $500) - stereo programmable filter
 
 **Optional but highly recommended.** Filters shape character. Raw oscillators sound thin without them.
 
@@ -157,9 +157,9 @@ Before buying specific modules, understand what **functions** a musical system r
 **What they do:** Control volume and routing. Voltage-controlled amplifiers (VCAs) turn signals up or down based on CV input. Mixers combine multiple signals into one output.
 
 **Examples:**
-- Budget: **Doepfer A-130-2 Dual Linear VCA** (~$75)
-- Mid: **Erica Synths Black Quad VCA2** (~$280) - four VCAs with mixing
-- Fancy: **Mutable Instruments Veils** (~$200) - quad VCA with multiple topologies
+- Budget: **Doepfer A-130-2 Dual Linear VCA** (around $75)
+- Mid: **Erica Synths Black Quad VCA2** (around $280) - four VCAs with mixing
+- Fancy: **Mutable Instruments Veils** (around $200) - quad VCA with multiple topologies
 
 **Absolutely essential.** Without VCAs, everything is at full volume all the time. Unmusical. VCAs let envelopes shape amplitude over time—that's how you get rhythmic note articulation.
 
@@ -168,9 +168,9 @@ Before buying specific modules, understand what **functions** a musical system r
 **What they do:** Generate control voltages to animate parameters. Envelope generators (EGs) create time-based contours—attack, decay, sustain, release. Low-frequency oscillators (LFOs) produce repeating modulation. Random sources add unpredictability.
 
 **Examples:**
-- Budget: **Doepfer A-140 ADSR** (~$90)
-- Mid: **Maths by Make Noise** (~$280) - dual function generator, extremely flexible
-- Fancy: **Xaoc Devices Zadar** (~$310) - quad envelope with extensive features
+- Budget: **Doepfer A-140 ADSR** (around $90)
+- Mid: **Maths by Make Noise** (around $280) - dual function generator, extremely flexible
+- Fancy: **Xaoc Devices Zadar** (around $310) - quad envelope with extensive features
 
 **Critical for expression.** Modulation is what makes modular interesting. A static sound is boring. Envelopes make notes start and stop musically. LFOs add movement. Random sources create evolving textures.
 
@@ -179,9 +179,9 @@ Before buying specific modules, understand what **functions** a musical system r
 **What they do:** Generate note patterns, trigger events, provide hands-on control. Sequencers create melodies or rhythmic triggers. Keyboard/grid controllers let you play pitch CV. Utility controllers (knobs, faders) give manual CV adjustment.
 
 **Examples:**
-- Budget: **2hp TM** (~$120) - Turing Machine, generative sequences
-- Mid: **Squarp Hermod+** (~$600) - powerful multitrack sequencer
-- Fancy: **Make Noise Rene 2** (~$600) - Cartesian sequencer, deep programming
+- Budget: **2hp TM** (around $120) - Turing Machine, generative sequences
+- Mid: **Squarp Hermod+** (around $600) - powerful multitrack sequencer
+- Fancy: **Make Noise Rene 2** (around $600) - Cartesian sequencer, deep programming
 
 **Not day-one essential** if you're using external MIDI gear or just exploring sounds manually. But sequencers unlock compositional possibilities modular excels at.
 
@@ -190,9 +190,9 @@ Before buying specific modules, understand what **functions** a musical system r
 **What they do:** Routing, signal processing, logic operations. Multiples split one signal to many destinations. Attenuators reduce CV amount. Logic modules create conditional triggers. Switches route signals.
 
 **Examples:**
-- Budget: **Doepfer A-138 Mixer** (~$60), **Intellijel Mult** (~$30)
-- Mid: **Happy Nerding 3xMIA** (~$130) - three-channel mixer/attenuator/inverter
-- Fancy: **Mutable Instruments Kinks** (~$100, discontinued) - multi-function utility
+- Budget: **Doepfer A-138 Mixer** (around $60), **Intellijel Mult** (around $30)
+- Mid: **Happy Nerding 3xMIA** (around $130) - three-channel mixer/attenuator/inverter
+- Fancy: **Mutable Instruments Kinks** (around $100, discontinued) - multi-function utility
 
 **Often overlooked by beginners.** You'll need utilities sooner than you think. A simple passive multiple costs $20-30 and saves endless repatching frustration.
 
