@@ -50,7 +50,7 @@ You've covered the prerequisites in Guide 00. You understand infrastructure need
 
 ## The Minimal Patch: Step by Step
 
-**Trigger source:** For now, use a manual gate button (many cases have one), or trigger input from external gear (MIDI interface, sequencer, keyboard controller). Sequencing comes in Guide 03—right now we're just making a single note work.
+**Trigger source:** Most commonly, you'll use a MIDI controller with CV/gate outputs (like Arturia Keystep, Keystep 37, or Keystep Pro), or a dedicated MIDI-to-CV module (Expert Sleepers FH-2, Intellijel uMIDI, Doepfer A-190-5). Some cases include manual gate buttons, but these are less common. For now, any source that sends gate/trigger signals works—we'll cover sequencing in detail in Guide 03.
 
 ### Connection Order
 
