@@ -20,5 +20,8 @@ Thumbs.db
 # Log files
 *.log
 
+# Book manuscript - private during development
+book/
+
 # Other files
 Conversation_Log_Documentation_vs_MPC_Kids.md
