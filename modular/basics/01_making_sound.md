@@ -210,7 +210,9 @@ These are concrete examples at different price points. Many alternatives exist�
 
 ### "I can't control the pitch"
 
-**For now, that's expected.** We haven't added pitch CV control yet—that's Guide 03 with sequencers. Right now you're just proving the signal chain works. Many oscillators have coarse/fine tune knobs—use those to set a comfortable pitch.
+**If you're using a MIDI controller with CV/gate outputs** (like Keystep), you already have pitch control available. Just patch the CV output from your controller to the oscillator's V/Oct input, and you can play notes via the keyboard.
+
+**If you're using a simple gate button or trigger-only source**, pitch control isn't available yet—that's covered in Guide 03 with sequencers and advanced MIDI-to-CV scenarios. For now, use your oscillator's coarse/fine tune knobs to set a comfortable pitch.
 
 ---
 
