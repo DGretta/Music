@@ -200,8 +200,8 @@ Add a second envelope for pitch:
 ### Dedicated Drum Modules
 
 **Budget: Erica Synths Pico Drum2** (around $120, 3HP)
-- Complete dual drum voice in tiny space
-- Kick and snare algorithms built-in
+- Single drum voice in tiny space (2nd generation)
+- Kick and snare algorithms built-in (switchable, not simultaneous)
 - Minimal patching required
 - Great for compact systems
 - Limited compared to building voices from scratch
