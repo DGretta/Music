@@ -84,7 +84,7 @@ Modules draw DC power (+12V, -12V, and sometimes +5V). They connect to power via
 - Expert Sleepers ES-8/ES-9 provide computer I/O plus DC-coupled outputs for CV
 - Some mixers (like Bastl Instruments Ciao! or WMD Performance Mixer) include proper output sections
 
-**Minimum setup:** One output module or attenuator cable, plus whatever audio interface/mixer you already own.
+**Minimum setup:** One output module (like Intellijel Outs or ALM S.B.G.) to bring modular levels down to line level, plus whatever audio interface/mixer you already own.
 
 **Better setup:** Dedicated small mixer for modular (Erica Synths Pico Mix, Intellijel Mixup), then feed that to your main interface. Gives you more control over levels and mixing within the modular before it hits your recorder.
 
