@@ -164,9 +164,9 @@ You'll see this pattern everywhere in synthesis. Even simple monosynths have two
 
 **Mid-range: Maths by Make Noise** (around $280) - Already provides **two** function generators, so if you have Maths from Guide 01, you already have your second envelope
 
-**Compact: Erica Synths Black Envelope Generator 2** (around $160, 8HP) - **Dual** ADSR, so one module provides both envelopes needed
+**Mid-range: Intellijel Quadrax** (around $320) - **Four** envelope generators with mixing and logic, so one module provides both envelopes needed plus room for expansion
 
-**Modular efficiency note:** Modules offering multiple envelopes (Maths, Quadrax, Black EG2) are space-efficient. You can use one channel for amplitude, another for filter, without buying two separate modules.
+**Modular efficiency note:** Modules offering multiple envelopes (Maths, Quadrax) are space-efficient. You can use one channel for amplitude, another for filter, without buying two separate modules.
 
 ---
 
